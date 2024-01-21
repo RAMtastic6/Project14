@@ -138,3 +138,8 @@ export function getFilteredRestaurants(query: { date: string | null; nameRestaur
         return true;
     });
 }
+
+export function getRestaurantById(id: string): Restaurant | null {
+    const restaurants = getRestaurants();
+    return restaurants.find((restaurant) => restaurant.id.toString() === id) || null;
+}

@@ -1,6 +1,7 @@
 'use client';
 import { getFilteredRestaurants } from '@/app/lib/data';
 import { useSearchParams } from 'next/navigation';
+import Link from 'next/link';
 
 
 export default function RestaurantsTable() {
@@ -33,7 +34,7 @@ export default function RestaurantsTable() {
                 <tbody className="bg-white divide-y divide-gray-200">
                     {restaurants.map((restaurant) => (
                         <tr key={restaurant.id}>
-                            <td className="px-2 py-1 whitespace-nowrap">{restaurant.name}</td>
+                            <td className="px-2 py-1 whitespace-nowrap"><Link href={`/reservation/${restaurant.id}/view`}>{restaurant.name}</Link></td>
                             <td className="px-2 py-1 whitespace-nowrap">{restaurant.address}</td>
                             <td className="px-2 py-1 whitespace-nowrap">{restaurant.city}</td>
                             <td className="px-2 py-1 whitespace-nowrap">{restaurant.cuisine}</td>
