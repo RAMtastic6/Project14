@@ -29,4 +29,5 @@ export async function createReservation(formData: FormData) {
         restaurantId: Number(rawFormData.restaurantId!),
         customers: rawFormData.usernames,
     });
+    console.log(reservations);
 }

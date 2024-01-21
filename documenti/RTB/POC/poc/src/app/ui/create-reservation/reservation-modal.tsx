@@ -12,7 +12,7 @@ export default function ReservationModal({ isOpen, onClose, formData }: { isOpen
             <p>Ora: {String(formData.get("time"))}</p>
             <p>Numero di persone: {formData.get("numberOfPeople")?.toString()}</p>
             
-            <Link href="/reservation">
+            <Link href="/create-reservation">
                 <button onClick={() => createReservation(formData)}>Conferma</button>
             </Link>
             <button onClick={onClose}>Annulla</button>

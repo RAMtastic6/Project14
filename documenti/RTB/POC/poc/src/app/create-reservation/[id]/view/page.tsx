@@ -1,5 +1,5 @@
 'use client';
-import Form from '@/app/ui/reservation/form';
+import Form from '@/app/ui/create-reservation/form';
 import { getRestaurantById } from '@/app/lib/data';
 
 export default async function Page({ params }: { params: { id: string } }) {

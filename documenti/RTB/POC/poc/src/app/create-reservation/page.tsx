@@ -1,6 +1,6 @@
 import React from 'react';
-import Search from '@/app/ui/reservation/search';
-import Table from '@/app/ui/reservation/table';
+import Search from '@/app/ui/create-reservation/search';
+import Table from '@/app/ui/create-reservation/table';
 
 export default function Page() {
     return (
