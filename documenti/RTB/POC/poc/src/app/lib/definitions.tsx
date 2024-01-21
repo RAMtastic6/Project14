@@ -34,3 +34,12 @@ export type Customer = {
     name: string;
     email: string;
 };
+
+export type Reservation = {
+    id: number;
+    date: string;
+    time: string;
+    numberOfPeople: number;
+    restaurantId: number;
+    customers: string[];
+};
