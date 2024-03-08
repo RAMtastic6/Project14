@@ -53,18 +53,18 @@
 - [12 Dicembre 2023](documenti/RTB/verbali/verbali_interni/verbale_23_12_12.pdf)
 - [8 Gennaio 2024](documenti/RTB/verbali/verbali_interni/verbale_24_01_08.pdf)
 - [11 Gennaio 2024](documenti/RTB/verbali/verbali_interni/verbale_24_01_11.pdf)
-- [16 Febbraio 2024](documenti/RTB/verbali/verbali_interni/verbale_24_01_16.pdf)
+- [16 Febbraio 2024](documenti/RTB/verbali/verbali_interni/verbale_24_02_16.pdf)
 - [7 Marzo 2024](documenti/RTB/verbali/verbali_interni/verbale_24_03_07.pdf)
 
   </details>
 
-  <details open>
-    <summary>Esterni</summary>
+<details open>
+  <summary>Esterni</summary>
 
 - [24 Novembre 2023](documenti/RTB/verbali/verbali_esterni/verbale_23_11_24.pdf)
 - [6 Dicembre 2023](documenti/RTB/verbali/verbali_esterni/verbale_23_12_06.pdf)
 - [27 Dicembre 2023](documenti/RTB/verbali/verbali_esterni/verbale_23_12_27.pdf)
 
-  </details>
+</details>
 
 </details>
