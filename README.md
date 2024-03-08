@@ -12,19 +12,22 @@
   <details>
     <summary>Interni</summary>
 
-  - [26 Ottobre 2023](documenti/CANDIDATURA/verbali/verbali_interni/verbale_26_10.pdf)
-  - [27 Ottobre 2023](documenti/CANDIDATURA/verbali/verbali_interni/verbale_27_10.pdf)
-  - [29 Ottobre 2023](documenti/CANDIDATURA/verbali/verbali_interni/verbale_29_10.pdf)
-  - [30 Ottobre 2023](documenti/CANDIDATURA/verbali/verbali_interni/verbale_30_10.pdf)
-  - [06 Novembre 2023](documenti/CANDIDATURA/verbali/verbali_interni/verbale_06_11.pdf)
-  - [07 Novembre 2023](documenti/CANDIDATURA/verbali/verbali_interni/verbale_07_11.pdf)
+- [26 Ottobre 2023](documenti/CANDIDATURA/verbali/verbali_interni/verbale_26_10.pdf)
+- [27 Ottobre 2023](documenti/CANDIDATURA/verbali/verbali_interni/verbale_27_10.pdf)
+- [29 Ottobre 2023](documenti/CANDIDATURA/verbali/verbali_interni/verbale_29_10.pdf)
+- [30 Ottobre 2023](documenti/CANDIDATURA/verbali/verbali_interni/verbale_30_10.pdf)
+- [06 Novembre 2023](documenti/CANDIDATURA/verbali/verbali_interni/verbale_06_11.pdf)
+- [07 Novembre 2023](documenti/CANDIDATURA/verbali/verbali_interni/verbale_07_11.pdf)
+
   </details>
 
   <details>
     <summary>Esterni</summary>
 
-  - [27 Ottobre 2023](documenti/CANDIDATURA/verbali/verbali_esterni/verbale_27_10.pdf)
+- [27 Ottobre 2023](documenti/CANDIDATURA/verbali/verbali_esterni/verbale_27_10.pdf)
+
   </details>
+
 </details>
 
 <h2>RTB</h2>
@@ -38,23 +41,30 @@
   <details open>
     <summary>Interni</summary>
 
-  - [12 Novembre 2023](documenti/RTB/verbali/verbali_interni/verbale_12_11.pdf)
-  - [13 Novembre 2023](documenti/RTB/verbali/verbali_interni/verbale_13_11.pdf)
-  - [14 Novembre 2023](documenti/RTB/verbali/verbali_interni/verbale_14_11.pdf)
-  - [18 Novembre 2023](documenti/RTB/verbali/verbali_interni/verbale_18_11.pdf)
-  - [27 Novembre 2023](documenti/RTB/verbali/verbali_interni/verbale_27_11.pdf)
-  - [1 Dicembre 2023](documenti/RTB/verbali/verbali_interni/verbale_01_12.pdf)
-  - [4 Dicembre 2023](documenti/RTB/verbali/verbali_interni/verbale_04_12.pdf)
-  - [13 Dicembre 2023](documenti/RTB/verbali/verbali_interni/verbale_13_12.pdf)
-  - [18 Dicembre 2023](documenti/RTB/verbali/verbali_interni/verbale_18_12.pdf)
-  - [12 Dicembre 2023](documenti/RTB/verbali/verbali_interni/verbale_12_27.pdf)
-  - [8 Gennaio 2024](documenti/RTB/verbali/verbali_interni/verbale_08_01.pdf)
+- [12 Novembre 2023](documenti/RTB/verbali/verbali_interni/verbale_23_11_12.pdf)
+- [13 Novembre 2023](documenti/RTB/verbali/verbali_interni/verbale_23_11_13.pdf)
+- [14 Novembre 2023](documenti/RTB/verbali/verbali_interni/verbale_23_11_14.pdf)
+- [18 Novembre 2023](documenti/RTB/verbali/verbali_interni/verbale_23_11_18.pdf)
+- [27 Novembre 2023](documenti/RTB/verbali/verbali_interni/verbale_23_11_27.pdf)
+- [1 Dicembre 2023](documenti/RTB/verbali/verbali_interni/verbale_23_12_01.pdf)
+- [4 Dicembre 2023](documenti/RTB/verbali/verbali_interni/verbale_23_12_04.pdf)
+- [13 Dicembre 2023](documenti/RTB/verbali/verbali_interni/verbale_23_12_13.pdf)
+- [18 Dicembre 2023](documenti/RTB/verbali/verbali_interni/verbale_23_12_18.pdf)
+- [12 Dicembre 2023](documenti/RTB/verbali/verbali_interni/verbale_23_12_12.pdf)
+- [8 Gennaio 2024](documenti/RTB/verbali/verbali_interni/verbale_24_01_08.pdf)
+- [11 Gennaio 2024](documenti/RTB/verbali/verbali_interni/verbale_24_01_11.pdf)
+- [16 Febbraio 2024](documenti/RTB/verbali/verbali_interni/verbale_24_01_16.pdf)
+- [7 Marzo 2024](documenti/RTB/verbali/verbali_interni/verbale_24_03_07.pdf)
+
   </details>
 
   <details open>
     <summary>Esterni</summary>
-    
-  - [24 Novembre 2023](documenti/RTB/verbali/verbali_esterni/verbale_24_11.pdf)
-  - [6 Dicembre 2023](documenti/RTB/verbali/verbali_esterni/verbale_06_12.pdf)
+
+- [24 Novembre 2023](documenti/RTB/verbali/verbali_esterni/verbale_23_11_24.pdf)
+- [6 Dicembre 2023](documenti/RTB/verbali/verbali_esterni/verbale_23_12_06.pdf)
+- [27 Dicembre 2023](documenti/RTB/verbali/verbali_esterni/verbale_23_12_27.pdf)
+
   </details>
+
 </details>
