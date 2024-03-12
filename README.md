@@ -64,6 +64,8 @@
 - [24 Novembre 2023](documenti/RTB/verbali/verbali_esterni/verbale_23_11_24.pdf)
 - [6 Dicembre 2023](documenti/RTB/verbali/verbali_esterni/verbale_23_12_06.pdf)
 - [27 Dicembre 2023](documenti/RTB/verbali/verbali_esterni/verbale_23_12_27.pdf)
+- [19 Gennaio 2024](documenti/RTB/verbali/verbali_esterni/verbale_24_01_19.pdf)
+- [28 Febbraio 2024](documenti/RTB/verbali/verbali_esterni/verbale_24_02_28.pdf)
 
 </details>
 
