@@ -1,0 +1,59 @@
+\subsection{UC19 - Accettazione richiesta prenotazione}\label{usecase:19}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.9\linewidth]{ucd/ucd19.png}
+\end{figure}
+\textbf{Attori principali}:
+\begin{itemize}
+    \item Utente amministratore
+\end{itemize}
+\textbf{Precondizioni}:
+\begin{itemize}
+    \item L'amministratore è autenticato dal sistema
+    \item \`E arrivata almeno una richiesta di prenotazione da parte di un'utente base (\nameref{usecase:23})
+\end{itemize}
+\textbf{Postcondizioni}:
+\begin{itemize}
+    \item L'amministratore ha accettato la richiesta
+    \item Il sistema ha aggiunto la prenotazione nell'area dedicata dell'utente che ha prenotato
+    \item Il sistema ha notificato gli utenti dell'accettazione della prenotazione
+\end{itemize}
+\textbf{\textit{Trigger}_G}:
+\begin{itemize}
+    \item L'amministratore vuole gestire le prenotazioni arrivate
+\end{itemize}
+\textbf{\textit{Scenario}_G principale}:
+\begin{enumerate}
+    \item L'amministratore seleziona una richiesta di prenotazione.
+    \item L'amministratore controlla se ci sono posti disponibili in base alle specifiche della prenotazione.
+\end{enumerate}
+
+\newpage
+
+\begin{comment}
+\subsection{UC19 - Conferma prenotazione (utente amministratore)}\label{usecase:10}
+\textbf{Attori}:
+\begin{itemize}
+    \item Utente amministratore
+\end{itemize}
+\textbf{Precondizioni}:
+\begin{itemize}
+    \item L'utente amministratore si è autenticato all'interno del sistema.
+    \item Vi deve essere almeno una prenotazione presente all'interno della lista associata al ristorante.
+\end{itemize}
+\textbf{Postcondizioni}:
+\begin{itemize}
+    \item L'amministratore ha confermato una prenotazione
+\end{itemize}
+\textbf{\textit{Scenario}_G principale}:
+\begin{enumerate}
+    \item L'utente amministratore trova la lista delle prenotazioni (fare UC apposito?)
+    \item L'utente amministratore sceglie una delle possibili prenotazioni da confermare e ne visualizza i dettagli associati (UC apposito per la visualizzazione di una prenotazione?)
+    \item L'utente amministratore conferma la prenotazione.
+\end{enumerate}
+\textbf{Scenari secondari}:
+\begin{itemize}
+    \item nel caso in cui l'utente amministratore decida di non confermare la prenotazione, ritorna alla lista delle prenotazioni, lasciando la prenotazione inalterata.
+\end{itemize}
+\newpage
+\end{comment}

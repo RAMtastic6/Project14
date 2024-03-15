@@ -1,0 +1,30 @@
+\subsubsection{UC22.2 - Risposta alla recensione}\label{usecase:22_2}
+\textbf{Attori}:
+\begin{itemize}
+    \item \textit{Amministratore}_G
+\end{itemize}
+\textbf{Precondizioni}:
+\begin{itemize}
+    \item L'amministratore ha selezionato una recensione a cui rispondere
+\end{itemize}
+\textbf{Postcondizioni}:
+\begin{itemize}
+    \item L'amministratore ha risposto alla recensione
+\end{itemize}
+\textbf{\textit{Trigger}_G}:
+L'amministratore vuole rispondere ad una recensione\\
+\textbf{\textit{Scenario}_G principale}:
+\begin{enumerate}
+    \item L'amministratore deve inserire un testo valido da inserire come risposta
+\end{enumerate}
+\textbf{\textit{Scenario}_G alternativo}:
+\begin{enumerate}
+    \item Se il testo è: 
+    \begin{enumerate}
+        \item Vuoto
+        \item Contiene caratteri non ammessi
+        \item Supera una dimensione di 255 caratteri
+    \end{enumerate}
+    \item Allora la recensione non può essere pubblicata
+    \item Si visualizza l'errore
+\end{enumerate}

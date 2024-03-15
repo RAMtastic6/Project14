@@ -1,0 +1,612 @@
+\documentclass[12pt, oneside]{article} 
+\usepackage{amsmath, amsthm, amssymb, calrsfs, wasysym, verbatim, bbm, color, graphicx, geometry, fancyhdr, url, multirow, hyperref, enumitem, comment, float, array, longtable, verbatim, array}
+\usepackage[italian]{babel}
+
+\geometry{tmargin=.75in, bmargin=.75in, lmargin=.75in, rmargin = .75in}
+
+
+\author{RAMtastic6}
+
+%Intestazione
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[R]{Gruppo 14 RAMtastic6\\ramtastic6@gmail.com}
+\fancyfoot[C]{\thepage}
+
+% Linea intestazione
+\renewcommand{\headrulewidth}{1pt} 
+
+% Intestazione documento
+\begin{document}
+% Salta la prima pagina per l'intestazione
+\thispagestyle{empty}
+\title{Analisi dei Requisiti}
+\maketitle
+\begin{figure}[h]
+  \centering
+  \includegraphics[scale=0.3]{logo.png}
+\end{figure}
+\begin{center}
+    email: ramtastic6@gmail.com
+\end{center}
+
+% Informazioni sul documento
+\section*{Informazioni sul documento} 
+\begin{tabular}{ll}
+Versione: & 0.6.0 \\
+Redattori: &  Visentin S.  Zaupa R. Brotto D. Basso L. Zambon M. \\ 
+Verificatori: & Tonietto F. Visentin S. Brotto D. \\
+Destinatari: & Vardanega T., Cardin R., \textit{Imola Informatica}_G \\
+Uso: & Esterno
+\end{tabular}
+\newpage
+
+% Registro dei cambiamenti
+\section*{Registro dei Cambiamenti - Changelog}
+\begin{longtable}{|c|c|c|c|p{7cm}|}
+\hline
+\textbf{Versione} & \textbf{Data} & \textbf{Autore} & \textbf{Verificatore} & 
+\textbf{Dettaglio} \\
+\hline
+v 0.6.0 & 2024-03-06 & Brotto D. & Filippo T. & Creato UC27 - Logout con relativi ROF (80,81,82) 
+\newline Rimosso il vecchio UC30 e i suoi ROF, su decisione che admin può amministrare solo 1 ristorante
+\\
+\hline
+v 0.5.5 & 2024-03-06 & Zaupa R. & Tonietto F. & Eliminato caso d'uso UC9 "Ricerca pasti ordinabili". Aggiunto al suo posto nuovo caso d'uso "Modifica del proprio ordine". Inserito UC29 "Ordinazione piatto" come sottocaso di UC3. Aggiornato UC6 con nuovi diagrammi e nuovi sottocasi. Aggiunto UC28 "Annullamento dell'ordinazione". Aggiornata la sezione 4 "Requisiti" di conseguenza e aggiunti ROF 42-43-78-79. \\
+\hline
+v 0.5.4 & 2024-03-05 & Zaupa R. & Tonietto F. & Inserito diagramma per gli attori coinvolti (sezione 3.1), modificati casi d'uso ed inserito nuovo diagramma per UC14, UC15, UC17. Inseriti UC32 e UC33 come sottocasi d'uso di UC31 e sistemati i riferimenti nei requisiti. Inserita sezione 4.3 Tracciamento e tabella nella sezione 4.3.1\\
+\hline
+v 0.5.3 & 2024-02-29 & Brotto D. & Tonietto F. & UC25 e UC26 cambiati da "Inserimento" a "Modifica";
+\newline Unificati UC5,6,9,11 dai loro sottocasi;
+\newline Creati diagrammi UC19,20;
+\newline Creati ROF:
+\newline per UC26 (68,69,70)
+\newline per UC29 (71,72,73)
+\\
+\hline
+v 0.5.2 & 2024-02-28 & Brotto D. & Tonietto F. & Creati ROF:
+\newline per UC17 (64,65) 
+\newline per UC25 (66,67)
+\\
+\hline
+v 0.5.1 & 2024-02-26 & Brotto D. & Tonietto F. & Corretto diagramma UC6 e creato diagramma UC16; \newline ROF: per UC2(45,46,47,56(new)); 
+\newline Creati ROF: \newline per UC12(57,58,59); \newline per UC16(60,61,62,63); \\
+\hline
+v 0.5.0 & 2024-02-19 & Zaupa R. & Tonietto F. & Inserimento casi d'uso UC31-32-33 con i relativi diagrammi. Ridefinizione di UC11 (con relativo sottocaso d'uso) e UC14 con relativi diagrammi. Inseriti ROF dal 48 a al 50 e UC11 in ROF1. \\
+\hline
+v 0.4.2 & 2024-02-16 & Brotto D. & Tonietto F. & Inserimento requisiti funzionali di UC6, UC15, UC30, UC1 (da ROF 36 a 47), creazione UC30 con relativo diagramma \\
+\hline
+v 0.4.1 & 2024-02-15 & Zaupa R. & Tonietto F. & Inserimento requisiti funzionali di UC11 e UC18 (da ROF 33 a 35), inserimento scenari UC11.1, UC11.2, UC11.3, UC18; inserimento diagramma UC18 \\
+\hline
+v 0.4.0 & 2024-01-17 & Brotto D. & Tonietto F. & Scrittura requisiti funzionali di UC4 (da ROF 23 a 26 e UC4 aggiunto a ROF 13) \\
+\hline
+v 0.3.2 & 2024-01-14 & 
+\begin{tabular}[c]{@{}c@{}}
+    Davide B. \\
+    Samuele V.
+  \end{tabular} 
+& Tonietto F. & Creazione e inserimento sezione requisiti funzionali. Da ROF 1 a ROF 13: Samuele; Da ROF 14 a ROF 22: Brotto\\
+\hline
+v 0.3.1 & 2023-12-20 & Zaupa R. & Tonietto F. & Inserimento diagrammi dei casi d'uso dal 4 al 7; revisione  UC6 e UC7, stesura sottocaso d'uso UC6.1 e caso d'uso UCE1; stesura casi d'uso UC21 e UC22 \\
+\hline
+v.0.3.0 & 2023-12-18 & Zambon M. & Brotto D. & Completata stesura scenario 2 con descrizione casi d'uso \\
+\hline
+v.0.2.2 & 2023-12-17 & Zambon M. & Brotto D. & Iniziata stesura scenario 2 con diagramma \\
+\hline
+v.0.2.1 & 2023-12-15 & Zambon M. & Brotto D. & Stesura scenario 1 con diagramma e descrizione casi d'uso \\
+\hline
+v.0.2.0 & 2023-11-28 & Basso L. & Visentin S. & Aggiunta dei casi d'uso da 19 e 20; modificato UC3 (ordinazione collaborativa) \\
+\hline
+v.0.1.0 & 2023-11-28 & Basso L. & Tonietto F. & Aggiunta ai casi d'uso da 1 a 2 delle estensioni (scenari secondari) \\
+\hline
+v.0.0.5 & 2023-11-27 & Visentin S. & Tonietto F. & Stesura casi d'uso 11 a UC18 \\
+\hline
+v.0.0.4 & 2023-11-25 & Visentin S. & Tonietto F. & Dichiarazione casi d'uso da UC14 a UC18 \\
+\hline
+v.0.0.3 & 2023-11-22 & Zaupa R. & Tonietto F. & Riorganizzazione del documento; stesura dei casi d'uso UC9 e UC10; dichiarazione dei casi d'uso da UC11 a UC13 \\
+\hline
+v.0.0.2 & 2023-11-21 & 
+  \begin{tabular}[c]{@{}c@{}}
+    Zaupa R. \\
+    Visentin S.
+  \end{tabular} 
+  & Tonietto F. & Prima versione, stesura della sezione 1 (Introduzione) e prima stesura della sezione 3 (Casi d'uso), in particolare della sezione 3.1 (Attori) e dei casi d'uso da UC1 a UC8 con i relativi sottocasi\\
+\hline
+\end{longtable}
+\newpage
+
+% Sommario
+\tableofcontents
+\newpage
+
+% Introduzione
+\section{Introduzione}
+\subsection{Scopo del documento}
+Il presente documento ha lo scopo di delineare in maniera approfondita i casi d'uso e i requisiti del progetto \textit{\textit{Easy Meal}_G}, come specificato nel capitolato d'appalto C3 per il corso di Ingegneria del \textit{Software}_G proposto dall'azienda \textit{Imola Informatica}_G.
+L'analisi si basa sulla presentazione del capitolato seguita da incontri diretti con il proponente al fine di approfondirne gli aspetti chiave.
+\subsection{Scopo del prodotto}
+Il prodotto finale, realizzato tramite un'applicazione web \emph{responsive}, si propone di realizzare un software innovativo volto a semplificate il processo di prenotazione e ordinazione nei ristoranti, contribuendo a migliorare l'esperienza per clienti e ristoratori. In particolare, \textit{\textit{Easy Meal}_G} dovrà consentire agli utenti di personalizzare gli ordini in base alle proprie preferenze, allergie ed esigenze alimentari; interagire direttamente con lo staff del ristorante attraverso una chat integrata; consentire di dividere il conto tra i partecipanti al tavolo.
+\subsection{Riferimenti}
+\subsubsection{\textit{Riferimenti normativi}_G}
+\begin{enumerate}
+    \item Presentazione del capitolato d'appalto C3 - Progetto \textit{Easy Meal}_G: \\ \url{https://www.math.unipd.it/~tullio/IS-1/2023/Progetto/C3.pdf}
+    \item Regolamento del progetto didattico: \\ \url{https://www.math.unipd.it/~tullio/IS-1/2023/Dispense/PD2.pdf}
+    \item \textit{Norme di Progetto}_G
+\end{enumerate}
+\subsubsection{\textit{Riferimenti informativi}_G}
+\begin{enumerate}
+    \item Lezione \emph{"Analisi dei Requisiti (T5)"} del corso di Ingegneria del \textit{Software}_G: \\ \url{https://www.math.unipd.it/~tullio/IS-1/2023/Dispense/T5.pdf}
+    \item Lezione \emph{"Analisi e descrizione delle funzionalità: Use Case e relativi diagrammi (\textit{UML}_G)"} del corso di Ingegneria del \textit{Software}_G \\ \url{https://www.math.unipd.it/~rcardin/swea/2022/Diagrammi%20Use%20Case.pdf}
+\end{enumerate}
+\newpage
+
+% Descrizione
+\section{Descrizione}
+\subsection{Obiettivi del prodotto}
+Il nostro prodotto mira a fornire un'applicazione web che semplifichi il processo di prenotazione dei tavoli nei ristoranti, offrendo agli utenti una piattaforma intuitiva e accessibile. L'obiettivo principale è fornire un'esperienza utente fluida e soddisfacente, consentendo agli utenti di prenotare tavoli in modo efficiente e senza intoppi. Inoltre, il prodotto mira a migliorare l'esperienza complessiva nei ristoranti consentendo agli amministratori di gestire facilmente le prenotazioni e interagire con gli utenti.
+
+\subsection{Funzionalità del prodotto}
+Il nostro prodotto offrirà una serie di funzionalità chiave, tra cui:
+\begin{itemize}
+\item \textbf{\textit{Prenotazione}_G dei tavoli}: Gli utenti potranno cercare ristoranti, visualizzare disponibilità, e prenotare tavoli e piatti in base alle loro preferenze.
+\item \textbf{Gestione delle prenotazioni}: Gli amministratori potranno visualizzare, accettare o rifiutare le prenotazioni, nonché comunicare con gli utenti in tempo reale.
+\item \textbf{Personalizzazione del profilo}: Gli utenti potranno inserire informazioni personali, allergie e intolleranze nel proprio profilo per una migliore esperienza di prenotazione.
+\item \textbf{Recensioni e feedback}: Gli utenti potranno lasciare recensioni sui ristoranti e interagire con gli altri utenti attraverso il sistema di feedback.
+\end{itemize}
+
+
+\newpage
+
+% Diagrammi dei casi d'uso
+\section{Casi d'uso}
+Questa sezione contiene la lista dei casi d'uso individuati analizzando il capitolato d'appalto e discutendo con il proponente oltre che con i professori di riferimento. Ogni caso d'uso è corredato da un diagramma specifico oltre che dalla descrizione del caso d'uso stesso caratterizzato da attori principali, secondari, precondizioni, postcondizioni, scenario principale e scenari alternativi.
+\subsection{Attori}
+Il sistema dispone di cinque attori principali, distinti come segue:
+\begin{itemize}
+    \item \textbf{Utente non autenticato}: un utente non riconosciuto dal sistema, poiché non ha ancora  effettuato il login o la registrazione
+    \item \textbf{Utente autenticato}: un utente che ha effettuato il login (come utente base o come amministratore) che dunque è riconosciuto dal sistema
+    \item \textbf{\textit{Amministratore}_G}: utente autenticato che detiene i privilegi di amministratore di un ristorante.
+    \item \textbf{Utente generico}: nessuna distinzione tra gli utente autenticati, non autenticati e amministratore
+    \item \textbf{Utente base}: un utente che ha effettuato il login ed è dotato di accessi di base al sistema
+\end{itemize}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.5\linewidth]{Attori_coinvolti.png}
+\end{figure}
+\newpage
+
+% caso d'uso UC1 - Registrazione come utente base
+\input{uc/uc1}
+
+% caso d'uso UC1.1 - Inserimento email
+%\input{uc/uc1_1}
+
+%caso d'uso UC1.2 - Inserimento password
+%\input{uc/uc1_2}
+
+% caso d'uso UC3 - Inserimento informazioni utente
+%\input{uc/uc1_4}
+
+% diagramma dei casi d'uso UCD2 - \textit{Prenotazione}_G tavolo
+\newpage
+
+% caso d'uso UC2 - Registrazione come amministratore
+\input{uc/uc2}
+\input{uc/uc2_1}
+
+% caso d'uso UC4 - Accettazione richiesta prenotazione
+%\input{uc/uc2_2}
+
+% caso d'uso UC5 - Rifiuto richiesta prenotazione
+%\input{uc/uc2_3}
+
+%caso d'uso UC2.1 - Ricerca ristorante
+%\input{uc/uc2_1}
+
+% caso d'uso UC3 - Ordinazione collaborativa
+\input{uc/uc3}
+
+% caso d'uso UC4 - Interazione con lo staff
+\input{uc/uc4}
+\input{uc/uc4_1}
+\input{uc/uc4_2}
+
+% caso d'uso UC5 - Divisione del conto
+\input{uc/uc5}
+
+% caso d'uso UC6 - Consultazione delle prenotazioni da parte dell'amministratore
+\input{uc/uc6}
+
+%caso d'uso UC6.1 - Consultazione degli ingredienti
+\input{uc/uc6_1}
+
+%caso d'uso UC6.2 - Consultazione delle ordinazioni
+\input{uc/uc6_2}
+
+% caso d'uso UC7 - Inserimento di feedback e recensioni
+\input{uc/uc7}
+
+% caso d'uso UC8 - Visualizzazione degli ordini di un tavolo
+\input{uc/uc8}
+
+% caso d'uso UC9 - Ricerca pasti ordinabili
+\input{uc/uc9}
+
+%caso d'uso UC10 - Rimozione della recensione rilasciata
+\input{uc/uc10}
+
+%caso d'uso UC11 - Visualizzazione del menu' del ristorante
+\input{uc/uc11}
+
+%caso d'uso UC11.1 - Visualizzazione piatto all'interno del menu'
+\input{uc/uc11_1}
+
+%caso d'uso C12 - Login
+\input{uc/uc12}
+\input{uc/uc12_1}
+\input{uc/uc12_2}
+\newpage
+
+%caso d'uso C13 - Rimozione della prenotazione del tavolo
+\input{uc/uc13}
+
+%caso d'uso 14 - Modifica informazioni account dell'amministratore (esempio coperti disponibili)
+\input{uc/uc14}
+
+%caso d'uso 15 - Visualizzazione piatti per l'amministratore
+\input{uc/uc15}
+
+%caso d'uso 15.1 - Visualizzazione lista ingredienti
+\input{uc/uc15_1}
+
+%caso d'uso 15.2 - Visualizzazione dettagli prenotazione
+\input{uc/uc15_2}
+
+%caso d'uso 16 - Recupero password
+\input{uc/uc16}
+
+%caso d'uso 17 - Visualizzare lista prenotazioni (utente base)
+\input{uc/uc17}
+
+%caso d'uso 17.1 - Visualizzazione prenotazione
+\input{uc/uc17_1}
+
+%caso d'uso 18 - Applicazione coupon al conto finale
+\input{uc/uc18}
+
+%caso d'uso 19 - Conferma prenotazione (utente amministratore)
+\input{uc/uc19}
+
+%caso d'uso 20 - Rifiuto prenotazione (utente amministratore)
+\input{uc/uc20}
+
+%caso d'uso 21 - Visualizzazione recensioni e feedback
+\input{uc/uc21}
+
+%caso d'uso 22 - Risposta ad una recensione da parte dell'amministratore
+\input{uc/uc22}
+\input{uc/uc22_1}
+\input{uc/uc22_2}
+
+% caso d'uso 23
+\input{uc/uc23}
+
+\input{uc/uc24}
+
+% caso d'uso 25 Inserimento intolleranze
+\input{uc/uc25}
+
+% caso d'uso 26 Inserimento informazioni utente
+\input{uc/uc26}
+
+% caso d'uso 27 Logout
+\input{uc/uc27}
+
+% caso d'uso 28 Annullamento ordinazione
+\input{uc/uc28}
+
+\input{uc/uc29}
+\input{uc/uc29_1}
+\newpage
+
+\input{uc/uc30}
+
+% caso d'uso 31 Modifica menu' del ristorante
+\input{uc/uc31}
+
+%caso d'uso 31.1 Inserimento piatto nel menu' del ristorante
+\input{uc/uc31_1}
+
+%caso d'uso 31.2 Modifica piatto del menu' del ristorante
+\input{uc/uc31_2}
+
+%caso d'uso 31.3 Eliminazione piatto del menu' del ristorante
+\input{uc/uc31_3}
+
+%
+% INIZIO ERRORI
+%
+
+%caso d'uso E1 - Visualizzazione errore feedback non inserito
+%\input{uc/ucE1}
+
+%\input{uc/ucE2}
+
+% Requisiti
+\section{Requisiti}
+In questa sezione sono stilati i requisiti ottenuti in fase di analisi e derivanti da casi d'uso, il capitolato d'appalto e verbali sia interni che esterni. 
+\subsection{Terminologia}
+I requisiti si suddividono in:
+\begin{itemize}
+    \item ROF: requisiti obbligatori funzionali.
+    \item RDF: requisiti desiderabili funzionali.
+\end{itemize}
+\subsection{Requisiti funzionali}
+La seguente sezione dettaglia i requisiti funzionali, delineando le varie funzionalità del sistema, ovvero le azioni eseguibili dallo stesso e le informazioni che il sistema è in grado di fornire. La presenza di ciascun requisito è giustificata attraverso l'indicazione della fonte, che può essere un vaso d'Uso (UC) specifico o essere derivata direttamente dal testo del capitolato d'appalto.
+
+\begin{longtable}{|c|p{14cm}|p{2cm}|}
+    \hline
+    \emph{Codice} & \centering{\emph{Descrizione}} &  \emph{Fonte} \\
+    \hline
+    \endfirsthead
+    \endhead
+    ROF 1 & L'utente base deve poter visualizzare i pasti ordinabili & UC3, UC11\\
+    \hline
+    RDF 2 & L'utente base deve poter inserire dei parametri per filtrare i pasti ordinabili  & UC3 \\
+    \hline
+    ROF 3 & L'utente base deve poter scegliere un pasto dalla lista visualizzata & UC3 \\
+    \hline
+    ROF 4 & Il sistema deve inviare una notifica se l'utente base sta aggiungendo un piatto che contiente elementi a cui è allegerco/intollerante & UC3\\
+    \hline
+    ROF 5 & L'utente deve visualizzare i pasti con i loro ingredienti e può modificarli, aggiungendo o togliendo ingredienti & UC3\\
+    \hline
+    ROF 6 & L'utente base deve essere in grado di visualizzare il riepilogo di quanto ordinato e di confermare oppure di cancellarlo & UC3 \\
+    \hline
+    RDF 7 & Il sistema deve poter inviare una notifica (push) di prenotazione effettuata ai ristoranti& UC3 \\
+    \hline
+    ROF 8 & L'utente deve poter inserire le informazioni (data, orario, persone, nomi utenti) per effettuare una prenotazione & UC23\\
+    \hline
+    RDF 9 & Il sistema deve poter inviare una notifica (push) agli amministratore per comunicare la richiesta di prenotazione, che può accettare e rifiutare & UC23\\
+    \hline
+    ROF 10 & L'utente deve poter essere in grado di cancellare la prenotazione & UC23 \\
+    \hline
+    ROF 11 & Il sistema deve poter negare la prenotazione se il ristoranre non possiede abbastanza posti o tavoli & UC23 \\
+    \hline
+    ROF 12 & L'utente base deve poter visualizzare una lista di ristoranti filtrata per nome oppure data, luogo, tipologia cucina & UC24 \\
+    \hline
+    ROF 13 & L'utente base deve poter selezionare un ristorante  & UC3, UC23, UC4\\
+    \hline
+    ROF 14 & L'amministratore deve essere in grado di poter visualizzare una lista di prenotazioni in attesa & UC19, UC20 \\
+    \hline
+    ROF 15 & L'amministratore deve poter selezionare una specifica richiesta di prenotazione dalla lista visualizzata. & UC19, UC20 \\
+    \hline
+    ROF 16 & L'amministratore deve poter accettare la richiesta di prenotazione selezionata. & UC19 \\
+    \hline
+    ROF 17 & Il sistema aggiunge nell'area "prenotazioni" dell'utente la prenotazione & UC19 \\
+    \hline
+    ROF 18 & Il sistema deve notificare gli utenti coinvolti (nel caso di prenotazione collaborativa) l'accettazione della prenotazione. & UC19 \\
+    \hline
+    ROF 19 & Il sistema deve fornire un'interfaccia per consentire all'amministratore di verificare la disponibilità di posti in base alle specifiche della prenotazione selezionata. & UC19, UC20 \\
+    \hline
+    ROF 20 & Il sistema deve ridurre il numero di posti disponibili in base alle specifiche della prenotazione accettata. & UC19 \\
+    \hline
+    ROF 21 & L'amministratore deve poter rifuitare la richiesta di prenotazione selezionata. & UC20 \\
+    \hline
+    ROF 22 & Il sistema deve notificare gli utenti coinvolti (nel caso di prenotazione collaborativa) il rifiuto della prenotazione. & UC20 \\
+    \hline
+    ROF 23 & Il sistema deve permettere all'utente di effettuare una ricerca dei ristoranti disponibili. & UC4 \\
+    \hline
+    ROF 24 & Il sistema deve creare un canale di comunicazione tra l'utente e l'amministratore del ristorante quando l'utente lo richiede. & UC4 \\
+    \hline
+    ROF 25 & L'utente e l'amministratore devono poter scambiare messaggi in modo bidirezionale tramite l'interfaccia di comunicazione. & UC4 \\
+    \hline
+    ROF 26 & Durante la comunicazione, il sistema deve inviare notifiche push per informare l'utente e l'amministratore dei nuovi messaggi ricevuti. & UC4 \\
+    \hline
+    ROF 27 & L'utente base deve essere ingrado di cancellare le proprie prenotazioni se la data è maggiore del giorno dopo & UC13 \\ 
+    \hline
+    ROF 28 & L'utente base deve poter ricercare un ristorante per nome & UC24 \\
+    \hline
+    ROF 29 & L'utente base deve poter ricercare un ristorante per data e luogo, tipologia cucina & UC24 \\
+    \hline
+    ROF 30 & L'utente base deve poter visualizzare una lista dei ristoranti come risultato della ricerca & UC24 \\
+    \hline
+    ROF 31 & Il sistema deve permettere di pagare il conto in base alla modalità scelta (divisione equa, divisione proporzionale) da chi ha creato la ordinazione collaborativa & UC5, UC5.1, UC5.2 \\
+    \hline
+    ROF 32 & L'utente base può pagare tutto il conto se nessun utente ha pagato & UC5.3 \\
+    \hline
+    ROF 33 & L'amministratore deve poter essere in grado di modificare il menu' del proprio ristorante, aggiungendo, rimuovendo pietanze e modificando le informazioni del singolo piatto (nome, ingredienti e prezzo) & UC31 \\
+    \hline
+    RDF 34 & La modifica del menu' da parte dell'amministratore non deve causare problemi di sincronizzazione nella visualizzazione, ricerca del menu' e nell'ordinazione da parte dell'utente base &  UC3, UC11, UC31 \\
+    \hline
+    RDF 35 & Si deve permettere all'utente base di poter inserire un coupon prima di pagare il conto, che, se applicato, deve far ricalcolare al sistema il prezzo del conto & UC18 \\
+    \hline
+    ROF 36 & L'amministratore deve poter consultare il proprio ristorante e le prenotazioni associate. & UC6, UC15 \\
+    \hline
+    ROF 37 & Il sistema deve consentire all'amministratore di visualizzare la lista delle prenotazioni effettuate per il ristorante selezionato & UC15 \\
+    \hline
+    ROF 38 & L'amministratore deve poter visualizzare i dettagli completi di una specifica prenotazione & UC6 \\
+    \hline
+    ROF 39 & L'amministratore deve poter visualizzare lo stato delle ordinazioni associate alla prenotazione & UC6 \\
+    \hline
+    ROF 40 & Il sistema deve fornire all'amministratore la possibilità di visualizzare la lista totale degli ingredienti inclusi nella prenotazione & UC6 \\
+    \hline
+    ROF 41 & Il sistema deve consentire all'amministratore di visualizzare tutti gli ordini confermati per il ristorante selezionato. & UC15 \\
+    \hline
+    ROF 42 & Il sistema deve permettere di annullare l'ordinazione collaborativa nel tempo utile per farlo & UC28 \\
+    \hline
+    RDF 43 & Il sistema invia una notifica a tutti gli utenti associati alla prenotazione la cui ordinazione collaborativa è stata annullata & UC28 \\
+    \hline
+    ROF 44 & Il sistema deve fornire un'interfaccia per consentire agli utenti non autenticati di registrarsi come utenti base. & UC1 \\
+    \hline
+    ROF 45 & L'utente/L'amministratore deve poter inserire le sue informazioni personali durante la registrazione come nome, cognome, email, password ed eventuali intolleranze. & UC1, UC2 \\
+    \hline
+    ROF 46 & L'utente/L'amministratore deve poter confermare di volersi registrare con le informazioni fornite prima di completare la registrazione. & UC1, UC2 \\
+    \hline
+    ROF 47 & Il sistema deve gestire correttamente gli errori nell'inserimento delle informazioni durante la registrazione. & UC1, UC2 \\
+    \hline 
+    ROF 48 & L'utente base e l'amministratore devono poter visualizzare il menu' del ristorante selezionato & UC3, UC11\\
+    \hline
+    ROF 49 & L'amministratore deve poter modificare le informazioni del proprio ristorante (nome, indirizzo, orari, coperti e tipologia di cucina) & UC14\\
+    \hline
+    RDF 50 & La modifica delle informazioni del ristorante da parte dell'amministratore non deve causare problemi di sincronizzazione nella visualizzazione, ricerca del ristorante e nell'ordinazione da parte dell'utente base & UC3, UC14 \\
+    \hline
+    ROF 51 & L'utente autenticato deve poter visualizzare una lista con le prenotazioni passate e future & UC17 \\
+    \hline
+    ROF 52 & L'utente autenticato deve poter rilasciare una recensione (con anche una votazione di gradimento tramite stelle) sui ristoranti nei quali ha effettuato almeno una prenotazione & UC7 \\
+    \hline
+    ROF 53 & L'utente autenticato deve poter visualizzare gli ordini di un tavolo & UC8 \\
+    \hline
+    ROF 54 & L'utente autenticato deve poter visualizzare le recensioni rilasciate ed eventualmente eliminarle & UC10 \\
+    \hline
+    ROF 55 & L'utente generico può visualizzare le recensioni di un ristorante e visualizzare per ognuna di essa le relative informazioni & UC21 \\
+    \hline
+    ROF 56 & L'amministratore deve poter inserire le informazioni del ristorante di cui è amministratore & UC2 \\
+    \hline
+    ROF 57 & L'utente/L'amministratore deve poter inserire la propria email e la password durante la fase di login.  & UC12 \\
+    \hline
+    ROF 58 & Il sistema deve verificare che le informazioni inserite nel login corrispondano ad un account esistente nel sistema.  & UC12 \\
+    \hline
+    ROF 59 & Il sistema predisporre in fase di login di un'opzione per il recupero della password  & UC12 \\
+    \hline
+    ROF 60 & L'utente non autenticato deve poter inserire la propria email durante il processo di recupero password.  & UC16 \\
+    \hline
+    ROF 61 & Se l'email inserita dall'utente corrisponde a un account nel sistema, il sistema deve inviare un'email contenente un link per il recupero della password.  & UC16 \\
+    \hline
+    ROF 62 & Se l'email inserita dall'utente non corrisponde a un account nel sistema, il sistema lo mostra a schermo.  & UC16 \\
+    \hline
+    ROF 63 & L'utente deve poter accedere a una sezione dedicata tramite il link fornito nell'email di recupero password.  & UC16 \\
+    \hline
+    ROF 64 & Il sistema deve mostrare una lista di prenotazioni, ognuna con le seguenti informazioni:
+    Nome del ristorante, Data, Ora, Stato della prenotazione (se è ancora attiva o già completata) e Numero di persone coinvolte & UC17 \\
+    \hline
+    ROF 65 & Il sistema ordina la lista delle prenotazioni per data della prenotazione.  & UC17 \\
+    \hline
+    ROF 66 & L'utente autenticato deve poter accedere alla funzionalità di modifica del proprio profilo  & UC25 \\
+    \hline
+    ROF 67 & L'utente deve poter inserire le proprie allergie/intolleranze, se presenti, durante la modifica del profilo.  & UC25  \\
+    \hline
+    ROF 68 & L'utente autenticato e l'amministratore devono poter accedere alla funzionalità di modifica delle proprie informazioni utente.  & UC26  \\
+    \hline
+    ROF 69 & L'utente autenticato e l'amministratore devono poter inserire nome,cognome,mail e password nell'area di  modifica delle proprie informazioni  & UC26  \\
+    \hline
+    ROF 70 & Il sistema deve verificare che l'email inserita dall'utente autenticato/amministratore sia valida e non sia già presente nel sistema.  & UC26  \\
+    \hline
+    ROF 71 & L'utente base autenticato deve poter accedere alla funzionalità di ordinazione di un piatto.  & UC3.1  \\
+    \hline
+    ROF 72 & L'utente deve poter selezionare un piatto dalla lista dei piatti disponibili.  & UC3.1, UC9  \\
+    \hline
+    ROF 73 & Il sistema deve consentire all'utente di visualizzare, aggiungere e togliere ingredienti del piatto selezionato  & UC3.1, UC9  \\
+    \hline
+    ROF 74 & L'amministratore deve poter visualizzare le recensioni del proprio ristorante & UC22 \\ 
+    \hline
+    ROF 75 & L'amministratore deve poter rispondere alle recensioni del proprio ristorante & UC22 \\
+    \hline
+    ROF 76 & L'utente deve poter visualizzare le risposte alla proprio recensione & UC22 \\
+    \hline
+    ROF 78 & Il sistema deve poter consentire di modificare l'ordine ad un utente prima della scadenza del tempo previsto, inserendo piatti, modificando ingredienti e quantità delle pietanze ordinate & UC9 \\
+    \hline
+    RDF 79 & Il sistema permette di far visualizzare all'amministratore il dettaglio degli ingredienti necessari per ogni giornata & UC15 \\
+    \hline
+    ROF 80 & Il sistema deve consentire all'utente autenticato di selezionare l'opzione di logout & UC27 \\
+    \hline
+    ROF 81 & Dopo che l'utente ha selezionato l'opzione di logout, il sistema deve richiedere una conferma esplicita dall'utente prima di procedere con la disconnessione & UC27 \\ 
+    \hline
+    ROF 82 & Dopo aver terminato la sessione dell'utente, il sistema deve reindirizzare l'utente alla pagina di accesso o a una pagina di destinazione predefinita. & UC27 \\
+    \hline
+    ROF 83 & L'utente autenticato deve poter visualizzare le informazioni del suo profilo & UC29 \\ 
+    \hline
+    ROF 84 & L'amministratore deve poter visualizzare le informazioni del proprio ristorante & UC29.1 \\
+    \hline
+    ROF 85 & L'amministratore deve poter visualizzare tutte le chat aperte & UC30 \\
+    \hline
+    ROF 86 & L'amministratore deve poter rispondere alle chat con gli utenti & UC30 \\
+    \hline
+\end{longtable}
+\newpage
+
+\setlength{\extrarowheight}{8pt}
+\subsection{Tracciamento}
+\subsubsection{Casi d'uso come fonte}
+\begin{longtable}{|p{4cm}|p{12cm}|}
+    \hline
+    \emph{Fonte} & \centering{\emph{Requisiti}}
+    \hline
+    \endfirsthead
+    \endhead
+    UC1 & ROF 44, ROF 45, ROF 46, ROF 47 \\
+    \hline
+    UC2 & ROF 45, ROF 46, ROF 47, ROF 56  \\
+    \hline
+    UC3 & ROF 1, RDF 2, ROF 3, ROF 4, ROF 5, ROF 6, RDF 7, ROF 13, RDF 34, ROF 48, RDF 50 \\
+    \hline 
+    UC3.1 & ROF 71, ROF 72, ROF 73 \\
+    \hline
+    UC4 & ROF 13, ROF 23, ROF 24, ROF 25, ROF 26 \\
+    \hline
+    UC5 & ROF 31 \\
+    \hline
+    UC5.1 & ROF 31 \\
+    \hline
+    UC5.2 & ROF 31 \\
+    \hline
+    UC5.3 & ROF 32 \\
+    \hline
+    UC6 & ROF 36, ROF 38, ROF 39, ROF 40 \\
+    \hline
+    UC7 & ROF 52  \\
+    \hline
+    UC8 & ROF 53 \\
+    \hline
+    UC9 & ROF 72, ROF 73, ROF 78 \\
+    \hline
+    UC10 & ROF 54 \\
+    \hline
+    UC11 & ROF 1, RDF 34, ROF 48 \\
+    \hline
+    UC12 & ROF 57, ROF 58, ROF 59 \\
+    \hline
+    UC13 & ROF 27 \\
+    \hline
+    UC14 & ROF 49, RDF 50 \\
+    \hline
+    UC15 & ROF 36, ROF 37, ROF 41, RDF 79 \\
+    \hline
+    UC16 & ROF 60, ROF 61, ROF 62, ROF 63 \\
+    \hline
+    UC17 & ROF 51, ROF 64, ROF 65 \\
+    \hline
+    UC18 & RDF 35 \\
+    \hline
+    UC19 & ROF 14, ROF 15, ROF 16, ROF 17, ROF 18, ROF 19, ROF 20 \\
+    \hline
+    UC20 & ROF 14, ROF 15, ROF 19, ROF 20, ROF 22\\
+    \hline
+    UC21 & ROF 55 \\
+    \hline
+    UC22 & ROF 74, ROF 75, ROF 76 \\
+    \hline
+    UC23 & ROF 8, RDF 9, ROF 10, ROF 11, ROF 13 \\
+    \hline
+    UC24 & ROF 12, ROF 28, ROF 29, ROF 30\\
+    \hline
+    UC25 & ROF 66, ROF 67 \\
+    \hline
+    UC26 & ROF 68, ROF 69, ROF 70 \\
+    \hline
+    UC27 & ROF 80, ROF 81, ROF 82 \\
+    \hline
+    UC28 & ROF 42, RDF 43 \\
+    \hline
+    UC29 & ROF 83, ROF 84 \\
+    \hline
+    UC30 & ROF 85, ROF 86 \\
+    \hline
+    UC31 & ROF 33, RDF 34 \\
+    \hline
+
+    
+    
+\end{longtable}
+
+\end{document}

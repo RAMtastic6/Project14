@@ -1,0 +1,108 @@
+\documentclass[12pt, oneside]{article} 
+\usepackage{amsmath, amsthm, amssymb, calrsfs, wasysym, verbatim, bbm, color, graphicx, geometry, fancyhdr, url, multirow, hyperref, titlesec, tabularx, spreadtab, pgf-pie, eurosym}
+\usepackage[italian]{babel}
+\usepackage{colortbl}
+
+\geometry{tmargin=.75in, bmargin=.75in, lmargin=.75in, rmargin = .75in}
+
+% Creo subsubsubsection
+\titleclass{\subsubsubsection}{straight}[\subsection]
+
+\newcounter{subsubsubsection}[subsubsection]
+\renewcommand\thesubsubsubsection{\thesubsubsection.\arabic{subsubsubsection}}
+\renewcommand\theparagraph{\thesubsubsubsection.\arabic{paragraph}} % optional; useful if paragraphs are to be numbered
+
+\titleformat{\subsubsubsection}
+  {\normalfont\normalsize\bfseries}{\thesubsubsubsection}{1em}{}
+\titlespacing*{\subsubsubsection}
+{0pt}{3.25ex plus 1ex minus .2ex}{1.5ex plus .2ex}
+
+\makeatletter
+\renewcommand\paragraph{\@startsection{paragraph}{5}{\z@}%
+  {3.25ex \@plus1ex \@minus.2ex}%
+  {-1em}%
+  {\normalfont\normalsize\bfseries}}
+\renewcommand\subparagraph{\@startsection{subparagraph}{6}{\parindent}%
+  {3.25ex \@plus1ex \@minus .2ex}%
+  {-1em}%
+  {\normalfont\normalsize\bfseries}}
+\def\toclevel@subsubsubsection{4}
+\def\toclevel@paragraph{5}
+\def\toclevel@paragraph{6}
+\def\l@subsubsubsection{\@dottedtocline{4}{7em}{4em}}
+\def\l@paragraph{\@dottedtocline{5}{10em}{5em}}
+\def\l@subparagraph{\@dottedtocline{6}{14em}{6em}}
+\makeatother
+
+\setcounter{secnumdepth}{4}
+\setcounter{tocdepth}{4}
+% Fine creazione subsubsubsection
+
+\author{RAMtastic6}
+
+%Intestazione
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[R]{Gruppo 14 RAMtastic6\\ramtastic6@gmail.com}
+\fancyfoot[C]{\thepage}
+
+% Linea intestazione
+\renewcommand{\headrulewidth}{0pt} 
+
+% Intestazione documento
+\begin{document}
+% Salta la prima pagina per l'intestazione
+\thispagestyle{empty}
+\title{\textit{Piano di Qualifica}_G}
+\maketitle
+\begin{figure}[h]
+  \centering
+  \includegraphics[scale=0.3]{logo.png}
+\end{figure}
+\begin{center}
+    email: ramtastic6@gmail.com
+\end{center}
+
+% Informazioni sul documento
+\section*{Informazioni sul documento}
+\begin{tabular}{ll}
+Versione: & 0.0.2 \\
+Redattori: & Riccardo Z. \\
+Verificatori: & \\ 
+Destinatari: & T. Vardanega, R. Cardin, \textit{Imola Informatica}_G \\
+Uso: & Esterno
+\end{tabular}
+\newpage
+
+% Registro dei cambiamenti
+\section*{Registro dei Cambiamenti - Changelog}
+\begin{tabular}{|c|c|c|p{3cm}|p{6cm}|}
+\hline
+\textbf{Versione} & \textbf{Data} & \textbf{Autore} & \textbf{Verificatore} & \textbf{Dettaglio} \\
+\hline
+v.0.0.3 & 13-03-2024 & Riccardo Z. & N/A & Stesura delle prime versioni della sezione "\textit{Test}_Ging" e della sezione "Checklist"\\
+\hline
+v.0.0.2 & 12-03-2024 & Riccardo Z. & N/A & Stesura delle prime versioni delle sottosezioni di "Obiettivi di qualita": "Documentazione" e "Sviluppo"\\
+\hline
+v.0.0.1 & 11-03-2024 & Riccardo Z. & N/A & Prima versione, identificazione delle sezioni principali, stesura della sezione 1 "Introduzione", della sezione introduttiva di "\textit{Qualità di processo}_G" e di "\textit{Qualità di prodotto}_G" e della sottosezione "\textit{Fornitura}_G" \\
+\hline
+\end{tabular}
+\newpage
+
+
+% Sommario
+\tableofcontents
+\newpage
+\input{sections/introduzione}
+\newpage
+\input{sections/obiettivi_qualità}
+\newpage
+\input{sections/testing}
+\newpage
+\input{sections/checklist}
+\newpage
+\input{sections/cruscotto_valutazione}
+\newpage
+\input{sections/modifiche_migliorative}
+
+\end{document}

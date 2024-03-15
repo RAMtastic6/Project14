@@ -1,0 +1,322 @@
+\documentclass[12pt, oneside]{article} 
+\usepackage{amsmath, amsthm, amssymb, calrsfs, wasysym, verbatim, bbm, color, graphicx, geometry, fancyhdr, url, multirow, hyperref}
+\usepackage[italian]{babel}
+
+\geometry{tmargin=.75in, bmargin=.75in, lmargin=.75in, rmargin = .75in}
+
+
+\author{RAMtastic6}
+
+%Intestazione
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[R]{Gruppo 14 RAMtastic6\\ramtastic6@gmail.com}
+\fancyfoot[C]{\thepage}
+
+% Linea intestazione
+\renewcommand{\headrulewidth}{0pt} 
+
+% Intestazione documento
+\begin{document}
+% Salta la prima pagina per l'intestazione
+\thispagestyle{empty}
+\title{Norme Di Progetto}
+\maketitle
+\begin{figure}[h]
+  \centering
+  \includegraphics[scale=0.3]{logo.png}
+\end{figure}
+\begin{center}
+    email: ramtastic6@gmail.com
+\end{center}
+
+% Informazioni sul documento
+\section*{Informazioni sul documento}
+\begin{tabular}{ll}
+Versione: & 0.6.0 \\
+Redattori: &  Visentin S.  Basso L. Tonietto F. \\
+Verificatori: & Tonietto F. Davide B. Michele Z. Leonardo B. Riccardo Z. \\
+Destinatari: & T. Vardanega, R. Cardin, \textit{Imola Informatica}_G \\
+Uso: & Interno
+\end{tabular}
+\newpage
+
+% Registro dei cambiamenti
+\section*{Registro dei Cambiamenti - Changelog}
+\begin{tabular}{|c|c|c|p{3cm}|p{6cm}|}
+\hline
+\textbf{Versione} & \textbf{Data} & \textbf{Autore} & \textbf{Verificatore} & \textbf{Dettaglio} \\
+\hline
+v.0.6.0 & 2024-01-18 & Leonardo B. & Filippo T. & Stesura delle sezione 4 (processi organizzativi) con relative sottosezioni. \\
+\hline
+v.0.5.0 & 2024-01-09 & Michele Z. & Filippo T. & Stesura delle sezione 2.4.2 (Analisi dei requisiti)\\
+\hline
+v.0.4.2 & 2023-12-12 & Samuele V. & Filippo T. & Prima stesura della sezione 2 Processi primari \\
+\hline
+v.0.4.1 & 2023-12-09 & Samuele V. & Filippo T. & Piccole modifiche nella sezione 4. \\
+\hline
+v.0.4.0 & 2023-11-19 & Filippo T. & Riccardo Z. & Stesura della sotto-sottosezione 3.2.4 (relativa al controllo del flusso, con approfondimento sul flusso della documentazione prodotta) e della sottosezione 4.1 (breve analisi e descrizioni dei ruoli di progetto). \\
+\hline 
+v.0.3.0 & 2023-11-12 & Leonardo B. & \multirow{3}{3cm}{Michele Z. \\  Samuele V. \\ Riccardo Z.} & Stesura della sottosezione 3.2 della sezione relativa alla documentazione e modifiche relative al ciclo di vita di un documento (sottosezione 3.1, parte 3.1.3). \\
+\hline
+v.0.2.0 & 2023-11-12 & Leonardo B. & Riccardo Z. & Stesura della sezione 3.1 (Documentazione) e delle sottosezioni relative ad essa \\
+\hline
+v.0.1.0 & 2023-10-30 & Samuele V. & Filippo T. & Prima versione \\
+\hline
+\end{tabular}
+\newpage
+
+% Sommario
+\tableofcontents
+\newpage
+\section{Introduzione}
+\subsection{Scopo del documento}
+\subsection{Riferimenti}
+\subsubsection{\textit{Riferimenti normativi}_G}
+\begin{enumerate}
+    \item Presentazione del capitolato d'appalto C3 - Progetto \textit{Easy Meal}_G: \\ \url{https://www.math.unipd.it/~tullio/IS-1/2023/Progetto/C3.pdf}
+\end{enumerate}
+\subsubsection{\textit{Riferimenti informativi}_G}
+\begin{enumerate}
+    \item Lezione \emph{"I processi di ciclo di vita del software (T2)"} del corso di Ingegneria del \textit{Software}_G: \\
+    \url{https://www.math.unipd.it/~tullio/IS-1/2023/Dispense/T2.pdf}
+\end{enumerate}
+\newpage
+
+\section{Processi primari}
+\subsection{Descrizione}
+Con la locuzione "processi primari" si intendono "tutti i processi che hanno come clienti soggetti esterni al gruppo". \\
+\input{Contents/processi_primari}
+\newpage
+
+\section{Processi di supporto}
+\subsection{Documentazione}
+\subsubsection{Obiettivi}
+\subsubsection{Tipologie di documenti}
+I documenti prodotti possono essere classificati in due classi principali: ad uso interno e ad uso esterno; la prima categoria comprende:
+\begin{itemize}
+    \item Verbali interni (i quali non necessitano di versionamento)
+    \item Norme di progetto
+\end{itemize}
+La seconda categoria di documenti comprende:
+\begin{itemize}
+    \item Verbali esterni
+    \item Piano di qualifica
+    \item Piano di progetto
+    \item Analisi dei requisiti
+\end{itemize}
+\subsubsection{Ciclo di vita di un documento}
+Un documento segue le seguenti fasi di produzione:
+\begin{itemize}
+    \item Stesura: uno o più redattori si occupano di redigere il contenuto del documento.
+    \item Verifica: ad uno o più membri del gruppo, diversi da quelli che hanno redatto il documento, viene assegnato il compito di verifica del documento.
+È importante sottolineare che tutti i documenti sopracitati sono ufficiali e devono essere, quindi, preventivamente approvati da verificatori designati.
+    \item Approvazione: durante questa fase, il responsabile di progetto può decidere se approvare l'inclusione di un particolare documento all'interno del repository. Nel caso in cui il documento non venga approvato, si ritorna alla fase di stesura.
+    Se quest'ultima fase va a buon fine, vengono aggiunte informazioni di versionamento secondo quanto riportato nell'apposita sezione; infine viene caricato il documento all'interno del repository nel branch develop.
+\end{itemize}
+\subsubsection{\textit{Template}_G}
+Il gruppo ha scelto di utilizzare template LaTeX per la produzione della documentazione. Per visualizzare la struttura e utilizzare i template, è sufficiente accedere alla cartella \textit{documentazione\_interna} all'interno del repository \textit{Git}_Ghub.
+
+\subsubsection{Struttura di un documento}
+Un documento all'interno del nostro contesto segue una struttura ben definita, le sue sezioni principali includono:
+\begin{itemize}
+    \item Prima pagina: contiene il nome del gruppo e informazioni in merito al documento: uso, destinatari, redattori, verificatori, versione
+    \item Indice: elenco strutturato dei contenuti del documento
+    \item Registro dei cambiamenti: una tabella contente informazioni di versionamento relative al documento attuale; queste includono: la versione, la data, l'autore, il verificatore e una breve descrizione in merito alle modifiche apportate al documento.
+    \item Intestazione: all'interno di essa vi sono il nome e l'indirizzo email del gruppo.
+\end{itemize}
+
+N.B: I verbali non contengono il registro dei cambiamenti.
+
+\subsubsection{Strumenti}
+Per la creazione e la gestione della struttura dei documenti è stato deciso di utilizzare \textit{Overleaf}_G, un editor LaTeX online che permette la stesura collaborativa dei documenti.
+
+\subsubsection{\textit{Versionamento}_G}
+
+Il versionamento scelto per tenere traccia dei documenti è una tripletta di numeri: x.y.z.
+
+\begin{itemize}
+    \item \textit{x} è un numero intero, che fino alla release sarà $<$ 1, e indica la versione del progetto a cui il documento fa riferimento;
+    \item \textit{y} è un numero intero positivo, e rappresenta lo stato di verifica del documento;
+    \item \textit{z} è un numero intero positivo, e rappresenta il singolo cambiamento apportato al file.
+\end{itemize}
+
+
+\subsection{Controllo di configurazione}
+\subsubsection{\textit{Versionamento}_G}
+Capire come gestire i numeri di versione.
+\subsubsection{\textit{Git}_G e \textit{Git}_Ghub}
+Il gruppo RAMtastic6 ha scelto di utilizzare come strumento di versionamento \emph{\textit{Git}_GHub} e di utilizzare \emph{\textit{Git}_G} come strumento per collegarsi alla repository \textit{Git}_GHub.
+Inoltre si è scelto di utilizzare gitflow come flusso di lavoro il quale verrà discusso in modo dettagliato in seguito
+(\href{https://git-scm.com/downloads}{Link per il download dell'installer di \textit{Git}_G}).\\
+Inoltre, a questo \href{https://rogerdudler.github.io/git-guide/index.it.html}{link} si troverà una breve guida su come utilizzare git.
+In sintesi si elencano i pricipali comandi:
+\begin{itemize}
+    \item git clone \emph{link repo}\\
+    questo comando copierà la repository di github in locale
+    \item git add \emph{nome file} (oppure "." per includere tutti i file)\\
+    \emph{git add} aggiunge le modifice apportate ai files del repository, senza eseguire questo comando un file aggiunto, eliminato o modificato non verrà salvato nella repository remota tramite il comando \emph{git push}.
+    \item git commit -m "messaggio" \\
+    salva le modifche apportate ai files in locale associando a quello stato un messaggio
+    \item git push origin \emph{origine} \\
+    salva le modifiche in remoto nel branch specificato
+    \item git pull \\
+    permette di aggiornare la repo in locale e in caso di necessità esegue il merge
+\end{itemize}
+\subsubsection{Struttura del repository}
+La strutta della repository per i documenti deve essere:
+\begin{itemize}
+    \item documenti
+    \begin{itemize}
+        \item CANDIDATURA
+        \item \textit{RTB}_G
+        \item \textit{PB}_G
+    \end{itemize}
+    \item diari\_di\_bordo
+    \item documenti\_interni
+\end{itemize}
+\subsubsection{Controllo di Flusso}
+Il gruppo RAMtastic6 ha deciso di dotarsi di \textit{Git}_Gflow come sistema di controllo del flusso di lavoro, motivato dalla sua facilità d'uso e dalle potenzialità di gestione offerte per il repository. Con una lieve modifica nei comandi per l'esecuzione dei commit, come illustrato in questa \href{https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow}{guida su \textit{Git}_Gflow}, è possibile automatizzare il processo di creazione, gestione e chiusura di una feature. Ulteriori dettagli su come gestire le feature sono disponibili a questo \href{http://danielkummer.github.io/git-flow-cheatsheet/}{link}.
+\paragraph{Gestione dei Documenti}
+Unua particolare attenzione in tal senso è rivolta alla documentazione. Al fine di mantenere nel repository solamente i \textit{PDF}_G dei documenti prodotti, è stato deciso di adottare la piattaforma \href{https://www.overleaf.com/project}{\textit{Overleaf}_G} per la stesura in LaTeX dei documenti e la successiva verifica. Ogni volta che un documento viene redatto o aggiornato, verificato e portato alla versione corretta come precedentemente indicato, può essere comodamente convertito in formato \textit{PDF}_G tramite \textit{Overleaf}_G. Successivamete, il documento può essere caricato nella repository, con il push diretto sul branch \textit{develop}, soprattutto quando si parla di documentazione importante e la cui stesura è in itinere.
+
+\newpage
+\section{Processi organizzativi}
+\subsection{Ruoli di progetto}
+In questa sezione viene riportata una breve descrizione dei ruoli e delle responsabilità dei membri di un gruppo dedicato allo sviluppo di un qualsiasi tipo di \textit{project}. 
+\subsubsection{Responsabile di Progetto}
+Il Responsabile di Progetto è la figura professionale, punto di riferimento sia per il committente sia per il fornitore, con lo scopo di
+mediare tra le due parti. Assume la responsabilità delle decisioni del gruppo dopo averle approvate.\\
+Le sue responsabilità includono:
+\begin{itemize}
+    \item Approvare l’emissione della documentazione;
+    \item Approvare l’offerta economica sottoposta al committente;
+    \item Pianificare e coordinare le attività di progetto;
+    \item Gestire le risorse umane;
+    \item Studiare e gestire i rischi.
+    \item Chiedere l'approvazione dei verbali alle persone esterne che hanno partecipato
+    \item Assegnare le attività, tramite il sistema di tracking issues fornito da \textit{Jira}_G, ai membri che le dovranno svolgere
+    \item Gestire le \textit{milestones} e fissarne di nuove, o modificare quelle attuali in base all'andamento del team
+\end{itemize}
+\subsubsection{\textit{Amministratore}_G di Progetto}
+L'\textit{Amministratore}_G di Progetto è responsabile delle procedure di controllo e amministrazione dell’ambiente di
+lavoro, con piena responsabilità sulla capacità operativa e sull’efficienza.\\
+In particolare, si occupa di:
+\begin{itemize}
+    \item Ricercare, studiare e mettere in opera risorse per migliorare l’ambiente di lavoro, automatizzandolo quando possibile;
+    \item Risolvere problemi legati alla gestione dei processi;
+    \item Salvaguardare la documentazione di progetto;
+    \item Effettuare il controllo di versioni e configurazioni del prodotto software;
+    \item Redigere e attuare i piani e le procedure per la gestione della qualità.
+\end{itemize}
+\subsubsection{Analista}
+L'Analista è una figura con maggiori competenze riguardo al dominio applicativo del problema. \\
+Le sue responsabilità includono:
+\begin{itemize}
+    \item Studiare il problema e il relativo contesto applicativo;
+    \item Comprendere il problema e definire la complessità e i requisiti;
+    \item Redigere il documento "Analisi dei Requisiti";
+    \item Studiare i casi d'uso e redigere il loro relativo schema \textit{UML}_G.
+\end{itemize}
+\subsubsection{Progettista}
+Il Progettista gestisce gli aspetti tecnologici e tecnici del progetto. \\
+In particolare, si occupa di:
+\begin{itemize}
+    \item Effettuare scelte riguardanti gli aspetti tecnici e tecnologici del progetto, favorendone l'efficiacia e l'efficienza;
+    \item Definire un'architettura del prodotto da sviluppare che miri all'economicità e alla manutenibilità a partire dal lavoro svolto dall'Analista;
+    \item Redigere la "Specifica Tecnica" e la parte pragmatica del "\textit{Piano di Qualifica}_G".
+\end{itemize}
+\subsubsection{Verificatore}
+Il Verificatore è responsabile della sorveglianza sul lavoro svolto dagli altri componenti del gruppo, sulla base delle proprie competenze tecniche, esperienza e conoscenza delle norme. \\
+In particolare, si occupa di:
+\begin{itemize}
+    \item Esaminare i prodotti in fase di revisione, con l'ausilio delle tecniche e degli strumenti definiti nel presente documento;
+    \item Verificare la conformità dei prodotti ai requisiti funzionali e di qualità;
+    \item Verificare i documenti segnalando eventuali errori.
+    \item Caricare i verbali, dopo averli verificati, all'interno della repository \textit{Git}_GHub nel ramo \textit{develop}.
+\end{itemize}
+\subsubsection{Programmatore}
+Il Programmatore è incaricato della codifica del progetto e delle componenti di supporto che verranno utilizzate per eseguire prove di verifica e di validazione del prodotto. \\
+In particolare, si occupa di:
+\begin{itemize}
+    \item Implementare la "Specifica Tecnica" redatta dal Progettista;
+    \item Scrivere un codice pulito e facilmente mantenibile che rispetti le norme definite nel presente documento;
+    \item Realizzare gli strumenti per la verifica e la validazione del software;
+    \item Redigere il "\textit{Manuale Utente}_G" relativo alla propria codifica;
+    \item Redigere i verbali delle riunioni interne ed esterne del team.
+\end{itemize}
+
+\subsection{Gestione di progetto}
+
+\subsubsection{Allineamento organizzativo}
+Per l'allineamento e il coordinamento delle attività sono stati scelti due tipi di comunicazione:
+\begin{itemize}
+    \item Interne: coinvolge tutti i membri del gruppo;
+    \item Esterne: coinvolge proponenti e committenti.
+\end{itemize}
+
+\subsubsection{Comunicazioni interne}
+Le comunicazioni interne avvengono tramite le applicazioni:
+\begin{itemize}
+    \item \textit{\textit{Telegram}_G}: permette una comunicazione veloce tra i membri del gruppo e viene utilizzato principalmente per organizzare incontri interni o discutere di eventuali quesiti.
+    \item \textit{\textit{Discord}_G}: viene utilizzato dai membri del gruppo per tenere incontri interni, in quanto dispone di un canale vocale; inoltre, permette la condivisione di contenuti multimediali in streaming video.
+\end{itemize}
+
+\subsubsection{Comunicazioni esterne}
+Le comunicazioni esterne vengono gestite dal Responsabile di Progetto tramite l’utilizzo dei seguenti
+canali:
+\begin{itemize}
+    \item  Posta Elettronica: tramite l’indirizzo e-mail del gruppo \textit{ramtastic6@gmail.com}.
+    \item  \textit{\textit{Telegram}_G}: permette di instaurare un canale veloce di comunicazione con la proponente.
+\end{itemize}
+
+\subsection{Gestione organizzazione del lavoro}
+\subsubsection{Modello di sviluppo}
+Il gruppo, al fine di minimizzare ritardi e massimizzare lo svolgimento delle proprie attività, ha deciso
+di implementare il framework \textit{\textit{Scrum}_G}, che permette di dividere il tempo di lavoro in intervalli piccoli, frammentati all’interno di un periodo di circa due settimane, definito come "\textit{sprint}". In particolare, all’interno di
+questo, vengono svolte un numero di attività commisurate che devono essere completate entro i suoi termini. Individuiamo dunque una serie di fasi:
+\begin{itemize}
+    \item \textbf{sprint planning}: in questa fase, si discutono gli obbiettivi da raggiungere all'interno dello \textit{sprint}; vengono quindi pianificate le attivitá da svolgere durante lo \textit{sprint} in funzione di questi, facendo attenzione alle disponibilitá di ogni membro e preparando un preventivo per il periodo; è in questa fase, inoltre, che viene svolto il cambio dei ruoli.
+    Lo \textit{sprint planning} consiste in una riunione tenuta tramite \textit{\textit{Discord}_G} che si svolge all'inizio dello \textit{sprint} e richiede la partecipazione di tutti i membri del gruppo.
+    
+    \item \textbf{sprint review}: in questa fase, si discutono gli obiettivi da raggiunti nello \textit{sprint}. Alla fine, dovrebbe essere prodotto almeno un incremento, cioè un software utilizzabile. In particolare, in questa fase vengono definiti a consuntivo le risorse impiegate commisurate agli obiettivi, questi ultimi suddivisi in raggiunti e non raggiunti, capendo cosa va migliorato e cosa non è stato fatto per poter aggiungere ulteriori obiettivi per lo \textit{sprint} successivo;
+    
+    \item \textbf{sprint retrospective}: fase che conclude definitivamente lo \textit{sprint} appena svolto, avente l'obiettivo di valutarne l'andamento generale e cercando di capire cosa è stato fatto bene e cosa può essere migliorato. In questo modo, è meglio definire come ripianificare le attività, decidendo come iniziare/continuare/concludere attività presenti o future da realizzare.
+\end{itemize}
+
+\subsubsection{Rotazione dei ruoli}
+\'E prevista una rotazione dei ruoli all'interno del gruppo a cadenza periodica.
+L’attribuzione dei ruoli viene svolta secondo i seguenti criteri:
+\begin{itemize}
+    \item Equità;
+    \item Disponibilità;
+    \item Assenza di conflitti.
+\end{itemize}
+
+
+\subsubsection{Gestione delle attività}
+Per gestire le attività da istanziare all'interno del framework \textit{\textit{Scrum}_G}, è stato deciso di utilizzare \textit{\textit{Jira}_G}. Un'attività, definita come \textit{ticket} all'interno di \textit{\textit{Jira}_G}, ha un ciclo di vita; esso si compone di quattro stati:
+
+\begin{itemize}
+    \item \textbf{Da completare}: l'attività è stata istanziata e assegnata ad un membro del gruppo; è stata inoltre definita una stima in termini temporali associata ad essa.
+    \item \textbf{In corso}: l'attività è entrata nella fase di svolgimento; all'interno di questa fase, il membro al quale è stata assegnata ha il compito di dover inserire le informazioni di tracciamento temporale associate al \textit{ticket}; per fare ciò, basta selezionare un \textit{ticket} e andare a modificare il campo \textit{Tracciamento temporale}, inserendo il tempo impiegato fino ad ora per svolgere l'attività.
+    \item \textbf{In fase di verifica}: durante questa fase, il Verificatore si assicura che l'attività sia stata svolta correttamente e secondo dei criteri di qualità attesa (al momento, ancora da specificare).
+    \item \textbf{Completata}: l'attività è stata verificata e approvata dal Responsabile di Progetto.
+\end{itemize}
+Il passaggio di un \textit{ticket} da uno stato all'altro è responsabilità del membro al quale è stato assegnato, eccetto per lo stato di completamento; infatti, spetta al Responsabile di Progetto decidere quando un'attività risulti o meno completata.
+
+\subsection{\textit{Infrastruttura}_G}
+Strumenti per la gestione delle attività di progetto e procedure legate ad essi.
+\subsection{Miglioramento}
+Durante lo svolgimento delle attività e successiva stesura dei documenti, il gruppo si impegna ad operare secondo il \textit{principio di miglioramento continuo}, al fine di individuare facilmente attività, ruoli e possibili miglioramenti, cercando nuove o diverse soluzioni alle problematiche insorte.
+\subsection{Formazione}
+Al fine di operare continuativamente un miglioramento sulle attività svolte e proseguire nel mantenimento corretto delle attività in modo asincrono, occorre da parte di tutti i membri del gruppo lo studio in autonomia delle tecnologie e delle modalità operative presenti, al fine di velocizzare il processo di formazione e di conoscenza degli strumenti utilizzati. Si listano, al fine di
+completezza, alcune documentazioni utilizzate durante lo sviluppo, sia a livello documentale che organizzativo:
+
+\begin{itemize}
+    \item \textit{\textit{Git}_GHub}: https://docs.github.com/
+    \item \textit{\textit{Jira}_G}: https://confluence.atlassian.com/jira
+    \item \textit{\textit{Git}_G}: https://docs.github.com/en/get-started/using-git/about-git
+    \item \textit{\textit{Scrum}_G}: https://scrumguides.org/scrum-guide.html
+\end{itemize}
+\end{document}

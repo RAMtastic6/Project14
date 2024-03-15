@@ -1,0 +1,28 @@
+\subsection{UC13 - Annullamento prenotazione del tavolo} \label{usecase:13}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.75\linewidth]{ucd/ucd13.png}
+\end{figure}
+\textbf{Attori}:
+\begin{itemize}
+    \item Utente base autenticato
+\end{itemize}
+\textbf{Precondizioni}:
+\begin{itemize}
+    \item L'utente deve aver effettuato una prenotazione di un tavolo (\nameref{usecase:23})
+    \item L'utente ha selezionato la prenotazione che desidera disdire
+    \item La prenotazione deve avere ancora più di un giorno di tempo
+\end{itemize}
+\textbf{Postcondizioni}:
+\begin{itemize}
+    \item L'utente autenticato ha rimosso la sua prenotazione
+\end{itemize}
+\textbf{\textit{Trigger}_G}:
+\begin{itemize}
+    \item L'utente vuole cancellare la propria prenotazione
+\end{itemize}
+\textbf{\textit{Scenario}_G principale}:
+\begin{enumerate}
+    \item L'utente conferma la cencellazione della prenotazione
+\end{enumerate}
+\newpage

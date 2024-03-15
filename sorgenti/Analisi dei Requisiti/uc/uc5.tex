@@ -1,0 +1,33 @@
+\subsection{UC5 - Pagamento conto}\label{usecase:5}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.7\textwidth]{ucd/UCD5.png}
+\end{figure}
+\textbf{Attori}:
+\begin{itemize}
+    \item Utente base autenticato
+\end{itemize}
+\textbf{Precondizioni}:
+\begin{itemize}
+    \item L'utente deve aver prenotato un tavolo
+    \item L'utente deve aver ordinato (\nameref{usecase:3})
+\end{itemize}
+\textbf{\textit{Postcondizione}_G}:
+\begin{itemize}
+    \item Il conto del tavolo è stato pagato
+\end{itemize}
+\textbf{Scenari principali}:
+\begin{enumerate}
+    \item L'utente può selezionare tra:
+    \begin{enumerate}
+        \item divisione equa
+        \item proporzionale
+        \item pagamento totale
+    \end{enumerate}
+    \item Ogni utente può decidere se pagare solo la sua parte oppure anche le parti di altri utenti
+    \item L'amministratore riceve aggiornamenti riguardanti allo stato del conto del tavolo tramite notifiche (push-notification)
+\end{enumerate}
+\input{uc/uc5.1}
+\input{uc/uc5.2}
+\input{uc/uc5.3}
+\newpage

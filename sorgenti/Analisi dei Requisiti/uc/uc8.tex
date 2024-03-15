@@ -1,0 +1,47 @@
+\subsection{UC8 - Visualizzazioni ordini tavolo (utente)}\label{usecase:8}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.9\linewidth]{ucd/ucd8.png}
+\end{figure}
+\textbf{Attori}:
+\begin{itemize}
+    \item Utente base
+\end{itemize}
+\textbf{Precondizioni}:
+\begin{itemize}
+    \item L'utente è autenticato dal sistema
+    \item L'utente ha effettuato un ordinazione (\nameref{usecase:3})
+\end{itemize}
+\textbf{Postcondizioni}:
+\begin{itemize}
+    \item L'utente visualizza il riepilogo dell'ordine includendo anche le pietanze scelte dagli altri utenti
+\end{itemize}
+\textbf{\textit{Scenario}_G principale}:
+\begin{enumerate}
+    \item L'utente trova la lista delle ordinazioni relative al tavolo
+    \item Per ogni ordine visualizza i dettagli (\nameref{usecase:8_1})
+\end{enumerate}
+\subsubsection{UC8.1 - Visualizzazione dettagli ordine}\label{usecase:8_1}
+\textbf{Attori}:
+\begin{itemize}
+    \item Utente base
+\end{itemize}
+\textbf{Precondizioni}:
+\begin{itemize}
+    \item L'utente è autenticato dal sistema
+    \item L'utente ha prenotato un tavolo
+\end{itemize}
+\textbf{Postcondizioni}:
+\begin{itemize}
+    \item L'utente visualizza i dettagli dell'ordine
+\end{itemize}
+\textbf{\textit{Scenario}_G principale}:
+\begin{enumerate}
+    \item L'utente visualizza i dettagli dell'ordine, ovvero:
+    \begin{enumerate}
+        \item Pasto ordinato
+        \item Quantità ordinata
+        \item La persona che ha effettuato l'ordine
+    \end{enumerate}
+\end{enumerate}
+\newpage

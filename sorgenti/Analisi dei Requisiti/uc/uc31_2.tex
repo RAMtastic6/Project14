@@ -1,0 +1,31 @@
+\subsubsection{UC31.2 - Modifica piatto del menu' del ristorante}\label{usecase:31_2}
+\textbf{Attori}:
+\begin{itemize}
+    \item \textit{Amministratore}_G
+\end{itemize}
+\textbf{Precondizioni}:
+\begin{itemize}
+    \item L'utente ha inserito le informazioni sul proprio ristorante (\nameref{usecase:2_1})
+    \item L'utente ha già inserito le informazioni del piatto di cui vuole modificare le informazioni (\nameref{usecase:31_1})
+\end{itemize}
+\textbf{Postcondizioni}:
+\begin{itemize}
+    \item L'utente ha modificato le informazioni relative ad un piatto presente nel menu' del ristorante
+\end{itemize}
+\textbf{\textit{Scenario}_G principale}:
+\begin{enumerate}
+    \item L'utente sceglie un piatto presente nel menu' del ristorante
+    \item L'utente modifica le informazioni inerenti al piatto
+    \item L'utente può modificare:
+    \begin{itemize}
+        \item il nome del piatto in modo che sia comunque diverso dal nome degli altri piatti
+        \item gli ingredienti associati a tale piatto
+        \item il prezzo associato a tale piatto
+    \end{itemize}
+    \item L'utente conferma le modifiche
+\end{enumerate}
+\textbf{Scenari alternativi}:
+\begin{enumerate}
+    \item L’utente inserisce un nome di un piatto già presente nel menu’
+    \item L'utente visualizza un messaggio di errore
+\end{enumerate}

@@ -1,0 +1,440 @@
+{
+  "A": [
+    {
+      "termine": "Analisi Dei Requisiti",
+      "definizione": "fobia degli aracni"
+    },
+    {
+      "termine": "Analisi Dei Rischi",
+      "definizione": "fobia degli aracni"
+    },
+    {
+      "termine": "Applicazione Web Responsive",
+      "definizione": "fobia degli aracni"
+    },
+    {
+      "termine": "Acquisizione",
+      "definizione": "fobia degli aracni"
+    },
+    {
+      "termine": "Attore",
+      "definizione": "fobia degli aracni"
+    }
+  ],
+  "B": [
+    {
+      "termine": "Branch",
+      "definizione": "donna"
+    }
+  ],
+  "C": [
+    {
+      "termine": "Candidatura",
+      "definizione": "donna"
+    },
+    {
+      "termine": "Capitolato",
+      "definizione": "donna"
+    },
+    {
+      "termine": "Caso d'Uso",
+      "definizione": "donna"
+    },
+    {
+      "termine": "Chanelog",
+      "definizione": "donna"
+    },
+    {
+      "termine": "Codifica",
+      "definizione": "donna"
+    },
+    {
+      "termine": "Consuntivo",
+      "definizione": "donna"
+    },
+    {
+      "termine": "Controllo di Configurazione",
+      "definizione": "donna"
+    }
+  ],
+  "D": [
+    {
+      "termine": "Design",
+      "definizione": "donna"
+    },
+    {
+      "termine": "Diagramma dei Casi d'Uso",
+      "definizione": "donna"
+    },
+    {
+      "termine": "Diario di Bordo",
+      "definizione": "donna"
+    },
+    {
+      "termine": "Discord",
+      "definizione": "donna"
+    },
+    {
+      "termine": "Documento Esterno",
+      "definizione": "donna"
+    },
+    {
+      "termine": "Documento Interno",
+      "definizione": "donna"
+    }
+  ],
+  "E": [
+    {
+      "termine": "Easy Meal",
+      "definizione": "donna"
+    },
+    {
+      "termine": "Eccezione",
+      "definizione": "donna"
+    },
+    {
+      "termine": "Editor",
+      "definizione": "donna"
+    }
+  ],
+  "F": [
+    {
+      "termine": "Feature",
+      "definizione": "donna"
+    },
+    {
+      "termine": "Feedback",
+      "definizione": "donna"
+    },
+    {
+      "termine": "Fornitura",
+      "definizione": "donna"
+    },
+    {
+      "termine": "Framework",
+      "definizione": "donna"
+    },
+    {
+      "termine": "Funzionalitá",
+      "definizione": "donna"
+    }
+  ],
+  "G": [
+    {
+      "termine": "Git",
+      "definizione": "donna"
+    },
+    {
+      "termine": "Gitflow",
+      "definizione": "donna"
+    },
+    {
+      "termine": "Github",
+      "definizione": "donna"
+    }
+  ],
+  "H": [],
+  "I": [
+    {
+      "termine": "Imola Informatica",
+      "definizione": "donna"
+    },
+    {
+      "termine": "Infrastruttura",
+      "definizione": "donna"
+    },
+    {
+      "termine": "Ingegneria del software",
+      "definizione": "donna"
+    }
+  ],
+  "J": [
+    {
+      "termine": "Jira",
+      "definizione": "donna"
+    }
+  ],
+  "K": [],
+  "L": [
+    {
+      "termine": "Latex",
+      "definizione": "donna"
+    }
+  ],
+  "M": [
+    {
+      "termine": "Manuale Utente",
+      "definizione": "donna"
+    },
+    {
+      "termine": "Milestone",
+      "definizione": "donna"
+    }
+  ],
+  "N": [
+    {
+      "termine": "Norme di Progetto",
+      "definizione": "donna"
+    }
+  ],
+  "O": [
+    {
+      "termine": "Overleaf",
+      "definizione": "donna"
+    }
+  ],
+  "P": [
+    {
+      "termine": "PB",
+      "definizione": "donna"
+    },
+    {
+      "termine": "PDF",
+      "definizione": "fobia degli aracni"
+    },
+    {
+      "termine": "Piano di Progetto",
+      "definizione": "fobia degli aracni"
+    },
+    {
+      "termine": "Piano di Qualifica",
+      "definizione": "fobia degli aracni"
+    },
+    {
+      "termine": "Poc",
+      "definizione": "fobia degli aracni"
+    },
+    {
+      "termine": "Posta elettronica",
+      "definizione": "fobia degli aracni"
+    },
+    {
+      "termine": "Postcondizione",
+      "definizione": "fobia degli aracni"
+    },
+    {
+      "termine": "Precondizione",
+      "definizione": "fobia degli aracni"
+    },
+    {
+      "termine": "Prenotazione",
+      "definizione": "fase nella quale"
+    },
+    {
+      "termine": "Postcondizione",
+      "definizione": "fobia degli aracni"
+    },
+    {
+      "termine": "Preventivo",
+      "definizione": "fobia degli aracni"
+    },
+    {
+      "termine": "Principio di miglioramento continuo",
+      "definizione": "fobia degli aracni"
+    },
+    {
+      "termine": "Processo",
+      "definizione": "fobia degli aracni"
+    },
+    {
+      "termine": "Processo primario",
+      "definizione": "fobia degli aracni"
+    },
+    {
+      "termine": "Processo di supporto",
+      "definizione": "fobia degli aracni"
+    },
+    {
+      "termine": "Processo organizzativo",
+      "definizione": "fobia degli aracni"
+    },
+    {
+      "termine": "Progettazione architetturale",
+      "definizione": "fobia degli aracni"
+    },
+    {
+      "termine": "Progettazione dettagliata",
+      "definizione": "fobia degli aracni"
+    },
+    {
+      "termine": "Push",
+      "definizione": "fobia degli aracni"
+    }
+  ],
+  "Q": [
+    {
+      "termine": "Qualità di processo",
+      "definizione": "donna"
+    },
+    {
+      "termine": "Qualità di prodotto",
+      "definizione": "fobia degli aracni"
+    }
+  ],
+  "R": [
+    {
+      "termine": "RAMTASTIC6",
+      "definizione": "donna"
+    },
+    {
+      "termine": "Redattore",
+      "definizione": "fobia degli aracni"
+    },
+    {
+      "termine": "Repository",
+      "definizione": "fobia degli aracni"
+    },
+    {
+      "termine": "Requisito",
+      "definizione": "fobia degli aracni"
+    },
+    {
+      "termine": "Requisiti funzionali desiderabili",
+      "definizione": "fobia degli aracni"
+    },
+    {
+      "termine": "Requisiti funzionali obbligatori",
+      "definizione": "fobia degli aracni"
+    },
+    {
+      "termine": "Riferimento",
+      "definizione": "fobia degli aracni"
+    },
+    {
+      "termine": "Riferimenti normativi",
+      "definizione": "fobia degli aracni"
+    },
+    {
+      "termine": "Riferimenti informativi",
+      "definizione": "fobia degli aracni"
+    },
+    {
+      "termine": "Rilascio",
+      "definizione": "fobia degli aracni"
+    },
+    {
+      "termine": "Rischio",
+      "definizione": "fobia degli aracni"
+    },
+    {
+      "termine": "Rischio organizzativo",
+      "definizione": "fobia degli aracni"
+    },
+    {
+      "termine": "Rischio relativo al prodotto",
+      "definizione": "fobia degli aracni"
+    },
+    {
+      "termine": "Rischio tecnologico",
+      "definizione": "fobia degli aracni"
+    },
+    {
+      "termine": "Progettazione architetturale",
+      "definizione": "fobia degli aracni"
+    },
+    {
+      "termine": "Risorsa Umana",
+      "definizione": "fobia degli aracni"
+    },
+    {
+      "termine": "RTB",
+      "definizione": "fobia degli aracni"
+    }
+  ],
+  "S": [
+    {
+      "termine": "Scenario",
+      "definizione": "donna"
+    },
+    {
+      "termine": "Scenario principale",
+      "definizione": "fobia degli aracni"
+    },
+    {
+      "termine": "Scenario alternativo",
+      "definizione": "fobia degli aracni"
+    },
+    {
+      "termine": "Scrum",
+      "definizione": "fobia degli aracni"
+    },
+    {
+      "termine": "Sistema",
+      "definizione": "fobia degli aracni"
+    },
+    {
+      "termine": "Software",
+      "definizione": "fobia degli aracni"
+    },
+    {
+      "termine": "Sottocaso d'uso",
+      "definizione": "fobia degli aracni"
+    },
+    {
+      "termine": "Specifica tecnica",
+      "definizione": "fobia degli aracni"
+    },
+    {
+      "termine": "Sprint",
+      "definizione": "fobia degli aracni"
+    },
+    {
+      "termine": "Strumento",
+      "definizione": "fobia degli aracni"
+    }
+  ],
+  "T": [
+    {
+      "termine": "Tecnologia",
+      "definizione": "donna"
+    },
+    {
+      "termine": "Telegram",
+      "definizione": "fobia degli aracni"
+    },
+    {
+      "termine": "Template",
+      "definizione": "fobia degli aracni"
+    },
+    {
+      "termine": "Test",
+      "definizione": "fobia degli aracni"
+    },
+    {
+      "termine": "Ticket",
+      "definizione": "fobia degli aracni"
+    },
+    {
+      "termine": "Trigger",
+      "definizione": "fobia degli aracni"
+    }
+  ],
+  "U": [
+    {
+      "termine": "UML",
+      "definizione": "donna"
+    }
+  ],
+  "V": [
+    {
+      "termine": "Verbale",
+      "definizione": "donna"
+    },
+    {
+      "termine": "Verbale esterno",
+      "definizione": "donna"
+    },
+    {
+      "termine": "Verbale interno",
+      "definizione": "donna"
+    },
+    {
+      "termine": "Versionamento",
+      "definizione": "donna"
+    }
+  ],
+  "W": [],
+  "X": [],
+  "Y": [],
+  "Z": []
+}

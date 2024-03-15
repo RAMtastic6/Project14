@@ -1,0 +1,19 @@
+\subsubsection{UC5.3 - Pagamento totale}\label{usecase:5.3}
+\textbf{Attori}:
+\begin{itemize}
+    \item Utente base autenticato
+\end{itemize}
+\textbf{Precondizioni}:
+\begin{itemize}
+    \item L'utente deve aver prenotato un tavolo
+    \item L'utente deve aver ordinato (\nameref{usecase:3})
+    \item Il conto del tavolo non è ancora stato pagato parzialmente
+\end{itemize}
+\textbf{\textit{Postcondizione}_G}:
+\begin{itemize}
+    \item Il conto del tavolo è stato pagato
+\end{itemize}
+\textbf{Scenari principali}:
+\begin{enumerate}
+    \item L'utente paga per tutto il tavolo
+\end{enumerate}

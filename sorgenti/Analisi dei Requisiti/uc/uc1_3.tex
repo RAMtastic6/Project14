@@ -1,0 +1,60 @@
+\subsubsection{UC3 - Inserimento informazioni utente}\label{usecase:3}
+\textbf{Attori}: 
+\begin{itemize}
+    \item Utente non autenticato
+\end{itemize}
+\textbf{Precondizioni}:
+\begin{itemize}
+    \item L'utente non è ancora autenticato
+\end{itemize}
+\textbf{Postcondizioni}: 
+\begin{itemize}
+    \item L'utente ha inserito delle informazioni utente valide
+\end{itemize}
+\textbf{\textit{Trigger}_G}:
+\begin{itemize}
+    \item L'utente vuole inserire le informazioni utente
+\end{itemize}
+\textbf{\textit{Scenario}_G principale}:
+\begin{enumerate}
+    \item L'utente inserisce:
+    \begin{enumerate}
+        \item Nome
+        \item Cognome
+        \item Email valida %(\nameref{usecase:1_1})
+        \item Passoword che rispetta i criteri indicati %(\nameref{usecase:1_2})
+    \end{enumerate}
+\end{enumerate}
+\textbf{Scenari secondari}:
+\begin{enumerate}
+    \item Nel caso in cui l'utente lasci dei campi vuoti: 
+    \begin{enumerate}
+        \item Viene visualizzato un errore esplicativo
+        \item viene data la possibilità di inserire i valori negli appositi campi vuoti
+    \end{enumerate}
+    \item Nel caso in cui l'utente non inserisca un'email nel campo email:
+    \begin{enumerate}
+        \item Viene visualizzato un errore esplicativo
+        \item viene data la possibilità di inserire un'email nell'apposito campo
+    \end{enumerate}
+    \item Nel caso in cui l'utente inserisca un'email già registrata a sistema:
+    \begin{enumerate}
+        \item Viene visualizzato un errore esplicativo
+        \item viene data la possibilità di inserire una nuova email
+    \end{enumerate}
+    \item Nel caso in cui l'utente inserisca una password che non rispetta i vincoli imposti, quali:
+    \begin{itemize}
+        \item Password troppo corta (minore di 6 caratteri)
+        \item Password troppo lunga (maggiore di 24 caratteri)
+        \item Non sono presenti lettere maiuscole
+        \item Non sono presenti lettere minuscole
+        \item Non sono presenti cifre
+        \item Non sono presenti caratteri speciali
+    \end{itemize}
+    All'utente:
+    \begin{enumerate}
+        \item Viene visualizzato un errore esplicativo indicando i vincoli non rispettati
+        \item Viene data la possibilità di inserire una nuova password
+    \end{enumerate}
+\end{enumerate}
+\newpage
