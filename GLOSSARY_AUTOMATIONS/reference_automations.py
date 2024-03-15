@@ -31,7 +31,7 @@ def repl_all_occurrences(glossary_path: str, filename: str, content_folder: str 
         # rimpiazzo di tutte le occorrenze di una definizione
         # presente nel glossario
         for d in defs:
-            ref_string = "\\textit{" + d + "}_G"
+            ref_string = "\\textit{" + d + "_G}"
             if (d in content or d.lower() in content) and ref_string not in content:
                 content = content.replace(d, ref_string)
 
@@ -71,7 +71,7 @@ def repl_first_occurrence(glossary_path: str, filename: str, content_folder: str
         # rimpiazzo di tutte le occorrenze di una definizione
         # presente nel glossario
         for d in defs:
-            ref_string = "\\textit{" + d + "}_G"
+            ref_string = "\\textit{" + d + "_G}"
             if done[d] != True and ref_string not in content and (d in content or d.lower() in content):
                 # debug
                 # print(ref_string)
