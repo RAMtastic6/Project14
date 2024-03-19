@@ -9,6 +9,15 @@
 from GLOSSARY_AUTOMATIONS.read_json import *
 from GLOSSARY_AUTOMATIONS.read_all_files import * 
 
+
+def check_for_titles(line: str) -> bool:
+    """funzione che controlla se una stringa in latex abbia al suo interno un titolo"""
+    titles = ["textbf", "section", "subsection", "subsubsection", "\\input", "title", "\\caption"]
+    for t in titles:
+        if t in line:
+            return True
+    return False 
+
 def repl_all_occurrences(glossary_path: str, filename: str, content_folder: str = "") -> None:
     """rimpiazza tutte le occorrenze di parole contenute in un file
     chiamato filename che sono anche contenute all'interno del glossario"""
@@ -23,22 +32,43 @@ def repl_all_occurrences(glossary_path: str, filename: str, content_folder: str 
 
     for n in files: 
         # lettura del contenuto dal file 
+        # il file deve essere scomposto riga per riga
+        # in teoria basta splittare il contentuto del file
+        # e salvarsi i singoli elementi all'interno 
+        # di una lista (funzinoe list.split())
         f = open(n, "r")
         content = ""
         content = f.read()
         f.close()
 
+        # splittare il contenuto delle righe
+        lines = content.split("\n")
+        new_content = ""
+
+
         # rimpiazzo di tutte le occorrenze di una definizione
         # presente nel glossario
+        # problema: le entries della lista non sembrano modificarsi da sole.
+        count_replaced_occurrences = 0 
         for d in defs:
             ref_string = "\\textit{" + d + "_G}"
-            if (d in content or d.lower() in content) and ref_string not in content:
-                content = content.replace(d, ref_string)
+            for index, item in enumerate(lines):
+                if not check_for_titles(item) and ref_string not in item and (d in item or d.lower() in item):
+                    count_replaced_occurrences += 1 
+                    lines[index] = item.replace(d, ref_string)
+
+        
+        # ricomporre tutto contentuo all'interno di una 
+        # singola stringa 
+        for l in lines:
+            new_content += l + "\n"
+        new_content = new_content.rstrip("\n")
 
         # scrittura del contenuto all'interno del file
         f = open(n, "w")
-        f.write(content)
+        f.write(new_content)
         f.close()
+        print("nel file {} sono stati rimpiazzati {} riferimenti".format(n, count_replaced_occurrences))
 
 
 
