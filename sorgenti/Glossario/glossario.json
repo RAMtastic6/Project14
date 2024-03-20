@@ -6,431 +6,423 @@
     },
     {
       "termine": "Analisi Dei Rischi",
-      "definizione": ""
+      "definizione": "L'analisi dei rischi è il processo di identificazione, valutazione e gestione dei potenziali problemi e delle minacce che potrebbero influenzare il successo di un progetto o di un'attività. Questo processo coinvolge la valutazione dei rischi potenziali, la determinazione della loro probabilità di accadere e dell'impatto che potrebbero avere sul progetto, nonché lo sviluppo di strategie per mitigare o gestire tali rischi. L'obiettivo dell'analisi dei rischi è identificare precocemente le potenziali problematiche e adottare misure preventive o correttive per ridurre al minimo gli impatti negativi sul progetto."
     },
     {
       "termine": "Applicazione Web Responsive",
-      "definizione": ""
-    },
-    {
-      "termine": "Acquisizione",
-      "definizione": ""
+      "definizione": "Un'applicazione web progettata per adattarsi automaticamente e fornire un'esperienza utente ottimale su una varietà di dispositivi e dimensioni dello schermo, inclusi computer desktop, laptop, tablet e smartphone, utilizzando tecniche di progettazione e sviluppo che consentono all'interfaccia utente di adattarsi dinamicamente alle dimensioni del dispositivo dell'utente."
     },
     {
       "termine": "Attore",
-      "definizione": ""
+      "definizione": "Entità che interagisce con il sistema svolgendo delle attività, intesa sia come persona che come sistema terzo/esterno. Ciascuna entità è caratterizzata dall’insieme delle azioni che può compiere."
     }
   ],
   "B": [
     {
       "termine": "Branch",
-      "definizione": ""
+      "definizione": "Un ramo (branch) in GitHub è una versione separata del codice sorgente di un progetto software. Consente agli sviluppatori di lavorare su nuove funzionalità o correzioni di bug senza influenzare direttamente il codice principale (ramo principale o \"master\"). I branch sono utilizzati per sviluppare in modo isolato, consentendo agli sviluppatori di sperimentare liberamente senza compromettere la stabilità del codice principale. Una volta completate le modifiche su un ramo, è possibile integrare (mergere) le modifiche nel ramo principale tramite una richiesta di pull (pull request) per incorporare le modifiche nel codice principale."
     }
   ],
   "C": [
     {
       "termine": "Candidatura",
-      "definizione": ""
+      "definizione": "La candidatura in un contesto di progetto didattico indica l'atto attraverso il quale uno studente o un gruppo di studenti manifesta il proprio interesse a partecipare allo sviluppo di un progetto proposto dall'azienda o dall'istituzione didattica. Essa è un'azione volontaria che implica la presentazione di una proposta o di un interesse formale per essere considerati come partecipanti al progetto."
     },
     {
       "termine": "Capitolato",
-      "definizione": ""
+      "definizione": "Un capitolato è un documento tecnico allegato a un contratto di appalto, che definisce le specifiche tecniche delle opere da eseguire nel contesto del contratto stesso. Solitamente parte integrante del contratto, il capitolato stabilisce i diritti, i doveri e le particolarità relative all'esecuzione dei lavori tra le parti coinvolte. Serve da riferimento per delineare gli accordi tra i soggetti privati coinvolti nel progetto."
     },
     {
       "termine": "Caso d'Uso",
-      "definizione": ""
+      "definizione": "Un caso d'uso definisce le interazioni tra gli attori (utenti) e il sistema software, rappresentando sequenze di azioni che guidano l'utilizzo del sistema per raggiungere determinati obiettivi. Queste interazioni descrivono come il sistema deve essere utilizzato e quali funzionalità devono essere esposte agli utenti."
     },
     {
-      "termine": "Chanelog",
-      "definizione": ""
+      "termine": "Changelog",
+      "definizione": "Un changelog una sezione di documentazione che tiene traccia delle modifiche apportate a un software o a un progetto nel tempo. Esso elenca le variazioni, le correzioni di bug, le nuove funzionalità e altre modifiche significative, fornendo un registro storico delle revisioni effettuate. Il changelog è utile per gli sviluppatori e gli utenti finali per comprendere le modifiche apportate a una determinata versione del software e per monitorare l'evoluzione del prodotto nel tempo."
     },
     {
       "termine": "Codifica",
-      "definizione": ""
+      "definizione": "La codifica è il processo attraverso il quale si traducono le specifiche di progettazione in istruzioni eseguibili da un computer. Questo coinvolge la scrittura e la programmazione del codice sorgente utilizzando un linguaggio di programmazione specifico. Durante la codifica, gli sviluppatori scrivono algoritmi e istruzioni che definiscono il comportamento del software, implementando le funzionalità richieste e risolvendo i problemi identificati durante la fase di progettazione. La codifica è un passaggio cruciale nello sviluppo del software e richiede attenzione ai dettagli e competenze tecniche specifiche."
     },
     {
       "termine": "Consuntivo",
-      "definizione": ""
+      "definizione": "Il consuntivo è un rapporto che confronta le previsioni o le stime con i dati effettivi o reali, al fine di valutare le variazioni e le differenze tra ciò che era previsto e ciò che è stato effettivamente raggiunto. Nell'ambito dello sviluppo del software o di altri progetti, il consuntivo può essere utilizzato per analizzare il bilancio finanziario, il tempo impiegato, le risorse utilizzate e altre metriche di progetto. Fornisce una valutazione critica delle prestazioni e dell'efficacia del progetto, consentendo di prendere decisioni informate e di apportare eventuali correzioni di rotta necessarie per mantenere il progetto sul giusto percorso."
     },
     {
       "termine": "Controllo di Configurazione",
-      "definizione": ""
+      "definizione": "Il controllo di configurazione è un processo utilizzato nel campo dello sviluppo del software per gestire le modifiche alla configurazione e alla struttura del software stesso. Coinvolge l'identificazione, la registrazione, la revisione e l'approvazione delle modifiche apportate al codice sorgente, alla documentazione, ai file di configurazione e ad altri elementi del progetto. Il controllo di configurazione aiuta a mantenere la coerenza e l'integrità del sistema software durante l'evoluzione del progetto, garantendo che le modifiche vengano gestite in modo ordinato e tracciabile. Questo processo è essenziale per il mantenimento della qualità del software e per garantire che tutte le versioni e le varianti del sistema siano correttamente documentate e controllate."
     }
   ],
   "D": [
     {
       "termine": "Design",
-      "definizione": ""
+      "definizione": "Il design nel contesto dello sviluppo del software è la fase in cui vengono definiti l'architettura, la struttura e le specifiche dettagliate del sistema software da creare. Questo processo include la progettazione dell'interfaccia utente, la scelta delle tecnologie e dei linguaggi di programmazione, nonché la pianificazione dell'implementazione del sistema. È una fase cruciale che assicura un'organizzazione efficiente e logica delle funzionalità del software, garantendo la sua scalabilità, manutenibilità e facilità d'uso."
     },
     {
       "termine": "Diagramma dei Casi d'Uso",
-      "definizione": ""
+      "definizione": "Il diagramma dei casi d'uso è una rappresentazione grafica delle interazioni tra gli attori esterni e il sistema software. È composto da attori, casi d'uso e le relazioni tra di essi, e fornisce una panoramica visiva delle funzionalità offerte dal sistema e dei suoi utilizzi da parte degli attori. Questo strumento aiuta a comprendere i requisiti funzionali del sistema, le interazioni tra gli utenti e il sistema stesso, e fornisce una base per la progettazione e lo sviluppo del software."
     },
     {
       "termine": "Diario di Bordo",
-      "definizione": ""
+      "definizione": "Il diario di bordo è un documento utilizzato per registrare in modo sistematico le attività svolte, le decisioni prese, gli eventi significativi e le osservazioni durante lo sviluppo di un progetto. Serve come registro dettagliato del lavoro svolto, delle sfide affrontate e delle soluzioni adottate nel corso del tempo. Il diario di bordo aiuta a tracciare il progresso del progetto, a monitorare le scadenze, a identificare eventuali problemi e a documentare le lezioni apprese per migliorare i processi futuri."
     },
     {
       "termine": "Discord",
-      "definizione": ""
+      "definizione": "Discord è una piattaforma di comunicazione vocale e testuale progettata per la collaborazione remota, la formazione online e la comunicazione tra gruppi di persone. Offre funzionalità come chat di testo e vocali, canali organizzati per argomento, server personalizzabili, integrazioni con altre applicazioni e molto altro. Discord è ampiamente apprezzato per la sua facilità d'uso, la scalabilità e la ricchezza di funzionalità, rendendolo una scelta popolare per la comunicazione online."
     },
     {
       "termine": "Documento Esterno",
-      "definizione": ""
+      "definizione": "Un documento esterno è un'opera o un insieme di documenti che sono destinati a essere condivisi con terzi al di fuori del gruppo di sviluppo o dell'organizzazione. Questi documenti possono includere proposte di progetto, rapporti di avanzamento, documenti di requisiti, manuali utente, documenti di consegna o qualsiasi altra documentazione destinata ad aziende proponenti, clienti, i professori o altri stakeholder esterni al processo di sviluppo. La creazione e la gestione accurata dei documenti esterni sono cruciali per garantire una comunicazione chiara, trasparente ed efficace con gli interessati esterni al progetto."
     },
     {
       "termine": "Documento Interno",
-      "definizione": ""
+      "definizione": "Un documento interno è un file o un insieme di documenti utilizzati all'interno del gruppo di sviluppo o dell'organizzazione per scopi di comunicazione, pianificazione, gestione o documentazione. Questi documenti possono includere specifiche tecniche, documenti di progettazione, diagrammi, report di progresso, verbali delle riunioni, linee guida interne o qualsiasi altra documentazione destinata esclusivamente all'uso all'interno del team di lavoro. La creazione e la gestione efficace dei documenti interni sono fondamentali per garantire una collaborazione efficiente, un flusso di lavoro organizzato e una condivisione accurata delle informazioni all'interno del gruppo."
     }
   ],
   "E": [
     {
       "termine": "Easy Meal",
-      "definizione": ""
+      "definizione": "Easy Meal è un progetto sviluppato con l'obiettivo di semplificare il processo di prenotazione dei tavoli nei ristoranti, offrendo agli utenti la possibilità di pianificare in anticipo il proprio pasto. Con Easy Meal, gli utenti possono prenotare facilmente un tavolo, selezionare le loro preferenze alimentari e ordinare il cibo desiderato in anticipo, consentendo loro di godersi un'esperienza gastronomica senza problemi e senza attese. Grazie a questa piattaforma intuitiva e user-friendly, prenotare un tavolo e decidere cosa mangiare diventa un'esperienza semplice e piacevole per tutti i clienti dei ristoranti."
     },
     {
       "termine": "Eccezione",
-      "definizione": ""
+      "definizione": "Un'anomalia o evento imprevisto durante l'esecuzione di un programma, interrompendo il flusso normale. Può essere causata da errori di programmazione, input non validi o condizioni impreviste. Richiede una gestione appropriata per mantenere la stabilità del software."
     },
     {
       "termine": "Editor",
-      "definizione": ""
+      "definizione": "Un'applicazione software utilizzata per creare, modificare e gestire file di testo o codice sorgente. Fornisce funzionalità come formattazione del testo, ricerca e sostituzione, e strumenti per la gestione dei progetti."
     }
   ],
   "F": [
     {
       "termine": "Feature",
-      "definizione": ""
+      "definizione": "Una caratteristica o funzionalità specifica di un prodotto software. Le feature definiscono il comportamento o le capacità del software e possono includere qualsiasi cosa, dalle semplici azioni dell'utente alle complesse operazioni di sistema. Le feature sono progettate per soddisfare determinati requisiti o fornire determinati vantaggi agli utenti finali. Possono essere descritte attraverso specifiche funzionali, requisiti o casi d'uso e sono spesso evidenziate durante lo sviluppo del software per garantire che il prodotto finale soddisfi le aspettative degli utenti."
     },
     {
       "termine": "Feedback",
-      "definizione": ""
+      "definizione": "Opinioni, valutazioni o commenti forniti dagli utenti o dagli stakeholder su un prodotto, un servizio o un'esperienza. Il feedback può riguardare diversi aspetti, come l'usabilità, le prestazioni, le funzionalità o il design di un'applicazione software. È importante raccogliere, analizzare e utilizzare il feedback per migliorare continuamente il prodotto o il servizio, soddisfare le esigenze degli utenti e garantire una migliore esperienza complessiva."
     },
     {
       "termine": "Fornitura",
-      "definizione": ""
+      "definizione": "Riferito al settore ristorativo, la fornitura si riferisce alla consegna e alla disponibilità di beni o prodotti utilizzati all'interno di un ristorante. Questi beni possono includere ingredienti alimentari, bevande, materiali per la preparazione dei cibi, utensili da cucina, stoviglie, ecc. La gestione efficace delle forniture è cruciale per garantire che il ristorante abbia sempre a disposizione ciò di cui ha bisogno per fornire i suoi servizi in modo efficiente e soddisfacente per i clienti. Ciò può includere la pianificazione degli ordini, la gestione dell'inventario, la ricerca di fornitori affidabili e la negoziazione dei prezzi."
     },
     {
       "termine": "Framework",
-      "definizione": ""
+      "definizione": "Un framework è un'infrastruttura software che fornisce un'organizzazione predefinita per lo sviluppo di applicazioni. Essenzialmente, è una struttura di supporto su cui è possibile costruire e organizzare il codice. I framework forniscono una serie di librerie, modelli di progettazione, componenti e strumenti che semplificano lo sviluppo di software, consentendo agli sviluppatori di concentrarsi sulla logica dell'applicazione anziché dover reinventare ogni singolo aspetto da zero. Sono spesso progettati per affrontare problemi comuni nello sviluppo di software, come la gestione delle richieste web, la manipolazione dei dati, la sicurezza e altro ancora. I framework possono essere generici o specifici per determinati tipi di applicazioni o linguaggi di programmazione."
     },
     {
       "termine": "Funzionalitá",
-      "definizione": ""
+      "definizione": "Le funzionalità si riferiscono alle capacità o agli attributi specifici di un software, di un'applicazione o di un sistema che consentono agli utenti di eseguire determinate azioni o di ottenere determinati risultati. Le funzionalità sono le varie operazioni, servizi o caratteristiche che un prodotto software offre agli utenti per soddisfare determinati scopi o necessità. Possono includere azioni interattive, processi automatizzati, visualizzazioni dei dati, strumenti di gestione e altro ancora. Le funzionalità sono progettate per rispondere ai requisiti e alle esigenze degli utenti, migliorare l'usabilità del software e offrire un'esperienza soddisfacente agli utenti finali."
     }
   ],
   "G": [
     {
       "termine": "Git",
-      "definizione": ""
+      "definizione": "Git è un sistema di controllo versione distribuito utilizzato principalmente nello sviluppo software. Consente agli sviluppatori di tenere traccia delle modifiche apportate al codice sorgente nel corso del tempo, coordinare il lavoro con altri membri del team e gestire le diverse versioni di un progetto in modo efficiente. Git consente di creare repository (archivi di file sorgente e cronologia delle modifiche) sia localmente che su server remoti, facilitando la collaborazione tra sviluppatori distribuiti geograficamente. È ampiamente utilizzato nell'industria del software per gestire progetti di qualsiasi dimensione e complessità."
     },
     {
       "termine": "Gitflow",
-      "definizione": ""
+      "definizione": "GitFlow è un modello di branching e di workflow basato su Git, progettato per gestire progetti software con un ciclo di sviluppo complesso e ramificato. Questo approccio fornisce una struttura chiara per la gestione delle diverse fasi dello sviluppo, inclusi i rilasci, le correzioni di bug e le nuove funzionalità. GitFlow prevede l'utilizzo di due branch principali, \"master\" e \"develop\", oltre a una serie di branch temporanei per le funzionalità in sviluppo, i bugfix e i rilasci. Questo modello facilita il lavoro in team e la collaborazione su progetti complessi, consentendo di mantenere una storia di versionamento pulita e organizzata."
     },
     {
       "termine": "Github",
-      "definizione": ""
+      "definizione": "GitHub è una piattaforma di hosting di codice sorgente basata su Git, che fornisce strumenti per la gestione dei repository, la collaborazione tra sviluppatori e il controllo delle versioni dei progetti software. Su GitHub, gli sviluppatori possono caricare i propri progetti, tenere traccia delle modifiche tramite commit, creare e gestire branch, collaborare con altri utenti tramite problemi e richieste di pull, e distribuire le proprie applicazioni. È ampiamente utilizzato sia da sviluppatori individuali che da team di sviluppo per lo sviluppo di software open source e progetti privati."
     }
   ],
   "H": [],
   "I": [
     {
       "termine": "Imola Informatica",
-      "definizione": ""
+      "definizione": "Imola Informatica, proponente del progetto Easy Meal, è una società indipendente di consulenza IT. Tutto ciò che riguarda il mondo dell’information technology la riguarda, gli interessa e appassiona. Entrano in gioco ogni volta in cui una azienda pubblica o privata vuole migliorare i propri servizi. Innovare i propri processi di lavoro, gli approcci di management per cogliere le opportunità business offerte dalla trasformazione digitale. Sono a servizio dei principali gruppi finanziari e assicurativi e ogni giorno sono a fianco di grandi aziende e piccole startup nel gestire il cambiamento tecnologico e culturale."
     },
     {
       "termine": "Infrastruttura",
-      "definizione": ""
+      "definizione": "L'infrastruttura rappresenta l'insieme degli elementi fisici e tecnologici necessari per il funzionamento di un sistema o di un'applicazione. Questi elementi includono hardware, software, reti, server, database e tutte le risorse e le tecnologie utilizzate per supportare le operazioni di un'organizzazione o di un progetto. Nell'ambito del progetto Easy Meal, l'infrastruttura potrebbe comprendere i server per l'hosting dell'applicazione, i database per la gestione dei dati dei ristoranti e degli utenti, nonché la rete e gli strumenti di sicurezza necessari per garantire il corretto funzionamento e la protezione del sistema."
     },
     {
       "termine": "Ingegneria del software",
-      "definizione": ""
+      "definizione": "L'ingegneria del software è un insieme di principi e pratiche utilizzati per progettare, sviluppare, mantenere, testare e valutare il software per computer. Le relative tecniche vengono impiegate per guidare il processo di sviluppo del software, che comprende la definizione, l'implementazione, la valutazione, la misurazione, la gestione, il cambiamento e il miglioramento del ciclo di vita del software. Questa disciplina pone un forte accento sulla gestione della configurazione del software, che implica il controllo sistematico delle modifiche alla configurazione e il mantenimento dell'integrità e della tracciabilità della configurazione e del codice durante tutto il ciclo di vita del sistema, mediante l'uso del versioning del software."
     }
   ],
   "J": [
     {
       "termine": "Jira",
-      "definizione": ""
+      "definizione": "Jira è una piattaforma di gestione del lavoro e dei progetti utilizzata per tracciare le attività, assegnare compiti, pianificare progetti e collaborare tra membri del team. Fornisce strumenti per la gestione delle attività, il monitoraggio dello stato dei progetti, la creazione di report e la comunicazione all'interno del team. Jira è ampiamente utilizzato nello sviluppo software e in altri settori per organizzare e coordinare il lavoro di squadra."
     }
   ],
   "K": [],
   "L": [
     {
       "termine": "Latex",
-      "definizione": ""
+      "definizione": "LaTeX viene spesso utilizzato per redigere documenti tecnici, come specifiche dei requisiti, documenti di progetto, manuali utente e rapporti di testing. La sua struttura modulare, la gestione avanzata della formattazione e la facilità nel gestire equazioni matematiche e tabelle lo rendono una scelta popolare tra gli sviluppatori e i professionisti del settore. LaTeX consente inoltre di mantenere una formattazione uniforme e di automatizzare alcune operazioni, rendendo più efficiente il processo di documentazione del progetto. "
     }
   ],
   "M": [
     {
       "termine": "Manuale Utente",
-      "definizione": ""
+      "definizione": "Il Manuale Utente è un documento che fornisce istruzioni dettagliate su come utilizzare un determinato prodotto software o sistema. È destinato agli utenti finali e fornisce indicazioni chiare e concise su come eseguire le diverse operazioni, navigare nell'interfaccia utente e sfruttare le funzionalità offerte dal software. Il manuale utente può includere tutorial, guide passo-passo, spiegazioni delle funzionalità e istruzioni per la risoluzione dei problemi comuni. L'obiettivo principale del manuale utente è quello di consentire agli utenti di utilizzare il software in modo efficace ed efficiente, migliorando così l'esperienza complessiva dell'utente. "
     },
     {
       "termine": "Milestone",
-      "definizione": ""
+      "definizione": "Una milestone è un punto di riferimento significativo o un obiettivo importante all'interno di un progetto, utilizzato per misurare il progresso e il raggiungimento di determinati traguardi. Le milestone sono solitamente associate a date specifiche o a completamenti di specifiche attività o fasi di un progetto. Servono come punti di controllo per valutare se il progetto sta procedendo secondo i piani e per identificare eventuali ritardi o problemi. Le milestone possono essere utilizzate anche per comunicare i progressi del progetto alle parti interessate e per stabilire scadenze chiare e tangibili per il completamento delle attività. "
     }
   ],
   "N": [
     {
       "termine": "Norme di Progetto",
-      "definizione": ""
+      "definizione": "In questo documento sono riportate tutte le linee guida tecniche e procedurali stabilite per regolare l'esecuzione e il controllo di un progetto. Questo documento definisce standard e procedure relative all'organizzazione del lavoro, alla metodologia di sviluppo, alla gestione dei documenti, delle configurazioni e dei rischi, nonché alla pianificazione e al monitoraggio delle attività del progetto. "
     }
   ],
   "O": [
     {
       "termine": "Overleaf",
-      "definizione": ""
+      "definizione": "Overleaf è una piattaforma online per la scrittura collaborativa di documenti LaTeX. Consente agli utenti di creare e modificare documenti LaTeX direttamente nel browser, senza la necessità di installare software aggiuntivo sul proprio computer. Overleaf offre strumenti per la gestione dei progetti, il controllo delle versioni, la compilazione automatica dei documenti e la condivisione dei lavori con altri collaboratori. È particolarmente popolare nell'ambito accademico e scientifico per la sua facilità d'uso e la possibilità di collaborare in tempo reale. "
+    },
+	{
+      "termine": "Ordinazione",
+      "definizione": "Nella fase di ordinazione, l'utente seleziona e richiede un piatto specifico dal menu virtuale disponibile sull'applicazione o sul sito web. Durante questa fase, l'utente esplora le opzioni del menu, visualizza le descrizioni dei piatti, seleziona gli elementi desiderati e invia la propria richiesta di ordine al ristorante. "
     }
   ],
   "P": [
     {
       "termine": "PB",
-      "definizione": ""
+      "definizione": "PB è l'abbreviazione di \"Product Backlog\" (Lista delle attività da svolgere sul prodotto), che rappresenta l'insieme prioritizzato dei requisiti e delle funzionalità che devono essere implementati nel prodotto durante lo sviluppo. È una componente fondamentale della metodologia Agile e viene utilizzato per pianificare, gestire e monitorare l'evoluzione del progetto. La lista è dinamica e può essere aggiornata durante lo sviluppo del prodotto in base alle esigenze emergenti del cliente e del team di sviluppo. "
     },
     {
       "termine": "PDF",
-      "definizione": ""
+      "definizione": "Il Portable Document Format (PDF) è un formato di file sviluppato da Adobe che consente di rappresentare documenti in modo indipendente dall'hardware e dal software utilizzati per crearli o visualizzarli. I file PDF mantengono la formattazione originale del documento, inclusi testo, immagini e layout, consentendo la condivisione e la visualizzazione coerenti su diverse piattaforme e dispositivi. "
     },
     {
       "termine": "Piano di Progetto",
-      "definizione": ""
+      "definizione": "Il Piano di Progetto è un documento che definisce gli obiettivi, le risorse, le attività e le scadenze necessarie per completare con successo un progetto. Include la pianificazione delle attività, la suddivisione dei compiti, la stima dei tempi e dei costi, nonché le strategie per gestire i rischi e rispettare le scadenze. Il Piano di Progetto fornisce una guida dettagliata per il team di progetto e per gli stakeholder, consentendo una gestione efficace e un monitoraggio delle attività lungo tutto il ciclo di vita del progetto. "
     },
     {
       "termine": "Piano di Qualifica",
-      "definizione": ""
+      "definizione": "Il Piano di Qualifica è un documento che definisce le strategie, le attività e le risorse necessarie per garantire che il prodotto soddisfi i requisiti di qualità stabiliti. Esso descrive le procedure di verifica e validazione che verranno utilizzate per valutare e confermare che il prodotto soddisfi gli standard di qualità definiti. Include anche gli obiettivi di qualità, le metriche di valutazione, i criteri di accettazione e le responsabilità del team per garantire che il prodotto finale sia conforme alle aspettative del cliente. Il Piano di Qualifica è essenziale per garantire che il prodotto sia testato in modo rigoroso e che soddisfi gli standard di qualità richiesti. "
     },
     {
       "termine": "Poc",
-      "definizione": ""
+      "definizione": "Il  Proof of Concept(POC) è una realizzazione preliminare o parziale di un progetto, finalizzata a dimostrare la fattibilità delle idee e delle tecnologie coinvolte nel progetto stesso, basandosi su principi o concetti fondamentali. Essa costituisce un prototipo, utilizzato per valutare la fattibilità del progetto. "
     },
     {
       "termine": "Posta elettronica",
-      "definizione": ""
+      "definizione": "La posta elettronica è un sistema di comunicazione che consente agli utenti di inviare e ricevere messaggi tramite internet. I messaggi sono inviati e ricevuti elettronicamente attraverso server di posta elettronica, consentendo agli utenti di comunicare in modo rapido e efficiente a distanza. "
     },
     {
       "termine": "Postcondizione",
-      "definizione": ""
+      "definizione": "La postcondizione è lo stato del sistema o le condizioni che devono essere soddisfatte dopo l'esecuzione di un caso d'uso specifico. Indica lo stato o le modifiche che il sistema dovrebbe avere raggiunto al termine del caso d'uso. "
     },
     {
       "termine": "Precondizione",
-      "definizione": ""
+      "definizione": "La precondizione è uno stato o una condizione del sistema che deve essere soddisfatta affinché un caso d'uso possa essere eseguito con successo. Indica lo stato iniziale o le circostanze necessarie perché il caso d'uso possa essere avviato e completato correttamente. "
     },
     {
       "termine": "Prenotazione",
-      "definizione": "fase nella quale"
-    },
-    {
-      "termine": "Postcondizione",
-      "definizione": ""
+      "definizione": "La prenotazione è la fase del processo in cui l'utente desidera prenotare un tavolo presso un ristorante utilizzando l'applicazione. Durante questa fase, l'utente inserisce i dettagli della prenotazione, come la data, l'orario, il numero di persone e eventuali altre richieste. Una volta completata la prenotazione, il sistema invia una conferma all'utente e al ristorante, cercando di fare in modo che il tavolo sia riservato per il momento richiesto. "
     },
     {
       "termine": "Preventivo",
-      "definizione": ""
+      "definizione": "Il preventivo è un'analisi stimata dei costi e delle risorse necessarie per lo sviluppo e l'implementazione di un progetto software. Include valutazioni delle ore di lavoro, delle risorse di sviluppo e delle eventuali spese. Il preventivo serve a pianificare e gestire le risorse disponibili per il progetto, nonché a garantire che il lavoro venga completato entro i limiti temporali e finanziari stabiliti. "
     },
     {
       "termine": "Principio di miglioramento continuo",
-      "definizione": ""
+      "definizione": "Il principio di miglioramento continuo si riferisce alla pratica di costante riflessione e aggiornamento delle metodologie, dei processi e degli strumenti impiegati nel ciclo di vita del software. Si adotta questo principio per valutare costantemente il proprio lavoro, identificare punti di forza e di debolezza e apportare miglioramenti incrementali. Questo approccio mira a ottimizzare l'efficienza, la qualità e l'efficacia del lavoro svolto, consentendo al team di adattarsi ai cambiamenti, risolvere eventuali problemi e perseguire un costante progresso nel raggiungimento degli obiettivi del progetto. "
     },
     {
       "termine": "Processo",
-      "definizione": ""
+      "definizione": "Successione di eventi/attività che producono un risultato visibile e concreto. Deve essere condotto in modo sistematico, disciplinato e misurabile."
     },
     {
       "termine": "Processo primario",
-      "definizione": ""
+      "definizione": "Il processo primario si riferisce alle attività direttamente coinvolte nella creazione del prodotto software o nel fornire valore diretto al cliente. Questi processi sono centrali per il raggiungimento degli obiettivi del progetto e includono attività come analisi dei requisiti, progettazione, implementazione, test e consegna del software."
     },
     {
       "termine": "Processo di supporto",
-      "definizione": ""
+      "definizione": "I processi di supporto forniscono assistenza e risorse per i processi primari e organizzativi. Questi processi includono attività come la gestione della configurazione, la gestione della qualità, la formazione, la gestione delle risorse e la gestione dei rischi. L'obiettivo dei processi di supporto è quello di garantire che i processi primari e organizzativi siano eseguiti in modo efficiente ed efficace."
     },
     {
       "termine": "Processo organizzativo",
-      "definizione": ""
+      "definizione": "I processi organizzativi sono responsabili della gestione e del coordinamento delle attività all'interno dell'organizzazione. Questi processi includono la definizione delle politiche e delle procedure aziendali, la pianificazione strategica, la gestione dei progetti e la comunicazione interna ed esterna. Gli obiettivi dei processi organizzativi sono quello di garantire che l'organizzazione abbia una struttura e un'infrastruttura adeguate per supportare l'esecuzione dei processi primari e di supporto."
     },
     {
       "termine": "Progettazione architetturale",
-      "definizione": ""
+      "definizione": "La progettazione architetturale è il processo di definizione della struttura di base di un sistema software, che include l'identificazione dei componenti, delle loro interazioni e delle decisioni di progettazione chiave. L'obiettivo è garantire che il software soddisfi i requisiti funzionali e non funzionali. "
     },
     {
       "termine": "Progettazione dettagliata",
-      "definizione": ""
+      "definizione": "La progettazione dettagliata è la fase del processo di sviluppo del software in cui i dettagli tecnici dell'architettura definita nella progettazione architetturale vengono elaborati in modo più specifico. Questo include la definizione delle singole componenti, dei loro comportamenti, delle interfacce e delle relazioni tra di esse. La progettazione dettagliata fornisce una guida chiara per l'implementazione del sistema software. "
     },
     {
       "termine": "Push",
-      "definizione": ""
+      "definizione": "Il push è un'operazione utilizzata in Git per inviare le modifiche locali apportate al repository locale verso un repository remoto. Questo consente di condividere le modifiche con altri membri del team o di archiviarle su un server remoto come GitHub. "
     }
   ],
   "Q": [
     {
       "termine": "Qualità di processo",
-      "definizione": ""
+      "definizione": "La qualità di processo si riferisce alla misura in cui un processo software è ben pianificato, gestito ed eseguito per raggiungere gli obiettivi di sviluppo del software in modo efficiente ed efficace."
     },
     {
       "termine": "Qualità di prodotto",
-      "definizione": ""
+      "definizione": "La qualità di prodotto si riferisce alla misura in cui un prodotto software soddisfa i requisiti specificati e le aspettative degli utenti, fornendo funzionalità affidabili, sicure e adatte all'uso previsto."
     }
   ],
   "R": [
     {
       "termine": "RAMTASTIC6",
-      "definizione": ""
+      "definizione": "Gruppo di sviluppo dell’intero progetto didattico inerente al corso didattico “Ingegneria del Software” composto da 6 studenti del corso di Informatica dell’università di Padova."
     },
     {
       "termine": "Redattore",
-      "definizione": ""
+      "definizione": "Un redattore è un individuo responsabile della stesura di documenti tecnici o di altro genere all'interno di un progetto. Il redattore assicura che i documenti siano chiari, accurati e coerenti. "
     },
     {
       "termine": "Repository",
-      "definizione": ""
+      "definizione": "Un repository è uno spazio di archiviazione digitale utilizzato per conservare, gestire e condividere file e dati relativi a un progetto. Può essere utilizzato per memorizzare codice sorgente, documentazione, risorse grafiche e altri file pertinenti al progetto. Un repository facilita la collaborazione tra membri del team consentendo loro di accedere, modificare e aggiornare i file in modo coordinato. "
     },
     {
       "termine": "Requisito",
-      "definizione": ""
+      "definizione": "Un requisito è una specifica o una condizione necessaria che un sistema, un prodotto o un servizio deve soddisfare per essere accettabile, utile o in grado di raggiungere determinati obiettivi. I requisiti vengono definiti durante il processo di analisi dei requisiti per guidare lo sviluppo e valutare il successo del progetto. "
     },
     {
       "termine": "Requisiti funzionali desiderabili",
-      "definizione": ""
+      "definizione": "I requisiti funzionali desiderabili sono quelli che, se soddisfatti, migliorerebbero l'esperienza dell'utente o aggiungerebbero valore al sistema, ma non sono considerati essenziali per il suo funzionamento di base. "
     },
     {
       "termine": "Requisiti funzionali obbligatori",
-      "definizione": ""
+      "definizione": "I requisiti funzionali obbligatori sono quei requisiti indispensabili per il corretto funzionamento del sistema o del prodotto, senza i quali il sistema non può essere considerato soddisfacente. "
     },
     {
       "termine": "Riferimento",
-      "definizione": ""
+      "definizione": "Un riferimento in un documento si riferisce a un'informazione, un'idea o una fonte esterna che viene citata, menzionata o utilizzata come punto di riferimento per comprendere o supportare il contenuto del documento stesso. Può includere link ipertestuali, citazioni bibliografiche, numeri di pagina o altre forme di indicazioni che facilitano la consultazione o il richiamo ad altre fonti o parti del documento. "
     },
     {
       "termine": "Riferimenti normativi",
-      "definizione": ""
+      "definizione": "Sono quei riferimenti che indicano norme, standard o regolamenti ufficiali che devono essere rispettati durante lo svolgimento di un progetto o l'elaborazione di un documento. Questi possono includere leggi, direttive settoriali, standard di qualità o normative specifiche del settore."
     },
     {
       "termine": "Riferimenti informativi",
-      "definizione": ""
+      "definizione": "Si riferiscono a documenti, pubblicazioni o fonti informative che forniscono ulteriori dettagli, contestualizzazioni o approfondimenti relativi al contenuto del documento principale, ma non sono considerati vincolanti o obbligatori per il progetto o l'elaborazione del documento stesso."
     },
     {
       "termine": "Rilascio",
-      "definizione": ""
+      "definizione": "Il rilascio è un'istanza specifica di un prodotto software che è stato messo a disposizione degli utenti finali o dei clienti. Indica il momento in cui una determinata versione del software è pronta per essere distribuita e utilizzata dagli utenti. Un rilascio può includere nuove funzionalità, correzioni di bug, miglioramenti delle prestazioni o altre modifiche significative rispetto alle versioni precedenti del software. "
     },
     {
       "termine": "Rischio",
-      "definizione": ""
+      "definizione": "Un rischio è un evento o una condizione che, se si verificasse, potrebbe influenzare negativamente il raggiungimento degli obiettivi di un progetto. I rischi possono riguardare varie aree, come i tempi di consegna, i costi, la qualità del prodotto o la soddisfazione del cliente. Gli sforzi di gestione dei rischi sono finalizzati a identificare, valutare e mitigare i potenziali impatti negativi che i rischi potrebbero avere sul progetto. "
     },
     {
       "termine": "Rischio organizzativo",
-      "definizione": ""
+      "definizione": "Si riferisce alla possibilità che problemi interni all'organizzazione, come mancanza di risorse, conflitti tra membri del team o cambiamenti nell'organigramma aziendale, possano influenzare negativamente il successo del progetto."
     },
     {
       "termine": "Rischio relativo al prodotto",
-      "definizione": ""
+      "definizione": "Questo tipo di rischio riguarda i potenziali difetti, malfunzionamenti o mancanze nel prodotto software stesso. Potrebbe includere problemi di qualità del software, non conformità ai requisiti utente o problemi di sicurezza."
     },
     {
       "termine": "Rischio tecnologico",
-      "definizione": ""
-    },
-    {
-      "termine": "Progettazione architetturale",
-      "definizione": ""
+      "definizione": "Si riferisce alla possibilità che le tecnologie utilizzate nel progetto, come linguaggi di programmazione, framework o strumenti, possano rivelarsi inadeguate, obsolete o incapaci di soddisfare i requisiti del progetto, causando ritardi o problemi durante lo sviluppo."
     },
     {
       "termine": "Risorsa Umana",
-      "definizione": ""
+      "definizione": "Risorsa Umana si riferisce al personale coinvolto nel progetto, composto da membri del team coinvolti nell'implementazione, nell'esecuzione e nel controllo delle attività previste. Questa risorsa è essenziale per il successo del progetto, in quanto contribuisce con le proprie competenze, esperienze e sforzi per raggiungere gli obiettivi stabiliti. La gestione efficace delle risorse umane include l'allocazione delle persone giuste ai compiti appropriati, la formazione e lo sviluppo del personale, la risoluzione dei conflitti e la creazione di un ambiente lavorativo collaborativo e motivante. "
     },
     {
       "termine": "RTB",
-      "definizione": ""
+      "definizione": "RTB è l'acronimo di \"Ready to Build\", una fase del progetto che indica che l'insieme di requisiti funzionali e non funzionali è stato definito, analizzato e approvato, preparando così il terreno per l'inizio effettivo dello sviluppo del software. In questa fase, il team di sviluppo ha completato le attività di analisi dei requisiti, la progettazione architetturale e dettagliata e ha ottenuto l'approvazione finale per procedere con l'implementazione del sistema. La fase RTB rappresenta un punto di svolta nel ciclo di vita del progetto, in cui si passa dalla pianificazione e progettazione alla fase operativa di costruzione del software. "
     }
   ],
   "S": [
     {
       "termine": "Scenario",
-      "definizione": ""
+      "definizione": "Nell'analisi dei requisiti, uno scenario rappresenta una sequenza di azioni o eventi che descrivono un possibile flusso di interazione tra l'utente e il sistema. Gli scenari sono utilizzati per comprendere e illustrare come il sistema dovrebbe comportarsi in determinate situazioni o sotto determinate condizioni. Ogni scenario include una serie di passi che descrivono le azioni compiute dagli utenti e le risposte del sistema, consentendo di visualizzare in modo chiaro e dettagliato il comportamento previsto del software. Gli scenari possono essere utilizzati per identificare requisiti funzionali, individuare casi d'uso e validare il sistema durante lo sviluppo e il testing. "
     },
     {
       "termine": "Scenario principale",
-      "definizione": ""
+      "definizione": "Lo scenario principale rappresenta il flusso di interazione tipico tra l'utente e il sistema per raggiungere l'obiettivo principale del caso d'uso o della funzionalità in esame. Esso descrive la sequenza di passi che si verificano nella maggior parte dei casi."
     },
     {
       "termine": "Scenario alternativo",
-      "definizione": ""
+      "definizione": "Gli scenari alternativi, al contrario, rappresentano situazioni non standard o eccezionali che possono verificarsi durante l'esecuzione del caso d'uso. Questi scenari descrivono le deviazioni dal flusso principale causate da input inaspettati, condizioni particolari o errori. Gli scenari alternativi forniscono istruzioni su come gestire tali situazioni e ripristinare il flusso normale delle operazioni."
     },
     {
       "termine": "Scrum",
-      "definizione": ""
+      "definizione": "Scrum è un framework Agile utilizzato per lo sviluppo di prodotti complessi. Si basa su un approccio iterativo e incrementale, in cui il lavoro viene diviso in intervalli di tempo definiti chiamati sprint. Durante uno sprint, il team si impegna a completare un insieme di attività prioritarie stabilite durante la pianificazione dello sprint. Gli sprint sono seguiti da sessioni di revisione per valutare il lavoro svolto e identificare eventuali miglioramenti. "
     },
     {
       "termine": "Sistema",
-      "definizione": ""
+      "definizione": "Il Sistema nell'analisi dei requisiti si riferisce all'insieme di componenti software, hardware e di sistema che collaborano per fornire le funzionalità richieste dal prodotto. Il sistema può comprendere diverse parti, come applicazioni software, database e server."
     },
     {
       "termine": "Software",
-      "definizione": ""
+      "definizione": "Il termine \"Software\" si riferisce all'insieme di programmi, procedure e documentazione associata utilizzati su un sistema informatico per eseguire determinate operazioni o risolvere specifici problemi. Questo include sia il codice sorgente dei programmi che il software precompilato eseguibile. Il software può essere progettato per scopi diversi, come gestione dati, elaborazione informatica, comunicazione, intrattenimento e molti altri. In un contesto di sviluppo software, il termine \"software\" si riferisce al prodotto finale ottenuto dal processo di sviluppo, che può essere installato e utilizzato dagli utenti per scopi specifici. "
     },
     {
       "termine": "Sottocaso d'uso",
-      "definizione": ""
+      "definizione": "Il termine \"Sottocaso d'uso\" si riferisce a un'istanza specifica di un caso d'uso più ampio. Mentre un caso d'uso descrive un'interazione completa tra gli attori e il sistema per raggiungere un obiettivo specifico, un sottocaso d'uso dettaglia uno specifico scenario o flusso di lavoro all'interno di quel caso d'uso più ampio. I sottocasi d'uso vengono utilizzati per suddividere i casi d'uso complessi in unità gestibili e per fornire una descrizione più dettagliata delle azioni e dei passaggi coinvolti in un'interazione specifica con il sistema. "
     },
     {
       "termine": "Specifica tecnica",
-      "definizione": ""
+      "definizione": "La Specifica tecnica è la descrizione dettagliata della progettazione tecnica del software. Questa descrizione include informazioni sulle decisioni architetturali prese, i design pattern utilizzati, la struttura dei componenti software e le interazioni tra di essi, le tecnologie impiegate e altre specifiche rilevanti per l'implementazione del sistema. La specifica tecnica fornisce una guida chiara agli sviluppatori durante la fase di codifica e contribuisce a garantire coerenza e qualità nel prodotto finale. "
     },
     {
       "termine": "Sprint",
-      "definizione": ""
+      "definizione": "Lo Sprint è una fase di sviluppo iterativa e incrementale nel framework Agile, come ad esempio Scrum. Durante uno Sprint, il team di sviluppo lavora su una serie di attività concordate all'inizio dello Sprint, con l'obiettivo di consegnare un incremento di funzionalità completamente funzionante e potenzialmente consegnabile al termine del periodo prestabilito, generalmente di durata fissa, solitamente da una a quattro settimane. Gli Sprint offrono una struttura chiara per la pianificazione, l'esecuzione e il monitoraggio del lavoro del team, consentendo un rapido adattamento ai cambiamenti dei requisiti o delle priorità. "
     },
     {
       "termine": "Strumento",
-      "definizione": ""
+      "definizione": "Uno strumento nell'ambito dello sviluppo del software è un'applicazione, un programma o una risorsa che supporta specifiche attività o processi nel ciclo di vita del software. Gli strumenti possono includere ambienti di sviluppo integrati (IDE), sistemi di gestione di progetto come Jira, framework di test come Selenium, sistemi di controllo versione come Git, e molti altri. L'uso degli strumenti giusti può migliorare l'efficienza e la qualità del processo di sviluppo del software. "
     }
   ],
   "T": [
     {
       "termine": "Tecnologia",
-      "definizione": ""
+      "definizione": "La \"tecnologia\" nel contesto dello sviluppo del software si riferisce agli strumenti, ai linguaggi di programmazione, ai framework e ad altre risorse utilizzate per progettare, sviluppare e implementare soluzioni software. Questo termine può anche comprendere hardware, piattaforme di hosting, servizi cloud e altri componenti tecnologici utilizzati nel processo di sviluppo e distribuzione del software. La scelta delle tecnologie giuste può influenzare significativamente le prestazioni, la scalabilità, la manutenibilità e altre caratteristiche del prodotto software. "
     },
     {
       "termine": "Telegram",
-      "definizione": ""
+      "definizione": "Telegram è un'applicazione di messaggistica istantanea e di comunicazione. Consente agli utenti di scambiare messaggi di testo, foto, video, file e altro ancora tramite Internet. Telegram offre anche funzionalità come chat di gruppo, chiamate vocali e video, canali pubblici, bot automatizzati e crittografia end-to-end per garantire la privacy e la sicurezza delle comunicazioni. È stato utilizzato dal gruppo per la messaggistica istantanea e per fissare meeting di progetto anche con l’uso di sondaggi a scelta multipla e variabile."
     },
     {
       "termine": "Template",
-      "definizione": ""
+      "definizione": "Un template, in ambito documentale, è un modello predefinito che fornisce una struttura organizzativa e visiva per la creazione di documenti. Questi modelli includono solitamente sezioni già definite, formattazione standard, stili di testo preimpostati e elementi grafici coerenti(usati ad esempio nei powerpoint dei diari di bordo e per le prime pagine di ogni documento, ovvero copertina e indice). L'uso di un template consente di uniformare l'aspetto e la struttura dei documenti prodotti da diversi autori, facilitando la creazione e la lettura dei contenuti. "
     },
     {
       "termine": "Test",
-      "definizione": ""
+      "definizione": "Il termine \"test\" si riferisce a un'attività mirata a valutare o verificare le funzionalità o le prestazioni di un sistema, un'applicazione o un componente software. I test possono essere condotti per individuare difetti, verificare il corretto funzionamento di una funzionalità o garantire il rispetto dei requisiti specificati. "
     },
     {
       "termine": "Ticket",
-      "definizione": ""
+      "definizione": "Un \"ticket\" in Jira è un elemento di tracciamento utilizzato per registrare e monitorare il lavoro in un progetto software. Ogni ticket rappresenta un'attività specifica da completare, come risolvere un bug, implementare una nuova funzionalità o completare un compito di manutenzione. I ticket contengono informazioni dettagliate sul lavoro da svolgere, inclusi i requisiti, le assegnazioni, le scadenze e lo stato di avanzamento. Possono essere assegnati a membri del team e seguiti nel tempo per garantire che vengano completati in modo efficace e tempestivo. "
     },
     {
       "termine": "Trigger",
-      "definizione": ""
+      "definizione": "Il \"trigger\" nell'analisi dei requisiti si riferisce a un evento o una condizione che innesca l'avvio di un determinato caso d'uso o processo all'interno del sistema software. È un elemento chiave per comprendere quando e come un particolare comportamento o funzionalità deve essere attivato nell'applicazione. I trigger possono essere attivati da azioni degli utenti, come clic su pulsanti o input di dati, o da eventi interni al sistema, come arrivo di notifiche o cambiamenti di stato. Identificare correttamente i trigger è fondamentale per definire in modo completo e accurato il comportamento del sistema. "
     }
   ],
   "U": [
     {
       "termine": "UML",
-      "definizione": ""
+      "definizione": "UML, acronimo di Unified Modeling Language, è un linguaggio di modellazione standardizzato utilizzato per descrivere, progettare e documentare sistemi software. Fornisce una serie di diagrammi grafici che consentono agli sviluppatori di visualizzare diversi aspetti di un sistema, inclusi struttura, comportamento, interazioni e flussi di dati. "
     }
   ],
   "V": [
     {
       "termine": "Verbale",
-      "definizione": ""
+      "definizione": "Un verbale è un documento che riporta in modo dettagliato le discussioni, le decisioni prese e gli eventi avvenuti durante una riunione, un incontro o una sessione di lavoro. Serve a registrare e documentare in maniera accurata ciò che è stato discusso e deciso durante l'incontro, consentendo ai partecipanti di ricordare e consultare le informazioni trattate in seguito. Un verbale può includere una lista degli argomenti affrontati, i partecipanti presenti, le decisioni prese, le azioni da intraprendere e le eventuali osservazioni o commenti aggiuntivi. "
     },
     {
       "termine": "Verbale esterno",
-      "definizione": ""
+      "definizione": "Documento che riporta le discussioni, le decisioni e gli eventi avvenuti durante una riunione o un incontro con soggetti esterni al team di lavoro o all'organizzazione. È utilizzato nel nostro caso per comunicare in modo formale e documentato con aziende proponenti, professori, o altre parti interessate esterne."
     },
     {
       "termine": "Verbale interno",
-      "definizione": ""
+      "definizione": "Documento che riporta le discussioni, le decisioni e gli eventi avvenuti durante una riunione o un incontro all'interno del team di lavoro o dell'organizzazione stessa. Viene utilizzato per registrare e documentare le attività e le decisioni prese all'interno del gruppo di lavoro."
     },
     {
       "termine": "Versionamento",
-      "definizione": ""
+      "definizione": "Processo di gestione delle diverse versioni di un prodotto software o di altri documenti, che consente di tracciare e registrare le modifiche apportate nel tempo. Il versionamento permette di tenere traccia delle variazioni, delle correzioni di bug e delle nuove funzionalità implementate, facilitando il controllo delle revisioni e garantendo una corretta gestione delle versioni. "
     }
   ],
   "W": [],

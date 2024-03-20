@@ -1,4 +1,5 @@
 from GLOSSARY_AUTOMATIONS.read_json import *
+import os
 # il path che corrisponde alla cartella del glossario
 
 intestazione = r"""\documentclass[12pt, oneside]{article} 
@@ -49,7 +50,9 @@ Uso: & Esterno
 \hline
 \textbf{Versione} & \textbf{Data} & \textbf{Autore} & \textbf{Verificatore} & \textbf{Dettaglio} \\
 \hline
-v.0.0.1 & 2024-01-19 & Michele Z. & N/A & Creata struttura del glossario e aggiunti i termini \\
+v.1.0.0 & 2024-03-20 & Brotto D. & N/A & Stilate le definizioni di tutti i termini, aggiunti alcuni termini ambigui come Prenotazione e Orinazione e rimosso Acquisizione \\
+\hline
+v.0.0.1 & 2024-01-19 & Michele Z. & Brotto D. & Creata struttura del glossario e aggiunti i termini \\
 \hline
 \end{tabular}
 \newpage
@@ -106,11 +109,11 @@ def build_glossario(dir: str) -> None:
     f.write(intestazione)
     f.close()
 
-    JSON_ARRAY = get_json_array_from_path(dir + "glossario.json")
+    JSON_ARRAY = get_json_array_from_path(os.path.join(dir,"glossario.json"))
 
     for c in ALPHABET:
         section = compose_section(c, JSON_ARRAY)
-        section_path = dir + "Contents/" + c + ".tex"
+        section_path = os.path.join(dir , "Contents" , (c + ".tex") )
         f = open(section_path, "w")
         f.write(section)
         f.close()
