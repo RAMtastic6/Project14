@@ -1,4 +1,4 @@
-\subsection{UC23 - \textit{Prenotazione}_G tavolo}\label{usecase:23}
+\subsection{UC23 - Prenotazione tavolo}\label{usecase:23}
 
 \begin{figure}[H]
   \centering
@@ -9,27 +9,27 @@
 \begin{itemize}
     \item Utente base autenticato
 \end{itemize}
-\textbf{\textit{Precondizione}_G}:
+\textbf{Precondizione}:
 \begin{itemize}
     \item L'utente è autenticato ed è riconosciuto come utente base
     \item L'utente ha già selezionato il ristorante tramite la ricerca ristorante \nameref{usecase:24}
 \end{itemize}
-\textbf{\textit{Postcondizione}_G}:
+\textbf{Postcondizione}:
 \begin{itemize}
-    \item L'utente ha richiesto una prenotazione in un ristorante
-    \item Il sistema ha inviato una notifica al ristorante selezionato
+    \item L'utente ha richiesto una \textit{Prenotazione_G} in un ristorante
+    \item Il \textit{Sistema_G} ha inviato una notifica al ristorante selezionato
 \end{itemize}
-\textbf{\textit{Trigger}_G}:
+\textbf{Trigger}:
 \begin{itemize}
     \item L'utente vuole prenotare un tavolo nel ristorante selezionato
 \end{itemize}
-\textbf{\textit{Scenario}_G principale}:
+\textbf{Scenario principale}:
 \begin{enumerate}
     \item L'utente inserisce nella query di ricerca la data.
     \item L'utente specifica l'orario di arrivo.
     \item L'utente specifica il numero di persone.
     \item L'utente specifica, inserendo username/email utente, chi sono le altre persone al tavolo.
-    \item Il sistema invia una notifica di una richiesta di prenotazione agli amministratori del ristorante.
+    \item Il \textit{Sistema_G} invia una notifica di una richiesta di \textit{Prenotazione_G} agli amministratori del ristorante.
 \end{enumerate}
 \textbf{Scenari alternativi}:
 \begin{itemize}
@@ -40,7 +40,7 @@
         \item Il ristorante non possiede abbastanza posti per quell'ora.
     \end{enumerate}
     \item L'utente visualizza un messaggio di errore
-    \item La prenotazione viene cancellata
+    \item La \textit{Prenotazione_G} viene cancellata
 \end{itemize}
 
 
@@ -59,9 +59,9 @@
 \begin{itemize}
     \item L'utente ha inserito correttamente la data e l'orario di arrivo per la prenotazione
 \end{itemize}
-\textbf{\textit{Scenario}_G principale}:
+\textbf{Scenario principale}:
 \begin{enumerate}
-    \item L'utente inserisce la data desiderata per la prenotazione nel formato appropriato
+    \item L'utente inserisce la data desiderata per la \textit{Prenotazione_G} nel formato appropriato
     \item L'utente specifica l'orario di arrivo previsto nel formato appropriato.
 \end{enumerate}
 
@@ -81,7 +81,7 @@
 \begin{itemize}
     \item L'utente ha inserito correttamente il numero di persone per la prenotazione.
 \end{itemize}
-\textbf{\textit{Scenario}_G principale}:
+\textbf{Scenario principale}:
 \begin{enumerate}
     \item L'utente specifica il numero di persone che parteciperanno alla prenotazione.
 \end{enumerate}
@@ -101,7 +101,7 @@
 \begin{itemize}
     \item L'utente ha inserito correttamente le informazioni degli altri partecipanti alla prenotazione.
 \end{itemize}
-\textbf{\textit{Scenario}_G principale}:
+\textbf{Scenario principale}:
 \begin{enumerate}
     \item L'utente specifica, inserendo l'username/email degli altri partecipanti al tavolo, chi sono le altre persone coinvolte nella prenotazione.
 \end{enumerate}
@@ -121,15 +121,13 @@
 \end{itemize}
 \textbf{Postcondizioni}:
 \begin{itemize}
-    \item Il sistema ha inviato una notifica di una richiesta di prenotazione agli amministratori del ristorante selezionato.
+    \item Il \textit{Sistema_G} ha inviato una notifica di una richiesta di \textit{Prenotazione_G} agli amministratori del ristorante selezionato.
 \end{itemize}
-\textbf{\textit{Scenario}_G principale}:
+\textbf{Scenario principale}:
 \begin{enumerate}
-    \item Dopo aver completato l'inserimento di tutte le informazioni richieste, il sistema invia una notifica di una richiesta di prenotazione agli amministratori del ristorante selezionato.
+    \item Dopo aver completato l'inserimento di tutte le informazioni richieste, il \textit{Sistema_G} invia una notifica di una richiesta di \textit{Prenotazione_G} agli amministratori del ristorante selezionato.
 \end{enumerate}
 
 
 
 \newpage
-
-

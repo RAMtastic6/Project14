@@ -45,7 +45,6 @@ def repl_all_occurrences(glossary_path: str, filename: str, content_folder: str 
         lines = content.split("\n")
         new_content = ""
 
-
         # rimpiazzo di tutte le occorrenze di una definizione
         # presente nel glossario
         # problema: le entries della lista non sembrano modificarsi da sole.
@@ -53,9 +52,15 @@ def repl_all_occurrences(glossary_path: str, filename: str, content_folder: str 
         for d in defs:
             ref_string = "\\textit{" + d + "_G}"
             for index, item in enumerate(lines):
-                if not check_for_titles(item) and ref_string not in item and (d in item or d.lower() in item):
-                    count_replaced_occurrences += 1 
-                    lines[index] = item.replace(d, ref_string)
+                if not check_for_titles(item) and ref_string not in item:
+                    # ricercare la parola all'interno della riga, non la sottostringa
+                    w = " " + d + " "
+                    if w in item:
+                        count_replaced_occurrences += 1 
+                        lines[index] = item.replace(d, ref_string)
+                    elif w.lower() in item:
+                        count_replaced_occurrences += 1 
+                        lines[index] = item.replace(d.lower(), ref_string)
 
         
         # ricomporre tutto contentuo all'interno di una 
@@ -98,17 +103,47 @@ def repl_first_occurrence(glossary_path: str, filename: str, content_folder: str
         content = f.read()
         f.close()
 
+        # splittare il contenuto delle righe
+        lines = content.split("\n")
+        new_content = ""
+
         # rimpiazzo di tutte le occorrenze di una definizione
         # presente nel glossario
+
+
+        # il problema di questa automazione è il fatto che quando la si
+        # esegue una seconda volta, la tabella done si svuota di tutti i suoi
+        # valori. di conseguenza, non tiene traccia dei riferimenti già 
+        # rimpiazzati all'interno del file.
+        # servirebbe un modo per salvarli.
+        # allo stato delle cose l'automazione funziona se la si esegue solamente una volta.
+        # l'idea è quella di avere, per ogni sorgente, una mappa (dizionario in json) 
+        # all'interno della quale una coppia chiave valore è definita nel seguente modo 
+        # {'definizione', 'true'} => tiene solo le parole giá fatte.
+        count_replaced_occurrences = 0 
         for d in defs:
             ref_string = "\\textit{" + d + "_G}"
-            if done[d] != True and ref_string not in content and (d in content or d.lower() in content):
-                # debug
-                # print(ref_string)
-                content = content.replace(d, ref_string)
-                done[d] = True
+            for index, item in enumerate(lines):
+                if done[d] != True and (not check_for_titles(item)) and ref_string not in item:
+                    # ricercare la parola all'interno della riga, non la sottostringa
+                    w = " " + d + " "
+                    if w in item:
+                        count_replaced_occurrences += 1 
+                        done[d] = True
+                        lines[index] = item.replace(d, ref_string, 1)
+                    elif w.lower() in item:
+                        count_replaced_occurrences += 1 
+                        done[d] = True
+                        lines[index] = item.replace(d.lower(), ref_string, 1)                    
+
+        # ricomporre tutto contentuo all'interno di una 
+        # singola stringa 
+        for l in lines:
+            new_content += l + "\n"
+        new_content = new_content.rstrip("\n")
 
         # scrittura del contenuto all'interno del file
         f = open(n, "w")
-        f.write(content)
+        f.write(new_content)
         f.close()
+        print("nel file {} sono stati rimpiazzati {} riferimenti".format(n, count_replaced_occurrences))
