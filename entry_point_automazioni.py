@@ -12,8 +12,11 @@ PATH_TO_WOW_FOLDER = os.path.join(os.getcwd(), "sorgenti", "Norme di Progetto/")
 PATH_TO_PDW_FOLDER = os.path.join(os.getcwd(), "sorgenti", "Piano_Di_Qualifica/")
 
 # eseguire automazioni
+# 1. build del glossario
 build_glossario(PATH_TO_GLOSSARY_FOLDER)
+
+# 2. riferimenti da altri file al glossario
 # repl_all_occurrences(PATH_TO_GLOSSARY_JSON, "sorgenti/Analisi dei Requisiti/main.tex", "sorgenti/Analisi dei Requisiti/uc/")
-repl_all_occurrences(PATH_TO_GLOSSARY_JSON, "sorgenti/Piano_Di_Progetto/main.tex", "sorgenti/Piano_Di_Progetto/sections/")
+# repl_all_occurrences(PATH_TO_GLOSSARY_JSON, "sorgenti/Piano_Di_Progetto/main.tex", "sorgenti/Piano_Di_Progetto/sections/")
 # repl_all_occurrences(PATH_TO_GLOSSARY_JSON, "sorgenti/Norme di Progetto/main.tex", "sorgenti/Norme di Progetto/Contents/")
-# repl_first_occurrence(PATH_TO_GLOSSARY_JSON, "sorgenti/Piano_Di_Qualifica/main.tex", "sorgenti/Piano_Di_Qualifica/sections/")
+# repl_all_occurrences(PATH_TO_GLOSSARY_JSON, "sorgenti/Piano_Di_Qualifica/main.tex", "sorgenti/Piano_Di_Qualifica/sections/")
