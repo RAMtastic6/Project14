@@ -1,8 +1,4 @@
-from GLOSSARY_AUTOMATIONS.read_json import *
-import os
-# il path che corrisponde alla cartella del glossario
-
-intestazione = r"""\documentclass[12pt, oneside]{article} 
+\documentclass[12pt, oneside]{article} 
 \usepackage{amsmath, amsthm, amssymb, calrsfs, wasysym, verbatim, bbm, color, graphicx, geometry, fancyhdr, url, multirow, hyperref}
 \usepackage[italian]{babel}
 
@@ -92,28 +88,3 @@ Il glossario ha lo scopo di raccogliere i termini tecnici usati nel corso del pr
 
 
 \end{document}
-"""
-
-# ritorna la stringa della sezione del glossario
-def compose_section(letter: str, json_array) -> str:
-    section = ""
-    section += "\\section{" + letter + "} \n"
-    
-    for d in json_array[letter]:
-        section += "\\subsection{" + d["termine"] + "} \n"
-        section += d["definizione"] + "\n"
-    return section
-
-def build_glossario(dir: str) -> None:
-    f = open(dir + "glossary.tex", "w")
-    f.write(intestazione)
-    f.close()
-
-    JSON_ARRAY = get_json_array_from_path(os.path.join(dir,"glossario.json"))
-
-    for c in ALPHABET:
-        section = compose_section(c, JSON_ARRAY)
-        section_path = os.path.join(dir , "Contents" , (c + ".tex") )
-        f = open(section_path, "w")
-        f.write(section)
-        f.close()
