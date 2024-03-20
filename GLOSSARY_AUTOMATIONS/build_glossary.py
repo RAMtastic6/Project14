@@ -113,7 +113,7 @@ def build_glossario(dir: str) -> None:
 
     for c in ALPHABET:
         section = compose_section(c, JSON_ARRAY)
-        section_path = os.path.join(dir , "Contents" , (c + ".tex") )
+        section_path = os.path.join(dir , "Contents" , (c + ".tex"))
         f = open(section_path, "w")
         f.write(section)
         f.close()
