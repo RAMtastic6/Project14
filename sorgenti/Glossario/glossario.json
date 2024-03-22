@@ -2,7 +2,7 @@
   "A": [
     {
       "termine": "Analisi Dei Requisiti",
-      "definizione": "L'analisi dei requisiti è il processo di raccolta, documentazione e analisi delle esigenze e delle funzionalità di un sistema software. Questo processo coinvolge la comprensione approfondita dei requisiti dell'utente, delle necessità del business e delle specifiche tecniche per sviluppare un sistema che soddisfi le aspettative degli stakeholder. Gli obiettivi principali dell'analisi dei requisiti includono la definizione chiara e completa delle funzionalità del sistema, la specifica dei vincoli e delle restrizioni, e l'identificazione dei requisiti non funzionali come prestazioni, sicurezza e usabilità."
+      "definizione": "L'analisi dei requisiti è il processo di raccolta, documentazione e analisi delle esigenze e delle funzionalità di un sistema software. Questo processo coinvolge la comprensione approfondita dei requisiti dell'utente, delle necessità del business e delle specifiche tecniche per sviluppare un sistema che soddisfi le aspettative degli stakeholder. Gli obiettivi principali dell'analisi dei requisiti includono la definizione chiara e completa delle funzionalità del sistema, la specifica dei vincoli e delle restrizioni, e l'identificazione dei requisiti non funzionali come quelli relativi alle prestazioni, sicurezza e usabilità."
     },
     {
       "termine": "Analisi Dei Rischi",
@@ -14,13 +14,13 @@
     },
     {
       "termine": "Attore",
-      "definizione": "Entità che interagisce con il sistema svolgendo delle attività, intesa sia come persona che come sistema terzo/esterno. Ciascuna entità è caratterizzata dall’insieme delle azioni che può compiere."
+      "definizione": "Un attore è entità che interagisce con il sistema svolgendo delle attività, intesa sia come persona che come sistema terzo/esterno. Ciascuna entità è caratterizzata dall’insieme delle azioni che può compiere."
     }
   ],
   "B": [
     {
       "termine": "Branch",
-      "definizione": "Un ramo (branch) in GitHub è una versione separata del codice sorgente di un progetto software. Consente agli sviluppatori di lavorare su nuove funzionalità o correzioni di bug senza influenzare direttamente il codice principale (ramo principale o \"master\"). I branch sono utilizzati per sviluppare in modo isolato, consentendo agli sviluppatori di sperimentare liberamente senza compromettere la stabilità del codice principale. Una volta completate le modifiche su un ramo, è possibile integrare (mergere) le modifiche nel ramo principale tramite una richiesta di pull (pull request) per incorporare le modifiche nel codice principale."
+      "definizione": "Un ramo (branch) in GitHub è una versione separata del codice sorgente di un progetto software. Consente agli sviluppatori di lavorare su nuove funzionalità o correzioni di bug senza influenzare direttamente il codice principale (ramo principale o 'master'). I branch sono utilizzati per sviluppare in modo isolato, consentendo agli sviluppatori di sperimentare liberamente senza compromettere la stabilità del codice principale. Una volta completate le modifiche su un ramo, è possibile integrare (effettuare il 'merge') le modifiche nel ramo principale preferibilmente tramite una richiesta di pull (pull request) per incorporare le modifiche nel codice principale."
     }
   ],
   "C": [
@@ -38,7 +38,7 @@
     },
     {
       "termine": "Changelog",
-      "definizione": "Un changelog una sezione di documentazione che tiene traccia delle modifiche apportate a un software o a un progetto nel tempo. Esso elenca le variazioni, le correzioni di bug, le nuove funzionalità e altre modifiche significative, fornendo un registro storico delle revisioni effettuate. Il changelog è utile per gli sviluppatori e gli utenti finali per comprendere le modifiche apportate a una determinata versione del software e per monitorare l'evoluzione del prodotto nel tempo."
+      "definizione": "Un changelog è una sezione di documentazione che tiene traccia delle modifiche apportate a un software o a un progetto nel tempo. Esso elenca le variazioni, le correzioni di bug, le nuove funzionalità e altre modifiche significative, fornendo un registro storico delle revisioni effettuate. Il changelog è utile per gli sviluppatori e gli utenti finali per comprendere le modifiche apportate a una determinata versione del software oppure di un documento e per monitorare l'evoluzione del prodotto nel tempo."
     },
     {
       "termine": "Codifica",
@@ -60,7 +60,7 @@
     },
     {
       "termine": "Diagramma dei Casi d'Uso",
-      "definizione": "Il diagramma dei casi d'uso è una rappresentazione grafica delle interazioni tra gli attori esterni e il sistema software. È composto da attori, casi d'uso e le relazioni tra di essi, e fornisce una panoramica visiva delle funzionalità offerte dal sistema e dei suoi utilizzi da parte degli attori. Questo strumento aiuta a comprendere i requisiti funzionali del sistema, le interazioni tra gli utenti e il sistema stesso, e fornisce una base per la progettazione e lo sviluppo del software."
+      "definizione": "Il diagramma dei casi d'uso è una rappresentazione grafica delle interazioni tra gli attori esterni al sistema software e il sistema software stesso. È composto da attori, casi d'uso e le relazioni tra di essi, e fornisce una panoramica visiva delle funzionalità offerte dal sistema e dei suoi utilizzi da parte degli attori. Questo strumento aiuta a comprendere i requisiti funzionali del sistema, le interazioni tra gli utenti e il sistema stesso, e fornisce una base per la progettazione e lo sviluppo del software."
     },
     {
       "termine": "Diario di Bordo",
@@ -82,25 +82,25 @@
   "E": [
     {
       "termine": "Easy Meal",
-      "definizione": "Easy Meal è un progetto sviluppato con l'obiettivo di semplificare il processo di prenotazione dei tavoli nei ristoranti, offrendo agli utenti la possibilità di pianificare in anticipo il proprio pasto. Con Easy Meal, gli utenti possono prenotare facilmente un tavolo, selezionare le loro preferenze alimentari e ordinare il cibo desiderato in anticipo, consentendo loro di godersi un'esperienza gastronomica senza problemi e senza attese. Grazie a questa piattaforma intuitiva e user-friendly, prenotare un tavolo e decidere cosa mangiare diventa un'esperienza semplice e piacevole per tutti i clienti dei ristoranti."
+      "definizione": "Easy Meal è un progetto proposto da Imola Informatica e sviluppato con l'obiettivo di semplificare il processo di prenotazione dei tavoli nei ristoranti, offrendo agli utenti la possibilità di pianificare in anticipo il proprio pasto e ordinarlo in modo collaborativo con altri utenti. Con Easy Meal, gli utenti possono prenotare facilmente un tavolo, selezionare le loro preferenze alimentari e ordinare il cibo desiderato prima del giorno desiderato, consentendo loro di godersi un'esperienza gastronomica senza problemi e senza attese. Grazie a questa piattaforma intuitiva e user-friendly, prenotare un tavolo e decidere cosa mangiare diventa un'esperienza semplice e piacevole per tutti i clienti dei ristoranti."
     },
     {
       "termine": "Eccezione",
-      "definizione": "Un'anomalia o evento imprevisto durante l'esecuzione di un programma, interrompendo il flusso normale. Può essere causata da errori di programmazione, input non validi o condizioni impreviste. Richiede una gestione appropriata per mantenere la stabilità del software."
+      "definizione": "Un'eccezione è un'anomalia o evento imprevisto durante l'esecuzione di un programma che interrompe il flusso normale di esecuzione. Può essere causata da errori di programmazione, input non validi o condizioni impreviste. Richiede una gestione appropriata per mantenere la stabilità del software."
     },
     {
       "termine": "Editor",
-      "definizione": "Un'applicazione software utilizzata per creare, modificare e gestire file di testo o codice sorgente. Fornisce funzionalità come formattazione del testo, ricerca e sostituzione, e strumenti per la gestione dei progetti."
+      "definizione": "Un editor è un'applicazione software utilizzata per creare, modificare e gestire file di testo o codice sorgente. Fornisce funzionalità come formattazione del testo, ricerca e sostituzione, e strumenti per la gestione dei progetti."
     }
   ],
   "F": [
     {
       "termine": "Feature",
-      "definizione": "Una caratteristica o funzionalità specifica di un prodotto software. Le feature definiscono il comportamento o le capacità del software e possono includere qualsiasi cosa, dalle semplici azioni dell'utente alle complesse operazioni di sistema. Le feature sono progettate per soddisfare determinati requisiti o fornire determinati vantaggi agli utenti finali. Possono essere descritte attraverso specifiche funzionali, requisiti o casi d'uso e sono spesso evidenziate durante lo sviluppo del software per garantire che il prodotto finale soddisfi le aspettative degli utenti."
+      "definizione": "Una feature è una caratteristica o funzionalità specifica di un prodotto software. Le feature definiscono il comportamento o le capacità del software e possono includere qualsiasi cosa, dalle semplici azioni dell'utente alle complesse operazioni di sistema. Le feature sono progettate per soddisfare determinati requisiti o fornire determinati vantaggi agli utenti finali. Possono essere descritte attraverso specifiche funzionali, requisiti o casi d'uso e sono spesso evidenziate durante lo sviluppo del software per garantire che il prodotto finale soddisfi le aspettative degli utenti."
     },
     {
       "termine": "Feedback",
-      "definizione": "Opinioni, valutazioni o commenti forniti dagli utenti o dagli stakeholder su un prodotto, un servizio o un'esperienza. Il feedback può riguardare diversi aspetti, come l'usabilità, le prestazioni, le funzionalità o il design di un'applicazione software. È importante raccogliere, analizzare e utilizzare il feedback per migliorare continuamente il prodotto o il servizio, soddisfare le esigenze degli utenti e garantire una migliore esperienza complessiva."
+      "definizione": "I feedback sono opinioni, valutazioni o commenti forniti dagli utenti o dagli stakeholder su un prodotto, un servizio o un'esperienza. Il feedback può riguardare diversi aspetti, come l'usabilità, le prestazioni, le funzionalità o il design di un'applicazione software. È importante raccogliere, analizzare e utilizzare il feedback per migliorare continuamente il prodotto o il servizio, soddisfare le esigenze degli utenti e garantire una migliore esperienza complessiva."
     },
     {
       "termine": "Fornitura",
@@ -108,21 +108,21 @@
     },
     {
       "termine": "Framework",
-      "definizione": "Un framework è un'infrastruttura software che fornisce un'organizzazione predefinita per lo sviluppo di applicazioni. Essenzialmente, è una struttura di supporto su cui è possibile costruire e organizzare il codice. I framework forniscono una serie di librerie, modelli di progettazione, componenti e strumenti che semplificano lo sviluppo di software, consentendo agli sviluppatori di concentrarsi sulla logica dell'applicazione anziché dover reinventare ogni singolo aspetto da zero. Sono spesso progettati per affrontare problemi comuni nello sviluppo di software, come la gestione delle richieste web, la manipolazione dei dati, la sicurezza e altro ancora. I framework possono essere generici o specifici per determinati tipi di applicazioni o linguaggi di programmazione."
+      "definizione": "Un framework è un'infrastruttura software che fornisce un'organizzazione predefinita per lo sviluppo di applicazioni. Essenzialmente, è una struttura di supporto su cui è possibile costruire e organizzare il codice. I framework forniscono una serie di librerie, modelli di progettazione, componenti e strumenti che semplificano lo sviluppo di software, consentendo agli sviluppatori di concentrarsi sulla logica dell'applicazione anziché dover reinventare ogni singolo aspetto. Spesso sono progettati per affrontare problemi comuni nello sviluppo di software, come la gestione delle richieste web, la manipolazione dei dati, la sicurezza e altro ancora. I framework possono essere generici o specifici per determinati tipi di applicazioni o linguaggi di programmazione."
     },
     {
-      "termine": "Funzionalitá",
+      "termine": "Funzionalità",
       "definizione": "Le funzionalità si riferiscono alle capacità o agli attributi specifici di un software, di un'applicazione o di un sistema che consentono agli utenti di eseguire determinate azioni o di ottenere determinati risultati. Le funzionalità sono le varie operazioni, servizi o caratteristiche che un prodotto software offre agli utenti per soddisfare determinati scopi o necessità. Possono includere azioni interattive, processi automatizzati, visualizzazioni dei dati, strumenti di gestione e altro ancora. Le funzionalità sono progettate per rispondere ai requisiti e alle esigenze degli utenti, migliorare l'usabilità del software e offrire un'esperienza soddisfacente agli utenti finali."
     }
   ],
   "G": [
     {
       "termine": "Git",
-      "definizione": "Git è un sistema di controllo versione distribuito utilizzato principalmente nello sviluppo software. Consente agli sviluppatori di tenere traccia delle modifiche apportate al codice sorgente nel corso del tempo, coordinare il lavoro con altri membri del team e gestire le diverse versioni di un progetto in modo efficiente. Git consente di creare repository (archivi di file sorgente e cronologia delle modifiche) sia localmente che su server remoti, facilitando la collaborazione tra sviluppatori distribuiti geograficamente. È ampiamente utilizzato nell'industria del software per gestire progetti di qualsiasi dimensione e complessità."
+      "definizione": "Git è un sistema di controllo di versione distribuito utilizzato principalmente nello sviluppo software. Consente agli sviluppatori di tenere traccia delle modifiche apportate al codice sorgente nel corso del tempo, coordinare il lavoro con altri membri del team e gestire le diverse versioni di un progetto in modo efficiente. Git consente di creare repository (archivi di file sorgente e cronologia delle modifiche) sia localmente che su server remoti, facilitando la collaborazione tra sviluppatori distribuiti geograficamente. È ampiamente utilizzato nell'industria del software per gestire progetti di qualsiasi dimensione e complessità."
     },
     {
       "termine": "Gitflow",
-      "definizione": "GitFlow è un modello di branching e di workflow basato su Git, progettato per gestire progetti software con un ciclo di sviluppo complesso e ramificato. Questo approccio fornisce una struttura chiara per la gestione delle diverse fasi dello sviluppo, inclusi i rilasci, le correzioni di bug e le nuove funzionalità. GitFlow prevede l'utilizzo di due branch principali, \"master\" e \"develop\", oltre a una serie di branch temporanei per le funzionalità in sviluppo, i bugfix e i rilasci. Questo modello facilita il lavoro in team e la collaborazione su progetti complessi, consentendo di mantenere una storia di versionamento pulita e organizzata."
+      "definizione": "GitFlow è un modello di branching e di workflow basato su Git, progettato per gestire progetti software con un ciclo di sviluppo complesso e ramificato. Questo approccio fornisce una struttura chiara per la gestione delle diverse fasi dello sviluppo, inclusi i rilasci, le correzioni di bug e le nuove funzionalità. GitFlow prevede l'utilizzo di due branch principali, 'master' e 'develop', oltre a una serie di branch temporanei per le funzionalità in sviluppo denominati 'feature branch', i bugfix e i rilasci. Questo modello facilita il lavoro in team e la collaborazione su progetti complessi, consentendo di mantenere una storia di versionamento pulita e organizzata."
     },
     {
       "termine": "Github",
@@ -133,7 +133,7 @@
   "I": [
     {
       "termine": "Imola Informatica",
-      "definizione": "Imola Informatica, proponente del progetto Easy Meal, è una società indipendente di consulenza IT. Tutto ciò che riguarda il mondo dell’information technology la riguarda, gli interessa e appassiona. Entrano in gioco ogni volta in cui una azienda pubblica o privata vuole migliorare i propri servizi. Innovare i propri processi di lavoro, gli approcci di management per cogliere le opportunità business offerte dalla trasformazione digitale. Sono a servizio dei principali gruppi finanziari e assicurativi e ogni giorno sono a fianco di grandi aziende e piccole startup nel gestire il cambiamento tecnologico e culturale."
+      "definizione": "Imola Informatica, proponente del progetto Easy Meal, è una società indipendente di consulenza IT. Tutto ciò che riguarda il mondo dell’information technology la riguarda, gli interessa e appassiona. La società in gioco ogni volta in cui una azienda pubblica o privata vuole migliorare i propri servizi, innovare i propri processi di lavoro e gli approcci di management per cogliere le opportunità business offerte dalla trasformazione digitale. Sono a servizio dei principali gruppi finanziari e assicurativi e ogni giorno sono a fianco di grandi aziende e piccole startup nel gestire il cambiamento tecnologico e culturale."
     },
     {
       "termine": "Infrastruttura",
@@ -147,30 +147,30 @@
   "J": [
     {
       "termine": "Jira",
-      "definizione": "Jira è una piattaforma di gestione del lavoro e dei progetti utilizzata per tracciare le attività, assegnare compiti, pianificare progetti e collaborare tra membri del team. Fornisce strumenti per la gestione delle attività, il monitoraggio dello stato dei progetti, la creazione di report e la comunicazione all'interno del team. Jira è ampiamente utilizzato nello sviluppo software e in altri settori per organizzare e coordinare il lavoro di squadra."
+      "definizione": "Jira è una piattaforma di gestione del lavoro e dei progetti utilizzata per tracciare le attività, assegnare compiti, pianificare progetti e collaborare tra membri del team."
     }
   ],
   "K": [],
   "L": [
     {
       "termine": "Latex",
-      "definizione": "LaTeX viene spesso utilizzato per redigere documenti tecnici, come specifiche dei requisiti, documenti di progetto, manuali utente e rapporti di testing. La sua struttura modulare, la gestione avanzata della formattazione e la facilità nel gestire equazioni matematiche e tabelle lo rendono una scelta popolare tra gli sviluppatori e i professionisti del settore. LaTeX consente inoltre di mantenere una formattazione uniforme e di automatizzare alcune operazioni, rendendo più efficiente il processo di documentazione del progetto. "
+      "definizione": "LaTeX viene spesso utilizzato per redigere documenti tecnici, come specifiche dei requisiti, documenti di progetto, manuali utente e rapporti di testing. La sua struttura modulare, la gestione avanzata della formattazione e la facilità nel gestire equazioni matematiche e tabelle lo rendono una scelta popolare tra gli sviluppatori e i professionisti del settore. LaTeX consente inoltre di mantenere una formattazione uniforme e di automatizzare alcune operazioni, rendendo più efficiente il processo di documentazione del progetto."
     }
   ],
   "M": [
     {
       "termine": "Manuale Utente",
-      "definizione": "Il Manuale Utente è un documento che fornisce istruzioni dettagliate su come utilizzare un determinato prodotto software o sistema. È destinato agli utenti finali e fornisce indicazioni chiare e concise su come eseguire le diverse operazioni, navigare nell'interfaccia utente e sfruttare le funzionalità offerte dal software. Il manuale utente può includere tutorial, guide passo-passo, spiegazioni delle funzionalità e istruzioni per la risoluzione dei problemi comuni. L'obiettivo principale del manuale utente è quello di consentire agli utenti di utilizzare il software in modo efficace ed efficiente, migliorando così l'esperienza complessiva dell'utente. "
+      "definizione": "Il Manuale Utente è un documento che fornisce istruzioni dettagliate su come utilizzare un determinato prodotto software o sistema. È destinato agli utenti finali e fornisce indicazioni chiare e concise su come eseguire le diverse operazioni, navigare nell'interfaccia utente e sfruttare le funzionalità offerte dal software. Il manuale utente può includere tutorial, guide passo-passo, spiegazioni delle funzionalità e istruzioni per la risoluzione dei problemi comuni. L'obiettivo principale del manuale utente è quello di consentire agli utenti di utilizzare il software in modo efficace ed efficiente, migliorando così l'esperienza complessiva dell'utente."
     },
     {
       "termine": "Milestone",
-      "definizione": "Una milestone è un punto di riferimento significativo o un obiettivo importante all'interno di un progetto, utilizzato per misurare il progresso e il raggiungimento di determinati traguardi. Le milestone sono solitamente associate a date specifiche o a completamenti di specifiche attività o fasi di un progetto. Servono come punti di controllo per valutare se il progetto sta procedendo secondo i piani e per identificare eventuali ritardi o problemi. Le milestone possono essere utilizzate anche per comunicare i progressi del progetto alle parti interessate e per stabilire scadenze chiare e tangibili per il completamento delle attività. "
+      "definizione": "Una milestone è un punto di riferimento significativo o un obiettivo importante all'interno di un progetto, utilizzato per misurare il progresso e il raggiungimento di determinati traguardi. Le milestone sono solitamente associate a date specifiche o a completamenti di specifiche attività o fasi di un progetto. Servono come punti di controllo per valutare se il progetto sta procedendo secondo i piani e per identificare eventuali ritardi o problemi. Le milestone possono essere utilizzate anche per comunicare i progressi del progetto alle parti interessate e per stabilire scadenze chiare e tangibili per il completamento delle attività."
     }
   ],
   "N": [
     {
       "termine": "Norme di Progetto",
-      "definizione": "In questo documento sono riportate tutte le linee guida tecniche e procedurali stabilite per regolare l'esecuzione e il controllo di un progetto. Questo documento definisce standard e procedure relative all'organizzazione del lavoro, alla metodologia di sviluppo, alla gestione dei documenti, delle configurazioni e dei rischi, nonché alla pianificazione e al monitoraggio delle attività del progetto. "
+      "definizione": "Nel documento Norme di Progetto sono riportate tutte le linee guida tecniche e procedurali stabilite per regolare l'esecuzione e il controllo di un progetto. Questo documento definisce standard e procedure relative all'organizzazione del lavoro, alla metodologia di sviluppo, alla gestione dei documenti, delle configurazioni e dei rischi, nonché alla pianificazione e al monitoraggio delle attività del progetto."
     }
   ],
   "O": [
@@ -178,9 +178,9 @@
       "termine": "Overleaf",
       "definizione": "Overleaf è una piattaforma online per la scrittura collaborativa di documenti LaTeX. Consente agli utenti di creare e modificare documenti LaTeX direttamente nel browser, senza la necessità di installare software aggiuntivo sul proprio computer. Overleaf offre strumenti per la gestione dei progetti, il controllo delle versioni, la compilazione automatica dei documenti e la condivisione dei lavori con altri collaboratori. È particolarmente popolare nell'ambito accademico e scientifico per la sua facilità d'uso e la possibilità di collaborare in tempo reale. "
     },
-	{
+    {
       "termine": "Ordinazione",
-      "definizione": "Nella fase di ordinazione, l'utente seleziona e richiede un piatto specifico dal menu virtuale disponibile sull'applicazione o sul sito web. Durante questa fase, l'utente esplora le opzioni del menu, visualizza le descrizioni dei piatti, seleziona gli elementi desiderati e invia la propria richiesta di ordine al ristorante. "
+      "definizione": "Nella fase di ordinazione dell'applicazione Easy Meal, l'utente seleziona e richiede un piatto specifico dal menu virtuale disponibile sull'applicazione o sul sito web. Durante questa fase, l'utente esplora le opzioni del menu, visualizza le descrizioni dei piatti, seleziona gli elementi desiderati e invia la propria richiesta di ordine al ristorante. "
     }
   ],
   "P": [
@@ -201,8 +201,8 @@
       "definizione": "Il Piano di Qualifica è un documento che definisce le strategie, le attività e le risorse necessarie per garantire che il prodotto soddisfi i requisiti di qualità stabiliti. Esso descrive le procedure di verifica e validazione che verranno utilizzate per valutare e confermare che il prodotto soddisfi gli standard di qualità definiti. Include anche gli obiettivi di qualità, le metriche di valutazione, i criteri di accettazione e le responsabilità del team per garantire che il prodotto finale sia conforme alle aspettative del cliente. Il Piano di Qualifica è essenziale per garantire che il prodotto sia testato in modo rigoroso e che soddisfi gli standard di qualità richiesti. "
     },
     {
-      "termine": "Poc",
-      "definizione": "Il  Proof of Concept(POC) è una realizzazione preliminare o parziale di un progetto, finalizzata a dimostrare la fattibilità delle idee e delle tecnologie coinvolte nel progetto stesso, basandosi su principi o concetti fondamentali. Essa costituisce un prototipo, utilizzato per valutare la fattibilità del progetto. "
+      "termine": "PoC",
+      "definizione": "Il  Proof of Concept (PoC) è una realizzazione preliminare o parziale di un progetto, finalizzata a dimostrare la fattibilità delle idee e delle tecnologie coinvolte nel progetto stesso, basandosi su principi o concetti fondamentali del prodotto finale. Essa costituisce un prototipo, utilizzato per valutare la fattibilità del progetto. "
     },
     {
       "termine": "Posta elettronica",
@@ -210,11 +210,11 @@
     },
     {
       "termine": "Postcondizione",
-      "definizione": "La postcondizione è lo stato del sistema o le condizioni che devono essere soddisfatte dopo l'esecuzione di un caso d'uso specifico. Indica lo stato o le modifiche che il sistema dovrebbe avere raggiunto al termine del caso d'uso. "
+      "definizione": "La postcondizione è lo stato del sistema o le condizioni che devono essere soddisfatte dopo l'esecuzione di un caso d'uso di una funzione specifica. Indica lo stato o le modifiche che il sistema dovrebbe avere raggiunto al termine del caso d'uso o della funzione presa in esame "
     },
     {
       "termine": "Precondizione",
-      "definizione": "La precondizione è uno stato o una condizione del sistema che deve essere soddisfatta affinché un caso d'uso possa essere eseguito con successo. Indica lo stato iniziale o le circostanze necessarie perché il caso d'uso possa essere avviato e completato correttamente. "
+      "definizione": "La precondizione è uno stato o una condizione del sistema che deve essere soddisfatta affinché un caso d'uso o una funzione possa essere eseguita con successo. Indica lo stato iniziale o le circostanze necessarie perché il caso d'uso o la funzione presa in esame possa essere avviata e completata correttamente. "
     },
     {
       "termine": "Prenotazione",
@@ -230,7 +230,7 @@
     },
     {
       "termine": "Processo",
-      "definizione": "Successione di eventi/attività che producono un risultato visibile e concreto. Deve essere condotto in modo sistematico, disciplinato e misurabile."
+      "definizione": "Il processo è una successione di eventi/attività che producono un risultato visibile e concreto. Deve essere condotto in modo sistematico, disciplinato e misurabile."
     },
     {
       "termine": "Processo primario",
@@ -269,8 +269,8 @@
   ],
   "R": [
     {
-      "termine": "RAMTASTIC6",
-      "definizione": "Gruppo di sviluppo dell’intero progetto didattico inerente al corso didattico “Ingegneria del Software” composto da 6 studenti del corso di Informatica dell’università di Padova."
+      "termine": "RAMtastic6",
+      "definizione": "RAMtastic 6 è gruppo di sviluppo dell’intero progetto didattico inerente al corso didattico “Ingegneria del Software” composto da 6 studenti del corso di Informatica dell’Università di Padova."
     },
     {
       "termine": "Redattore",
@@ -298,11 +298,11 @@
     },
     {
       "termine": "Riferimenti normativi",
-      "definizione": "Sono quei riferimenti che indicano norme, standard o regolamenti ufficiali che devono essere rispettati durante lo svolgimento di un progetto o l'elaborazione di un documento. Questi possono includere leggi, direttive settoriali, standard di qualità o normative specifiche del settore."
+      "definizione": "I riferimenti normativi sono quei riferimenti che indicano norme, standard o regolamenti ufficiali che devono essere rispettati durante lo svolgimento di un progetto o l'elaborazione di un documento. Questi possono includere leggi, direttive settoriali, standard di qualità o normative specifiche del settore."
     },
     {
       "termine": "Riferimenti informativi",
-      "definizione": "Si riferiscono a documenti, pubblicazioni o fonti informative che forniscono ulteriori dettagli, contestualizzazioni o approfondimenti relativi al contenuto del documento principale, ma non sono considerati vincolanti o obbligatori per il progetto o l'elaborazione del documento stesso."
+      "definizione": "I riferimenti informativi si riferiscono a documenti, pubblicazioni o fonti informative che forniscono ulteriori dettagli, contestualizzazioni o approfondimenti relativi al contenuto del documento principale, ma non sono considerati vincolanti o obbligatori per il progetto o l'elaborazione del documento stesso."
     },
     {
       "termine": "Rilascio",
@@ -314,11 +314,11 @@
     },
     {
       "termine": "Rischio organizzativo",
-      "definizione": "Si riferisce alla possibilità che problemi interni all'organizzazione, come mancanza di risorse, conflitti tra membri del team o cambiamenti nell'organigramma aziendale, possano influenzare negativamente il successo del progetto."
+      "definizione": "Con il termine rischio organizzativo si riferisce alla possibilità che problemi interni all'organizzazione, come mancanza di risorse, conflitti tra membri del team o cambiamenti nell'organigramma aziendale, possano influenzare negativamente il successo del progetto."
     },
     {
       "termine": "Rischio relativo al prodotto",
-      "definizione": "Questo tipo di rischio riguarda i potenziali difetti, malfunzionamenti o mancanze nel prodotto software stesso. Potrebbe includere problemi di qualità del software, non conformità ai requisiti utente o problemi di sicurezza."
+      "definizione": "Il rischio relativo al prodotto riguarda i potenziali difetti, malfunzionamenti o mancanze nel prodotto software stesso. Potrebbe includere problemi di qualità del software, non conformità ai requisiti utente o problemi di sicurezza."
     },
     {
       "termine": "Rischio tecnologico",
@@ -336,7 +336,7 @@
   "S": [
     {
       "termine": "Scenario",
-      "definizione": "Nell'analisi dei requisiti, uno scenario rappresenta una sequenza di azioni o eventi che descrivono un possibile flusso di interazione tra l'utente e il sistema. Gli scenari sono utilizzati per comprendere e illustrare come il sistema dovrebbe comportarsi in determinate situazioni o sotto determinate condizioni. Ogni scenario include una serie di passi che descrivono le azioni compiute dagli utenti e le risposte del sistema, consentendo di visualizzare in modo chiaro e dettagliato il comportamento previsto del software. Gli scenari possono essere utilizzati per identificare requisiti funzionali, individuare casi d'uso e validare il sistema durante lo sviluppo e il testing. "
+      "definizione": "Nel documento di Analisi dei Requisiti, uno scenario rappresenta una sequenza di azioni o eventi che descrivono un possibile flusso di interazione tra l'utente e il sistema. Gli scenari sono utilizzati per comprendere e illustrare come il sistema dovrebbe comportarsi in determinate situazioni o sotto determinate condizioni. Ogni scenario include una serie di passi che descrivono le azioni compiute dagli utenti e le risposte del sistema, consentendo di visualizzare in modo chiaro e dettagliato il comportamento previsto del software. Gli scenari possono essere utilizzati per identificare requisiti funzionali, individuare casi d'uso e validare il sistema durante lo sviluppo e il testing. "
     },
     {
       "termine": "Scenario principale",
@@ -352,7 +352,7 @@
     },
     {
       "termine": "Sistema",
-      "definizione": "Il Sistema nell'analisi dei requisiti si riferisce all'insieme di componenti software, hardware e di sistema che collaborano per fornire le funzionalità richieste dal prodotto. Il sistema può comprendere diverse parti, come applicazioni software, database e server."
+      "definizione": "Il Sistema nel documento di Analisi dei Requisiti si riferisce all'insieme di componenti software, hardware e di sistema che collaborano per fornire le funzionalità richieste dal prodotto. Il sistema può comprendere diverse parti, come applicazioni software, database e server."
     },
     {
       "termine": "Software",
@@ -386,7 +386,7 @@
     },
     {
       "termine": "Template",
-      "definizione": "Un template, in ambito documentale, è un modello predefinito che fornisce una struttura organizzativa e visiva per la creazione di documenti. Questi modelli includono solitamente sezioni già definite, formattazione standard, stili di testo preimpostati e elementi grafici coerenti(usati ad esempio nei powerpoint dei diari di bordo e per le prime pagine di ogni documento, ovvero copertina e indice). L'uso di un template consente di uniformare l'aspetto e la struttura dei documenti prodotti da diversi autori, facilitando la creazione e la lettura dei contenuti. "
+      "definizione": "Un template, in ambito documentale, è un modello predefinito che fornisce una struttura organizzativa e visiva per la creazione di documenti. Questi modelli includono solitamente sezioni già definite, formattazione standard, stili di testo preimpostati e elementi grafici coerenti (usati ad esempio nei powerpoint dei diari di bordo e per le prime pagine di ogni documento, ovvero copertina e indice). L'uso di un template consente di uniformare l'aspetto e la struttura dei documenti prodotti da diversi autori, facilitando la creazione e la lettura dei contenuti. "
     },
     {
       "termine": "Test",
@@ -414,15 +414,15 @@
     },
     {
       "termine": "Verbale esterno",
-      "definizione": "Documento che riporta le discussioni, le decisioni e gli eventi avvenuti durante una riunione o un incontro con soggetti esterni al team di lavoro o all'organizzazione. È utilizzato nel nostro caso per comunicare in modo formale e documentato con aziende proponenti, professori, o altre parti interessate esterne."
+      "definizione": "Un verbale esterno è un documento che riporta le discussioni, le decisioni e gli eventi avvenuti durante una riunione o un incontro con soggetti esterni al team di lavoro o all'organizzazione. È utilizzato nel nostro caso per comunicare in modo formale e documentato con aziende proponenti, professori, o altre parti interessate esterne."
     },
     {
       "termine": "Verbale interno",
-      "definizione": "Documento che riporta le discussioni, le decisioni e gli eventi avvenuti durante una riunione o un incontro all'interno del team di lavoro o dell'organizzazione stessa. Viene utilizzato per registrare e documentare le attività e le decisioni prese all'interno del gruppo di lavoro."
+      "definizione": "Un verbale interno è documento che riporta le discussioni, le decisioni e gli eventi avvenuti durante una riunione o un incontro all'interno del team di lavoro o dell'organizzazione stessa. Viene utilizzato per registrare e documentare le attività e le decisioni prese all'interno del gruppo di lavoro."
     },
     {
       "termine": "Versionamento",
-      "definizione": "Processo di gestione delle diverse versioni di un prodotto software o di altri documenti, che consente di tracciare e registrare le modifiche apportate nel tempo. Il versionamento permette di tenere traccia delle variazioni, delle correzioni di bug e delle nuove funzionalità implementate, facilitando il controllo delle revisioni e garantendo una corretta gestione delle versioni. "
+      "definizione": "Il versionamento è un processo di gestione delle diverse versioni di un prodotto software o di altri documenti, che consente di tracciare e registrare le modifiche apportate nel tempo. Il versionamento permette di tenere traccia delle variazioni, delle correzioni di bug e delle nuove funzionalità implementate, facilitando il controllo delle revisioni e garantendo una corretta gestione delle versioni. "
     }
   ],
   "W": [],
