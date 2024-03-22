@@ -4,3 +4,12 @@
 .DS_Store
 .AppleDouble
 .LSOverride
+
+# latex workshop
+*.aux
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.synctex.gz
+*.synctex(busy)
