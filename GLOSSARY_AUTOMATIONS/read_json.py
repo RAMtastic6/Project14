@@ -3,6 +3,7 @@ import os
 
 def get_json_array_from_path(path: str):
     f = open(path, "r", encoding="utf8")
+    #f = open(path, "rb")
     file_content = f.read()
     json_array = json.loads(file_content) # parse da stringa a array in formato json
     return json_array
