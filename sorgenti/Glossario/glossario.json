@@ -32,6 +32,10 @@
       "termine": "Capitolato",
       "definizione": "Un capitolato è un documento tecnico allegato a un contratto di appalto, che definisce le specifiche tecniche delle opere da eseguire nel contesto del contratto stesso. Solitamente parte integrante del contratto, il capitolato stabilisce i diritti, i doveri e le particolarità relative all'esecuzione dei lavori tra le parti coinvolte. Serve da riferimento per delineare gli accordi tra i soggetti privati coinvolti nel progetto."
     },
+	{
+      "termine": "Caption",
+      "definizione": "La caption di una tabella o di un'immagine in una documentazione è una breve descrizione o etichetta che fornisce informazioni sul contenuto della tabella o dell'immagine. Serve a identificare e spiegare il contenuto visivo o i dati presentati nella tabella, nel caso delle immagini può includere una breve descrizione o un titolo per aiutare il lettore a comprendere il contesto dell'immagine."
+    },
     {
       "termine": "Caso d'Uso",
       "definizione": "Un caso d'uso definisce le interazioni tra gli attori (utenti) e il sistema software, rappresentando sequenze di azioni che guidano l'utilizzo del sistema per raggiungere determinati obiettivi. Queste interazioni descrivono come il sistema deve essere utilizzato e quali funzionalità devono essere esposte agli utenti."
@@ -104,7 +108,7 @@
     },
     {
       "termine": "Fornitura",
-      "definizione": "Riferito al settore ristorativo, la fornitura si riferisce alla consegna e alla disponibilità di beni o prodotti utilizzati all'interno di un ristorante. Questi beni possono includere ingredienti alimentari, bevande, materiali per la preparazione dei cibi, utensili da cucina, stoviglie, ecc. La gestione efficace delle forniture è cruciale per garantire che il ristorante abbia sempre a disposizione ciò di cui ha bisogno per fornire i suoi servizi in modo efficiente e soddisfacente per i clienti. Ciò può includere la pianificazione degli ordini, la gestione dell'inventario, la ricerca di fornitori affidabili e la negoziazione dei prezzi."
+      "definizione": "Indica il processo primario che riguarda l'approvvigionamento, l'acquisizione e la consegna di prodotti o servizi esterni necessari per il completamento del progetto, nonché la gestione delle relazioni con i fornitori esterni."
     },
     {
       "termine": "Framework",
