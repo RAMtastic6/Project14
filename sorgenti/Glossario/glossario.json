@@ -186,7 +186,7 @@
   "P": [
     {
       "termine": "PB",
-      "definizione": "PB è l'abbreviazione di \"Product Backlog\" (Lista delle attività da svolgere sul prodotto), che rappresenta l'insieme prioritizzato dei requisiti e delle funzionalità che devono essere implementati nel prodotto durante lo sviluppo. È una componente fondamentale della metodologia Agile e viene utilizzato per pianificare, gestire e monitorare l'evoluzione del progetto. La lista è dinamica e può essere aggiornata durante lo sviluppo del prodotto in base alle esigenze emergenti del cliente e del team di sviluppo. "
+      "definizione": "La Product Baseline è un insieme di documenti e materiali che rappresentano lo stato approvato di un prodotto in un determinato momento del ciclo di vita del progetto. Include specifiche di progettazione, documenti di requisiti, codice sorgente e altri artefatti pertinenti. La Product Baseline serve come riferimento per valutare il progresso del progetto e assicurare che il prodotto soddisfi i requisiti stabiliti durante la fase di pianificazione. È il risultato di un'analisi e di una revisione approfondita dei requisiti e delle specifiche del progetto, ed è approvata dal cliente o dagli stakeholder."
     },
     {
       "termine": "PDF",
@@ -330,7 +330,7 @@
     },
     {
       "termine": "RTB",
-      "definizione": "RTB è l'acronimo di \"Ready to Build\", una fase del progetto che indica che l'insieme di requisiti funzionali e non funzionali è stato definito, analizzato e approvato, preparando così il terreno per l'inizio effettivo dello sviluppo del software. In questa fase, il team di sviluppo ha completato le attività di analisi dei requisiti, la progettazione architetturale e dettagliata e ha ottenuto l'approvazione finale per procedere con l'implementazione del sistema. La fase RTB rappresenta un punto di svolta nel ciclo di vita del progetto, in cui si passa dalla pianificazione e progettazione alla fase operativa di costruzione del software. "
+      "definizione": "La Requirements Technology Baseline è una linea di base tecnologica che rappresenta lo stato degli strumenti, delle tecniche e dei processi utilizzati per la gestione dei requisiti del progetto. Include gli strumenti software utilizzati per la raccolta, l'analisi, la tracciabilità e la gestione dei requisiti, nonché le procedure e le pratiche per l'identificazione, la documentazione e la validazione dei requisiti. La RTB fornisce una base stabile e affidabile per il processo di sviluppo del software, garantendo che gli strumenti e le tecnologie utilizzate siano adatti e siano stati compresi per lo scopo e soddisfino le esigenze del progetto."
     }
   ],
   "S": [

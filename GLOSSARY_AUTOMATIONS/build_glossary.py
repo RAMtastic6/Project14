@@ -50,6 +50,8 @@ Uso: & Esterno
 \hline
 \textbf{Versione} & \textbf{Data} & \textbf{Autore} & \textbf{Verificatore} & \textbf{Dettaglio} \\
 \hline
+v.1.0.1 & 2024-03-22 & Brotto D. & N/A & Corrette le definizioni di PB e RTB \\
+\hline
 v.1.0.0 & 2024-03-20 & Brotto D. & N/A & Stilate le definizioni di tutti i termini, aggiunti alcuni termini ambigui come Prenotazione e Orinazione e rimosso Acquisizione \\
 \hline
 v.0.0.1 & 2024-01-19 & Michele Z. & Brotto D. & Creata struttura del glossario e aggiunti i termini \\
