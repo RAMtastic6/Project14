@@ -1,0 +1,121 @@
+\babel@toc {italian}{}\relax 
+\babel@toc {italian}{}\relax 
+\contentsline {section}{\numberline {1}Introduzione}{4}{section.1}%
+\contentsline {section}{\numberline {2}A}{5}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Analisi Dei Requisiti}{5}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}Applicazione Web Responsive}{5}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2.3}Attore}{5}{subsection.2.3}%
+\contentsline {section}{\numberline {3}B}{6}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Branch}{6}{subsection.3.1}%
+\contentsline {section}{\numberline {4}C}{7}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Candidatura}{7}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Capitolato}{7}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.3}Caso d'Uso}{7}{subsection.4.3}%
+\contentsline {subsection}{\numberline {4.4}Changelog}{7}{subsection.4.4}%
+\contentsline {subsection}{\numberline {4.5}Codifica}{7}{subsection.4.5}%
+\contentsline {subsection}{\numberline {4.6}Consuntivo}{7}{subsection.4.6}%
+\contentsline {subsection}{\numberline {4.7}Controllo di Configurazione}{8}{subsection.4.7}%
+\contentsline {section}{\numberline {5}D}{9}{section.5}%
+\contentsline {subsection}{\numberline {5.1}Design}{9}{subsection.5.1}%
+\contentsline {subsection}{\numberline {5.2}Diagramma dei Casi d'Uso}{9}{subsection.5.2}%
+\contentsline {subsection}{\numberline {5.3}Diario di Bordo}{9}{subsection.5.3}%
+\contentsline {subsection}{\numberline {5.4}Discord}{9}{subsection.5.4}%
+\contentsline {subsection}{\numberline {5.5}Documento Esterno}{9}{subsection.5.5}%
+\contentsline {subsection}{\numberline {5.6}Documento Interno}{9}{subsection.5.6}%
+\contentsline {section}{\numberline {6}E}{11}{section.6}%
+\contentsline {subsection}{\numberline {6.1}Easy Meal}{11}{subsection.6.1}%
+\contentsline {subsection}{\numberline {6.2}Eccezione}{11}{subsection.6.2}%
+\contentsline {subsection}{\numberline {6.3}Editor}{11}{subsection.6.3}%
+\contentsline {section}{\numberline {7}F}{12}{section.7}%
+\contentsline {subsection}{\numberline {7.1}Feature}{12}{subsection.7.1}%
+\contentsline {subsection}{\numberline {7.2}Feedback}{12}{subsection.7.2}%
+\contentsline {subsection}{\numberline {7.3}Fornitura}{12}{subsection.7.3}%
+\contentsline {subsection}{\numberline {7.4}Framework}{12}{subsection.7.4}%
+\contentsline {subsection}{\numberline {7.5}Funzionalit?}{12}{subsection.7.5}%
+\contentsline {section}{\numberline {8}G}{14}{section.8}%
+\contentsline {subsection}{\numberline {8.1}Git}{14}{subsection.8.1}%
+\contentsline {subsection}{\numberline {8.2}Github}{14}{subsection.8.2}%
+\contentsline {section}{\numberline {9}H}{15}{section.9}%
+\contentsline {section}{\numberline {10}I}{16}{section.10}%
+\contentsline {subsection}{\numberline {10.1}Imola Informatica}{16}{subsection.10.1}%
+\contentsline {subsection}{\numberline {10.2}Infrastruttura}{16}{subsection.10.2}%
+\contentsline {subsection}{\numberline {10.3}Ingegneria del software}{16}{subsection.10.3}%
+\contentsline {section}{\numberline {11}J}{17}{section.11}%
+\contentsline {subsection}{\numberline {11.1}Jira}{17}{subsection.11.1}%
+\contentsline {section}{\numberline {12}K}{18}{section.12}%
+\contentsline {section}{\numberline {13}L}{19}{section.13}%
+\contentsline {section}{\numberline {14}M}{20}{section.14}%
+\contentsline {subsection}{\numberline {14.1}Manuale Utente}{20}{subsection.14.1}%
+\contentsline {subsection}{\numberline {14.2}Milestone}{20}{subsection.14.2}%
+\contentsline {section}{\numberline {15}N}{21}{section.15}%
+\contentsline {subsection}{\numberline {15.1}Norme di Progetto}{21}{subsection.15.1}%
+\contentsline {section}{\numberline {16}O}{22}{section.16}%
+\contentsline {subsection}{\numberline {16.1}Overleaf}{22}{subsection.16.1}%
+\contentsline {subsection}{\numberline {16.2}Ordinazione}{22}{subsection.16.2}%
+\contentsline {section}{\numberline {17}P}{23}{section.17}%
+\contentsline {subsection}{\numberline {17.1}PB}{23}{subsection.17.1}%
+\contentsline {subsection}{\numberline {17.2}PDF}{23}{subsection.17.2}%
+\contentsline {subsection}{\numberline {17.3}Piano di Progetto}{23}{subsection.17.3}%
+\contentsline {subsection}{\numberline {17.4}Piano di Qualifica}{23}{subsection.17.4}%
+\contentsline {subsection}{\numberline {17.5}Poc}{23}{subsection.17.5}%
+\contentsline {subsection}{\numberline {17.6}Posta elettronica}{23}{subsection.17.6}%
+\contentsline {subsection}{\numberline {17.7}Postcondizione}{24}{subsection.17.7}%
+\contentsline {subsection}{\numberline {17.8}Precondizione}{24}{subsection.17.8}%
+\contentsline {subsection}{\numberline {17.9}Prenotazione}{24}{subsection.17.9}%
+\contentsline {subsection}{\numberline {17.10}Preventivo}{24}{subsection.17.10}%
+\contentsline {subsection}{\numberline {17.11}Principio di miglioramento continuo}{24}{subsection.17.11}%
+\contentsline {subsection}{\numberline {17.12}Processo}{24}{subsection.17.12}%
+\contentsline {subsection}{\numberline {17.13}Processo primario}{24}{subsection.17.13}%
+\contentsline {subsection}{\numberline {17.14}Processo di supporto}{25}{subsection.17.14}%
+\contentsline {subsection}{\numberline {17.15}Processo organizzativo}{25}{subsection.17.15}%
+\contentsline {subsection}{\numberline {17.16}Progettazione architetturale}{25}{subsection.17.16}%
+\contentsline {subsection}{\numberline {17.17}Progettazione dettagliata}{25}{subsection.17.17}%
+\contentsline {subsection}{\numberline {17.18}Push}{25}{subsection.17.18}%
+\contentsline {section}{\numberline {18}Q}{26}{section.18}%
+\contentsline {subsection}{\numberline {18.1}Qualità di processo}{26}{subsection.18.1}%
+\contentsline {subsection}{\numberline {18.2}Qualità di prodotto}{26}{subsection.18.2}%
+\contentsline {section}{\numberline {19}R}{27}{section.19}%
+\contentsline {subsection}{\numberline {19.1}RAMTASTIC6}{27}{subsection.19.1}%
+\contentsline {subsection}{\numberline {19.2}Redattore}{27}{subsection.19.2}%
+\contentsline {subsection}{\numberline {19.3}Repository}{27}{subsection.19.3}%
+\contentsline {subsection}{\numberline {19.4}Requisito}{27}{subsection.19.4}%
+\contentsline {subsection}{\numberline {19.5}Requisiti funzionali desiderabili}{27}{subsection.19.5}%
+\contentsline {subsection}{\numberline {19.6}Requisiti funzionali obbligatori}{27}{subsection.19.6}%
+\contentsline {subsection}{\numberline {19.7}Riferimento}{27}{subsection.19.7}%
+\contentsline {subsection}{\numberline {19.8}Riferimenti normativi}{28}{subsection.19.8}%
+\contentsline {subsection}{\numberline {19.9}Riferimenti informativi}{28}{subsection.19.9}%
+\contentsline {subsection}{\numberline {19.10}Rilascio}{28}{subsection.19.10}%
+\contentsline {subsection}{\numberline {19.11}Rischio}{28}{subsection.19.11}%
+\contentsline {subsection}{\numberline {19.12}Rischio organizzativo}{28}{subsection.19.12}%
+\contentsline {subsection}{\numberline {19.13}Rischio relativo al prodotto}{28}{subsection.19.13}%
+\contentsline {subsection}{\numberline {19.14}Rischio tecnologico}{28}{subsection.19.14}%
+\contentsline {subsection}{\numberline {19.15}Risorsa Umana}{29}{subsection.19.15}%
+\contentsline {subsection}{\numberline {19.16}RTB}{29}{subsection.19.16}%
+\contentsline {section}{\numberline {20}S}{30}{section.20}%
+\contentsline {subsection}{\numberline {20.1}Scenario}{30}{subsection.20.1}%
+\contentsline {subsection}{\numberline {20.2}Scenario principale}{30}{subsection.20.2}%
+\contentsline {subsection}{\numberline {20.3}Scenario alternativo}{30}{subsection.20.3}%
+\contentsline {subsection}{\numberline {20.4}Scrum}{30}{subsection.20.4}%
+\contentsline {subsection}{\numberline {20.5}Sistema}{30}{subsection.20.5}%
+\contentsline {subsection}{\numberline {20.6}Software}{30}{subsection.20.6}%
+\contentsline {subsection}{\numberline {20.7}Sottocaso d'uso}{31}{subsection.20.7}%
+\contentsline {subsection}{\numberline {20.8}Specifica tecnica}{31}{subsection.20.8}%
+\contentsline {subsection}{\numberline {20.9}Sprint}{31}{subsection.20.9}%
+\contentsline {section}{\numberline {21}T}{32}{section.21}%
+\contentsline {subsection}{\numberline {21.1}Tecnologia}{32}{subsection.21.1}%
+\contentsline {subsection}{\numberline {21.2}Telegram}{32}{subsection.21.2}%
+\contentsline {subsection}{\numberline {21.3}Template}{32}{subsection.21.3}%
+\contentsline {subsection}{\numberline {21.4}Test}{32}{subsection.21.4}%
+\contentsline {subsection}{\numberline {21.5}Ticket}{32}{subsection.21.5}%
+\contentsline {subsection}{\numberline {21.6}Trigger}{33}{subsection.21.6}%
+\contentsline {section}{\numberline {22}U}{34}{section.22}%
+\contentsline {subsection}{\numberline {22.1}UML}{34}{subsection.22.1}%
+\contentsline {section}{\numberline {23}V}{35}{section.23}%
+\contentsline {subsection}{\numberline {23.1}Verbale}{35}{subsection.23.1}%
+\contentsline {subsection}{\numberline {23.2}Verbale esterno}{35}{subsection.23.2}%
+\contentsline {subsection}{\numberline {23.3}Verbale interno}{35}{subsection.23.3}%
+\contentsline {subsection}{\numberline {23.4}Versionamento}{35}{subsection.23.4}%
+\contentsline {section}{\numberline {24}W}{36}{section.24}%
+\contentsline {section}{\numberline {25}X}{37}{section.25}%
+\contentsline {section}{\numberline {26}Y}{38}{section.26}%
+\contentsline {section}{\numberline {27}Z}{39}{section.27}%

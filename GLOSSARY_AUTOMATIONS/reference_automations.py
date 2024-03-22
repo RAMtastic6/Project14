@@ -50,7 +50,7 @@ def repl_all_occurrences(glossary_path: str, filename: str, content_folder: str 
         # problema: le entries della lista non sembrano modificarsi da sole.
         count_replaced_occurrences = 0 
         for d in defs:
-            ref_string = "\\textit{" + d + "_G}"
+            ref_string = "$\\textit{" + d + "}_G$"
             for index, item in enumerate(lines):
                 if not check_for_titles(item) and ref_string not in item:
                     # ricercare la parola all'interno della riga, non la sottostringa
