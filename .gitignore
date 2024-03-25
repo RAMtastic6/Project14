@@ -12,3 +12,5 @@
 *.log
 *.synctex.gz
 *.out
+*.toc
+*.synctex(busy)
