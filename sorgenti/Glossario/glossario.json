@@ -34,7 +34,7 @@
     },
 	{
       "termine": "Caption",
-      "definizione": "La caption di una tabella o di un'immagine in una documentazione è una breve descrizione o etichetta che fornisce informazioni sul contenuto della tabella o dell'immagine. Serve a identificare e spiegare il contenuto visivo o i dati presentati nella tabella, nel caso delle immagini può includere una breve descrizione o un titolo per aiutare il lettore a comprendere il contesto dell'immagine."
+      "definizione": "La caption di una tabella o di un'immagine in una documentazione è una breve descrizione o etichetta che fornisce informazioni sul contenuto della tabella o dell'immagine stessa. Ha lo scopo di identificare e spiegare il contenuto visivo o i dati presentati nella tabella, mentre nel caso delle immagini può includere una breve descrizione o un titolo per aiutare il lettore a comprendere il contesto della stessa."
     },
     {
       "termine": "Caso d'Uso",
@@ -108,7 +108,7 @@
     },
     {
       "termine": "Fornitura",
-      "definizione": "Indica il processo primario che riguarda l'approvvigionamento, l'acquisizione e la consegna di prodotti o servizi esterni necessari per il completamento del progetto, nonché la gestione delle relazioni con i fornitori esterni."
+      "definizione": "La fornitura indica il processo primario che riguarda l'approvvigionamento, l'acquisizione e la consegna di prodotti o servizi esterni necessari per il completamento del progetto, nonché la gestione delle relazioni con i fornitori esterni."
     },
     {
       "termine": "Framework",
@@ -190,7 +190,7 @@
   "P": [
     {
       "termine": "PB",
-      "definizione": "La Product Baseline è un insieme di documenti e materiali che rappresentano lo stato approvato di un prodotto in un determinato momento del ciclo di vita del progetto. Include specifiche di progettazione, documenti di requisiti, codice sorgente e altri artefatti pertinenti. La Product Baseline serve come riferimento per valutare il progresso del progetto e assicurare che il prodotto soddisfi i requisiti stabiliti durante la fase di pianificazione. È il risultato di un'analisi e di una revisione approfondita dei requisiti e delle specifiche del progetto, ed è approvata dal cliente o dagli stakeholder."
+      "definizione": "La Product Baseline (PB) è un insieme consolidato di documenti e materiali che rappresentano lo stato approvato di un prodotto software in un determinato momento del ciclo di vita del progetto. Include specifiche di progettazione, documenti di requisiti, codice sorgente e altri artefatti pertinenti. La Product Baseline serve come riferimento per valutare il progresso del progetto e assicurare che il prodotto soddisfi i requisiti stabiliti durante la fase di pianificazione. È il risultato di un'analisi e di una revisione approfondita dei requisiti e delle specifiche del progetto, ed è approvata dal cliente o dagli stakeholder."
     },
     {
       "termine": "PDF",
@@ -334,7 +334,7 @@
     },
     {
       "termine": "RTB",
-      "definizione": "La Requirements Technology Baseline è una linea di base tecnologica che rappresenta lo stato degli strumenti, delle tecniche e dei processi utilizzati per la gestione dei requisiti del progetto. Include gli strumenti software utilizzati per la raccolta, l'analisi, la tracciabilità e la gestione dei requisiti, nonché le procedure e le pratiche per l'identificazione, la documentazione e la validazione dei requisiti. La RTB fornisce una base stabile e affidabile per il processo di sviluppo del software, garantendo che gli strumenti e le tecnologie utilizzate siano adatti e siano stati compresi per lo scopo e soddisfino le esigenze del progetto."
+      "definizione": "La Requirements Technology Baseline (RTB) è una linea di base tecnologica di un progetto software che rappresenta lo stato degli strumenti, delle tecniche e dei processi utilizzati per la gestione dei requisiti funzionali e non del sistema. Include gli strumenti software utilizzati per la raccolta, l'analisi, la tracciabilità e la gestione dei requisiti, nonché le procedure e le pratiche per l'identificazione, la documentazione e la validazione dei requisiti. La RTB fornisce una base stabile e affidabile per il processo di sviluppo del software, garantendo che gli strumenti e le tecnologie utilizzate siano adatti e siano stati compresi per lo scopo e soddisfino le esigenze del progetto."
     }
   ],
   "S": [

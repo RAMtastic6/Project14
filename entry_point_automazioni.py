@@ -4,7 +4,7 @@ from GLOSSARY_AUTOMATIONS.build_glossary import build_glossario
 from GLOSSARY_AUTOMATIONS.reference_automations import * 
 
 # definizione di tutti i path
-PATH_TO_GLOSSARY_FOLDER = os.path.join(os.getcwd(), "sorgenti", "Glossario")
+PATH_TO_GLOSSARY_FOLDER = os.path.join(os.getcwd(), "sorgenti", "Glossario/")
 PATH_TO_GLOSSARY_JSON = os.path.join(os.getcwd(), "sorgenti", "Glossario/glossario.json")
 PATH_TO_AR_FOLDER = os.path.join(os.getcwd(), "sorgenti", "Analisi dei Requisiti/")
 PATH_TO_PDP_FOLDER = os.path.join(os.getcwd(), "sorgenti", "Piano_Di_Progetto/")
