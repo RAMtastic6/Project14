@@ -60,7 +60,7 @@ def repl_all_occurrences(glossary_path: str, filename: str, content_folder: str 
                         lines[index] = item.replace(d, ref_string)
                     elif w.lower() in item:
                         count_replaced_occurrences += 1 
-                        lines[index] = item.replace(d.lower(), ref_string)
+                        lines[index] = item.replace(d.lower(), "$\\textit{" + d.lower() + "}_G$")
 
         
         # ricomporre tutto contentuo all'interno di una 
