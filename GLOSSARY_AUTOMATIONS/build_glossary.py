@@ -1,4 +1,5 @@
 from GLOSSARY_AUTOMATIONS.read_json import *
+import os
 # il path che corrisponde alla cartella del glossario
 
 intestazione = r"""\documentclass[12pt, oneside]{article} 
@@ -14,7 +15,7 @@ intestazione = r"""\documentclass[12pt, oneside]{article}
 \pagestyle{fancy}
 \fancyhf{}
 \fancyhead[R]{Gruppo 14 RAMtastic6\\ramtastic6@gmail.com}
-\fancyfoot[C]{\\thepage}
+\fancyfoot[C]{\thepage}
 
 \renewcommand{\headrulewidth}{0pt} 
 
@@ -35,9 +36,9 @@ intestazione = r"""\documentclass[12pt, oneside]{article}
 % Informazioni sul documento
 \section*{Informazioni sul documento}
 \begin{tabular}{ll}
-Versione: & 0.0.1 \\
-Redattori:  & Michele Z.\\
-Verificatori: & \\ 
+Versione: & 0.1.0 \\
+Redattori:  & Zambon M. Brotto D.\\
+Verificatori: & Brotto D. Zaupa R.\\ 
 Destinatari: & T. Vardanega, R. Cardin, Imola Informatica \\
 Uso: & Esterno
 \end{tabular}
@@ -49,7 +50,11 @@ Uso: & Esterno
 \hline
 \textbf{Versione} & \textbf{Data} & \textbf{Autore} & \textbf{Verificatore} & \textbf{Dettaglio} \\
 \hline
-v.0.0.1 & 2024-01-19 & Michele Z. & N/A & Creata struttura del glossario e aggiunti i termini \\
+v.0.1.0 & 2024-03-22 & Brotto D. & Zaupa R. & Corrette le definizioni di PB,RTB e Fornitura. Aggiunto il termine Caption\\
+\hline
+v.0.0.2 & 2024-03-20 & Brotto D. & Zaupa R. & Stilate le definizioni di tutti i termini, aggiunti alcuni termini ambigui come Prenotazione e Ordinazione e rimosso Acquisizione \\
+\hline
+v.0.0.1 & 2024-01-19 & Michele Z. & Brotto D. & Creata struttura del glossario e aggiunti i termini \\
 \hline
 \end{tabular}
 \newpage
@@ -61,30 +66,55 @@ v.0.0.1 & 2024-01-19 & Michele Z. & N/A & Creata struttura del glossario e aggiu
 Il glossario ha lo scopo di raccogliere i termini tecnici usati nel corso del progetto, al fine di facilitare la comprensione della documentazione, sia per i membri del gruppo che per i lettori esterni.
 \newpage
 \input{Contents/A}
+\newpage
 \input{Contents/B}
+\newpage
 \input{Contents/C}
+\newpage
 \input{Contents/D}
+\newpage
 \input{Contents/E}
+\newpage
 \input{Contents/F}
+\newpage
 \input{Contents/G}
+\newpage
 \input{Contents/H}
+\newpage
 \input{Contents/I}
+\newpage
 \input{Contents/J}
+\newpage
 \input{Contents/K}
+\newpage
 \input{Contents/L}
+\newpage
 \input{Contents/M}
+\newpage
 \input{Contents/N}
+\newpage
 \input{Contents/O}
+\newpage
 \input{Contents/P}
+\newpage
 \input{Contents/Q}
+\newpage
 \input{Contents/R}
+\newpage
 \input{Contents/S}
+\newpage
 \input{Contents/T}
+\newpage
 \input{Contents/U}
+\newpage
 \input{Contents/V}
+\newpage
 \input{Contents/W}
+\newpage
 \input{Contents/X}
+\newpage
 \input{Contents/Y}
+\newpage
 \input{Contents/Z}
 
 
@@ -106,11 +136,11 @@ def build_glossario(dir: str) -> None:
     f.write(intestazione)
     f.close()
 
-    JSON_ARRAY = get_json_array_from_path(dir + "glossario.json")
+    JSON_ARRAY = get_json_array_from_path(os.path.join(dir,"glossario.json"))
 
     for c in ALPHABET:
         section = compose_section(c, JSON_ARRAY)
-        section_path = dir + "Contents/" + c + ".tex"
-        f = open(section_path, "w")
+        section_path = os.path.join(dir , "Contents" , (c + ".tex"))
+        f = open(section_path, "w", encoding="utf8")
         f.write(section)
         f.close()

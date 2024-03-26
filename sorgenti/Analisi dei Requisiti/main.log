@@ -1,0 +1,1579 @@
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10) (preloaded format=pdflatex 2024.1.25)  22 MAR 2024 11:19
+entering extended mode
+ restricted \write18 enabled.
+ file:line:error style messages enabled.
+ %&-line parsing enabled.
+**"c:/Users/ricca/OneDrive/Documenti/RAMtastic6/Project14/sorgenti/Analisi dei Requisiti/main.tex"
+(c:/Users/ricca/OneDrive/Documenti/RAMtastic6/Project14/sorgenti/Analisi dei Requisiti/main.tex
+LaTeX2e <2023-06-01> patch level 1
+L3 programming layer <2023-08-29>
+(C:\Users\ricca\AppData\Local\Programs\MiKTeX\tex/latex/base\article.cls
+Document Class: article 2023/05/17 v1.4n Standard LaTeX document class
+(C:\Users\ricca\AppData\Local\Programs\MiKTeX\tex/latex/base\size12.clo
+File: size12.clo 2023/05/17 v1.4n Standard LaTeX file (size option)
+)
+\c@part=\count185
+\c@section=\count186
+\c@subsection=\count187
+\c@subsubsection=\count188
+\c@paragraph=\count189
+\c@subparagraph=\count190
+\c@figure=\count191
+\c@table=\count192
+\abovecaptionskip=\skip48
+\belowcaptionskip=\skip49
+\bibindent=\dimen140
+) (C:\Users\ricca\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsmath.sty
+Package: amsmath 2023/05/13 v2.17o AMS math features
+\@mathmargin=\skip50
+
+For additional information on amsmath, use the `?' option.
+(C:\Users\ricca\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amstext.sty
+Package: amstext 2021/08/26 v2.01 AMS text
+ (C:\Users\ricca\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks17
+\ex@=\dimen141
+)) (C:\Users\ricca\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen142
+) (C:\Users\ricca\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsopn.sty
+Package: amsopn 2022/04/08 v2.04 operator names
+)
+\inf@bad=\count193
+LaTeX Info: Redefining \frac on input line 234.
+\uproot@=\count194
+\leftroot@=\count195
+LaTeX Info: Redefining \overline on input line 399.
+LaTeX Info: Redefining \colon on input line 410.
+\classnum@=\count196
+\DOTSCASE@=\count197
+LaTeX Info: Redefining \ldots on input line 496.
+LaTeX Info: Redefining \dots on input line 499.
+LaTeX Info: Redefining \cdots on input line 620.
+\Mathstrutbox@=\box51
+\strutbox@=\box52
+LaTeX Info: Redefining \big on input line 722.
+LaTeX Info: Redefining \Big on input line 723.
+LaTeX Info: Redefining \bigg on input line 724.
+LaTeX Info: Redefining \Bigg on input line 725.
+\big@size=\dimen143
+LaTeX Font Info:    Redeclaring font encoding OML on input line 743.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
+\macc@depth=\count198
+LaTeX Info: Redefining \bmod on input line 905.
+LaTeX Info: Redefining \pmod on input line 910.
+LaTeX Info: Redefining \smash on input line 940.
+LaTeX Info: Redefining \relbar on input line 970.
+LaTeX Info: Redefining \Relbar on input line 971.
+\c@MaxMatrixCols=\count199
+\dotsspace@=\muskip16
+\c@parentequation=\count266
+\dspbrk@lvl=\count267
+\tag@help=\toks18
+\row@=\count268
+\column@=\count269
+\maxfields@=\count270
+\andhelp@=\toks19
+\eqnshift@=\dimen144
+\alignsep@=\dimen145
+\tagshift@=\dimen146
+\tagwidth@=\dimen147
+\totwidth@=\dimen148
+\lineht@=\dimen149
+\@envbody=\toks20
+\multlinegap=\skip51
+\multlinetaggap=\skip52
+\mathdisplay@stack=\toks21
+LaTeX Info: Redefining \[ on input line 2953.
+LaTeX Info: Redefining \] on input line 2954.
+) (C:\Users\ricca\AppData\Local\Programs\MiKTeX\tex/latex/amscls\amsthm.sty
+Package: amsthm 2020/05/29 v2.20.6
+\thm@style=\toks22
+\thm@bodyfont=\toks23
+\thm@headfont=\toks24
+\thm@notefont=\toks25
+\thm@headpunct=\toks26
+\thm@preskip=\skip53
+\thm@postskip=\skip54
+\thm@headsep=\skip55
+\dth@everypar=\toks27
+) (C:\Users\ricca\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+ (C:\Users\ricca\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+)) (C:\Users\ricca\AppData\Local\Programs\MiKTeX\tex/latex/calrsfs\calrsfs.sty
+\symrsfscript=\mathgroup6
+) (C:\Users\ricca\AppData\Local\Programs\MiKTeX\tex/latex/wasysym\wasysym.sty
+Package: wasysym 2020/01/19 v2.4 Wasy-2 symbol support package
+\symwasy=\mathgroup7
+LaTeX Font Info:    Overwriting symbol font `wasy' in version `bold'
+(Font)                  U/wasy/m/n --> U/wasy/b/n on input line 93.
+) (C:\Users\ricca\AppData\Local\Programs\MiKTeX\tex/latex/tools\verbatim.sty
+Package: verbatim 2022-07-02 v1.5u LaTeX2e package for verbatim enhancements
+\every@verbatim=\toks28
+\verbatim@line=\toks29
+\verbatim@in@stream=\read2
+) (C:\Users\ricca\AppData\Local\Programs\MiKTeX\tex/latex/bbm\bbm.sty
+Package: bbm 1999/03/15 V 1.2 provides fonts for set symbols - TH
+LaTeX Font Info:    Overwriting math alphabet `\mathbbm' in version `bold'
+(Font)                  U/bbm/m/n --> U/bbm/bx/n on input line 33.
+LaTeX Font Info:    Overwriting math alphabet `\mathbbmss' in version `bold'
+(Font)                  U/bbmss/m/n --> U/bbmss/bx/n on input line 35.
+) (C:\Users\ricca\AppData\Local\Programs\MiKTeX\tex/latex/graphics\color.sty
+Package: color 2022/01/06 v1.3d Standard LaTeX Color (DPC)
+ (C:\Users\ricca\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package color Info: Driver file: pdftex.def on input line 149.
+ (C:\Users\ricca\AppData\Local\Programs\MiKTeX\tex/latex/graphics-def\pdftex.def
+File: pdftex.def 2022/09/22 v1.2b Graphics/color driver for pdftex
+) (C:\Users\ricca\AppData\Local\Programs\MiKTeX\tex/latex/graphics\mathcolor.ltx)) (C:\Users\ricca\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphicx.sty
+Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
+ (C:\Users\ricca\AppData\Local\Programs\MiKTeX\tex/latex/graphics\keyval.sty
+Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
+\KV@toks@=\toks30
+) (C:\Users\ricca\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphics.sty
+Package: graphics 2022/03/10 v1.4e Standard LaTeX Graphics (DPC,SPQR)
+ (C:\Users\ricca\AppData\Local\Programs\MiKTeX\tex/latex/graphics\trig.sty
+Package: trig 2021/08/11 v1.11 sin cos tan (DPC)
+) (C:\Users\ricca\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 107.
+)
+\Gin@req@height=\dimen150
+\Gin@req@width=\dimen151
+) (C:\Users\ricca\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.sty
+Package: geometry 2020/01/02 v5.9 Page Geometry
+ (C:\Users\ricca\AppData\Local\Programs\MiKTeX\tex/generic/iftex\ifvtex.sty
+Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
+ (C:\Users\ricca\AppData\Local\Programs\MiKTeX\tex/generic/iftex\iftex.sty
+Package: iftex 2022/02/03 v1.0f TeX engine tests
+))
+\Gm@cnth=\count271
+\Gm@cntv=\count272
+\c@Gm@tempcnt=\count273
+\Gm@bindingoffset=\dimen152
+\Gm@wd@mp=\dimen153
+\Gm@odd@mp=\dimen154
+\Gm@even@mp=\dimen155
+\Gm@layoutwidth=\dimen156
+\Gm@layoutheight=\dimen157
+\Gm@layouthoffset=\dimen158
+\Gm@layoutvoffset=\dimen159
+\Gm@dimlist=\toks31
+ (C:\Users\ricca\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.cfg)) (C:\Users\ricca\AppData\Local\Programs\MiKTeX\tex/latex/fancyhdr\fancyhdr.sty
+Package: fancyhdr 2022/11/09 v4.1 Extensive control of page headers and footers
+\f@nch@headwidth=\skip56
+\f@nch@O@elh=\skip57
+\f@nch@O@erh=\skip58
+\f@nch@O@olh=\skip59
+\f@nch@O@orh=\skip60
+\f@nch@O@elf=\skip61
+\f@nch@O@erf=\skip62
+\f@nch@O@olf=\skip63
+\f@nch@O@orf=\skip64
+) (C:\Users\ricca\AppData\Local\Programs\MiKTeX\tex/latex/url\url.sty
+\Urlmuskip=\muskip17
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+) (C:\Users\ricca\AppData\Local\Programs\MiKTeX\tex/latex/multirow\multirow.sty
+Package: multirow 2021/03/15 v2.8 Span multiple rows of a table
+\multirow@colwidth=\skip65
+\multirow@cntb=\count274
+\multirow@dima=\skip66
+\bigstrutjot=\dimen160
+) (C:\Users\ricca\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hyperref.sty
+Package: hyperref 2023-07-08 v7.01b Hypertext links for LaTeX
+ (C:\Users\ricca\AppData\Local\Programs\MiKTeX\tex/generic/ltxcmds\ltxcmds.sty
+Package: ltxcmds 2023-12-04 v1.26 LaTeX kernel commands for general use (HO)
+) (C:\Users\ricca\AppData\Local\Programs\MiKTeX\tex/generic/pdftexcmds\pdftexcmds.sty
+Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO)
+ (C:\Users\ricca\AppData\Local\Programs\MiKTeX\tex/generic/infwarerr\infwarerr.sty
+Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
+)
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+) (C:\Users\ricca\AppData\Local\Programs\MiKTeX\tex/latex/kvsetkeys\kvsetkeys.sty
+Package: kvsetkeys 2022-10-05 v1.19 Key value parser (HO)
+) (C:\Users\ricca\AppData\Local\Programs\MiKTeX\tex/generic/kvdefinekeys\kvdefinekeys.sty
+Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
+) (C:\Users\ricca\AppData\Local\Programs\MiKTeX\tex/generic/pdfescape\pdfescape.sty
+Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
+) (C:\Users\ricca\AppData\Local\Programs\MiKTeX\tex/latex/hycolor\hycolor.sty
+Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
+) (C:\Users\ricca\AppData\Local\Programs\MiKTeX\tex/latex/letltxmacro\letltxmacro.sty
+Package: letltxmacro 2019/12/03 v1.6 Let assignment for LaTeX macros (HO)
+) (C:\Users\ricca\AppData\Local\Programs\MiKTeX\tex/latex/auxhook\auxhook.sty
+Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
+) (C:\Users\ricca\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\nameref.sty
+Package: nameref 2023-08-07 v2.53 Cross-referencing by name of section
+ (C:\Users\ricca\AppData\Local\Programs\MiKTeX\tex/latex/refcount\refcount.sty
+Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
+) (C:\Users\ricca\AppData\Local\Programs\MiKTeX\tex/generic/gettitlestring\gettitlestring.sty
+Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
+ (C:\Users\ricca\AppData\Local\Programs\MiKTeX\tex/latex/kvoptions\kvoptions.sty
+Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
+))
+\c@section@level=\count275
+) (C:\Users\ricca\AppData\Local\Programs\MiKTeX\tex/latex/etoolbox\etoolbox.sty
+Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count276
+)
+\@linkdim=\dimen161
+\Hy@linkcounter=\count277
+\Hy@pagecounter=\count278
+ (C:\Users\ricca\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\pd1enc.def
+File: pd1enc.def 2023-07-08 v7.01b Hyperref: PDFDocEncoding definition (HO)
+Now handling font encoding PD1 ...
+... no UTF-8 mapping file for font encoding PD1
+) (C:\Users\ricca\AppData\Local\Programs\MiKTeX\tex/generic/intcalc\intcalc.sty
+Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
+)
+\Hy@SavedSpaceFactor=\count279
+ (C:\Users\ricca\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\puenc.def
+File: puenc.def 2023-07-08 v7.01b Hyperref: PDF Unicode definition (HO)
+Now handling font encoding PU ...
+... no UTF-8 mapping file for font encoding PU
+)
+Package hyperref Info: Hyper figures OFF on input line 4167.
+Package hyperref Info: Link nesting OFF on input line 4172.
+Package hyperref Info: Hyper index ON on input line 4175.
+Package hyperref Info: Plain pages OFF on input line 4182.
+Package hyperref Info: Backreferencing OFF on input line 4187.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4434.
+\c@Hy@tempcnt=\count280
+LaTeX Info: Redefining \url on input line 4772.
+\XeTeXLinkMargin=\dimen162
+ (C:\Users\ricca\AppData\Local\Programs\MiKTeX\tex/generic/bitset\bitset.sty
+Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
+ (C:\Users\ricca\AppData\Local\Programs\MiKTeX\tex/generic/bigintcalc\bigintcalc.sty
+Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO)
+))
+\Fld@menulength=\count281
+\Field@Width=\dimen163
+\Fld@charsize=\dimen164
+Package hyperref Info: Hyper figures OFF on input line 6051.
+Package hyperref Info: Link nesting OFF on input line 6056.
+Package hyperref Info: Hyper index ON on input line 6059.
+Package hyperref Info: backreferencing OFF on input line 6066.
+Package hyperref Info: Link coloring OFF on input line 6071.
+Package hyperref Info: Link coloring with OCG OFF on input line 6076.
+Package hyperref Info: PDF/A mode OFF on input line 6081.
+ (C:\Users\ricca\AppData\Local\Programs\MiKTeX\tex/latex/base\atbegshi-ltx.sty
+Package: atbegshi-ltx 2021/01/10 v1.0c Emulation of the original atbegshi
+package with kernel methods
+)
+\Hy@abspage=\count282
+\c@Item=\count283
+\c@Hfootnote=\count284
+)
+Package hyperref Info: Driver (autodetected): hpdftex.
+ (C:\Users\ricca\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hpdftex.def
+File: hpdftex.def 2023-07-08 v7.01b Hyperref driver for pdfTeX
+ (C:\Users\ricca\AppData\Local\Programs\MiKTeX\tex/latex/base\atveryend-ltx.sty
+Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atveryend package
+with kernel methods
+)
+\Fld@listcount=\count285
+\c@bookmark@seq@number=\count286
+ (C:\Users\ricca\AppData\Local\Programs\MiKTeX\tex/latex/rerunfilecheck\rerunfilecheck.sty
+Package: rerunfilecheck 2022-07-10 v1.10 Rerun checks for auxiliary files (HO)
+ (C:\Users\ricca\AppData\Local\Programs\MiKTeX\tex/generic/uniquecounter\uniquecounter.sty
+Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
+)
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 285.
+)
+\Hy@SectionHShift=\skip67
+) (C:\Users\ricca\AppData\Local\Programs\MiKTeX\tex/latex/enumitem\enumitem.sty
+Package: enumitem 2019/06/20 v3.9 Customized lists
+\labelindent=\skip68
+\enit@outerparindent=\dimen165
+\enit@toks=\toks32
+\enit@inbox=\box53
+\enit@count@id=\count287
+\enitdp@description=\count288
+) (C:\Users\ricca\AppData\Local\Programs\MiKTeX\tex/latex/comment\comment.sty
+\CommentStream=\write3
+ Excluding comment 'comment') (C:\Users\ricca\AppData\Local\Programs\MiKTeX\tex/latex/float\float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count289
+\float@exts=\toks33
+\float@box=\box54
+\@float@everytoks=\toks34
+\@floatcapt=\box55
+) (C:\Users\ricca\AppData\Local\Programs\MiKTeX\tex/latex/tools\array.sty
+Package: array 2022/09/04 v2.5g Tabular extension package (FMi)
+\col@sep=\dimen166
+\ar@mcellbox=\box56
+\extrarowheight=\dimen167
+\NC@list=\toks35
+\extratabsurround=\skip69
+\backup@length=\skip70
+\ar@cellbox=\box57
+) (C:\Users\ricca\AppData\Local\Programs\MiKTeX\tex/latex/tools\longtable.sty
+Package: longtable 2021-09-01 v4.17 Multi-page Table package (DPC)
+\LTleft=\skip71
+\LTright=\skip72
+\LTpre=\skip73
+\LTpost=\skip74
+\LTchunksize=\count290
+\LTcapwidth=\dimen168
+\LT@head=\box58
+\LT@firsthead=\box59
+\LT@foot=\box60
+\LT@lastfoot=\box61
+\LT@gbox=\box62
+\LT@cols=\count291
+\LT@rows=\count292
+\c@LT@tables=\count293
+\c@LT@chunks=\count294
+\LT@p@ftn=\toks36
+) (C:\Users\ricca\AppData\Local\Programs\MiKTeX\tex/generic/babel\babel.sty
+Package: babel 2023/09/29 v3.95 The Babel package
+\babel@savecnt=\count295
+\U@D=\dimen169
+\l@unhyphenated=\language79
+ (C:\Users\ricca\AppData\Local\Programs\MiKTeX\tex/generic/babel\txtbabel.def)
+\bbl@readstream=\read3
+\bbl@dirlevel=\count296
+
+*************************************
+* Local config file bblopts.cfg used
+*
+(C:\Users\ricca\AppData\Local\Programs\MiKTeX\tex/latex/arabi\bblopts.cfg
+File: bblopts.cfg 2005/09/08 v0.1 add Arabic and Farsi to "declared" options of babel
+) (C:\Users\ricca\AppData\Local\Programs\MiKTeX\tex/latex/babel-italian\italian.ldf
+Language: italian 2024/01/03 v.1.5.00 Italian support for the babel system
+\it@lettering=\count297
+\it@doublequoteactive=\count298
+\it@ISOcompliance=\count299
+)) (C:\Users\ricca\AppData\Local\Programs\MiKTeX\tex/generic/babel/locale/it\babel-italian.tex
+Package babel Info: Importing font and identification data for italian
+(babel)             from babel-it.ini. Reported on input line 11.
+) (C:\Users\ricca\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdftex.def
+File: l3backend-pdftex.def 2023-04-19 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count300
+\l__pdf_internal_box=\box63
+) (main.aux)
+\openout1 = `main.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+ (C:\Users\ricca\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count301
+\scratchdimen=\dimen170
+\scratchbox=\box64
+\nofMPsegments=\count302
+\nofMParguments=\count303
+\everyMPshowfont=\toks37
+\MPscratchCnt=\count304
+\MPscratchDim=\dimen171
+\MPnumerator=\count305
+\makeMPintoPDFobject=\count306
+\everyMPtoPDFconversion=\toks38
+) (C:\Users\ricca\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-base.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+ (C:\Users\ricca\AppData\Local\Programs\MiKTeX\tex/latex/grfext\grfext.sty
+Package: grfext 2019/12/03 v1.3 Manage graphics extensions (HO)
+)
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
+Package grfext Info: Graphics extension search list:
+(grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPEG,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 504.
+ (C:\Users\ricca\AppData\Local\Programs\MiKTeX\tex/latex/00miktex\epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
+))
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: <default>
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(54.2025pt, 505.89pt, 54.2025pt)
+* v-part:(T,H,B)=(54.2025pt, 686.56499pt, 54.2025pt)
+* \paperwidth=614.295pt
+* \paperheight=794.96999pt
+* \textwidth=505.89pt
+* \textheight=686.56499pt
+* \oddsidemargin=-18.06749pt
+* \evensidemargin=-18.06749pt
+* \topmargin=-55.06749pt
+* \headheight=12.0pt
+* \headsep=25.0pt
+* \topskip=12.0pt
+* \footskip=30.0pt
+* \marginparwidth=44.0pt
+* \marginparsep=10.0pt
+* \columnsep=10.0pt
+* \skip\footins=10.8pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+Package hyperref Info: Link coloring OFF on input line 20.
+\@outlinefile=\write4
+\openout4 = `main.out'.
+
+LaTeX Info: Redefining \it@ocap on input line 20.
+LaTeX Info: Redefining \it@ccap on input line 20.
+
+File italian.ldf warning: 
+italian.ldf    With OT1 encoding guillemets are poorly faked
+italian.ldf    Use T1 encoding
+italian.ldf    or specify a font with command \CaporaliFrom
+italian.ldf    See the documentation concerning the babel-italian typesetting
+italian.ldf    on input line 20.
+
+LaTeX Font Info:    Trying to load font information for U+msa on input line 25.
+(C:\Users\ricca\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 25.
+ (C:\Users\ricca\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+LaTeX Font Info:    Trying to load font information for OMS+rsfs on input line 25.
+ (C:\Users\ricca\AppData\Local\Programs\MiKTeX\tex/latex/calrsfs\omsrsfs.fd)
+LaTeX Font Info:    Trying to load font information for U+wasy on input line 25.
+ (C:\Users\ricca\AppData\Local\Programs\MiKTeX\tex/latex/wasysym\uwasy.fd
+File: uwasy.fd 2020/01/19 v2.4 Wasy-2 symbol font definitions
+)
+<logo.png, id=3, 501.875pt x 501.875pt>
+File: logo.png Graphic file (type png)
+<use logo.png>
+Package pdftex.def Info: logo.png  used on input line 27.
+(pdftex.def)             Requested size: 150.56366pt x 150.56366pt.
+ [1
+
+{C:/Users/ricca/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map} <./logo.png>]
+Underfull \hbox (badness 1960) in paragraph at lines 51--54
+\OT1/cmr/m/n/12 Rimosso il vec-chio UC30 e i suoi
+ []
+
+
+Underfull \hbox (badness 2027) in paragraph at lines 51--54
+\OT1/cmr/m/n/12 ROF, su de-ci-sio-ne che ad-min pu^^Ro
+ []
+
+
+Underfull \hbox (badness 4366) in paragraph at lines 77--78
+\OT1/cmr/m/n/12 UC15, UC30, UC1 (da ROF 36
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 79--80
+[]|\OT1/cmr/m/n/12 Inserimento re-qui-si-ti fun-zio-na-li di
+ []
+
+
+Underfull \hbox (badness 3536) in paragraph at lines 90--91
+\OT1/cmr/m/n/12 so dal 4 al 7; re-vi-sio-ne UC6 e
+ []
+
+
+Underfull \hbox (badness 1817) in paragraph at lines 90--91
+\OT1/cmr/m/n/12 e $[][]$ UCE1; ste-su-ra ca-si
+ []
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 27.05003pt, for example:
+(fancyhdr)                \setlength{\headheight}{27.05003pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-15.05003pt}.
+
+[2]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 27.05003pt, for example:
+(fancyhdr)                \setlength{\headheight}{27.05003pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-15.05003pt}.
+
+[3]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 27.05003pt, for example:
+(fancyhdr)                \setlength{\headheight}{27.05003pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-15.05003pt}.
+
+[4]
+No file main.toc.
+\tf@toc=\write5
+\openout5 = `main.toc'.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 27.05003pt, for example:
+(fancyhdr)                \setlength{\headheight}{27.05003pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-15.05003pt}.
+
+[5]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 27.05003pt, for example:
+(fancyhdr)                \setlength{\headheight}{27.05003pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-15.05003pt}.
+
+[6]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 27.05003pt, for example:
+(fancyhdr)                \setlength{\headheight}{27.05003pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-15.05003pt}.
+
+[7]
+<Attori_coinvolti.png, id=65, 280.4076pt x 361.8318pt>
+File: Attori_coinvolti.png Graphic file (type png)
+<use Attori_coinvolti.png>
+Package pdftex.def Info: Attori_coinvolti.png  used on input line 175.
+(pdftex.def)             Requested size: 252.94499pt x 326.39096pt.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 27.05003pt, for example:
+(fancyhdr)                \setlength{\headheight}{27.05003pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-15.05003pt}.
+
+[8 <./Attori_coinvolti.png>] (uc/uc1.tex
+<ucd/UCD1_corretto.png, id=73, 1193.96063pt x 758.835pt>
+File: ucd/UCD1_corretto.png Graphic file (type png)
+<use ucd/UCD1_corretto.png>
+Package pdftex.def Info: ucd/UCD1_corretto.png  used on input line 4.
+(pdftex.def)             Requested size: 505.89pt x 321.5222pt.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 27.05003pt, for example:
+(fancyhdr)                \setlength{\headheight}{27.05003pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-15.05003pt}.
+
+[9 <./ucd/UCD1_corretto.png>] Excluding 'comment' comment. Excluding 'comment' comment.)
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 27.05003pt, for example:
+(fancyhdr)                \setlength{\headheight}{27.05003pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-15.05003pt}.
+
+[10] (uc/uc2.tex
+<ucd/UCD2_corretto.png, id=113, 1757.06438pt x 618.81187pt>
+File: ucd/UCD2_corretto.png Graphic file (type png)
+<use ucd/UCD2_corretto.png>
+Package pdftex.def Info: ucd/UCD2_corretto.png  used on input line 5.
+(pdftex.def)             Requested size: 455.2979pt x 160.34908pt.
+
+
+LaTeX Warning: Reference `usecase:2_1' on page 11 undefined on input line 31.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 27.05003pt, for example:
+(fancyhdr)                \setlength{\headheight}{27.05003pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-15.05003pt}.
+
+[11 <./ucd/UCD2_corretto.png>]) (uc/uc2_1.tex
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 27.05003pt, for example:
+(fancyhdr)                \setlength{\headheight}{27.05003pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-15.05003pt}.
+
+[12]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 27.05003pt, for example:
+(fancyhdr)                \setlength{\headheight}{27.05003pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-15.05003pt}.
+
+[13]) (uc/uc3.tex
+<ucd/UCD3_nuovo.png, id=145, 585.387pt x 230.7822pt>
+File: ucd/UCD3_nuovo.png Graphic file (type png)
+<use ucd/UCD3_nuovo.png>
+Package pdftex.def Info: ucd/UCD3_nuovo.png  used on input line 5.
+(pdftex.def)             Requested size: 455.2979pt x 179.49878pt.
+
+
+LaTeX Warning: Reference `usecase:23' on page 14 undefined on input line 15.
+
+
+LaTeX Warning: Reference `usecase:19' on page 14 undefined on input line 16.
+
+
+LaTeX Warning: Reference `usecase:3_1' on page 14 undefined on input line 27.
+
+
+LaTeX Warning: Reference `usecase:3_1' on page 14 undefined on input line 28.
+
+
+LaTeX Warning: Reference `usecase:8' on page 14 undefined on input line 30.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 27.05003pt, for example:
+(fancyhdr)                \setlength{\headheight}{27.05003pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-15.05003pt}.
+
+[14 <./ucd/UCD3_nuovo.png>]
+
+LaTeX Warning: Reference `usecase:23' on page 15 undefined on input line 45.
+
+
+LaTeX Warning: Reference `usecase:19' on page 15 undefined on input line 46.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 27.05003pt, for example:
+(fancyhdr)                \setlength{\headheight}{27.05003pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-15.05003pt}.
+
+[15] Excluding 'comment' comment.) (uc/uc4.tex
+<ucd/UCD4.png, id=165, 2256.43pt x 963.6pt>
+File: ucd/UCD4.png Graphic file (type png)
+<use ucd/UCD4.png>
+Package pdftex.def Info: ucd/UCD4.png  used on input line 5.
+(pdftex.def)             Requested size: 354.12144pt x 151.22377pt.
+
+
+LaTeX Warning: Reference `usecase:24' on page 16 undefined on input line 21.
+
+
+LaTeX Warning: Reference `usecase:4_1' on page 16 undefined on input line 23.
+
+
+LaTeX Warning: Reference `usecase:4_2' on page 16 undefined on input line 24.
+
+) (uc/uc4_1.tex
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 27.05003pt, for example:
+(fancyhdr)                \setlength{\headheight}{27.05003pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-15.05003pt}.
+
+[16 <./ucd/UCD4.png>]) (uc/uc4_2.tex
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 27.05003pt, for example:
+(fancyhdr)                \setlength{\headheight}{27.05003pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-15.05003pt}.
+
+[17]) (uc/uc5.tex
+<ucd/UCD5.png, id=194, 1886.04625pt x 1168.365pt>
+File: ucd/UCD5.png Graphic file (type png)
+<use ucd/UCD5.png>
+Package pdftex.def Info: ucd/UCD5.png  used on input line 4.
+(pdftex.def)             Requested size: 354.12144pt x 219.37097pt.
+
+
+LaTeX Warning: Reference `usecase:3' on page 18 undefined on input line 13.
+
+(uc/uc5.1.tex
+
+LaTeX Warning: Reference `usecase:3' on page 18 undefined on input line 9.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 27.05003pt, for example:
+(fancyhdr)                \setlength{\headheight}{27.05003pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-15.05003pt}.
+
+[18 <./ucd/UCD5.png>]) (uc/uc5.2.tex
+
+LaTeX Warning: Reference `usecase:3' on page 19 undefined on input line 9.
+
+) (uc/uc5.3.tex
+
+LaTeX Warning: Reference `usecase:3' on page 19 undefined on input line 9.
+
+)
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 27.05003pt, for example:
+(fancyhdr)                \setlength{\headheight}{27.05003pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-15.05003pt}.
+
+[19]) (uc/uc6.tex
+<ucd/UCD6_new.png, id=218, 1820.30063pt x 626.34pt>
+File: ucd/UCD6_new.png Graphic file (type png)
+<use ucd/UCD6_new.png>
+Package pdftex.def Info: ucd/UCD6_new.png  used on input line 4.
+(pdftex.def)             Requested size: 505.89pt x 174.06467pt.
+
+
+LaTeX Warning: Reference `usecase:15' on page 20 undefined on input line 13.
+
+
+LaTeX Warning: Reference `usecase:6_1' on page 20 undefined on input line 23.
+
+
+LaTeX Warning: Reference `usecase:6_2' on page 20 undefined on input line 25.
+
+) (uc/uc6_1.tex
+
+LaTeX Warning: Reference `usecase:15' on page 20 undefined on input line 9.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 27.05003pt, for example:
+(fancyhdr)                \setlength{\headheight}{27.05003pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-15.05003pt}.
+
+[20 <./ucd/UCD6_new.png>]) (uc/uc6_2.tex
+
+LaTeX Warning: Reference `usecase:15' on page 21 undefined on input line 9.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 27.05003pt, for example:
+(fancyhdr)                \setlength{\headheight}{27.05003pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-15.05003pt}.
+
+[21]) (uc/uc7.tex
+<ucd/UCD7.png, id=240, 1093.08376pt x 490.83376pt>
+File: ucd/UCD7.png Graphic file (type png)
+<use ucd/UCD7.png>
+Package pdftex.def Info: ucd/UCD7.png  used on input line 4.
+(pdftex.def)             Requested size: 354.12144pt x 159.00978pt.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 27.05003pt, for example:
+(fancyhdr)                \setlength{\headheight}{27.05003pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-15.05003pt}.
+
+[22 <./ucd/UCD7.png>]) (uc/uc8.tex
+<ucd/ucd8.png, id=255, 2147.02126pt x 641.39626pt>
+File: ucd/ucd8.png Graphic file (type png)
+<use ucd/ucd8.png>
+Package pdftex.def Info: ucd/ucd8.png  used on input line 4.
+(pdftex.def)             Requested size: 455.2979pt x 136.00862pt.
+
+
+LaTeX Warning: Reference `usecase:3' on page 23 undefined on input line 13.
+
+
+LaTeX Warning: Reference `usecase:8_1' on page 23 undefined on input line 22.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 27.05003pt, for example:
+(fancyhdr)                \setlength{\headheight}{27.05003pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-15.05003pt}.
+
+[23 <./ucd/ucd8.png>]) (uc/uc9.tex
+<ucd/ucd9.png, id=269, 266.4354pt x 139.4811pt>
+File: ucd/ucd9.png Graphic file (type png)
+<use ucd/ucd9.png>
+Package pdftex.def Info: ucd/ucd9.png  used on input line 4.
+(pdftex.def)             Requested size: 455.2979pt x 238.37679pt.
+
+
+LaTeX Warning: Reference `usecase:3' on page 24 undefined on input line 13.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 27.05003pt, for example:
+(fancyhdr)                \setlength{\headheight}{27.05003pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-15.05003pt}.
+
+[24 <./ucd/ucd9.png>]) (uc/uc10.tex
+<ucd/UCD10.png, id=282, 1210.5225pt x 641.39626pt>
+File: ucd/UCD10.png Graphic file (type png)
+<use ucd/UCD10.png>
+Package pdftex.def Info: ucd/UCD10.png  used on input line 4.
+(pdftex.def)             Requested size: 379.4175pt x 201.03284pt.
+
+
+LaTeX Warning: Reference `usecase:7' on page 25 undefined on input line 12.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 27.05003pt, for example:
+(fancyhdr)                \setlength{\headheight}{27.05003pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-15.05003pt}.
+
+[25 <./ucd/UCD10.png>]) (uc/uc11.tex
+<ucd/ucd11.png, id=293, 2437.105pt x 581.17125pt>
+File: ucd/ucd11.png Graphic file (type png)
+<use ucd/ucd11.png>
+Package pdftex.def Info: ucd/ucd11.png  used on input line 4.
+(pdftex.def)             Requested size: 455.2979pt x 108.57028pt.
+
+
+LaTeX Warning: Reference `usecase:11_1' on page 26 undefined on input line 22.
+
+Excluding 'comment' comment.) (uc/uc11_1.tex
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 27.05003pt, for example:
+(fancyhdr)                \setlength{\headheight}{27.05003pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-15.05003pt}.
+
+[26 <./ucd/ucd11.png>]) (uc/uc12.tex
+<ucd/ucd12.png, id=304, 3163.82pt x 867.24pt>
+File: ucd/ucd12.png Graphic file (type png)
+<use ucd/ucd12.png>
+Package pdftex.def Info: ucd/ucd12.png  used on input line 4.
+(pdftex.def)             Requested size: 455.2979pt x 124.80042pt.
+
+
+LaTeX Warning: Reference `usecase:12_1' on page 27 undefined on input line 20.
+
+
+LaTeX Warning: Reference `usecase:12_2' on page 27 undefined on input line 21.
+
+) (uc/uc12_1.tex
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 27.05003pt, for example:
+(fancyhdr)                \setlength{\headheight}{27.05003pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-15.05003pt}.
+
+[27 <./ucd/ucd12.png>]) (uc/uc12_2.tex)
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 27.05003pt, for example:
+(fancyhdr)                \setlength{\headheight}{27.05003pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-15.05003pt}.
+
+[28] (uc/uc13.tex
+<ucd/ucd13.png, id=337, 1093.08376pt x 490.83376pt>
+File: ucd/ucd13.png Graphic file (type png)
+<use ucd/ucd13.png>
+Package pdftex.def Info: ucd/ucd13.png  used on input line 4.
+(pdftex.def)             Requested size: 379.4175pt x 170.37137pt.
+
+
+LaTeX Warning: Reference `usecase:23' on page 29 undefined on input line 12.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 27.05003pt, for example:
+(fancyhdr)                \setlength{\headheight}{27.05003pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-15.05003pt}.
+
+[29 <./ucd/ucd13.png>]) (uc/uc14.tex
+<ucd/ucd14.png, id=345, 289.5618pt x 148.6353pt>
+File: ucd/ucd14.png Graphic file (type png)
+<use ucd/ucd14.png>
+Package pdftex.def Info: ucd/ucd14.png  used on input line 4.
+(pdftex.def)             Requested size: 455.2979pt x 233.73215pt.
+
+
+LaTeX Warning: Reference `usecase:2_1' on page 30 undefined on input line 12.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 27.05003pt, for example:
+(fancyhdr)                \setlength{\headheight}{27.05003pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-15.05003pt}.
+
+[30 <./ucd/ucd14.png>]) (uc/uc15.tex
+<ucd/ucd15.png, id=361, 574.5465pt x 181.1568pt>
+File: ucd/ucd15.png Graphic file (type png)
+<use ucd/ucd15.png>
+Package pdftex.def Info: ucd/ucd15.png  used on input line 4.
+(pdftex.def)             Requested size: 455.2979pt x 143.56009pt.
+
+
+LaTeX Warning: Reference `usecase:15_1' on page 31 undefined on input line 22.
+
+
+LaTeX Warning: Reference `usecase:15_2' on page 31 undefined on input line 24.
+
+Excluding 'comment' comment.) (uc/uc15_1.tex) (uc/uc15_2.tex
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 27.05003pt, for example:
+(fancyhdr)                \setlength{\headheight}{27.05003pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-15.05003pt}.
+
+[31 <./ucd/ucd15.png>]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 27.05003pt, for example:
+(fancyhdr)                \setlength{\headheight}{27.05003pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-15.05003pt}.
+
+[32]) (uc/uc16.tex
+<ucd/ucd16.png, id=389, 932.73468pt x 409.53pt>
+File: ucd/ucd16.png Graphic file (type png)
+<use ucd/ucd16.png>
+Package pdftex.def Info: ucd/ucd16.png  used on input line 4.
+(pdftex.def)             Requested size: 455.2979pt x 199.90283pt.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 27.05003pt, for example:
+(fancyhdr)                \setlength{\headheight}{27.05003pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-15.05003pt}.
+
+[33 <./ucd/ucd16.png>]) (uc/uc17.tex
+<ucd/UCD17.png, id=399, 594.0594pt x 153.9351pt>
+File: ucd/UCD17.png Graphic file (type png)
+<use ucd/UCD17.png>
+Package pdftex.def Info: ucd/UCD17.png  used on input line 4.
+(pdftex.def)             Requested size: 505.89pt x 131.09206pt.
+
+
+LaTeX Warning: Reference `usecase:17_1' on page 34 undefined on input line 20.
+
+Excluding 'comment' comment.) (uc/uc17_1.tex
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 27.05003pt, for example:
+(fancyhdr)                \setlength{\headheight}{27.05003pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-15.05003pt}.
+
+[34 <./ucd/UCD17.png>]) (uc/uc18.tex
+<ucd/ucd18.png, id=414, 1243.64626pt x 546.04pt>
+File: ucd/ucd18.png Graphic file (type png)
+<use ucd/ucd18.png>
+Package pdftex.def Info: ucd/ucd18.png  used on input line 4.
+(pdftex.def)             Requested size: 455.2979pt x 199.907pt.
+
+
+LaTeX Warning: Reference `usecase:3' on page 35 undefined on input line 12.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 27.05003pt, for example:
+(fancyhdr)                \setlength{\headheight}{27.05003pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-15.05003pt}.
+
+[35 <./ucd/ucd18.png>]) (uc/uc19.tex
+<ucd/ucd19.png, id=425, 932.73468pt x 409.53pt>
+File: ucd/ucd19.png Graphic file (type png)
+<use ucd/ucd19.png>
+Package pdftex.def Info: ucd/ucd19.png  used on input line 4.
+(pdftex.def)             Requested size: 455.2979pt x 199.90283pt.
+
+
+LaTeX Warning: Reference `usecase:23' on page 36 undefined on input line 13.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 27.05003pt, for example:
+(fancyhdr)                \setlength{\headheight}{27.05003pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-15.05003pt}.
+
+[36 <./ucd/ucd19.png>] Excluding 'comment' comment.) (uc/uc20.tex
+<ucd/ucd20.png, id=434, 932.73468pt x 409.53pt>
+File: ucd/ucd20.png Graphic file (type png)
+<use ucd/ucd20.png>
+Package pdftex.def Info: ucd/ucd20.png  used on input line 4.
+(pdftex.def)             Requested size: 455.2979pt x 199.90283pt.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 27.05003pt, for example:
+(fancyhdr)                \setlength{\headheight}{27.05003pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-15.05003pt}.
+
+[37 <./ucd/ucd20.png>] Excluding 'comment' comment.) (uc/uc21.tex
+<ucd/ucd21.png, id=444, 2475.2475pt x 679.53876pt>
+File: ucd/ucd21.png Graphic file (type png)
+<use ucd/ucd21.png>
+Package pdftex.def Info: ucd/ucd21.png  used on input line 4.
+(pdftex.def)             Requested size: 455.2979pt x 124.98688pt.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 27.05003pt, for example:
+(fancyhdr)                \setlength{\headheight}{27.05003pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-15.05003pt}.
+
+[38 <./ucd/ucd21.png>]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 27.05003pt, for example:
+(fancyhdr)                \setlength{\headheight}{27.05003pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-15.05003pt}.
+
+[39]) (uc/uc22.tex
+<ucd/ucd22.png, id=468, 2441.12pt x 905.3825pt>
+File: ucd/ucd22.png Graphic file (type png)
+<use ucd/ucd22.png>
+Package pdftex.def Info: ucd/ucd22.png  used on input line 4.
+(pdftex.def)             Requested size: 455.2979pt x 168.86082pt.
+
+
+LaTeX Warning: Reference `usecase:22_1' on page 40 undefined on input line 20.
+
+
+LaTeX Warning: Reference `usecase:22_2' on page 40 undefined on input line 22.
+
+) (uc/uc22_1.tex) (uc/uc22_2.tex
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 27.05003pt, for example:
+(fancyhdr)                \setlength{\headheight}{27.05003pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-15.05003pt}.
+
+[40 <./ucd/ucd22.png>]) (uc/uc23.tex
+<ucd/UCD23.png, id=483, 2252.415pt x 1318.9275pt>
+File: ucd/UCD23.png Graphic file (type png)
+<use ucd/UCD23.png>
+Package pdftex.def Info: ucd/UCD23.png  used on input line 5.
+(pdftex.def)             Requested size: 455.2979pt x 266.59836pt.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 27.05003pt, for example:
+(fancyhdr)                \setlength{\headheight}{27.05003pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-15.05003pt}.
+
+[41 <./ucd/UCD23.png>]
+
+LaTeX Warning: Reference `usecase:24' on page 42 undefined on input line 15.
+
+
+LaTeX Warning: Reference `usecase:24' on page 42 undefined on input line 56.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 27.05003pt, for example:
+(fancyhdr)                \setlength{\headheight}{27.05003pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-15.05003pt}.
+
+[42]
+
+LaTeX Warning: Reference `usecase:24' on page 43 undefined on input line 78.
+
+
+LaTeX Warning: Reference `usecase:24' on page 43 undefined on input line 98.
+
+
+LaTeX Warning: Reference `usecase:24' on page 43 undefined on input line 119.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 27.05003pt, for example:
+(fancyhdr)                \setlength{\headheight}{27.05003pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-15.05003pt}.
+
+[43]) (uc/uc24.tex
+<ucd/UCD24.png, id=524, 2576.62625pt x 1318.9275pt>
+File: ucd/UCD24.png Graphic file (type png)
+<use ucd/UCD24.png>
+Package pdftex.def Info: ucd/UCD24.png  used on input line 5.
+(pdftex.def)             Requested size: 455.2979pt x 233.04967pt.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 27.05003pt, for example:
+(fancyhdr)                \setlength{\headheight}{27.05003pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-15.05003pt}.
+
+[44 <./ucd/UCD24.png>]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 27.05003pt, for example:
+(fancyhdr)                \setlength{\headheight}{27.05003pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-15.05003pt}.
+
+[45]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 27.05003pt, for example:
+(fancyhdr)                \setlength{\headheight}{27.05003pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-15.05003pt}.
+
+[46]) (uc/uc25.tex
+<ucd/ucd25.png, id=554, 1255.69125pt x 830.10126pt>
+File: ucd/ucd25.png Graphic file (type png)
+<use ucd/ucd25.png>
+Package pdftex.def Info: ucd/ucd25.png  used on input line 4.
+(pdftex.def)             Requested size: 379.4175pt x 250.81825pt.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 27.05003pt, for example:
+(fancyhdr)                \setlength{\headheight}{27.05003pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-15.05003pt}.
+
+[47 <./ucd/ucd25.png>]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 27.05003pt, for example:
+(fancyhdr)                \setlength{\headheight}{27.05003pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-15.05003pt}.
+
+[48]) (uc/uc26.tex
+<ucd/UCD26.png, id=571, 1351.0475pt x 498.86375pt>
+File: ucd/UCD26.png Graphic file (type png)
+<use ucd/UCD26.png>
+Package pdftex.def Info: ucd/UCD26.png  used on input line 4.
+(pdftex.def)             Requested size: 379.4175pt x 140.09195pt.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 27.05003pt, for example:
+(fancyhdr)                \setlength{\headheight}{27.05003pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-15.05003pt}.
+
+[49 <./ucd/UCD26.png>]) (uc/uc27.tex
+<ucd/UCD27.png, id=585, 1046.40938pt x 398.23781pt>
+File: ucd/UCD27.png Graphic file (type png)
+<use ucd/UCD27.png>
+Package pdftex.def Info: ucd/UCD27.png  used on input line 4.
+(pdftex.def)             Requested size: 379.4175pt x 144.39244pt.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 27.05003pt, for example:
+(fancyhdr)                \setlength{\headheight}{27.05003pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-15.05003pt}.
+
+[50 <./ucd/UCD27.png>]) (uc/uc28.tex
+<ucd/UCD28.png, id=595, 294.1389pt x 145.0218pt>
+File: ucd/UCD28.png Graphic file (type png)
+<use ucd/UCD28.png>
+Package pdftex.def Info: ucd/UCD28.png  used on input line 4.
+(pdftex.def)             Requested size: 455.2979pt x 224.48935pt.
+
+
+LaTeX Warning: Reference `usecase:3' on page 51 undefined on input line 13.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 27.05003pt, for example:
+(fancyhdr)                \setlength{\headheight}{27.05003pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-15.05003pt}.
+
+[51 <./ucd/UCD28.png>]) (uc/uc29.tex Excluding 'comment' comment.
+<ucd/UCD29.png, id=604, 2350.7825pt x 604.2575pt>
+File: ucd/UCD29.png Graphic file (type png)
+<use ucd/UCD29.png>
+Package pdftex.def Info: ucd/UCD29.png  used on input line 41.
+(pdftex.def)             Requested size: 455.2979pt x 117.03218pt.
+
+
+LaTeX Warning: Reference `usecase:29_1' on page 52 undefined on input line 65.
+
+) (uc/uc29_1.tex)
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 27.05003pt, for example:
+(fancyhdr)                \setlength{\headheight}{27.05003pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-15.05003pt}.
+
+[52 <./ucd/UCD29.png>]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 27.05003pt, for example:
+(fancyhdr)                \setlength{\headheight}{27.05003pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-15.05003pt}.
+
+[53] (uc/uc30.tex Excluding 'comment' comment.
+<ucd/UCD30.png, id=627, 1125.20375pt x 604.2575pt>
+File: ucd/UCD30.png Graphic file (type png)
+<use ucd/UCD30.png>
+Package pdftex.def Info: ucd/UCD30.png  used on input line 38.
+(pdftex.def)             Requested size: 379.4175pt x 203.7483pt.
+) (uc/uc31.tex
+<ucd/UCD31.png, id=628, 622.4856pt x 280.4076pt>
+File: ucd/UCD31.png Graphic file (type png)
+<use ucd/UCD31.png>
+Package pdftex.def Info: ucd/UCD31.png  used on input line 4.
+(pdftex.def)             Requested size: 455.2979pt x 205.09804pt.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 27.05003pt, for example:
+(fancyhdr)                \setlength{\headheight}{27.05003pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-15.05003pt}.
+
+[54 <./ucd/UCD30.png>]
+
+LaTeX Warning: Reference `usecase:2_1' on page 55 undefined on input line 12.
+
+
+LaTeX Warning: Reference `usecase:31_1' on page 55 undefined on input line 22.
+
+
+LaTeX Warning: Reference `usecase:31_2' on page 55 undefined on input line 23.
+
+
+LaTeX Warning: Reference `usecase:31_3' on page 55 undefined on input line 24.
+
+) (uc/uc31_1.tex
+
+LaTeX Warning: Reference `usecase:2_1' on page 55 undefined on input line 8.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 27.05003pt, for example:
+(fancyhdr)                \setlength{\headheight}{27.05003pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-15.05003pt}.
+
+[55 <./ucd/UCD31.png>]) (uc/uc31_2.tex
+
+LaTeX Warning: Reference `usecase:2_1' on page 56 undefined on input line 8.
+
+
+LaTeX Warning: Reference `usecase:31_1' on page 56 undefined on input line 9.
+
+) (uc/uc31_3.tex
+
+LaTeX Warning: Reference `usecase:2_1' on page 56 undefined on input line 8.
+
+
+LaTeX Warning: Reference `usecase:31_1' on page 56 undefined on input line 9.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 27.05003pt, for example:
+(fancyhdr)                \setlength{\headheight}{27.05003pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-15.05003pt}.
+
+[56]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 27.05003pt, for example:
+(fancyhdr)                \setlength{\headheight}{27.05003pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-15.05003pt}.
+
+[57])
+Overfull \hbox (21.4516pt too wide) in alignment at lines 348--352
+ [] [] [] 
+ []
+
+
+Overfull \hbox (21.4516pt too wide) in alignment at lines 352--353
+ [] [] [] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 354--355
+[]|\OT1/cmr/m/n/12 UC3,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 378--379
+[]|\OT1/cmr/m/n/12 UC3,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 378--379
+\OT1/cmr/m/n/12 UC23,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 380--381
+[]|\OT1/cmr/m/n/12 UC19,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 382--382
+[]|\OT1/cmr/m/n/12 L'amministratore de-ve po-ter se-le-zio-na-re una spe-ci-fi-ca ri-chie-sta di
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 382--383
+[]|\OT1/cmr/m/n/12 UC19,
+ []
+
+
+Underfull \hbox (badness 4886) in paragraph at lines 384--384
+[]|\OT1/cmr/m/n/12 L'amministratore de-ve po-ter ac-cet-ta-re la ri-chie-sta di $[][]$
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 390--391
+[]|\OT1/cmr/m/n/12 UC19,
+ []
+
+
+Underfull \hbox (badness 3343) in paragraph at lines 400--400
+[]|\OT1/cmr/m/n/12 Il $[][]$ de-ve crea-re un ca-na-le di co-mu-ni-ca-zio-ne tra l'u-ten-te e
+ []
+
+
+Underfull \hbox (badness 1308) in paragraph at lines 402--402
+[]|\OT1/cmr/m/n/12 L'utente e l'am-mi-ni-stra-to-re de-vo-no po-ter scam-bia-re mes-sag-gi in mo-do
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 414--415
+[]|\OT1/cmr/m/n/12 UC5,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 414--415
+\OT1/cmr/m/n/12 UC5.1,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 420--421
+[]|\OT1/cmr/m/n/12 UC3,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 420--421
+\OT1/cmr/m/n/12 UC11,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 424--425
+[]|\OT1/cmr/m/n/12 UC6,
+ []
+
+
+Underfull \hbox (badness 1681) in paragraph at lines 446--446
+[]|\OT1/cmr/m/n/12 Il $[][]$ de-ve ge-sti-re cor-ret-ta-men-te gli er-ro-ri nel-l'in-se-ri-men-to del-le
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 448--449
+[]|\OT1/cmr/m/n/12 UC3,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 452--453
+[]|\OT1/cmr/m/n/12 UC3,
+ []
+
+
+Underfull \hbox (badness 1776) in paragraph at lines 460--460
+[]|\OT1/cmr/m/n/12 L'utente au-ten-ti-ca-to de-ve po-ter vi-sua-liz-za-re le re-cen-sio-ni ri-la-scia-te ed
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 491--491
+[]|\OT1/cmr/m/n/12 L'utente au-ten-ti-ca-to e l'am-mi-ni-stra-to-re de-vo-no po-ter in-se-ri-re no-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 491--491
+\OT1/cmr/m/n/12 me,cognome,mail e pas-sword nel-l'a-rea di mo-di-fi-ca del-le pro-prie
+ []
+
+
+Underfull \hbox (badness 3058) in paragraph at lines 493--493
+[]|\OT1/cmr/m/n/12 Il $[][]$ de-ve ve-ri-fi-ca-re che l'e-mail in-se-ri-ta dal-l'u-ten-te au-ten-ti-ca-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 497--498
+[]|\OT1/cmr/m/n/12 UC3.1,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 499--500
+[]|\OT1/cmr/m/n/12 UC3.1,
+ []
+
+
+Overfull \hbox (27.90923pt too wide) in alignment at lines 353--525
+ [] [] [] 
+ []
+
+
+Package longtable Warning: Column widths have changed
+(longtable)                in table 2 on input line 525.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 27.05003pt, for example:
+(fancyhdr)                \setlength{\headheight}{27.05003pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-15.05003pt}.
+
+[58]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 27.05003pt, for example:
+(fancyhdr)                \setlength{\headheight}{27.05003pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-15.05003pt}.
+
+[59]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 27.05003pt, for example:
+(fancyhdr)                \setlength{\headheight}{27.05003pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-15.05003pt}.
+
+[60]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 27.05003pt, for example:
+(fancyhdr)                \setlength{\headheight}{27.05003pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-15.05003pt}.
+
+[61]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 27.05003pt, for example:
+(fancyhdr)                \setlength{\headheight}{27.05003pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-15.05003pt}.
+
+[62]
+c:/Users/ricca/OneDrive/Documenti/RAMtastic6/Project14/sorgenti/Analisi dei Requisiti/main.tex:534: Misplaced \noalign.
+\hline ->\noalign 
+                  {\ifnum 0=`}\fi \penalty \@M \futurelet \@let@token \LT@@h...
+l.534     \hline
+                
+I expect to see \noalign only after the \cr of
+an alignment. Proceed, and I'll ignore this case.
+
+c:/Users/ricca/OneDrive/Documenti/RAMtastic6/Project14/sorgenti/Analisi dei Requisiti/main.tex:535: Misplaced \omit.
+\multispan ->\omit 
+                   \@multispan 
+l.535     \endfirsthead
+                       
+I expect to see \omit only after tab marks or the \cr of
+an alignment. Proceed, and I'll ignore this case.
+
+c:/Users/ricca/OneDrive/Documenti/RAMtastic6/Project14/sorgenti/Analisi dei Requisiti/main.tex:535: Extra alignment tab has been changed to \cr.
+<recently read> \endtemplate 
+                             
+l.535     \endfirsthead
+                       
+You have given more \span or & marks than there were
+in the preamble to the \halign or \valign now in progress.
+So I'll assume that you meant to type \cr instead.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 27.05003pt, for example:
+(fancyhdr)                \setlength{\headheight}{27.05003pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-15.05003pt}.
+
+[63]
+
+Package longtable Warning: Table widths have changed. Rerun LaTeX.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 27.05003pt, for example:
+(fancyhdr)                \setlength{\headheight}{27.05003pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-15.05003pt}.
+
+[64] (main.aux)
+ ***********
+LaTeX2e <2023-06-01> patch level 1
+L3 programming layer <2023-08-29>
+ ***********
+
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+
+Package rerunfilecheck Warning: File `main.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `main.out':
+(rerunfilecheck)             Before: <no file>
+(rerunfilecheck)             After:  547F34A159B7FAF2F8391097820012A6;19211.
+ ) 
+Here is how much of TeX's memory you used:
+ 13717 strings out of 475248
+ 218137 string characters out of 5757813
+ 2015785 words of memory out of 5000000
+ 34447 multiletter control sequences out of 15000+600000
+ 570693 words of font info for 87 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 75i,12n,79p,719b,675s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ <C:\Users\ricca\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1200.pk><C:/Users/ricca/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/ricca/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/ricca/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/ricca/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/ricca/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Users/ricca/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
+Output written on main.pdf (64 pages, 1941499 bytes).
+PDF statistics:
+ 835 PDF objects out of 1000 (max. 8388607)
+ 432 named destinations out of 1000 (max. 500000)
+ 166 words of extra memory for PDF output out of 10000 (max. 10000000)
+
