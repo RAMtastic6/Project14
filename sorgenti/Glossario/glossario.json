@@ -19,6 +19,10 @@
   ],
   "B": [
     {
+      "termine": "Best practices",
+      "definizione": "Le Best practices sono i metodi e precedure che nel tempo si sono rivelate le migliori in termini di efficienza ed efficacia al raggiungimento dei vari obbiettivi nella produzione del software."
+    },
+    {
       "termine": "Branch",
       "definizione": "Un ramo (branch) in GitHub è una versione separata del codice sorgente di un progetto software. Consente agli sviluppatori di lavorare su nuove funzionalità o correzioni di bug senza influenzare direttamente il codice principale (ramo principale o 'master'). I branch sono utilizzati per sviluppare in modo isolato, consentendo agli sviluppatori di sperimentare liberamente senza compromettere la stabilità del codice principale. Una volta completate le modifiche su un ramo, è possibile integrare (effettuare il 'merge') le modifiche nel ramo principale preferibilmente tramite una richiesta di pull (pull request) per incorporare le modifiche nel codice principale."
     }
@@ -47,6 +51,10 @@
     {
       "termine": "Codifica",
       "definizione": "La codifica è il processo attraverso il quale si traducono le specifiche di progettazione in istruzioni eseguibili da un computer. Questo coinvolge la scrittura e la programmazione del codice sorgente utilizzando un linguaggio di programmazione specifico. Durante la codifica, gli sviluppatori scrivono algoritmi e istruzioni che definiscono il comportamento del software, implementando le funzionalità richieste e risolvendo i problemi identificati durante la fase di progettazione. La codifica è un passaggio cruciale nello sviluppo del software e richiede attenzione ai dettagli e competenze tecniche specifiche."
+    },
+    {
+      "termine": "Complessità ciclomatica",
+      "definizione": "La Complessità ciclomatica è una metrica software per misurare la complessità di un programma. Essa viene calcolata utilizzando il grafo di controllo di flusso del programma dove i nodi del grafo corrispondono a gruppi indivisibili di istruzioni, mentre gli archi orientati connettono due nodi se il secondo può essere eseguito immediatamente dopo il primo. La complessità ciclomatica di una sezione di codice è il numero di cammini linearmente indipendenti attraverso il codice sorgente."
     },
     {
       "termine": "Consuntivo",
@@ -146,6 +154,10 @@
     {
       "termine": "Ingegneria del software",
       "definizione": "L'ingegneria del software è un insieme di principi e pratiche utilizzati per progettare, sviluppare, mantenere, testare e valutare il software per computer. Le relative tecniche vengono impiegate per guidare il processo di sviluppo del software, che comprende la definizione, l'implementazione, la valutazione, la misurazione, la gestione, il cambiamento e il miglioramento del ciclo di vita del software. Questa disciplina pone un forte accento sulla gestione della configurazione del software, che implica il controllo sistematico delle modifiche alla configurazione e il mantenimento dell'integrità e della tracciabilità della configurazione e del codice durante tutto il ciclo di vita del sistema, mediante l'uso del versioning del software."
+    },
+    {
+      "termine": "Inspection",
+      "definizione": "L'Inspection è una tipologia di analisi statica che consiste nel revisionare parti specifiche del codice e della documentazione attraverso liste di controllo (checklist) nel momento in cui si ha già un’idea di dove possano esserci possibili problemi in modo da intervenire tempestivamente e sistematicamente."
     }
   ],
   "J": [
@@ -169,6 +181,10 @@
     {
       "termine": "Milestone",
       "definizione": "Una milestone è un punto di riferimento significativo o un obiettivo importante all'interno di un progetto, utilizzato per misurare il progresso e il raggiungimento di determinati traguardi. Le milestone sono solitamente associate a date specifiche o a completamenti di specifiche attività o fasi di un progetto. Servono come punti di controllo per valutare se il progetto sta procedendo secondo i piani e per identificare eventuali ritardi o problemi. Le milestone possono essere utilizzate anche per comunicare i progressi del progetto alle parti interessate e per stabilire scadenze chiare e tangibili per il completamento delle attività."
+    },
+    {
+      "termine": "Modello a V",
+      "definizione": "Il Modello a V è una rappresentazione grafica del ciclo di vita di un progetto di sviluppo software. Il Modello a V mostra in maniera dettagliata le relazioni fra le fasi di analisi e pregettazione, la  produzione e il testing, ciò permette di minimizzare i rischi di progetto e di migliorare e garantire la qualità del prodotto."
     }
   ],
   "N": [
@@ -257,9 +273,14 @@
       "definizione": "La progettazione dettagliata è la fase del processo di sviluppo del software in cui i dettagli tecnici dell'architettura definita nella progettazione architetturale vengono elaborati in modo più specifico. Questo include la definizione delle singole componenti, dei loro comportamenti, delle interfacce e delle relazioni tra di esse. La progettazione dettagliata fornisce una guida chiara per l'implementazione del sistema software. "
     },
     {
+      "termine": "Pull request",
+      "definizione": "Le Pull request sono un meccanismo che permette a un membro del gruppo di notificare agli altri membri del completamento di una funzionalità in un determinato branch. In questo modo possono partire i processi di verifica della funzionalità e l'eventuale merge."
+    },
+    {
       "termine": "Push",
       "definizione": "Il push è un'operazione utilizzata in Git per inviare le modifiche locali apportate al repository locale verso un repository remoto. Questo consente di condividere le modifiche con altri membri del team o di archiviarle su un server remoto come GitHub. "
     }
+    
   ],
   "Q": [
     {
@@ -425,7 +446,16 @@
       "definizione": "Il versionamento è un processo di gestione delle diverse versioni di un prodotto software o di altri documenti, che consente di tracciare e registrare le modifiche apportate nel tempo. Il versionamento permette di tenere traccia delle variazioni, delle correzioni di bug e delle nuove funzionalità implementate, facilitando il controllo delle revisioni e garantendo una corretta gestione delle versioni. "
     }
   ],
-  "W": [],
+  "W": [
+    {
+      "termine": "Walkthrough",
+      "definizione": "Il Walkthrough è una tipologia di analisi statica che coinvolge il verificatore e l’autore del prodotto e che consiste nel revisionare nel suo complesso il codice e la documentazioneforniti, con una successiva discussione degli eventuali problemi trovati."
+    },
+    {
+      "termine": "Way of Working",
+      "definizione": "Il Way of Working è un insieme di processi operativi, regole e specifiche che definisco il modo di lavorare del team. Un Way of Working efficace può contribuire al successo del progetto."
+    }
+  ],
   "X": [],
   "Y": [],
   "Z": []

@@ -50,6 +50,8 @@ Uso: & Esterno
 \hline
 \textbf{Versione} & \textbf{Data} & \textbf{Autore} & \textbf{Verificatore} & \textbf{Dettaglio} \\
 \hline
+v.0.1.1 & 2024-04-02 & Michele Z. & N/A & Aggiunti i termini: Best practices, Complessità ciclomatica, Inspection, Modello a V, Pull request, Walkthrough e Way of Working, con le rispettive descrizioni\\
+\hline
 v.0.1.0 & 2024-03-22 & Brotto D. & Zaupa R. & Corrette le definizioni di PB,RTB e Fornitura. Aggiunto il termine Caption\\
 \hline
 v.0.0.2 & 2024-03-20 & Brotto D. & Zaupa R. & Stilate le definizioni di tutti i termini, aggiunti alcuni termini ambigui come Prenotazione e Ordinazione e rimosso Acquisizione \\
