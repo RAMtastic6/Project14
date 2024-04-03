@@ -2,14 +2,14 @@
 \subsubsection{Obiettivi}
 
 \subsubsection{Scopo e struttura Repository Project 14}
-Questo $\textit{repository}_G$ ha due funzioni:
+Questo $\textit{Repository}_G$ ha due funzioni:
 
 \begin{itemize}
     \item mantenere una versione aggiornata dei sorgenti atti a produrre documentazione (file .tex)
-    \item disporre di un $\textit{sistema}_G$ per produrre automaticamente documentazione (file in formato .pdf) a partire dai sorgenti.
+    \item disporre di automazioni per produrre automaticamente documentazione (file in formato .pdf) a partire dai sorgenti.
 \end{itemize}
 
-In questo repository, infatti vi sono due cartelle principali:
+In questo Repository, infatti vi sono due cartelle principali:
 \begin{itemize}
     \item sorgenti: contiene i file sorgente della documentazione (.tex) 
     \item documenti: contiene i risultati della compilazione dei file sorgente (file .pdf)
@@ -31,32 +31,32 @@ La cartella documenti deve avere la seguente struttura:
 Un $\textit{verbale}_G$ deve essere nominato nel modo seguente: $\textit{verbale}_G$\_AAAA\_MM\_GG.
 
 \subsubsection{Scopo e struttura Repository RAMtastic6.github.io}
-Questo $\textit{repository}_G$ ha una funzione principale, ovvero quella di permettere una navigazione intuitiva all'interno della documentazione del gruppo; essa non è altro che una copia della cartella documenti del repo Project 14.
+Questo $\textit{Repository}_G$ ha una funzione principale, ovvero quella di permettere una navigazione intuitiva all'interno della documentazione del gruppo; essa non è altro che una copia della cartella documenti del repo Project 14.
 
 \subsubsection{Tipologie di documenti}
 I documenti prodotti possono essere classificati in due classi principali: ad uso interno e ad uso esterno; la prima categoria comprende:
 \begin{itemize}
     \item $\textit{Verbali interni}_G$ (i quali non necessitano di versionamento)
-    \item Norme di progetto
+    \item Norme di Progetto
 \end{itemize}
 La seconda categoria di documenti comprende:
 \begin{itemize}
     \item Verbali esterni
-    \item Piano di qualifica
-    \item Piano di progetto
-    \item Analisi dei requisiti
+    \item Piano di Qualifica
+    \item Piano di Progetto
+    \item Analisi Dei Requisiti
 \end{itemize}
 \subsubsection{Ciclo di vita di un documento}
 Un documento segue le seguenti fasi di produzione:
 \begin{itemize}
     \item Stesura: uno o più redattori si occupano di redigere il contenuto del documento.
     \item Verifica: ad uno o più membri del gruppo, diversi da quelli che hanno redatto il documento, viene assegnato il compito di verifica del documento.
-È importante sottolineare che tutti i documenti sopracitati sono ufficiali e devono essere, quindi, preventivamente approvati da verificatori designati.
-    \item Approvazione: durante questa fase, il responsabile di progetto può decidere se approvare l'inclusione di un particolare documento all'interno del repository. Nel caso in cui il documento non venga approvato, si ritorna alla fase di stesura.
-    Se quest'ultima fase va a buon fine, vengono aggiunte informazioni di $\textit{versionamento}_G$ secondo quanto riportato nell'apposita sezione; infine viene caricato il documento all'interno del $\textit{repository}_G$ nel $\textit{branch}_G$ develop.
+È importante sottolineare che tutti i documenti sopracitati sono ufficiali e devono essere, quindi, preventivamente approvati da verificatori Designati.
+    \item Approvazione: durante questa fase, il responsabile di progetto può decidere se approvare l'inclusione di un particolare documento all'interno del Repository. Nel caso in cui il documento non venga approvato, si ritorna alla fase di stesura.
+    Se quest'ultima fase va a buon fine, vengono aggiunte informazioni di $\textit{versionamento}_G$ secondo quanto riportato nell'apposita sezione; infine viene caricato il documento all'interno del $\textit{Repository}_G$ nel $\textit{Branch}_G$ develop.
 \end{itemize}
 \subsubsection{Template}
-Il gruppo ha scelto di utilizzare $\textit{template}_G$ LaTeX per la produzione della documentazione. Per visualizzare la struttura e utilizzare i $\textit{template}_G$, è sufficiente cercarli su overleaf.
+Il gruppo ha scelto di utilizzare $\textit{template}_G$ LaTeX per la produzione della documentazione. Per visualizzare la struttura e utilizzare i $\textit{template}_G$, è sufficiente cercarli su Overleaf.
 
 \subsubsection{Struttura di un documento}
 Un documento all'interno del nostro contesto segue una struttura ben definita, le sue sezioni principali includono:
@@ -68,10 +68,10 @@ Un documento all'interno del nostro contesto segue una struttura ben definita, l
 \end{itemize}
 
 \subsubsection{Strumenti}
-Per la creazione e la gestione della struttura dei documenti è stato deciso di utilizzare Overleaf, un $\textit{editor}_G$ LaTeX online che permette la stesura collaborativa dei documenti.
+Per la creazione e la gestione della struttura dei documenti è stato deciso di utilizzare Overleaf, un $\textit{Editor}_G$ LaTeX online che permette la stesura collaborativa dei documenti.
 
-\subsubsection{Struttura di un progetto in overleaf}
-Affinché le automazioni per produrre $\textit{riferimenti}_G$ al glossario funzionino, un progetto in $\textit{overleaf}_G$ deve avere la struttura seguente:
+\subsubsection{Struttura di un progetto in Overleaf}
+Affinché le automazioni per produrre $\textit{riferimenti}_G$ al glossario funzionino, un progetto in $\textit{Overleaf}_G$ deve avere la struttura seguente:
 
 \begin{itemize}
     \item main.tex : file contenente il contentuto principale o, se si vuole, tutto il contenuto del file
@@ -90,12 +90,12 @@ Il $\textit{versionamento}_G$ scelto per tenere traccia dei documenti è una tri
 \end{itemize}
 
 
-\subsubsection{Procedure branch develop }
+\subsubsection{Procedure Branch develop }
 
 Il flusso di lavoro attuale per produrre la documentazione relativa al progetto è il seguente:
 \begin{enumerate}
-    \item modificare i documenti in overleaf
-    \item scaricare i sorgenti dei documenti scritti in $\textit{overleaf}_G$ e inserirli all'interno del $\textit{repository}_G$ locale Project14, nella cartella sorgenti.
+    \item modificare i documenti in Overleaf
+    \item scaricare i sorgenti dei documenti scritti in $\textit{Overleaf}_G$ e inserirli all'interno del $\textit{Repository}_G$ locale Project14, nella cartella sorgenti.
     \item posizionarsi nella cartella Project 14 ed eseguire le automazioni mediante il comando:
         \begin{quote}
             \emph{  python3 entry\_point\_automazioni.py} 
@@ -109,7 +109,7 @@ Il flusso di lavoro attuale per produrre la documentazione relativa al progetto 
 
 \subsubsection{Glossario Tecnico}
 Il \emph{Glossario tecnico} è un documento di supporto concepito per evitare ambiguità o incomprensioni riguardanti la terminologia utilizzata in tutta la documentazione per ogni fase del progetto ed è rivolto sia ai componenti del gruppo che a committenti e ai proponenti.
-Si tratta dell'unico documento da non modificare all'interno di overleaf. Infatti, il glossario tecnico viene costruito a partire da un file \emph{json} contenuto all'interno della cartella \emph{sorgenti/Glossario} del $\textit{repository}_G$ \emph{Project14}.\\
+Si tratta dell'unico documento da non modificare all'interno di Overleaf. Infatti, il glossario tecnico viene costruito a partire da un file \emph{json} contenuto all'interno della cartella \emph{sorgenti/Glossario} del $\textit{Repository}_G$ \emph{Project14}.\\
 Tale file, denominato \emph{glossario.json}, è costituito da un array di oggetti; ogni oggetto è formato da un insieme di due coppie chiave-valore, in particolare vi sono:
 \begin{itemize}
     \item La chiave termine: il termine che necessita di essere definito all'interno del dominio di progetto;
@@ -118,60 +118,60 @@ Tale file, denominato \emph{glossario.json}, è costituito da un array di oggett
 \paragraph{Redazione}
 Per poter inserire o modificare un termine nel glossario tecnico, bisogna seguire i seguenti passaggi:
 \begin{itemize}
-    \item Creare un $\textit{branch}_G$ nel $\textit{repository}_G$ \emph{Project14} associato al $\textit{ticket}_G$ che indica le parole da inserire o modificare all'interno del glossario;
+    \item Creare un $\textit{Branch}_G$ nel $\textit{Repository}_G$ \emph{Project14} associato al $\textit{ticket}_G$ che indica le parole da inserire o modificare all'interno del glossario;
     \item Aggiungere o modificare le parole e definizioni nel file \emph{glossario.json};
-    \item modificare il $\textit{changelog}_G$ nel file \emph{build\_glossary.py} nella cartella GLOSSARY\_AUTOMATIONS;
+    \item modificare il $\textit{Changelog}_G$ nel file \emph{build\_glossary.py} nella cartella GLOSSARY\_AUTOMATIONS;
     \item Eseguire l'automazione tramite il comando:
         \begin{quote}
             \emph{  python3 entry\_point\_automazioni.py} 
         \end{quote}
-    \item Effettuare il $\textit{push}_G$ in remoto;
-    \item Aprire una $\textit{pull request}_G$ dal $\textit{branch}_G$ creato al $\textit{branch}_G$ develop;
+    \item Effettuare il $\textit{Push}_G$ in remoto;
+    \item Aprire una $\textit{Pull request}_G$ dal $\textit{Branch}_G$ creato al $\textit{Branch}_G$ develop;
     \item Spostare il $\textit{ticket}_G$ corrispondente nella sezione "da verificare" all'interno di \emph{Jira}.
 \end{itemize}
-Nel momento in cui viene inserita una parola nuova all'interno del glossario bisogna segnalare al responsabile se sono presenti discrepanze tra il modo in cui è stato scritto il termine all'interno del file \emph{glossario.json} e il modo in cui è stato scritto all'interno dei documenti. Viene riportato il seguente esempio: se all'interno del glossario viene riportata la parola "\emph{Analisi dei Requisiti}" allora all'interno dei documenti tale parola deve essere riportata con le stesse lettere maiuscole e minuscole ad $\textit{eccezione}_G$ della lettera iniziale (va bene "\emph{analisi dei Requisiti}" ma non "\emph{Analisi dei requisiti}").
+Nel momento in cui viene inserita una parola nuova all'interno del glossario bisogna segnalare al responsabile se sono presenti discrepanze tra il modo in cui è stato scritto il termine all'interno del file \emph{glossario.json} e il modo in cui è stato scritto all'interno dei documenti. Viene riportato il seguente esempio: se all'interno del glossario viene riportata la parola "\emph{Analisi Dei Requisiti}" allora all'interno dei documenti tale parola deve essere riportata con le stesse lettere maiuscole e minuscole eccetto la lettera iniziale (va bene "\emph{analisi Dei Requisiti}" ma non "\emph{Analisi dei Requisiti}").
 \paragraph{Verifica} Per poter verificare il glossario, si seguono le seguenti azioni:
 \begin{itemize}
-    \item Utilizzare il $\textit{branch}_G$ creato dal redattore;
+    \item Utilizzare il $\textit{Branch}_G$ creato dal Redattore;
     \item Verificare i termini e definizioni nel file \emph{glossario.json};
-    \item Modificare il $\textit{changelog}_G$ nel file \emph{build\_glossary.py} nella cartella GLOSSARY\_AUTOMATIONS;
+    \item Modificare il $\textit{Changelog}_G$ nel file \emph{build\_glossary.py} nella cartella GLOSSARY\_AUTOMATIONS;
     \item Eseguire l'automazione tramite il comando:
         \begin{quote}
             \emph{  python3 entry\_point\_automazioni.py} 
         \end{quote}
-    \item Effettuare il $\textit{push}_G$ in remoto;
+    \item Effettuare il $\textit{Push}_G$ in remoto;
     \item Spostare il $\textit{ticket}_G$ nella sezione "completato" all'interno di \emph{Jira}.
 \end{itemize}
-Infine, il responsabile approva la $\textit{pull request}_G$ associata.
+Infine, il responsabile approva la $\textit{Pull request}_G$ associata.
 %Per poter modificare un termine del glossario tecnico, basta modificare il contenuto del valore %"definizione"; per poter aggiungere un termine del glossario tecnico, basta aggiungere un oggetto %avente la struttura sopracitata dell'array.
 
-\subsection{Controllo di configurazione}
+\subsection{Controllo di Configurazione}
 \subsubsection{Versionamento}
 Capire come gestire i numeri di versione.
 \subsubsection{Git e Github}
-Il gruppo RAMtastic6 ha scelto di utilizzare come $\textit{strumento}_G$ di $\textit{versionamento}_G$ \emph{GitHub} e di utilizzare \emph{Git} come $\textit{strumento}_G$ per collegarsi alla $\textit{repository}_G$ GitHub.
-Inoltre si è scelto di utilizzare $\textit{gitflow}_G$ come flusso di lavoro il quale verrà discusso in modo dettagliato in seguito
+Il gruppo RAMtastic6 ha scelto di utilizzare come $\textit{strumento}_G$ di $\textit{versionamento}_G$ \emph{Github} e di utilizzare \emph{Git} come $\textit{strumento}_G$ per collegarsi alla $\textit{Repository}_G$ Github.
+Inoltre si è scelto di utilizzare $\textit{Gitflow}_G$ come flusso di lavoro il quale verrà discusso in modo dettagliato in seguito
 (\href{https://git-scm.com/downloads}{Link per il download dell'installer di Git}).\\
-Inoltre, a questo \href{https://rogerdudler.github.io/git-guide/index.it.html}{link} si troverà una breve guida su come utilizzare git.
+Inoltre, a questo \href{https://rogerdudler.github.io/git-guide/index.it.html}{link} si troverà una breve guida su come utilizzare Git.
 In sintesi si elencano i pricipali comandi:
 \begin{itemize}
     \item $\textit{git}_G$ clone \emph{link repo}\\
-    questo comando copierà la $\textit{repository}_G$ di $\textit{github}_G$ in locale
+    questo comando copierà la $\textit{Repository}_G$ di $\textit{Github}_G$ in locale
     \item $\textit{git}_G$ add \emph{nome file} (oppure "." per includere tutti i file)\\
-    \emph{git add} aggiunge le modifice apportate ai files del $\textit{repository}_G$, senza eseguire questo comando un file aggiunto, eliminato o modificato non verrà salvato nella $\textit{repository}_G$ remota tramite il comando \emph{git push}.
+    \emph{git add} aggiunge le modifice apportate ai files del $\textit{Repository}_G$, senza eseguire questo comando un file aggiunto, eliminato o modificato non verrà salvato nella $\textit{Repository}_G$ remota tramite il comando \emph{git push}.
     \item $\textit{git}_G$ commit -m "messaggio" \\
     salva le modifche apportate ai files in locale associando a quello stato un messaggio
     \item $\textit{git}_G$ $\textit{push}_G$ origin \emph{origine} \\
-    salva le modifiche in remoto nel $\textit{branch}_G$ specificato
+    salva le modifiche in remoto nel $\textit{Branch}_G$ specificato
     \item $\textit{git}_G$ pull \\
     permette di aggiornare la repo in locale e in caso di necessità esegue il merge
 \end{itemize}
-\subsubsection{Struttura del repository}
-La strutta della $\textit{repository}_G$ per i documenti deve essere:
+\subsubsection{Struttura del Repository}
+La strutta della $\textit{Repository}_G$ per i documenti deve essere:
 \begin{itemize}
     \item documenti
     \begin{itemize}
-        \item CANDIDATURA
+        \item Candidatura
         \item RTB
         \item PB
     \end{itemize}
@@ -179,9 +179,9 @@ La strutta della $\textit{repository}_G$ per i documenti deve essere:
     \item documenti\_interni
 \end{itemize}
 \subsubsection{Controllo di Flusso}
-Il gruppo RAMtastic6 ha deciso di dotarsi di $\textit{Gitflow}_G$ come $\textit{sistema}_G$ di controllo del flusso di lavoro, motivato dalla sua facilità d'uso e dalle potenzialità di gestione offerte per il repository. Con una lieve modifica nei comandi per l'esecuzione dei commit, come illustrato in questa \href{https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow}{guida su $\textit{Gitflow}_G$}, è possibile automatizzare il $\textit{processo}_G$ di creazione, gestione e chiusura di una $\textit{feature}_G$. Ulteriori dettagli su come gestire le $\textit{feature}_G$ sono disponibili a questo \href{http://danielkummer.github.io/git-flow-cheatsheet/}{link}.
+Il gruppo RAMtastic6 ha deciso di dotarsi di $\textit{Gitflow}_G$ come $\textit{sistema}_G$ di controllo del flusso di lavoro, motivato dalla sua facilità d'uso e dalle potenzialità di gestione offerte per il Repository. Con una lieve modifica nei comandi per l'esecuzione dei commit, come illustrato in questa \href{https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow}{guida su $\textit{Gitflow}_G$}, è possibile automatizzare il $\textit{processo}_G$ di creazione, gestione e chiusura di una $\textit{Feature}_G$. Ulteriori dettagli su come gestire le $\textit{Feature}_G$ sono disponibili a questo \href{http://danielkummer.github.io/git-flow-cheatsheet/}{link}.
 \paragraph{Gestione dei Documenti}
-Unua particolare attenzione in tal senso è rivolta alla documentazione. Al fine di mantenere nel $\textit{repository}_G$ solamente i $\textit{PDF}_G$ dei documenti prodotti, è stato deciso di adottare la piattaforma \href{https://www.overleaf.com/project}{Overleaf} per la stesura in LaTeX dei documenti e la successiva verifica. Ogni volta che un documento viene redatto o aggiornato, verificato e portato alla versione corretta come precedentemente indicato, può essere comodamente convertito in formato $\textit{PDF}_G$ tramite Overleaf. Successivamete, il documento può essere caricato nella $\textit{repository}_G$, con il $\textit{push}_G$ diretto sul $\textit{branch}_G$ \textit{develop}, soprattutto quando si parla di documentazione importante e la cui stesura è in itinere.
+Unua particolare attenzione in tal senso è rivolta alla documentazione. Al fine di mantenere nel $\textit{Repository}_G$ solamente i $\textit{PDF}_G$ dei documenti prodotti, è stato deciso di adottare la piattaforma \href{https://www.overleaf.com/project}{Overleaf} per la stesura in LaTeX dei documenti e la successiva verifica. Ogni volta che un documento viene redatto o aggiornato, verificato e portato alla versione corretta come precedentemente indicato, può essere comodamente convertito in formato $\textit{PDF}_G$ tramite Overleaf. Successivamete, il documento può essere caricato nella $\textit{Repository}_G$, con il $\textit{Push}_G$ diretto sul $\textit{Branch}_G$ \textit{develop}, soprattutto quando si parla di documentazione importante e la cui stesura è in itinere.
 \subsection{Gestione della qualità}
 \subsubsection{Descrizione}
 La gestione della qualità è un insieme di processi che hanno lo scopo di garantire che il software, gli artefatti e i processi nel ciclo di vita del progetto aderiscano degli standard di qualità rispetto a requisiti specificati al fine di soddisfare le aspettative del proponente e degli utenti finali.
@@ -225,6 +225,6 @@ L'analisi statica adotta comunemente due metodi di lettura:
     \item \textbf{Walkthrough}: si tratta di una tecnica collaborativa che coinvolge il verificatore e l'autore del prodotto e che consiste nel revisionare nel suo complesso il codice e la documentazione forniti, con una successiva discussione degli eventuali problemi trovati;
     \item \textbf{Inspection}: si tratta di una tecnica che consiste nel revisionare parti specifiche del codice e della documentazione attraverso liste di controllo (\emph{checklist}) nel momento in cui si ha già un'idea di dove possano esserci possibili problemi in modo da intervenire tempestivamente e sistematicamente.
 \end{itemize}
-Nel documento \emph{"Piano di Qualifica"} vengono definite delle liste di controllo in modo da applicare la tecnica dell'\textit{inspection}, preferibile a quella del \textit{walkthrough}.
+Nel documento \emph{"Piano di Qualifica"} vengono definite delle liste di controllo in modo da applicare la tecnica dell'\textit{Inspection}, preferibile a quella del \textit{Walkthrough}.
 \subsubsection{Analisi dinamica}
 L'analisi dinamica è una metodologia di verifica che si basa sull'esecuzione del codice. Le tecniche principali utilizzate in questa fase sono i $\textit{test}_G$ (definiti nel documento di "\emph{Piano di Qualifica}") finalizzati per individuare e verificare il comportamento del prodotto software.
