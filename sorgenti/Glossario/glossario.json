@@ -169,7 +169,7 @@
   "K": [],
   "L": [
     {
-      "termine": "Latex",
+      "termine": "LaTeX",
       "definizione": "LaTeX viene spesso utilizzato per redigere documenti tecnici, come specifiche dei requisiti, documenti di progetto, manuali utente e rapporti di testing. La sua struttura modulare, la gestione avanzata della formattazione e la facilità nel gestire equazioni matematiche e tabelle lo rendono una scelta popolare tra gli sviluppatori e i professionisti del settore. LaTeX consente inoltre di mantenere una formattazione uniforme e di automatizzare alcune operazioni, rendendo più efficiente il processo di documentazione del progetto."
     }
   ],
@@ -229,11 +229,11 @@
       "definizione": "La posta elettronica è un sistema di comunicazione che consente agli utenti di inviare e ricevere messaggi tramite internet. I messaggi sono inviati e ricevuti elettronicamente attraverso server di posta elettronica, consentendo agli utenti di comunicare in modo rapido e efficiente a distanza. "
     },
     {
-      "termine": "Postcondizione",
+      "termine": "Postcondizioni",
       "definizione": "La postcondizione è lo stato del sistema o le condizioni che devono essere soddisfatte dopo l'esecuzione di un caso d'uso di una funzione specifica. Indica lo stato o le modifiche che il sistema dovrebbe avere raggiunto al termine del caso d'uso o della funzione presa in esame "
     },
     {
-      "termine": "Precondizione",
+      "termine": "Precondizioni",
       "definizione": "La precondizione è uno stato o una condizione del sistema che deve essere soddisfatta affinché un caso d'uso o una funzione possa essere eseguita con successo. Indica lo stato iniziale o le circostanze necessarie perché il caso d'uso o la funzione presa in esame possa essere avviata e completata correttamente. "
     },
     {
@@ -253,15 +253,15 @@
       "definizione": "Il processo è una successione di eventi/attività che producono un risultato visibile e concreto. Deve essere condotto in modo sistematico, disciplinato e misurabile."
     },
     {
-      "termine": "Processo primario",
+      "termine": "Processi primari",
       "definizione": "Il processo primario si riferisce alle attività direttamente coinvolte nella creazione del prodotto software o nel fornire valore diretto al cliente. Questi processi sono centrali per il raggiungimento degli obiettivi del progetto e includono attività come analisi dei requisiti, progettazione, implementazione, test e consegna del software."
     },
     {
-      "termine": "Processo di supporto",
+      "termine": "Processi di supporto",
       "definizione": "I processi di supporto forniscono assistenza e risorse per i processi primari e organizzativi. Questi processi includono attività come la gestione della configurazione, la gestione della qualità, la formazione, la gestione delle risorse e la gestione dei rischi. L'obiettivo dei processi di supporto è quello di garantire che i processi primari e organizzativi siano eseguiti in modo efficiente ed efficace."
     },
     {
-      "termine": "Processo organizzativo",
+      "termine": "Processi organizzativi",
       "definizione": "I processi organizzativi sono responsabili della gestione e del coordinamento delle attività all'interno dell'organizzazione. Questi processi includono la definizione delle politiche e delle procedure aziendali, la pianificazione strategica, la gestione dei progetti e la comunicazione interna ed esterna. Gli obiettivi dei processi organizzativi sono quello di garantire che l'organizzazione abbia una struttura e un'infrastruttura adeguate per supportare l'esecuzione dei processi primari e di supporto."
     },
     {
@@ -314,7 +314,7 @@
       "definizione": "I requisiti funzionali obbligatori sono quei requisiti indispensabili per il corretto funzionamento del sistema o del prodotto, senza i quali il sistema non può essere considerato soddisfacente. "
     },
     {
-      "termine": "Riferimento",
+      "termine": "Riferimenti",
       "definizione": "Un riferimento in un documento si riferisce a un'informazione, un'idea o una fonte esterna che viene citata, menzionata o utilizzata come punto di riferimento per comprendere o supportare il contenuto del documento stesso. Può includere link ipertestuali, citazioni bibliografiche, numeri di pagina o altre forme di indicazioni che facilitano la consultazione o il richiamo ad altre fonti o parti del documento. "
     },
     {
@@ -330,7 +330,7 @@
       "definizione": "Il rilascio è un'istanza specifica di un prodotto software che è stato messo a disposizione degli utenti finali o dei clienti. Indica il momento in cui una determinata versione del software è pronta per essere distribuita e utilizzata dagli utenti. Un rilascio può includere nuove funzionalità, correzioni di bug, miglioramenti delle prestazioni o altre modifiche significative rispetto alle versioni precedenti del software. "
     },
     {
-      "termine": "Rischio",
+      "termine": "Rischi",
       "definizione": "Un rischio è un evento o una condizione che, se si verificasse, potrebbe influenzare negativamente il raggiungimento degli obiettivi di un progetto. I rischi possono riguardare varie aree, come i tempi di consegna, i costi, la qualità del prodotto o la soddisfazione del cliente. Gli sforzi di gestione dei rischi sono finalizzati a identificare, valutare e mitigare i potenziali impatti negativi che i rischi potrebbero avere sul progetto. "
     },
     {
@@ -380,7 +380,7 @@
       "definizione": "Il termine \"Software\" si riferisce all'insieme di programmi, procedure e documentazione associata utilizzati su un sistema informatico per eseguire determinate operazioni o risolvere specifici problemi. Questo include sia il codice sorgente dei programmi che il software precompilato eseguibile. Il software può essere progettato per scopi diversi, come gestione dati, elaborazione informatica, comunicazione, intrattenimento e molti altri. In un contesto di sviluppo software, il termine \"software\" si riferisce al prodotto finale ottenuto dal processo di sviluppo, che può essere installato e utilizzato dagli utenti per scopi specifici. "
     },
     {
-      "termine": "Sottocaso d'uso",
+      "termine": "Sottocasi d'uso",
       "definizione": "Il termine \"Sottocaso d'uso\" si riferisce a un'istanza specifica di un caso d'uso più ampio. Mentre un caso d'uso descrive un'interazione completa tra gli attori e il sistema per raggiungere un obiettivo specifico, un sottocaso d'uso dettaglia uno specifico scenario o flusso di lavoro all'interno di quel caso d'uso più ampio. I sottocasi d'uso vengono utilizzati per suddividere i casi d'uso complessi in unità gestibili e per fornire una descrizione più dettagliata delle azioni e dei passaggi coinvolti in un'interazione specifica con il sistema. "
     },
     {
@@ -398,7 +398,7 @@
   ],
   "T": [
     {
-      "termine": "Tecnologia",
+      "termine": "Tecnologie",
       "definizione": "La \"tecnologia\" nel contesto dello sviluppo del software si riferisce agli strumenti, ai linguaggi di programmazione, ai framework e ad altre risorse utilizzate per progettare, sviluppare e implementare soluzioni software. Questo termine può anche comprendere hardware, piattaforme di hosting, servizi cloud e altri componenti tecnologici utilizzati nel processo di sviluppo e distribuzione del software. La scelta delle tecnologie giuste può influenzare significativamente le prestazioni, la scalabilità, la manutenibilità e altre caratteristiche del prodotto software. "
     },
     {
@@ -434,11 +434,11 @@
       "definizione": "Un verbale è un documento che riporta in modo dettagliato le discussioni, le decisioni prese e gli eventi avvenuti durante una riunione, un incontro o una sessione di lavoro. Serve a registrare e documentare in maniera accurata ciò che è stato discusso e deciso durante l'incontro, consentendo ai partecipanti di ricordare e consultare le informazioni trattate in seguito. Un verbale può includere una lista degli argomenti affrontati, i partecipanti presenti, le decisioni prese, le azioni da intraprendere e le eventuali osservazioni o commenti aggiuntivi. "
     },
     {
-      "termine": "Verbale esterno",
+      "termine": "Verbali esterni",
       "definizione": "Un verbale esterno è un documento che riporta le discussioni, le decisioni e gli eventi avvenuti durante una riunione o un incontro con soggetti esterni al team di lavoro o all'organizzazione. È utilizzato nel nostro caso per comunicare in modo formale e documentato con aziende proponenti, professori, o altre parti interessate esterne."
     },
     {
-      "termine": "Verbale interno",
+      "termine": "Verbali interni",
       "definizione": "Un verbale interno è documento che riporta le discussioni, le decisioni e gli eventi avvenuti durante una riunione o un incontro all'interno del team di lavoro o dell'organizzazione stessa. Viene utilizzato per registrare e documentare le attività e le decisioni prese all'interno del gruppo di lavoro."
     },
     {
