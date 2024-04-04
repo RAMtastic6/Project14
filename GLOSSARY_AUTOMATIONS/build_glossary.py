@@ -36,7 +36,7 @@ intestazione = r"""\documentclass[12pt, oneside]{article}
 % Informazioni sul documento
 \section*{Informazioni sul documento}
 \begin{tabular}{ll}
-Versione: & 0.1.0 \\
+Versione: & 0.2.0 \\
 Redattori:  & Zambon M. Brotto D.\\
 Verificatori: & Brotto D. Zaupa R.\\ 
 Destinatari: & T. Vardanega, R. Cardin, Imola Informatica \\
@@ -50,9 +50,9 @@ Uso: & Esterno
 \hline
 \textbf{Versione} & \textbf{Data} & \textbf{Autore} & \textbf{Verificatore} & \textbf{Dettaglio} \\
 \hline
-v.0.1.2 & 2024-04-03 & Michele Z. & N/A & Cambiati i termini: "Latex" in "LaTeX", "Precondizione" in "Precondizioni", "Postcondizione" in "Postcondizioni", "Processo primario" in "Processi primari", "Processo di supporto" in "Processi di supporto", "Processo organizzativo" in "Processi organizzativi", "Riferimento" in "Riferimenti", "Rischio" in "Rischi", "Sottocaso d'uso" in "Sottocasi d'uso", "Tecnologia" in "Tecnologie", "Verbale esterno" in "Verbali esterni", "Verbale interno" in "Verbali interni"\\
+v.0.2.0 & 2024-04-03 & Michele Z. & Zaupa R. & Cambiati i termini: "Latex" in "LaTeX", "Precondizione" in "Precondizioni", "Postcondizione" in "Postcondizioni", "Processo primario" in "Processi primari", "Processo di supporto" in "Processi di supporto", "Processo organizzativo" in "Processi organizzativi", "Riferimento" in "Riferimenti", "Rischio" in "Rischi", "Sottocaso d'uso" in "Sottocasi d'uso", "Tecnologia" in "Tecnologie", "Verbale esterno" in "Verbali esterni", "Verbale interno" in "Verbali interni"\\
 \hline
-v.0.1.1 & 2024-04-02 & Michele Z. & N/A & Aggiunti i termini: Best practices, Complessità ciclomatica, Inspection, Modello a V, Pull request, Walkthrough e Way of Working, con le rispettive descrizioni\\
+v.0.1.1 & 2024-04-02 & Michele Z. & Zaupa R. & Aggiunti i termini: Best practices, Complessita' ciclomatica, Inspection, Modello a V, Pull request, Walkthrough e Way of Working, con le rispettive descrizioni\\
 \hline
 v.0.1.0 & 2024-03-22 & Brotto D. & Zaupa R. & Corrette le definizioni di PB,RTB e Fornitura. Aggiunto il termine Caption\\
 \hline

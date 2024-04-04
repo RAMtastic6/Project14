@@ -20,7 +20,7 @@
   "B": [
     {
       "termine": "Best practices",
-      "definizione": "Le Best practices sono i metodi e precedure che nel tempo si sono rivelate le migliori in termini di efficienza ed efficacia al raggiungimento dei vari obbiettivi nella produzione del software."
+      "definizione": "Le best practices nel contesto della produzione software sono l'applicazione di metodi e procedure che nel corso del tempo e attraverso l'esperienza pratica hanno dimostrato di essere le migliori in termini di efficienza ed efficacia nel raggiungimento degli obiettivi prefissati."
     },
     {
       "termine": "Branch",
@@ -54,7 +54,7 @@
     },
     {
       "termine": "Complessità ciclomatica",
-      "definizione": "La Complessità ciclomatica è una metrica software per misurare la complessità di un programma. Essa viene calcolata utilizzando il grafo di controllo di flusso del programma dove i nodi del grafo corrispondono a gruppi indivisibili di istruzioni, mentre gli archi orientati connettono due nodi se il secondo può essere eseguito immediatamente dopo il primo. La complessità ciclomatica di una sezione di codice è il numero di cammini linearmente indipendenti attraverso il codice sorgente."
+      "definizione": "La complessità ciclomatica è una metrica software utilizzata per misurare la complessità di un programma. Essa viene calcolata utilizzando il grafo di controllo di flusso del programma, dove i nodi del grafo rappresentano gruppi indivisibili di istruzioni e gli archi orientati connettono due nodi se il secondo può essere eseguito immediatamente dopo il primo. La complessità ciclomatica di una sezione di codice esprime il numero di cammini linearmente indipendenti attraverso il grafo di controllo di flusso del programma."
     },
     {
       "termine": "Consuntivo",
@@ -157,7 +157,7 @@
     },
     {
       "termine": "Inspection",
-      "definizione": "L'Inspection è una tipologia di analisi statica che consiste nel revisionare parti specifiche del codice e della documentazione attraverso liste di controllo (checklist) nel momento in cui si ha già un’idea di dove possano esserci possibili problemi in modo da intervenire tempestivamente e sistematicamente."
+      "definizione": "L'Inspection è una tipologia di analisi statica che consiste nella revisione di parti specifiche del codice e della documentazione attraverso liste di controllo (checklist). Viene eseguita quando si ha già un’idea di dove potrebbero esserci possibili problemi, al fine di intervenire tempestivamente e sistematicamente."
     }
   ],
   "J": [
@@ -184,7 +184,7 @@
     },
     {
       "termine": "Modello a V",
-      "definizione": "Il Modello a V è una rappresentazione grafica del ciclo di vita di un progetto di sviluppo software. Il Modello a V mostra in maniera dettagliata le relazioni fra le fasi di analisi e pregettazione, la  produzione e il testing, ciò permette di minimizzare i rischi di progetto e di migliorare e garantire la qualità del prodotto."
+      "definizione": "Il Modello a V è una rappresentazione grafica del ciclo di vita di un progetto di sviluppo software. Esso mostra in maniera dettagliata le relazioni fra le fasi di analisi e pregettazione, la  produzione e il testing e ciò permette di minimizzare i rischi di progetto e di migliorare e garantire la qualità del prodotto."
     }
   ],
   "N": [
@@ -230,11 +230,11 @@
     },
     {
       "termine": "Postcondizioni",
-      "definizione": "La postcondizione è lo stato del sistema o le condizioni che devono essere soddisfatte dopo l'esecuzione di un caso d'uso di una funzione specifica. Indica lo stato o le modifiche che il sistema dovrebbe avere raggiunto al termine del caso d'uso o della funzione presa in esame "
+      "definizione": "Le postcondizioni sono degli stato del sistema o le condizioni che devono essere soddisfatte dopo l'esecuzione di un caso d'uso di una funzione specifica. Indicano lo stato o le modifiche che il sistema dovrebbe avere raggiunto al termine del caso d'uso o della funzione presa in esame "
     },
     {
       "termine": "Precondizioni",
-      "definizione": "La precondizione è uno stato o una condizione del sistema che deve essere soddisfatta affinché un caso d'uso o una funzione possa essere eseguita con successo. Indica lo stato iniziale o le circostanze necessarie perché il caso d'uso o la funzione presa in esame possa essere avviata e completata correttamente. "
+      "definizione": "Le precondizioni sono degli stato o condizioni del sistema che devono essere soddisfatte affinché un caso d'uso o una funzione possa essere eseguita con successo. Indicano lo stato iniziale o le circostanze necessarie perché il caso d'uso o la funzione presa in esame possa essere avviata e completata correttamente. "
     },
     {
       "termine": "Prenotazione",
@@ -254,7 +254,7 @@
     },
     {
       "termine": "Processi primari",
-      "definizione": "Il processo primario si riferisce alle attività direttamente coinvolte nella creazione del prodotto software o nel fornire valore diretto al cliente. Questi processi sono centrali per il raggiungimento degli obiettivi del progetto e includono attività come analisi dei requisiti, progettazione, implementazione, test e consegna del software."
+      "definizione": "I processi primari si riferiscono alle attività direttamente coinvolte nella creazione del prodotto software o nel fornire valore diretto al cliente. Questi processi sono centrali per il raggiungimento degli obiettivi del progetto e includono attività come analisi dei requisiti, progettazione, implementazione, test e consegna del software."
     },
     {
       "termine": "Processi di supporto",
@@ -274,7 +274,7 @@
     },
     {
       "termine": "Pull request",
-      "definizione": "Le Pull request sono un meccanismo che permette a un membro del gruppo di notificare agli altri membri del completamento di una funzionalità in un determinato branch. In questo modo possono partire i processi di verifica della funzionalità e l'eventuale merge."
+      "definizione": "Le Pull request sono un meccanismo che consente a un membro del gruppo di notificare agli altri membri il completamento di una funzionalità all'interno di un determinato branch. Questo permette di avviare i processi di verifica della funzionalità e, eventualmente, di procedere con il merge."
     },
     {
       "termine": "Push",
@@ -449,11 +449,11 @@
   "W": [
     {
       "termine": "Walkthrough",
-      "definizione": "Il Walkthrough è una tipologia di analisi statica che coinvolge il verificatore e l’autore del prodotto e che consiste nel revisionare nel suo complesso il codice e la documentazioneforniti, con una successiva discussione degli eventuali problemi trovati."
+      "definizione": "Il Walkthrough è una tipologia di analisi statica che coinvolge sia il verificatore che l’autore del prodotto e che consiste nella revisione nel suo complesso del codice e della documentazione forniti, seguita da una discussione degli eventuali problemi individuati."
     },
     {
       "termine": "Way of Working",
-      "definizione": "Il Way of Working è un insieme di processi operativi, regole e specifiche che definisco il modo di lavorare del team. Un Way of Working efficace può contribuire al successo del progetto."
+      "definizione": "Il Way of Working è un insieme di processi operativi, regole e specifiche che definiscono il modo di lavorare del team e come vengono gestiti i processi all'interno del progetto. Un Way of Working efficace fornisce una struttura chiara e coesa per il team, promuove la coerenza, la trasparenza e l'efficienza nelle operazioni quotidiane, contribuendo così al successo complessivo del progetto."
     }
   ],
   "X": [],
