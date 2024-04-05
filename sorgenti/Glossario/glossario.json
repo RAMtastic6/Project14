@@ -41,7 +41,7 @@
       "definizione": "La caption di una tabella o di un'immagine in una documentazione è una breve descrizione o etichetta che fornisce informazioni sul contenuto della tabella o dell'immagine stessa. Ha lo scopo di identificare e spiegare il contenuto visivo o i dati presentati nella tabella, mentre nel caso delle immagini può includere una breve descrizione o un titolo per aiutare il lettore a comprendere il contesto della stessa."
     },
     {
-      "termine": "Caso d'Uso",
+      "termine": "Caso d'uso",
       "definizione": "Un caso d'uso definisce le interazioni tra gli attori (utenti) e il sistema software, rappresentando sequenze di azioni che guidano l'utilizzo del sistema per raggiungere determinati obiettivi. Queste interazioni descrivono come il sistema deve essere utilizzato e quali funzionalità devono essere esposte agli utenti."
     },
     {
@@ -71,7 +71,7 @@
       "definizione": "Il design nel contesto dello sviluppo del software è la fase in cui vengono definiti l'architettura, la struttura e le specifiche dettagliate del sistema software da creare. Questo processo include la progettazione dell'interfaccia utente, la scelta delle tecnologie e dei linguaggi di programmazione, nonché la pianificazione dell'implementazione del sistema. È una fase cruciale che assicura un'organizzazione efficiente e logica delle funzionalità del software, garantendo la sua scalabilità, manutenibilità e facilità d'uso."
     },
     {
-      "termine": "Diagramma dei Casi d'Uso",
+      "termine": "Diagramma dei casi d'uso",
       "definizione": "Il diagramma dei casi d'uso è una rappresentazione grafica delle interazioni tra gli attori esterni al sistema software e il sistema software stesso. È composto da attori, casi d'uso e le relazioni tra di essi, e fornisce una panoramica visiva delle funzionalità offerte dal sistema e dei suoi utilizzi da parte degli attori. Questo strumento aiuta a comprendere i requisiti funzionali del sistema, le interazioni tra gli utenti e il sistema stesso, e fornisce una base per la progettazione e lo sviluppo del software."
     },
     {
@@ -306,12 +306,12 @@
       "definizione": "Un requisito è una specifica o una condizione necessaria che un sistema, un prodotto o un servizio deve soddisfare per essere accettabile, utile o in grado di raggiungere determinati obiettivi. I requisiti vengono definiti durante il processo di analisi dei requisiti per guidare lo sviluppo e valutare il successo del progetto. "
     },
     {
-      "termine": "Requisiti funzionali desiderabili",
-      "definizione": "I requisiti funzionali desiderabili sono quelli che, se soddisfatti, migliorerebbero l'esperienza dell'utente o aggiungerebbero valore al sistema, ma non sono considerati essenziali per il suo funzionamento di base. "
+      "termine": "Requisiti desiderabili funzionali",
+      "definizione": "I requisiti desideribili funzionali sono quelli che, se soddisfatti, migliorerebbero l'esperienza dell'utente o aggiungerebbero valore al sistema, ma non sono considerati essenziali per il suo funzionamento di base. "
     },
     {
-      "termine": "Requisiti funzionali obbligatori",
-      "definizione": "I requisiti funzionali obbligatori sono quei requisiti indispensabili per il corretto funzionamento del sistema o del prodotto, senza i quali il sistema non può essere considerato soddisfacente. "
+      "termine": "Requisiti obbligatori funzionali",
+      "definizione": "I requisiti obbligatori funzionali sono quei requisiti indispensabili per il corretto funzionamento del sistema o del prodotto, senza i quali il sistema non può essere considerato soddisfacente. "
     },
     {
       "termine": "Riferimenti",
@@ -452,8 +452,8 @@
       "definizione": "Il Walkthrough è una tipologia di analisi statica che coinvolge sia il verificatore che l’autore del prodotto e che consiste nella revisione nel suo complesso del codice e della documentazione forniti, seguita da una discussione degli eventuali problemi individuati."
     },
     {
-      "termine": "Way of Working",
-      "definizione": "Il Way of Working è un insieme di processi operativi, regole e specifiche che definiscono il modo di lavorare del team e come vengono gestiti i processi all'interno del progetto. Un Way of Working efficace fornisce una struttura chiara e coesa per il team, promuove la coerenza, la trasparenza e l'efficienza nelle operazioni quotidiane, contribuendo così al successo complessivo del progetto."
+      "termine": "Way Of Working",
+      "definizione": "Il Way Of Working è un insieme di processi operativi, regole e specifiche che definiscono il modo di lavorare del team e come vengono gestiti i processi all'interno del progetto. Un Way of Working efficace fornisce una struttura chiara e coesa per il team, promuove la coerenza, la trasparenza e l'efficienza nelle operazioni quotidiane, contribuendo così al successo complessivo del progetto."
     }
   ],
   "X": [],

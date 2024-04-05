@@ -50,6 +50,8 @@ Uso: & Esterno
 \hline
 \textbf{Versione} & \textbf{Data} & \textbf{Autore} & \textbf{Verificatore} & \textbf{Dettaglio} \\
 \hline
+v.0.2.1 & 2024-04-05 & Michele Z. & N/A & Cambiati i termini: "Caso d'Uso" in "Caso d'uso", "Diagramma dei Casi d'Uso" in "Diagramma dei casi d'uso", "Requisiti funzionali desiderabili" in "Requisiti desiderabili funzionali", "Requisiti funzionali obbligatori" in "Requisiti obbligatori funzionali"\\
+\hline
 v.0.2.0 & 2024-04-03 & Michele Z. & Zaupa R. & Cambiati i termini: "Latex" in "LaTeX", "Precondizione" in "Precondizioni", "Postcondizione" in "Postcondizioni", "Processo primario" in "Processi primari", "Processo di supporto" in "Processi di supporto", "Processo organizzativo" in "Processi organizzativi", "Riferimento" in "Riferimenti", "Rischio" in "Rischi", "Sottocaso d'uso" in "Sottocasi d'uso", "Tecnologia" in "Tecnologie", "Verbale esterno" in "Verbali esterni", "Verbale interno" in "Verbali interni"\\
 \hline
 v.0.1.1 & 2024-04-02 & Michele Z. & Zaupa R. & Aggiunti i termini: Best practices, Complessita' ciclomatica, Inspection, Modello a V, Pull request, Walkthrough e Way of Working, con le rispettive descrizioni\\
