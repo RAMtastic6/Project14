@@ -2,30 +2,31 @@
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.7\textwidth]{ucd/UCD5.png}
+\caption{Pagamento conto}
 \end{figure}
 \textbf{Attori}:
 \begin{itemize}
-    \item Utente base autenticato
+    \item Utente base.
 \end{itemize}
 \textbf{Precondizioni}:
 \begin{itemize}
-    \item L'utente deve aver prenotato un tavolo
-    \item L'utente deve aver ordinato (\nameref{usecase:3})
+    \item L'utente è connesso al $\textit{Sistema}_G$;
+    \item L'utente deve aver ordinato (\nameref{usecase:3}).
 \end{itemize}
 \textbf{Postcondizione}:
 \begin{itemize}
-    \item Il conto del tavolo è stato pagato
+    \item Il conto del tavolo è stato pagato.
 \end{itemize}
 \textbf{Scenari principali}:
 \begin{enumerate}
     \item L'utente può selezionare tra:
     \begin{enumerate}
-        \item divisione equa
-        \item proporzionale
-        \item pagamento totale
+        \item divisione equa (\nameref{usecase:5.1});
+        \item proporzionale (\nameref{usecase:5.2});
+        \item pagamento totale (\nameref{usecase:5.3});
     \end{enumerate}
-    \item Ogni utente può decidere se pagare solo la sua parte oppure anche le parti di altri utenti
-    \item L'amministratore riceve aggiornamenti riguardanti allo stato del conto del tavolo tramite notifiche (push-notification)
+    \item Ogni utente può decidere se pagare solo la sua parte di conto oppure anche le parti riguardanti altri utenti;
+    \item L'amministratore riceve aggiornamenti riguardanti allo stato del conto del tavolo tramite notifiche (\emph{push-notification}).
 \end{enumerate}
 \input{uc/uc5.1}
 \input{uc/uc5.2}

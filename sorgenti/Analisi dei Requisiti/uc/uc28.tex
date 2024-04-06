@@ -2,24 +2,24 @@
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.9\linewidth]{ucd/UCD28.png}
+    \caption{Annullamento dell'ordinazione}
 \end{figure}
 \textbf{Attori}:
 \begin{itemize}
-    \item Utente base
+    \item Utente base.
 \end{itemize}
 \textbf{Precondizioni}:
 \begin{itemize}
-    \item L'utente è autenticato
-    \item L'utente ha creato un'ordinazione collaborativa (\nameref{usecase:3})
-    \item Il tempo utile per annullare l'ordinazione non è scaduto
+    \item L'utente ha creato un'$\textit{ordinazione}_G$ collaborativa (\nameref{usecase:3});
+    \item Il tempo utile per annullare l'$\textit{ordinazione}_G$ non è scaduto.
 \end{itemize}
 \textbf{Postcondizioni}:
 \begin{itemize}
-    \item L'utente ha annullato l'ordinazione collaborativa dei pasti e la $\textit{prenotazione}_G$ si trova senza ordinazioni
+    \item Le ordinazioni associate ad un utente della $\textit{prenotazione}_G$ collaborativa sono state annullate e ora quell'utente non ha ordinazioni associate.
 \end{itemize}
 \textbf{Scenario principale}:
 \begin{enumerate}
-    \item L'utente sceglie l'opzione di annullamento dell'ordinazione collaborativa
-    \item Il $\textit{sistema}_G$ annulla l'ordinazione associate alla $\textit{prenotazione}_G$ e invia una notifica a tutti gli utenti associati a quella $\textit{prenotazione}_G$
+    \item L'utente sceglie l'opzione di annullamento delle ordinazioni;
+    \item Il $\textit{sistema}_G$ annulla le ordinazioni associate all'utente.
 \end{enumerate}
 \newpage

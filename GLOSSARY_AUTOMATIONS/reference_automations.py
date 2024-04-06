@@ -12,7 +12,7 @@ from GLOSSARY_AUTOMATIONS.read_all_files import *
 
 def check_for_titles(line: str) -> bool:
     """funzione che controlla se una stringa in latex abbia al suo interno un titolo"""
-    titles = ["textbf", "section", "subsection", "subsubsection", "\\input", "title", "\\caption"]
+    titles = ["Destinatari", "section", "subsection", "subsubsection", "\\input", "title", "\\caption"]
     for t in titles:
         if t in line:
             return True
@@ -54,7 +54,7 @@ def repl_all_occurrences(glossary_path: str, filename: str, content_folder: str 
             for index, item in enumerate(lines):
                 if not check_for_titles(item) and ref_string not in item:
                     # ricercare la parola all'interno della riga, non la sottostringa
-                    w = [" " + d + " ", " " + d + "."," " + d + ",", " " + d + ":", " " + d + ";", "(" + d + ")", " " + d + ")", "(" + d + " ", '"' + d + '"', ' ' + d + '"', '"' + d + ' ']
+                    w = [" " + d + " ", " " + d + ".", " " + d + ",", " " + d + ":", " " + d + ";", "(" + d + ")", " " + d + ")", "(" + d + " ", '"' + d + '"', ' ' + d + '"', '"' + d + ' ', "'"+ d + " ", "'" + d + ".", "'" + d + ",", "'" + d + ";", "'" + d + ":", "'"+ d + "\"", "'"+ d + ")"]
                          
                     if any(word in item for word in w):
                         count_replaced_occurrences += 1 

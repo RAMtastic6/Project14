@@ -1,35 +1,32 @@
 \subsection{UC1 - Registrazione utente base}\label{usecase:1}
 \begin{figure}[H]
   \centering
-  \includegraphics[width=\textwidth]{ucd/UCD1_corretto.png}
+  \includegraphics[width=0.9\linewidth]{ucd/UCD1_corretto.png}
+\caption{Registrazione come utente base}
 \end{figure}
 \textbf{Attori principali}: 
 \begin{itemize}
-    \item Utente non autenticato
+    \item Utente non autenticato.
 \end{itemize}
 \textbf{Precondizioni}:
 \begin{itemize}
-    \item L'utente non è ancora autenticato
+    \item L'utente è connesso al $\textit{Sistema}_G$.
 \end{itemize}
 \textbf{Postcondizioni}: 
 \begin{itemize}
-    \item L'utente si è registrato ed è riconosciuto come utente base 
-\end{itemize}
-\textbf{Trigger}:
-\begin{itemize}
-    \item L'utente sceglie di registrarsi come utente base
+    \item L'utente si è registrato ed è riconosciuto dal $\textit{Sistema}_G$ come utente base.
 \end{itemize}
 \textbf{Scenario principale}:
 \begin{enumerate}
     \item L'utente inserisce le informazioni, ovvero:
     \begin{enumerate}
-        \item Nome
-        \item Cognome
-        \item Email
-        \item Password
+        \item Nome;
+        \item Cognome;
+        \item Email;
+        \item Password.
     \end{enumerate}
-    \item L'utente inserisce allergie e intolleranze se presenti
-    \item L'utente conferma di volersi registrare con le informazioni fornite
+    \item L'utente inserisce allergie e intolleranze se presenti;
+    \item L'utente conferma di volersi registrare con le informazioni fornite.
 \end{enumerate}
 \textbf{Scenari alternativi}:
 \begin{itemize}
@@ -37,37 +34,37 @@
     \begin{enumerate}
         \item Campo nome:
         \begin{enumerate}
-            \item L'utente lascia il nome vuoto
-            \item L'utente usa solo spazi (" ") 
-            \item L'utente usa caratteri speciali
-            \item L'utente usa caratteri numerici
+            \item L'utente lascia il nome vuoto;
+            \item L'utente usa solo spazi (" ");
+            \item L'utente usa caratteri speciali;
+            \item L'utente usa caratteri numerici;
         \end{enumerate}
         \item Campo cognome:
         \begin{enumerate}
-            \item L'utente lascia il cognome vuoto
-            \item L'utente usa solo spazi (" ") 
-            \item L'utente usa caratteri speciali
-            \item L'utente usa caratteri numerici
+            \item L'utente lascia il cognome vuoto;
+            \item L'utente usa solo spazi (" ");
+            \item L'utente usa caratteri speciali;
+            \item L'utente usa caratteri numerici;
         \end{enumerate}
         \item Campo email:
         \begin{enumerate}
-            \item L'utente lascia il campo email vuoto
-            \item L'utente non inserisce una email nel formato: xxxxx@yyy.zz
-            \item L'utente inserisce una email già registrata
+            \item L'utente lascia il campo email vuoto;
+            \item L'utente non inserisce una email nel formato: xxxxx@yyy.zz;
+            \item L'utente inserisce una email già registrata;
         \end{enumerate}
         \item Campo password:
         \begin{enumerate}
-            \item L'utente lascia il campo password vuoto
-            \item L'utente inserisce una password troppo corta (minore di 6 caratteri)
-            \item L'utente inserisce una password troppo lunga (maggiore di 24 caratteri)
-            \item L'utente inserisce una password senza caratteri minuscoli
-            \item L'utente inserisce una password senza caratteri maiuscoli
-            \item L'utente inserisce una password senza caratteri numerici
-            \item L'utente inserisce una password senza caratteri speciali
+            \item L'utente lascia il campo password vuoto;
+            \item L'utente inserisce una password troppo corta (minore di 6 caratteri);
+            \item L'utente inserisce una password troppo lunga (maggiore di 24 caratteri);
+            \item L'utente inserisce una password senza caratteri minuscoli;
+            \item L'utente inserisce una password senza caratteri maiuscoli;
+            \item L'utente inserisce una password senza caratteri numerici;
+            \item L'utente inserisce una password senza caratteri speciali;
         \end{enumerate}
     \end{enumerate}
-    \item Viene visualizzato un errore
-    \item L'utente decide se annullare o riprovare
+    \item Viene visualizzato un errore;
+    \item L'utente decide se annullare o riprovare.
 \end{itemize}
 
 \begin{comment}    

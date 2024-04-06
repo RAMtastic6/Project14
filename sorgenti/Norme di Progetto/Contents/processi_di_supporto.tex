@@ -9,7 +9,7 @@ Questo $\textit{repository}_G$ ha due funzioni:
     \item disporre di un $\textit{sistema}_G$ per produrre automaticamente documentazione (file in formato .pdf) a partire dai sorgenti.
 \end{itemize}
 
-In questo repository, infatti vi sono due cartelle principali:
+In questo $\textit{repository}_G$, infatti vi sono due cartelle principali:
 \begin{itemize}
     \item sorgenti: contiene i file sorgente della documentazione (.tex) 
     \item documenti: contiene i risultati della compilazione dei file sorgente (file .pdf)
@@ -36,7 +36,7 @@ Questo $\textit{repository}_G$ ha una funzione principale, ovvero quella di perm
 \subsubsection{Tipologie di documenti}
 I documenti prodotti possono essere classificati in due classi principali: ad uso interno e ad uso esterno; la prima categoria comprende:
 \begin{itemize}
-    \item $\textit{Verbali interni}_G$ (i quali non necessitano di versionamento)
+    \item $\textit{Verbali interni}_G$ (i quali non necessitano di $\textit{versionamento}_G$)
     \item Norme di progetto
 \end{itemize}
 La seconda categoria di documenti comprende:
@@ -52,11 +52,11 @@ Un documento segue le seguenti fasi di produzione:
     \item Stesura: uno o più redattori si occupano di redigere il contenuto del documento.
     \item Verifica: ad uno o più membri del gruppo, diversi da quelli che hanno redatto il documento, viene assegnato il compito di verifica del documento.
 È importante sottolineare che tutti i documenti sopracitati sono ufficiali e devono essere, quindi, preventivamente approvati da verificatori designati.
-    \item Approvazione: durante questa fase, il responsabile di progetto può decidere se approvare l'inclusione di un particolare documento all'interno del repository. Nel caso in cui il documento non venga approvato, si ritorna alla fase di stesura.
+    \item Approvazione: durante questa fase, il responsabile di progetto può decidere se approvare l'inclusione di un particolare documento all'interno del $\textit{repository}_G$. Nel caso in cui il documento non venga approvato, si ritorna alla fase di stesura.
     Se quest'ultima fase va a buon fine, vengono aggiunte informazioni di $\textit{versionamento}_G$ secondo quanto riportato nell'apposita sezione; infine viene caricato il documento all'interno del $\textit{repository}_G$ nel $\textit{branch}_G$ develop.
 \end{itemize}
 \subsubsection{Template}
-Il gruppo ha scelto di utilizzare $\textit{template}_G$ LaTeX per la produzione della documentazione. Per visualizzare la struttura e utilizzare i $\textit{template}_G$, è sufficiente cercarli su overleaf.
+Il gruppo ha scelto di utilizzare $\textit{template}_G$ LaTeX per la produzione della documentazione. Per visualizzare la struttura e utilizzare i $\textit{template}_G$, è sufficiente cercarli su $\textit{overleaf}_G$.
 
 \subsubsection{Struttura di un documento}
 Un documento all'interno del nostro contesto segue una struttura ben definita, le sue sezioni principali includono:
@@ -68,7 +68,7 @@ Un documento all'interno del nostro contesto segue una struttura ben definita, l
 \end{itemize}
 
 \subsubsection{Strumenti}
-Per la creazione e la gestione della struttura dei documenti è stato deciso di utilizzare Overleaf, un $\textit{editor}_G$ LaTeX online che permette la stesura collaborativa dei documenti.
+Per la creazione e la gestione della struttura dei documenti è stato deciso di utilizzare $\textit{Overleaf}_G$, un $\textit{editor}_G$ LaTeX online che permette la stesura collaborativa dei documenti.
 
 \subsubsection{Struttura di un progetto in overleaf}
 Affinché le automazioni per produrre $\textit{riferimenti}_G$ al glossario funzionino, un progetto in $\textit{overleaf}_G$ deve avere la struttura seguente:
@@ -109,7 +109,7 @@ Il flusso di lavoro attuale per produrre la documentazione relativa al progetto 
 
 \subsubsection{Glossario Tecnico}
 Il \emph{Glossario tecnico} è un documento di supporto concepito per evitare ambiguità o incomprensioni riguardanti la terminologia utilizzata in tutta la documentazione per ogni fase del progetto ed è rivolto sia ai componenti del gruppo che a committenti e ai proponenti.
-Si tratta dell'unico documento da non modificare all'interno di overleaf. Infatti, il glossario tecnico viene costruito a partire da un file \emph{json} contenuto all'interno della cartella \emph{sorgenti/Glossario} del $\textit{repository}_G$ \emph{Project14}.\\
+Si tratta dell'unico documento da non modificare all'interno di $\textit{overleaf}_G$. Infatti, il glossario tecnico viene costruito a partire da un file \emph{json} contenuto all'interno della cartella \emph{sorgenti/Glossario} del $\textit{repository}_G$ \emph{Project14}.\\
 Tale file, denominato \emph{glossario.json}, è costituito da un array di oggetti; ogni oggetto è formato da un insieme di due coppie chiave-valore, in particolare vi sono:
 \begin{itemize}
     \item La chiave termine: il termine che necessita di essere definito all'interno del dominio di progetto;
@@ -132,7 +132,7 @@ Per poter inserire o modificare un termine nel glossario tecnico, bisogna seguir
 Nel momento in cui viene inserita una parola nuova all'interno del glossario bisogna segnalare al responsabile se sono presenti discrepanze tra il modo in cui è stato scritto il termine all'interno del file \emph{glossario.json} e il modo in cui è stato scritto all'interno dei documenti. Viene riportato il seguente esempio: se all'interno del glossario viene riportata la parola "\emph{Analisi dei Requisiti}" allora all'interno dei documenti tale parola deve essere riportata con le stesse lettere maiuscole e minuscole ad $\textit{eccezione}_G$ della lettera iniziale (va bene "\emph{analisi dei Requisiti}" ma non "\emph{Analisi dei requisiti}").
 \paragraph{Verifica} Per poter verificare il glossario, si seguono le seguenti azioni:
 \begin{itemize}
-    \item Utilizzare il $\textit{branch}_G$ creato dal redattore;
+    \item Utilizzare il $\textit{branch}_G$ creato dal $\textit{redattore}_G$;
     \item Verificare i termini e definizioni nel file \emph{glossario.json};
     \item Modificare il $\textit{changelog}_G$ nel file \emph{build\_glossary.py} nella cartella GLOSSARY\_AUTOMATIONS;
     \item Eseguire l'automazione tramite il comando:
@@ -152,7 +152,7 @@ Capire come gestire i numeri di versione.
 Il gruppo RAMtastic6 ha scelto di utilizzare come $\textit{strumento}_G$ di $\textit{versionamento}_G$ \emph{GitHub} e di utilizzare \emph{Git} come $\textit{strumento}_G$ per collegarsi alla $\textit{repository}_G$ GitHub.
 Inoltre si è scelto di utilizzare $\textit{gitflow}_G$ come flusso di lavoro il quale verrà discusso in modo dettagliato in seguito
 (\href{https://git-scm.com/downloads}{Link per il download dell'installer di Git}).\\
-Inoltre, a questo \href{https://rogerdudler.github.io/git-guide/index.it.html}{link} si troverà una breve guida su come utilizzare git.
+Inoltre, a questo \href{https://rogerdudler.$\textit{git}_G$hub.io/$\textit{git}_G$-guide/index.it.html}{link} si troverà una breve guida su come utilizzare $\textit{git}_G$.
 In sintesi si elencano i pricipali comandi:
 \begin{itemize}
     \item $\textit{git}_G$ clone \emph{link repo}\\
@@ -179,12 +179,12 @@ La strutta della $\textit{repository}_G$ per i documenti deve essere:
     \item documenti\_interni
 \end{itemize}
 \subsubsection{Controllo di Flusso}
-Il gruppo RAMtastic6 ha deciso di dotarsi di $\textit{Gitflow}_G$ come $\textit{sistema}_G$ di controllo del flusso di lavoro, motivato dalla sua facilità d'uso e dalle potenzialità di gestione offerte per il repository. Con una lieve modifica nei comandi per l'esecuzione dei commit, come illustrato in questa \href{https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow}{guida su $\textit{Gitflow}_G$}, è possibile automatizzare il $\textit{processo}_G$ di creazione, gestione e chiusura di una $\textit{feature}_G$. Ulteriori dettagli su come gestire le $\textit{feature}_G$ sono disponibili a questo \href{http://danielkummer.github.io/git-flow-cheatsheet/}{link}.
+Il gruppo RAMtastic6 ha deciso di dotarsi di $\textit{Gitflow}_G$ come $\textit{sistema}_G$ di controllo del flusso di lavoro, motivato dalla sua facilità d'uso e dalle potenzialità di gestione offerte per il $\textit{repository}_G$. Con una lieve modifica nei comandi per l'esecuzione dei commit, come illustrato in questa \href{https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow}{guida su $\textit{Gitflow}_G$}, è possibile automatizzare il $\textit{processo}_G$ di creazione, gestione e chiusura di una $\textit{feature}_G$. Ulteriori dettagli su come gestire le $\textit{feature}_G$ sono disponibili a questo \href{http://danielkummer.github.io/git-flow-cheatsheet/}{link}.
 \paragraph{Gestione dei Documenti}
-Unua particolare attenzione in tal senso è rivolta alla documentazione. Al fine di mantenere nel $\textit{repository}_G$ solamente i $\textit{PDF}_G$ dei documenti prodotti, è stato deciso di adottare la piattaforma \href{https://www.overleaf.com/project}{Overleaf} per la stesura in LaTeX dei documenti e la successiva verifica. Ogni volta che un documento viene redatto o aggiornato, verificato e portato alla versione corretta come precedentemente indicato, può essere comodamente convertito in formato $\textit{PDF}_G$ tramite Overleaf. Successivamete, il documento può essere caricato nella $\textit{repository}_G$, con il $\textit{push}_G$ diretto sul $\textit{branch}_G$ \textit{develop}, soprattutto quando si parla di documentazione importante e la cui stesura è in itinere.
+Unua particolare attenzione in tal senso è rivolta alla documentazione. Al fine di mantenere nel $\textit{repository}_G$ solamente i $\textit{PDF}_G$ dei documenti prodotti, è stato deciso di adottare la piattaforma \href{https://www.overleaf.com/project}{$\textit{Overleaf}_G$} per la stesura in LaTeX dei documenti e la successiva verifica. Ogni volta che un documento viene redatto o aggiornato, verificato e portato alla versione corretta come precedentemente indicato, può essere comodamente convertito in formato $\textit{PDF}_G$ tramite $\textit{Overleaf}_G$. Successivamete, il documento può essere caricato nella $\textit{repository}_G$, con il $\textit{push}_G$ diretto sul $\textit{branch}_G$ \textit{develop}, soprattutto quando si parla di documentazione importante e la cui stesura è in itinere.
 \subsection{Gestione della qualità}
 \subsubsection{Descrizione}
-La gestione della qualità è un insieme di processi che hanno lo scopo di garantire che il software, gli artefatti e i processi nel ciclo di vita del progetto aderiscano degli standard di qualità rispetto a requisiti specificati al fine di soddisfare le aspettative del proponente e degli utenti finali.
+La gestione della qualità è un insieme di processi che hanno lo scopo di garantire che il $\textit{software}_G$, gli artefatti e i processi nel ciclo di vita del progetto aderiscano degli standard di qualità rispetto a requisiti specificati al fine di soddisfare le aspettative del proponente e degli utenti finali.
 \subsubsection{Obiettivi}
 La gestione della qualità si propone di raggiungere i seguenti obiettivi:
 \begin{itemize}
@@ -202,7 +202,7 @@ Ogni metrica è identificata dal seguente formato di codice:
 Dove:
 \begin{itemize}
     \item \textbf{M} sta per "Metrica"
-    \item \textbf{Tipo} può essere PC (per un processo) o PD (per un prodotto)
+    \item \textbf{Tipo} può essere PC (per un $\textit{processo}_G$) o PD (per un prodotto)
     \item \textbf{Id} rappresenta un identificativo all'interno di una metrica di un certo tipo
     \item \textbf{Acronimo} indica l'acronimo del nome della metrica utilizzata
 \end{itemize}
@@ -217,7 +217,7 @@ Il $\textit{processo}_G$ di verifica si propone di raggiungere i seguenti obiett
     \item Assicurarsi che il prodotto mantenga una buona qualità nel corso del suo sviluppo;
     \item Individuare errori e anomalie prima di proseguire con lo sviluppo del progetto.
 \end{itemize}
-Nel documento \emph{"Piano di Qualifica"} vengono definiti gli obiettivi da raggiungere e i criteri di accettazione  che saranno impiegati per condurre il $\textit{processo}_G$ di verifica in modo accurato ed efficiente. 
+Nel documento \emph{"$\textit{Piano di Qualifica}_G$"} vengono definiti gli obiettivi da raggiungere e i criteri di accettazione  che saranno impiegati per condurre il $\textit{processo}_G$ di verifica in modo accurato ed efficiente. 
 \subsubsection{Analisi statica}
 L'analisi statica è una metodologia di verifica che prescinde dall'esecuzione del prodotto e che si basa su una revisione del codice e della documentazione. Lo scopo principale di questa analisi è quello di verificare l'assenza di difetti e la conformità ai requisiti e alle specifiche richieste. \\
 L'analisi statica adotta comunemente due metodi di lettura:
@@ -225,6 +225,6 @@ L'analisi statica adotta comunemente due metodi di lettura:
     \item \textbf{Walkthrough}: si tratta di una tecnica collaborativa che coinvolge il verificatore e l'autore del prodotto e che consiste nel revisionare nel suo complesso il codice e la documentazione forniti, con una successiva discussione degli eventuali problemi trovati;
     \item \textbf{Inspection}: si tratta di una tecnica che consiste nel revisionare parti specifiche del codice e della documentazione attraverso liste di controllo (\emph{checklist}) nel momento in cui si ha già un'idea di dove possano esserci possibili problemi in modo da intervenire tempestivamente e sistematicamente.
 \end{itemize}
-Nel documento \emph{"Piano di Qualifica"} vengono definite delle liste di controllo in modo da applicare la tecnica dell'\textit{inspection}, preferibile a quella del \textit{walkthrough}.
+Nel documento \emph{"$\textit{Piano di Qualifica}_G$"} vengono definite delle liste di controllo in modo da applicare la tecnica dell'\textit{inspection}, preferibile a quella del \textit{walkthrough}.
 \subsubsection{Analisi dinamica}
-L'analisi dinamica è una metodologia di verifica che si basa sull'esecuzione del codice. Le tecniche principali utilizzate in questa fase sono i $\textit{test}_G$ (definiti nel documento di "\emph{Piano di Qualifica}") finalizzati per individuare e verificare il comportamento del prodotto software.
+L'analisi dinamica è una metodologia di verifica che si basa sull'esecuzione del codice. Le tecniche principali utilizzate in questa fase sono i $\textit{test}_G$ (definiti nel documento di "\emph{Piano di Qualifica}") finalizzati per individuare e verificare il comportamento del prodotto $\textit{software}_G$.

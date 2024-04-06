@@ -3,32 +3,33 @@
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.9\linewidth]{ucd/UCD3_nuovo.png}
+    \caption{Ordinazione collaborativa}
 \end{figure}
 
 \textbf{Attori}:
 \begin{itemize}
-    \item Utente base
+    \item Utente base.
 \end{itemize}
 \textbf{Precondizioni}:
 \begin{itemize}
-    \item L'utente è autenticato dal $\textit{sistema}_G$ 
-    \item L'utente ha prenotato un tavolo (\nameref{usecase:23})
-    \item La $\textit{prenotazione}_G$ associata all'ordinazione è stata accettata dall'utente amministratore del ristorante (\nameref{usecase:19})
-    \item Il limite di tempo per l'ordinazione non è ancora scaduto
+    \item L'utente è connesso al $\textit{Sistema}_G$; 
+    \item L'utente ha prenotato un tavolo (\nameref{usecase:23});
+    \item La $\textit{prenotazione}_G$ associata all'$\textit{ordinazione}_G$ è stata accettata dall'utente amministratore del ristorante (\nameref{usecase:19});
+    \item Il limite di tempo per l'$\textit{ordinazione}_G$ non è ancora scaduto.
 \end{itemize}
 \textbf{Postcondizioni}:
 \begin{itemize}
-    \item L'utente ha confermato la propria $\textit{ordinazione}_G$ delle pietanze associata ad una prenotazione.
+    \item L'utente ha confermato la propria $\textit{ordinazione}_G$ delle pietanze associata ad una $\textit{prenotazione}_G$.
 \end{itemize}
 \textbf{Scenario principale}:
 \begin{enumerate}
     \item L'utente crea il proprio ordine:
     \begin{itemize}
-    \item L'utente sceglie il pasto da ordinare (\nameref{usecase:3_1}); nel caso in cui la pietanza ordinata contenga allergeni segnalati dall'utente in fase di registrazione, deve essere notificato prima di  aggiungere la pietanza all'ordine.
+    \item L'utente sceglie il pasto da ordinare (\nameref{usecase:3_1}); nel caso in cui la pietanza ordinata contenga allergeni segnalati dall'utente in fase di registrazione, deve essere notificato prima di  aggiungere la pietanza all'ordine;
     \item L'utente può scegliere di: modificare la quantità degli ingredienti; rimuoverne alcuni ingredienti; aggiungere degli ingredienti (\nameref{usecase:3_1}).
     \end{itemize}
-    \item L'utente visualizza il riepilogo del suo ordine e quelli degli altri utenti con cui ha prenotato il tavolo (\nameref{usecase:8}).
-    \item L'utente conferma l'ordinazione.
+    \item L'utente conferma l'$\textit{ordinazione}_G$;
+    \item L'utente visualizza il riepilogo del suo ordine e quelli degli altri utenti con cui ha prenotato il tavolo (\nameref{usecase:8});
     \item Il $\textit{sistema}_G$ notifica il ristorante mediante \textit{push-notification}.
 \end{enumerate}
 
@@ -37,34 +38,30 @@
 
 \textbf{Attori}:
 \begin{itemize}
-    \item Utente base autenticato
+    \item Utente base.
 \end{itemize}
 \textbf{Precondizioni}:
 \begin{itemize}
-    \item L'utente è autenticato dal $\textit{sistema}_G$ 
-    \item L'utente ha prenotato un tavolo (\nameref{usecase:23})
-    \item La $\textit{prenotazione}_G$ associata all'ordinazione è stata accettata dall'utente amministratore del ristorante (\nameref{usecase:19})
-    \item Il limite di tempo per l'ordinazione non è ancora scaduto
+    \item L'utente è connesso al $\textit{Sistema}_G$; 
+    \item L'utente ha prenotato un tavolo (\nameref{usecase:23});
+    \item La $\textit{prenotazione}_G$ associata all'$\textit{ordinazione}_G$ è stata accettata dall'utente amministratore del ristorante (\nameref{usecase:19});
+    \item Il limite di tempo per l'$\textit{ordinazione}_G$ non è ancora scaduto.
 \end{itemize}
 \textbf{Postcondizioni}:
 \begin{itemize}
-    \item L'utente ha ordinato il piatto
-\end{itemize}
-\textbf{Trigger}:
-\begin{itemize}
-    \item L'utente vuole aggiungere un piatto alla $\textit{ordinazione}_G$ collaborativa
+    \item L'utente ha ordinato il piatto.
 \end{itemize}
 \textbf{Scenario principale}:
 \begin{enumerate}
-    \item L'utente sceglie tra la lista delle pietanze una che vuole aggiungere al proprio ordine
-    \item L'utente sceglie la quantità della pietanza
+    \item L'utente sceglie tra la lista delle pietanze una che vuole aggiungere al proprio ordine;
+    \item L'utente sceglie la quantità della pietanza;
     \item Di ogni pietanza:
     \begin{itemize}
-        \item L'utente visualizza gli ingredienti
-        \item L'utente può aggiungere ingredienti
-        \item L'utente può rimuovere ingredienti
+        \item L'utente visualizza gli ingredienti;
+        \item L'utente può aggiungere ingredienti;
+        \item L'utente può rimuovere ingredienti;
     \end{itemize}
-    \item L'utente conferma il piatto
+    \item L'utente conferma il piatto.
 \end{enumerate}
 \newpage
 
@@ -84,12 +81,12 @@
 \begin{itemize}
     \item L'utente è autenticato dal $\textit{sistema}_G$ 
     \item L'utente ha prenotato un tavolo (\nameref{usecase:23})
-    \item La $\textit{prenotazione}_G$ associata all'ordinazione è stata accettata dall'utente amministratore del ristorante (\nameref{usecase:19})
-    \item Il tempo per l'ordinazione non è scaduto
+    \item La $\textit{prenotazione}_G$ associata all'$\textit{ordinazione}_G$ è stata accettata dall'utente amministratore del ristorante (\nameref{usecase:19})
+    \item Il tempo per l'$\textit{ordinazione}_G$ non è scaduto
 \end{itemize}
 \textbf{Postcondizioni}:
 \begin{itemize}
-    \item L'utente ha confermato l'ordinazione delle pietanze associata ad una prenotazione.
+    \item L'utente ha confermato l'$\textit{ordinazione}_G$ delle pietanze associata ad una $\textit{prenotazione}_G$.
 \end{itemize}
 \textbf{Scenario principale}:
 \begin{enumerate}
@@ -97,7 +94,7 @@
     \item L'utente sceglie il pasto da ordinare (\nameref{usecase:29}); nel caso in cui la pietanza ordinata contenga allergeni segnalati dall'utente in fase di registrazione, deve essere notificato prima di  aggiungere la pietanza all'ordine.
     \item L'utente può scegliere di: modificare la quantità degli ingredienti; rimuoverne alcuni ingredienti; aggiungere degli ingredienti (\nameref{usecase:29}).
     \item L'utente visualizza il riepilogo del suo ordine e quelli degli altri utenti con cui ha prenotato il tavolo (\nameref{usecase:8}).
-    \item L'utente conferma l'ordinazione.
+    \item L'utente conferma l'$\textit{ordinazione}_G$.
     \item Il $\textit{sistema}_G$ notifica il ristorante mediante \textit{push-notification}.
 \end{enumerate}
 \newpage

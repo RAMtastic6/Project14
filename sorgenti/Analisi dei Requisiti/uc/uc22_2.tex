@@ -1,30 +1,28 @@
 \subsubsection{UC22.2 - Risposta alla recensione}\label{usecase:22_2}
 \textbf{Attori}:
 \begin{itemize}
-    \item Amministratore
+    \item Amministratore.
 \end{itemize}
 \textbf{Precondizioni}:
 \begin{itemize}
-    \item L'amministratore ha selezionato una recensione a cui rispondere
+    \item Sono state rilasciate recensioni ad almeno un ristorante di cui l'amministratore detiene i privilegi di amministratore.
 \end{itemize}
 \textbf{Postcondizioni}:
 \begin{itemize}
-    \item L'amministratore ha risposto alla recensione
+    \item L'amministratore ha risposto alla recensione.
 \end{itemize}
-\textbf{Trigger}:
-L'amministratore vuole rispondere ad una recensione\\
 \textbf{Scenario principale}:
 \begin{enumerate}
-    \item L'amministratore deve inserire un testo valido da inserire come risposta
+    \item L'amministratore deve inserire un testo valido da inserire come risposta.
 \end{enumerate}
 \textbf{Scenario alternativo}:
 \begin{enumerate}
     \item Se il testo è: 
     \begin{enumerate}
-        \item Vuoto
-        \item Contiene caratteri non ammessi
-        \item Supera una dimensione di 255 caratteri
+        \item Vuoto;
+        \item Contiene caratteri non ammessi;
+        \item Supera una dimensione di 255 caratteri;
     \end{enumerate}
-    \item Allora la recensione non può essere pubblicata
-    \item Si visualizza l'errore
+    \item Allora la recensione non può essere pubblicata;
+    \item Si visualizza l'errore.
 \end{enumerate}

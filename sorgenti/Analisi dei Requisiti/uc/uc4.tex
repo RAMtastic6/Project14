@@ -1,25 +1,47 @@
-\subsection{UC4 - Interazione con lo staff}\label{usecase:4}
+\subsection{UC4 - Chat con l'Utente base}\label{usecase:4}
 %diagramma dei casi d'uso 4
 \begin{figure}[H]
   \centering
-  \includegraphics[width=0.7\textwidth]{ucd/UCD4.png}
+  \includegraphics[width=0.5\textwidth]{ucd/UCD4.png}
+  \caption{Interazione con lo staff}
 \end{figure}
 \textbf{Attori}:
 \begin{itemize}
-    \item Utente base
+    \item Utente base.
 \end{itemize}
 \textbf{Precondizioni}:
 \begin{itemize}
-    \item L'utente è autenticato dal sistema
+    \item L'utente è connesso al $\textit{Sistema}_G$.
 \end{itemize}
 \textbf{Postcondizioni}:
 \begin{itemize}
-    \item L'utente ha comunicato con l'amministratore del ristorante
+    \item L'utente ha comunicato con l'amministratore del ristorante.
 \end{itemize}
-\textbf{Scenari principali}:
+\textbf{Scenario principale}:
 \begin{enumerate}
-    \item L'utente ricerca un ristorante (\nameref{usecase:24})
-    \item L'utente seleziona un ristorante con cui comunicare
-    \item L'utente può comunicare con l'amministratore e viceversa (\nameref{usecase:4_1})
-    \item Durante la comunicazione verranno scambiati messaggi tramite notifica (\textit{push-notification}) (\nameref{usecase:4_2}) 
+    \item L'utente seleziona un ristorante con cui comunicare;
+    \item Il $\textit{sistema}_G$ crea una chat bidirezionale;
+    \item L'utente può comunicare con l'amministratore:
+    \begin{itemize}
+        \item L'utente può scrivere del testo e inviarlo;
+        \item L'utente visualizza l'eventuale risposta;
+    \end{itemize}
+    \item Durante la comunicazione verranno scambiati messaggi tramite notifica (\textit{push-notification});
+    \item L'utente riceve una notifica (push-notification), mostrando:
+    \begin{enumerate}
+        \item Il nome del ristorante;
+        \item Il nome dell'amministratore;
+        \item La preview del messaggio.
+    \end{enumerate}
 \end{enumerate}
+\textbf{Scenari alternativi}:
+\begin{enumerate}
+    \item L'utente non inserisce un messaggio valido:
+    \begin{enumerate}
+        \item Lascia il campo vuoto;
+        \item Immette del testo non valido;
+        \item Il testo è troppo lungo;
+    \end{enumerate}
+    \item L'utente visualizza l'errore e il messaggio non può venire inviato.
+\end{enumerate}
+\newpage

@@ -2,23 +2,24 @@
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.9\linewidth]{ucd/ucd16.png}
+    \caption{Recupero password}
 \end{figure}
 \textbf{Attori}:
 \begin{itemize}
-    \item Utente non autenticato
+    \item Utente non autenticato.
 \end{itemize}
 \textbf{Precondizioni}:
 \begin{itemize}
-    \item L'utente si ricorda la email
+    \item L'utente si è registrato in precedenza.(\nameref{usecase:1} \nameref{usecase:2})
 \end{itemize}
 \textbf{Postcondizioni}:
 \begin{itemize}
-    \item L'utente ha recuperato la propria password
+    \item L'utente ha recuperato la propria password.
 \end{itemize}
 \textbf{Scenario principale}:
 \begin{enumerate}
-    \item L'utente inserisce l'email
-    \item L'utente riceve una email
-    \item L'utente, tramite un link nell'email accede ad una sezione che permette il cambio password
+    \item L'utente inserisce l'email con cui si era registrato in precedenza;
+    \item L'utente riceve una email dal $\textit{sistema}_G$ per il recupero password;
+    \item L'utente, tramite un link nell'email accede ad una sezione che permette il cambio password.
 \end{enumerate}
 \newpage

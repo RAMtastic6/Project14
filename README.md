@@ -33,7 +33,7 @@
 <h2>RTB</h2>
 
 [Norme di Progetto](documenti/2-RTB/Norme_di_Progetto_v0.8.0.pdf) (V0.8.0) <br>
-[Analisi dei Requisiti](documenti/2-RTB/Analisi_dei_Requisiti_v0.6.0.pdf) (V0.6.0) <br>
+[Analisi dei Requisiti](documenti/2-RTB/Analisi_dei_Requisiti_v1.0.0.pdf) (V1.0.0) <br>
 [Glossario](documenti/2-RTB/Glossario_v1.0.0.pdf) (V1.0.0) <br>
 
 <details open>

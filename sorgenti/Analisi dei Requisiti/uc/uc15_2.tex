@@ -1,28 +1,28 @@
 \subsubsection{UC15.2 - Visualizzazione dettagli prenotazione}\label{usecase:15_2}
 \textbf{Attori}:
 \begin{itemize}
-    \item Amministratore
+    \item Amministratore.
 \end{itemize}
 \textbf{Precondizioni}:
 \begin{itemize}
-    \item L'amministratore deve avere almeno un ristorante
+    \item L'amministratore è connesso al $\textit{sistema}_G$.
 \end{itemize}
 \textbf{Postcondizioni}:
 \begin{itemize}
-    \item L'amministratore visualizza i dettagli della $\textit{prenotazione}_G$ nella lista per il giorno selezionato
+    \item L'amministratore visualizza i dettagli della $\textit{prenotazione}_G$ nella lista per il giorno selezionato.
 \end{itemize}
 \textbf{Scenario principale}:
 \begin{enumerate}
     \item L'utente visualizza i dettagli della singola $\textit{prenotazione}_G$ presente nella lista ovvero:
     \begin{enumerate}
-        \item Numero di persone associate
-        \item Stato della prenotazione:
+        \item Numero di persone associate;
+        \item Stato della $\textit{prenotazione}_G$:
          \begin{enumerate}
-           \item In corso, terminata, annullata
-            \item Accettata, rifiutata, in attesa
+           \item In corso (se `e ancora attiva) o terminata o annullata
+            \item Accettata o rifiutata dall’amministratore o in attesa
        \end{enumerate}
-    \item Giorno della prenotazione
-    \item Orario della prenotazione
+    \item Giorno della $\textit{prenotazione}_G$;
+    \item Orario della $\textit{prenotazione}_G$.
     \end{enumerate}
 \end{enumerate}
 \newpage

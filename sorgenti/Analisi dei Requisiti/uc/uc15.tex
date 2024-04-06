@@ -2,26 +2,27 @@
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.9\linewidth]{ucd/ucd15.png}
+    \caption{Visualizzazione lista prenotazioni (amministratore)}
 \end{figure}
 \textbf{Attori}:
 \begin{itemize}
-    \item Amministratore
+    \item Amministratore.
 \end{itemize}
 \textbf{Precondizioni}:
 \begin{itemize}
-    \item L'amministratore deve avere almeno un ristorante
+    \item L'amministratore è connesso al $\textit{sistema}_G$.
 \end{itemize}
 \textbf{Postcondizioni}:
 \begin{itemize}
-    \item L'amministratore ha visualizzato la lista di prenotazioni in un giorno selezionato
+    \item L'amministratore ha visualizzato la lista di prenotazioni in un giorno selezionato.
 \end{itemize}
 \textbf{Scenario principale}:
 \begin{enumerate}
-   \item L'amministratore visualizza in un giorno selezionato (di default è la data corrente):
+   \item L'amministratore visualizza in un giorno selezionato (di default è selezionata la data corrente):
    \begin{enumerate}
-       \item Gli ingredienti necessari per soddisfare la richiesta giornaliera di ordinazioni (\nameref{usecase:15_1})
+       \item Gli ingredienti necessari per soddisfare la richiesta giornaliera di ordinazioni (\nameref{usecase:15_1});
        \item La lista delle prenotazioni in qualsiasi stato
-       (\nameref{usecase:15_2})
+       (\nameref{usecase:15_2}).
    \end{enumerate}
 \end{enumerate}
 \begin{comment}

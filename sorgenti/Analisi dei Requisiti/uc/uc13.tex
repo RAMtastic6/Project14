@@ -2,27 +2,24 @@
 \begin{figure}[H]
 \centering
 \includegraphics[width=0.75\linewidth]{ucd/ucd13.png}
+\caption{Annullamento prenotazione del tavolo}
 \end{figure}
 \textbf{Attori}:
 \begin{itemize}
-    \item Utente base autenticato
+    \item Utente base.
 \end{itemize}
 \textbf{Precondizioni}:
 \begin{itemize}
-    \item L'utente deve aver effettuato una $\textit{prenotazione}_G$ di un tavolo (\nameref{usecase:23})
-    \item L'utente ha selezionato la $\textit{prenotazione}_G$ che desidera disdire
-    \item La $\textit{prenotazione}_G$ deve avere ancora più di un giorno di tempo
+    \item L'utente deve aver effettuato una $\textit{prenotazione}_G$ di un tavolo (\nameref{usecase:23});
+    \item L'utente ha selezionato la $\textit{prenotazione}_G$ che desidera disdire;
+    \item La cancellazione può essere effettuata con al massimo un giorno di anticipo rispetto alla data della $\textit{prenotazione}_G$.
 \end{itemize}
 \textbf{Postcondizioni}:
 \begin{itemize}
-    \item L'utente autenticato ha rimosso la sua prenotazione
-\end{itemize}
-\textbf{Trigger}:
-\begin{itemize}
-    \item L'utente vuole cancellare la propria prenotazione
+    \item L'utente ha rimosso la sua $\textit{prenotazione}_G$.
 \end{itemize}
 \textbf{Scenario principale}:
 \begin{enumerate}
-    \item L'utente conferma la cencellazione della prenotazione
+    \item L'utente conferma la cancellazione della $\textit{prenotazione}_G$.
 \end{enumerate}
 \newpage
