@@ -54,11 +54,12 @@ def repl_all_occurrences(glossary_path: str, filename: str, content_folder: str 
             for index, item in enumerate(lines):
                 if not check_for_titles(item) and ref_string not in item:
                     # ricercare la parola all'interno della riga, non la sottostringa
-                    w = " " + d + " "
-                    if w in item:
+                    w = [" " + d + " ", " " + d + "."," " + d + ",", " " + d + ":", " " + d + ";", "(" + d + ")", " " + d + ")", "(" + d + " ", '"' + d + '"', ' ' + d + '"', '"' + d + ' ']
+                         
+                    if any(word in item for word in w):
                         count_replaced_occurrences += 1 
                         lines[index] = item.replace(d, ref_string)
-                    elif w.lower() in item:
+                    elif any(word.lower() in item for word in w):
                         count_replaced_occurrences += 1 
                         lines[index] = item.replace(d.lower(), "$\\textit{" + d.lower() + "}_G$")
 
