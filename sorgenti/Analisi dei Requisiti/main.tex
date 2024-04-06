@@ -163,7 +163,7 @@ Il nostro prodotto offrirà una serie di funzionalità chiave, tra cui:
 \item \textbf{Prenotazione dei tavoli}: Gli utenti potranno cercare ristoranti, visualizzare disponibilità, e prenotare tavoli e piatti in base alle loro preferenze;
 \item \textbf{Gestione delle prenotazioni}: Gli amministratori potranno visualizzare, accettare o rifiutare le prenotazioni, nonché comunicare con gli utenti in tempo reale;
 \item \textbf{Personalizzazione del profilo}: Gli utenti potranno inserire informazioni personali, allergie e intolleranze nel proprio profilo per una migliore esperienza di $\textit{prenotazione}_G$;
-\item \textbf{Recensioni e feedback}: Gli utenti potranno lasciare recensioni sui ristoranti e interagire con gli altri utenti attraverso il $\textit{sistema}_G$ di $\textit{feedback}_G$.
+\item \textbf{Recensioni e $\textit{feedback}_G$}: Gli utenti potranno lasciare recensioni sui ristoranti e interagire con gli altri utenti attraverso il $\textit{sistema}_G$ di $\textit{feedback}_G$.
 \end{itemize}
 
 
@@ -351,13 +351,35 @@ Il $\textit{sistema}_G$ dispone di cinque attori principali, distinti come segue
 \section{Requisiti}
 In questa sezione sono stilati i requisiti ottenuti in fase di analisi e derivanti da casi d'uso, il $\textit{capitolato}_G$ d'appalto e verbali sia interni che esterni. 
 \subsection{Terminologia}
-I requisiti si suddividono in:
+I requisiti sono identificati dal seguente formato di codice:
+\[
+\text{R[Priorità][Tipo] [Id]}
+\]
+
+Dove:
+\begin{itemize}
+    \item \textbf{R} sta per "$\textit{Requisito}_G$";
+    \item \textbf{Priorità} può essere:
+    \begin{itemize}
+        \item O (obbligatorio): ovvero un $\textit{requisito}_G$ che deve essere necessariamente soddisfatto alla fine della buona riuscita del progetto;
+        \item D (desiderabile): ovvero un $\textit{requisito}_G$ che è apprezzato dal committente ma che non compromette il progetto.
+    \end{itemize}
+    \item \textbf{Tipo} può essere:
+    \begin{itemize}
+        \item F (funzionale): ovvero un $\textit{requisito}_G$ che indica una funzionalità del $\textit{sistema}_G$ e che ne definisce il comportamento;
+        \item Q (qualità): ovvero un $\textit{requisito}_G$ che definisce le caratteristiche di qualità del prodotto $\textit{software}_G$;
+        \item V (vincolo): specifica i limiti e le restrizioni imposte dal $\textit{capitolato}_G$ e dal committente.
+    \end{itemize}
+    \item \textbf{Id} rappresenta un numero progressivo che identifica il $\textit{requisito}_G$ appartenente ad una tipologia.
+\end{itemize}
+\newpage
+\subsection{Requisiti funzionali}
+La seguente sezione dettaglia i requisiti funzionali, delineando le varie funzionalità del $\textit{sistema}_G$, ovvero le azioni eseguibili dallo stesso e le informazioni che il $\textit{sistema}_G$ è in grado di fornire. La presenza di ciascun $\textit{requisito}_G$ è giustificata attraverso l'indicazione della fonte, che può essere un $\textit{caso d'uso}_G$ (UC) specifico o essere derivata direttamente dal testo del $\textit{capitolato}_G$ d'appalto.
+In questa sezione i requisiti si suddividono in:
 \begin{itemize}
     \item ROF: $\textit{requisiti obbligatori funzionali}_G$.
     \item RDF: $\textit{requisiti desiderabili funzionali}_G$.
 \end{itemize}
-\subsection{Requisiti funzionali}
-La seguente sezione dettaglia i requisiti funzionali, delineando le varie funzionalità del $\textit{sistema}_G$, ovvero le azioni eseguibili dallo stesso e le informazioni che il $\textit{sistema}_G$ è in grado di fornire. La presenza di ciascun $\textit{requisito}_G$ è giustificata attraverso l'indicazione della fonte, che può essere un $\textit{caso d'uso}_G$ (UC) specifico o essere derivata direttamente dal testo del $\textit{capitolato}_G$ d'appalto.
 
 \begin{longtable}{|c|p{14cm}|p{2cm}|}
     \hline
@@ -521,17 +543,57 @@ La seguente sezione dettaglia i requisiti funzionali, delineando le varie funzio
     \hline
 \caption{Requisiti funzionali}
 \end{longtable}
-\newpage
+
+\subsection{Requisiti di qualità}
+Questa sezione delinea le specifiche qualitative che devono essere rispettate per garantire la qualità del $\textit{sistema}_G$.
+\begin{longtable}{|c|p{14cm}|p{2cm}|}
+    \hline
+    \emph{Codice} & \centering{\emph{Descrizione}} &  \emph{Fonte} \\
+    \hline
+    \endfirsthead
+    \endhead
+    ROQ 1&  Il codice sorgente deve essere coperto da $\textit{test}_G$ per almeno l'80\% e ciò deve essere dimostrato tramite report. & $\textit{Capitolato}_G$ \\
+    \hline
+    ROQ 2 & Deve essere prodotta della documentazione che discuta delle scelte implementative e progettuali riportandone le relative motivazioni. & $\textit{Capitolato}_G$ \\
+    \hline
+    ROQ 3 & Deve essere prodotta della documentazione che discuta delle problematiche aperte e di eventuali soluzioni soluzioni da esplorare. & $\textit{Capitolato}_G$ \\
+    \hline
+    RDQ 4 & Deve essere fornita un'analisi rispetto al carico massimo supportato in numero di dispositivi e di quale sarebbe il servizio cloud piu' adatto per supportarlo analizzando prezzo, stabilità del servizio e assistenza. & $\textit{Capitolato}_G$ \\
+    \hline
+    ROQ 5 & Devono essere rispettate le norme definite nel documento $\textit{Norme di Progetto}_G$. & $\textit{Verbale}_G$ interno \\
+    \hline
+    ROQ 6 & Devono essere rispettate le metriche e i vincoli definiti in $\textit{Piano di Qualifica}_G$. & $\textit{Verbale}_G$ interno \\
+    \hline
+\caption{Requisiti di qualità}
+\end{longtable}
+    
+\subsection{Requisiti di vincolo}
+Questa sezione delinea i limiti e le restrizioni che il $\textit{sistema}_G$ deve tenere conto per adempiere alle esigenze del proponente.
+\begin{longtable}{|c|p{14cm}|p{2cm}|}
+    \hline
+    \emph{Codice} & \centering{\emph{Descrizione}} &  \emph{Fonte} \\
+    \hline
+    \endfirsthead
+    \endhead
+    ROV 1& L'interfaccia utente deve essere un'$\textit{Applicazione Web Responsive}_G$.  & $\textit{Capitolato}_G$  \\
+    \hline
+\caption{Requisiti di vincolo}
+\end{longtable}
+
 
 \setlength{\extrarowheight}{8pt}
 \subsection{Tracciamento}
-\subsubsection{Casi d'uso come fonte}
+\subsubsection{Fonte - Requisiti}
 \begin{longtable}{|p{4cm}|p{12cm}|}
     \hline
     \emph{Fonte} & \emph{Requisiti}\\
     \hline
     \endfirsthead
     \endhead
+    $\textit{Capitolato}_G$ & ROQ 1, ROQ 2, ROQ 3, RDQ 4, ROV 1 \\
+    \hline
+    $\textit{Verbale}_G$ interno & ROQ 5, ROQ 6 \\
+    \hline
     UC1 & ROF 37, ROF 38, ROF 39, ROF 40 \\
     \hline
     UC2 & ROF 38, ROF 39, ROF 40, ROF 49  \\
@@ -603,11 +665,38 @@ La seguente sezione dettaglia i requisiti funzionali, delineando le varie funzio
     UC31 & ROF 27, RDF 28 \\
     \hline
 
-\caption{Tracciamento dei requisiti, casi d'uso come fonte}
+\caption{Tracciamento Fonte - Requisiti}
     
 \end{longtable}
 
+
+
 \begin{comment}
+
+\paragraph{Requisiti di qualità}
+\begin{longtable}{|p{4cm}|p{12cm}|}
+    \hline
+    \emph{Fonte} & \emph{Requisiti}\\
+    \hline
+    \endfirsthead
+    \endhead
+    UC1 &  \\
+    \hline
+\caption{Tracciamento Fonte - Requisiti di qualità}
+    
+\end{longtable}
+\paragraph{Requisiti di vincolo}
+\begin{longtable}{|p{4cm}|p{12cm}|}
+    \hline
+    \emph{Fonte} & \emph{Requisiti}\\
+    \hline
+    \endfirsthead
+    \endhead
+    UC1 &  \\
+    \hline
+\caption{Tracciamento Fonte - Requisiti di vincolo}
+    
+\end{longtable}
          ROF 84 & L'amministratore deve poter visualizzare le informazioni del proprio ristorante & UC29.1 \\
     \hline
     ROF 1 & L'utente base deve poter visualizzare i pasti ordinabili & UC3, UC11\\
