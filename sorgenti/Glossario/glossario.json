@@ -357,15 +357,7 @@
   "S": [
     {
       "termine": "Scenario",
-      "definizione": "Nel documento di Analisi dei Requisiti, uno scenario rappresenta una sequenza di azioni o eventi che descrivono un possibile flusso di interazione tra l'utente e il sistema. Gli scenari sono utilizzati per comprendere e illustrare come il sistema dovrebbe comportarsi in determinate situazioni o sotto determinate condizioni. Ogni scenario include una serie di passi che descrivono le azioni compiute dagli utenti e le risposte del sistema, consentendo di visualizzare in modo chiaro e dettagliato il comportamento previsto del software. Gli scenari possono essere utilizzati per identificare requisiti funzionali, individuare casi d'uso e validare il sistema durante lo sviluppo e il testing. "
-    },
-    {
-      "termine": "Scenario principale",
-      "definizione": "Lo scenario principale rappresenta il flusso di interazione tipico tra l'utente e il sistema per raggiungere l'obiettivo principale del caso d'uso o della funzionalità in esame. Esso descrive la sequenza di passi che si verificano nella maggior parte dei casi."
-    },
-    {
-      "termine": "Scenario alternativo",
-      "definizione": "Gli scenari alternativi, al contrario, rappresentano situazioni non standard o eccezionali che possono verificarsi durante l'esecuzione del caso d'uso. Questi scenari descrivono le deviazioni dal flusso principale causate da input inaspettati, condizioni particolari o errori. Gli scenari alternativi forniscono istruzioni su come gestire tali situazioni e ripristinare il flusso normale delle operazioni."
+      "definizione": "Nel documento di Analisi dei Requisiti, uno scenario rappresenta una sequenza di azioni o eventi che descrivono un possibile flusso di interazione tra l'utente e il sistema. Gli scenari sono utilizzati per comprendere e illustrare come il sistema dovrebbe comportarsi in determinate situazioni o sotto determinate condizioni. Ogni scenario include una serie di passi che descrivono le azioni compiute dagli utenti e le risposte del sistema, consentendo di visualizzare in modo chiaro e dettagliato il comportamento previsto del software. Gli scenari possono essere utilizzati per identificare requisiti funzionali, individuare casi d'uso e validare il sistema durante lo sviluppo e il testing. Lo scenario principale rappresenta il flusso di interazione tipico tra l'utente e il sistema per raggiungere l'obiettivo principale del caso d'uso o della funzionalità in esame. Esso descrive la sequenza di passi che si verificano nella maggior parte dei casi. Gli scenari alternativi, al contrario, rappresentano situazioni non standard o eccezionali che possono verificarsi durante l'esecuzione del caso d'uso. Questi scenari descrivono le deviazioni dal flusso principale causate da input inaspettati, condizioni particolari o errori. Gli scenari alternativi forniscono istruzioni su come gestire tali situazioni e ripristinare il flusso normale delle operazioni."
     },
     {
       "termine": "Scrum",
