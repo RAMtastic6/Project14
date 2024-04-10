@@ -59,6 +59,8 @@
 - [7 Marzo 2024](documenti/2-RTB/verbali/verbali_interni/verbale_2024_03_07.pdf)
 - [13 Marzo 2024](documenti/2-RTB/verbali/verbali_interni/verbale_2024_03_13.pdf)
 - [25 Marzo 2024](documenti/2-RTB/verbali/verbali_interni/verbale_2024_03_25.pdf)
+- [4 Aprile 2024](documenti/2-RTB/verbali/verbali_interni/verbale_2024_04_04.pdf)
+- [10 Aprile 2024](documenti/2-RTB/verbali/verbali_interni/verbale_2024_04_10.pdf)
 
   </details>
 
