@@ -91,6 +91,9 @@ Nel presente repository sono presenti i documenti prodotti dal gruppo RAMtastic6
     <td>Samuele</td>
   </tr>
   <tr>
+    <td>Zambon</td>
+    <td>Michele</td>
+  <tr>
     <td>Tonietto</td>
     <td>Filippo</td>
   </tr>
