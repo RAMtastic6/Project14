@@ -28,7 +28,7 @@ Nel presente repository sono presenti i documenti prodotti dal gruppo RAMtastic6
 <h2>RTB</h2>
 
 - Documenti Esterni:
-  - [Analisi dei Requisiti](documenti/2-RTB/Analisi_dei_Requisiti_v1.0.0.pdf) (V1.0.0) <br>
+  - [Analisi dei Requisiti](documenti/2-RTB/Analisi_dei_Requisiti_v1.1.0.pdf) (V1.1.0) <br>
   - [Glossario](documenti/2-RTB/Glossario_v1.0.0.pdf) (V1.0.0) <br>
   - [Piano di Progetto](documenti/2-RTB/Piano_di_Progetto_v0.8.0.pdf) (V0.8.0) <br>
   - [Piano di Qualifica](documenti/2-RTB/Piano_di_Qualifica_v0.8.0.pdf) (V0.8.0) <br>

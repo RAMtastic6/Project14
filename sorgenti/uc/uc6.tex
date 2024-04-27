@@ -1,0 +1,27 @@
+\subsection{UC6 - Consultazione di una prenotazione da parte dell'amministratore}\label{usecase:6}
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=1\textwidth]{ucd/UCD6_new.png}
+\caption{Consultazione di una prenotazione da parte dell'amministratore}
+\end{figure}
+\textbf{Attori}:
+\begin{itemize}
+    \item Amministratore.
+\end{itemize}
+\textbf{Precondizioni}:
+\begin{itemize}
+    \item L'amministratore in fase di registrazione ha inserito un ristorante di cui poter consultare le prenotazioni.
+\end{itemize}
+\textbf{Postcondizioni}:
+\begin{itemize}
+    \item L'amministratore visualizza nel dettaglio le informazioni di una prenotazione.
+\end{itemize}
+\textbf{Scenario principale}:
+\begin{enumerate}
+    \item L'utente visualizza le informazioni di una singola prenotazione effettuata, tra cui:
+    \begin{enumerate}
+        \item gli ingredienti necessari per quella prenotazione (\nameref{usecase:6_1});
+        \item le ordinazioni associate a quella prenotazione
+        (\nameref{usecase:6_2}).
+    \end{enumerate}
+\end{enumerate}

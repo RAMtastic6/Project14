@@ -1,0 +1,36 @@
+\subsection{UCE1 - Visualizzazione errore informazioni utente}\label{usecase:e_1}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.75\linewidth]{ucd/UCED1.png}
+\end{figure}
+\textbf{Attori}:
+\begin{itemize}
+    \item Attore non autenticato
+\end{itemize}
+\textbf{Precondizioni}:
+\begin{itemize}
+    \item L'utente ha inserito in modo errato una o più dei seguenti campi:
+    \begin{itemize}
+        \item username
+        \item email
+        \item password
+    \end{itemize}
+\end{itemize}
+\textbf{Postcondizioni}:
+\begin{itemize}
+    \item L'utente visualizza un messaggio di errore che specifica cosa ha sbagliato
+\end{itemize}
+\textbf{Scenario principale}:
+\begin{enumerate}
+    \item L'utente visualizza un errore che specifica quale campo non è conforme a quanto richiesto
+    \item L'utente può modificare il campo sbagliato
+\end{enumerate}
+\textbf{Scenario alternativi}:
+\begin{enumerate}
+    \item L'utente sceglie di annullare la procedura di inserimento dati
+\end{enumerate}
+\input{uc/uce1.1}
+\input{uc/uce1.2}
+\input{uc/uce1.3}
+\input{uc/uce1.4}
+\newpage

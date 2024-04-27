@@ -1,0 +1,35 @@
+\subsection{UC9 - Modifica del proprio ordine}\label{usecase:9}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.7\linewidth]{ucd/ucd9.png}
+\caption{Modifica del proprio ordine}
+\end{figure}
+\textbf{Attori}:
+\begin{itemize}
+    \item Utente base.
+\end{itemize}
+\textbf{Precondizioni}:
+\begin{itemize}
+    \item L'utente è connesso al Sistema;
+    \item L'utente ha creato la propria ordinazione in precedenza (\nameref{usecase:3});
+    \item Il tempo per l'ordinazione non è scaduto.
+\end{itemize}
+\textbf{Postcondizioni}:
+\begin{itemize}
+    \item L'utente ha modificato il proprio ordine e il sistema aggiorna le informazioni di conseguenza.
+\end{itemize}
+\textbf{Scenario principale}:
+\begin{enumerate}
+    \item L'utente può compiere le seguenti azioni per gestire il proprio ordine:
+    \begin{enumerate}
+        \item Inserire un piatto nell'ordine scegliendo tra la lista delle pietanze;
+        \item Scelto un piatto inserito nell'ordine si può:
+        \begin{enumerate}
+            \item Rimuovere ingredienti;
+            \item Aggiungere ingredienti;
+            \item Modificare la quantità della pietanza, incluso rimuoverla.
+        \end{enumerate}
+    \end{enumerate}
+\end{enumerate}
+
+\newpage

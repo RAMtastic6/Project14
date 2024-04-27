@@ -1,0 +1,26 @@
+\subsubsection{UC12.1 - Inserimento email} \label{usecase:12_1}
+\textbf{Attori}:
+\begin{itemize}
+    \item Utente non autenticato.
+\end{itemize}
+\textbf{Precondizioni}:
+\begin{itemize}
+    \item L'utente ha già creato in precedenza un account base o amministratore.
+\end{itemize}
+\textbf{Postcondizioni}:
+\begin{itemize}
+    \item L'utente inserisce la propria email.
+\end{itemize}
+\textbf{Scenario principale}:
+\begin{enumerate}
+    \item L'utente inserisce l'email.
+\end{enumerate}
+\textbf{Scenari alternativi}:
+\begin{enumerate}
+    \item Se l'email non rispetta i seguenti criteri, visualizza un errore:
+    \begin{enumerate}
+        \item L'email deve avere il carattere "@";
+        \item L'email deve contenere caratteri supportati;
+        \item L'email non deve essere vuota.
+    \end{enumerate}
+\end{enumerate}

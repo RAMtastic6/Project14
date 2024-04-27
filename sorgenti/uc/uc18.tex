@@ -1,0 +1,30 @@
+\subsection{UC18 - Applicazione coupon al conto} \label{usecase:18}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.9\linewidth]{ucd/ucd18.png}
+    \caption{Applicazione coupon al conto}
+\end{figure}
+\textbf{Attori}:
+\begin{itemize}
+    \item Utente base.
+\end{itemize}
+\textbf{Precondizioni}:
+\begin{itemize}
+    \item L'utente deve avere una prenotazione in corso;
+    \item L'utente deve avere a disposizione un coupon da applicare al conto del ristorante.
+\end{itemize}
+\textbf{Postcondizioni}:
+\begin{itemize}
+    \item L'utente autenticato ha applicato il coupon.
+\end{itemize}
+\textbf{Scenario principale}:
+\begin{enumerate}
+    \item L'utente sceglie dalla lista delle prenotazioni una che sia in corso;
+    \item L'utente inserisce il codice del coupon;
+    \item Viene visualizzato il conto aggiornato.
+\end{enumerate}
+\textbf{Scenari alternativi}:
+\begin{enumerate}
+    \item Il coupon non è valido, viene visualizzato un messaggio di errore.
+\end{enumerate}
+\newpage

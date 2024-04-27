@@ -33,7 +33,7 @@
 % Informazioni sul documento
 \section*{Informazioni sul documento} 
 \begin{tabular}{ll}
-Versione: & 1.0.0 \\
+Versione: & 1.1.0 \\
 Redattori: &  Visentin S.  Zaupa R. Brotto D. Basso L. Zambon M. \\ 
 Verificatori: & Tonietto F. Visentin S. Brotto D. Zaupa R.\\
 Destinatari: & Vardanega T., Cardin R., Imola Informatica \\
@@ -48,6 +48,12 @@ Uso: & Esterno
 \textbf{Versione} & \textbf{Data} & \textbf{Autore} & \textbf{Verificatore} & 
 \textbf{Dettaglio} \\
 \hline
+v 1.1.0 & 2024-04-27 &   \begin{tabular}[c]{@{}c@{}}
+    Tonietto F. \\
+  \end{tabular}  & \begin{tabular}[c]{@{}c@{}}
+    Visentin S.
+  \end{tabular} & Correzione di alcuni punti secondo i $\textit{feedback}_G$ del prof. Cardin: rettifica funzionamento di UC23; rielaborazione $\textit{precondizioni}_G$ UC7; rielaborazione UC8 e UC8.1; correzione $\textit{UML}_G$ di UC11; aggiunta di Requisiti di Vincolo\\
+\hline 
 v 1.0.0 & 2024-04-06 &   \begin{tabular}[c]{@{}c@{}}
     Zaupa R. \\
     Brotto D. \\
@@ -162,7 +168,7 @@ Il nostro prodotto offrirà una serie di funzionalità chiave, tra cui:
 \item \textbf{Prenotazione dei tavoli}: Gli utenti potranno cercare ristoranti, visualizzare disponibilità, e prenotare tavoli e piatti in base alle loro preferenze;
 \item \textbf{Gestione delle prenotazioni}: Gli amministratori potranno visualizzare, accettare o rifiutare le prenotazioni, nonché comunicare con gli utenti in tempo reale;
 \item \textbf{Personalizzazione del profilo}: Gli utenti potranno inserire informazioni personali, allergie e intolleranze nel proprio profilo per una migliore esperienza di $\textit{prenotazione}_G$;
-\item \textbf{Recensioni e feedback}: Gli utenti potranno lasciare recensioni sui ristoranti e interagire con gli altri utenti attraverso il $\textit{sistema}_G$ di $\textit{feedback}_G$.
+\item \textbf{Recensioni e $\textit{feedback}_G$}: Gli utenti potranno lasciare recensioni sui ristoranti e interagire con gli altri utenti attraverso il $\textit{sistema}_G$ di $\textit{feedback}_G$.
 \end{itemize}
 
 
@@ -576,6 +582,22 @@ Questa sezione delinea i limiti e le restrizioni che il $\textit{sistema}_G$ dev
     \endhead
     ROV 1& L'interfaccia utente deve essere un'$\textit{Applicazione Web Responsive}_G$.  & $\textit{Capitolato}_G$  \\
     \hline
+    ROV 2& La struttura del progetto prevede la completa separazione tra \textit{backend} e \textit{frontend}  & $\textit{Verbale}_G$ esterno  \\
+    \hline
+    ROV 3& L'implementazione del \textit{frontend} è realizzata in \textit{Next.js}  & $\textit{Verbale}_G$ Esterno  \\
+    \hline
+    ROV 4& L'implementazione del \textit{backend} è realizzata in \textit{NestJS}  & $\textit{Verbale}_G$ Esterno  \\
+    \hline
+    ROV 5& L'applicazione utilizza \textit{Node.js} versione 21 & $\textit{Verbale}_G$ Interno  \\
+    \hline
+    ROV 6& Il database è realizzato con \textit{PostgreSQL}  & $\textit{Verbale}_G$ Interno  \\
+    \hline
+    ROV 7& Le funzionalità che richiedono una comunicazione in tempo reale tra più utenti sono gestite dalla libreria \textit{Socket.IO}  & $\textit{Verbale}_G$ Esterno  \\
+    \hline
+    ROV 8& Architettura basata a micro-servizi & $\textit{Verbale}_G$ Interno  \\
+    \hline
+    ROV 9& I browser supportati sono: \textit{Firefox} 67+; \textit{Chrome} 64+; \textit{Edge} 79+; \textit{Safari} 12+  & $\textit{Verbale}_G$ Interno  \\
+    \hline
 \caption{Requisiti di vincolo}
 \end{longtable}
 
@@ -591,7 +613,9 @@ Questa sezione delinea i limiti e le restrizioni che il $\textit{sistema}_G$ dev
     \endhead
     $\textit{Capitolato}_G$ & ROQ 1, ROQ 2, ROQ 3, RDQ 4, ROV 1 \\
     \hline
-    $\textit{Verbale}_G$ interno & ROQ 5, ROQ 6 \\
+    $\textit{Verbale}_G$ interno & ROQ 5, ROQ 6, ROV 5, ROV 6, ROV 7, ROV 8, ROV 9 \\
+    \hline
+    $\textit{Verbale}_G$ esterno & ROV 2, ROV 3, ROV 4, ROV 7 \\
     \hline
     UC1 & ROF 37, ROF 38, ROF 39, ROF 40 \\
     \hline
