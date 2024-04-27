@@ -1,7 +1,16 @@
-\subsection{Ruoli di progetto}
-In questa sezione viene riportata una breve descrizione dei ruoli e delle responsabilità dei membri di un gruppo dedicato allo sviluppo di un qualsiasi tipo di \textit{project}. 
-\subsubsection{Responsabile di Progetto}
-Il Responsabile di Progetto è la figura professionale, punto di $\textit{riferimento}_G$ sia per il committente sia per il fornitore, con lo scopo di
+\paragraph{Ruoli di progetto}
+In questa sezione viene riportata una breve descrizione dei ruoli e delle responsabilità dei membri di un gruppo dedicato allo sviluppo di un qualsiasi tipo di \textit{project}.
+\subsection{Tutti i ruoli}
+Ogni ruolo dovrà tracciare le ore svolte per completare i ticket definiti dal responsabile inserendo quanto tempo si è speso per completarla sul progetto di jira.
+Per la redazione di tutti i documenti eccetto il glossario tecnico si procede nel seguente modo:
+\begin{itemize}
+    \item Si modifica il documento su overleaf
+    \item Segnalare eventuali parole da aggiungere al glossario
+    \item Aggiornare il changelog riportando, in breve, la modifica apportata al documento
+    \item Una volta scritto, spostare il ticket in "da verificare" su jira
+\end{itemize}
+\subsection{Responsabile di Progetto}
+Il Responsabile di Progetto è la figura professionale, punto di riferimento sia per il committente sia per il fornitore, con lo scopo di
 mediare tra le due parti. Assume la responsabilità delle decisioni del gruppo dopo averle approvate.\\
 Le sue responsabilità includono:
 \begin{itemize}
@@ -9,12 +18,55 @@ Le sue responsabilità includono:
     \item Approvare l’offerta economica sottoposta al committente;
     \item Pianificare e coordinare le attività di progetto;
     \item Gestire le risorse umane;
-    \item Studiare e gestire i $\textit{rischi}_G$.
+    \item Studiare e gestire i  rischi.
     \item Chiedere l'approvazione dei verbali alle persone esterne che hanno partecipato
-    \item Assegnare le attività, tramite il $\textit{sistema}_G$ di tracking issues fornito da $\textit{Jira}_G$, ai membri che le dovranno svolgere
-    \item Gestire le \textit{milestones} e fissarne di nuove, o modificare quelle attuali in base all'andamento del team
+    \item Assegnare le attività, tramite la funzione di tracking issues fornito da Jira, ai membri che le dovranno svolgere
+    \item Gestire le \textit{milestone} e fissarne di nuove, o modificare quelle attuali in base all'andamento del team
 \end{itemize}
-\subsubsection{Amministratore di Progetto}
+\subsubsection{Gestione dello sprint}
+Inoltre, il responsabile dovrà gestire le tasks tramite jira, ovvero all'inizio di ogni sprint dovrà:
+\begin{enumerate}
+    \item Individuare delle attività da svolgere nel periodo di sprint
+    \item Determinare la durata dello sprint
+    \item Creare dei tickets, associati alle attività, su jira impostando un tempo previsto per svolgere l'attività (le attività di verifica vengono aggiunte anche durante il periodo di sprint)
+    \item Decidere i ruoli dei membri ed associarli alle attività che ognuno dovrà svolgere
+    \item Stilare il preventivo sul file excel apposito facendo la somma delle ore stimate per concludere le attività
+    \item Creare un nuovo periodo nel PDP nella sezione “Pianificazione” e nella sottosezione planning inserire le attività da svolgere e il preventivo (creato nel punto precedente tramite excel)
+\end{enumerate}
+Durante lo sprint il responsabile di progetto dovrà:
+\begin{enumerate}
+    \item Inserire nel PDP (nella sezione "Review") le attività completate
+    \item Aggiornare il consuntivo nel file excel con le attività completate
+    \item Inserire gli eventuali rischi nella sezione "Analisi dei rischi"
+\end{enumerate}
+Infine, alla fine del periodo:
+\begin{enumerate}
+    \item Inserire il consuntivo nella sezione Review del Piano di Progetto
+    \item Completare la sezione "Retrospective", analizzando le criticità e i rischi e su come si potrebbero risolvere
+\end{enumerate}
+\subsubsection{Verifica dei documenti}
+Il responsabile, quando un documento viene verificato, lo inserirà nella repository \href{https://github.com/RAMtastic6/Project14}{Project14} nel branch develop, aggiornando il file README.
+Quindi se il file che viene verificato è un documento (tranne il glossario) si deve:
+\begin{enumerate}
+    \item Scaricare il sorgente del documento tramite overleaf (si deve andare in progetto $>$ menù $>$ sorgente)
+    \item Inserire la cartella in develop, eventualmente sostituendola a quella presente
+    \item Utilizzare il seguente comando per far partire l'automazione: python3 entry\_point\_automazioni.py, si otterrà un file latex con i riferimenti al glossario
+    \item Tramite LatexWorkshop, \href{https://github.com/James-Yu/LaTeX-Workshop/wiki/Install}{per l'installazione} , (o strumenti simili) generare il file pdf corrispondente
+    \item Inserire il file pdf nella cartella documenti aggiornando il README
+    \item Segnare sia il ticket della stusura del documento e sia della verifica del documento in "completato" tramite jira
+\end{enumerate}
+Se invence il documento approvato è il glossario allora si procede nel seguente modo:
+\begin{enumerate}
+    \item Si approva la pull request associata in develop
+    \item Si inseriscono tutti i sorgenti dei documenti presenti su overleaf (se approvati) tranne i verbali
+    \item Si utilizza l'automazione: python3 entry\_point\_automazioni.py
+    cosicché vengono generati i file latex dei documenti e del glossario
+    \item Utilizzando LatexWorkshop per generare i pdf e si inseriscono nella repository su develop
+    \item Infine si aggiorna il README
+\end{enumerate}
+\subsubsection{Verifica del codice}
+Invece, se invece l'attività riguardava al codice allora bisogna approvare o rifiutare la pull request
+\subsection{Amministratore di Progetto}
 L'Amministratore di Progetto è responsabile delle procedure di controllo e amministrazione dell’ambiente di
 lavoro, con piena responsabilità sulla capacità operativa e sull’efficienza.\\
 In particolare, si occupa di:
@@ -22,48 +74,70 @@ In particolare, si occupa di:
     \item Ricercare, studiare e mettere in opera risorse per migliorare l’ambiente di lavoro, automatizzandolo quando possibile;
     \item Risolvere problemi legati alla gestione dei processi;
     \item Salvaguardare la documentazione di progetto;
-    \item Effettuare il controllo di versioni e configurazioni del prodotto $\textit{software}_G$;
+    \item Effettuare il controllo di versioni e configurazioni del prodotto software;
     \item Redigere e attuare i piani e le procedure per la gestione della qualità.
 \end{itemize}
-\subsubsection{Analista}
+\subsection{Analista}
 L'Analista è una figura con maggiori competenze riguardo al dominio applicativo del problema. \\
 Le sue responsabilità includono:
 \begin{itemize}
     \item Studiare il problema e il relativo contesto applicativo;
     \item Comprendere il problema e definire la complessità e i requisiti;
-    \item Redigere il documento "Analisi dei Requisiti";
-    \item Studiare i casi d'uso e redigere il loro relativo schema $\textit{UML}_G$.
+    \item Redigere il documento "Analisi Dei Requisiti";
+    \item Studiare i casi d'uso e redigere il loro relativo schema UML.
+    \item Aggiornare, in base alle attività definite dai tickets, i documenti Norme di progetto e Piano di qualifica
 \end{itemize}
-\subsubsection{Progettista}
+\subsubsection{Diagrammi UML}
+Per la scrittura dei casi d'uso si è deciso di utilizzare lucidchart, ovvero tramite un progetto condiviso tra i membri si creano i diagrammi UML dei casi d'uso. Una volta completato il diagramma UML lo si esporta come immagine PNG per importarla nel documento Analisi dei Requisiti.
+\subsection{Progettista}
 Il Progettista gestisce gli aspetti tecnologici e tecnici del progetto. \\
 In particolare, si occupa di:
 \begin{itemize}
-    \item Effettuare scelte riguardanti gli aspetti tecnici e tecnologici del progetto, favorendone l'efficiacia e l'efficienza;
+    \item Effettuare scelte riguardanti gli aspetti tecnici e tecnologici del progetto, favorendone l'efficacia e l'efficienza;
     \item Definire un'architettura del prodotto da sviluppare che miri all'economicità e alla manutenibilità a partire dal lavoro svolto dall'Analista;
-    \item Redigere la "Specifica Tecnica" e la parte pragmatica del "$\textit{Piano di Qualifica}_G$".
+    \item Redigere la "specifica tecnica" e la parte pragmatica del "Piano di Qualifica".
 \end{itemize}
-\subsubsection{Verificatore}
+
+\subsection{Verificatore}
 Il Verificatore è responsabile della sorveglianza sul lavoro svolto dagli altri componenti del gruppo, sulla base delle proprie competenze tecniche, esperienza e conoscenza delle norme. \\
 In particolare, si occupa di:
 \begin{itemize}
     \item Esaminare i prodotti in fase di revisione, con l'ausilio delle tecniche e degli strumenti definiti nel presente documento;
     \item Verificare la conformità dei prodotti ai requisiti funzionali e di qualità;
     \item Verificare i documenti segnalando eventuali errori.
-    \item Caricare i verbali, dopo averli verificati, all'interno della $\textit{repository}_G$ GitHub nel ramo \textit{develop}.
+    \item Caricare i verbali, dopo averli verificati, all'interno della Repository Github nel ramo \textit{develop}.
 \end{itemize}
-\subsubsection{Programmatore}
-Il Programmatore è incaricato della $\textit{codifica}_G$ del progetto e delle componenti di supporto che verranno utilizzate per eseguire prove di verifica e di validazione del prodotto. \\
+Si precisa che la verifica dei documenti deve essere svolta tramite controllo della sintassi e semantica del documento in questione e, inoltre, deve assicurarsi che quanto definito dal documento sia corretto e congruente con altri eventuali documenti.
+Infine il verificatore può segnalare elementi da aggiungere nel Piano di Progetto che possono tornare utili agli altri verificatori. \\
+\subsubsection{Verifica dei documenti}
+Per completare la verifica di un documento, tranne il glossario, si procede nel seguente modo:
+\begin{itemize}
+    \item Verificare il documento su overleaf
+    \item Controllare eventuali riferimenti al glossario (si ricorda che le parole del glossario sono case sensitive)
+    \item Se il documento viene approvato allora bisogna segnare come "verificato" sia il ticket relativo alla verifica del documento sia il ticket della stesura del documento presenti su jira
+\end{itemize}
+Per la verifica del glossario si faccia riferimento alla sezione 3.1.12 .
+\subsubsection{Verifica del codice}
+Il verificatore \emph{NON} deve spostare i ticket in completato che riguardano ai programmatori in quanto è compito del responsabile una volta approvata la pull request.
+\subsection{Programmatore}
+Il Programmatore è incaricato della codifica del progetto e delle componenti di supporto che verranno utilizzate per eseguire prove di verifica e di validazione del prodotto. \\
 In particolare, si occupa di:
 \begin{itemize}
-    \item Implementare la "Specifica Tecnica" redatta dal Progettista;
+    \item Implementare la "specifica tecnica" redatta dal Progettista;
     \item Scrivere un codice pulito e facilmente mantenibile che rispetti le norme definite nel presente documento;
-    \item Realizzare gli strumenti per la verifica e la validazione del $\textit{software}_G$;
-    \item Redigere il "$\textit{Manuale Utente}_G$" relativo alla propria $\textit{codifica}_G$;
+    \item Realizzare gli strumenti per la verifica e la validazione del software;
+    \item Redigere il "Manuale Utente" relativo alla propria codifica;
     \item Redigere i verbali delle riunioni interne ed esterne del team.
 \end{itemize}
-
+\subsubsection{Gestione del repository}
+Inoltre, di seguito viene specificato come gestire la repository per l'implementazione di nuove feature:
+\begin{enumerate}
+    \item Tramite jira creare un nuovo branch associato al ticket, come viene descritto nella sezione gestione del repository
+    \item Eseguire il push una volta completata l'attività
+    \item Creare una pull request dal nuovo branch verso il branch develop (tramtie jira/github)
+    \item Una volta eseguito si sposta il ticket nella sezione "da verificare"
+\end{enumerate}
 \subsection{Gestione di progetto}
-
 \subsubsection{Allineamento organizzativo}
 Per l'allineamento e il coordinamento delle attività sono stati scelti due tipi di comunicazione:
 \begin{itemize}
@@ -82,20 +156,20 @@ Le comunicazioni interne avvengono tramite le applicazioni:
 Le comunicazioni esterne vengono gestite dal Responsabile di Progetto tramite l’utilizzo dei seguenti
 canali:
 \begin{itemize}
-    \item  Posta Elettronica: tramite l’indirizzo e-mail del gruppo \textit{ramtastic6@gmail.com}.
+    \item  Posta elettronica: tramite l’indirizzo e-mail del gruppo \textit{ramtastic6@gmail.com}.
     \item  \textit{Telegram}: permette di instaurare un canale veloce di comunicazione con la proponente.
 \end{itemize}
 
 \subsection{Gestione organizzazione del lavoro}
 \subsubsection{Modello di sviluppo}
 Il gruppo, al fine di minimizzare ritardi e massimizzare lo svolgimento delle proprie attività, ha deciso
-di implementare il $\textit{framework}_G$ \textit{Scrum}, che permette di dividere il tempo di lavoro in intervalli piccoli, frammentati all’interno di un periodo di circa due settimane, definito come "\textit{sprint}". In particolare, all’interno di
+di implementare il framework \textit{Scrum}, che permette di dividere il tempo di lavoro in intervalli piccoli, frammentati all’interno di un periodo di circa due settimane, definito come "\textit{sprint}". In particolare, all’interno di
 questo, vengono svolte un numero di attività commisurate che devono essere completate entro i suoi termini. Individuiamo dunque una serie di fasi:
 \begin{itemize}
-    \item \textbf{sprint planning}: in questa fase, si discutono gli obbiettivi da raggiungere all'interno dello \textit{sprint}; vengono quindi pianificate le attivitá da svolgere durante lo \textit{sprint} in funzione di questi, facendo attenzione alle disponibilitá di ogni membro e preparando un $\textit{preventivo}_G$ per il periodo; è in questa fase, inoltre, che viene svolto il cambio dei ruoli.
+    \item \textbf{sprint planning}: in questa fase, si discutono gli obbiettivi da raggiungere all'interno dello \textit{sprint}; vengono quindi pianificate le attivitá da svolgere durante lo \textit{sprint} in funzione di questi, facendo attenzione alle disponibilitá di ogni membro e preparando un preventivo per il periodo; è in questa fase, inoltre, che viene svolto il cambio dei ruoli.
     Lo \textit{sprint planning} consiste in una riunione tenuta tramite \textit{Discord} che si svolge all'inizio dello \textit{sprint} e richiede la partecipazione di tutti i membri del gruppo.
     
-    \item \textbf{sprint review}: in questa fase, si discutono gli obiettivi da raggiunti nello \textit{sprint}. Alla fine, dovrebbe essere prodotto almeno un incremento, cioè un $\textit{software}_G$ utilizzabile. In particolare, in questa fase vengono definiti a $\textit{consuntivo}_G$ le risorse impiegate commisurate agli obiettivi, questi ultimi suddivisi in raggiunti e non raggiunti, capendo cosa va migliorato e cosa non è stato fatto per poter aggiungere ulteriori obiettivi per lo \textit{sprint} successivo;
+    \item \textbf{sprint review}: in questa fase, si discutono gli obiettivi da raggiunti nello \textit{sprint}. Alla fine, dovrebbe essere prodotto almeno un incremento, cioè un software utilizzabile. In particolare, in questa fase vengono definiti a consuntivo le risorse impiegate commisurate agli obiettivi, questi ultimi suddivisi in raggiunti e non raggiunti, capendo cosa va migliorato e cosa non è stato fatto per poter aggiungere ulteriori obiettivi per lo \textit{sprint} successivo;
     
     \item \textbf{sprint retrospective}: fase che conclude definitivamente lo \textit{sprint} appena svolto, avente l'obiettivo di valutarne l'andamento generale e cercando di capire cosa è stato fatto bene e cosa può essere migliorato. In questo modo, è meglio definire come ripianificare le attività, decidendo come iniziare/continuare/concludere attività presenti o future da realizzare.
 \end{itemize}
@@ -111,7 +185,7 @@ L’attribuzione dei ruoli viene svolta secondo i seguenti criteri:
 
 
 \subsubsection{Gestione delle attività}
-Per gestire le attività da istanziare all'interno del $\textit{framework}_G$ \textit{Scrum}, è stato deciso di utilizzare \textit{Jira}. Un'attività, definita come \textit{ticket} all'interno di \textit{Jira}, ha un ciclo di vita; esso si compone di quattro stati:
+Per gestire le attività da istanziare all'interno del framework \textit{Scrum}, è stato deciso di utilizzare \textit{Jira}. Un'attività, definita come \textit{ticket} all'interno di \textit{Jira}, ha un ciclo di vita; esso si compone di quattro stati:
 
 \begin{itemize}
     \item \textbf{Da completare}: l'attività è stata istanziata e assegnata ad un membro del gruppo; è stata inoltre definita una stima in termini temporali associata ad essa.
@@ -126,11 +200,11 @@ Strumenti per la gestione delle attività di progetto e procedure legate ad essi
 \subsection{Miglioramento}
 Durante lo svolgimento delle attività e successiva stesura dei documenti, il gruppo si impegna ad operare secondo il \textit{principio di miglioramento continuo}, al fine di individuare facilmente attività, ruoli e possibili miglioramenti, cercando nuove o diverse soluzioni alle problematiche insorte.
 \subsection{Formazione}
-Al fine di operare continuativamente un miglioramento sulle attività svolte e proseguire nel mantenimento corretto delle attività in modo asincrono, occorre da parte di tutti i membri del gruppo lo studio in autonomia delle $\textit{tecnologie}_G$ e delle modalità operative presenti, al fine di velocizzare il $\textit{processo}_G$ di formazione e di conoscenza degli strumenti utilizzati. Si listano, al fine di
+Al fine di operare continuativamente un miglioramento sulle attività svolte e proseguire nel mantenimento corretto delle attività in modo asincrono, occorre da parte di tutti i membri del gruppo lo studio in autonomia delle tecnologie e delle modalità operative presenti, al fine di velocizzare l'apprendimento degli strumenti utilizzati. Si listano, al fine di
 completezza, alcune documentazioni utilizzate durante lo sviluppo, sia a livello documentale che organizzativo:
 
 \begin{itemize}
-    \item \textit{GitHub}: https://docs.github.com/
+    \item \textit{Github}: https://docs.github.com/
     \item \textit{Jira}: https://confluence.atlassian.com/jira
     \item \textit{Git}: https://docs.github.com/en/get-started/using-git/about-git
     \item \textit{Scrum}: https://scrumguides.org/scrum-guide.html

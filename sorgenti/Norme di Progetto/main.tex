@@ -1,6 +1,7 @@
 \documentclass[12pt, oneside]{article} 
-\usepackage{amsmath, amsthm, amssymb, calrsfs, wasysym, verbatim, bbm, color, graphicx, geometry, fancyhdr, url, multirow, hyperref}
+\usepackage{amsmath, amsthm, amssymb, calrsfs, wasysym, verbatim, bbm, color, graphicx, geometry, fancyhdr, url, multirow, hyperref, longtable}
 \usepackage[italian]{babel}
+\usepackage{titlesec}
 
 \geometry{tmargin=.75in, bmargin=.75in, lmargin=.75in, rmargin = .75in}
 
@@ -20,7 +21,7 @@
 \begin{document}
 % Salta la prima pagina per l'intestazione
 \thispagestyle{empty}
-\title{Norme Di Progetto}
+\title{Norme di Progetto}
 \maketitle
 \begin{figure}[h]
   \centering
@@ -33,46 +34,58 @@
 % Informazioni sul documento
 \section*{Informazioni sul documento}
 \begin{tabular}{ll}
-Versione: & 0.8.0 \\
-Redattori: &  Visentin S. Basso L. Tonietto F. Zambon M. \\
+Versione: & 1.0.0 \\
+Redattori: &  Visentin S. Basso L. Tonietto F. Zambon M. Brotto D.\\
 Verificatori: & Tonietto F. Brotto D. Zambon M. Basso L. Zaupa R. \\
-Destinatari: & T. Vardanega, R. Cardin, $\textit{Imola Informatica}_G$ \\
+Destinatari: & T. Vardanega, R. Cardin, Imola Informatica \\
 Uso: & Interno
 \end{tabular}
 \newpage
 
 % Registro dei cambiamenti
 \section*{Registro dei Cambiamenti - Changelog}
-\begin{tabular}{|c|c|c|p{3cm}|p{6cm}|}
+\begin{longtable}{|c|c|c|p{3cm}|p{6cm}|}
 \hline
 \textbf{Versione} & \textbf{Data} & \textbf{Autore} & \textbf{Verificatore} & \textbf{Dettaglio} \\
 \hline
-v.0.8.0 & 2024-03-28 & Zambon M. & Zaupa R. & Modifica della sottosezione 3.1.12 (Glossario tecnico): ridefinita la parte di redazione del glossario e definita la sua verifica; stesura sottosezione 1.1 (scopo del documento) e 1.2 (scopo del prodotto)\\
+v 1.0.0 & 2024-04-27 & Brotto D. & Brotto D. & Approvazione e validazione del documento \\
 \hline
-v.0.7.2 & 2024-03-27 & Zambon M. & Zaupa R. & Stesura della sottosezione 3.4 (Verifica)\\
+v 0.9.0 & 2024-04-24 & Visentin S. & Basso L. & Aggiornata la sezione 4.1, aggiunto il $\textit{way of working}_G$ per ogni ruolo; aggiornato il $\textit{versionamento}_G$ dei documenti \\
 \hline
-v.0.7.1 & 2024-03-26 & Zambon M. & Zaupa R. & Stesura della sottosezione 3.3 (Gestione della qualità)\\
+v 0.8.4 & 2024-04-21 & Visentin S. & Basso L. & Modificata sezione 3.2.3 e 3.2.4 \\
 \hline
-v.0.7.0 & 2024-03-21 & Basso L. & Brotto D. & Stesura delle sottosezioni 3.1.2, 3.1.3 (relative ai $\textit{repository}_G$ per la documentazione) e 3.1.9, 3.1.11, 3.1.12 (relative alle procedure per produrre documentazione)\\
+v 0.8.3 & 2024-04-19 & Tonietto F. & Basso L. & Aggiunta la sezione 3.5, riguardante la Validazione del prodotto software\\
+\hline
+v 0.8.2 & 2024-04-05 & Zambon M. & Basso L. & Tolte maiuscole ad alcuni termini\\
+\hline
+v 0.8.1 & 2024-04-03 & Zambon M. & Basso L. & Cambiate alcuni termini che sono presenti nel glossario per risolvere alcuni problemi con l'automazione dei riferimenti\\
+\hline
+v 0.8.0 & 2024-03-28 & Zambon M. & Zaupa R. & Modifica della sottosezione 3.1.12 (Glossario tecnico): ridefinita la parte di redazione del glossario e definita la sua verifica; stesura sottosezione 1.1 (scopo del documento) e 1.2 (scopo del prodotto)\\
+\hline
+v 0.7.2 & 2024-03-27 & Zambon M. & Zaupa R. & Stesura della sottosezione 3.4 (Verifica)\\
+\hline
+v 0.7.1 & 2024-03-26 & Zambon M. & Zaupa R. & Stesura della sottosezione 3.3 (Gestione della qualità)\\
+\hline
+v 0.7.0 & 2024-03-21 & Basso L. & Brotto D. & Stesura delle sottosezioni 3.1.2, 3.1.3 (relative ai $\textit{Repository}_G$ per la documentazione) e 3.1.9, 3.1.11, 3.1.12 (relative alle procedure per produrre documentazione)\\
 \hline
 
-v.0.6.0 & 2024-01-18 & Basso L. & Tonietto F. & Stesura delle sezione 4 ($\textit{processi organizzativi}_G$) con relative sottosezioni. \\
+v 0.6.0 & 2024-01-18 & Basso L. & Tonietto F. & Stesura delle sezione 4 ($\textit{processi organizzativi}_G$) con relative sottosezioni. \\
 \hline
-v.0.5.0 & 2024-01-09 & Zambon M. & Tonietto F. & Stesura delle sezione 2.4.2 (Analisi dei requisiti)\\
+v 0.5.0 & 2024-01-09 & Zambon M. & Tonietto F. & Stesura delle sezione 2.4.2 ($\textit{Analisi Dei Requisiti}_G$)\\
 \hline
-v.0.4.2 & 2023-12-12 & Visentin S. & Tonietto F. & Prima stesura della sezione 2 $\textit{Processi primari}_G$ \\
+v 0.4.2 & 2023-12-12 & Visentin S. & Tonietto F. & Prima stesura della sezione 2 $\textit{Processi primari}_G$ \\
 \hline
-v.0.4.1 & 2023-12-09 & Visentin S. & Tonietto F. & Piccole modifiche nella sezione 4. \\
+v 0.4.1 & 2023-12-09 & Visentin S. & Tonietto F. & Piccole modifiche nella sezione 4. \\
 \hline
-v.0.4.0 & 2023-11-19 & Tonietto F. & Zaupa R. & Stesura della sotto-sottosezione 3.2.4 (relativa al controllo del flusso, con approfondimento sul flusso della documentazione prodotta) e della sottosezione 4.1 (breve analisi e descrizioni dei ruoli di progetto). \\
+v 0.4.0 & 2023-11-19 & Tonietto F. & Zaupa R. & Stesura della sotto-sottosezione 3.2.4 (relativa al controllo del flusso, con approfondimento sul flusso della documentazione prodotta) e della sottosezione 4.1 (breve analisi e descrizioni dei ruoli di progetto). \\
 \hline 
-v.0.3.0 & 2023-11-12 & Basso L. & \multirow{3}{3cm}{Zambon M. \\  Visentin S. \\ Zaupa R.} & Stesura della sottosezione 3.2 della sezione relativa alla documentazione e modifiche relative al ciclo di vita di un documento (sottosezione 3.1, parte 3.1.3). \\
+v 0.3.0 & 2023-11-12 & Basso L. & \multirow{3}{3cm}{Zambon M. \\  Visentin S. \\ Zaupa R.} & Stesura della sottosezione 3.2 della sezione relativa alla documentazione e modifiche relative al ciclo di vita di un documento (sottosezione 3.1, parte 3.1.3). \\
 \hline
-v.0.2.0 & 2023-11-12 & Basso L. & Zaupa R. & Stesura della sezione 3.1 (Documentazione) e delle sottosezioni relative ad essa \\
+v 0.2.0 & 2023-11-12 & Basso L. & Zaupa R. & Stesura della sezione 3.1 (Documentazione) e delle sottosezioni relative ad essa \\
 \hline
-v.0.1.0 & 2023-10-30 & Visentin S. & Tonietto F. & Prima versione \\
+v 0.1.0 & 2023-10-30 & Visentin S. & Tonietto F. & Prima versione \\
 \hline
-\end{tabular}
+\end{longtable}
 \newpage
 
 % Sommario

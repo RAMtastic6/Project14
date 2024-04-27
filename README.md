@@ -33,7 +33,7 @@ Nel presente repository sono presenti i documenti prodotti dal gruppo RAMtastic6
   - [Piano di Progetto](documenti/2-RTB/Piano_di_Progetto_v0.8.0.pdf) (V0.8.0) <br>
   - [Piano di Qualifica](documenti/2-RTB/Piano_di_Qualifica_v0.8.0.pdf) (V0.8.0) <br>
 - Documenti Interni:
-  - [Norme di Progetto](documenti/2-RTB/Norme_di_Progetto_v0.8.0.pdf) (V0.8.0) <br>
+  - [Norme di Progetto](documenti/2-RTB/Norme_di_Progetto_v1.0.0.pdf) (V1.0.0) <br>
 - Verbali:
   <details>
   <summary>Interni</summary>
