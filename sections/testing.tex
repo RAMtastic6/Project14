@@ -1,0 +1,253 @@
+
+
+\section{Testing}
+In questa sezione vengono esplorate le metodologie di testing e la loro specifica. L'obiettivo è quello di seguire il Modello a V in cui ad ogni fase di sviluppo corrisponde una tipologia di test da eseguire.\\
+I test si dividono in:
+\begin{itemize}
+    \item \textbf{Test di unità}:\\
+    vengono eseguiti sulle unità più semplici del codice. Viene fatta corrispondere all'attività di codifica (implementation).
+    \item \textbf{Test di integrazione}:\\
+    vengono eseguiti per verificare la corretta integrazione tra le diverse unità software. Viene fatta corrispondere all'attività di progettazione.
+    \item \textbf{Test di sistema}:\\
+    verificano il corretto funzionamento dell'intero sistema e, in particolare, che tutti i requisiti individuati siano soddisfatti. Viene fatta corrispondere all'attività di Analisi Dei Requisiti. 
+    \item \textbf{Test di accettazione}:\\
+    verificano, alla presenza del committente, che il prodotto finale soddisfi tutti i requisiti. Se superati, si può procedere al rilascio dello stesso.
+\end{itemize}
+\subsection{Test di sistema}
+I test di sistema sono una fase del processo di testing il cui scopo è quello di verificare che il sistema software rispetti i requisiti specificati nel documento "Analisi Dei Requisiti".
+Di seguito verranno elencati i vari test, i quali avranno un codice identificativo, una descrizione, il requisito a cui fa riferimento e lo stato del test.
+%\begin{table}[htbp]
+    %\centering
+    \begin{longtable}{|>{\centering\arraybackslash}p{1.5cm}|p{9.8cm}|p{2cm}|p{3.5cm}|}
+    \hline
+    \rowcolor{gray!30}
+    \textbf{Codice} & \textbf{Descrizione} & \textbf{Requisito} & \textbf{Stato} \\
+    \hline
+    \rowcolor{gray!10}
+    \textbf{TS-01} & Verificare che l'utente base possa visualizzare i pasti ordinabili & ROF 1 & Non implementato \\
+    \hline
+    \rowcolor{gray!10}
+    \textbf{TS-04} & Verificare che il sistema possa inviare una notifica se l'utente base sta aggiungendo un piatto che contiene elementi a cui è allergico/intollerante & ROF 2 & Non implementato \\ 
+    \hline 
+    \rowcolor{gray!10}
+    \textbf{TS-05} & Verificare che l'utente possa visualizzare i pasti con i loro ingredienti e che possa modificarli, aggiungendo o togliendo ingredienti & ROF 3 & Non implementato \\ 
+    \hline
+    \rowcolor{gray!10}
+    \textbf{TS-06} & Verificare che l'utente base possa essere in grado di visualizzare il riepilogo di quanto ordinato e che possa confermare oppure cancellare l'ordine & ROF 4 & Non implementato \\ 
+    \hline
+    \rowcolor{gray!10}
+    \textbf{TS-07} & Verificare che il sistema possa inviare una notifica (push) di prenotazione effettuata ai ristoranti & RDF 5 & Non implementato \\ 
+    \hline
+    \rowcolor{gray!10}
+    \textbf{TS-08} & Verificare che l'utente possa inserire le informazioni (data, orario, persone, nomi utenti) per effettuare una prenotazione & ROF 6 & Non implementato \\
+    \hline
+    \rowcolor{gray!10}
+    \textbf{TS-09} & Verificare che il sistema possa inviare una notifica (push) agli amministratori per comunicare la richiesta di prenotazione, che può accettare o rifiutare & RDF 7 & Non implementato \\
+    \hline
+    \rowcolor{gray!10}
+    \textbf{TS-10} & Verificare che l'utente possa essere in grado di cancellare la prenotazione & ROF 8 & Non implementato \\ 
+    \hline
+    \rowcolor{gray!10}
+    \textbf{TS-11} & Verificare che il sistema possa negare la prenotazione se il ristorante non possiede abbastanza posti o tavoli & ROF 9 & Non implementato \\ 
+    \hline
+    \rowcolor{gray!10}
+    \textbf{TS-12} & Verificare che l'utente base possa visualizzare una lista di ristoranti filtrata per nome, data, luogo o tipologia cucina & ROF 10 & Non implementato \\ 
+    \hline
+    \rowcolor{gray!10}
+    \textbf{TS-13} & Verificare che l'utente base possa selezionare un ristorante & ROF 11 & Non implementato \\ 
+    \hline
+    \rowcolor{gray!10}
+    \textbf{TS-14} & Verificare che l'amministratore possa visualizzare una lista di prenotazioni in attesa & ROF 12 & Non implementato \\
+    \hline
+    \rowcolor{gray!10}
+    \textbf{TS-15} & Verificare che l'amministratore possa selezionare una specifica richiesta di prenotazione dalla lista visualizzata & ROF 13 & Non implementato \\ 
+    \hline
+    \rowcolor{gray!10}
+    \textbf{TS-16} & Verificare che l'amministratore possa accettare la richiesta di prenotazione selezionata & ROF 14 & Non implementato \\ 
+    \hline
+    \rowcolor{gray!10}
+    \textbf{TS-17} & Verificare che il sistema possa aggiungere la prenotazione nell'area "prenotazioni" dell'utente & ROF 15 & Non implementato \\
+    \hline
+    \rowcolor{gray!10}
+    \textbf{TS-18} & Verificare che il sistema possa notificare gli utenti coinvolti (nel caso di prenotazione collaborativa) dell'accettazione della prenotazione & ROF 16 & Non implementato \\ 
+    \hline
+    \rowcolor{gray!10}
+    \textbf{TS-19} & Verificare che il sistema possa fornire un'interfaccia per consentire all'amministratore di verificare la disponibilità di posti in base alle specifiche della prenotazione selezionata & ROF 17 & Non implementato \\ 
+    \hline
+    \rowcolor{gray!10}
+    \textbf{TS-20} & Verificare che il sistema possa ridurre il numero di posti disponibili in base alle specifiche della prenotazione accettata & ROF 18 & Non implementato \\ 
+    \hline
+    \rowcolor{gray!10}
+    \textbf{TS-21} & Verificare che l'amministratore possa rifiutare la richiesta di prenotazione selezionata & ROF 19 & Non implementato \\ 
+    \hline
+    \rowcolor{gray!10}
+    \textbf{TS-22} & Verificare che il sistema possa notificare gli utenti coinvolti (nel caso di prenotazione collaborativa) del rifiuto della prenotazione & ROF 20 & Non implementato \\ 
+    \hline
+    \rowcolor{gray!10}
+    \textbf{TS-24} & Verificare che il sistema possa creare un canale di comunicazione tra l'utente e l'amministratore del ristorante quando l'utente lo richiede & ROF 21 & Non implementato \\
+    \hline
+    \rowcolor{gray!10}
+    \textbf{TS-25} & Verificare che l'utente e l'amministratore possano scambiarsi messaggi in modo bidirezionale tramite l'interfaccia di comunicazione & ROF 22 & Non implementato \\ 
+    \hline 
+    \rowcolor{gray!10}
+    \textbf{TS-26} & Verificare che durante la comunicazione, il sistema possa inviare notifiche push per informare l'utente e l'amministratore dei nuovi messaggi ricevuti & ROF 23 & Non implementato \\ 
+    \hline
+    \rowcolor{gray!10}
+    \textbf{TS-27} & Verificare che la cancellazione della prenotazione possa essere effettuata con al massimo un giorno di anticipo rispetto alla data della prenotazione & ROF 24 & Non implementato \\
+    \hline
+    \rowcolor{gray!10}
+    \textbf{TS-31} & Verificare che il sistema permetta di pagare il conto in base alla modalità scelta (divisione equa, divisione proporzionale) da chi ha creato la ordinazione collaborativa & ROF 25 & Non implementato \\
+    \hline
+    \rowcolor{gray!10}
+    \textbf{TS-32} & Verificare che l'utente base possa pagare tutto il conto se nessun utente ha pagato & ROF 26 & Non implementato \\
+    \hline
+    \rowcolor{gray!10}
+    \textbf{TS-33} & Verificare che l'amministratore possa modificare il menu' del proprio ristorante, aggiungendo, rimuovendo pietanze e modificando le informazioni del singolo piatto (nome, ingredienti e prezzo) & ROF 27 & Non implementato \\
+    \hline
+    \rowcolor{gray!10}
+    \textbf{TS-34} & Verificare che la modifica del menù da parte dell'amministratore non causi problemi di sincronizzazione nella visualizzazione, ricerca del menu' e nell'ordinazione da parte dell'utente base & RDF 28 & Non implementato \\ 
+    \hline
+    \rowcolor{gray!10}
+    \textbf{TS-35} & Verificare che l'utente base possa inserire un coupon prima di pagare il conto, che, se applicato, deve far ricalcolare al sistema il prezzo del conto & RDF 29 & Non implementato \\ 
+    \hline
+    \rowcolor{gray!10}
+    \textbf{TS-36} & Verificare che l'amministratore possa consultare le prenotazioni associate al proprio ristorante & ROF 30 & Non implementato \\ 
+    \hline
+    \rowcolor{gray!10}
+    \textbf{TS-38} & Verificare che l'amministratore possa visualizzare i dettagli completi di una specifica prenotazione & ROF 31 & Non implementato \\ 
+    \hline
+    \rowcolor{gray!10}
+    \textbf{TS-39} & Verificare che l'amministratore possa visualizzare lo stato delle ordinazioni associate alla prenotazione & ROF 32 & Non implementato \\ 
+    \hline
+    \rowcolor{gray!10}
+    \textbf{TS-40} & Verificare che il sistema possa fornire all'amministratore la possibilità di visualizzare la lista totale degli ingredienti inclusi nella prenotazione & RDF 33 & Non implementato \\ 
+    \hline
+    \rowcolor{gray!10}
+    \textbf{TS-41} & Verificare che il sistema possa consentire all'amministratore di visualizzare tutti gli ordini confermati per il ristorante selezionato & ROF 34 & Non implementato \\ 
+    \hline
+    \rowcolor{gray!10}
+    \textbf{TS-42} & Verificare che il sistema possa permettere di annullare l'ordinazione collaborativa nel tempo utile per farlo & ROF 35 & Non implementato \\
+    \hline
+    \rowcolor{gray!10}
+    \textbf{TS-43} & Verificare che il sistema invii una notifica a tutti gli utenti associati alla prenotazione la cui ordinazione collaborativa è stata annullata & RDF 36 & Non implementato \\ 
+    \hline
+    \rowcolor{gray!10}
+    \textbf{TS-44} & Verificare che il sistema fornisca un'interfaccia per consentire agli utenti non autenticati di registrarsi come utenti base & ROF 37 & Non implementato \\ 
+    \hline
+    \rowcolor{gray!10}
+    \textbf{TS-45} & Verificare che l'utente/l'amministratore possa inserire le sue informazioni personali durante la registrazione come nome, cognome, email, password ed eventuali intolleranze & ROF 38 & Non implementato \\
+    \hline
+    \rowcolor{gray!10}
+    \textbf{TS-46} & Verificare che l'utente/l'amministratore possa confermare di volersi registrare con le informazioni fornite prima di completare la registrazione & ROF 39 & Non implementato \\ 
+    \hline
+    \rowcolor{gray!10}
+    \textbf{TS-47} & Verificare che il sistema gestisca correttamente gli errori nell'inserimento delle informazioni durante la registrazione & ROF 40 & Non implementato \\ 
+    \hline
+    \rowcolor{gray!10}
+    \textbf{TS-48} & Verificare che l'utente base e l'amministratore possano visualizzare il menu' del ristorante selezionato & ROF 41 & Non implementato \\ 
+    \hline
+    \rowcolor{gray!10}
+    \textbf{TS-49} & Verificare che l'amministratore possa modificare le informazioni del proprio ristorante (nome, indirizzo, orari, coperti e tipologia di cucina) & ROF 42 & Non implementato \\
+    \hline
+    \rowcolor{gray!10}
+    \textbf{TS-50} & Verificare che la modifica delle informazioni del ristorante da parte dell'amministratore non causi problemi di sincronizzazione nella visualizzazione, ricerca del ristorante e nell'ordinazione da parte dell'utente base & RDF 43 & Non implementato \\ 
+    \hline
+    \rowcolor{gray!10}
+    \textbf{TS-51} & Verificare che l'utente autenticato possa visualizzare una lista con le prenotazioni passate e future & ROF 44 & Non implementato \\ 
+    \hline
+    \rowcolor{gray!10}
+    \textbf{TS-52} & Verificare che l'utente autenticato possa rilasciare una recensione (con anche una votazione di gradimento tramite stelle) sui ristoranti nei quali ha effettuato almeno una prenotazione & ROF 45 & Non implementato \\ 
+    \hline
+    \rowcolor{gray!10}
+    \textbf{TS-53} & Verificare che l'utente autenticato possa visualizzare gli ordini di un tavolo & ROF 46 & Non implementato \\ 
+    \hline
+    \rowcolor{gray!10}
+    \textbf{TS-54} & Verificare che l'utente autenticato possa visualizzare le recensioni rilasciate ed eventualmente eliminarle & ROF 47 & Non implementato \\ 
+    \hline
+    \rowcolor{gray!10}
+    \textbf{TS-55} & Verificare che l'utente generico possa visualizzare le recensioni di un ristorante e visualizzare per ognuna di essa le relative informazioni & ROF 48 & Non implementato \\ 
+    \hline
+    \rowcolor{gray!10}
+    \textbf{TS-56} & Verificare che l'amministratore possa inserire le informazioni del ristorante di cui è amministratore & ROF 49 & Non implementato \\
+    \hline
+    \rowcolor{gray!10}
+    \textbf{TS-57} & Verificare che l'utente/l'amministratore possa inserire la propria email e la password durante la fase di login & ROF 50 & Non implementato \\ 
+    \hline
+    \rowcolor{gray!10}
+    \textbf{TS-58} & Verificare che il sistema verifichi che le informazioni inserite nel login corrispondano ad un account esistente nel sistema & ROF 51 & Non implementato \\ 
+    \hline
+    \rowcolor{gray!10}
+    \textbf{TS-59} & Verificare che il sistema predisponga in fase di login di un'opzione per il recupero della password & ROF 52 & Non implementato \\ 
+    \hline
+    \rowcolor{gray!10}
+    \textbf{TS-60} & Verificare che l'utente non autenticato possa inserire la propria email durante il processo di recupero password & ROF 53 & Non implementato \\ 
+    \hline
+    \rowcolor{gray!10}
+    \textbf{TS-61} & Verificare che, se l'email inserita dall'utente corrisponde a un account nel sistema, il sistema invii un'email contenente un link per il recupero della password & ROF 54 & Non implementato \\
+    \hline
+    \rowcolor{gray!10}
+    \textbf{TS-62} & Verificare che, se l'email inserita dall'utente non corrisponde a un account nel sistema, il sistema lo mostri a schermo & ROF 55 & Non implementato \\ 
+    \hline
+    \rowcolor{gray!10}
+    \textbf{TS-63} & Verificare che l'utente possa accedere a una sezione dedicata tramite il link fornito nell'email di recupero password & ROF 56 & Non implementato \\ 
+    \hline
+    \rowcolor{gray!10}
+    \textbf{TS-64} & Verificare che il sistema mostri una lista di prenotazioni, ognuna con le seguenti informazioni:
+    Nome del ristorante, Data, Ora, Stato della prenotazione (se è ancora attiva o già completata) e Numero di persone coinvolte & ROF 57 & Non implementato \\
+    \hline
+    \rowcolor{gray!10}
+    \textbf{TS-65} & Verificare che il sistema ordini la lista delle prenotazioni per data della prenotazione & RDF 58 & Non implementato \\ 
+    \hline
+    \rowcolor{gray!10}
+    \textbf{TS-67} & Verificare che l'utente possa inserire le proprie allergie/intolleranze, se presenti, durante la modifica del profilo & ROF 59 & Non implementato \\ 
+    \hline
+    \rowcolor{gray!10}
+    \textbf{TS-69} & Verificare che l'utente autenticato e l'amministratore possano inserire nome,cognome,mail e password nell'area di modifica delle proprie informazioni & ROF 60 & Non implementato \\ 
+    \hline
+    \rowcolor{gray!10}
+    \textbf{TS-70} & Verificare che il sistema verifichi che l'email inserita dall'utente autenticato/amministratore sia valida e non sia già presente nel sistema & ROF 61 & Non implementato \\ 
+    \hline
+    \rowcolor{gray!10}
+    \textbf{TS-71} & Verificare che l'utente base autenticato possa accedere alla funzionalità di ordinazione di un piatto & ROF 62 & Non implementato \\
+    \hline
+    \rowcolor{gray!10}
+    \textbf{TS-73} & Verificare che il sistema consenta all'utente di visualizzare, aggiungere e togliere ingredienti del piatto selezionato & ROF 63 & Non implementato \\
+    \hline
+    \rowcolor{gray!10}
+    \textbf{TS-74} & Verificare che l'amministratore possa visualizzare le recensioni del proprio ristorante & ROF 64 & Non implementato \\ 
+    \hline
+    \rowcolor{gray!10}
+    \textbf{TS-75} & Verificare che l'amministratore possa rispondere alle recensioni del proprio ristorante & ROF 65 & Non implementato \\ 
+    \hline
+    \rowcolor{gray!10}
+    \textbf{TS-76} & Verificare che l'utente possa visualizzare le risposte alla propria recensione & ROF 66 & Non implementato \\
+    \hline
+    \rowcolor{gray!10}
+    \textbf{TS-77} & Verificare che il sistema consenta di modificare l'ordine ad un utente prima della scadenza del tempo previsto, inserendo piatti, modificando ingredienti e quantità delle pietanze ordinate & ROF 67 & Non implementato \\ 
+    \hline
+    \rowcolor{gray!10}
+    \textbf{TS-78} & Verificare che il sistema permetta di far visualizzare all'amministratore il dettaglio degli ingredienti necessari per ogni giornata & RDF 68 & Non implementato \\ 
+    \hline
+    \rowcolor{gray!10}
+    \textbf{TS-89} & Verificare che il sistema consenta all'utente autenticato di selezionare l'opzione di logout & ROF 69 & Non implementato \\
+    \hline
+    \rowcolor{gray!10}
+    \textbf{TS-80} & Verificare che, dopo che l'utente ha selezionato l'opzione di logout, il sistema richieda una conferma esplicita dall'utente prima di procedere con la disconnessione & ROF 70 & Non implementato \\ 
+    \hline
+    \rowcolor{gray!10}
+    \textbf{TS-81} & Verificare che, dopo aver terminato la sessione dell'utente, il sistema reindirizzi l'utente alla pagina di accesso o a una pagina di destinazione predefinita & ROF 71 & Non implementato \\ 
+    \hline
+    \rowcolor{gray!10}
+    \textbf{TS-82} & Verificare che l'utente autenticato possa visualizzare le informazioni del suo profilo & ROF 72 & Non implementato \\ 
+    \hline
+    \rowcolor{gray!10}
+    \textbf{TS-84} & Verificare che l'amministratore possa visualizzare tutte le chat aperte in precedenza da altri utenti& ROF 73 & Non implementato \\ 
+    \hline
+    \rowcolor{gray!10}
+    \textbf{TS-85} & Verificare che l'amministratore possa rispondere alle chat con gli utenti & ROF 74 & Non implementato \\ 
+    \hline
+    \caption{Test di sistema} 
+    \label{tab:test_sistema}
+    \end{longtable}
+    
+%\end{table}
