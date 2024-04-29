@@ -2,13 +2,13 @@
 
 \begin{figure}[H]
     \centering
-    \includegraphics[scale= 0.2]{ucd/UCD2.2_finale.png}
+    \includegraphics[scale=0.7]{ucd/UCD2.2_finale.png}
 \caption{Registrazione come amministratore}
 \end{figure}
 
 \textbf{Attori}:
 \begin{itemize}
-    \item Utente autenticato.
+    \item Utente non autenticato.
 \end{itemize}
 \textbf{Precondizioni}:
 \begin{itemize}
@@ -21,12 +21,12 @@
 \end{itemize}
 \textbf{Scenario principale}:
 \begin{enumerate}
-    \item L'utente inserisce il nome del ristorante;
-    \item L'utente inserisce la città;
-    \item L'utente inserisce i recapiti del ristorante;
-    \item L'utente inserisce l'orario apertura;
-    \item L'utente inserisce i coperti disponibili;
-    \item L'utente inserisce la tipologia di cucina;
+    \item L'utente inserisce il nome del ristorante (\nameref{usecase:2_2_1});
+    \item L'utente inserisce la città (\nameref{usecase:2_2_2}); 
+    \item L'utente inserisce l'orario apertura e chiusura (\nameref{usecase:2_2_3});
+    \item L'utente inserisce i coperti disponibili (\nameref{usecase:2_2_4});
+    \item L'utente inserisce i recapiti del ristorante (\nameref{usecase:2_2_5});
+    \item L'utente inserisce la tipologia di cucina (\nameref{usecase:2_2_6}).
 \end{enumerate}
 \textbf{Scenari secondari}:
     \begin{enumerate}
@@ -34,10 +34,10 @@
         \item L'utente inserisce dati non validi.
     \end{enumerate}
 
-\subsubsection{UC2.2.1 - Inserimento nome ristorante}
+\subsubsection{UC2.2.1 - Inserimento nome ristorante}\label{usecase:2_2_1}
 \textbf{Attori}:
 \begin{itemize}
-    \item Utente autenticato.
+    \item Utente non autenticato.
 \end{itemize}
 \textbf{Precondizioni}:
 \begin{itemize}
@@ -58,10 +58,10 @@
     \item L'utente usa solo spazi (" ");
     \item L'utente usa caratteri speciali;
 \end{enumerate}
-\subsubsection{UC2.2.2 - Inserimento città}
+\subsubsection{UC2.2.2 - Inserimento città}\label{usecase:2_2_2}
 \textbf{Attori}:
 \begin{itemize}
-    \item Utente autenticato.
+    \item Utente non autenticato.
 \end{itemize}
 \textbf{Precondizioni}:
 \begin{itemize}
@@ -82,10 +82,10 @@
     \item L'utente usa solo spazi (" ");
     \item L'utente usa caratteri speciali;
 \end{enumerate}
-\subsubsection{UC2.2.3 - Inserimento orari di apertura e chiusura}
+\subsubsection{UC2.2.3 - Inserimento orari di apertura e chiusura}\label{usecase:2_2_3}
 \textbf{Attori}:
 \begin{itemize}
-    \item Utente autenticato.
+    \item Utente non autenticato.
 \end{itemize}
 \textbf{Precondizioni}:
 \begin{itemize}
@@ -106,10 +106,10 @@
     \item L'utente lascia il campo vuoto;
     \item L'utente inserisce un orario non valido;
 \end{enumerate}
-\subsubsection{UC2.2.4 - Inserimento coperti disponibili}
+\subsubsection{UC2.2.4 - Inserimento coperti disponibili}\label{usecase:2_2_4}
 \textbf{Attori}:
 \begin{itemize}
-    \item Utente autenticato.
+    \item Utente non autenticato.
 \end{itemize}
 \textbf{Precondizioni}:
 \begin{itemize}
@@ -130,10 +130,10 @@
     \item L'utente utilizza caratteri diversi dai numeri;
     \item L'utente inserisce un numero non valido (troppo grandi oppure zero)
 \end{enumerate}
-\subsubsection{UC2.2.5 - Inserimento recapiti}
+\subsubsection{UC2.2.5 - Inserimento recapiti}\label{usecase:2_2_5}
 \textbf{Attori}:
 \begin{itemize}
-    \item Utente autenticato.
+    \item Utente non autenticato.
 \end{itemize}
 \textbf{Precondizioni}:
 \begin{itemize}
@@ -154,10 +154,10 @@
     \item L'utente lascia i campi vuoti;
     \item L'utente inserisce un numero non valido;
 \end{enumerate}
-\subsubsection{UC2.2.6 - Inserimento tipologia di cucina}
+\subsubsection{UC2.2.6 - Inserimento tipologia di cucina}\label{usecase:2_2_6}
 \textbf{Attori}:
 \begin{itemize}
-    \item Utente autenticato.
+    \item Utente non autenticato.
 \end{itemize}
 \textbf{Precondizioni}:
 \begin{itemize}

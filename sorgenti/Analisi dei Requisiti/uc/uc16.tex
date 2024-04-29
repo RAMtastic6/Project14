@@ -1,12 +1,12 @@
 \subsection{UC16 - Recupero password} \label{usecase:16}
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.9\linewidth]{ucd/ucd16.png}
+    \includegraphics[width=0.8\linewidth]{ucd/ucd16.png}
     \caption{Recupero password}
 \end{figure}
 \textbf{Attori}:
 \begin{itemize}
-    \item Utente non autenticato.
+   \item Utente generico.
 \end{itemize}
 \textbf{Precondizioni}:
 \begin{itemize}
@@ -18,7 +18,7 @@
 \end{itemize}
 \textbf{Scenario principale}:
 \begin{enumerate}
-    \item L'utente inserisce l'email con cui si era registrato in precedenza;
+    \item Se l'utente non è autenticato inserisce l'email con cui si era registrato in precedenza;
     \item L'utente riceve una email dal $\textit{sistema}_G$ per il recupero password;
     \item L'utente, tramite un link nell'email accede ad una sezione che permette il cambio password.
 \end{enumerate}
