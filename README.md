@@ -28,6 +28,7 @@ Nel presente repository sono presenti i documenti prodotti dal gruppo RAMtastic6
 <h2>RTB</h2>
 
 - Documenti Esterni:
+  - [Lettera di Presentazione](documenti/2-RTB/Lettera_di_Presentazione_v1.0.0.pdf) (V1.0.0) <br>
   - [Analisi dei Requisiti](documenti/2-RTB/Analisi_dei_Requisiti_v2.0.0.pdf) (V2.0.0) <br>
   - [Glossario](documenti/2-RTB/Glossario_v1.0.0.pdf) (V1.0.0) <br>
   - [Piano di Progetto](documenti/2-RTB/Piano_di_Progetto_v1.0.0.pdf) (V1.0.0) <br>
