@@ -33,8 +33,8 @@
 % Informazioni sul documento
 \section*{Informazioni sul documento} 
 \begin{tabular}{ll}
-Versione: & 1.1.0 \\
-Redattori: &  Visentin S.  Zaupa R. Brotto D. Basso L. Zambon M. \\ 
+Versione: & 2.0.0 \\
+Redattori: &  Visentin S.  Zaupa R. Brotto D. Basso L. Zambon M. Tonietto F. \\ 
 Verificatori: & Tonietto F. Visentin S. Brotto D. Zaupa R.\\
 Destinatari: & Vardanega T., Cardin R., Imola Informatica \\
 Uso: & Esterno
@@ -47,6 +47,16 @@ Uso: & Esterno
 \hline
 \textbf{Versione} & \textbf{Data} & \textbf{Autore} & \textbf{Verificatore} & 
 \textbf{Dettaglio} \\
+\hline
+v 2.0.0 & 2024-04-29 & Visentin S. & Visentin S. & Approvazione e verifica del documento\\
+\hline
+v 1.2.0 & 2024-04-29 & Zambon M. & Tonietto F. & Correzione di alcuni punti secondo i $\textit{feedback}_G$ del prof. Cardin: modificati gli scenari principali, modificati i diagrammi e aggiunti $\textit{riferimenti}_G$ in UC4 e UC30\\
+\hline
+v 1.1.1 & 2024-04-28 &   \begin{tabular}[c]{@{}c@{}}
+    Basso L. \\
+  \end{tabular}  & \begin{tabular}[c]{@{}c@{}}
+    Tonietto F.
+  \end{tabular} & Correzione di alcuni punti secondo i $\textit{feedback}_G$ del prof. Cardin: inserimento diagrammi UC1, UC2 e UC3; approfondimento di UC3.1 e aggiunta del diagramma associato ad esso.\\
 \hline
 v 1.1.0 & 2024-04-27 &   \begin{tabular}[c]{@{}c@{}}
     Tonietto F. \\
@@ -198,11 +208,11 @@ Il $\textit{sistema}_G$ dispone di cinque attori principali, distinti come segue
 % $\textit{caso d'uso}_G$ UC1 - Registrazione come utente base
 \input{uc/uc1}
 
-% $\textit{caso d'uso}_G$ UC1.1 - Inserimento email
-%\input{uc/uc1_1}
+% $\textit{caso d'uso}_G$ UC1.1 - Inserimento credenziali
+\input{uc/uc1_1}
 
-%caso d'uso UC1.2 - Inserimento password
-%\input{uc/uc1_2}
+%caso d'uso UC1.2 - Inserimento intolleranze
+\input{uc/uc1_2}
 
 % $\textit{caso d'uso}_G$ UC3 - Inserimento informazioni utente
 %\input{uc/uc1_4}
@@ -213,6 +223,7 @@ Il $\textit{sistema}_G$ dispone di cinque attori principali, distinti come segue
 % $\textit{caso d'uso}_G$ UC2 - Registrazione come amministratore
 \input{uc/uc2}
 \input{uc/uc2_1}
+\input{uc/uc2_2}
 
 % $\textit{caso d'uso}_G$ UC4 - Accettazione richiesta prenotazione
 %\input{uc/uc2_2}
@@ -328,9 +339,9 @@ Il $\textit{sistema}_G$ dispone di cinque attori principali, distinti come segue
 \input{uc/uc29}
 \input{uc/uc29_1}
 \newpage
-
+%case d'uso 30 Interazione con il cliente
 \input{uc/uc30}
-
+\newpage
 % $\textit{caso d'uso}_G$ 31 Modifica menu' del ristorante
 \input{uc/uc31}
 

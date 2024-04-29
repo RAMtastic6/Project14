@@ -18,7 +18,7 @@ def check_for_titles(line: str) -> bool:
             return True
     return False 
 
-def repl_all_occurrences(glossary_path: str, filename: str, content_folder: str = "") -> None:
+def repl_all_occurrences(glossary_path: str, filename: str, content_folder0: str = "", content_folder1: str = "") -> None:
     """rimpiazza tutte le occorrenze di parole contenute in un file
     chiamato filename che sono anche contenute all'interno del glossario"""
     # setup del dizionario e dei file
@@ -26,8 +26,10 @@ def repl_all_occurrences(glossary_path: str, filename: str, content_folder: str 
     defs = get_termini_from_json(JSON_ARRAY)
     files = []
     files.append(filename)
-    if content_folder != "":
-        files += read_all_files(content_folder, "*.tex")
+    if content_folder0 != "":
+        files += read_all_files(content_folder0, "*.tex")
+    if content_folder1 != "":
+        files += read_all_files(content_folder1, "*.tex")
 
 
     for n in files: 
@@ -37,6 +39,7 @@ def repl_all_occurrences(glossary_path: str, filename: str, content_folder: str 
         # e salvarsi i singoli elementi all'interno 
         # di una lista (funzinoe list.split())
         with open(n, "r") as f:
+            print("aperto file {}".format(n))
             content = f.read()
 
         # splittare il contenuto delle righe

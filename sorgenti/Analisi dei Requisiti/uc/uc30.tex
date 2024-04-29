@@ -32,15 +32,15 @@
 
 \newpage
 \end{comment}
-\subsection{UC30 - Chat per l'amministratore}\label{usecase:30}
+\subsection{UC30 - Interazione con il cliente}\label{usecase:30}
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.75\linewidth]{ucd/UCD30.png}
-    \caption{Chat per l'amministratore}
+    \caption{Interazione con il cliente}
 \end{figure}
 \textbf{Attori}:
 \begin{itemize}
-    \item Amministratore.
+    \item Utente amministratore.
 \end{itemize}
 \textbf{Precondizioni}:
 \begin{itemize}
@@ -48,14 +48,23 @@
 \end{itemize}
 \textbf{Postcondizioni}:
 \begin{itemize}
-    \item L'amministratore visualizza una chat per rispondere ad eventuali utenti che hanno scritto.
+    \item L'amministratore ha risposto agli utenti base che hanno aperto le chat.
 \end{itemize}
 \textbf{Scenario principale}:
 \begin{enumerate}
-    \item L'amministratore visualizza una lista di chat che gli utenti hanno aperto;
+    \item L'utente amministratore visualizza una lista di chat che gli utenti base hanno aperto;
     \item Seleziona una chat;
     \item Visualizza i messaggi presenti nella chat;
-    \item L'amministratore può rispondere tramite messaggio.
+    \item L'utente amministratore può comunicare con l'utente base:
+    \begin{itemize}
+        \item L'utente amministratore può scrivere del testo e inviarlo;
+        \item L'utente amministratore visualizza l'eventuale risposta;
+    \end{itemize}
+    \item L'utente amministratore riceve una notifica (push-notification), mostrando:
+    \begin{enumerate}
+        \item Il nome dell'utente base;
+        \item La preview del messaggio.
+    \end{enumerate}
 \end{enumerate}
 \textbf{Scenari alternativi}:
 \begin{enumerate}

@@ -1,7 +1,7 @@
 \subsection{UC1 - Registrazione utente base}\label{usecase:1}
 \begin{figure}[H]
   \centering
-  \includegraphics[width=0.9\linewidth]{ucd/UCD1_corretto.png}
+  \includegraphics[width=0.9\linewidth]{ucd/UCD1_finale.png}
 \caption{Registrazione come utente base}
 \end{figure}
 \textbf{Attori principali}: 
@@ -18,16 +18,18 @@
 \end{itemize}
 \textbf{Scenario principale}:
 \begin{enumerate}
-    \item L'utente inserisce le informazioni, ovvero:
-    \begin{enumerate}
-        \item Nome;
-        \item Cognome;
-        \item Email;
-        \item Password.
-    \end{enumerate}
-    \item L'utente inserisce allergie e intolleranze se presenti;
+    \item L'utente inserisce le sue credenziali (\nameref{usecase:1_1}).
+    \item L'utente inserisce allergie e intolleranze se presenti (\nameref{usecase:1_2});
     \item L'utente conferma di volersi registrare con le informazioni fornite.
 \end{enumerate}
+\textbf{Scenari alternativi}:
+\begin{enumerate}
+    \item Inserimento informazioni utente errate
+    \item Viene visualizzato un errore;
+    \item L'utente decide se annullare o riprovare
+\end{enumerate}
+
+\begin{comment}
 \textbf{Scenari alternativi}:
 \begin{itemize}
     \item Inserimento informazioni utente errate: 
@@ -66,6 +68,8 @@
     \item Viene visualizzato un errore;
     \item L'utente decide se annullare o riprovare.
 \end{itemize}
+
+\end{comment}
 
 \begin{comment}    
     1.1.  L'utente lascia il campo nome vuoto

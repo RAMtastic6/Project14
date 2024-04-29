@@ -2,7 +2,7 @@
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.9\linewidth]{ucd/UCD2_corretto.png}
+    \includegraphics[width=\linewidth]{ucd/UCD2_approfondito.png}
 \caption{Registrazione come amministratore}
 \end{figure}
 
@@ -21,13 +21,16 @@
 \end{itemize}
 \textbf{Scenario principale}:
 \begin{enumerate}
-    \item L'utente inserisce il nome;
-    \item L'utente inserisce il cognome;
-    \item L'utente inserisce un'email valida;
-    \item L'utente inserisce la password che rispetta i criteri indicati;
-    \item L'utente inserisce le informazioni del ristorante (\nameref{usecase:2_1}).
+    \item L'utente inserisce delle credenziali valide (\nameref{usecase:2_1});
+    \item L'utente inserisce le informazioni del ristorante (\nameref{usecase:2_2}).
 \end{enumerate}
 \textbf{Scenari alternativi}:
+
+\begin{itemize}
+    \item l'utente ha inserito delle credenziali non valide: l'utente viene notificato mediante un errore esplicativo e gli viene data la possibilità di ricominciare l'operazione di registrazione.
+    \item L'utente decide di annullare l'operazione di registrazione.
+\end{itemize}
+\begin{comment}
 \begin{itemize}
     \item 1.1.  L'utente lascia il campo nome vuoto;
     
@@ -69,4 +72,5 @@
     
     3.  Viene data la possibilità di rifare la registrazione come amministratore;
     \item L'utente decide di annullare l'operazione di registrazione.
-\end{itemize}
+\end{itemize}    
+\end{comment}

@@ -1,4 +1,4 @@
-\subsection{UC4 - Chat con l'Utente base}\label{usecase:4}
+\subsection{UC4 - Interazione con lo staff}\label{usecase:4}
 %diagramma dei casi d'uso 4
 \begin{figure}[H]
   \centering
@@ -19,14 +19,13 @@
 \end{itemize}
 \textbf{Scenario principale}:
 \begin{enumerate}
-    \item L'utente seleziona un ristorante desiderato (riferimento UC ricerca ristorante) con cui comunicare;
+    \item L'utente seleziona un ristorante desiderato (\nameref{usecase:24}) con cui comunicare;
     \item Il $\textit{sistema}_G$ crea una chat bidirezionale;
     \item L'utente può comunicare con l'amministratore del ristorante:
     \begin{itemize}
         \item L'utente può scrivere del testo e inviarlo;
-        \item L'utente visualizza l'eventuale risposta;
+        \item L'utente visualizza l'eventuale risposta
     \end{itemize}
-    \item Durante la comunicazione verranno scambiati messaggi tramite notifica (\textit{push-notification});
     \item L'utente riceve una notifica (push-notification), mostrando:
     \begin{enumerate}
         \item Il nome del ristorante;
