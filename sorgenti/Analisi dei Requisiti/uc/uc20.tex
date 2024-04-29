@@ -1,0 +1,25 @@
+\subsection{UC20 - Rifiuto richiesta prenotazione}\label{usecase:20}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.9\linewidth]{ucd/ucd20.png}
+    \caption{Rifiuto richiesta prenotazione}
+\end{figure}
+\textbf{Attori principali}:
+\begin{itemize}
+    \item Amministratore.
+\end{itemize}
+\textbf{Precondizioni}:
+\begin{itemize}
+     \item \`E arrivata almeno una richiesta di $\textit{prenotazione}_G$ da parte di un'utente base (\nameref{usecase:23}).
+\end{itemize}
+\textbf{Postcondizioni}:
+\begin{itemize}
+    \item L'amministratore ha rifiutato la richiesta;
+    \item Il $\textit{sistema}_G$ ha notificato gli utenti del rifiuto della $\textit{prenotazione}_G$.
+\end{itemize}
+\textbf{Scenario principale}:
+\begin{enumerate}
+    \item L'amministratore seleziona una richiesta di $\textit{prenotazione}_G$;
+    \item L'amministratore in base alla disponibilità del ristorante fornita dal $\textit{sistema}_G$, rifiuta la $\textit{prenotazione}_G$.
+\end{enumerate}
+\newpage

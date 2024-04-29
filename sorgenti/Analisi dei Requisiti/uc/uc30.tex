@@ -1,0 +1,77 @@
+\begin{comment}
+\subsection{UC30 - Visualizzazione ristoranti (per amministratore)}\label{usecase:30}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.9\linewidth]{ucd/UCD30.png}
+\end{figure}
+
+\textbf{Attori}:
+\begin{itemize}
+    \item Amministratore
+\end{itemize}
+\textbf{Precondizioni}:
+\begin{itemize}
+    \item L'amministratore è autenticato nel sistema
+\end{itemize}
+\textbf{Postcondizioni}:
+\begin{itemize}
+    \item L'amministratore ha visualizzato l'elenco dei ristoranti
+\end{itemize}
+\textbf{Scenario principale}:
+\begin{enumerate}
+    \item L'amministratore seleziona l'opzione per visualizzare l'elenco dei ristoranti di cui è l'amministratore
+    \item Il $\textit{sistema}_G$ visualizza l'elenco dei ristoranti
+\end{enumerate}
+\textbf{Scenari alternativi}:\\
+\textit{Nessun ristorante registrato}:
+\begin{enumerate}
+    \item Dopo il recupero dell'elenco dei ristoranti, il $\textit{sistema}_G$ non trova alcun ristorante registrato
+    \item Il $\textit{sistema}_G$ visualizza un messaggio all'amministratore indicando che non ci sono ristoranti registrati nel $\textit{sistema}_G$
+\end{enumerate}
+
+\newpage
+\end{comment}
+\subsection{UC30 - Interazione con il cliente}\label{usecase:30}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.75\linewidth]{ucd/UCD30.png}
+    \caption{Interazione con il cliente}
+\end{figure}
+\textbf{Attori}:
+\begin{itemize}
+    \item Utente amministratore.
+\end{itemize}
+\textbf{Precondizioni}:
+\begin{itemize}
+    \item L'utente è connesso al $\textit{sistema}_G$.
+\end{itemize}
+\textbf{Postcondizioni}:
+\begin{itemize}
+    \item L'amministratore ha risposto agli utenti base che hanno aperto le chat.
+\end{itemize}
+\textbf{Scenario principale}:
+\begin{enumerate}
+    \item L'utente amministratore visualizza una lista di chat che gli utenti base hanno aperto;
+    \item Seleziona una chat;
+    \item Visualizza i messaggi presenti nella chat;
+    \item L'utente amministratore può comunicare con l'utente base:
+    \begin{itemize}
+        \item L'utente amministratore può scrivere del testo e inviarlo;
+        \item L'utente amministratore visualizza l'eventuale risposta;
+    \end{itemize}
+    \item L'utente amministratore riceve una notifica (push-notification), mostrando:
+    \begin{enumerate}
+        \item Il nome dell'utente base;
+        \item La preview del messaggio.
+    \end{enumerate}
+\end{enumerate}
+\textbf{Scenari alternativi}:
+\begin{enumerate}
+    \item Il testo inserito è:
+    \begin{enumerate}
+        \item Vuoto;
+        \item Troppo lungo;
+    \end{enumerate}
+    \item L'invio viene annullato e viene visualizzato un errore.
+\end{enumerate}

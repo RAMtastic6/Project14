@@ -1,0 +1,39 @@
+\subsection{UC12 - Login} \label{usecase:12}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.9\linewidth]{ucd/ucd12.png}
+    \caption{Login}
+\end{figure}
+\textbf{Attori}:
+\begin{itemize}
+    \item Utente non autenticato.
+\end{itemize}
+\textbf{Precondizioni}:
+\begin{itemize}
+    \item L'utente ha già creato in precedenza un account base o amministratore.
+\end{itemize}
+\textbf{Postcondizioni}:
+\begin{itemize}
+    \item L'utente viene riconosciuto dal $\textit{sistema}_G$ e quindi viene autenticato.
+\end{itemize}
+\textbf{Scenario principale}:
+\begin{enumerate}
+    \item L'utente inserisce la propria email (\nameref{usecase:12_1});
+    \item L'utente inserisce la password (\nameref{usecase:12_2});
+    \item L'utente accede al $\textit{sistema}_G$ se l'email e password corrispondono.
+\end{enumerate}
+\textbf{Scenari alternativi}:
+\begin{enumerate}
+    \item Se l'utente inserisce:
+    \begin{enumerate}
+        \item Email non valida;
+        \begin{enumerate}
+            \item Manca il carattere "@";
+            \item Campo vuoto;
+        \end{enumerate}
+        \item Campo password vuoto;
+        \item Email o password non corretti;
+    \end{enumerate}
+    \item Visualizza un errore;
+    \item Il $\textit{sistema}_G$ chiede se vuole recuperare la password.
+\end{enumerate}

@@ -1,0 +1,759 @@
+\documentclass[12pt, oneside]{article} 
+\usepackage{amsmath, amsthm, amssymb, calrsfs, wasysym, verbatim, bbm, color, graphicx, geometry, fancyhdr, url, multirow, hyperref, enumitem, comment, float, array, longtable, verbatim, array}
+\usepackage[italian]{babel}
+
+\geometry{tmargin=.75in, bmargin=.75in, lmargin=.75in, rmargin = .75in}
+
+
+\author{RAMtastic6}
+
+%Intestazione
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[R]{Gruppo 14 RAMtastic6\\ramtastic6@gmail.com}
+\fancyfoot[C]{\thepage}
+
+% Linea intestazione
+\renewcommand{\headrulewidth}{1pt} 
+
+% Intestazione documento
+\begin{document}
+% Salta la prima pagina per l'intestazione
+\thispagestyle{empty}
+\title{Analisi Dei Requisiti}
+\maketitle
+\begin{figure}[h]
+  \centering
+  \includegraphics[scale=0.3]{logo.png}
+\end{figure}
+\begin{center}
+    email: ramtastic6@gmail.com
+\end{center}
+
+% Informazioni sul documento
+\section*{Informazioni sul documento} 
+\begin{tabular}{ll}
+Versione: & 2.0.0 \\
+Redattori: &  Visentin S.  Zaupa R. Brotto D. Basso L. Zambon M. Tonietto F. \\ 
+Verificatori: & Tonietto F. Visentin S. Brotto D. Zaupa R.\\
+Destinatari: & Vardanega T., Cardin R., Imola Informatica \\
+Uso: & Esterno
+\end{tabular}
+\newpage
+
+% Registro dei cambiamenti
+\section*{Registro dei Cambiamenti - Changelog}
+\begin{longtable}{|c|c|c|c|p{7cm}|}
+\hline
+\textbf{Versione} & \textbf{Data} & \textbf{Autore} & \textbf{Verificatore} & 
+\textbf{Dettaglio} \\
+\hline
+v 2.0.0 & 2024-04-29 & Visentin S. & Visentin S. & Approvazione e verifica del documento\\
+\hline
+v 1.2.0 & 2024-04-29 & Zambon M. & Tonietto F. & Correzione di alcuni punti secondo i $\textit{feedback}_G$ del prof. Cardin: modificati gli scenari principali, modificati i diagrammi e aggiunti $\textit{riferimenti}_G$ in UC4 e UC30\\
+\hline
+v 1.1.1 & 2024-04-28 &   \begin{tabular}[c]{@{}c@{}}
+    Basso L. \\
+  \end{tabular}  & \begin{tabular}[c]{@{}c@{}}
+    Tonietto F.
+  \end{tabular} & Correzione di alcuni punti secondo i $\textit{feedback}_G$ del prof. Cardin: inserimento diagrammi UC1, UC2 e UC3; approfondimento di UC3.1 e aggiunta del diagramma associato ad esso.\\
+\hline
+v 1.1.0 & 2024-04-27 &   \begin{tabular}[c]{@{}c@{}}
+    Tonietto F. \\
+  \end{tabular}  & \begin{tabular}[c]{@{}c@{}}
+    Visentin S.
+  \end{tabular} & Correzione di alcuni punti secondo i $\textit{feedback}_G$ del prof. Cardin: rettifica funzionamento di UC23; rielaborazione $\textit{precondizioni}_G$ UC7; rielaborazione UC8 e UC8.1; correzione $\textit{UML}_G$ di UC11; aggiunta di Requisiti di Vincolo\\
+\hline 
+v 1.0.0 & 2024-04-06 &   \begin{tabular}[c]{@{}c@{}}
+    Zaupa R. \\
+    Brotto D. \\
+  \end{tabular}  & \begin{tabular}[c]{@{}c@{}}
+    Zaupa R. \\
+    Brotto D. \\
+  \end{tabular} & Approvazione e validazione del documento\\
+\hline
+v 0.6.1 & 2024-04-05 & Zambon M. & Zaupa R. & Cambiati alcuni termini che sono presenti nel glossario per risolvere alcuni problemi con l’automazione dei riferimenti\\
+\hline
+v 0.6.0 & 2024-03-06 & Brotto D. & Filippo T. & Creato UC27 - Logout con relativi ROF (80,81,82) 
+\newline Rimosso il vecchio UC30 e i suoi ROF, su decisione che admin può amministrare solo 1 ristorante
+\\
+\hline
+v 0.5.5 & 2024-03-06 & Zaupa R. & Tonietto F. & Eliminato $\textit{caso d'uso}_G$ UC9 "Ricerca pasti ordinabili". Aggiunto al suo posto nuovo $\textit{caso d'uso}_G$ "Modifica del proprio ordine". Inserito UC29 "$\textit{Ordinazione}_G$ piatto" come sottocaso di UC3. Aggiornato UC6 con nuovi diagrammi e nuovi sottocasi. Aggiunto UC28 "Annullamento dell'ordinazione". Aggiornata la sezione 4 "Requisiti" di conseguenza e aggiunti ROF 42-43-78-79. \\
+\hline
+v 0.5.4 & 2024-03-05 & Zaupa R. & Tonietto F. & Inserito diagramma per gli attori coinvolti (sezione 3.1), modificati casi d'uso ed inserito nuovo diagramma per UC14, UC15, UC17. Inseriti UC32 e UC33 come $\textit{sottocasi d'uso}_G$ di UC31 e sistemati i $\textit{riferimenti}_G$ nei requisiti. Inserita sezione 4.3 Tracciamento e tabella nella sezione 4.3.1\\
+\hline
+v 0.5.3 & 2024-02-29 & Brotto D. & Tonietto F. & UC25 e UC26 cambiati da "Inserimento" a "Modifica";
+\newline Unificati UC5,6,9,11 dai loro sottocasi;
+\newline Creati diagrammi UC19,20;
+\newline Creati ROF:
+\newline per UC26 (68,69,70)
+\newline per UC29 (71,72,73)
+\\
+\hline
+v 0.5.2 & 2024-02-28 & Brotto D. & Tonietto F. & Creati ROF:
+\newline per UC17 (64,65) 
+\newline per UC25 (66,67)
+\\
+\hline
+v 0.5.1 & 2024-02-26 & Brotto D. & Tonietto F. & Corretto diagramma UC6 e creato diagramma UC16; \newline ROF: per UC2(45,46,47,56(new)); 
+\newline Creati ROF: \newline per UC12(57,58,59); \newline per UC16(60,61,62,63); \\
+\hline
+v 0.5.0 & 2024-02-19 & Zaupa R. & Tonietto F. & Inserimento casi d'uso UC31-32-33 con i relativi diagrammi. Ridefinizione di UC11 (con relativo sottocaso d'uso) e UC14 con relativi diagrammi. Inseriti ROF dal 48 a al 50 e UC11 in ROF1. \\
+\hline
+v 0.4.2 & 2024-02-16 & Brotto D. & Tonietto F. & Inserimento requisiti funzionali di UC6, UC15, UC30, UC1 (da ROF 36 a 47), creazione UC30 con relativo diagramma \\
+\hline
+v 0.4.1 & 2024-02-15 & Zaupa R. & Tonietto F. & Inserimento requisiti funzionali di UC11 e UC18 (da ROF 33 a 35), inserimento scenari UC11.1, UC11.2, UC11.3, UC18; inserimento diagramma UC18 \\
+\hline
+v 0.4.0 & 2024-01-17 & Brotto D. & Tonietto F. & Scrittura requisiti funzionali di UC4 (da ROF 23 a 26 e UC4 aggiunto a ROF 13) \\
+\hline
+v 0.3.2 & 2024-01-14 & 
+\begin{tabular}[c]{@{}c@{}}
+    Davide B. \\
+    Samuele V.
+  \end{tabular} 
+& Tonietto F. & Creazione e inserimento sezione requisiti funzionali. Da ROF 1 a ROF 13: Samuele; Da ROF 14 a ROF 22: Brotto\\
+\hline
+v 0.3.1 & 2023-12-20 & Zaupa R. & Tonietto F. & Inserimento diagrammi dei casi d'uso dal 4 al 7; revisione  UC6 e UC7, stesura sotto$\textit{caso d'uso}_G$ UC6.1 e $\textit{caso d'uso}_G$ UCE1; stesura casi d'uso UC21 e UC22 \\
+\hline
+v.0.3.0 & 2023-12-18 & Zambon M. & Brotto D. & Completata stesura $\textit{scenario}_G$ 2 con descrizione casi d'uso \\
+\hline
+v.0.2.2 & 2023-12-17 & Zambon M. & Brotto D. & Iniziata stesura $\textit{scenario}_G$ 2 con diagramma \\
+\hline
+v.0.2.1 & 2023-12-15 & Zambon M. & Brotto D. & Stesura $\textit{scenario}_G$ 1 con diagramma e descrizione casi d'uso \\
+\hline
+v.0.2.0 & 2023-11-28 & Basso L. & Visentin S. & Aggiunta dei casi d'uso da 19 e 20; modificato UC3 ($\textit{ordinazione}_G$ collaborativa) \\
+\hline
+v.0.1.0 & 2023-11-28 & Basso L. & Tonietto F. & Aggiunta ai casi d'uso da 1 a 2 delle estensioni (scenari secondari) \\
+\hline
+v.0.0.5 & 2023-11-27 & Visentin S. & Tonietto F. & Stesura casi d'uso 11 a UC18 \\
+\hline
+v.0.0.4 & 2023-11-25 & Visentin S. & Tonietto F. & Dichiarazione casi d'uso da UC14 a UC18 \\
+\hline
+v.0.0.3 & 2023-11-22 & Zaupa R. & Tonietto F. & Riorganizzazione del documento; stesura dei casi d'uso UC9 e UC10; dichiarazione dei casi d'uso da UC11 a UC13 \\
+\hline
+v.0.0.2 & 2023-11-21 & 
+  \begin{tabular}[c]{@{}c@{}}
+    Zaupa R. \\
+    Visentin S.
+  \end{tabular} 
+  & Tonietto F. & Prima versione, stesura della sezione 1 (Introduzione) e prima stesura della sezione 3 (Casi d'uso), in particolare della sezione 3.1 (Attori) e dei casi d'uso da UC1 a UC8 con i relativi sottocasi\\
+\hline
+\end{longtable}
+\newpage
+
+% Sommario
+\tableofcontents
+\newpage
+
+% Introduzione
+\section{Introduzione}
+\subsection{Scopo del documento}
+Il presente documento ha lo scopo di delineare in maniera approfondita i casi d'uso e i requisiti del progetto $\textit{Easy Meal}_G$, come specificato nel $\textit{capitolato}_G$ d'appalto C3 per il corso di $\textit{Ingegneria del software}_G$ proposto dall'azienda $\textit{Imola Informatica}_G$.
+L'analisi si basa sulla presentazione del $\textit{capitolato}_G$ seguita da incontri diretti con il proponente al fine di approfondirne gli aspetti chiave. Eventuali termini tecnici sono definiti all'interno del documento "Glossario Tecnico".
+\subsection{Scopo del prodotto}
+Il prodotto finale, realizzato tramite un'$\textit{Applicazione Web Responsive}_G$, si propone di realizzare un $\textit{software}_G$ innovativo volto a semplificate il $\textit{processo}_G$ di $\textit{prenotazione}_G$ e $\textit{ordinazione}_G$ nei ristoranti, contribuendo a migliorare l'esperienza per clienti e ristoratori. In particolare, $\textit{Easy Meal}_G$ dovrà consentire agli utenti di personalizzare gli ordini in base alle proprie preferenze, allergie ed esigenze alimentari; interagire direttamente con lo staff del ristorante attraverso una chat integrata; consentire di dividere il conto tra i partecipanti al tavolo.
+\subsection{Riferimenti}
+\subsubsection{Riferimenti normativi}
+\begin{enumerate}
+    \item Presentazione del $\textit{capitolato}_G$ d'appalto C3 - Progetto $\textit{Easy Meal}_G$: \\ \url{https://www.math.unipd.it/~tullio/IS-1/2023/Progetto/C3.pdf}
+    \item Regolamento del progetto didattico: \\ \url{https://www.math.unipd.it/~tullio/IS-1/2023/Dispense/PD2.pdf}
+    \item $\textit{Norme di Progetto}_G$ v1.0.0.
+\end{enumerate}
+\subsubsection{Riferimenti informativi}
+\begin{enumerate}
+    \item Lezione \emph{"$\textit{Analisi Dei Requisiti}_G$ (T5)"} del corso di $\textit{Ingegneria del software}_G$: \\ \url{https://www.math.unipd.it/~tullio/IS-1/2023/Dispense/T5.pdf}
+    \item Lezione \emph{"Analisi e descrizione delle funzionalità: Use Case e relativi diagrammi ($\textit{UML}_G$)"} del corso di $\textit{Ingegneria del software}_G$: \\ \url{https://www.math.unipd.it/~rcardin/swea/2022/Diagrammi%20Use%20Case.pdf}
+    \item Glossario v1.0.0.
+\end{enumerate}
+\newpage
+
+% Descrizione
+\section{Descrizione}
+\subsection{Obiettivi del prodotto}
+Il nostro prodotto mira a fornire un'applicazione web che semplifichi il $\textit{processo}_G$ di $\textit{prenotazione}_G$ dei tavoli nei ristoranti, offrendo agli utenti una piattaforma intuitiva e accessibile. L'obiettivo principale è fornire un'esperienza utente fluida e soddisfacente, consentendo agli utenti di prenotare tavoli in modo efficiente e senza intoppi. Inoltre, il prodotto mira a migliorare l'esperienza complessiva nei ristoranti consentendo agli amministratori di gestire facilmente le prenotazioni e interagire con gli utenti.
+
+\subsection{Funzionalità del prodotto}
+Il nostro prodotto offrirà una serie di funzionalità chiave, tra cui:
+\begin{itemize}
+\item \textbf{Prenotazione dei tavoli}: Gli utenti potranno cercare ristoranti, visualizzare disponibilità, e prenotare tavoli e piatti in base alle loro preferenze;
+\item \textbf{Gestione delle prenotazioni}: Gli amministratori potranno visualizzare, accettare o rifiutare le prenotazioni, nonché comunicare con gli utenti in tempo reale;
+\item \textbf{Personalizzazione del profilo}: Gli utenti potranno inserire informazioni personali, allergie e intolleranze nel proprio profilo per una migliore esperienza di $\textit{prenotazione}_G$;
+\item \textbf{Recensioni e $\textit{feedback}_G$}: Gli utenti potranno lasciare recensioni sui ristoranti e interagire con gli altri utenti attraverso il $\textit{sistema}_G$ di $\textit{feedback}_G$.
+\end{itemize}
+
+
+\newpage
+
+% Diagrammi dei casi d'uso
+\section{Casi d'uso}
+Questa sezione contiene la lista dei casi d'uso individuati analizzando il $\textit{capitolato}_G$ d'appalto e discutendo con il proponente oltre che con i professori di riferimento. Ogni $\textit{caso d'uso}_G$ è corredato da un $\textit{diagramma dei casi d'uso}_G$ oltre che dalla descrizione del $\textit{caso d'uso}_G$ stesso caratterizzato da attori principali, secondari, $\textit{precondizioni}_G$, $\textit{postcondizioni}_G$, $\textit{scenario}_G$ principale e scenari alternativi.
+\subsection{Attori}
+L'$\textit{attore}_G$ è l'entità che interagisce con il $\textit{sistema}_G$ svolgendo delle attività, intesa sia come persona che come $\textit{sistema}_G$ terzo/esterno. Ciascuna entità è caratterizzata dall’insieme delle azioni che può compiere. \\
+Il $\textit{sistema}_G$ dispone di cinque attori principali, distinti come segue:
+\begin{itemize}
+    \item \textbf{Utente non autenticato}: un utente non riconosciuto dal $\textit{sistema}_G$, poiché non ha ancora  effettuato il login o la registrazione;
+    \item \textbf{Utente autenticato}: un utente che ha effettuato il login (come utente base o come amministratore) che dunque è riconosciuto dal $\textit{sistema}_G$;
+    \item \textbf{Amministratore}: utente autenticato che detiene i privilegi di amministratore di un ristorante;
+    \item \textbf{Utente generico}: utente che detiene le funzionalità degli utenti autenticati e non autenticati;
+    \item \textbf{Utente base}: un utente che ha effettuato il login ed è dotato di accessi di base al $\textit{sistema}_G$.
+\end{itemize}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.4\linewidth]{Attori_coinvolti.png}
+\caption{Diagramma degli attori coinvolti}
+\end{figure}
+\newpage
+
+% $\textit{caso d'uso}_G$ UC1 - Registrazione come utente base
+\input{uc/uc1}
+
+% $\textit{caso d'uso}_G$ UC1.1 - Inserimento credenziali
+\input{uc/uc1_1}
+
+%caso d'uso UC1.2 - Inserimento intolleranze
+\input{uc/uc1_2}
+
+% $\textit{caso d'uso}_G$ UC3 - Inserimento informazioni utente
+%\input{uc/uc1_4}
+
+% $\textit{diagramma dei casi d'uso}_G$ UCD2 - $\textit{Prenotazione}_G$ tavolo
+\newpage
+
+% $\textit{caso d'uso}_G$ UC2 - Registrazione come amministratore
+\input{uc/uc2}
+\input{uc/uc2_1}
+\input{uc/uc2_2}
+
+% $\textit{caso d'uso}_G$ UC4 - Accettazione richiesta prenotazione
+%\input{uc/uc2_2}
+
+% $\textit{caso d'uso}_G$ UC5 - Rifiuto richiesta prenotazione
+%\input{uc/uc2_3}
+
+%caso d'uso UC2.1 - Ricerca ristorante
+%\input{uc/uc2_1}
+
+% $\textit{caso d'uso}_G$ UC3 - $\textit{Ordinazione}_G$ collaborativa
+\input{uc/uc3}
+
+% $\textit{caso d'uso}_G$ UC4 - Interazione con lo staff
+\input{uc/uc4}
+%\input{uc/uc4_1}
+%\input{uc/uc4_1}
+
+% $\textit{caso d'uso}_G$ UC5 - Divisione del conto
+\input{uc/uc5}
+
+% $\textit{caso d'uso}_G$ UC6 - Consultazione delle prenotazioni da parte dell'amministratore
+\input{uc/uc6}
+
+%caso d'uso UC6.1 - Consultazione degli ingredienti
+\input{uc/uc6_1}
+
+%caso d'uso UC6.2 - Consultazione delle ordinazioni
+\input{uc/uc6_2}
+
+% $\textit{caso d'uso}_G$ UC7 - Inserimento di $\textit{feedback}_G$ e recensioni
+\input{uc/uc7}
+
+% $\textit{caso d'uso}_G$ UC8 - Visualizzazione degli ordini di un tavolo
+\input{uc/uc8}
+
+% $\textit{caso d'uso}_G$ UC9 - Ricerca pasti ordinabili
+\input{uc/uc9}
+
+%caso d'uso UC10 - Rimozione della recensione rilasciata
+\input{uc/uc10}
+
+%caso d'uso UC11 - Visualizzazione del menu' del ristorante
+\input{uc/uc11}
+
+%caso d'uso UC11.1 - Visualizzazione piatto all'interno del menu'
+\input{uc/uc11_1}
+
+%caso d'uso C12 - Login
+\input{uc/uc12}
+\input{uc/uc12_1}
+\input{uc/uc12_2}
+\newpage
+
+%caso d'uso C13 - Rimozione della $\textit{prenotazione}_G$ del tavolo
+\input{uc/uc13}
+
+%caso d'uso 14 - Modifica informazioni account dell'amministratore (esempio coperti disponibili)
+\input{uc/uc14}
+
+%caso d'uso 15 - Visualizzazione piatti per l'amministratore
+\input{uc/uc15}
+
+%caso d'uso 15.1 - Visualizzazione lista ingredienti
+\input{uc/uc15_1}
+
+%caso d'uso 15.2 - Visualizzazione dettagli prenotazione
+\input{uc/uc15_2}
+
+%caso d'uso 16 - Recupero password
+\input{uc/uc16}
+
+%caso d'uso 17 - Visualizzare lista prenotazioni (utente base)
+\input{uc/uc17}
+
+%caso d'uso 17.1 - Visualizzazione prenotazione
+\input{uc/uc17_1}
+
+%caso d'uso 18 - Applicazione coupon al conto finale
+\input{uc/uc18}
+
+%caso d'uso 19 - Conferma $\textit{prenotazione}_G$ (utente amministratore)
+\input{uc/uc19}
+
+%caso d'uso 20 - Rifiuto $\textit{prenotazione}_G$ (utente amministratore)
+\input{uc/uc20}
+
+%caso d'uso 21 - Visualizzazione recensioni e feedback
+\input{uc/uc21}
+
+%caso d'uso 22 - Risposta ad una recensione da parte dell'amministratore
+\input{uc/uc22}
+\input{uc/uc22_1}
+\input{uc/uc22_2}
+
+% $\textit{caso d'uso}_G$ 23
+\input{uc/uc23}
+
+\input{uc/uc24}
+
+% $\textit{caso d'uso}_G$ 25 Inserimento intolleranze
+\input{uc/uc25}
+
+% $\textit{caso d'uso}_G$ 26 Inserimento informazioni utente
+\input{uc/uc26}
+
+% $\textit{caso d'uso}_G$ 27 Logout
+\input{uc/uc27}
+
+% $\textit{caso d'uso}_G$ 28 Annullamento ordinazione
+\input{uc/uc28}
+
+\input{uc/uc29}
+\input{uc/uc29_1}
+\newpage
+%case d'uso 30 Interazione con il cliente
+\input{uc/uc30}
+\newpage
+% $\textit{caso d'uso}_G$ 31 Modifica menu' del ristorante
+\input{uc/uc31}
+
+%caso d'uso 31.1 Inserimento piatto nel menu' del ristorante
+\input{uc/uc31_1}
+
+%caso d'uso 31.2 Modifica piatto del menu' del ristorante
+\input{uc/uc31_2}
+
+%caso d'uso 31.3 Eliminazione piatto del menu' del ristorante
+\input{uc/uc31_3}
+
+%
+% INIZIO ERRORI
+%
+
+%caso d'uso E1 - Visualizzazione errore $\textit{feedback}_G$ non inserito
+%\input{uc/ucE1}
+
+%\input{uc/ucE2}
+
+% Requisiti
+\section{Requisiti}
+In questa sezione sono stilati i requisiti ottenuti in fase di analisi e derivanti da casi d'uso, il $\textit{capitolato}_G$ d'appalto e verbali sia interni che esterni. 
+\subsection{Terminologia}
+I requisiti sono identificati dal seguente formato di codice:
+\[
+\text{R[Priorità][Tipo] [Id]}
+\]
+
+Dove:
+\begin{itemize}
+    \item \textbf{R} sta per "$\textit{Requisito}_G$";
+    \item \textbf{Priorità} può essere:
+    \begin{itemize}
+        \item O (obbligatorio): ovvero un $\textit{requisito}_G$ che deve essere necessariamente soddisfatto alla fine della buona riuscita del progetto;
+        \item D (desiderabile): ovvero un $\textit{requisito}_G$ che è apprezzato dal committente ma che non compromette il progetto.
+    \end{itemize}
+    \item \textbf{Tipo} può essere:
+    \begin{itemize}
+        \item F (funzionale): ovvero un $\textit{requisito}_G$ che indica una funzionalità del $\textit{sistema}_G$ e che ne definisce il comportamento;
+        \item Q (qualità): ovvero un $\textit{requisito}_G$ che definisce le caratteristiche di qualità del prodotto $\textit{software}_G$;
+        \item V (vincolo): specifica i limiti e le restrizioni imposte dal $\textit{capitolato}_G$ e dal committente.
+    \end{itemize}
+    \item \textbf{Id} rappresenta un numero progressivo che identifica il $\textit{requisito}_G$ appartenente ad una tipologia.
+\end{itemize}
+\newpage
+\subsection{Requisiti funzionali}
+La seguente sezione dettaglia i requisiti funzionali, delineando le varie funzionalità del $\textit{sistema}_G$, ovvero le azioni eseguibili dallo stesso e le informazioni che il $\textit{sistema}_G$ è in grado di fornire. La presenza di ciascun $\textit{requisito}_G$ è giustificata attraverso l'indicazione della fonte, che può essere un $\textit{caso d'uso}_G$ (UC) specifico o essere derivata direttamente dal testo del $\textit{capitolato}_G$ d'appalto.
+In questa sezione i requisiti si suddividono in:
+\begin{itemize}
+    \item ROF: $\textit{requisiti obbligatori funzionali}_G$.
+    \item RDF: $\textit{requisiti desiderabili funzionali}_G$.
+\end{itemize}
+
+\begin{longtable}{|c|p{14cm}|p{2cm}|}
+    \hline
+    \emph{Codice} & \centering{\emph{Descrizione}} &  \emph{Fonte} \\
+    \hline
+    \endfirsthead
+    \endhead
+
+    ROF 1&  L'utente deve poter selezionare un piatto dalla lista dei piatti disponibili.  & UC3.1, UC9  \\
+    \hline
+    ROF 2& Il $\textit{sistema}_G$ deve inviare una notifica se l'utente base sta aggiungendo un piatto che contiene elementi a cui è allergico/intollerante. & UC3\\
+    \hline
+    ROF 3& L'utente deve visualizzare i pasti con i loro ingredienti e può modificarli, aggiungendo o togliendo ingredienti. & UC3\\
+    \hline
+    ROF 4& L'utente base deve essere in grado di visualizzare il riepilogo di quanto ordinato e di confermare oppure di cancellarlo. & UC3 \\
+    \hline
+    RDF 5& Il $\textit{sistema}_G$ deve poter inviare una notifica ($\textit{push}_G$) di $\textit{prenotazione}_G$ effettuata ai ristoranti.& UC3 \\
+    \hline
+    ROF 6& L'utente deve poter inserire le informazioni (data, orario, persone, nomi utenti) per effettuare una $\textit{prenotazione}_G$. & UC23\\
+    \hline
+    RDF 7& Il $\textit{sistema}_G$ deve poter inviare una notifica ($\textit{push}_G$) all'amministratore per comunicare la richiesta di $\textit{prenotazione}_G$, che può accettare e rifiutare. & UC23\\
+    \hline
+    ROF 8& L'utente deve poter essere in grado di cancellare la $\textit{prenotazione}_G$. & UC13, UC23 \\
+    \hline
+    ROF 9& Il $\textit{sistema}_G$ deve poter negare la $\textit{prenotazione}_G$ se il ristorante non possiede abbastanza posti o tavoli. & UC23 \\
+    \hline
+    ROF 10& L'utente base deve poter visualizzare una lista di ristoranti filtrata per nome oppure data, luogo, tipologia cucina. & UC24 \\
+    \hline
+    ROF 11& L'utente base deve poter selezionare un ristorante.  & UC4, UC23 \\
+    \hline
+    ROF 12& L'amministratore deve essere in grado di poter visualizzare una lista di prenotazioni in attesa. & UC19, UC20 \\
+    \hline
+    ROF 13& L'amministratore deve poter selezionare una specifica richiesta di $\textit{prenotazione}_G$ dalla lista visualizzata. & UC19, UC20 \\
+    \hline
+    ROF 14& L'amministratore deve poter accettare la richiesta di $\textit{prenotazione}_G$ selezionata. & UC19 \\
+    \hline
+    ROF 15& Il $\textit{sistema}_G$, dopo l'accettazione, aggiunge nell'area "prenotazioni" dell'utente la $\textit{prenotazione}_G$. & UC19 \\
+    \hline
+    ROF 16& Il $\textit{sistema}_G$ deve notificare gli utenti coinvolti (nel caso di $\textit{prenotazione}_G$ collaborativa) l'accettazione della $\textit{prenotazione}_G$. & UC19 \\
+    \hline
+    ROF 17& Il $\textit{sistema}_G$ deve fornire un'interfaccia per consentire all'amministratore di verificare la disponibilità di posti in base alle specifiche della $\textit{prenotazione}_G$ selezionata. & UC19, UC20 \\
+    \hline
+    ROF 18& Il $\textit{sistema}_G$ deve ridurre il numero di posti disponibili in base alle specifiche della $\textit{prenotazione}_G$ dopo che questa è stata accettata. & UC19 \\
+    \hline
+    ROF 19& L'amministratore deve poter rifiutare la richiesta di $\textit{prenotazione}_G$ selezionata. & UC20 \\
+    \hline
+    ROF 20& Il $\textit{sistema}_G$ deve notificare gli utenti coinvolti (nel caso di $\textit{prenotazione}_G$ collaborativa) il rifiuto della $\textit{prenotazione}_G$. & UC20 \\
+    \hline
+    ROF 21& Il $\textit{sistema}_G$ deve creare un canale di comunicazione tra l'utente e l'amministratore del ristorante quando l'utente lo richiede. & UC4 \\
+    \hline
+    ROF 22& L'utente e l'amministratore devono poter scambiare messaggi in modo bidirezionale tramite l'interfaccia di comunicazione. & UC4, UC30 \\
+    \hline
+    ROF 23& Durante la comunicazione, il $\textit{sistema}_G$ deve inviare notifiche $\textit{push}_G$ per informare l'utente e l'amministratore dei nuovi messaggi ricevuti. & UC4, UC30 \\
+    \hline
+    ROF 24&  La cancellazione della $\textit{prenotazione}_G$ può essere effettuata con al massimo un giorno di anticipo rispetto alla data della $\textit{prenotazione}_G$.  & UC13 \\ 
+    \hline
+    ROF 25& Il $\textit{sistema}_G$ deve permettere di pagare il conto in base alla modalità scelta (divisione equa, divisione proporzionale) da chi ha creato la $\textit{ordinazione}_G$ collaborativa. & UC5, UC5.1, UC5.2 \\
+    \hline
+    ROF 26& L'utente base può pagare l'intero conto se nessun utente non ha ancora effettuato il pagamento. & UC5.3 \\
+    \hline
+    ROF 27& L'amministratore deve poter essere in grado di modificare il menu' del proprio ristorante, aggiungendo, rimuovendo pietanze e modificando le informazioni del singolo piatto (nome, ingredienti e prezzo). & UC31 \\
+    \hline
+    RDF 28& La modifica del menu' da parte dell'amministratore non deve causare problemi di sincronizzazione nella visualizzazione, ricerca del menu' e nell'$\textit{ordinazione}_G$ da parte dell'utente base. &  UC3, UC11, UC31 \\
+    \hline
+    RDF 29& Si deve permettere all'utente base di poter inserire un coupon prima di pagare il conto, che, se applicato, deve far ricalcolare al $\textit{sistema}_G$ il prezzo del conto. & UC18 \\
+    \hline
+
+    ROF 30& Il $\textit{sistema}_G$ deve consentire all'amministratore di visualizzare la lista delle prenotazioni effettuate per proprio ristorante. & UC6, UC15 \\
+    \hline
+    ROF 31& L'amministratore deve poter visualizzare i dettagli di una specifica $\textit{prenotazione}_G$. & UC6 \\
+    \hline
+    ROF 32& L'amministratore deve poter visualizzare lo stato delle ordinazioni associate alla $\textit{prenotazione}_G$. & UC6 \\
+    \hline
+    RDF 33& Il $\textit{sistema}_G$ deve fornire all'amministratore la possibilità di visualizzare la lista totale degli ingredienti inclusi nella $\textit{prenotazione}_G$. & UC6 \\
+    \hline
+    ROF 34& Il $\textit{sistema}_G$ deve consentire all'amministratore di visualizzare tutti gli ordini confermati per il ristorante selezionato. & UC15 \\
+    \hline
+    ROF 35& Il $\textit{sistema}_G$ deve permettere di annullare l'$\textit{ordinazione}_G$ collaborativa nel tempo utile per farlo & UC28 \\
+    \hline
+    RDF 36& Il $\textit{sistema}_G$ invia una notifica a tutti gli utenti associati alla $\textit{prenotazione}_G$ la cui $\textit{ordinazione}_G$ collaborativa è stata annullata & UC28 \\
+    \hline
+    ROF 37& Il $\textit{sistema}_G$ deve fornire un'interfaccia per consentire agli utenti non autenticati di registrarsi come utenti base. & UC1 \\
+    \hline
+    ROF 38& L'utente/L'amministratore deve poter inserire le sue informazioni personali durante la registrazione come nome, cognome, email, password ed eventuali intolleranze. & UC1, UC2 \\
+    \hline
+    ROF 39& L'utente/L'amministratore deve poter confermare di volersi registrare con le informazioni fornite prima di completare la registrazione. & UC1, UC2 \\
+    \hline
+    ROF 40& Il $\textit{sistema}_G$ deve gestire correttamente gli errori nell'inserimento delle informazioni durante la registrazione. & UC1, UC2 \\
+    \hline 
+    ROF 41& L'utente base e l'amministratore devono poter visualizzare il menu' del ristorante selezionato & UC3, UC11\\
+    \hline
+    ROF 42& L'amministratore deve poter modificare le informazioni del proprio ristorante (nome, indirizzo, orari, coperti e tipologia di cucina) & UC14\\
+    \hline
+    RDF 43& La modifica delle informazioni del ristorante da parte dell'amministratore non deve causare problemi di sincronizzazione nella visualizzazione, ricerca del ristorante e nell'$\textit{ordinazione}_G$ da parte dell'utente base & UC3, UC14 \\
+    \hline
+    ROF 44& L'utente autenticato deve poter visualizzare una lista con le prenotazioni passate e future & UC17 \\
+    \hline
+    ROF 45& L'utente autenticato deve poter rilasciare una recensione (con anche una votazione di gradimento tramite stelle) sui ristoranti nei quali ha effettuato almeno una $\textit{prenotazione}_G$ & UC7 \\
+    \hline
+    ROF 46& L'utente autenticato deve poter visualizzare gli ordini di un tavolo & UC8 \\
+    \hline
+    ROF 47& L'utente autenticato deve poter visualizzare le recensioni rilasciate ed eventualmente eliminarle & UC10 \\
+    \hline
+    ROF 48& L'utente generico può visualizzare le recensioni di un ristorante e visualizzare per ognuna di essa le relative informazioni & UC21 \\
+    \hline
+    ROF 49& L'amministratore deve poter inserire le informazioni del ristorante di cui è amministratore & UC2 \\
+    \hline
+    ROF 50& L'utente/L'amministratore deve poter inserire la propria email e la password durante la fase di login.  & UC12 \\
+    \hline
+    ROF 51& Il $\textit{sistema}_G$ deve verificare che le informazioni inserite nel login corrispondano ad un account già esistente nel $\textit{sistema}_G$.  & UC12 \\
+    \hline
+    ROF 52& Il $\textit{sistema}_G$ deve predisporre in fase di login di un'opzione per il recupero della password  & UC12 \\
+    \hline
+    ROF 53& L'utente non autenticato deve poter inserire la propria email durante il $\textit{processo}_G$ di recupero password.  & UC16 \\
+    \hline
+    ROF 54 & Se l'email inserita dall'utente corrisponde ad un account nel $\textit{sistema}_G$, il $\textit{sistema}_G$ deve inviare un'email contenente un link per il recupero della password.  & UC16 \\
+    \hline
+    ROF 55 & Se l'email inserita dall'utente non corrisponde a un account nel $\textit{sistema}_G$, il $\textit{sistema}_G$ lo mostra a schermo.  & UC16 \\
+    \hline
+    ROF 56 & L'utente deve poter accedere a una sezione dedicata per il recupero della password tramite il link fornito nell'email di recupero password.  & UC16 \\
+    \hline
+    ROF 57 & Il $\textit{sistema}_G$ deve mostrare una lista di prenotazioni per l'utente base, ognuna con le seguenti informazioni:
+    nome del ristorante, data, ora, stato della $\textit{prenotazione}_G$ (se è ancora attiva o già completata) e numero di persone coinvolte. & UC17 \\
+    \hline
+    RDF 58 & Il $\textit{sistema}_G$ ordina la lista delle prenotazioni per data della $\textit{prenotazione}_G$.  & UC17 \\
+    \hline
+
+    ROF 59 & L'utente base deve poter inserire le proprie allergie/intolleranze, se presenti, durante la modifica del profilo.  & UC25  \\
+    \hline
+
+    ROF 60 & L'utente autenticato e l'amministratore devono poter inserire nome, cognome, email e password nell'area di modifica delle proprie informazioni.  & UC26  \\
+    \hline
+    ROF 61 & Il $\textit{sistema}_G$ deve verificare che l'email inserita dall'utente autenticato sia valida e non sia già presente nel $\textit{sistema}_G$.  & UC26  \\
+    \hline
+    ROF 62 & L'utente base autenticato deve poter accedere alla funzionalità di $\textit{ordinazione}_G$ di un piatto.  & UC3.1  \\
+    \hline
+    ROF 63 & Il $\textit{sistema}_G$ deve consentire all'utente di visualizzare, aggiungere e togliere ingredienti del piatto selezionato.  & UC3.1, UC9  \\
+    \hline
+    ROF 64 & L'amministratore deve poter visualizzare le recensioni del proprio ristorante. & UC22 \\ 
+    \hline
+    ROF 65 & L'amministratore deve poter rispondere alle recensioni del proprio ristorante. & UC22 \\
+    \hline
+    ROF 66 & L'utente deve poter visualizzare le risposte alla propria recensione. & UC22 \\
+    \hline
+    ROF 67 & Il $\textit{sistema}_G$ deve poter consentire di modificare l'ordine ad un utente prima della scadenza del tempo previsto, inserendo piatti, modificando ingredienti e quantità delle pietanze ordinate. & UC9 \\
+    \hline
+    RDF 68 & Il $\textit{sistema}_G$ permette di far visualizzare all'amministratore il dettaglio degli ingredienti necessari per ogni giornata. & UC15 \\
+    \hline
+    ROF 69 & Il $\textit{sistema}_G$ deve consentire all'utente autenticato di accedere alla funzionalità di logout. & UC27 \\
+    \hline
+    ROF 70 & Dopo che l'utente ha selezionato l'opzione di logout, il $\textit{sistema}_G$ deve richiedere una conferma esplicita dall'utente prima di procedere con la disconnessione. & UC27 \\ 
+    \hline
+    ROF 71 & Dopo aver terminato la sessione dell'utente, il $\textit{sistema}_G$ deve reindirizzare l'utente alla pagina di accesso o a una pagina di destinazione predefinita. & UC27 \\
+    \hline
+    ROF 72 & L'utente autenticato deve poter visualizzare le informazioni del suo profilo. & UC29 \\ 
+    \hline
+
+    ROF 73 & L'amministratore deve poter visualizzare tutte le chat aperte in precedenza da altri utenti. & UC30 \\
+    \hline
+    ROF 74 & L'amministratore deve poter rispondere ai messaggi inviati da gli utenti & UC30 \\
+    \hline
+\caption{Requisiti funzionali}
+\end{longtable}
+
+\subsection{Requisiti di qualità}
+Questa sezione delinea le specifiche qualitative che devono essere rispettate per garantire la qualità del $\textit{sistema}_G$.
+\begin{longtable}{|c|p{14cm}|p{2cm}|}
+    \hline
+    \emph{Codice} & \centering{\emph{Descrizione}} &  \emph{Fonte} \\
+    \hline
+    \endfirsthead
+    \endhead
+    ROQ 1&  Il codice sorgente deve essere coperto da $\textit{test}_G$ per almeno l'80\% e ciò deve essere dimostrato tramite report. & $\textit{Capitolato}_G$ \\
+    \hline
+    ROQ 2 & Deve essere prodotta della documentazione che discuta delle scelte implementative e progettuali riportandone le relative motivazioni. & $\textit{Capitolato}_G$ \\
+    \hline
+    ROQ 3 & Deve essere prodotta della documentazione che discuta delle problematiche aperte e di eventuali soluzioni soluzioni da esplorare. & $\textit{Capitolato}_G$ \\
+    \hline
+    RDQ 4 & Deve essere fornita un'analisi rispetto al carico massimo supportato in numero di dispositivi e di quale sarebbe il servizio cloud piu' adatto per supportarlo analizzando prezzo, stabilità del servizio e assistenza. & $\textit{Capitolato}_G$ \\
+    \hline
+    ROQ 5 & Devono essere rispettate le norme definite nel documento $\textit{Norme di Progetto}_G$. & $\textit{Verbale}_G$ interno \\
+    \hline
+    ROQ 6 & Devono essere rispettate le metriche e i vincoli definiti in $\textit{Piano di Qualifica}_G$. & $\textit{Verbale}_G$ interno \\
+    \hline
+\caption{Requisiti di qualità}
+\end{longtable}
+    
+\subsection{Requisiti di vincolo}
+Questa sezione delinea i limiti e le restrizioni che il $\textit{sistema}_G$ deve tenere conto per adempiere alle esigenze del proponente.
+\begin{longtable}{|c|p{14cm}|p{2cm}|}
+    \hline
+    \emph{Codice} & \centering{\emph{Descrizione}} &  \emph{Fonte} \\
+    \hline
+    \endfirsthead
+    \endhead
+    ROV 1& L'interfaccia utente deve essere un'$\textit{Applicazione Web Responsive}_G$.  & $\textit{Capitolato}_G$  \\
+    \hline
+    ROV 2& La struttura del progetto prevede la completa separazione tra \textit{backend} e \textit{frontend}  & $\textit{Verbale}_G$ esterno  \\
+    \hline
+    ROV 3& L'implementazione del \textit{frontend} è realizzata in \textit{Next.js}  & $\textit{Verbale}_G$ Esterno  \\
+    \hline
+    ROV 4& L'implementazione del \textit{backend} è realizzata in \textit{NestJS}  & $\textit{Verbale}_G$ Esterno  \\
+    \hline
+    ROV 5& L'applicazione utilizza \textit{Node.js} versione 21 & $\textit{Verbale}_G$ Interno  \\
+    \hline
+    ROV 6& Il database è realizzato con \textit{PostgreSQL}  & $\textit{Verbale}_G$ Interno  \\
+    \hline
+    ROV 7& Le funzionalità che richiedono una comunicazione in tempo reale tra più utenti sono gestite dalla libreria \textit{Socket.IO}  & $\textit{Verbale}_G$ Esterno  \\
+    \hline
+    ROV 8& Architettura basata a micro-servizi & $\textit{Verbale}_G$ Interno  \\
+    \hline
+    ROV 9& I browser supportati sono: \textit{Firefox} 67+; \textit{Chrome} 64+; \textit{Edge} 79+; \textit{Safari} 12+  & $\textit{Verbale}_G$ Interno  \\
+    \hline
+\caption{Requisiti di vincolo}
+\end{longtable}
+
+
+\setlength{\extrarowheight}{8pt}
+\subsection{Tracciamento}
+\subsubsection{Fonte - Requisiti}
+\begin{longtable}{|p{4cm}|p{12cm}|}
+    \hline
+    \emph{Fonte} & \emph{Requisiti}\\
+    \hline
+    \endfirsthead
+    \endhead
+    $\textit{Capitolato}_G$ & ROQ 1, ROQ 2, ROQ 3, RDQ 4, ROV 1 \\
+    \hline
+    $\textit{Verbale}_G$ interno & ROQ 5, ROQ 6, ROV 5, ROV 6, ROV 7, ROV 8, ROV 9 \\
+    \hline
+    $\textit{Verbale}_G$ esterno & ROV 2, ROV 3, ROV 4, ROV 7 \\
+    \hline
+    UC1 & ROF 37, ROF 38, ROF 39, ROF 40 \\
+    \hline
+    UC2 & ROF 38, ROF 39, ROF 40, ROF 49  \\
+    \hline
+    UC3 & ROF 2, ROF 3, ROF 4, RDF 5, RDF 28, ROF 41, RDF 43 \\
+    \hline 
+    UC3.1 & ROF1, ROF 62, ROF 63 \\
+    \hline
+    UC4 & ROF 11, ROF 21, ROF 22, ROF 23 \\
+    \hline
+    UC5 & ROF 25 \\
+    \hline
+    UC5.1 & ROF 25 \\
+    \hline
+    UC5.2 & ROF 25 \\
+    \hline
+    UC5.3 & ROF 26 \\
+    \hline
+    UC6 & ROF 30, ROF 31, ROF 32, RDF 33 \\
+    \hline
+    UC7 & ROF 45  \\
+    \hline
+    UC8 & ROF 46 \\
+    \hline
+    UC9 & ROF 1, ROF 63, ROF 67 \\
+    \hline
+    UC10 & ROF 47 \\
+    \hline
+    UC11 & RDF 28, ROF 41 \\
+    \hline
+    UC12 & ROF 50, ROF 51, ROF 52 \\
+    \hline
+    UC13 & ROF 8, ROF 24 \\
+    \hline
+    UC14 & ROF 42, RDF 43 \\
+    \hline
+    UC15 & ROF 30, ROF 34, RDF 68 \\
+    \hline
+    UC16 & ROF 53, ROF 54, ROF 55, ROF 56 \\
+    \hline
+    UC17 & ROF 44, ROF 57, RDF 58 \\
+    \hline
+    UC18 & RDF 29 \\
+    \hline
+    UC19 & ROF 12, ROF 13, ROF 14, ROF 15, ROF 16, ROF 17, ROF 18 \\
+    \hline
+    UC20 & ROF 12, ROF 13, ROF 17, ROF 19, ROF 20\\
+    \hline
+    UC21 & ROF 48 \\
+    \hline
+    UC22 & ROF 64, ROF 65, ROF 66 \\
+    \hline
+    UC23 & ROF 6, RDF 7, ROF 8, ROF 9, ROF 11 \\
+    \hline
+    UC24 & ROF 10\\
+    \hline
+    UC25 & ROF 59 \\
+    \hline
+    UC26 & ROF 60, ROF 61 \\
+    \hline
+    UC27 & ROF 69, ROF 70, ROF 71 \\
+    \hline
+    UC28 & ROF 35, RDF 36 \\
+    \hline
+    UC29 & ROF 72 \\
+    \hline
+    UC30 & ROF 22, ROF 23, ROF 73, ROF 74 \\
+    \hline
+    UC31 & ROF 27, RDF 28 \\
+    \hline
+
+\caption{Tracciamento Fonte - Requisiti}
+    
+\end{longtable}
+
+
+
+\begin{comment}
+
+\paragraph{Requisiti di qualità}
+\begin{longtable}{|p{4cm}|p{12cm}|}
+    \hline
+    \emph{Fonte} & \emph{Requisiti}\\
+    \hline
+    \endfirsthead
+    \endhead
+    UC1 &  \\
+    \hline
+\caption{Tracciamento Fonte - Requisiti di qualità}
+    
+\end{longtable}
+\paragraph{Requisiti di vincolo}
+\begin{longtable}{|p{4cm}|p{12cm}|}
+    \hline
+    \emph{Fonte} & \emph{Requisiti}\\
+    \hline
+    \endfirsthead
+    \endhead
+    UC1 &  \\
+    \hline
+\caption{Tracciamento Fonte - Requisiti di vincolo}
+    
+\end{longtable}
+         ROF 84 & L'amministratore deve poter visualizzare le informazioni del proprio ristorante & UC29.1 \\
+    \hline
+    ROF 1 & L'utente base deve poter visualizzare i pasti ordinabili & UC3, UC11\\
+    \hline
+
+    RDF 2 & L'utente base deve poter inserire dei parametri per filtrare i pasti ordinabili  & UC3 \\
+    \hline
+    ROF 72 & L'utente deve poter selezionare un piatto dalla lista dei piatti disponibili.  & UC3.1, UC9  \\
+    \hline
+     ROF 68 & L'utente autenticato deve poter accedere alla funzionalità di modifica delle proprie informazioni utente.  & UC26  \\
+    \hline
+         ROF 66 & L'utente autenticato deve poter accedere alla funzionalità di modifica del proprio profilo  & UC25 \\
+    \hline
+    ROF 36 & L'amministratore deve poter consultare il proprio ristorante e le prenotazioni associate. & UC6, UC15 \\
+    \hline
+    ROF 28 & L'utente base deve poter ricercare un ristorante per nome & UC24 \\
+    \hline
+    ROF 29 & L'utente base deve poter ricercare un ristorante per data e luogo, tipologia cucina & UC24 \\
+    \hline
+    ROF 30 & L'utente base deve poter visualizzare una lista dei ristoranti come risultato della ricerca & UC24 \\
+    \hline
+    ROF 23 & Il $\textit{sistema}_G$ deve permettere all'utente di effettuare una ricerca dei ristoranti disponibili. & UC4 \\
+    \hline
+\end{comment}
+
+\end{document}
