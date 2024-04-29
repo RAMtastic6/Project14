@@ -36,10 +36,8 @@ def repl_all_occurrences(glossary_path: str, filename: str, content_folder: str 
         # in teoria basta splittare il contentuto del file
         # e salvarsi i singoli elementi all'interno 
         # di una lista (funzinoe list.split())
-        f = open(n, "r")
-        content = ""
-        content = f.read()
-        f.close()
+        with open(n, "r") as f:
+            content = f.read()
 
         # splittare il contenuto delle righe
         lines = content.split("\n")

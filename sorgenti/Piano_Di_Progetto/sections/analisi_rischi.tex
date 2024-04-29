@@ -1,9 +1,23 @@
 \section{Analisi dei Rischi}
-\subsection{Obiettivi}
-Questa parte del documento si focalizza sull'elencare e descrivere le possibili fonti di \textit{Rischio_G} all'interno di un progetto software.
+Questa parte del documento si focalizza sull'elencare e descrivere le possibili fonti di rischio all'interno di un progetto software al fine di mitigare gli impatti delle difficoltà riscontrate.\\
+Il processo di gestione dei rischi si articola essenzialmente in 4 fasi:
+\begin{enumerate}
+    \item \textbf{Identificazione}:\\
+    in questa fase ci si concentra sull'individuare le possibili fonti di rischio che potrebbero influenzare gli obiettivi del progetto;
+    \item \textbf{Analisi}:\\
+    in questa fase l'intento è fornire una probabilità di occorrenza e pericolosità oltre che valutare le conseguenze dei rischi individuati;
+    \item \textbf{Pianificazione}:\\
+    consiste nell'adozione di misure per prevenire e mitigare l'incidenza e l'impatto dei rischi individuati e analizzati;
+    \item \textbf{Controllo}:\\
+    consiste nel rilevare i rischi durante lo svolgimento del progetto, nell'attuare delle misure di prevenzione precedentemente stabilite e raffinare le strategie, eventualmente ridefinendo la fase di Analisi Dei Rischi.
+\end{enumerate}
+
 \subsection{Rischi tecnologici}
-\subsubsection{Scarsa esperienza tecnologica}
-\begin{tabular}{|c|p{10cm}|}
+%
+% RT1
+%
+\subsubsection[RT1]{RT1 - Scarsa esperienza tecnologica}\label{rt:1}
+\begin{longtable}{|c|p{12cm}|}
 \hline
 \textbf{Descrizione} & Il gruppo ha scarsa esperienza nell'uso delle tecnologie scelte per lo sviluppo del prodotto software. \\
 \hline
@@ -11,61 +25,141 @@ Questa parte del documento si focalizza sull'elencare e descrivere le possibili 
 \hline
 \textbf{Pericolosità} & Alta \\
 \hline
-\textbf{Misure di prevenzione} & I membri si impegnano per comunicare le difficoltà incontrate con l'uso delle tecnologie sia con i docenti che con i proponenti. \\
+\textbf{Conseguenze} & Rischio di decisioni poco efficaci e di rallentamenti nello sviluppo del progetto.\\
+\hline
+\textbf{Misure di prevenzione} & I membri si impegnano per:
+\begin{itemize}
+    \item comunicare le difficoltà incontrate con l'uso delle tecnologie sia con i docenti che con i proponenti.
+    \item assistere agli incontri di formazione organizzati dal proponente focalizzati sulle tecnologie da utilizzare per il progetto
+    \item organizzare dei Workshop interni in modo da incentivare l'apprendimento reciproco
+\end{itemize}
+ \\
 \hline
 \textbf{Misure di mitigazione} & I membri si impegnano ad imparare l'uso delle tecnologie tramite auto-formazione e, se necessario, comunicando eventuali dubbi su di esse sia alla proponente che ai docenti. \\
 \hline
-\end{tabular}
+\caption{RT1 - rischi relativi alla scarsa esperienza nel gruppo sulle tecnologie scelte}
+\label{tab:scarsa-esperienza}
+\end{longtable}
 
-\subsubsection{Scarsa esperienza con gli strumenti software per lo sviluppo}
-\begin{tabular}{|c|p{10cm}|}
+%
+% RT2
+%
+\subsubsection[RT2]{RT2 - Scarsa esperienza con gli strumenti di gestione del progetto}\label{rt:2}
+\begin{longtable}{|c|p{12cm}|}
 \hline
-\textbf{Descrizione} & Il gruppo ha scarsa esperienza nell'uso degli strumenti a supporto dello sviluppo del prodotto software. \\
+\textbf{Descrizione} & Il gruppo ha scarsa esperienza nell'uso degli strumenti a supporto dello sviluppo del prodotto software e ha dubbi o incertezze riguardo il loro utilizzo \\
 \hline
-\textbf{Occorrenza} & Alta \\
+\textbf{Occorrenza} & Bassa \\
 \hline
 \textbf{Pericolosità} & Media \\
 \hline
-\textbf{Misure di prevenzione} & I membri si impegnano per comunicare tra di loro le difficoltà incontrate nell'uso degli strumenti di sviluppo software. \\
+\textbf{Conseguenze} & Possibili rallentamenti nello sviluppo del progetto dovuti ai possibili errori nell'uso degli strumenti\\
+\hline
+\textbf{Misure di prevenzione} & 
+I membri si impegnano per
+\begin{itemize}
+    \item comunicare tra di loro le difficoltà incontrate nell'uso degli strumenti di sviluppo software
+    \item inserire nel documento Norme di Progetto le procedure dettagliate da seguire per il Way of Working.
+\end{itemize} \\
 \hline
 \textbf{Misure di mitigazione} & I membri si impegnano a scegliere e ad auto-apprendere strumenti software dotati di una buona e ricca documentazione.\\
 \hline
-\end{tabular}
+\caption{RT2 - rischi relativi alla scarsa esperienza con gli strumenti di gestione del progetto}
+\end{longtable}
 
 \subsection{Rischi organizzativi}
-\subsubsection{Scarsa esperienza nell'organizzazione di un progetto complesso }
-\begin{tabular}{|c|p{10cm}|}
+%
+% RO1
+%
+\subsubsection[RO1]{RO1 - Scarsa esperienza nell'organizzazione di un progetto complesso}  \label{ro:1} 
+ 
+ 
+\begin{longtable}{|c|p{12cm}|}
 \hline
-\textbf{Descrizione} & Il gruppo ha scarsa esperienza nell'uso degli strumenti a supporto dello sviluppo del prodotto software. \\
+\textbf{Descrizione} & Il gruppo ha scarsa esperienza nell'organizzazione di un progetto complesso \\
 \hline
 \textbf{Occorrenza} & Alta \\
 \hline
 \textbf{Pericolosità} & Alta \\
 \hline
-\textbf{Misure di prevenzione} & I membri si impegnano per comunicare tempestivamente le difficoltà incontrate durante lo svolgimento delle loro attività. \\
+\textbf{Conseguenze} & Imprecisioni sulla pianificazione delle attività e sottostima/sovrastima delle risorse e del tempo necessari\\
 \hline
-\textbf{Misure di mitigazione} & I membri si impegnano ad instaurare frequentemente una comunicazione sia interna che esterna verso la proponente e i docenti di corso. \\
+\textbf{Misure di prevenzione} & I membri si impegnano per comunicare tempestivamente le difficoltà incontrate durante lo svolgimento delle loro attività e a riportare periodicamente lo stato di avanzamento nel documento Piano di Progetto \\
 \hline
-\end{tabular}
+\textbf{Misure di mitigazione} & I membri si impegnano ad instaurare frequentemente una comunicazione sia interna che esterna verso il proponente e i docenti di corso oltre che revisionare il Piano di Progetto per adeguare le attività in base al progresso\\
+\hline
+\caption{RO1 - rischi relativi alla scarsa esperienza nell'organizzazione di un progetto complesso}
+\end{longtable}
 
-\subsubsection{Comunicazione interna}
-\begin{tabular}{|c|p{10cm}|}
+%
+% RO2
+%
+\subsubsection[RO2]{RO2 - Comunicazione interna inefficace}\label{ro:2}
+\begin{longtable}{|c|p{12cm}|}
 \hline
-\textbf{Descrizione} & Alcuni membri del gruppo potrebbero non essere reperibili durante incontri interni al gruppo nei quali vengono prese delle decisioni importanti per l'avanzamento del progetto.\\
+\textbf{Descrizione} & Alcune comunicazioni importanti per l'avanzamento del progetto potrebbero essere poco chiare o poco efficaci\\
 \hline
 \textbf{Occorrenza} & Media \\
 \hline
-\textbf{Pericolosità} & Alta \\
+\textbf{Pericolosità} & Media \\
 \hline
-\textbf{Misure di prevenzione} & I membri si impegnano per comunicare tempestivamente le loro disponibilità. \\
+\textbf{Conseguenze} & Fraintendimenti, duplicazione e discrepanze dalle aspettative, rallentamento del lavoro \\
 \hline
-\textbf{Misure di mitigazione} & I membri presenti alle riunioni interne al gruppo si impegnano a comunicare l'oggetto delle discussioni avvenute mediante gli strumenti di comunicazione interna e verbali interni. \\
+\textbf{Misure di prevenzione} & I membri si impegnano a comunicare le informazioni ad ogni altro membro \\
 \hline
-\end{tabular}
+\textbf{Misure di mitigazione} & I membri presenti alle riunioni interne al gruppo si impegnano a comunicare l'oggetto delle discussioni avvenute mediante gli strumenti di comunicazione interna e verbali interni oltre che usare gli appositi canali comunicativi stabiliti ed eventualmente richiedere incontri non pianificati\\
+\hline
+\caption{RO2 - rischi relativi ad una comunicazione interna inefficace}
+\end{longtable}
+
+%
+%R03
+%
+\subsubsection[RO3]{RO3 - Impegni personali e universitari}\label{ro:3}
+\begin{longtable}{|c|p{12cm}|}
+\hline
+\textbf{Descrizione} & Alcuni membri del gruppo potrebbero non essere reperibili durante incontri interni al gruppo nei quali vengono prese delle decisioni importanti per l'avanzamento del progetto. Alcuni impegni personali e universitari potrebbero limitare la disponibilità temporale di alcuni membri del gruppo. \\
+\hline
+\textbf{Occorrenza} & Media \\
+\hline
+\textbf{Pericolosità} & Media \\
+\hline
+\textbf{Conseguenze} & Rallentamento del lavoro, aumento dei costi, riduzione della qualità del lavoro, pianificazione errata \\
+\hline
+\textbf{Misure di prevenzione} & I membri si impegnano per comunicare tempestivamente le loro disponibilità al Responsabile così da pianificare attentamente le attività. \\
+\hline
+\textbf{Misure di mitigazione} &  il Responsabile si riserva di spostare alcune scadenze se la pianificazione non tiene conto di alcuni periodi\\
+\hline
+\caption{RO3 - Impegni personali e universitari}
+\end{longtable}
+
+%
+%R04
+%
+\subsubsection[RO4]{RO4 - Mancanza di chiarezza nei ruoli e delle attività}\label{ro:4}
+\begin{longtable}{|c|p{12cm}|}
+\hline
+\textbf{Descrizione} & La mancanza di chiarezza riguardo ai ruoli e alle responsabilità all’interno del team può generare confusione, conflitti e ritardi nelle attività. \\
+\hline
+\textbf{Occorrenza} & Media \\
+\hline
+\textbf{Pericolosità} & Media \\
+\hline
+\textbf{Conseguenze} & Rallentamento delle attività, aumento del rischio di errori, scarsa coesione del team, inefficienza nella gestione delle risorse \\
+\hline
+\textbf{Misure di prevenzione} & Comunicazioni chiare e complete riguardo ai compiti e alle responsabilità, incontri regolari per chiarire dubbi e garantire consapevolezza dei compiti individuali oltre che approfondire le sezioni apposite nel documento Norme di Progetto. \\
+\hline
+\textbf{Misure di mitigazione} & Stesura e costante aggiornamento di una chiara matrice dei ruoli e responsabilità, consultazione regolare per garantire comprensione e adesione, possibilità di spostare scadenze in caso di necessità. \\
+\hline
+\caption{RO4 - Mancanza di chiarezza nei ruoli e delle attività}
+\end{longtable}
 
 \subsection{Rischi relativi al prodotto}
-\subsubsection{Soddisfacimento dei requisiti}
-\begin{tabular}{|c|p{10cm}|}
+%
+%RP1
+%
+\subsubsection[RP1]{RP1 - Comprensione erronea dei requisiti}\label{rp:1}
+\begin{longtable}{|c|p{12cm}|}
 \hline
 \textbf{Descrizione} & L'azienda potrebbe essere non soddisfatta dalle modalità scelte nell'attuare lo sviluppo del prodotto\\
 \hline
@@ -77,4 +171,31 @@ Questa parte del documento si focalizza sull'elencare e descrivere le possibili 
 \hline
 \textbf{Misure di mitigazione} &  I membri si impegnano ad instaurare una comunicazione che sia più frequente possibile con la proponente ogni qual volta vi siano dei dubbi in merito alle funzionalità da implementare.\\
 \hline
+\caption{RP1 - rischi relativi ad un erronea comprensione dei requisiti}
+\end{longtable}
+
+\subsection{Riassunto dei rischi individuati}
+\begin{table}[h]
+\centering
+\begin{tabular}{|c|c|c|c|}
+\hline
+\textbf{Rischio} & \textbf{Nome} & \textbf{Occorrenza} & \textbf{Pericolosità} \\
+\hline
+\textbf{RT1} & Scarsa esperienza tecnologica & Alta & Alta \\
+\hline
+\textbf{RT2} & Scarsa esperienza con gli strumenti di gestione del progetto & Bassa & Media \\
+\hline
+\textbf{RO1} & Scarsa esperienza nell’organizzazione di un progetto complesso & Alta & Alta \\
+\hline
+\textbf{RO2} & Comunicazione interna inefficace & Media & Media \\
+\hline
+\textbf{RO3} & Impegni personali e universitari & Media & Media \\
+\hline
+\textbf{RO4} & Mancanza di chiarezza nei ruoli e delle attività & Media & Media \\
+\hline
+\textbf{RP1} & Comprensione erronea dei requisiti & Bassa & Alta \\
+\hline
 \end{tabular}
+\caption{Tabella riassuntiva dei rischi individuati}
+\label{tab:rischi}
+\end{table}

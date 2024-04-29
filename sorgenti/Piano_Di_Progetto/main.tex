@@ -1,5 +1,5 @@
 \documentclass[12pt, oneside]{article} 
-\usepackage{amsmath, amsthm, amssymb, calrsfs, wasysym, verbatim, bbm, color, graphicx, geometry, fancyhdr, url, multirow, hyperref, titlesec, tabularx, spreadtab, pgf-pie}
+\usepackage{amsmath, amsthm, amssymb, calrsfs, wasysym, verbatim, bbm, color, graphicx, geometry, fancyhdr, url, multirow, hyperref, titlesec, tabularx, spreadtab, pgf-pie, array, longtable, caption, float, subcaption}
 \usepackage{pgf-pie}
 \usepackage{tikz}
 \usepackage{fp}
@@ -12,37 +12,12 @@
 \geometry{tmargin=.75in, bmargin=.75in, lmargin=.75in, rmargin = .75in}
 
 % Creo subsubsubsection
-\titleclass{\subsubsubsection}{straight}[\subsection]
-
-\newcounter{subsubsubsection}[subsubsection]
-\renewcommand\thesubsubsubsection{\thesubsubsection.\arabic{subsubsubsection}}
-\renewcommand\theparagraph{\thesubsubsubsection.\arabic{paragraph}} % optional; useful if paragraphs are to be numbered
-
-\titleformat{\subsubsubsection}
-  {\normalfont\normalsize\bfseries}{\thesubsubsubsection}{1em}{}
-\titlespacing*{\subsubsubsection}
-{0pt}{3.25ex plus 1ex minus .2ex}{1.5ex plus .2ex}
-
-\makeatletter
-\renewcommand\paragraph{\@startsection{paragraph}{5}{\z@}%
-  {3.25ex \@plus1ex \@minus.2ex}%
-  {-1em}%
-  {\normalfont\normalsize\bfseries}}
-\renewcommand\subparagraph{\@startsection{subparagraph}{6}{\parindent}%
-  {3.25ex \@plus1ex \@minus .2ex}%
-  {-1em}%
-  {\normalfont\normalsize\bfseries}}
-\def\toclevel@subsubsubsection{4}
-\def\toclevel@paragraph{5}
-\def\toclevel@paragraph{6}
-\def\l@subsubsubsection{\@dottedtocline{4}{7em}{4em}}
-\def\l@paragraph{\@dottedtocline{5}{10em}{5em}}
-\def\l@subparagraph{\@dottedtocline{6}{14em}{6em}}
-\makeatother
-
-\setcounter{secnumdepth}{4}
-\setcounter{tocdepth}{4}
+\input{utils/subsubsubsection}
 % Fine creazione subsubsubsection
+
+% Creo subsubsubsubsection
+\input{utils/subsubsubsubsection}
+% Fine creazione subsubsubsubsection
 
 \author{RAMtastic6}
 
@@ -72,11 +47,11 @@
 % Informazioni sul documento
 \section*{Informazioni sul documento}
 \begin{tabular}{ll}
-Versione: & 0.2.0 \\
-Redattori: & Leonardo B. Riccardo Z.\\
-Verificatori: & Davide B. Filippo T.\\ 
-Destinatari: & T. Vardanega, R. Cardin, \textit{Imola Informatica_G} \\
-Uso: & Interno
+Versione: & 1.0.0 \\
+Redattori: & Basso L. Zaupa R. Brotto D. Visentin S.\\
+Verificatori: & Brotto D. Tonietto F. Basso L. Zambon M. Visentin S. \\ 
+Destinatari: & T. Vardanega, R. Cardin, Imola Informatica \\
+Uso: & Esterno
 \end{tabular}
 \newpage
 
@@ -86,13 +61,45 @@ Uso: & Interno
 \hline
 \textbf{Versione} & \textbf{Data} & \textbf{Autore} & \textbf{Verificatore} & \textbf{Dettaglio} \\
 \hline
-v.0.2.2 & 15-03-2024 & Riccardo Z. & N/A & Aggiunta della sezione "Metodo di sviluppo" \\
+v 1.0.0 & 2024-04-29 & \begin{tabular}[c]{@{}c@{}}
+    Zaupa R. \\
+    Visentin S.
+  \end{tabular} & \begin{tabular}[c]{@{}c@{}}
+    Zaupa R. \\
+    Visentin S.
+  \end{tabular} & Approvazione e validazione del documento\\
 \hline
-v.0.2.1 & 10-03-2024 & Riccardo Z. & N/A & Aggiunta dei periodi mancanti nella sezione 4 "Pianificazione", aggiunta delle sezione 5 "Preventivi" e 6 "Consuntivi" \\
+v 0.4.0 & 2024-04-12 & Brotto D. & Zambon M. & Modificata la sezione 5 con preventivi e consuntivi RTB\\
 \hline
-v.0.2.0 & 19-12-2023 & Leonardo B. & Filippo T. & Stesura di una prima versione dell'analisi dei rischi. \\
+v 0.3.0 & 2024-04-18 & \begin{tabular}[c]{@{}c@{}}
+    Zaupa R. \\
+    Brotto D.
+  \end{tabular} 
+    & Basso L.
+  & Inseriti i grafici a torta e gli istogrammi per i periodi da 1 a 8.\\
 \hline
-v.0.1.0 & 19-12-2023 & Leonardo B. & Brotto D. & Stesura della struttura del documento \\
+v 0.2.7 & 2024-04-12 & Zaupa R. & Brotto D. & Inserito il nono periodo, in particolare la sezione Planning.\\
+\hline
+v 0.2.6 & 2024-04-08 & Zaupa R. & Basso L. & Inserito l'ottavo periodo.\\
+\hline
+v 0.2.5 & 2024-03-28 & \begin{tabular}[c]{@{}c@{}}
+    Zaupa R. \\
+    Brotto D.
+  \end{tabular} 
+  & Basso L. & Aggiunti preventivi e consuntivi per ogni periodo nella sezione "Pianificazione", riviste e sistemate anche le sottosezioni "Retrospective".\\
+\hline
+v 0.2.3 & 2023-03-18 & Zaupa R. & Zambon M. & Aggiunta introduzione per la sezione "Analisi dei rischi", tabella riassuntiva dei rischi, le "conseguenze" per ciascun rischio nelle tabelle apposite e la sottosezione "codifica dei rischi" in "Introduzione".\\
+\hline
+v 0.2.2 & 2024-03-15 & Zaupa R. & Zambon M. & Aggiunta della sezione 3 "Modello di sviluppo" \\
+\hline
+v 0.2.1 & 2024-03-10 & Zaupa R. & \begin{tabular}[c]{@{}c@{}}
+    Zambon M. \\
+    Basso L.
+  \end{tabular}  & Aggiunta dei periodi mancanti nella sezione 4 "Pianificazione", aggiunta della sezione 5 "Riepilogo preventivi e consuntivi" \\
+\hline
+v 0.2.0 & 2023-12-19 & Basso L. & Tonietto F. & Stesura di una prima versione dell'analisi dei rischi. \\
+\hline
+v 0.1.0 & 2023-12-19 & Basso L. & Brotto D. & Stesura della struttura del documento \\
 \hline
 \end{tabular}
 \newpage
@@ -113,10 +120,7 @@ v.0.1.0 & 19-12-2023 & Leonardo B. & Brotto D. & Stesura della struttura del doc
 % Pianificazione
 \input{sections/pianificazione}
 \newpage
-% Preventivi
-\input{sections/preventivi}
-\newpage
-% Consuntivi
-\input{sections/consuntivi}
+% Riepilogo preventivi e consuntivi
+\input{sections/riepilogo_preventivi_consuntivi}
 
 \end{document}

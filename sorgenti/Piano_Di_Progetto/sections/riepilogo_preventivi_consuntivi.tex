@@ -1,0 +1,123 @@
+\section{Riepilogo preventivi e consuntivi}
+
+\begin{comment}
+\subsection{Preventivo totale}
+Per questa sezione per approfondimenti si rimanda al documento \emph{"Dichiarazione impegni v1.2"} citato nella sezione \ref{sec:rif_inf} \emph{"Riferimenti informativi"}.\\
+Come riportato dal sopracitato documento, i costi orari per ogni membro in base al ruolo sono i seguenti:
+\begin{table}[htbp]
+    \centering    
+    \begin{spreadtab}{{tabular}{|c|c|c|c|c|c|c|c|}}
+    \hline
+    @\textbf{Membro} & @\textbf{Re} & @\textbf{Amm} & @\textbf{An} & @\textbf{Progr} & @\textbf{Proge} & @\textbf{Ve} & @\textbf{Totale} \\
+    \hline
+    @ Samuele V.   & 12          & 9          & 15         & 25          & 16     & 16     & sum(b2:g2) \\
+    @ Leonardo B.  & 12         & 9          & 15         & 25          & 16     & 16     & sum(b3:g3) \\
+    @ Riccardo Z.  & 12          & 9          & 15          & 25          & 16     & 16     & sum(b4:g4) \\
+    @ Davide B.    & 12          & 9          & 15       & 25          & 16     & 16     & sum(b5:g5) \\
+    @ Michele Z.   & 12          & 9          & 15         & 25          & 16     & 16     & sum(b6:g6) \\
+    @ Filippo T.   & 12          & 9          & 15          & 25         & 16     & 16     & sum(b7:g7) \\
+    \hline
+    @\textbf{Ore totali} & sum(b2:b7) & sum(c2:c7) & sum(d2:d7) & sum(e2:e7) & sum(f2:f7) & sum(g2:g7) &  sum(b8:g8)\\
+    \hline
+    @\textbf{Costo totale} & 30*b8 & 20*c8 & 25*d8 & 15*e8 & 25*f8 & 15*g8 & sum(b9:g9)\\
+    \hline
+    \end{spreadtab}
+    \caption{Preventivo orario ed economico totale, in base al ruolo}
+    \label{tab:prev_totale}
+    \vspace{5mm}
+    \textbf{Legenda:} \textit{Re} = Responsabile, \textit{Amm} = Amministratore, \textit{An} = Analista, \textit{Progr} = Programmatore, \textit{Proge} = Progettista, \textit{Ve} = Verificatore
+\end{table}
+\end{comment}
+
+\subsection{Analisi fase RTB}
+\subsubsection{Preventivo RTB}
+In questa sezione è presente il preventivo orario ed economico parziale scelto per la fase RTB.
+\begin{table}[htbp]
+    \centering
+\begin{spreadtab}{{tabular}{|c|c|c|c|c|c|c|c|}}
+    \hline
+    @\textbf{Membro} & @\textbf{Re} & @\textbf{Amm} & @\textbf{An} & @\textbf{Progr} & @\textbf{Proge} & @\textbf{Ve} & @\textbf{Totale} \\
+    \hline
+    @ Samuele V.   & 4          & 2          & 18         & 15          & 0     & 2     & sum(b2:g2) \\
+    @ Leonardo B.  & 6         & 9          & 4        & 12          & 0     & 6    & sum(b3:g3) \\
+    @ Riccardo Z.  & 12          & 6          & 16          & 15         & 0     & 3    & sum(b4:g4) \\
+    @ Davide B.    & 7          & 7          & 18       & 2          & 0     & 12     & sum(b5:g5) \\
+    @ Michele Z.   & 5          & 12          & 9         & 2          & 0     & 5     & sum(b6:g6) \\
+    @ Filippo T.   & 6          & 2          & 2         & 10          & 0     & 15     & sum(b7:g7) \\
+    \hline
+    @\textbf{Ore totali} & sum(b2:b7) & sum(c2:c7) & sum(d2:d7) & sum(e2:e7) & sum(f2:f7) & sum(g2:g7) &  sum(b8:g8)\\
+    \hline
+    @\textbf{Costo totale} & 30*b8 & 20*c8 & 25*d8 & 15*e8 & 25*f8 & 15*g8 & sum(b9:g9)\\
+    \hline
+\end{spreadtab}
+    \caption{Preventivo orario ed economico parziale per la fase RTB, in base al ruolo}
+    \label{tab:prev_rtb}
+    \vspace{5mm}
+    \textbf{Legenda:} \textit{Re} = Responsabile, \textit{Amm} = Amministratore, \textit{An} = Analista, \textit{Progr} = Programmatore, \textit{Proge} = Progettista, \textit{Ve} = Verificatore
+\end{table}
+
+
+
+
+
+\subsubsection{Consuntivo RTB}
+In questa sezione è presente il consuntivo orario ed economico parziale scelto per la fase RTB.
+\begin{table}[htbp]
+    \centering
+\begin{spreadtab}{{tabular}{|c|c|c|c|c|c|c|c|}}
+    \hline
+    @\textbf{Membro} & @\textbf{Re} & @\textbf{Amm} & @\textbf{An} & @\textbf{Progr} & @\textbf{Proge} & @\textbf{Ve} & @\textbf{Totale} \\
+    \hline
+    @ Samuele V.   & 3          & 2.08          & 16.17         & 17.17          & 0     & 1.58     & sum(b2:g2) \\
+    @ Leonardo B.  & 4.5         & 9          & 8.5        & 9.42          & 0     & 5.42    & sum(b3:g3) \\
+    @ Riccardo Z.  & 14.42          & 4.42          & 15.92          & 12.67         & 0     & 3.92    & sum(b4:g4) \\
+    @ Davide B.    & 7          & 5.67          & 15.33       & 1.5          & 0     & 10     & sum(b5:g5) \\
+    @ Michele Z.   & 4.25          & 12.92          & 8         & 3          & 0     & 5     & sum(b6:g6) \\
+    @ Filippo T.   & 8          & 1.33          & 1.75         & 13.83          & 0     & 12.05     & sum(b7:g7) \\
+    \hline
+    @\textbf{Ore totali} & sum(b2:b7) & sum(c2:c7) & sum(d2:d7) & sum(e2:e7) & sum(f2:f7) & sum(g2:g7) &  sum(b8:g8)\\
+    \hline
+    @\textbf{Costo totale} & 30*b8 & 20*c8 & 25*d8 & 15*e8 & 25*f8 & 15*g8 & sum(b9:g9)\\
+    \hline
+\end{spreadtab}
+    \caption{Consuntivo orario ed economico parziale per la fase RTB, in base al ruolo}
+    \label{tab:prev_rtb}
+    \vspace{5mm}
+    \textbf{Legenda:} \textit{Re} = Responsabile, \textit{Amm} = Amministratore, \textit{An} = Analista, \textit{Progr} = Programmatore, \textit{Proge} = Progettista, \textit{Ve} = Verificatore
+\end{table}
+
+
+
+\newpage
+
+% fase PB
+\begin{comment}
+    
+
+\subsection{Analisi fase PB}
+\subsubsection{Preventivo PB}
+In questa sezione è presente il preventivo orario ed economico parziale scelto per la fase PB.
+\begin{table}[htbp]
+    \centering
+\begin{spreadtab}{{tabular}{|c|c|c|c|c|c|c|c|}}
+    \hline
+    @\textbf{Membro} & @\textbf{Re} & @\textbf{Amm} & @\textbf{An} & @\textbf{Progr} & @\textbf{Proge} & @\textbf{Ve} & @\textbf{Totale} \\
+    \hline
+    @ Samuele V.   & 6          & 5          & 4         & 16          & 16     & 10     & sum(b2:g2) \\
+    @ Leonardo B.  & 6         & 5          & 4        & 16          & 16     & 10    & sum(b3:g3) \\
+    @ Riccardo Z.  & 6          & 5          & 4          & 16          & 16     & 10    & sum(b4:g4) \\
+    @ Davide B.    & 6          & 5          & 4       & 16          & 16     & 10     & sum(b5:g5) \\
+    @ Michele Z.   & 6          & 5          & 4         & 16          & 16     & 10     & sum(b6:g6) \\
+    @ Filippo T.   & 6          & 5          & 4         & 16          & 16     & 10     & sum(b7:g7) \\
+    \hline
+    @\textbf{Ore totali} & sum(b2:b7) & sum(c2:c7) & sum(d2:d7) & sum(e2:e7) & sum(f2:f7) & sum(g2:g7) &  sum(b8:g8)\\
+    \hline
+    @\textbf{Costo totale} & 30*b8 & 20*c8 & 25*d8 & 15*e8 & 25*f8 & 15*g8 & sum(b9:g9)\\
+    \hline
+\end{spreadtab}
+    \caption{Preventivo orario ed economico parziale per la fase PB, in base al ruolo}
+    \label{tab:prev_pb}
+    \vspace{5mm}
+    \textbf{Legenda:} \textit{Re} = Responsabile, \textit{Amm} = Amministratore, \textit{An} = Analista, \textit{Progr} = Programmatore, \textit{Proge} = Progettista, \textit{Ve} = Verificatore
+\end{table}
+\end{comment}
