@@ -1,34 +1,11 @@
-<h1>Documentazione</h1>
+# Documentazione
+
 Nel presente repository sono presenti i documenti prodotti dal gruppo RAMtastic6 per il progetto "Easy Meal" nell'ambito del corso di Ingegneria del Software dell'Università degli Studi di Padova.
 
-<h2>Candidatura</h2>
+## RTB
 
-- [Lettera di presentazione](documenti/1-CANDIDATURA/Lettera_di_presentazione_v1.0.pdf) (V1.0)<br>
-- [Preventivo costi e assunzione impegni](documenti/1-CANDIDATURA/Preventivo_costi_e_assunzione%20impegni_v1.2.pdf) (V1.2) <br>
-- [Documento di valutazione dei capitolati](documenti/1-CANDIDATURA/Valutazione_dei_capitolati_v1.1.pdf) (V1.1) <br>
-- Verbali:
-   <details>
-  <summary>Interni</summary>
-
-    - [26 Ottobre 2023](documenti/1-CANDIDATURA/verbali/verbali_interni/verbale_2023_10_26.pdf)
-    - [27 Ottobre 2023](documenti/1-CANDIDATURA/verbali/verbali_interni/verbale_2023_10_27.pdf)
-    - [29 Ottobre 2023](documenti/1-CANDIDATURA/verbali/verbali_interni/verbale_2023_10_29.pdf)
-    - [30 Ottobre 2023](documenti/1-CANDIDATURA/verbali/verbali_interni/verbale_2023_10_30.pdf)
-    - [06 Novembre 2023](documenti/1-CANDIDATURA/verbali/verbali_interni/verbale_2023_11_06.pdf)
-    - [07 Novembre 2023](documenti/1-CANDIDATURA/verbali/verbali_interni/verbale_2023_11_07.pdf)
-
-  </details>
-  <details>
-    <summary>Esterni</summary>
-
-    - [27 Ottobre 2023](documenti/1-CANDIDATURA/verbali/verbali_esterni/verbale_2023_10_27.pdf)
-  
-  </details>
-
-<h2>RTB</h2>
-
-- Documenti Esterni:
   - [Lettera di Presentazione RTB](documenti/2-RTB/Lettera_di_Presentazione_RTB_v1.0.0.pdf) (V1.0.0) <br>
+- Documenti Esterni:
   - [Analisi dei Requisiti](documenti/2-RTB/Analisi_dei_Requisiti_v2.0.0.pdf) (V2.0.0) <br>
   - [Glossario](documenti/2-RTB/Glossario_v1.0.0.pdf) (V1.0.0) <br>
   - [Piano di Progetto](documenti/2-RTB/Piano_di_Progetto_v1.0.0.pdf) (V1.0.0) <br>
@@ -75,7 +52,34 @@ Nel presente repository sono presenti i documenti prodotti dal gruppo RAMtastic6
   
   </details>
 
-<h2>Membri del gruppo</h2>
+## Candidatura
+
+- [Lettera di presentazione](documenti/1-CANDIDATURA/Lettera_di_presentazione_v1.0.pdf) (V1.0)  
+- [Preventivo costi e assunzione impegni](documenti/1-CANDIDATURA/Preventivo_costi_e_assunzione%20impegni_v1.2.pdf) (V1.2)
+- [Documento di valutazione dei capitolati](documenti/1-CANDIDATURA/Valutazione_dei_capitolati_v1.1.pdf) (V1.1)
+- Verbali:
+   <details>
+  <summary>Interni</summary>
+
+    - [26 Ottobre 2023](documenti/1-CANDIDATURA/verbali/verbali_interni/verbale_2023_10_26.pdf)
+    - [27 Ottobre 2023](documenti/1-CANDIDATURA/verbali/verbali_interni/verbale_2023_10_27.pdf)
+    - [29 Ottobre 2023](documenti/1-CANDIDATURA/verbali/verbali_interni/verbale_2023_10_29.pdf)
+    - [30 Ottobre 2023](documenti/1-CANDIDATURA/verbali/verbali_interni/verbale_2023_10_30.pdf)
+    - [06 Novembre 2023](documenti/1-CANDIDATURA/verbali/verbali_interni/verbale_2023_11_06.pdf)
+    - [07 Novembre 2023](documenti/1-CANDIDATURA/verbali/verbali_interni/verbale_2023_11_07.pdf)
+
+  </details>
+  <details>
+    <summary>Esterni</summary>
+
+    - [27 Ottobre 2023](documenti/1-CANDIDATURA/verbali/verbali_esterni/verbale_2023_10_27.pdf)
+  
+  </details>
+
+
+
+## Membri del gruppo
+
 <table style="width:100%; text-align:center; align:center">
   <tr>
     <th>Cognome</th>
