@@ -38,39 +38,39 @@ Nel presente repository sono presenti i documenti prodotti dal gruppo RAMtastic6
   <details>
   <summary>Interni</summary>
 
-    - [12 Novembre 2023](documenti/2-RTB/verbali/verbali_interni/verbale_2023_11_12.pdf)
-    - [13 Novembre 2023](documenti/2-RTB/verbali/verbali_interni/verbale_2023_11_13.pdf)
-    - [14 Novembre 2023](documenti/2-RTB/verbali/verbali_interni/verbale_2023_11_14.pdf)
-    - [18 Novembre 2023](documenti/2-RTB/verbali/verbali_interni/verbale_2023_11_18.pdf)
-    - [27 Novembre 2023](documenti/2-RTB/verbali/verbali_interni/verbale_2023_11_27.pdf)
-    - [1 Dicembre 2023](documenti/2-RTB/verbali/verbali_interni/verbale_2023_12_01.pdf)
-    - [4 Dicembre 2023](documenti/2-RTB/verbali/verbali_interni/verbale_2023_12_04.pdf)
-    - [13 Dicembre 2023](documenti/2-RTB/verbali/verbali_interni/verbale_2023_12_13.pdf)
-    - [18 Dicembre 2023](documenti/2-RTB/verbali/verbali_interni/verbale_2023_12_18.pdf)
-    - [23 Dicembre 2023](documenti/2-RTB/verbali/verbali_interni/verbale_2023_12_23.pdf)
-    - [27 Dicembre 2023](documenti/2-RTB/verbali/verbali_interni/verbale_2023_12_27.pdf)
-    - [8 Gennaio 2024](documenti/2-RTB/verbali/verbali_interni/verbale_2024_01_08.pdf)
-    - [11 Gennaio 2024](documenti/2-RTB/verbali/verbali_interni/verbale_2024_01_11.pdf)
-    - [16 Febbraio 2024](documenti/2-RTB/verbali/verbali_interni/verbale_2024_02_16.pdf)
-    - [7 Marzo 2024](documenti/2-RTB/verbali/verbali_interni/verbale_2024_03_07.pdf)
-    - [13 Marzo 2024](documenti/2-RTB/verbali/verbali_interni/verbale_2024_03_13.pdf)
-    - [25 Marzo 2024](documenti/2-RTB/verbali/verbali_interni/verbale_2024_03_25.pdf)
-    - [4 Aprile 2024](documenti/2-RTB/verbali/verbali_interni/verbale_2024_04_04.pdf)
-    - [10 Aprile 2024](documenti/2-RTB/verbali/verbali_interni/verbale_2024_04_10.pdf)
-    - [16 Aprile 2024](documenti/2-RTB/verbali/verbali_interni/verbale_2024_04_16.pdf)
-    - [23 Aprile 2024](documenti/2-RTB/verbali/verbali_interni/verbale_2024_04_23.pdf)
+    - [Verbale 2024/04/23](documenti/2-RTB/verbali/verbali_interni/verbale_2024_04_23.pdf)
+    - [Verbale 2024/04/16](documenti/2-RTB/verbali/verbali_interni/verbale_2024_04_16.pdf)
+    - [Verbale 2024/04/10](documenti/2-RTB/verbali/verbali_interni/verbale_2024_04_10.pdf)
+    - [Verbale 2024/04/04](documenti/2-RTB/verbali/verbali_interni/verbale_2024_04_04.pdf)
+    - [Verbale 2024/03/25](documenti/2-RTB/verbali/verbali_interni/verbale_2024_03_25.pdf)
+    - [Verbale 2024/03/13](documenti/2-RTB/verbali/verbali_interni/verbale_2024_03_13.pdf)
+    - [Verbale 2024/03/07](documenti/2-RTB/verbali/verbali_interni/verbale_2024_03_07.pdf)
+    - [Verbale 2024/02/16](documenti/2-RTB/verbali/verbali_interni/verbale_2024_02_16.pdf)
+    - [Verbale 2024/01/11](documenti/2-RTB/verbali/verbali_interni/verbale_2024_01_11.pdf)
+    - [Verbale 2024/01/08](documenti/2-RTB/verbali/verbali_interni/verbale_2024_01_08.pdf)
+    - [Verbale 2023/12/27](documenti/2-RTB/verbali/verbali_interni/verbale_2023_12_27.pdf)
+    - [Verbale 2023/12/23](documenti/2-RTB/verbali/verbali_interni/verbale_2023_12_23.pdf)
+    - [Verbale 2023/12/18](documenti/2-RTB/verbali/verbali_interni/verbale_2023_12_18.pdf)
+    - [Verbale 2023/12/13](documenti/2-RTB/verbali/verbali_interni/verbale_2023_12_13.pdf)
+    - [Verbale 2023/12/04](documenti/2-RTB/verbali/verbali_interni/verbale_2023_12_04.pdf)
+    - [Verbale 2023/12/01](documenti/2-RTB/verbali/verbali_interni/verbale_2023_12_01.pdf)
+    - [Verbale 2023/11/27](documenti/2-RTB/verbali/verbali_interni/verbale_2023_11_27.pdf)
+    - [Verbale 2023/11/18](documenti/2-RTB/verbali/verbali_interni/verbale_2023_11_18.pdf)
+    - [Verbale 2023/11/14](documenti/2-RTB/verbali/verbali_interni/verbale_2023_11_14.pdf)
+    - [Verbale 2023/11/13](documenti/2-RTB/verbali/verbali_interni/verbale_2023_11_13.pdf)
+    - [Verbale 2023/11/12](documenti/2-RTB/verbali/verbali_interni/verbale_2023_11_12.pdf)
 
   </details>
   <details>
     <summary>Esterni</summary>
 
-    - [24 Novembre 2023](documenti/2-RTB/verbali/verbali_esterni/verbale_2023_11_24.pdf)
-    - [6 Dicembre 2023](documenti/2-RTB/verbali/verbali_esterni/verbale_2023_12_06.pdf)
-    - [27 Dicembre 2023](documenti/2-RTB/verbali/verbali_esterni/verbale_2023_12_27.pdf)
-    - [19 Gennaio 2024](documenti/2-RTB/verbali/verbali_esterni/verbale_2024_01_19.pdf)
-    - [28 Febbraio 2024](documenti/2-RTB/verbali/verbali_esterni/verbale_2024_02_28.pdf)
-    - [21 Marzo 2024](documenti/2-RTB/verbali/verbali_esterni/verbale_2024_03_21.pdf)
-    - [10 Aprile 2024](documenti/2-RTB/verbali/verbali_esterni/verbale_2024_04_10.pdf)
+    - [Verbale 2024/04/10](documenti/2-RTB/verbali/verbali_esterni/verbale_2024_04_10.pdf)
+    - [Verbale 2024/03/21](documenti/2-RTB/verbali/verbali_esterni/verbale_2024_03_21.pdf)
+    - [Verbale 2024/02/28](documenti/2-RTB/verbali/verbali_esterni/verbale_2024_02_28.pdf)
+    - [Verbale 2024/01/19](documenti/2-RTB/verbali/verbali_esterni/verbale_2024_01_19.pdf)
+    - [Verbale 2023/12/27](documenti/2-RTB/verbali/verbali_esterni/verbale_2023_12_27.pdf)
+    - [Verbale 2023/12/06](documenti/2-RTB/verbali/verbali_esterni/verbale_2023_12_06.pdf)
+    - [Verbale 2023/11/24](documenti/2-RTB/verbali/verbali_esterni/verbale_2023_11_24.pdf)
   
   </details>
 
@@ -83,18 +83,18 @@ Nel presente repository sono presenti i documenti prodotti dal gruppo RAMtastic6
    <details>
   <summary>Interni</summary>
 
-    - [26 Ottobre 2023](documenti/1-CANDIDATURA/verbali/verbali_interni/verbale_2023_10_26.pdf)
-    - [27 Ottobre 2023](documenti/1-CANDIDATURA/verbali/verbali_interni/verbale_2023_10_27.pdf)
-    - [29 Ottobre 2023](documenti/1-CANDIDATURA/verbali/verbali_interni/verbale_2023_10_29.pdf)
-    - [30 Ottobre 2023](documenti/1-CANDIDATURA/verbali/verbali_interni/verbale_2023_10_30.pdf)
-    - [06 Novembre 2023](documenti/1-CANDIDATURA/verbali/verbali_interni/verbale_2023_11_06.pdf)
-    - [07 Novembre 2023](documenti/1-CANDIDATURA/verbali/verbali_interni/verbale_2023_11_07.pdf)
+    - [Verbale 2023/11/07](documenti/1-CANDIDATURA/verbali/verbali_interni/verbale_2023_11_07.pdf)
+    - [Verbale 2023/11/06](documenti/1-CANDIDATURA/verbali/verbali_interni/verbale_2023_11_06.pdf)
+    - [Verbale 2023/10/30](documenti/1-CANDIDATURA/verbali/verbali_interni/verbale_2023_10_30.pdf)
+    - [Verbale 2023/10/29](documenti/1-CANDIDATURA/verbali/verbali_interni/verbale_2023_10_29.pdf)
+    - [Verbale 2023/10/27](documenti/1-CANDIDATURA/verbali/verbali_interni/verbale_2023_10_27.pdf)
+    - [Verbale 2023/10/26](documenti/1-CANDIDATURA/verbali/verbali_interni/verbale_2023_10_26.pdf)
 
   </details>
   <details>
     <summary>Esterni</summary>
 
-    - [27 Ottobre 2023](documenti/1-CANDIDATURA/verbali/verbali_esterni/verbale_2023_10_27.pdf)
+    - [Verbale 2023/10/27](documenti/1-CANDIDATURA/verbali/verbali_esterni/verbale_2023_10_27.pdf)
   
   </details>
 
