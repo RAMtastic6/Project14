@@ -2,6 +2,28 @@
 
 Nel presente repository sono presenti i documenti prodotti dal gruppo RAMtastic6 per il progetto "Easy Meal" nell'ambito del corso di Ingegneria del Software dell'Università degli Studi di Padova.
 
+## PB
+
+- [Lettera di Presentazione PB](documenti/3-PB/Lettera_di_Presentazione_PB.pdf) <br>
+- Documenti Esterni:
+  - [Analisi dei Requisiti](documenti/3-PB/Analisi_dei_Requisiti_v2.0.0.pdf) (V2.0.0) <br>
+  - [Glossario](documenti/3-PB/Glossario_v1.0.0.pdf) (V1.0.0) <br>
+  - [Piano di Progetto](documenti/3-PB/Piano_di_Progetto_v1.0.0.pdf) (V1.0.0) <br>
+  - [Piano di Qualifica](documenti/3-PB/Piano_di_Qualifica_v1.0.0.pdf) (V1.0.0) <br>
+- Documenti Interni:
+  - [Norme di Progetto](documenti/3-PB/Norme_di_Progetto_v1.0.0.pdf) (V1.0.0) <br>
+- Verbali:
+  <details>
+  <summary>Interni</summary>
+
+  </details>
+  <details>
+    <summary>Esterni</summary>
+
+    - [Verbale 2024/05/03](documenti/3-PB/verbali/verbali_esterni/verbale_2023_11_24.pdf)
+  
+  </details>
+
 ## RTB
 
   - [Lettera di Presentazione RTB](documenti/2-RTB/Lettera_di_Presentazione_RTB_v1.0.0.pdf) (V1.0.0) <br>
