@@ -38,6 +38,7 @@ Nel presente repository sono presenti i documenti prodotti dal gruppo RAMtastic6
   <details>
   <summary>Interni</summary>
 
+    - [Verbale 2024/04/29](documenti/2-RTB/verbali/verbali_interni/verbale_2024_04_29.pdf)
     - [Verbale 2024/04/23](documenti/2-RTB/verbali/verbali_interni/verbale_2024_04_23.pdf)
     - [Verbale 2024/04/16](documenti/2-RTB/verbali/verbali_interni/verbale_2024_04_16.pdf)
     - [Verbale 2024/04/10](documenti/2-RTB/verbali/verbali_interni/verbale_2024_04_10.pdf)
