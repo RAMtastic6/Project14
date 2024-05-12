@@ -50,6 +50,8 @@ Uso: & Esterno
 \hline
 \textbf{Versione} & \textbf{Data} & \textbf{Autore} & \textbf{Verificatore} & \textbf{Dettaglio} \\
 \hline
+v.1.0.1 & 2024-05-12 & Basso L. & N/A & Inserimenti di nuovi termini e modifica della struttura del glossario; rimossi i numeri all'interno di sezioni e sotto-sezioni.\\
+\hline
 v.1.0.0 & 2024-04-06 & Zaupa R. & Zaupa R. & Approvazione e validazione del documento\\
 \hline
 v.0.3.0 & 2024-04-05 & Zambon M. & Zaupa R. & Cambiati i termini: "Caso d'Uso" in "Caso d'uso", "Diagramma dei Casi d'Uso" in "Diagramma dei casi d'uso", "Requisiti funzionali desiderabili" in "Requisiti desiderabili funzionali", "Requisiti funzionali obbligatori" in "Requisiti obbligatori funzionali"\\
@@ -132,10 +134,10 @@ Il glossario ha lo scopo di raccogliere i termini tecnici usati nel corso del pr
 # ritorna la stringa della sezione del glossario
 def compose_section(letter: str, json_array) -> str:
     section = ""
-    section += "\\section{" + letter + "} \n"
+    section += "\\section*{" + letter + "} \n"
     
     for d in json_array[letter]:
-        section += "\\subsection{" + d["termine"] + "} \n"
+        section += "\\subsection*{" + d["termine"] + "} \n"
         section += d["definizione"] + "\n"
     return section
 
