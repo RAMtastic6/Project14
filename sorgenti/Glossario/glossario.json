@@ -10,7 +10,7 @@
     },
 		{
       "termine": "API",
-      "definizione": "definizione di API",
+      "definizione": "Le API REST (Representational State Transfer) nell'ambito delle applicazioni web sono un insieme di principi architetturali che definiscono come le risorse Web devono essere definite e accessibili. Le API REST consentono alle applicazioni client di comunicare con un server Web in modo standardizzato utilizzando richieste HTTP per accedere e manipolare le risorse, come ad esempio dati o servizi.",
 		},
     {
       "termine": "Applicazione Web Responsive",
@@ -18,7 +18,7 @@
     },
 		{
       "termine": "Architettura",
-      "definizione": "...",
+      "definizione": "Nell'ambito del design di un'applicazione, l'architettura si riferisce alla struttura complessiva dell'applicazione stessa, inclusi i suoi componenti principali, le relazioni tra di essi e il modo in cui sono organizzati per soddisfare gli obiettivi dell'applicazione. Questa struttura definisce come i diversi moduli dell'applicazione interagiscono tra loro per gestire dati, input utente, elaborazione e output. Un'architettura ben progettata mira a garantire la scalabilità, la manutenibilità e l'efficienza dell'applicazione nel tempo.",
 		},
     {
       "termine": "Attore",
@@ -74,13 +74,13 @@
     },
 		{
       "termine": "CSS",
-      "definizione": "CSS",
+      "definizione": "CSS, (Cascading Style Sheets - fogli di stile a cascata), è un linguaggio di stile utilizzato per definire l'aspetto e la formattazione di documenti HTML (HyperText Markup Language) e XML (eXtensible Markup Language); consente di controllare il layout, i colori, i tipi di carattere, le dimensioni e altri aspetti visivi di un documento web. Con CSS, è possibile separare la struttura e il contenuto di una pagina web (definiti tramite HTML) dalla loro presentazione visiva, garantendo una maggiore flessibilità e facilità di manutenzione.",
 		}
   ],
   "D": [
 		{
       "termine": "Deployment",
-      "definizione": ""
+      "definizione": "La fase di deployment di un'applicazione è il processo di distribuzione e messa in produzione dell'applicazione stessa in un ambiente operativo o una piattaforma di hosting in modo che sia accessibile agli utenti finali. Questa fase segue il completamento dello sviluppo e dei test dell'applicazione; in questa fase, l'applicazione viene installata e configurata in un ambiente di produzione, che può essere un server web, una piattaforma cloud o qualsiasi altro sistema in grado di ospitare e gestire l'applicazione."
 		},
     {
       "termine": "Design",
@@ -100,7 +100,7 @@
     },
 		{
       "termine": "Docker",
-      "termine": "..."
+      "definizione": "Docker è una piattaforma di containerizzazione open-source che consente agli sviluppatori di creare, distribuire e gestire applicazioni in container leggeri e portatili. I container Docker sono un tipo di virtualizzazione a livello di sistema operativo che isolano le applicazioni e le relative dipendenze, consentendo loro di essere eseguite in ambienti consistenti e riproducibili su qualsiasi piattaforma che supporti Docker."
 		},
     {
       "termine": "Documento Esterno",
@@ -183,11 +183,11 @@
   "J": [
 		{
       "termine": "Javascript",
-      "definizione": ""
+      "definizione": "Un linguaggio di programmazione ad alto livello, interpretato e orientato agli oggetti, comunemente utilizzato per sviluppare applicazioni web interattive e dinamiche. Creato originariamente per essere eseguito nei browser web per migliorare l'esperienza utente sul web, JavaScript è diventato uno dei linguaggi di programmazione più diffusi e versatili al mondo."
 		},
 		{
 			"termine": "Jest",
-      "definizione": ""
+      "definizione": "Jest è un framework di testing open-source per JavaScript utilizzato per testare applicazioni e componenti React, Node.js e JavaScript in generale; esso è dotato di una serie di funzionalità avanzate per facilitare lo sviluppo dei test (come la reportistica sulla code-coverage di un progetto) e migliorare la qualità del software."
 		},
     {
       "termine": "Jira",
@@ -195,11 +195,11 @@
     },
 		{
       "termine": "JSON",
-      "definizione": ""
+      "definizione": "JSON (JavaScript Object Notation) è un formato di dati leggero e basato su testo utilizzato per rappresentare dati strutturati, comunemente utilizzato per lo scambio di dati tra un server e un client web e come formato di memorizzazione dei dati (da servizi come MongoDB)."
 		},
 		{
       "termine": "JSX",
-      "definizione": ""
+      "definizione": "JSX è un'estensione di sintassi per JavaScript che consente di scrivere markup HTML all'interno del codice JavaScript ed È comunemente utilizzato con React."
 		},
   ],
   "K": [],
@@ -224,21 +224,21 @@
     },
 		{
       "termine": "MVP",
-			"definizione" : "..." 
+			"definizione" : "(Minimum Viable Product - Prodotto Minimo Completamente Funzionante), è una strategia di sviluppo software che si concentra sullo sviluppo di un prodotto con il minimo set di funzionalità necessarie per soddisfare le esigenze di base degli utenti; l'obiettivo principale di un MVP è quello di testare l'ipotesi di base del prodotto, raccogliere feedback dagli utenti e validare le caratteristiche e le funzionalità più importanti del prodotto." 
 		},
   ],
   "N": [
 		{
 			"termine": "Nest.js",
-			"definizione" : "..."
+			"definizione" : "Nest.js è un framework per lo sviluppo di applicazioni server-side basato su Node.js. Le caratteristiche offerte sono: dependency injection (controller), l'uso di decorators per definire i controller e come essi gestiscono le varie route e la modularità; esso rende possibile anche connessioni basate su altri protocolli, come Websocket, gRPC e altri ancora." 
 		},
 		{
 			"termine": "Next.js",
-			"definizione" : "..."
+			"definizione" : "Next.js è un framework di sviluppo web per React, che consente di creare facilmente applicazioni web con funzionalità avanzate come il server-side rendering (SSR), il rendering statico e la generazione di pagine dinamiche."
 		},
 		{
 			"termine": "Node.js",
-			"definizione" : "..."
+			"definizione" : "Node.js è un runtime JavaScript open-source basato sul motore JavaScript V8 di Google Chrome; è progettato per eseguire codice JavaScript lato server, consentendo agli sviluppatori di creare applicazioni web e servizi di rete scalabili e performanti."
 		},
     {
       "termine": "Norme di Progetto",
@@ -248,7 +248,7 @@
   "O": [
 		{
       "termine": "Open-source",
-      "definizione": "..."
+      "definizione": "Un modello di sviluppo e distribuzione del software in cui il codice sorgente del programma è reso liberamente accessibile, modificabile e redistribuibile da chiunque.; questo implica che il codice sorgente di un software open-source è disponibile per essere esaminato, modificato e migliorato da sviluppatori di tutto il mondo, senza restrizioni di utilizzo."
 		},
     {
       "termine": "Overleaf",
@@ -294,7 +294,7 @@
     },
 		{
       "termine": "PostgresSQL",
-			"definizione" : "..."
+			"definizione" : "PostgreSQL è un potente sistema di gestione di database relazionali (RDBMS) open source, basato sul linguaggio SQL."
 		},
     {
       "termine": "Prenotazione",
@@ -355,7 +355,7 @@
   "R": [
 		{
       "termine": "React",
-      "definizione": "..."
+      "definizione": "React è una libreria JavaScript open-source, sviluppata da Facebook, che è ampiamente utilizzata per la creazione di interfacce utente (UI) dinamiche e interattive per applicazioni web. È progettata per semplificare lo sviluppo di UI complesse, consentendo agli sviluppatori di creare componenti riutilizzabili che rappresentano parti specifiche dell'interfaccia utente e gestire lo stato dell'applicazione in modo efficiente."
 		},
     {
       "termine": "Redattore",
@@ -419,7 +419,7 @@
     },
 		{
       "termine": "Runtime system",
-      "definizione": "..."
+      "definizione": "Un runtime system (o sistema di runtime) è un insieme di software e librerie che forniscono un ambiente di esecuzione per programmi software. Il runtime system è responsabile di gestire l'esecuzione dei programmi, fornendo servizi come l'allocazione della memoria, la gestione delle eccezioni, l'esecuzione del codice e la gestione delle risorse di sistema."
 		}
   ],
   "S": [
@@ -433,11 +433,11 @@
     },
 		{
       "termine": "Server action",
-      "definzione": "...",
+      "definizione": "Funzionalità introdotta dal framework Next.js nella versione 14; consente di definire funzioni server-side che possono essere invocate dai componenti React nel lato client."
 		},
 		{
       "termine": "Server-side",
-      "definzione": "...",
+      "definizione": "Nell'ambito dello sviluppo software si riferisce a processi, logica e risorse che operano sul lato del server in un'applicazione client-server; in altre parole, \"server-side\" si riferisce a tutto ciò che avviene sul server, inclusi calcoli, elaborazioni dei dati, accesso al database e altro ancora."
 		},
     {
       "termine": "Sistema",
@@ -445,7 +445,7 @@
     },
 		{
       "termine": "Socket.IO",
-      "definzione": "...",
+      "definzione": "Socket.IO è una libreria JavaScript che permette di implementare una comunicazione in tempo reale, bidirezionale e event-driven tra client e server attraverso il web. Utilizza WebSocket, quando disponibile, per una comunicazione diretta e offre una serie di alternative, come il polling basato su HTTP, per garantire la compatibilità con una vasta gamma di browser e dispositivi. Socket.IO semplifica lo sviluppo di applicazioni web interattive che richiedono aggiornamenti in tempo reale, come chat in tempo reale, giochi multiplayer, monitoraggio dei dati in tempo reale e altro ancora."
 		},
     {
       "termine": "Software",
@@ -465,7 +465,7 @@
     },
 		{
       "termine": "SQL",
-      "definizione": "..."
+      "definizione": "(Structured Query Language), è un linguaggio di programmazione dichiarativo utilizzato per gestire e manipolare database relazionali. È progettato per consentire agli utenti di interrogare, aggiornare, inserire e cancellare dati da un database in modo efficiente e standardizzato."
 		},
     {
       "termine": "Strumento",
@@ -475,7 +475,7 @@
   "T": [
 		{
       "termine": "Tailwind CSS",
-      "definizione": "..."
+      "definizione": "Tailwind CSS è un framework CSS utilizzato per lo sviluppo di interfacce utente responsive e personalizzabili. In Tailwind CSS, vengono fornite una vasta gamma di classi CSS atomiche, ognuna delle quali rappresenta uno stile CSS specifico. Queste classi possono essere utilizzate direttamente all'interno del markup HTML per applicare stili specifici, come margini, padding, colori, dimensioni dei caratteri, allineamenti, sfondi e molto altro."
 		},
     {
       "termine": "Tecnologie",
@@ -503,7 +503,7 @@
     },
 		{
       "termine": "Typescript",
-      "definzione": "...",
+      "definizione": "TypeScript è un linguaggio di programmazione sviluppato da Microsoft che estende e aggiunge tipizzazione statica al JavaScript standard."
 		}
   ],
   "U": [
@@ -540,8 +540,8 @@
       "definizione": "Il Way Of Working è un insieme di processi operativi, regole e specifiche che definiscono il modo di lavorare del team e come vengono gestiti i processi all'interno del progetto. Un Way of Working efficace fornisce una struttura chiara e coesa per il team, promuove la coerenza, la trasparenza e l'efficienza nelle operazioni quotidiane, contribuendo così al successo complessivo del progetto."
     },
 		{
-      "termine": "Websocket",
-      "definizione": "...",
+      "termine": "websocket",
+      "definizione": "Il protocollo WebSocket è un protocollo di comunicazione bidirezionale, full-duplex, che fornisce una connessione persistente tra un client e un server su Internet; consente una comunicazione interattiva e in tempo reale tra un browser web o un'applicazione client e un server, senza la necessità di costanti richieste HTTP."
 		}
   ],
   "X": [],
