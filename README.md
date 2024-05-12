@@ -10,11 +10,14 @@ Nel presente repository sono presenti i documenti prodotti dal gruppo RAMtastic6
   - [Glossario](documenti/3-PB/Glossario_v1.0.0.pdf) (V1.0.0) <br>
   - [Piano di Progetto](documenti/3-PB/Piano_di_Progetto_v1.0.0.pdf) (V1.0.0) <br>
   - [Piano di Qualifica](documenti/3-PB/Piano_di_Qualifica_v1.1.0.pdf) (V1.1.0) <br>
+  - [Specifica Tecnica](documenti/3-PB/Specifica_Tecnica_v1.0.0.pdf) (V1.0.0) <br>
 - Documenti Interni:
   - [Norme di Progetto](documenti/3-PB/Norme_di_Progetto_v1.0.0.pdf) (V1.0.0) <br>
 - Verbali:
   <details>
   <summary>Interni</summary>
+
+  - [Verbale 2024/05/10](documenti/3-PB/verbali/verbali_interni/verbale_2024_05_10.pdf)
 
   </details>
   <details>
