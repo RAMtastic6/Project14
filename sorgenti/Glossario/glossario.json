@@ -10,7 +10,7 @@
     },
 		{
       "termine": "API",
-      "definizione": "Le API REST (Representational State Transfer) nell'ambito delle applicazioni web sono un insieme di principi architetturali che definiscono come le risorse Web devono essere definite e accessibili. Le API REST consentono alle applicazioni client di comunicare con un server Web in modo standardizzato utilizzando richieste HTTP per accedere e manipolare le risorse, come ad esempio dati o servizi.",
+      "definizione": "Le API REST (Representational State Transfer) nell'ambito delle applicazioni web sono un insieme di principi architetturali che definiscono come le risorse Web devono essere definite e accessibili. Le API REST consentono alle applicazioni client di comunicare con un server Web in modo standardizzato utilizzando richieste HTTP per accedere e manipolare le risorse, come ad esempio dati o servizi."
 		},
     {
       "termine": "Applicazione Web Responsive",
@@ -18,7 +18,7 @@
     },
 		{
       "termine": "Architettura",
-      "definizione": "Nell'ambito del design di un'applicazione, l'architettura si riferisce alla struttura complessiva dell'applicazione stessa, inclusi i suoi componenti principali, le relazioni tra di essi e il modo in cui sono organizzati per soddisfare gli obiettivi dell'applicazione. Questa struttura definisce come i diversi moduli dell'applicazione interagiscono tra loro per gestire dati, input utente, elaborazione e output. Un'architettura ben progettata mira a garantire la scalabilità, la manutenibilità e l'efficienza dell'applicazione nel tempo.",
+      "definizione": "Nell'ambito del design di un'applicazione, l'architettura si riferisce alla struttura complessiva dell'applicazione stessa, inclusi i suoi componenti principali, le relazioni tra di essi e il modo in cui sono organizzati per soddisfare gli obiettivi dell'applicazione. Questa struttura definisce come i diversi moduli dell'applicazione interagiscono tra loro per gestire dati, input utente, elaborazione e output. Un'architettura ben progettata mira a garantire la scalabilità, la manutenibilità e l'efficienza dell'applicazione nel tempo."
 		},
     {
       "termine": "Attore",
@@ -74,7 +74,7 @@
     },
 		{
       "termine": "CSS",
-      "definizione": "CSS, (Cascading Style Sheets - fogli di stile a cascata), è un linguaggio di stile utilizzato per definire l'aspetto e la formattazione di documenti HTML (HyperText Markup Language) e XML (eXtensible Markup Language); consente di controllare il layout, i colori, i tipi di carattere, le dimensioni e altri aspetti visivi di un documento web. Con CSS, è possibile separare la struttura e il contenuto di una pagina web (definiti tramite HTML) dalla loro presentazione visiva, garantendo una maggiore flessibilità e facilità di manutenzione.",
+      "definizione": "CSS, (Cascading Style Sheets - fogli di stile a cascata), è un linguaggio di stile utilizzato per definire l'aspetto e la formattazione di documenti HTML (HyperText Markup Language) e XML (eXtensible Markup Language); consente di controllare il layout, i colori, i tipi di carattere, le dimensioni e altri aspetti visivi di un documento web. Con CSS è possibile separare la struttura e il contenuto di una pagina web (definiti tramite HTML) dalla loro presentazione visiva, garantendo una maggiore flessibilità e facilità di manutenzione."
 		}
   ],
   "D": [
@@ -187,7 +187,7 @@
 		},
 		{
 			"termine": "Jest",
-      "definizione": "Jest è un framework di testing open-source per JavaScript utilizzato per testare applicazioni e componenti React, Node.js e JavaScript in generale; esso è dotato di una serie di funzionalità avanzate per facilitare lo sviluppo dei test (come la reportistica sulla code-coverage di un progetto) e migliorare la qualità del software."
+      "definizione": "Jest è un framework di testing open-source per JavaScript utilizzato per testare applicazioni e componenti React, Node.js e JavaScript in generale. Esso è dotato di una serie di funzionalità avanzate per facilitare lo sviluppo dei test (come la reportistica sulla code-coverage di un progetto) e migliorare la qualità del software."
 		},
     {
       "termine": "Jira",
@@ -199,8 +199,8 @@
 		},
 		{
       "termine": "JSX",
-      "definizione": "JSX è un'estensione di sintassi per JavaScript che consente di scrivere markup HTML all'interno del codice JavaScript ed È comunemente utilizzato con React."
-		},
+      "definizione": "JSX è un'estensione di sintassi per JavaScript che consente di scrivere markup HTML all'interno del codice JavaScript ed è comunemente utilizzato con React."
+		}
   ],
   "K": [],
   "L": [
@@ -224,13 +224,13 @@
     },
 		{
       "termine": "MVP",
-			"definizione" : "(Minimum Viable Product - Prodotto Minimo Completamente Funzionante), è una strategia di sviluppo software che si concentra sullo sviluppo di un prodotto con il minimo set di funzionalità necessarie per soddisfare le esigenze di base degli utenti; l'obiettivo principale di un MVP è quello di testare l'ipotesi di base del prodotto, raccogliere feedback dagli utenti e validare le caratteristiche e le funzionalità più importanti del prodotto." 
-		},
+			"definizione" : "(Minimum Viable Product - Prodotto Minimo Completamente Funzionante), è una strategia di sviluppo software che si concentra sullo sviluppo di un prodotto con il minimo set di funzionalità necessarie per soddisfare le esigenze di base degli utenti. L'obiettivo principale di un MVP è quello di testare l'ipotesi di base del prodotto, raccogliere feedback dagli utenti e validare le caratteristiche e le funzionalità più importanti del prodotto." 
+		}
   ],
   "N": [
 		{
 			"termine": "Nest.js",
-			"definizione" : "Nest.js è un framework per lo sviluppo di applicazioni server-side basato su Node.js. Le caratteristiche offerte sono: dependency injection (controller), l'uso di decorators per definire i controller e come essi gestiscono le varie route e la modularità; esso rende possibile anche connessioni basate su altri protocolli, come Websocket, gRPC e altri ancora." 
+			"definizione" : "Nest.js è un framework per lo sviluppo di applicazioni server-side basato su Node.js. Le caratteristiche offerte sono: dependency injection (controller), l'uso di decorators per definire i controller e come essi gestiscono le varie route e la modularità. Esso rende possibile anche connessioni basate su altri protocolli, come Websocket, gRPC e altri ancora." 
 		},
 		{
 			"termine": "Next.js",
@@ -248,7 +248,7 @@
   "O": [
 		{
       "termine": "Open-source",
-      "definizione": "Un modello di sviluppo e distribuzione del software in cui il codice sorgente del programma è reso liberamente accessibile, modificabile e redistribuibile da chiunque.; questo implica che il codice sorgente di un software open-source è disponibile per essere esaminato, modificato e migliorato da sviluppatori di tutto il mondo, senza restrizioni di utilizzo."
+      "definizione": "Un modello di sviluppo e distribuzione del software in cui il codice sorgente del programma è reso liberamente accessibile, modificabile e redistribuibile da chiunque. Questo implica che il codice sorgente di un software open-source è disponibile per essere esaminato, modificato e migliorato da sviluppatori di tutto il mondo, senza restrizioni di utilizzo."
 		},
     {
       "termine": "Overleaf",
@@ -540,8 +540,8 @@
       "definizione": "Il Way Of Working è un insieme di processi operativi, regole e specifiche che definiscono il modo di lavorare del team e come vengono gestiti i processi all'interno del progetto. Un Way of Working efficace fornisce una struttura chiara e coesa per il team, promuove la coerenza, la trasparenza e l'efficienza nelle operazioni quotidiane, contribuendo così al successo complessivo del progetto."
     },
 		{
-      "termine": "websocket",
-      "definizione": "Il protocollo WebSocket è un protocollo di comunicazione bidirezionale, full-duplex, che fornisce una connessione persistente tra un client e un server su Internet; consente una comunicazione interattiva e in tempo reale tra un browser web o un'applicazione client e un server, senza la necessità di costanti richieste HTTP."
+      "termine": "WebSocket",
+      "definizione": "Il protocollo WebSocket è un protocollo di comunicazione bidirezionale, full-duplex, che fornisce una connessione persistente tra un client e un server su Internet. Esso consente una comunicazione interattiva e in tempo reale tra un browser web o un'applicazione client e un server, senza la necessità di costanti richieste HTTP."
 		}
   ],
   "X": [],
