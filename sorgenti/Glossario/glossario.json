@@ -44,7 +44,7 @@
       "termine": "Capitolato",
       "definizione": "Un capitolato è un documento tecnico allegato a un contratto di appalto, che definisce le specifiche tecniche delle opere da eseguire nel contesto del contratto stesso. Solitamente parte integrante del contratto, il capitolato stabilisce i diritti, i doveri e le particolarità relative all'esecuzione dei lavori tra le parti coinvolte. Serve da riferimento per delineare gli accordi tra i soggetti privati coinvolti nel progetto."
     },
-	{
+	  {
       "termine": "Caption",
       "definizione": "La caption di una tabella o di un'immagine in una documentazione è una breve descrizione o etichetta che fornisce informazioni sul contenuto della tabella o dell'immagine stessa. Ha lo scopo di identificare e spiegare il contenuto visivo o i dati presentati nella tabella, mentre nel caso delle immagini può includere una breve descrizione o un titolo per aiutare il lettore a comprendere il contesto della stessa."
     },
@@ -445,7 +445,7 @@
     },
 		{
       "termine": "Socket.IO",
-      "definzione": "Socket.IO è una libreria JavaScript che permette di implementare una comunicazione in tempo reale, bidirezionale e event-driven tra client e server attraverso il web. Utilizza WebSocket, quando disponibile, per una comunicazione diretta e offre una serie di alternative, come il polling basato su HTTP, per garantire la compatibilità con una vasta gamma di browser e dispositivi. Socket.IO semplifica lo sviluppo di applicazioni web interattive che richiedono aggiornamenti in tempo reale, come chat in tempo reale, giochi multiplayer, monitoraggio dei dati in tempo reale e altro ancora."
+      "definizione": "Socket.IO è una libreria JavaScript che permette di implementare una comunicazione in tempo reale, bidirezionale e event-driven tra client e server attraverso il web. Utilizza WebSocket, quando disponibile, per una comunicazione diretta e offre una serie di alternative, come il polling basato su HTTP, per garantire la compatibilità con una vasta gamma di browser e dispositivi. Socket.IO semplifica lo sviluppo di applicazioni web interattive che richiedono aggiornamenti in tempo reale, come chat in tempo reale, giochi multiplayer, monitoraggio dei dati in tempo reale e altro ancora."
 		},
     {
       "termine": "Software",
