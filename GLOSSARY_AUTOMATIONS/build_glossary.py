@@ -50,7 +50,7 @@ Uso: & Esterno
 \hline
 \textbf{Versione} & \textbf{Data} & \textbf{Autore} & \textbf{Verificatore} & \textbf{Dettaglio} \\
 \hline
-v.1.0.1 & 2024-05-12 & Basso L. & N/A & Inserimenti di nuovi termini e modifica della struttura del glossario; rimossi i numeri all'interno di sezioni e sotto-sezioni.\\
+v.1.1.0 & 2024-05-12 & Basso L. & Zambon M. & Inserimenti di nuovi termini e modifica della struttura del glossario; rimossi i numeri all'interno di sezioni e sotto-sezioni.\\
 \hline
 v.1.0.0 & 2024-04-06 & Zaupa R. & Zaupa R. & Approvazione e validazione del documento\\
 \hline
