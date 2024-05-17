@@ -12,7 +12,7 @@ Nel presente repository sono presenti i documenti prodotti dal gruppo RAMtastic6
   - [Piano di Qualifica](documenti/3-PB/Piano_di_Qualifica_v1.1.0.pdf) (V1.1.0) <br>
   - [Specifica Tecnica](documenti/3-PB/Specifica_Tecnica_v1.0.0.pdf) (V1.0.0) <br>
 - Documenti Interni:
-  - [Norme di Progetto](documenti/3-PB/Norme_di_Progetto_v1.0.0.pdf) (V1.0.0) <br>
+  - [Norme di Progetto](documenti/3-PB/Norme_di_Progetto_v1.1.0.pdf) (V1.1.0) <br>
 - Verbali:
   <details>
   <summary>Interni</summary>
