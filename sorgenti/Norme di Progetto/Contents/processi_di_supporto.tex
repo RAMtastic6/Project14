@@ -5,28 +5,30 @@
 \subsubsection{Tipologie di documenti}
 I documenti prodotti possono essere classificati in due classi principali: ad uso interno e ad uso esterno; la prima categoria comprende:
 \begin{itemize}
-    \item $\textit{Verbali interni}_G$ (i quali non necessitano di $\textit{versionamento}_G$)
-    \item Norme di Progetto
+    \item $\textit{Verbali interni}_G$ (i quali non necessitano di $\textit{versionamento}_G$);
+    \item $\textit{Norme di Progetto}_G$.
 \end{itemize}
 La seconda categoria di documenti comprende:
 \begin{itemize}
-    \item Verbali esterni
-    \item Piano di Qualifica
-    \item Piano di Progetto
-    \item Analisi Dei Requisiti
+    \item $\textit{Verbali esterni}_G$;
+    \item $\textit{Piano di Qualifica}_G$;
+    \item $\textit{Piano di Progetto}_G$;
+    \item $\textit{Analisi Dei Requisiti}_G$;
+    \item Glossario Tecnico;
+    \item Specifica Tecnica.
 \end{itemize}
-
-\subsubsection{Strumenti}
-Per la creazione e la gestione della struttura dei documenti è stato deciso di utilizzare $\textit{Overleaf}_G$, un $\textit{editor}_G$ LaTeX online che permette la stesura collaborativa dei documenti. \\
-Inoltre, il servizio rende disponibili dei $\textit{template}_G$ che gruppo ha scelto di utilizzare per la produzione della documentazione. Per visualizzare la struttura e utilizzare i $\textit{template}_G$, è sufficiente cercarli su $\textit{Overleaf}_G$.
+\subsubsection{Gestione della documentazione}
+Una particolare attenzione in tal senso è rivolta alla documentazione. Al fine di mantenere nel $\textit{repository}_G$ solamente i $\textit{PDF}_G$ dei documenti prodotti, è stato deciso di adottare la piattaforma \href{https://www.overleaf.com/project}{$\textit{Overleaf}_G$} per la stesura in LaTeX dei documenti e la successiva verifica. Ogni volta che un documento viene redatto o aggiornato, verificato e portato alla versione corretta come precedentemente indicato, può essere comodamente convertito in formato $\textit{PDF}_G$ tramite $\textit{Overleaf}_G$. Successivamente, il documento può essere caricato nella $\textit{repository}_G$, con il $\textit{push}_G$ diretto sul $\textit{branch}_G$ \textit{develop}, soprattutto quando si parla di documentazione importante e la cui stesura è in itinere.
 
 \subsubsection{Struttura di un progetto in Overleaf}
 Affinché le automazioni per produrre $\textit{riferimenti}_G$ al glossario funzionino, un progetto in $\textit{Overleaf}_G$ deve avere la struttura seguente:
 
 \begin{itemize}
-    \item main.tex : file contenente il contentuto principale o, se si vuole, tutto il contenuto del file
+    \item main.tex : file contenente il contenuto principale o, se si vuole, tutto il contenuto del file.
     \item CONTENTS/ : cartella contenente ulteriori file (.tex) che il main.tex usa per poter costruire un documento unico
 \end{itemize}
+Per favorire una migliore collaborazione si è deciso di creare un file sorgente per ciascuna sezione del documento presente nella cartella CONTENTS/. Tale approccio viene utilizzato per i documenti di $\textit{Norme di Progetto}_G$, $\textit{Piano di Qualifica}_G$, $\textit{Piano di Progetto}_G$, Analisi dei Requisiti e Glossario Tecnico.
+Per i verbali il progetto viene riportato interamente nel file main.tex.
 
 \subsubsection{Struttura di un documento}
 Un documento all'interno del nostro contesto segue una struttura ben definita, le sue sezioni principali includono:
@@ -98,10 +100,15 @@ Nel momento in cui viene inserita una parola nuova all'interno del glossario bis
             \emph{  python3 entry\_point\_automazioni.py} 
         \end{quote}
     \item Effettuare il $\textit{push}_G$ in remoto;
-    \item Spostare il $\textit{ticket}_G$ nella sezione "completato" all'interno di \emph{Jira}.
+    \item Spostare il $\textit{ticket}_G$ nella sezione "verificato" all'interno di \emph{Jira}.
 \end{itemize}
 Infine, il responsabile approva la $\textit{pull request}_G$ associata.
 %Per poter modificare un termine del glossario tecnico, basta modificare il contenuto del valore %"definizione"; per poter aggiungere un termine del glossario tecnico, basta aggiungere un oggetto %avente la struttura sopracitata dell'array.
+
+\subsubsection{Strumenti}
+\begin{itemize}
+\item \emph{\textbf{$\textit{Overleaf}_G$}}, un $\textit{editor}_G$ LaTeX online che permette la stesura collaborativa dei documenti. Inoltre, il servizio rende disponibili dei $\textit{template}_G$ che il gruppo ha scelto di utilizzare per la produzione della documentazione. Per visualizzare la struttura e utilizzare i $\textit{template}_G$, è sufficiente cercarli su $\textit{Overleaf}_G$. 
+\end{itemize}
 
 \subsection{Controllo di Configurazione}
 
@@ -133,7 +140,14 @@ In sintesi si elencano i principali comandi:
     permette di aggiornare la repo in locale e in caso di necessità esegue il merge
 \end{itemize}
 
-\subsubsection{Scopo e struttura repository "Project14"}
+\subsubsection{Repository}
+Il gruppo utilizza i seguenti $\textit{repository}_G$ all'interno della propria organizzazione GitHub:
+\begin{itemize}
+    \item \emph{\textbf{Project14}}: contenente la documentazione del progetto;
+    \item \emph{\textbf{Proof-of-Concept}}: dedicato al $\textit{PoC}_G$ del progetto.
+\end{itemize}
+Si segnala che è presente inoltre il $\textit{repository}_G$ GitHub contenete il sito web del gruppo, non rilevante ai fini del documento.
+\subsubsubsection{Scopo e struttura repository "Project14"}
 Questo $\textit{repository}_G$ ha due funzioni:
 \begin{itemize}
     \item mantenere una versione aggiornata dei sorgenti atti a produrre documentazione (file .tex)
@@ -152,7 +166,7 @@ La strutta di questo $\textit{repository}_G$ (\href{https://github.com/RAMtastic
 \end{itemize}
 Un $\textit{verbale}_G$ deve essere nominato utilizzando il seguente formato: $\textit{verbale}_G$\_AAAA\_MM\_GG.
 
-\subsubsection{Scopo e struttura repository "Proof-of-Concept"}
+\subsubsubsection{Scopo e struttura repository "Proof-of-Concept"}
 Questo $\textit{repository}_G$ (\href{https://github.com/RAMtastic6/Proof-of-Concept}{link}) è dedicato al contenimento della \textit{Poc} del progetto. \\
 Presenta la seguente struttura:
 \begin{itemize}
@@ -165,11 +179,48 @@ Presenta la seguente struttura:
 
 \subsubsection{Controllo di Flusso}
 Il gruppo RAMtastic6 ha deciso di dotarsi di $\textit{Gitflow}_G$ come $\textit{sistema}_G$ di controllo del flusso di lavoro, motivato dalla sua facilità d'uso e dalle potenzialità di gestione offerte per il $\textit{repository}_G$. Con una lieve modifica nei comandi per l'esecuzione dei commit, come illustrato in questa \href{https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow}{guida su $\textit{Gitflow}_G$}, è possibile automatizzare il $\textit{processo}_G$ di creazione, gestione e chiusura di una $\textit{feature}_G$. Ulteriori dettagli su come gestire le $\textit{feature}_G$ sono disponibili a questo \href{http://danielkummer.github.io/git-flow-cheatsheet/}{link}.
-\paragraph{Gestione dei $\textit{branch}_G$ e tickets}
-Quando si viene assegnati, tramite i $\textit{ticket}_G$ di $\textit{jira}_G$, a svolgere un'attività riguardante la scrittura di codice, per esempio implementare nuove funzionalità, allora tramite il $\textit{ticket}_G$ bisogna aprire un nuovo $\textit{branch}_G$, il quale dovrà avere il numero del $\textit{ticket}_G$ come inizio del nome per poi scrivere in modo conciso lo scopo del $\textit{branch}_G$ (per esempio: P1-100-prenotazione). In questo modo il nuovo ramo sarà collegato al $\textit{ticket}_G$. Una volta implementata la funzionalità bisogna creare una $\textit{pull request}_G$ e mergiare il codice sul ramo develop.
-Per completare la $\textit{pull request}_G$ viene richiesto il controllo da parte del verificatore, il quale dopo la verifica se approva sposterà il $\textit{ticket}_G$ da "in verifica" a "completato" e il responsabile accetterà la $\textit{pull request}_G$. Questo procedimento del $\textit{pull request}_G$ si deve fare anche nel caso si voglia mergiare il ramo develop nel ramo main.
-\paragraph{Gestione dei Documenti}
-Una particolare attenzione in tal senso è rivolta alla documentazione. Al fine di mantenere nel $\textit{repository}_G$ solamente i $\textit{PDF}_G$ dei documenti prodotti, è stato deciso di adottare la piattaforma \href{https://www.overleaf.com/project}{$\textit{Overleaf}_G$} per la stesura in LaTeX dei documenti e la successiva verifica. Ogni volta che un documento viene redatto o aggiornato, verificato e portato alla versione corretta come precedentemente indicato, può essere comodamente convertito in formato $\textit{PDF}_G$ tramite $\textit{Overleaf}_G$. Successivamente, il documento può essere caricato nella $\textit{repository}_G$, con il $\textit{push}_G$ diretto sul $\textit{branch}_G$ \textit{develop}, soprattutto quando si parla di documentazione importante e la cui stesura è in itinere.
+\subsubsubsection{Gestione dei branch e tickets per la codifica}
+Seguendo la convenzione GitFlow i $\textit{branch}_G$ sono distinti come segue:
+\begin{itemize}
+    \item \textbf{Main}: è il $\textit{branch}_G$ di default che contiene la documentazione e il codice che vengono consegnati in fase di revisione. Tale ramo viene dunque aggiornato solo in occasione di tale evento. 
+    \item \textbf{Develop}: creato a partire dal main, contiene le nuove funzionalità rispetto a tale $\textit{branch}_G$. Viene aggiornato solo in occasione di $\textit{rilascio}_G$ di nuove $\textit{feature}_G$ dagli apposti $\textit{branch}_G$ $\textit{feature}_G$.
+    \item \textbf{Feature}: creati a partire da develop, contengono una funzionalità ciasuno sviluppata rispetto a tale $\textit{branch}_G$. Sono i $\textit{branch}_G$ dove avviene la $\textit{codifica}_G$ vera e propria.
+\end{itemize}
+\paragraph{Codifica}
+Quando si viene assegnati, tramite i $\textit{ticket}_G$ di $\textit{jira}_G$, a svolgere un'attività riguardante la scrittura di codice, per esempio implementare nuove funzionalità, correlabile ad un $\textit{branch}_G$ $\textit{feature}_G$, allora la procedura da seguire è la seguente:
+\begin{enumerate}
+    \item Tramite il $\textit{ticket}_G$ bisogna creare un nuovo $\textit{branch}_G$ (aprire il $\textit{ticket}_G$, nella sezione dettagli e selezionare "Crea $\textit{branch}_G$") il quale dovrà avere il numero del $\textit{ticket}_G$ come inizio del nome per poi scrivere in modo conciso lo scopo del $\textit{branch}_G$ (per esempio: P1-100-prenotazione). In questo modo il nuovo ramo sarà collegato al $\textit{ticket}_G$. Tale $\textit{branch}_G$ dovrà essere generato a partire dal $\textit{branch}_G$ develop;
+    \item Viene implementata la funzionalità correlata;
+    \item Il programmatore crea una $\textit{pull request}_G$ su GitHub con l'intenzione di effettuare il merge nel ramo develop; nella $\textit{pull request}_G$ (come viene fatto per il $\textit{changelog}_G$ dei documenti) devono essere riportate le modifiche effettuate in modo da aiutare l'attività di verifica;
+    \item Nella $\textit{pull request}_G$ si inserisce nella sezione "reviewers" il verificatore incaricato di verificare tale funzionalità.
+    \item Il verificatore può: 
+    \begin{itemize}
+        \item Accettare i cambiamenti e accettare la $\textit{pull request}_G$ tramite l'apposito comando;
+        \item Richiedere ulteriori cambiamenti, in tal caso redige un $\textit{feedback}_G$ nella $\textit{pull request}_G$ e il programmatore provederà a sistemare. Si ripete dal passo 4 fino ad arrivare ad uno stato di accettazione da parte del verificatore.
+    \end{itemize}
+\end{enumerate}
+Come riportato nella sezione riguardante l'attività di $\textit{codifica}_G$ bisogna rispettare tale aspettativa nel caso della $\textit{codifica}_G$ dell'$\textit{MVP}_G$:
+\begin{itemize}
+    \item Le modifiche nei relativi $\textit{branch}_G$ $\textit{feature}_G$ riguardano solo le funzionalità segnalate e non verranno applicate all'$\textit{architettura}_G$ e alla progettazione del documento di Specifica Tecnica. Nel caso in cui fosse necessario si concorda con il progettista come procedere e in caso affermativo di crea un ulteriore $\textit{branch}_G$ a partire da develop che non riguarda la $\textit{feature}_G$ in fase di implementazione.
+\end{itemize}
+\paragraph{Verifica del codice}
+Il verificatore incaricato di verificare una funzionalità (corrispondente ad un $\textit{branch}_G$ $\textit{feature}_G$):
+\begin{itemize}
+    \item Leggerà i cambiamenti segnalati dal programmatore nella $\textit{pull request}_G$ e verificherà che:
+    \begin{itemize}
+        \item La $\textit{feature}_G$ richiesta sia stata implementata con successo;
+        \item La progettazione sia coerente con il documento di $\textit{specifica tecnica}_G$ nel caso dell'$\textit{MVP}_G$: ovvero che le classi implementate non si discostino dal documenti o che il diagramma ER relativo al database non sia stato modificato.
+    \end{itemize}
+    \item In caso vengano soddisfatti tali requisiti, il verificatore approverà i cambiamenti; in caso contrario redigerà un $\textit{feedback}_G$ nella $\textit{pull request}_G$ con i cambiamenti da effettuare riportando la causa di eventuali errori e una possibile soluzione. Nel caso in cui la progettazione si discosti da quanto concordato, dovranno essere informati i progettisti in carica e discutere di tali cambiamenti con il programmatore prima di essere approvati.
+\end{itemize}
+Il responsabile è incaricato di accettere la $\textit{pull request}_G$. \\
+Nel momento in cui il responsabile ritiene che il codice possa essere rilasciato per la revisione allora viene creata una $\textit{pull request}_G$ dal $\textit{branch}_G$ develop verso il $\textit{branch}_G$ main.
+\subsubsection{Strumenti}
+\begin{itemize}
+    \item \emph{\textbf{Git}}: $\textit{software}_G$ utilizzato per il controllo di versione della documentazione e del codice prodotti;
+    \item \emph{\textbf{$\textit{Git}_G$Hub}}: piattaforma web utilizzata per il controllo di versione tramite $\textit{Git}_G$.
+    \item \emph{\textbf{Jira}}: piattaforma utilizzata per il ticketing.
+\end{itemize}
 \subsection{Gestione della qualità}
 \subsubsection{Descrizione}
 La gestione della qualità è un insieme di processi che hanno lo scopo di garantire che il $\textit{software}_G$, gli artefatti e i processi nel ciclo di vita del progetto aderiscano degli standard di qualità rispetto a requisiti specificati al fine di soddisfare le aspettative del proponente e degli utenti finali.
