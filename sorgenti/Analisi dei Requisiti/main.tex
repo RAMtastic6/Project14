@@ -33,9 +33,9 @@
 % Informazioni sul documento
 \section*{Informazioni sul documento} 
 \begin{tabular}{ll}
-Versione: & 2.1.0 \\
+Versione: & 2.2.0 \\
 Redattori: &  Visentin S.  Zaupa R. Brotto D. Basso L. Zambon M. Tonietto F. \\ 
-Verificatori: & Tonietto F. Visentin S. Brotto D. Zaupa R.\\
+Verificatori: & Tonietto F. Visentin S. Brotto D. Zaupa R. Zambon M.\\
 Destinatari: & Vardanega T., Cardin R., Imola Informatica \\
 Uso: & Esterno
 \end{tabular}
@@ -47,6 +47,12 @@ Uso: & Esterno
 \hline
 \textbf{Versione} & \textbf{Data} & \textbf{Autore} & \textbf{Verificatore} & 
 \textbf{Dettaglio} \\
+\hline
+v 2.2.0 & 2024-05-15 & Brotto D. & Zambon M. & Aggiunto ROF 77 nella sezione requisiti. \newline Aggiunto ROF 77 nella tabella di Tracciamento Requisiti in UC5. \newline Aggiornati Requisiti Funzionali 5,7 da desiderabili a obbligatori. \newline Aggiornati Requisiti Funzionali 52,53,54,56,60 da obbligatori a desiderabili.\\
+\hline
+v 2.1.2 & 2024-05-13 & Basso L. & Zambon M. & Aggiunto ROF 76 nella sezione requisiti. \\
+\hline
+v 2.1.1 & 2024-05-13 & Basso L. & Zambon M. & Modificati UC24 e UC11; ora gli attori sono utenti generici. \\
 \hline
 v 2.1.0 & 2024-05-04 & Visentin S. & Zaupa R. & Modificati alcuni requisiti obbligatori in desiderabili (2, 17 , 21 ,22, 23 ,26 ,27 ,42 ,44 , 45,  47, 48, 59, 64, 65, 66, 73, 74) e aggiunto ROF 75\\
 \hline
@@ -414,11 +420,11 @@ In questa sezione i requisiti si suddividono in:
     \hline
     ROF 4& L'utente base deve essere in grado di visualizzare il riepilogo di quanto ordinato e di confermare oppure di cancellarlo. & UC3 \\
     \hline
-    RDF 5& Il $\textit{sistema}_G$ deve poter inviare una notifica ($\textit{push}_G$) di $\textit{prenotazione}_G$ effettuata ai ristoranti.& UC3 \\
+    ROF 5& Il $\textit{sistema}_G$ deve poter inviare una notifica di conferma dell’ordinazione collaborativa all’amministratore del ristorante.& UC3 \\
     \hline
     ROF 6& L'utente deve poter inserire le informazioni (data, orario, persone) per effettuare una $\textit{prenotazione}_G$. & UC23\\
     \hline
-    RDF 7& Il $\textit{sistema}_G$ deve poter inviare una notifica ($\textit{push}_G$) all'amministratore per comunicare la richiesta di $\textit{prenotazione}_G$, che può accettare e rifiutare. & UC23\\
+    ROF 7& Il $\textit{sistema}_G$ deve poter inviare una notifica all’amministratore per comunicare la richiesta di $\textit{prenotazione}_G$, che può accettare e rifiutare. & UC23\\
     \hline
     ROF 8& L'utente deve poter essere in grado di cancellare la $\textit{prenotazione}_G$. & UC13, UC23 \\
     \hline
@@ -509,15 +515,15 @@ In questa sezione i requisiti si suddividono in:
     \hline
     ROF 51& Il $\textit{sistema}_G$ deve verificare che le informazioni inserite nel login corrispondano ad un account già esistente nel $\textit{sistema}_G$.  & UC12 \\
     \hline
-    ROF 52& Il $\textit{sistema}_G$ deve predisporre un'opzione per il recupero della password  & UC12 \\
+    RDF 52& Il $\textit{sistema}_G$ deve predisporre un’opzione per il recupero della password.  & UC12 \\
     \hline
-    ROF 53& L'utente non autenticato deve poter inserire la propria email durante il $\textit{processo}_G$ di recupero password.  & UC16 \\
+    RDF 53& L’utente non autenticato deve poter inserire la propria email durante il $\textit{processo}_G$ di recupero password.  & UC16 \\
     \hline
-    ROF 54 & Se l'email inserita dall'utente corrisponde ad un account nel $\textit{sistema}_G$, il $\textit{sistema}_G$ deve inviare un'email contenente un link per il recupero della password.  & UC16 \\
+    RDF 54 & Se l’email inserita dall’utente corrisponde ad un account nel $\textit{sistema}_G$, il $\textit{sistema}_G$ deve inviare un’email contenente un link per il recupero della password.  & UC16 \\
     \hline
     ROF 55 & Se l'email inserita dall'utente non corrisponde a un account nel $\textit{sistema}_G$, il $\textit{sistema}_G$ lo mostra a schermo.  & UC16 \\
     \hline
-    ROF 56 & L'utente deve poter accedere a una sezione dedicata per il recupero della password tramite il link fornito nell'email di recupero password.  & UC16 \\
+    RDF 56 & L’utente deve poter accedere a una sezione dedicata per il recupero della password tramite il link fornito nell’email di recupero password.  & UC16 \\
     \hline
     ROF 57 & Il $\textit{sistema}_G$ deve mostrare una lista di prenotazioni per l'utente base, ognuna con le seguenti informazioni:
     nome del ristorante, data, ora, stato della $\textit{prenotazione}_G$ (se è ancora attiva o già completata) e numero di persone coinvolte. & UC17 \\
@@ -528,7 +534,7 @@ In questa sezione i requisiti si suddividono in:
     RDF 59 & L'utente base deve poter inserire le proprie allergie/intolleranze, se presenti, durante la modifica del profilo.  & UC25  \\
     \hline
 
-    ROF 60 & L'utente autenticato e l'amministratore devono poter inserire nome, cognome, email e password nell'area di modifica delle proprie informazioni.  & UC26  \\
+    RDF 60 & L’utente autenticato e l’amministratore devono poter inserire nome, cognome, email e password nell’area di modifica delle proprie informazioni.  & UC26  \\
     \hline
     ROF 61 & Il $\textit{sistema}_G$ deve verificare che l'email inserita dall'utente autenticato sia valida e non sia già presente nel $\textit{sistema}_G$.  & UC26  \\
     \hline
@@ -561,6 +567,11 @@ In questa sezione i requisiti si suddividono in:
     \hline
     ROF 75 & Il $\textit{sistema}_G$ deve poter generare un link di invito per la $\textit{prenotazione}_G$ & UC23 \\
     \hline
+    ROF 76 & Il $\textit{sistema}_G$ permette di far visualizzare all'amministratore in dettaglio la lista delle prenotazioni di ogni giornata. & UC15 \\
+     \hline
+    ROF 77 & Il $\textit{sistema}_G$ invia una notifica all’amministratore in base agli
+    aggiornamenti sul conto di una $\textit{prenotazione}_G$ del suo ristorante. & UC5 \\
+     \hline
 \caption{Requisiti funzionali}
 \end{longtable}
 
@@ -609,7 +620,7 @@ Questa sezione delinea i limiti e le restrizioni che il $\textit{sistema}_G$ dev
     \hline
     ROV 7& Le funzionalità che richiedono una comunicazione in tempo reale tra più utenti sono gestite dalla libreria \textit{Socket.IO}  & $\textit{Verbale}_G$ Esterno  \\
     \hline
-    ROV 8& Architettura basata a micro-servizi & $\textit{Verbale}_G$ Interno  \\
+    ROV 8& $\textit{Architettura}_G$ basata a micro-servizi & $\textit{Verbale}_G$ Interno  \\
     \hline
     ROV 9& I browser supportati sono: \textit{Firefox} 67+; \textit{Chrome} 64+; \textit{Edge} 79+; \textit{Safari} 12+  & $\textit{Verbale}_G$ Interno  \\
     \hline
@@ -636,13 +647,13 @@ Questa sezione delinea i limiti e le restrizioni che il $\textit{sistema}_G$ dev
     \hline
     UC2 & ROF 38, ROF 39, ROF 40, ROF 49  \\
     \hline
-    UC3 & RDF 2 , ROF 3, ROF 4, RDF 5, RDF 28, ROF 41, RDF 43 \\
+    UC3 & RDF 2 , ROF 3, ROF 4, ROF 5, RDF 28, ROF 41, RDF 43 \\
     \hline 
     UC3.1 & ROF1, ROF 62, ROF 63 \\
     \hline
     UC4 & ROF 11, RDF 21, RDF 22, RDF 23 \\
     \hline
-    UC5 & ROF 25 \\
+    UC5 & ROF 25, ROF 77 \\
     \hline
     UC5.1 & ROF 25 \\
     \hline
@@ -668,7 +679,7 @@ Questa sezione delinea i limiti e le restrizioni che il $\textit{sistema}_G$ dev
     \hline
     UC14 & RDF 42, RDF 43 \\
     \hline
-    UC15 & ROF 30, ROF 34, RDF 68 \\
+    UC15 & ROF 30, ROF 34, RDF 68, ROF 76 \\
     \hline
     UC16 & ROF 53, ROF 54, ROF 55, ROF 56 \\
     \hline
