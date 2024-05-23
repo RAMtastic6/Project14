@@ -3,11 +3,12 @@
 Il presente documento si propone di definire le metriche e le metodologie di controllo e misurazione necessarie per garantire la qualità del prodotto e del $\textit{processo}_G$. In particolare, le metriche di valutazione del prodotto sono correlate ai requisiti e alle aspettative del fornitore.
 Il $\textit{Piano di Qualifica}_G$ è concepito per essere dinamico ed incrementale, in particolar modo per quanto riguarda le metriche descritte e mira a fornire una valutazione il più obiettiva possibile di ciò che è stato realizzato.\\
 Le procedure del $\textit{Way Of Working}_G$ devono essere costantemente osservate e migliorate, al fine di garantire che il prodotto soddisfi le aspettative del cliente e mantenga gli standard di qualità richiesti. Eventuali termini tecnici sono definiti all'interno del documento "Glossario Tecnico".
-
+\subsection{Scopo del prodotto}
+Il prodotto finale, realizzato tramite un'$\textit{Applicazione Web Responsive}_G$, si propone di realizzare un $\textit{software}_G$ innovativo volto a semplificate il $\textit{processo}_G$ di $\textit{prenotazione}_G$ e $\textit{ordinazione}_G$ nei ristoranti, contribuendo a migliorare l'esperienza per clienti e ristoratori. In particolare, \textit{Easy Meal} dovrà consentire agli utenti di personalizzare gli ordini in base alle proprie preferenze, allergie ed esigenze alimentari; interagire direttamente con lo staff del ristorante attraverso una chat integrata e in ultimo, consentire di dividere il conto tra i partecipanti al tavolo.
 \subsection{Riferimenti}
 \subsubsection{Riferimenti normativi}
 \begin{enumerate}
-    \item Norme di Progetto
+    \item $\textit{Norme di Progetto}_G$ v1.0.0
     \item Presentazione del $\textit{capitolato}_G$ d'appalto C3 - Progetto $\textit{Easy Meal}_G$: \\ 
     \url{https://www.math.unipd.it/~tullio/IS-1/2023/Progetto/C3.pdf}
     \item Regolamento del progetto didattico: \\ 
@@ -31,6 +32,8 @@ Le procedure del $\textit{Way Of Working}_G$ devono essere costantemente osserva
      \item Documento \emph{"Dichiarazione impegni v1.2"}: \\ \url{https://github.com/RAMtastic6/Project14/blob/main/documenti/CANDIDATURA/documento_impegni_v1.2.pdf}
      \item Metriche di progetto (\emph{Earned Value Analysis}):\\
      \url{https://it.wikipedia.org/wiki/Metriche_di_progetto}
+     \item Glossario v1.0.0;
+     \item Analisi dei Requisiti v2.0.0.
 \end{enumerate}
 \subsection{Codifica delle metriche}
 In questa sottosezione verranno definite le metriche che utilizzeremo, utilizzando un codice standardizzato.
@@ -49,3 +52,19 @@ Dove:
 \end{itemize}
 
 Per ciascuna metrica verranno fornite descrizioni, valori accettabili e valori preferibili.
+\subsection{Codifica dei test}
+In questa sottosezione verranno definiti i $\textit{test}_G$ che utilizzeremo, utilizzando un codice standardizzato.
+
+Un $\textit{test}_G$ è identificato dal seguente formato di codice:
+\[
+\text{T[Tipo]-[Id]}
+\]
+
+Dove:
+\begin{itemize}
+    \item \textbf{T} sta per "$\textit{Test}_G$"
+    \item \textbf{Tipo} può essere S (di $\textit{sistema}_G$) o I (di integrazione) o U (di unità) oppure A (di accettazione)
+    \item \textbf{Id} rappresenta un identificativo all'interno di un $\textit{test}_G$ di un certo tipo
+\end{itemize}
+
+Per ciascun $\textit{test}_G$ verranno fornite descrizioni e il loro stato se implementato o meno oltre che un loro tracciamento.

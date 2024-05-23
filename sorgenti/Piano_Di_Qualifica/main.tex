@@ -1,6 +1,6 @@
 \documentclass[12pt, oneside]{article} 
 
-\usepackage{comment, amsmath, amsthm, amssymb, calrsfs, wasysym, verbatim, bbm, color, graphicx, geometry, fancyhdr, url, multirow, hyperref, titlesec, tabularx, spreadtab, pgf-pie, eurosym, longtable, float}
+\usepackage{comment, amsmath, amsthm, amssymb, calrsfs, wasysym, verbatim, bbm, color, graphicx, geometry, fancyhdr, url, multirow, hyperref, titlesec, tabularx, spreadtab, pgf-pie, eurosym, longtable, float, listings}
 \usepackage[italian]{babel}
 \usepackage{colortbl}
 
@@ -68,9 +68,9 @@
 % Informazioni sul documento
 \section*{Informazioni sul documento}
 \begin{tabular}{ll}
-Versione: & 1.1.0 \\
-Redattori: & Zaupa R. Zambon M. Brotto D. Visentin S.\\
-Verificatori: & Brotto D. Visentin S. Zaupa R.\\ 
+Versione: & 1.2.0 \\
+Redattori: & Zaupa R. Zambon M. Brotto D. Visentin S. Basso L.\\
+Verificatori: & Brotto D. Visentin S. Zaupa R. Tonietto F.\\ 
 Destinatari: & T. Vardanega, R. Cardin, Imola Informatica \\
 Uso: & Esterno
 \end{tabular}
@@ -78,9 +78,17 @@ Uso: & Esterno
 
 % Registro dei cambiamenti
 \section*{Registro dei Cambiamenti - Changelog}
-\begin{tabular}{|c|c|c|p{3cm}|p{6cm}|}
+\begin{longtable}{|c|c|c|p{3cm}|p{6cm}|}
 \hline
 \textbf{Versione} & \textbf{Data} & \textbf{Autore} & \textbf{Verificatore} & \textbf{Dettaglio} \\
+\hline
+v 1.2.0 & 2024-05-18 & Zaupa R. & Tonietto F. & Inserita sezione 2.1.2.2 (Verifica) e inserite metriche MPC15-PCTS, MPC16-SC, MPC17-BC e MPC18-CC. Cambiato RDF33 a ROF33 e ROF76 a RDF76.\\
+\hline
+v 1.1.3 & 2024-05-17 & Zaupa R. & Tonietto F. & Inserita sezione 1.4 ($\textit{Codifica}_G$ dei test) e impostata la sezione 3.1 ($\textit{Test}_G$ di unità). \\
+\hline
+v 1.1.2 & 2024-05-15 & Brotto D. & Tonietto F. & Aggiunto $\textit{test}_G$ di sistema TS-77. \newline In Requisiti di $\textit{Sistema}_G$: \newline Aggiornati Requisiti Funzionali 5,7 da desiderabili a obbligatori. \newline Aggiornati Requisiti Funzionali 52,53,54,56,60 da obbligatori a desiderabili.\\
+\hline
+v 1.1.1 & 2024-05-13 & Basso L. & Tonietto F. & Aggiunto $\textit{test}_G$ di $\textit{sistema}_G$ TS-76.\\
 \hline
 v 1.1.0 & 2024-05-04 & Visentin S. & Zaupa R. & Aggiornata la sezione dei $\textit{Test}_G$ di $\textit{Sistema}_G$ in base alla versione 2.1.0 dell'Analisi dei Requisiti.\\
 \hline
@@ -110,7 +118,7 @@ v 0.0.2 & 2024-03-12 & Zaupa R. & Brotto D. & Stesura delle prime versioni delle
 \hline
 v 0.0.1 & 2024-03-11 & Zaupa R. & Brotto D. & Prima versione, identificazione delle sezioni principali, stesura della sezione 1 "Introduzione", della sezione introduttiva di "Qualità di $\textit{processo}_G$" e di "Qualità di prodotto" e della sottosezione "$\textit{Fornitura}_G$" \\
 \hline
-\end{tabular}
+\end{longtable}
 \newpage
 
 
