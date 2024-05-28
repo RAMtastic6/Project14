@@ -27,6 +27,7 @@ Nel presente repository sono presenti i documenti prodotti dal gruppo RAMtastic6
   <details>
     <summary>Esterni</summary>
 
+    - [Verbale 2024/05/24](documenti/3-PB/verbali/verbali_esterni/verbale_2024_05_24.pdf)
     - [Verbale 2024/05/16](documenti/3-PB/verbali/verbali_esterni/verbale_2024_05_16.pdf)
     - [Verbale 2024/05/10](documenti/3-PB/verbali/verbali_esterni/verbale_2024_05_10.pdf)
     - [Verbale 2024/05/03](documenti/3-PB/verbali/verbali_esterni/verbale_2024_05_03.pdf)
