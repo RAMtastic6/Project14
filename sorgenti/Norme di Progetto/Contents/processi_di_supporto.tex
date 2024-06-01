@@ -176,6 +176,18 @@ Presenta la seguente struttura:
     \item postgres: contiene il database della web app
 \end{itemize}
 
+\subsubsubsection{Scopo e struttura repository "EasyMeal"}
+Questo $\textit{repository}_G$ (\href{https://github.com/RAMtastic6/EasyMeal}{link}) è dedicato al contenimento del codice sorgente dell'intero progetto. \\
+Presenta la seguente struttura:
+\begin{itemize}
+    \item .$\textit{github}_G$/workflows: contiene tutto l'occorrente per far girare i file di $\textit{test}_G$ direttamente da $\textit{github}_G$;
+    \item nest-js: contiene tutto il progetto relativo a NestJS e quindi al backend della web app;
+    \item next-js: contiene tutto il progetto di NextJS, ovvero il frontend;
+    \item socket: contiene tutto il progetto che implementa i socket, che serve per implementare l’ordinazione collaborativa e il $\textit{sistema}_G$ di notifiche;
+    \item postgres: contiene il database della web app.
+\end{itemize}
+Oltre a tutto ciò, nel file README.md è riportato il link a Coveralls, che riporta la percentuale della copertura del codice dell'intero progetto (dato rilevante per il proponente che ha richiesto una copertura minima dell'80\%).
+
 
 \subsubsection{Controllo di Flusso}
 Il gruppo RAMtastic6 ha deciso di dotarsi di $\textit{Gitflow}_G$ come $\textit{sistema}_G$ di controllo del flusso di lavoro, motivato dalla sua facilità d'uso e dalle potenzialità di gestione offerte per il $\textit{repository}_G$. Con una lieve modifica nei comandi per l'esecuzione dei commit, come illustrato in questa \href{https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow}{guida su $\textit{Gitflow}_G$}, è possibile automatizzare il $\textit{processo}_G$ di creazione, gestione e chiusura di una $\textit{feature}_G$. Ulteriori dettagli su come gestire le $\textit{feature}_G$ sono disponibili a questo \href{http://danielkummer.github.io/git-flow-cheatsheet/}{link}.
@@ -199,10 +211,24 @@ Quando si viene assegnati, tramite i $\textit{ticket}_G$ di $\textit{jira}_G$, a
         \item Richiedere ulteriori cambiamenti, in tal caso redige un $\textit{feedback}_G$ nella $\textit{pull request}_G$ e il programmatore provederà a sistemare. Si ripete dal passo 4 fino ad arrivare ad uno stato di accettazione da parte del verificatore.
     \end{itemize}
 \end{enumerate}
+
+
+
 Come riportato nella sezione riguardante l'attività di $\textit{codifica}_G$ bisogna rispettare tale aspettativa nel caso della $\textit{codifica}_G$ dell'$\textit{MVP}_G$:
 \begin{itemize}
     \item Le modifiche nei relativi $\textit{branch}_G$ $\textit{feature}_G$ riguardano solo le funzionalità segnalate e non verranno applicate all'$\textit{architettura}_G$ e alla progettazione del documento di Specifica Tecnica. Nel caso in cui fosse necessario si concorda con il progettista come procedere e in caso affermativo di crea un ulteriore $\textit{branch}_G$ a partire da develop che non riguarda la $\textit{feature}_G$ in fase di implementazione.
 \end{itemize}
+
+\paragraph{Creazione di un $\textit{ticket}_G$ per la codifica}
+Per creare un $\textit{ticket}_G$ legato allo sviluppo di funzionalità, si adotta la seguente procedura:
+\begin{itemize}
+    \item identificare il $\textit{requisito}_G$  che la funzionalità soddisfa (ad esempio: ROF34);
+    \item identificare la parte architetturale che deve essere sviluppata per implementare la funzionalità descritta (ad esempio; deve essere inserita una nuova relazione all'interno del DB);
+    \item identificare il risultato atteso dallo sviluppo;
+    \item identificare l'assegnatario.
+\end{itemize}
+Il nome del $\textit{ticket}_G$ sarà una combinazione dei primi due passi (ad esempio: ROF34/DB). All'interno della descrizione del $\textit{ticket}_G$ si deve inserire il risultato atteso dallo sviluppo più eventuali accorgimenti o risorse per aiutare il programmatore.
+
 \paragraph{Verifica del codice}
 Il verificatore incaricato di verificare una funzionalità (corrispondente ad un $\textit{branch}_G$ $\textit{feature}_G$):
 \begin{itemize}
@@ -215,6 +241,16 @@ Il verificatore incaricato di verificare una funzionalità (corrispondente ad un
 \end{itemize}
 Il responsabile è incaricato di accettere la $\textit{pull request}_G$. \\
 Nel momento in cui il responsabile ritiene che il codice possa essere rilasciato per la revisione allora viene creata una $\textit{pull request}_G$ dal $\textit{branch}_G$ develop verso il $\textit{branch}_G$ main.
+
+\paragraph{Creazione di un $\textit{ticket}_G$ di verifica}
+Per creare un $\textit{ticket}_G$ legato alla verifica di una particolare funzionalità implementata, si adotta la seguente procedura:
+\begin{enumerate}
+    \item identificare l'attività da verificare (la quale deve essere nello stato \emph{in fase di verifica});
+    \item inserire nella descrizione del $\textit{ticket}_G$ il link all'attività che sta venendo verificata;
+    \item identificare l'assegnatario.
+\end{enumerate}
+Il nome del $\textit{ticket}_G$ dovrà rispettare la seguente $\textit{codifica}_G$.
+
 \subsubsection{Strumenti}
 \begin{itemize}
     \item \emph{\textbf{Git}}: $\textit{software}_G$ utilizzato per il controllo di versione della documentazione e del codice prodotti;
