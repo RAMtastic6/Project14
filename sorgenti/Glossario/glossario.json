@@ -100,7 +100,7 @@
     },
 		{
       "termine": "Docker",
-      "definizione": "Docker è una piattaforma di containerizzazione open-source che consente agli sviluppatori di creare, distribuire e gestire applicazioni in container leggeri e portatili. I container Docker sono un tipo di virtualizzazione a livello di sistema operativo che isolano le applicazioni e le relative dipendenze, consentendo loro di essere eseguite in ambienti consistenti e riproducibili su qualsiasi piattaforma che supporti Docker."
+      "definizione": "Docker è una piattaforma di containerizzazione open-source che consente agli sviluppatori di creare, distribuire e gestire applicazioni in container leggeri e portabili. I container Docker sono un tipo di virtualizzazione a livello di sistema operativo che isolano le applicazioni e le relative dipendenze, consentendo loro di essere eseguite in ambienti consistenti e riproducibili su qualsiasi piattaforma che supporti Docker."
 		},
     {
       "termine": "Documento Esterno",
@@ -195,7 +195,7 @@
     },
 		{
       "termine": "JSON",
-      "definizione": "JSON (JavaScript Object Notation) è un formato di dati leggero e basato su testo utilizzato per rappresentare dati strutturati, comunemente utilizzato per lo scambio di dati tra un server e un client web e come formato di memorizzazione dei dati (da servizi come MongoDB)."
+      "definizione": "JSON (JavaScript Object Notation) è un formato di dati leggero e basato su testo utilizzato per rappresentare dati strutturati. E' comunemente utilizzato per lo scambio di dati tra un server e un client web e come formato di memorizzazione dei dati (da servizi come MongoDB)."
 		},
 		{
       "termine": "JSX",
@@ -465,7 +465,7 @@
     },
 		{
       "termine": "SQL",
-      "definizione": "(Structured Query Language), è un linguaggio di programmazione dichiarativo utilizzato per gestire e manipolare database relazionali. È progettato per consentire agli utenti di interrogare, aggiornare, inserire e cancellare dati da un database in modo efficiente e standardizzato."
+      "definizione": "SQL (Structured Query Language) è un linguaggio di programmazione dichiarativo utilizzato per gestire e manipolare database relazionali. È progettato per consentire agli utenti di interrogare, aggiornare, inserire e cancellare dati da un database in modo efficiente e standardizzato."
 		},
     {
       "termine": "Strumento",
