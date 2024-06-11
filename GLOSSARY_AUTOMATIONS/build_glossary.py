@@ -36,7 +36,7 @@ intestazione = r"""\documentclass[12pt, oneside]{article}
 % Informazioni sul documento
 \section*{Informazioni sul documento}
 \begin{tabular}{ll}
-Versione: & 1.1.0 \\
+Versione: & 1.2.0 \\
 Redattori:  & Zambon M. Brotto D. Zaupa R. Basso L.\\
 Verificatori: & Brotto D. Zaupa R. Zambon M.\\ 
 Destinatari: & T. Vardanega, R. Cardin, Imola Informatica \\
