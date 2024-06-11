@@ -33,7 +33,7 @@
 % Informazioni sul documento
 \section*{Informazioni sul documento} 
 \begin{tabular}{ll}
-Versione: & 2.2.0 \\
+Versione: & 3.0.0 \\
 Redattori: &  Visentin S.  Zaupa R. Brotto D. Basso L. Zambon M. Tonietto F. \\ 
 Verificatori: & Tonietto F. Visentin S. Brotto D. Zaupa R. Zambon M.\\
 Destinatari: & Vardanega T., Cardin R., Imola Informatica \\
@@ -47,6 +47,10 @@ Uso: & Esterno
 \hline
 \textbf{Versione} & \textbf{Data} & \textbf{Autore} & \textbf{Verificatore} & 
 \textbf{Dettaglio} \\
+\hline
+v 3.0.0 & 2024-04-29 & Zambon M. & Zambon M. & Approvazione e verifica del documento\\
+\hline
+v 2.3.0 & 2024-05-31 & Brotto D. & Zambon M. & Allineati i requisiti funzionali secondo i requisiti stilati nel documento di Specifica Tecnica: corretti i testi di ROF4 e RDF44; cambiati requisiti funzionali 8,18,35,70,72 da obbligatori a desiderabili. \\
 \hline
 v 2.2.0 & 2024-05-15 & Brotto D. & Zambon M. & Aggiunto ROF 77 nella sezione requisiti. \newline Aggiunto ROF 77 nella tabella di Tracciamento Requisiti in UC5. \newline Aggiornati Requisiti Funzionali 5,7 da desiderabili a obbligatori. \newline Aggiornati Requisiti Funzionali 52,53,54,56,60 da obbligatori a desiderabili.\\
 \hline
@@ -418,7 +422,7 @@ In questa sezione i requisiti si suddividono in:
     \hline
     ROF 3& L'utente deve visualizzare i pasti con i loro ingredienti e può modificarli, togliendo o modificandone la quantità. & UC3\\
     \hline
-    ROF 4& L'utente base deve essere in grado di visualizzare il riepilogo di quanto ordinato e di confermare oppure di cancellarlo. & UC3 \\
+    ROF 4& L'utente base deve essere in grado di visualizzare il riepilogo di quanto ordinato e di confermare. & UC3 \\
     \hline
     ROF 5& Il $\textit{sistema}_G$ deve poter inviare una notifica di conferma dell’ordinazione collaborativa all’amministratore del ristorante.& UC3 \\
     \hline
@@ -426,7 +430,7 @@ In questa sezione i requisiti si suddividono in:
     \hline
     ROF 7& Il $\textit{sistema}_G$ deve poter inviare una notifica all’amministratore per comunicare la richiesta di $\textit{prenotazione}_G$, che può accettare e rifiutare. & UC23\\
     \hline
-    ROF 8& L'utente deve poter essere in grado di cancellare la $\textit{prenotazione}_G$. & UC13, UC23 \\
+    RDF 8& L'utente deve poter essere in grado di cancellare la $\textit{prenotazione}_G$. & UC13, UC23 \\
     \hline
     ROF 9& Il $\textit{sistema}_G$ deve poter negare la $\textit{prenotazione}_G$ se il ristorante non possiede abbastanza posti o tavoli. & UC23 \\
     \hline
@@ -446,7 +450,7 @@ In questa sezione i requisiti si suddividono in:
     \hline
     RDF 17& Il $\textit{sistema}_G$ deve fornire un'interfaccia per consentire all'amministratore di verificare la disponibilità di posti in base alle specifiche della $\textit{prenotazione}_G$ selezionata. & UC19, UC20 \\
     \hline
-    ROF 18& Il $\textit{sistema}_G$ deve ridurre il numero di posti disponibili in base alle specifiche della $\textit{prenotazione}_G$ dopo che questa è stata accettata. & UC19 \\
+    RDF 18& Il $\textit{sistema}_G$ deve ridurre il numero di posti disponibili in base alle specifiche della $\textit{prenotazione}_G$ dopo che questa è stata accettata. & UC19 \\
     \hline
     ROF 19& L'amministratore deve poter rifiutare la richiesta di $\textit{prenotazione}_G$ selezionata. & UC20 \\
     \hline
@@ -481,7 +485,7 @@ In questa sezione i requisiti si suddividono in:
     \hline
     ROF 34& Il $\textit{sistema}_G$ deve consentire all'amministratore di visualizzare tutti gli ordini confermati per il ristorante selezionato. & UC15 \\
     \hline
-    ROF 35& Il $\textit{sistema}_G$ deve permettere di annullare l'$\textit{ordinazione}_G$ collaborativa nel tempo utile per farlo & UC28 \\
+    RDF 35& Il $\textit{sistema}_G$ deve permettere di annullare l'$\textit{ordinazione}_G$ collaborativa nel tempo utile per farlo & UC28 \\
     \hline
     RDF 36& Il $\textit{sistema}_G$ invia una notifica a tutti gli utenti associati alla $\textit{prenotazione}_G$ la cui $\textit{ordinazione}_G$ collaborativa è stata annullata & UC28 \\
     \hline
@@ -499,7 +503,7 @@ In questa sezione i requisiti si suddividono in:
     \hline
     RDF 43& La modifica delle informazioni del ristorante da parte dell'amministratore non deve causare problemi di sincronizzazione nella visualizzazione, ricerca del ristorante e nell'$\textit{ordinazione}_G$ da parte dell'utente base & UC3, UC14 \\
     \hline
-    RDF 44& L'utente autenticato deve poter visualizzare una lista con le prenotazioni passate e future & UC17 \\
+    RDF 44& L'utente autenticato deve poter visualizzare una lista con le prenotazioni passate & UC17 \\
     \hline
     RDF 45& L'utente autenticato deve poter rilasciare una recensione (con anche una votazione di gradimento tramite stelle) sui ristoranti nei quali ha effettuato almeno una $\textit{prenotazione}_G$ & UC7 \\
     \hline
@@ -554,11 +558,11 @@ In questa sezione i requisiti si suddividono in:
     \hline
     ROF 69 & Il $\textit{sistema}_G$ deve consentire all'utente autenticato di accedere alla funzionalità di logout. & UC27 \\
     \hline
-    ROF 70 & Dopo che l'utente ha selezionato l'opzione di logout, il $\textit{sistema}_G$ deve richiedere una conferma esplicita dall'utente prima di procedere con la disconnessione. & UC27 \\ 
+    RDF 70 & Dopo che l'utente ha selezionato l'opzione di logout, il $\textit{sistema}_G$ deve richiedere una conferma esplicita dall'utente prima di procedere con la disconnessione. & UC27 \\ 
     \hline
     ROF 71 & Dopo aver terminato la sessione dell'utente, il $\textit{sistema}_G$ deve reindirizzare l'utente alla pagina di accesso o a una pagina di destinazione predefinita. & UC27 \\
     \hline
-    ROF 72 & L'utente autenticato deve poter visualizzare le informazioni del suo profilo. & UC29 \\ 
+    RDF 72 & L'utente autenticato deve poter visualizzare le informazioni del suo profilo. & UC29 \\ 
     \hline
 
     RDF 73 & L'amministratore deve poter visualizzare tutte le chat aperte in precedenza da altri utenti. & UC30 \\
@@ -567,7 +571,7 @@ In questa sezione i requisiti si suddividono in:
     \hline
     ROF 75 & Il $\textit{sistema}_G$ deve poter generare un link di invito per la $\textit{prenotazione}_G$ & UC23 \\
     \hline
-    ROF 76 & Il $\textit{sistema}_G$ permette di far visualizzare all'amministratore in dettaglio la lista delle prenotazioni di ogni giornata. & UC15 \\
+    ROF 76 & Il $\textit{sistema}_G$ permette di far visualizzare all'amministratore la lista totale degli ingredienti necessari per soddisfare la singola $\textit{prenotazione}_G$. & UC15 \\
      \hline
     ROF 77 & Il $\textit{sistema}_G$ invia una notifica all’amministratore in base agli
     aggiornamenti sul conto di una $\textit{prenotazione}_G$ del suo ristorante. & UC5 \\
@@ -589,7 +593,7 @@ Questa sezione delinea le specifiche qualitative che devono essere rispettate pe
     \hline
     ROQ 3 & Deve essere prodotta della documentazione che discuta delle problematiche aperte e di eventuali soluzioni soluzioni da esplorare. & $\textit{Capitolato}_G$ \\
     \hline
-    RDQ 4 & Deve essere fornita un'analisi rispetto al carico massimo supportato in numero di dispositivi e di quale sarebbe il servizio cloud piu' adatto per supportarlo analizzando prezzo, stabilità del servizio e assistenza. & $\textit{Capitolato}_G$ \\
+    RDQ 4 & Deve essere fornita un'analisi rispetto al carico massimo supportato in numero di dispositivi e di quale sarebbe il servizio cloud più adatto per supportarlo analizzando prezzo, stabilità del servizio e assistenza. & $\textit{Capitolato}_G$ \\
     \hline
     ROQ 5 & Devono essere rispettate le norme definite nel documento $\textit{Norme di Progetto}_G$. & $\textit{Verbale}_G$ interno \\
     \hline
@@ -675,7 +679,7 @@ Questa sezione delinea i limiti e le restrizioni che il $\textit{sistema}_G$ dev
     \hline
     UC12 & ROF 50, ROF 51, ROF 52 \\
     \hline
-    UC13 & ROF 8, ROF 24 \\
+    UC13 & RDF 8, ROF 24 \\
     \hline
     UC14 & RDF 42, RDF 43 \\
     \hline
@@ -687,7 +691,7 @@ Questa sezione delinea i limiti e le restrizioni che il $\textit{sistema}_G$ dev
     \hline
     UC18 & RDF 29 \\
     \hline
-    UC19 & ROF 12, ROF 13, ROF 14, ROF 15, ROF 16, RDF 17, ROF 18 \\
+    UC19 & ROF 12, ROF 13, ROF 14, ROF 15, ROF 16, RDF 17, RDF 18 \\
     \hline
     UC20 & ROF 12, ROF 13, RDF 17, ROF 19, ROF 20\\
     \hline
@@ -695,7 +699,7 @@ Questa sezione delinea i limiti e le restrizioni che il $\textit{sistema}_G$ dev
     \hline
     UC22 & RDF 64, RDF 65, RDF 66 \\
     \hline
-    UC23 & ROF 6, RDF 7, ROF 8, ROF 9, ROF 11, ROF 75\\
+    UC23 & ROF 6, RDF 7, RDF 8, ROF 9, ROF 11, ROF 75\\
     \hline
     UC24 & ROF 10\\
     \hline
@@ -703,11 +707,11 @@ Questa sezione delinea i limiti e le restrizioni che il $\textit{sistema}_G$ dev
     \hline
     UC26 & ROF 60, ROF 61 \\
     \hline
-    UC27 & ROF 69, ROF 70, ROF 71 \\
+    UC27 & ROF 69, RDF 70, ROF 71 \\
     \hline
-    UC28 & ROF 35, RDF 36 \\
+    UC28 & RDF 35, RDF 36 \\
     \hline
-    UC29 & ROF 72 \\
+    UC29 & RDF 72 \\
     \hline
     UC30 & RDF 22, RDF 23, RDF 73, RDF 74 \\
     \hline

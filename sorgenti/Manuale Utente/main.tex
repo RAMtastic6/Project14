@@ -1,0 +1,122 @@
+\documentclass[12pt, oneside]{article} 
+\usepackage{amsmath, amsthm, amssymb, calrsfs, wasysym, verbatim, bbm, color, colortbl, graphicx, geometry, fancyhdr, url, multirow, hyperref, titlesec, tabularx, spreadtab, pgf-pie, array, longtable, caption, float, subcaption, listings, comment}
+\usepackage[italian]{babel}
+
+\geometry{tmargin=.75in, bmargin=.75in, lmargin=.75in, rmargin = .75in}
+
+% opzioni listing
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+
+\lstdefinestyle{mystyle}{
+    backgroundcolor=\color{backcolour},   
+    commentstyle=\color{codegreen},
+    keywordstyle=\color{magenta},
+    numberstyle=\tiny\color{codegray},
+    stringstyle=\color{codepurple},
+    basicstyle=\ttfamily\footnotesize,
+    breakatwhitespace=false,         
+    breaklines=true,                 
+    captionpos=b,                    
+    keepspaces=true,                 
+    numbers=left,                    
+    numbersep=5pt,                  
+    showspaces=false,                
+    showstringspaces=false,
+    showtabs=false,                  
+    tabsize=2
+}
+
+\lstset{style=mystyle}
+
+\author{RAMtastic6}
+
+%Intestazione
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[R]{Gruppo 14 RAMtastic6\\ramtastic6@gmail.com}
+\fancyfoot[C]{\thepage}
+
+% Linea intestazione
+\renewcommand{\headrulewidth}{1pt} 
+
+% Intestazione documento
+\begin{document}
+% Salta la prima pagina per l'intestazione
+\thispagestyle{empty}
+\title{Manuale Utente}
+\maketitle
+\begin{figure}[h]
+  \centering
+  \includegraphics[scale=0.3]{logo.png}
+\end{figure}
+\begin{center}
+    email: ramtastic6@gmail.com
+\end{center}
+
+% Informazioni sul documento
+\section*{Informazioni sul documento} 
+\begin{tabular}{ll}
+Versione: & 1.0.0 \\
+Redattori: &  Zaupa R. Basso L. Brotto D. Zambon M. Tonietto F.\\ 
+Verificatori: & Zambon M. Tonietto F. Brotto D\\
+Destinatari: & Vardanega T., Cardin R., Imola Informatica \\
+Uso: & Esterno
+\end{tabular}
+\newpage
+
+% Registro dei cambiamenti
+\section*{Registro dei Cambiamenti - Changelog}
+\begin{longtable}{|c|c|c|c|p{7cm}|}
+\hline
+\textbf{Versione} & \textbf{Data} & \textbf{Autore} & \textbf{Verificatore} & 
+\textbf{Dettaglio} \\
+\hline
+v 1.0.0 & 2024-06-11 & Brotto D. & Brotto D. & Approvazione e validazione del documento \\
+\hline
+v 0.3.0 & 2024-06-08 & Tonietto F. & Brotto D & Stesura della sezione 4 relativa al "Supporto tecnico". \\
+\hline
+v 0.2.1 & 2024-06-08 & Tonietto F. & Brotto D & Stesura delle sezioni relative alla descrizione del funzionamento del $\textit{sistema}_G$ di notifica sia per l'utente base che per l'amministratore. \newline Stesura delle sezioni relative alla visualizzazione dell'elenco delle prenotazioni effettuate/ricevute e del relativo dettaglio sia per l'utente base che per l'amministratore. \\
+\hline
+v 0.2.0 & 2024-06-06 & Zambon M. & Tonietto F. & Stesura della sezione 3.2.5 \\
+\hline
+v 0.1.1 & 2024-06-05 & Zambon M. & Tonietto F. & Stesura della sezione 3.2.3 \\
+\hline
+v 0.1.0 & 2024-06-01 & Basso L. & Zambon M. & Stesura della sezione installazione (3.1.1). Stesura della sezione 3.2.1. \\
+\hline
+v 0.0.3 & 2024-05-31 & Brotto D. & Zambon M. & Stesura della sezione 3.2.2 e 3.2.4. \\
+\hline
+v 0.0.2 & 2024-05-21 & Basso L. & Zambon M. & Stesura della sezione 2 (requisiti). \\
+\hline
+v 0.0.1 & 2024-05-17 & Zaupa R. & Zambon M. & Prima versione, stesura della sezione "Introduzione" \\
+\hline
+\end{longtable}
+\newpage
+
+% Sommario
+\tableofcontents
+\newpage
+
+% Introduzione
+\input{sections/introduzione}
+\newpage
+
+%Requisiti
+\input{sections/requisiti}
+\newpage
+
+%Istruzioni installazione
+\input{sections/istruzioni_installazione}
+\newpage
+
+%Istruzioni all'uso
+\input{sections/istruzioni_uso}
+\newpage
+
+%Supporto Tecnico
+\input{sections/supporto_tecnico}
+\newpage
+
+\end{document}

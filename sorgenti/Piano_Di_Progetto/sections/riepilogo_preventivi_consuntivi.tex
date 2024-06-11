@@ -1,5 +1,7 @@
 \section{Riepilogo preventivi e consuntivi}
-
+\subsection{Introduzione}
+In quest'ultima sezione vengono riportati i Preventivi e i Consuntivi relativi alle macro-fasi dello sviluppo del progetto. \\
+Analizzando preventivi e consuntivi è possibile vedere, andando a fare un confronto anche con quanto dettagliatamente emerso nelle \textit{retrospectives} di ogni singolo \textit{sprint}, come il piano finanziario iniziale sia riuscito ad essere stato rispettato andando a fare le dovute rimodulazioni, così come appaiono chiaramente dall'analisi dei consuntivi di ciascuna fase dello sviluppo. 
 \begin{comment}
 \subsection{Preventivo totale}
 Per questa sezione per approfondimenti si rimanda al documento \emph{"Dichiarazione impegni v1.2"} citato nella sezione \ref{sec:rif_inf} \emph{"$\textit{Riferimenti}_G$ informativi"}.\\
@@ -89,6 +91,33 @@ In questa sezione è presente il $\textit{consuntivo}_G$ orario ed economico par
 
 
 \newpage
+
+\subsection{Analisi fase PB}
+\subsubsection{Preventivo PB}
+In questa sezione è presente il $\textit{preventivo}_G$ orario ed economico parziale scelto per la fase $\textit{PB}_G$.
+\begin{table}[htbp]
+    \centering
+\begin{spreadtab}{{tabular}{|c|c|c|c|c|c|c|c|}}
+    \hline
+    @\textbf{Membro} & @\textbf{Re} & @\textbf{Amm} & @\textbf{An} & @\textbf{Progr} & @\textbf{Proge} & @\textbf{Ve} & @\textbf{Totale} \\
+    \hline
+    @ Samuele V. & 5 & 8 & 0 & 16 & 10 & 13 & sum(b2:g2) \\
+    @ Leonardo B. & 6 & 1 & 4 & 20 & 10 & 15 & sum(b3:g3) \\
+    @ Riccardo Z. & 2 & 4 & 0 & 16 & 10 & 10 & sum(b4:g4) \\
+    @ Davide B. & 6 & 4 & 0 & 20 & 10 & 14 & sum(b5:g5) \\
+    @ Michele Z. & 7 & 0 & 2 & 23 & 10 & 15 & sum(b6:g6) \\
+    @ Filippo T. & 3 & 8 & 2 & 15 & 10 & 16 & sum(b7:g7) \\
+    \hline
+    @\textbf{Ore totali} & sum(b2:b7) & sum(c2:c7) & sum(d2:d7) & sum(e2:e7) & sum(f2:f7) & sum(g2:g7) &  sum(b8:g8)\\
+    \hline
+    @\textbf{Costo totale} & 30*b8 & 20*c8 & 25*d8 & 15*e8 & 25*f8 & 15*g8 & sum(b9:g9)\\
+    \hline
+\end{spreadtab}
+    \caption{Consuntivo orario ed economico parziale per la fase PB, in base al ruolo}
+    \label{tab:prev_pb}
+    \vspace{5mm}
+    \textbf{Legenda:} \textit{Re} = Responsabile, \textit{Amm} = Amministratore, \textit{An} = Analista, \textit{Progr} = Programmatore, \textit{Proge} = Progettista, \textit{Ve} = Verificatore
+\end{table}
 
 % fase PB
 \begin{comment}

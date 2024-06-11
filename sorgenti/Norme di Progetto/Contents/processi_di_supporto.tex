@@ -270,9 +270,9 @@ La gestione della qualità si propone di raggiungere i seguenti obiettivi:
 Gli strumenti utilizzati, per la gestione della qualità dei processi e del prodotto e per valutare il lavoro svolto, sono delle metriche definite nel documento di \emph{Piano di Qualifica}. 
 \subsubsection{Codifica delle metriche}
 Ogni metrica è identificata dal seguente formato di codice:
-\[
-\text{M[Tipo][Id]-[Acronimo]}
-\]
+    \[
+    \text{M[Tipo][Id]-[Acronimo]}
+    \]
 
 Dove:
 \begin{itemize}
@@ -303,6 +303,49 @@ L'analisi statica adotta comunemente due metodi di lettura:
 Nel documento \emph{"$\textit{Piano di Qualifica}_G$"} vengono definite delle liste di controllo in modo da applicare la tecnica dell'\textit{Inspection}, preferibile a quella del \textit{Walkthrough}.
 \subsubsection{Analisi dinamica}
 L'analisi dinamica è una metodologia di verifica che si basa sull'esecuzione del codice. Le tecniche principali utilizzate in questa fase sono i $\textit{test}_G$ (definiti nel documento di "\emph{Piano di Qualifica}") finalizzati per individuare e verificare il comportamento del prodotto $\textit{software}_G$.
+
+\subsubsection{Testing}
+L’obiettivo del testing è garantire il corretto funzionamento delle componenti, verificando che producano i risultati attesi.
+Questi $\textit{test}_G$ sono perciò responsabili di individuare eventuali anomalie di funzionamento.
+\subsubsubsection{Test di unità}
+I $\textit{test}_G$ di unità costituiscono un pilastro fondamentale nella verifica della correttezza delle singole unità di codice all'interno di un $\textit{sistema}_G$ $\textit{software}_G$. Essi sono progettati per isolare e verificare singoli componenti, come funzioni o metodi, garantendo che ciascuno di essi funzioni correttamente e produca risultati attesi in conformità alle specifiche.
+\\
+L'obiettivo primario dei $\textit{test}_G$ di unità è garantire l'integrità e la correttezza di ogni singola unità di codice prima della sua integrazione con il resto del $\textit{sistema}_G$. 
+\\Questo approccio consente di individuare e correggere eventuali errori o bug nelle fasi iniziali dello sviluppo, riducendo così il rischio di problemi più gravi nel $\textit{sistema}_G$ finale.
+\\
+Durante l'implementazione dei $\textit{test}_G$ di unità, è possibile utilizzare oggetti simulati o parziali al fine di isolare l'unità di codice in esame dalle sue dipendenze esterne. Questo permette di verificare il comportamento dell'unità in con$\textit{test}_G$i controllati e di garantire un'efficace separazione durante le fasi di $\textit{test}_G$.
+\\
+Inoltre, i $\textit{test}_G$ di unità sono progettati per raggiungere una copertura completa dei percorsi all'interno dell'unità di codice. Ciò significa che vengono creati appositamente $\textit{test}_G$ per attivare e verificare specifici percorsi nel codice, al fine di garantire una copertura completa e accurata delle varie parti dell'unità.
+
+\subsubsubsection{Test di sistema}
+L'obiettivo principale dei $\textit{test}_G$ di $\textit{sistema}_G$ è garantire che il $\textit{sistema}_G$ soddisfi i requisiti funzionali e non funzionali specificati durante la fase di progettazione e sviluppo. Essi mirano a convalidare le funzionalità del $\textit{sistema}_G$ nel con$\textit{test}_G$o delle attività e dei processi previsti, verificando che il $\textit{sistema}_G$ si comporti correttamente e risponda in modo appropriato a tutte le richieste e le interazioni degli utenti.
+\\
+Durante l'esecuzione dei $\textit{test}_G$ di $\textit{sistema}_G$, vengono simulati scenari realistici e casi d'uso tipici che possono verificarsi durante l'utilizzo quotidiano del $\textit{sistema}_G$. 
+\\Questo aiuta a identificare e risolvere eventuali difetti, errori o problemi di interoperabilità tra le diverse componenti del $\textit{sistema}_G$.
+
+\subsubsubsection{Test di accettazione}
+L'obiettivo principale dei $\textit{test}_G$ di accettazione è convalidare che il $\textit{software}_G$ sia in grado di risolvere efficacemente i problemi e soddisfare le esigenze degli utenti. 
+\\Essi valutano il $\textit{sistema}_G$ rispetto ai casi d'uso reali e alle specifiche funzionali concordate, verificando se il $\textit{software}_G$ si comporta come previsto e se fornisce i risultati desiderati.
+
+\subsubsubsection{Formato dei test}
+La classificazione dei $\textit{test}_G$ dei $\textit{test}_G$ avviene seguendo il seguente formato:
+\[
+    \textbf{T[Tipo]-[Codice]}
+\]
+dove il \textbf{Tipo} può essere  "\textbf{U}" per i $\textit{test}_G$ di unità,"\textbf{S}" per i $\textit{test}_G$ di $\textit{sistema}_G$, oppure "\textbf{A}" per i $\textit{test}_G$ di accettazione.
+
+\subsubsubsection{Continuous Integration}
+L'integrazione continua è una pratica dello sviluppo di $\textit{software}_G$ che consiste nell'automazione dell'integrazione del codice sorgente.
+Nel nostro progetto, questo concetto è stato messo in atto nella $\textit{repository}_G$ dell'$\textit{MVP}_G$, quando veniva creata una $\textit{pull request}_G$ per integrare modifiche o migliorie al codice.
+Infatti quando viene creata una $\textit{pull request}_G$, una $\textit{github}_G$ action esegue i codici di $\textit{test}_G$ dell'intero progetto. 
+\\una volta ottenuti gli esiti dei $\textit{test}_G$ per ogni componente, i dati vengono inviati a \textit{Coveralls}, che graficamente aggiorna il suo pannello di controllo per tenere traccia di tutte le percentuali di codice coperto, ed  eventualmente capire dove effettuare $\textit{test}_G$ più profondi per aumentare le percentuali di copertura.
+
+
+\subsubsection{Strumenti}
+\begin{itemize}
+    \item \emph{\textbf{Coveralls}}: 
+ è uno $\textit{strumento}_G$ di analisi del codice e dei $\textit{test}_G$ che fornisce informazioni sulla copertura del codice. Monitora l'esecuzione dei $\textit{test}_G$ automatizzati e calcola la percentuale di righe di codice che sono eseguite dai $\textit{test}_G$.
+\end{itemize}
 
 \subsection{Validazione}
 \subsubsection{Scopo ed Aspettative}

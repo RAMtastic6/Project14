@@ -1,13 +1,15 @@
+
+
 \section{Testing}
 In questa sezione vengono esplorate le metodologie di $\textit{test}_G$ing e la loro specifica. L'obiettivo è quello di seguire il "$\textit{Modello a V}_G$" in cui ad ogni fase di sviluppo corrisponde una tipologia di $\textit{test}_G$ da eseguire.\\
 I $\textit{test}_G$ si dividono in:
 \begin{itemize}
     \item \textbf{Test di unità, TU}:\\
-    vengono eseguiti sulle unità più semplici del codice. Viene fatta corrispondere all'attività di $\textit{codifica}_G$ (implementation).
+    vengono eseguiti sulle unità più semplici del codice. Viene fatta corrispondere all'attività di $\textit{codifica}_G$ (\textit{implementation}).
     \item \textbf{Test di integrazione, TI}:\\
     vengono eseguiti per verificare la corretta integrazione tra le diverse unità $\textit{software}_G$. Viene fatta corrispondere all'attività di progettazione.
     \item \textbf{Test di $\textit{sistema}_G$, TS}:\\
-    verificano il corretto funzionamento dell'intero $\textit{sistema}_G$ e, in particolare, che tutti i requisiti individuati siano soddisfatti. Viene fatta corrispondere all'attività di $\textit{Analisi Dei Requisiti}_G$. 
+    verificano il corretto funzionamento dell'intero $\textit{sistema}_G$ e, in particolare, che tutti i requisiti individuati siano soddisfatti. Viene fatta corrispondere all'attività di \textit{Analisi Dei Requisiti}. 
     \item \textbf{Test di accettazione, TA}:\\
     verificano, alla presenza del committente, che il prodotto finale soddisfi tutti i requisiti. Se superati, si può procedere al $\textit{rilascio}_G$ dello stesso.
 \end{itemize}
@@ -17,42 +19,1545 @@ Per ogni $\textit{test}_G$ verrà fornito uno stato, codificato nel modo seguent
     \item \textbf{NS}: non superato. Il $\textit{test}_G$ è stato implementato ed ha avuto esito negativo;
     \item \textbf{NI}: non implementato.
 \end{itemize}
+
+\newpage
 \subsection{Test di unità}
-I $\textit{test}_G$i di unità sono una fase del $\textit{processo}_G$ di $\textit{test}_G$ing il cui scopo è quello di verificare il corretto funzionamento delle singole componenti di codice. Viene intesa un'unità come singole funzioni o classi oppure, in generale, ogni singola entità di codice responsabile di svolgere specifici compiti all'interno del $\textit{sistema}_G$. Per farlo viene utilizzato il $\textit{framework}_G$ per il $\textit{test}_G$ing $\textit{Jest}_G$. Di seguito vengono elencati i $\textit{test}_G$, i quali avranno un codice identificativo, una descrizione e il corrispondente stato.
+I $\textit{test}_G$i di unità sono una fase del $\textit{processo}_G$ di $\textit{test}_G$ing il cui scopo è quello di verificare il corretto funzionamento delle singole componenti di codice. Viene intesa un'unità come singole funzioni o classi oppure, in generale, ogni singola entità di codice responsabile di svolgere specifici compiti all'interno del $\textit{sistema}_G$. Per farlo viene utilizzato il $\textit{framework}_G$ per il $\textit{test}_G$ing \textit{Jest}. Di seguito vengono elencati i $\textit{test}_G$, i quali avranno un codice identificativo, una descrizione e il corrispondente stato.
+
+\subsubsection{Test di unità - FrontEnd}
+Per ogni componente viene descritto il $\textit{test}_G$ effettuato e se è stato soddisfatto
 \begin{longtable}{|>{\centering\arraybackslash}p{1.5cm}|p{15cm}|p{1cm}|}
   \hline
   \rowcolor{gray!30}
   \textbf{Codice} & \textbf{Descrizione} & \textbf{Stato} \\
   \hline
   \rowcolor{gray!10}
-  \textbf{TU-01} & Verificare che il componente RestaurantSearch venga visualizzato correttamente  & S \\
+  \textbf{TU-01} & FoodList - Verificare che il titolo del menù venga visualizzato correttamente  & S \\
   \hline
-  \caption{Test di unità} 
-  \label{tab:test_unita}
-  \end{longtable}
-\paragraph{Tracciamento $\textit{test}_G$ di unità}
+  \rowcolor{gray!10}
+  \textbf{TU-02} & FoodList - Verificare che gli item nel menù vengano visualizzati correttamente  & S \\
+  \hline
+  \rowcolor{gray!10}
+  \textbf{TU-03} & FoodList - Verificare i nomi ed i prezzi dei pasti nel menù vengano visualizzati correttamente & S \\
+  \hline
+  \rowcolor{gray!10}
+  \textbf{TU-04} & FoodList - Verificare che se il menù non contiene item al suo interno, visualizzi una lista vuota  & S \\
+  \hline
+  \rowcolor{gray!10}
+  \textbf{TU-05} & Header - Verificare che l'header venga visualizzato correttamente  & S \\
+  \hline
+  \rowcolor{gray!10}
+  \textbf{TU-06} & HomePageCards - Verificare che l'homepage venga visualizzata correttamente  & S \\
+  \hline
+  \rowcolor{gray!10}
+  \textbf{TU-07} & IngredientChart - Verificare che gli ingredienti di un pasto vengano visualizzati correttamente  & S \\
+  \hline
+  \rowcolor{gray!10}
+  \textbf{TU-08} & IngredientChart - Verificare che la rimozione dei un ingrediente da un pasto avvenga correttamente  & S \\
+  \hline
+  \rowcolor{gray!10}
+  \textbf{TU-09} & IngredientChart - Verificare che l'$\textit{ordinazione}_G$ venga aggiornata correttamente  & S \\
+  \hline
+  \rowcolor{gray!10}
+  \textbf{TU-10} & IngredientChart - Verificare che vengano chiamati gli eventi relativi al socket correttamente  & S \\
+  \hline
+  \rowcolor{gray!10}
+  \textbf{TU-11} & Login - Verificare che la schermata di login venga visualizzata correttamente  & S \\
+  \hline
+  \rowcolor{gray!10}
+  \textbf{TU-12} & Login - Verificare che il login ottenga gli input correttamente  & S \\
+  \hline
+  \rowcolor{gray!10}
+  \textbf{TU-13} & MenuTable - Verificare che il menù venga visualizzato correttamente  & S \\
+  \hline
+  \rowcolor{gray!10}
+  \textbf{TU-14} & MenuTable - Verificare che l'aumento di quantità di un pasto venga visualizzato correttamente  & S \\
+  \hline
+  \rowcolor{gray!10}
+  \textbf{TU-15} & MenuTable - Verificare che l'abbassamento di quantità di un pasto venga visualizzato correttamente  & S \\
+  \hline
+  \rowcolor{gray!10}
+  \textbf{TU-16} & MenuTable - Verificare che il prezzo totale venga visualizzato correttamente  & S \\
+  \hline
+  \rowcolor{gray!10}
+  \textbf{TU-17} & MenuTable - Verificare che vengano chiamati gli eventi relativi al socket correttamente  & S \\
+  \hline
+  \rowcolor{gray!10}
+  \textbf{TU-18} & Notification - Verificare che le notifiche vengano visualizzate correttamente  & S \\
+  \hline
+  \rowcolor{gray!10}
+  \textbf{TU-19} & Notification - Verificare che il click sul bottone nella notifica avvenga correttamente  & S \\
+  \hline
+  \rowcolor{gray!10}
+  \textbf{TU-20} & OrderCart - Verificare che la visualizzazione di un ordine avvenga correttamente  & S \\
+  \hline
+  \rowcolor{gray!10}
+  \textbf{TU-21} & OrderCart - Verificare il cambio del metodo di pagamento avvenga e venga visualizzato correttamente  & S \\
+  \hline
+  \rowcolor{gray!10}
+  \textbf{TU-22} & Pagination - Verificare che i link alle pagine corrispondano correttamente  & S \\
+  \hline
+  \rowcolor{gray!10}
+  \textbf{TU-23} & Pagination - Verificare la freccia alla pagina successiva nell'ultima pagina venga disabilitata correttamente  & S \\
+  \hline
+  \rowcolor{gray!10}
+  \textbf{TU-24} & Pagination - Verificare la freccia alla pagina precedente nella prima pagina venga disabilitata correttamente  & S \\
+  \hline
+  \rowcolor{gray!10}
+  \textbf{TU-25} & Pagination - Verificare che dopo un click si navighi verso la pagina corretta  & S \\
+  \hline
+  \rowcolor{gray!10}
+  \textbf{TU-26} & ReservationAdmin - Verificare la corretta visualizzazione del caricamento  & S \\
+  \hline
+  \rowcolor{gray!10}
+  \textbf{TU-27} & ReservationAdmin - Verificare che i dettagli di una $\textit{prenotazione}_G$ vengano visualizzati correttamente dall'amministratore & S \\
+  \hline
+  \rowcolor{gray!10}
+  \textbf{TU-28} & ReservationAdmin - Verificare lo stato "In attesa di conferma" di una $\textit{prenotazione}_G$ dall'amministratore  & S \\
+  \hline
+  \rowcolor{gray!10}
+  \textbf{TU-29} & ReservationAdmin - Verificare lo stato "Rifiutata" di una $\textit{prenotazione}_G$ dall'amministratore  & S \\
+  \hline
+  \rowcolor{gray!10}
+  \textbf{TU-30} & ReservationAdmin - Verificare lo stato "Completata" di una $\textit{prenotazione}_G$ dall'amministratore   & S \\
+  \hline
+  \rowcolor{gray!10}
+  \textbf{TU-31} & ReservationForm - Verificare che il form per effettuare una $\textit{prenotazione}_G$ venga visualizzato correttamente  & S \\
+  \hline
+  \rowcolor{gray!10}
+  \textbf{TU-32} & ReservationForm - Verificare che il form per effettuare una $\textit{prenotazione}_G$ ottenga gli input correttamente  & S \\
+  \hline
+  \rowcolor{gray!10}
+  \textbf{TU-33} & ReservationUser - Verificare la corretta visualizzazione del caricamento della $\textit{prenotazione}_G$ & S \\
+  \hline
+  \rowcolor{gray!10}
+  \textbf{TU-34} & ReservationUser - Verificare che la $\textit{prenotazione}_G$ è in attesa di conferma da parte dell'amministratore & S \\
+  \hline
+  \rowcolor{gray!10}
+  \textbf{TU-35} & ReservationUser - Verificare che la $\textit{prenotazione}_G$ è stata accettata e le ordinazioni sono in attesa di conferma & S \\
+  \hline
+  \rowcolor{gray!10}
+  \textbf{TU-36} & ReservationUser - Verificare che la $\textit{prenotazione}_G$ è stata riufiutata dall'amministratore & S \\
+  \hline
+  \rowcolor{gray!10}
+  \textbf{TU-37} & ReservationUser - Verificare che le ordinazioni sono state confermate e che la $\textit{prenotazione}_G$ è in attesa di pagamento & S \\
+  \hline
+  \rowcolor{gray!10}
+  \textbf{TU-38} & ReservationUser - Verificare che la $\textit{prenotazione}_G$ è stata pagata e completata & S \\
+  \hline
+  \rowcolor{gray!10}
+  \textbf{TU-39} & ReservationsAdmin - Verificare la corretta visualizzazione del caricamento della lista di prenotazioni all'amministratore & S \\
+  \hline
+  \rowcolor{gray!10}
+  \textbf{TU-40} & ReservationsAdmin - Verificare che ,se non ci sono prenotazioni, venga visualizzato correttamente "Non è stata effettuata nessuna $\textit{prenotazione}_G$"  & S \\
+  \hline
+  \rowcolor{gray!10}
+  \textbf{TU-41} & ReservationsAdmin - Verificare la corretta visualizzazione della lista di prenotazioni all'amministratore dopo il caricamento & S \\
+  \hline
+  \rowcolor{gray!10}
+  \textbf{TU-42} & ReservationsUser - Verificare la corretta visualizzazione del caricamento della lista prenotazioni all'utente & S \\
+  \hline
+  \rowcolor{gray!10}
+  \textbf{TU-43} & ReservationsUser - Verificare che ,se non ci sono prenotazioni, venga visualizzato correttamente "Non è stata effettuata nessuna $\textit{prenotazione}_G$"  & S \\
+  \hline
+  \rowcolor{gray!10}
+  \textbf{TU-44} & ReservationsUser - Verificare la corretta visualizzazione della lista prenotazioni all'utente dopo il caricamento  & S \\
+  \hline
+  \rowcolor{gray!10}
+  \textbf{TU-45} & RestaurantSearch - Verificare che la ricerca di un ristorante venga visualizzata correttamente  & S \\
+  \hline
+  \rowcolor{gray!10}
+  \textbf{TU-46} & RestaurantSearch - Verificare che la ricerca di un ristorante ottenga gli input correttamente  & S \\
+  \hline
+  \rowcolor{gray!10}
+  \textbf{TU-47} & RestaurantsTable - Verificare la corretta visualizzazione del caricamento  & S \\
+  \hline
+  \rowcolor{gray!10}
+  \textbf{TU-48} & RestaurantsTable - Verificare la corretta visualizzazione dopo il caricamento  & S \\
+  \hline
+  \rowcolor{gray!10}
+  \textbf{TU-49} & SignupAdmin - Verificare la corretta visualizzazione dopo il caricamento  & S \\
+  \hline
+  \rowcolor{gray!10}
+  \textbf{TU-50} & SignupAdmin - Verificare che gli input vengano ottenuti correttamente  & S \\
+  \hline
+  \rowcolor{gray!10}
+  \textbf{TU-51} & Signup - Verificare la corretta visualizzazione dopo il caricamento  & S \\
+  \hline
+  \rowcolor{gray!10}
+  \textbf{TU-52} & Signup - Verificare che gli input vengano ottenuti correttamente  & S \\
+  \hline
+  \rowcolor{gray!10}
+  \textbf{TU-53} & validateSignUp - Verificare che , se manca l'email, venga visualizzato un errore correttamente  & S \\
+  \hline
+  \rowcolor{gray!10}
+  \textbf{TU-54} & validateSignUp - Verificare che , se l'email non è valida, venga visualizzato un errore correttamente  & S \\
+  \hline
+  \rowcolor{gray!10}
+  \textbf{TU-55} & validateSignUp - Verificare che , se manca il nome, venga visualizzato un errore correttamente  & S \\
+  \hline
+  \rowcolor{gray!10}
+  \textbf{TU-56} & validateSignUp - Verificare che , se manca il cognome, venga visualizzato un errore correttamente  & S \\
+  \hline
+  \rowcolor{gray!10}
+  \textbf{TU-57} & validateSignUp - Verificare che , se manca la password, venga visualizzato un errore correttamente  & S \\
+  \hline
+  \rowcolor{gray!10}
+  \textbf{TU-58} & validateSignUp - Verificare che , se manca la conferma password, venga visualizzato un errore correttamente  & S \\
+  \hline
+  \rowcolor{gray!10}
+  \textbf{TU-59} & validateSignUp - Verificare che , se le password non coincidono, venga visualizzato un errore correttamente  & S \\
+  \hline
+  \rowcolor{gray!10}
+  \textbf{TU-60} & validateSignUp - Verificare che la registrazione venga effettuata con successo  & S \\
+  \hline
+  \rowcolor{gray!10}
+  \textbf{TU-61} & validateSignUpAdmin - Verificare che , se l'email non è valida, venga visualizzato un errore correttamente  & S \\
+  \hline
+  \rowcolor{gray!10}
+  \textbf{TU-62} & validateSignUpAdmin - Verificare che , se manca il nome, venga visualizzato un errore correttamente  & S \\
+  \hline
+  \rowcolor{gray!10}
+  \textbf{TU-63} & validateSignUpAdmin - Verificare che , se manca il cognome, venga visualizzato un errore correttamente  & S \\
+  \hline
+  \rowcolor{gray!10}
+  \textbf{TU-64} & validateSignUpAdmin - Verificare che , se le password non coincidono, venga visualizzato un errore correttamente  & S \\
+  \hline
+  \rowcolor{gray!10}
+  \textbf{TU-65} & validateSignUpAdmin - Verificare che , se manca il nome del ristorante, venga visualizzato un errore correttamente  & S \\
+  \hline
+  \rowcolor{gray!10}
+  \textbf{TU-66} & validateSignUpAdmin - Verificare che , se manca il nome della città, venga visualizzato un errore correttamente  & S \\
+  \hline
+  \rowcolor{gray!10}
+  \textbf{TU-67} & validateSignUpAdmin - Verificare che , se manca l'indirizzo del ristorante, venga visualizzato un errore correttamente  & S \\
+  \hline
+  \rowcolor{gray!10}
+  \textbf{TU-68} & validateSignUpAdmin - Verificare che , se manca il numero di coperti, venga visualizzato un errore correttamente  & S \\
+  \hline
+  \rowcolor{gray!10}
+  \textbf{TU-69} & validateSignUpAdmin - Verificare che , se manca il numero di telefono, venga visualizzato un errore correttamente  & S \\
+  \hline
+  \rowcolor{gray!10}
+  \textbf{TU-70} & validateSignUpAdmin - Verificare che , se manca l'email del ristorante, venga visualizzato un errore correttamente  & S \\
+  \hline
+  \rowcolor{gray!10}
+  \textbf{TU-71} & validateSignUpAdmin - Verificare che , se manca la tipologia di cucina, venga visualizzato un errore correttamente  & S \\
+  \hline
+  \rowcolor{gray!10}
+  \textbf{TU-72} & validateSignUpAdmin - Verificare che che la registrazione venga effettuata con successo  & S \\
+  \hline
+  \rowcolor{gray!10}
+  \textbf{TU-73} & ReservationAdmin - Verificare lo stato "Da pagare" di una $\textit{prenotazione}_G$ dall'amministratore & S \\
+  \hline
+  \rowcolor{gray!10}
+  \textbf{TU-74} & ReservationAdmin - Verificare lo stato "Accettata" di una $\textit{prenotazione}_G$ dall'amministratore & S \\
+  \hline
+\caption{Test di unità BackEnd} 
+\label{tab:test_unita}
+\end{longtable}
+
+
+\paragraph{Tracciamento $\textit{test}_G$ di unità FrontEnd}
 \begin{longtable}{|>{\centering\arraybackslash}p{2cm}|p{6cm}|}
   \hline
   \rowcolor{gray!30}
   \textbf{Codice} & \textbf{Fonte} \\
   \hline
   \endfirsthead
+  
+  \rowcolor{gray!10}
+    \begin{tabular}[c]{@{}c@{}}
+        \textbf{TU-01} \\
+        \textbf{TU-02} \\
+        \textbf{TU-03} \\
+        \textbf{TU-04} 
+    \end{tabular}
+  & \texttt{food\_list.test.jsx} \\
+  \hline
+  \rowcolor{gray!10}
+    \begin{tabular}[c]{@{}c@{}}
+        \textbf{TU-05} 
+    \end{tabular}
+  & \texttt{header.test.jsx} \\
+  \hline
+  \rowcolor{gray!10}
+    \begin{tabular}[c]{@{}c@{}}
+        \textbf{TU-06} 
+    \end{tabular}
+  & \texttt{homepage\_cards.test.jsx} \\
+  \hline
+  \rowcolor{gray!10}
+    \begin{tabular}[c]{@{}c@{}}
+        \textbf{TU-07} \\
+        \textbf{TU-08} \\
+        \textbf{TU-09} \\
+        \textbf{TU-10} 
+    \end{tabular}
+  & \texttt{ingridient\_chart.test.jsx} \\
+  \hline
+  \rowcolor{gray!10}
+    \begin{tabular}[c]{@{}c@{}}
+        \textbf{TU-11} \\
+        \textbf{TU-12}
+    \end{tabular}
+  & \texttt{login.test.jsx} \\
+  \hline
+  \rowcolor{gray!10}
+    \begin{tabular}[c]{@{}c@{}}
+        \textbf{TU-13} \\
+        \textbf{TU-14} \\
+        \textbf{TU-15} \\
+        \textbf{TU-16} \\
+        \textbf{TU-17} 
+    \end{tabular}
+  & \texttt{menu\_table.test.jsx} \\
+  \hline
+  \rowcolor{gray!10}
+    \begin{tabular}[c]{@{}c@{}}
+        \textbf{TU-18} \\
+        \textbf{TU-19} 
+    \end{tabular}
+  & \texttt{notification.test.jsx} \\
+  \hline
+  \rowcolor{gray!10}
+    \begin{tabular}[c]{@{}c@{}}
+        \textbf{TU-20} \\
+        \textbf{TU-21} 
+    \end{tabular}
+  & \texttt{order\_cart.test.jsx} \\
+  \hline
+  \rowcolor{gray!10}
+    \begin{tabular}[c]{@{}c@{}}
+        \textbf{TU-22} \\
+        \textbf{TU-23} \\
+        \textbf{TU-24} \\
+        \textbf{TU-25} 
+    \end{tabular}
+  & \texttt{pagination.test.jsx} \\
+  \hline
+  \rowcolor{gray!10}
+    \begin{tabular}[c]{@{}c@{}}
+        \textbf{TU-26} \\
+        \textbf{TU-27} \\
+        \textbf{TU-28} \\
+        \textbf{TU-29} \\
+        \textbf{TU-30} \\
+        \textbf{TU-73} \\
+        \textbf{TU-74} 
+    \end{tabular}
+  & \texttt{reservation\_admin.test.jsx} \\
+  \hline
+  \rowcolor{gray!10}
+    \begin{tabular}[c]{@{}c@{}}
+        \textbf{TU-31} \\
+        \textbf{TU-32} 
+    \end{tabular}
+  & \texttt{reservation\_form.test.jsx} \\
+  \hline
+  \rowcolor{gray!10}
+    \begin{tabular}[c]{@{}c@{}}
+        \textbf{TU-33} \\
+        \textbf{TU-34} \\
+        \textbf{TU-35} \\
+        \textbf{TU-36} \\
+        \textbf{TU-37} \\
+        \textbf{TU-38} 
+    \end{tabular}
+  & \texttt{reservation\_user.test.jsx} \\
+  \hline
+  \rowcolor{gray!10}
+    \begin{tabular}[c]{@{}c@{}}
+        \textbf{TU-39} \\
+        \textbf{TU-40} \\
+        \textbf{TU-41} 
+    \end{tabular}
+  & \texttt{reservations\_admin.test.jsx} \\
+  \hline
+  \hline
+  \rowcolor{gray!10}
+    \begin{tabular}[c]{@{}c@{}}
+        \textbf{TU-42} \\
+        \textbf{TU-43} \\
+        \textbf{TU-44} 
+    \end{tabular}
+  & \texttt{reservations\_user.test.jsx} \\
+  \hline
+  \rowcolor{gray!10}
+    \begin{tabular}[c]{@{}c@{}}
+        \textbf{TU-45} \\
+        \textbf{TU-46} 
+    \end{tabular}
+  & \texttt{restuarant\_search.test.jsx} \\
+  \hline
+  \rowcolor{gray!10}
+    \begin{tabular}[c]{@{}c@{}}
+        \textbf{TU-47} \\
+        \textbf{TU-48} 
+    \end{tabular}
+  & \texttt{restuarant\_table.test.jsx} \\
+  \hline
+  \rowcolor{gray!10}
+    \begin{tabular}[c]{@{}c@{}}
+        \textbf{TU-49} \\
+        \textbf{TU-50} 
+    \end{tabular}
+  & \texttt{sign\_up\_admin.test.jsx} \\
+  \hline
+  \rowcolor{gray!10}
+    \begin{tabular}[c]{@{}c@{}}
+        \textbf{TU-51} \\
+        \textbf{TU-52} 
+    \end{tabular}
+  & \texttt{sign\_up.test.jsx} \\
+  \hline
+  \rowcolor{gray!10}
+    \begin{tabular}[c]{@{}c@{}}
+        \textbf{TU-53} \\
+        \textbf{TU-54} \\
+        \textbf{TU-55} \\
+        \textbf{TU-56} \\
+        \textbf{TU-57} \\
+        \textbf{TU-58} \\
+        \textbf{TU-59} \\
+        \textbf{TU-60} 
+    \end{tabular}
+  & \texttt{ValidateSignUp.test.jsx} \\
+  \hline
+  \rowcolor{gray!10}
+    \begin{tabular}[c]{@{}c@{}}
+        \textbf{TU-61} \\
+        \textbf{TU-62} \\
+        \textbf{TU-63} \\
+        \textbf{TU-64} \\
+        \textbf{TU-65} \\
+        \textbf{TU-66} \\
+        \textbf{TU-67} \\
+        \textbf{TU-68} \\
+        \textbf{TU-69} \\
+        \textbf{TU-70} \\
+        \textbf{TU-71} \\
+        \textbf{TU-72} 
+    \end{tabular}
+  & \texttt{ValidateSignUpAdmin.test.jsx} \\
+  \hline
 
+  \caption{Tracciamento dei test di unità FrontEnd} 
+  \label{tab:test_unita}
+\end{longtable}
+
+\newpage
+\subsubsection{Test di unità - BackEnd}
+Per ogni funzione viene descritto il $\textit{test}_G$ effettuato e se è stato soddisfatto
+\begin{longtable}{|>{\centering\arraybackslash}p{2cm}|p{15cm}|p{1cm}|}
+  \hline
+  \rowcolor{gray!30}
+  \textbf{Codice} & \textbf{Descrizione} & \textbf{Stato} \\
+  \hline
+  \rowcolor{gray!10}
+  \textbf{TU-75} & SignIn - Verificare che ritorni un token quando vengono immesse delle credenziali valide & S \\
+  \hline
+  \rowcolor{gray!10}
+  \textbf{TU-76} & SignIn - Verificare che lanci l'$\textit{eccezione}_G$ UnauthorizedException quando l'utente non è stato trovato oppure la password non è corretta  & S \\
+  \hline
+  \rowcolor{gray!10}
+  \textbf{TU-77} & decodeToken - Verificare che ritorni un token decodificato quando viene immesso un token valido  & S \\
+  \hline
+  \rowcolor{gray!10}
+  \textbf{TU-78} & decodeToken - Verificare che lanci l'$\textit{eccezione}_G$ UnauthorizedException quando manca il token   & S \\
+  \hline
+  \rowcolor{gray!10}
+  \textbf{TU-79} & decodeToken - Verificare che lanci l'$\textit{eccezione}_G$ UnauthorizedException quando viene immesso un token non valido   & S \\
+  \hline
+  \rowcolor{gray!10}
+  \textbf{TU-80} & generateToken - Verificare che generi un token   & S \\
+  \hline
+  \rowcolor{gray!10}
+  \textbf{TU-81} & signinUser - Verificare che ritorni nullo quando l'utente non esiste   & S \\
+  \hline
+  \rowcolor{gray!10}
+  \textbf{TU-82} & signinUser - Verificare che ritorni nullo quando la password non corrisponde   & S \\
+  \hline
+  \rowcolor{gray!10}
+  \textbf{TU-83} & signinUser - Verificare che ritorni un token se l'utente esiste la passowrd corrisponde   & S \\
+  \hline
+  \rowcolor{gray!10}
+  \textbf{TU-84} & verifyToken - Verificare che ritorni true se il token è valido   & S \\
+  \hline
+  \rowcolor{gray!10}
+  \textbf{TU-85} & verifyToken - Verificare che ritorni false se il token non è valido   & S \\
+  \hline
+  \rowcolor{gray!10}
+  \textbf{TU-86} & DaysopenController - Verificare che il controller sia definito   & S \\
+  \hline
+  \rowcolor{gray!10}
+  \textbf{TU-87} & create - Verificare che chiami il servizio con i corretti parametri    & S \\ 
+  \hline
+  \rowcolor{gray!10}
+  \textbf{TU-88} & DaysopenService - Verificare che il servizio sia definito    & S \\ 
+  \hline
+  \rowcolor{gray!10}
+  \textbf{TU-89} & create - Verificare che chiami il servizio con i corretti parametri      & S \\ 
+  \hline
+  \rowcolor{gray!10}
+  \textbf{TU-90} & create\_manager - Verificare che crei le voci dei giorni di apertura con uno specifico manager  & S \\ 
+  \hline
+  \rowcolor{gray!10}
+  \textbf{TU-91} & findOne - Verificare che ritorni un cibo da un id dato  & S \\ 
+  \hline
+  \rowcolor{gray!10}
+  \textbf{TU-92} & findOne - Verificare che lanci l'$\textit{eccezione}_G$ NotFoundException se il cibo non è stato trovato   & S \\ 
+  \hline
+  \rowcolor{gray!10}
+  \textbf{TU-93} & FoodService - Verificare che il servizio sia definito   & S \\ 
+  \hline
+  \rowcolor{gray!10}
+  \textbf{TU-94} & findOne - Verificare che chiami la funzione  foodRepository.findOne con un id dato & S \\ 
+  \hline
+  \rowcolor{gray!10}
+  \textbf{TU-95} & MenuController - Verificare che il controller sia definito  & S \\ 
+  \hline
+  \rowcolor{gray!10}
+  \textbf{TU-96} & create - Verificare che chiami la funzione menuRepository.create con i corretti parametri  & S \\ 
+  \hline
+  \rowcolor{gray!10}
+  \textbf{TU-97} & MenuService - Verificare che il servizio sia definito & S \\ 
+  \hline
+  \rowcolor{gray!10}
+  \textbf{TU-98} & create - Verificare che crei un nuovo menù  & S \\ 
+  \hline
+  \rowcolor{gray!10}
+  \textbf{TU-98} & findAllByUserId - Verificare che ritorni le notifiche per un utente valido  & S \\ 
+  \hline
+  \rowcolor{gray!10}
+  \textbf{TU-100} & findAllByUserId - Verificare che lanci l'$\textit{eccezione}_G$ UnauthorizedException se il token non è valido  & S \\ 
+  \hline
+  \rowcolor{gray!10}
+  \textbf{TU-101} & updateStatus - Verificare che aggiorni lo stato di una notifica per un utente valido  & S \\ 
+  \hline
+  \rowcolor{gray!10}
+  \textbf{TU-102} & updateStatus - Verificare che lanci l'$\textit{eccezione}_G$ UnauthorizedException per un token o un id notifica non validi  & S \\ 
+  \hline
+  \rowcolor{gray!10}
+  \textbf{TU-103} & NotificationService - Verificare che il servizio sia definito  & S \\ 
+  \hline
+  \rowcolor{gray!10}
+  \textbf{TU-104} & create - Verificare che crei una nuova notifica  & S \\ 
+  \hline
+  \rowcolor{gray!10}
+  \textbf{TU-105} & findAllByUserId - Verificare che trovi tutte le notifiche dato un id utente  & S \\ 
+  \hline
+  \rowcolor{gray!10}
+  \textbf{TU-106} & updateStatus - Verificare che aggiorni lo stato di una notifica  & S \\ 
+  \hline
+  \rowcolor{gray!10}
+  \textbf{TU-107} & updateStatus - Verificare che ritorni null se la notifica non è stata trovata  & S \\ 
+  \hline
+  \rowcolor{gray!10}
+  \textbf{TU-108} & findOne - Verificare che ritorni una notifica dato il suo id  & S \\ 
+  \hline
+  \rowcolor{gray!10}
+  \textbf{TU-109} & create - Verificare che crei un ordine  & S \\ 
+  \hline
+  \rowcolor{gray!10}
+  \textbf{TU-110} & create - Verificare che lanci l'$\textit{eccezione}_G$ BadRequestException se il token non è valido  & S \\ 
+  \hline
+  \rowcolor{gray!10}
+  \textbf{TU-111} & create - Verificare che lanci l'$\textit{eccezione}_G$ NotFoundException se l'ordine esiste già  & S \\ 
+  \hline
+  \rowcolor{gray!10}
+  \textbf{TU-112} & findAll - Verificare che ritorni tutti gli ordini  & S \\ 
+  \hline
+  \rowcolor{gray!10}
+  \textbf{TU-113} & create - Verificare che lanci l'$\textit{eccezione}_G$ NotFoundException se l'ordine non è stato trovato  & S \\ 
+  \hline
+  \rowcolor{gray!10}
+  \textbf{TU-114} & findOne - Verificare che ritorni un ordine  & S \\ 
+  \hline
+  \rowcolor{gray!10}
+  \textbf{TU-115} & findOne - Verificare che lanci l'$\textit{eccezione}_G$ NotFoundException se l'ordine non è stato trovato  & S \\ 
+  \hline
+  \rowcolor{gray!10}
+  \textbf{TU-116} & update - Verificare che aggiorni un ordine  & S \\ 
+  \hline
+  \rowcolor{gray!10}
+  \textbf{TU-117} & update - Verificare che lanci l'$\textit{eccezione}_G$ BadRequestException se il token non è valido & S \\ 
+  \hline
+  \rowcolor{gray!10}
+  \textbf{TU-118} & update - Verificare che lanci l'$\textit{eccezione}_G$ NotFoundException se l'ordine non è stato trovato  & S \\ 
+  \hline
+  \rowcolor{gray!10}
+  \textbf{TU-119} & updateIngredients - Verificare che aggiorni gli ingredienti di un ordine  & S \\ 
+  \hline
+  \rowcolor{gray!10}
+  \textbf{TU-120} & updateIngredients - Verificare che lanci l'$\textit{eccezione}_G$ NotFoundException se l'ordine non è stato trovato  & S \\ 
+  \hline
+  \rowcolor{gray!10}
+  \textbf{TU-121} & remove - Verificare che rimuova un ordine & S \\ 
+  \hline
+  \rowcolor{gray!10}
+  \textbf{TU-122} & remove - Verificare che lanci l'$\textit{eccezione}_G$ NotFoundException se l'ordine non è stato trovato  & S \\ 
+  \hline
+  \rowcolor{gray!10}
+  \textbf{TU-123} & partialBill - Verificare che calcoli il conto parziale di un cliente  & S \\ 
+  \hline
+  \rowcolor{gray!10}
+  \textbf{TU-124} & RomanBill - Verificare che calcoli il conto intero di un cliente  & S \\ 
+  \hline
+  \rowcolor{gray!10}
+  \textbf{TU-125} & updateListOrders - Verificare che aggiorni la lista degli ordini per una $\textit{prenotazione}_G$  & S \\ 
+  \hline
+  \rowcolor{gray!10}
+  \textbf{TU-126} & updateListOrders - Verificare che lanci l'$\textit{eccezione}_G$ BadRequestException se il token non è valido  & S \\ 
+  \hline
+  \rowcolor{gray!10}
+  \textbf{TU-127} & getReservationOrders - Verificare che ritorni gli ordini di una $\textit{prenotazione}_G$  & S \\ 
+  \hline
+  \rowcolor{gray!10}
+  \textbf{TU-128} & getReservationOrders - Verificare che lanci l'$\textit{eccezione}_G$ NotFoundException se nono sono stati trovati ordini per una $\textit{prenotazione}_G$  & S \\ 
+  \hline
+  \rowcolor{gray!10}
+  \textbf{TU-129} & pay - Verificare che ritorni true se il pagamento è stato effettuato con successo  & S \\ 
+  \hline
+  \rowcolor{gray!10}
+  \textbf{TU-130} & pay - Verificare che ritorni null l'ordine non esiste  & S \\ 
+  \hline
+  \rowcolor{gray!10}
+  \textbf{TU-131} & create - Verificare che crei un ordine e lo salvi nel database  & S \\ 
+  \hline
+  \rowcolor{gray!10}
+  \textbf{TU-132} & remove - Verificare che rimuova un ordine dal database  & S \\ 
+  \hline
+  \rowcolor{gray!10}
+  \textbf{TU-133} & findAll - Verificare che ritorni tutti gli ordini nel database  & S \\ 
+  \hline
+  \rowcolor{gray!10}
+  \textbf{TU-134} & findOne - Verificare che ritorni uno specifico ordine dal database  & S \\ 
+  \hline
+  \rowcolor{gray!10}
+  \textbf{TU-135} & addQuantity - Verificare che aumenti la quantità per un ordine esistente  & S \\ 
+  \hline
+  \rowcolor{gray!10}
+  \textbf{TU-136} & updateIngredients - Verificare che aggiorni gli ingredienti per un ordine esistente  & S \\ 
+  \hline
+  \rowcolor{gray!10}
+  \textbf{TU-137} & getPartialBill - Verificare che ritorni correttamente il costo totale per un cliente & S \\ 
+  \hline
+  \rowcolor{gray!10}
+  \textbf{TU-138} & getPartialBill - Verificare che ritorni 0 se il cliente non ha ordini nella $\textit{prenotazione}_G$ & S \\ 
+  \hline
+  \rowcolor{gray!10}
+  \textbf{TU-139} & getRomanBill - Verificare che ritorni correttamente il costo per persona  & S \\ 
+  \hline
+  \rowcolor{gray!10}
+  \textbf{TU-140} & getRomanBill - Verificare che ritorni 0 se non ci sono ordini  & S \\ 
+  \hline
+  \rowcolor{gray!10}
+  \textbf{TU-141} & getReservationOrders - Verificare che ritorni tutti gli ordini di una specifica $\textit{prenotazione}_G$  & S \\ 
+  \hline
+  \rowcolor{gray!10}
+  \textbf{TU-142} & updateListOrders - Verificare che ritorni la lista degli ordini per una specifica persona e $\textit{prenotazione}_G$  & S \\ 
+  \hline
+  \rowcolor{gray!10}
+  \textbf{TU-143} & pay - Verificare che segni gli ordini come pagati e aggiorni lo stato della $\textit{prenotazione}_G$ se tutti gli ordini sono stati pagati   & S \\ 
+  \hline
+  \rowcolor{gray!10}
+  \textbf{TU-144} & pay - Verificare che segni gli ordini come pagati ma non aggiorni lo stato della $\textit{prenotazione}_G$ se tutti gli ordini non sono stati pagati   & S \\ 
+  \hline
+  \rowcolor{gray!10}
+  \textbf{TU-145} & pay - Verificare che ritorni null se l'ordine non esiste   & S \\ 
+  \hline
+  \rowcolor{gray!10}
+  \textbf{TU-146} & ReservationController - Verificare che il contoller sia definito  & S \\ 
+  \hline
+  \rowcolor{gray!10}
+  \textbf{TU-147} & create - Verificare che crei una $\textit{prenotazione}_G$  & S \\ 
+  \hline
+  \rowcolor{gray!10}
+  \textbf{TU-148} & create - Verificare che lanci l'$\textit{eccezione}_G$ UnauthorizedException se il token non è valido & S \\ 
+  \hline
+  \rowcolor{gray!10}
+  \textbf{TU-149} & create - Verificare che lanci l'$\textit{eccezione}_G$ BadRequestException se la $\textit{prenotazione}_G$ non è valida & S \\ 
+  \hline
+  \rowcolor{gray!10}
+  \textbf{TU-150} & addCustomer - Verificare che aggiunga un utente alla prenoatzione & S \\ 
+  \hline
+  \rowcolor{gray!10}
+  \textbf{TU-151} & addCustomer - Verificare che lanci l'$\textit{eccezione}_G$ NotFoundException se la $\textit{prenotazione}_G$ non è stata trovata & S \\ 
+  \hline
+  \rowcolor{gray!10}
+  \textbf{TU-152} & findAll - Verificare che ritorni tutte le prenotazioni & S \\ 
+  \hline
+  \rowcolor{gray!10}
+  \textbf{TU-153} & findAll - Verificare che lanci l'$\textit{eccezione}_G$ NotFoundException se la $\textit{prenotazione}_G$ non è stata trovata & S \\ 
+  \hline
+  \rowcolor{gray!10}
+  \textbf{TU-154} & findOne - Verificare che ritorni una $\textit{prenotazione}_G$ dato un id & S \\ 
+  \hline
+  \rowcolor{gray!10}
+  \textbf{TU-155} & findOne - Verificare che lanci l'$\textit{eccezione}_G$ NotFoundException se la $\textit{prenotazione}_G$ non è stata trovata & S \\ 
+  \hline
+  \rowcolor{gray!10}
+  \textbf{TU-156} & getMenuWithOrdersQuantityByIdReservation - Verificare che ritorni il menù con la quantità di ordini dato un id $\textit{prenotazione}_G$ & S \\ 
+  \hline
+  \rowcolor{gray!10}
+  \textbf{TU-157} & getMenuWithOrdersQuantityByIdReservation - Verificare che lanci l'$\textit{eccezione}_G$ NotFoundException se la $\textit{prenotazione}_G$ non è stata trovata & S \\ 
+  \hline
+  \rowcolor{gray!10}
+  \textbf{TU-158} & getReservationsByRestaurantId - Verificare che ritorni delle prenotazioni dati degli id & S \\ 
+  \hline
+  \rowcolor{gray!10}
+  \textbf{TU-159} & acceptReservation - Verificare che accetti una $\textit{prenotazione}_G$ & S \\ 
+  \hline
+  \rowcolor{gray!10}
+  \textbf{TU-160} & acceptReservation - Verificare che lanci l'$\textit{eccezione}_G$ NotFoundException se la $\textit{prenotazione}_G$ non è stata trovata & S \\ 
+  \hline
+  \rowcolor{gray!10}
+  \textbf{TU-161} & rejectReservation - Verificare che rifiuti una $\textit{prenotazione}_G$ & S \\ 
+  \hline
+  \rowcolor{gray!10}
+  \textbf{TU-162} & rejectReservation - Verificare che lanci l'$\textit{eccezione}_G$ NotFoundException se la $\textit{prenotazione}_G$ non è stata trovata & S \\ 
+  \hline
+  \rowcolor{gray!10}
+  \textbf{TU-163} & completeReservation - Verificare che completi una $\textit{prenotazione}_G$ & S \\ 
+  \hline
+  \rowcolor{gray!10}
+  \textbf{TU-164} & completeReservation - Verificare che lanci l'$\textit{eccezione}_G$ NotFoundException se la $\textit{prenotazione}_G$ non è stata trovata & S \\ 
+  \hline
+  \rowcolor{gray!10}
+  \textbf{TU-165} & getReservationsByUserId - Verificare che ritorni una $\textit{prenotazione}_G$ tramite un id utente & S \\ 
+  \hline
+  \rowcolor{gray!10}
+  \textbf{TU-166} & verifyReservation - Verificare che verifichi una $\textit{prenotazione}_G$ & S \\ 
+  \hline
+  \rowcolor{gray!10}
+  \textbf{TU-167} & verifyReservation - Verificare che lanci l'$\textit{eccezione}_G$ UnauthorizedException se il token non è valido & S \\ 
+  \hline
+  \rowcolor{gray!10}
+  \textbf{TU-168} & verifyReservation - Verificare che lanci l'$\textit{eccezione}_G$ NotFoundException se la $\textit{prenotazione}_G$ non è stata trovata & S \\ 
+  \hline
+  \rowcolor{gray!10}
+  \textbf{TU-169} & getReservationsByAdminId - Verificare che ritorni una $\textit{prenotazione}_G$ tramite un id admin & S \\ 
+  \hline
+  \rowcolor{gray!10}
+  \textbf{TU-170} & getReservationsByAdminId - Verificare che lanci l'$\textit{eccezione}_G$ UnauthorizedException se il token non è valido & S \\ 
+  \hline
+  \rowcolor{gray!10}
+  \textbf{TU-171} & ReservationService - Verificare che il servizio sia definito & S \\ 
+  \hline
+  \rowcolor{gray!10}
+  \textbf{TU-172} & ReservationService - Verificare che reservationRepo sia definito & S \\ 
+  \hline
+  \rowcolor{gray!10}
+  \textbf{TU-173} & create - Verificare che crei una $\textit{prenotazione}_G$ & S \\ 
+  \hline
+  \rowcolor{gray!10}
+  \textbf{TU-174} & create - Verificare che ritorni null se il ristorante non p stato trovato & S \\ 
+  \hline
+  \rowcolor{gray!10}
+  \textbf{TU-175} & create - Verificare che ritorni status:null e message:"Restaurant is full" se il ristorante è pieno & S \\ 
+  \hline
+  \rowcolor{gray!10}
+  \textbf{TU-176} & create - Verificare che ritorni null se la data di $\textit{prenotazione}_G$ è passata & S \\ 
+  \hline
+  \rowcolor{gray!10}
+  \textbf{TU-177} & addCustomer - Verificare che aggiunga una persona a una $\textit{prenotazione}_G$ & S \\ 
+  \hline
+  \rowcolor{gray!10}
+  \textbf{TU-178} & addCustomer - Verificare che ritorni null se la $\textit{prenotazione}_G$ non è stata trovata & S \\ 
+  \hline
+  \rowcolor{gray!10}
+  \textbf{TU-179} & findAll - Verificare che ritorni tutte le prenotazioni & S \\ 
+  \hline
+  \rowcolor{gray!10}
+  \textbf{TU-180} & findOne - Verificare che ritorni una $\textit{prenotazione}_G$ tramite un id & S \\ 
+  \hline
+  \rowcolor{gray!10}
+  \textbf{TU-181} & findOne - Verificare che ritorni null se la $\textit{prenotazione}_G$ non è stata trovata & S \\ 
+  \hline
+  \rowcolor{gray!10}
+  \textbf{TU-182} & getMenuWithOrdersQuantityByIdReservation - Verificare che ritorni gli ordini di una $\textit{prenotazione}_G$ con la loro quantità  & S \\ 
+  \hline
+  \rowcolor{gray!10}
+  \textbf{TU-183} & getMenuWithOrdersQuantityByIdReservation - Verificare che ritorni null se la $\textit{prenotazione}_G$ non è stata trovata & S \\ 
+  \hline
+  \rowcolor{gray!10}
+  \textbf{TU-184} & getReservationsByRestaurantId - Verificare che ritorni delle prenotazioni dall'id di una ristorante & S \\ 
+  \hline
+  \rowcolor{gray!10}
+  \textbf{TU-185} & completeReservation - Verificare che completi una prenotazioni & S \\ 
+  \hline
+  \rowcolor{gray!10}
+  \textbf{TU-186} & completeReservation - Verificare che ritorni null se la $\textit{prenotazione}_G$ non è stata trovata & S \\ 
+  \hline
+  \rowcolor{gray!10}
+  \textbf{TU-187} & updateStatus - Verificare che aggiorni lo stato di una $\textit{prenotazione}_G$ & S \\ 
+  \hline
+  \rowcolor{gray!10}
+  \textbf{TU-188} & updateStatus - Verificare che ritorni false se la $\textit{prenotazione}_G$ non è stata trovata & S \\ 
+  \hline
+  \rowcolor{gray!10}
+  \textbf{TU-189} & getReservationsByUserId - Verificare che ritorni una $\textit{prenotazione}_G$ da un id utente & S \\ 
+  \hline
+  \rowcolor{gray!10}
+  \textbf{TU-190} & verifyReservation - Verificare che ritorni una $\textit{prenotazione}_G$ se esiste e se l'utente è associato ad essa & S \\ 
+  \hline
+  \rowcolor{gray!10}
+  \textbf{TU-191} & verifyReservation - Verificare che ritorni null se una $\textit{prenotazione}_G$ non esiste & S \\ 
+  \hline
+  \rowcolor{gray!10}
+  \textbf{TU-192} & getReservationsByAdminId - Verificare che ritorni una $\textit{prenotazione}_G$ tramite id admin & S \\ 
+  \hline
+  \rowcolor{gray!10}
+  \textbf{TU-193} & RestaurantController - Verificare che il controller sia definito & S \\ 
+  \hline
+  \rowcolor{gray!10}
+  \textbf{TU-194} & getFilteredRestaurants - Verificare che chiami la funzione restaurantService.getFilteredRestaurants con un quary data & S \\ 
+  \hline
+  \rowcolor{gray!10}
+  \textbf{TU-195} & create - Verificare che chiami la funzione restaurantService.create con un elemento createRestaurantDto dato & S \\ 
+  \hline
+  \rowcolor{gray!10}
+  \textbf{TU-196} & create - Verificare che lanci l'$\textit{eccezione}_G$ BadRequestException se il risultato è null & S \\ 
+  \hline
+  \rowcolor{gray!10}
+  \textbf{TU-197} & findAll - Verificare che chiami la funzione restaurantService.findAll & S \\ 
+  \hline
+  \rowcolor{gray!10}
+  \textbf{TU-198} & findAllCuisines - Verificare che chiami la funzione restaurantService.findAllCuisines & S \\ 
+  \hline
+  \rowcolor{gray!10}
+  \textbf{TU-199} & findAllCities - Verificare che chiami la funzione restaurantService.findAllCities & S \\ 
+  \hline
+  \rowcolor{gray!10}
+  \textbf{TU-200} & getNumberOfFilteredRestaurants - Verificare che chiami la funzione restaurantService.getNumberOfFilteredRestaurants con una query data & S \\ 
+  \hline
+  \rowcolor{gray!10}
+  \textbf{TU-201} & findOne - Verificare che chiami la funzione restaurantService.findOne con un id dato & S \\ 
+  \hline
+  \rowcolor{gray!10}
+  \textbf{TU-202} & getBookedTables - Verificare che chiami la funzione restaurantService.getBookedTables dati un id ed una data  & S \\ 
+  \hline
+  \rowcolor{gray!10}
+  \textbf{TU-203} & getRestaurantAndMenuByRestaurantId - Verificare che chiami la funzione restaurantService.getRestaurantAndMenuByRestaurantId dato un id & S \\ 
+  \hline
+  \rowcolor{gray!10}
+  \textbf{TU-204} & getRestaurantAndMenuByRestaurantId - Verificare che lanci l'$\textit{eccezione}_G$ NotFoundException se il risultato è nullo & S \\ 
+  \hline
+  \rowcolor{gray!10}
+  \textbf{TU-205} & RestaurantService - Verificare che il servizio sia definito & S \\ 
+  \hline
+  \rowcolor{gray!10}
+  \textbf{TU-206} & RestaurantService - Verificare che la repo sia definita & S \\ 
+  \hline
+  \rowcolor{gray!10}
+  \textbf{TU-207} & getFilteredRestaurants - Verificare che ritorni un array di ristoranti & S \\ 
+  \hline
+  \rowcolor{gray!10}
+  \textbf{TU-208} & create - Verificare che crei un ristorante & S \\ 
+  \hline
+  \rowcolor{gray!10}
+  \textbf{TU-209} & create - Verificare che lanci un errore se il ristorante esiste già & S \\ 
+  \hline  
+  \rowcolor{gray!10}
+  \textbf{TU-210} & create - Verificare che lanci un errore se l'input non è valido & S \\ 
+  \hline  
+  \rowcolor{gray!10}
+  \textbf{TU-211} & findAll - Verificare che ritorni un array di ristoranti & S \\ 
+  \hline  
+  \rowcolor{gray!10}
+  \textbf{TU-212} & findAllCuisines - Verificare che ritorni un array di cucine & S \\ 
+  \hline  
+  \rowcolor{gray!10}
+  \textbf{TU-213} & findAllCities - Verificare che ritorni un array di città & S \\ 
+  \hline  
+  \rowcolor{gray!10}
+  \textbf{TU-214} & findOne - Verificare che ritorni un ristorante & S \\ 
+  \hline  
+  \rowcolor{gray!10}
+  \textbf{TU-215} & getBookedTables - Verificare che ritorni un numero di tavoli prenotati in un ristorante in una data specifica & S \\ 
+  \hline  
+  \rowcolor{gray!10}
+  \textbf{TU-216} & getRestaurantAndMenuByRestaurantId - Verificare che ritorni un ristorante ed il suo menù & S \\ 
+  \hline  
+  \rowcolor{gray!10}
+  \textbf{TU-217} & getNumberOfFilteredRestaurants - Verificare che ritorni il numero di ristoranti filtrati & S \\ 
+  \hline  
+  \rowcolor{gray!10}
+  \textbf{TU-218} & createManager - Verificare che crei un manager del ristorante & S \\ 
+  \hline  
+  \rowcolor{gray!10}
+  \textbf{TU-219} & createManager - Verificare che lanci un errore se l'input non è valido & S \\ 
+  \hline  
+  \rowcolor{gray!10}
+  \textbf{TU-220} & StaffController - Verificare che il controller sia definito  & S \\ 
+  \hline  
+  \rowcolor{gray!10}
+  \textbf{TU-221} & StaffController - Verificare che il servizio sia definito  & S \\ 
+  \hline  
+  \rowcolor{gray!10}
+  \textbf{TU-222} & create - Verificare che crei un membro dello staff  & S \\ 
+  \hline
+  \rowcolor{gray!10}
+  \textbf{TU-223} & create - Verificare che lanci l'$\textit{eccezione}_G$ BadRequestException se la creazione del membro dello staff fallisce  & S \\ 
+  \hline
+  \rowcolor{gray!10}
+  \textbf{TU-224} & getRestaurantIdByAdminId - Verificare che ritorni l'admin dato un id ristorante  & S \\ 
+  \hline
+  \rowcolor{gray!10}
+  \textbf{TU-225} & getRestaurantIdByAdminId - Verificare che lanci l'$\textit{eccezione}_G$ NotFoundException se il ristorante non viene trovato  & S \\ 
+  \hline
+  \rowcolor{gray!10}
+  \textbf{TU-226} & StaffService - Verificare che il servizio sia definito  & S \\ 
+  \hline
+  \rowcolor{gray!10}
+  \textbf{TU-227} & StaffService - Verificare che crei un $\textit{repository}_G$ di staff  & S \\ 
+  \hline
+  \rowcolor{gray!10}
+  \textbf{TU-228} & create - Verificare che crei nuovo membro dello staff  & S \\ 
+  \hline
+  \rowcolor{gray!10}
+  \textbf{TU-229} & create - Verificare che ritorni nulla se l'elemento staffDto non è valido  & S \\ 
+  \hline
+  \rowcolor{gray!10}
+  \textbf{TU-230} & create - Verificare che ritorni null se il membro dello staff esiste già  & S \\ 
+  \hline
+  \rowcolor{gray!10}
+  \textbf{TU-231} & getAdminByRestaurantId - Verificare che ritorni un admin dato un id ristorante  & S \\ 
+  \hline
+  \rowcolor{gray!10}
+  \textbf{TU-232} & getRestaurantByAdminId - Verificare che ritorni il membro dello staff del ristorante dato un id utente admin  & S \\ 
+  \hline
+  \rowcolor{gray!10}
+  \textbf{TU-233} & create\_manager - Verificare che crei un nuovo manager dello staff  & S \\ 
+  \hline
+  \rowcolor{gray!10}
+  \textbf{TU-234} & create\_manager - Verificare che ritorni null se l'elemento staffDto non è valido  & S \\ 
+  \hline
+  \rowcolor{gray!10}
+  \textbf{TU-235} & create\_manager - Verificare che ritorni null se il membro dello staff esiste già & S \\ 
+  \hline
+  \rowcolor{gray!10}
+  \textbf{TU-236} & UserController - Verificare che il controller sia definito & S \\ 
+  \hline
+  \rowcolor{gray!10}
+  \textbf{TU-237} & UserController - Verificare che il servizio sia definito & S \\ 
+  \hline
+  \rowcolor{gray!10}
+  \textbf{TU-238} & create - Verificare che chiami il metodo create del servizio con i corretti parametri & S \\ 
+  \hline
+  \rowcolor{gray!10}
+  \textbf{TU-239} & create - Verificare che ritorni il risultato del motodo create del servizio & S \\ 
+  \hline
+  \rowcolor{gray!10}
+  \textbf{TU-240} & findOne - Verificare che chiami il il metodo findOne del servizio con i corretti parametri & S \\ 
+  \hline
+  \rowcolor{gray!10}
+  \textbf{TU-241} & findOne - Verificare che il risultato del metodo findOne del servizio & S \\ 
+  \hline
+  \rowcolor{gray!10}
+  \textbf{TU-242} & createAdmin - Verificare che chiami il metodo create\_admin del servizio con i corretti parametri & S \\ 
+  \hline
+  \rowcolor{gray!10}
+  \textbf{TU-243} & createAdmin - Verificare che ritorni il risultato del motodo create\_admin & S \\ 
+  \hline
+  \rowcolor{gray!10}
+  \textbf{TU-244} & createAdmin - Verificare che lanci un errore se il metodo create\_admin ritorna null  & S \\ 
+  \hline
+  \rowcolor{gray!10}
+  \textbf{TU-245} & create\_user - Verificare che crei un nuovo utente  & S \\ 
+  \hline
+  \rowcolor{gray!10}
+  \textbf{TU-246} & create\_user - Verificare che ritorni null se l'email è già registrata  & S \\ 
+  \hline
+  \rowcolor{gray!10}
+  \textbf{TU-247} & create\_user - Verificare che ritorni null se qualche campo è mancante  & S \\ 
+  \hline
+  \rowcolor{gray!10}
+  \textbf{TU-248} & findOne - Verificare che ritorni un utente dato un id   & S \\ 
+  \hline
+  \rowcolor{gray!10}
+  \textbf{TU-249} & findUserByEmail - Verificare che ritorni un utente data una email  & S \\ 
+  \hline
+  \rowcolor{gray!10}
+  \textbf{TU-250} & create\_admin - Verificare che crei un admin correttamente  & S \\ 
+  \hline
+  \rowcolor{gray!10}
+  \textbf{TU-251} & create\_admin - Verificare che ritorni null se si incontra un errore duarnte la creazione di un admin  & S \\ 
+  \hline
+  \rowcolor{gray!10}
+  \textbf{TU-252} & create\_user\_manager - Verificare che crei un nuov utente manager  & S \\ 
+  \hline
+  \rowcolor{gray!10}
+  \textbf{TU-253} & create\_user\_manager - Verificare che ritorni null se l'email è giù registrata  & S \\ 
+  \hline
+  \rowcolor{gray!10}
+  \textbf{TU-254} & AppController - Verificare che il controller sia definito  & S \\ 
+  \hline
+  \rowcolor{gray!10}
+  \textbf{TU-255} & AppController - Verificare che il servizio sia definito  & S \\ 
+  \hline
+
+
+  \rowcolor{gray!10}
+  \textbf{TU-281} & DaysopenModule - Verificare che il modulo sia definito  & S \\ 
+  \hline
+  \rowcolor{gray!10}
+  \textbf{TU-282} & DaysopenModule - Verificare che il modulo abbia il DaysopenService  & S \\ 
+  \hline
+  \rowcolor{gray!10}
+  \textbf{TU-283} & DaysopenModule - Verificare che il modulo abbia il DaysopenController  & S \\ 
+  \hline
+  \rowcolor{gray!10}
+  \textbf{TU-284} & FoodModule - Verificare che il modulo sia definito  & S \\ 
+  \hline
+  \rowcolor{gray!10}
+  \textbf{TU-285} & findOne - Verificare che chiami la funzione foodService.findOne e ritorni i risultato corretto & S \\ 
+  \hline
+  \rowcolor{gray!10}
+  \textbf{TU-286} & findOne - Verificare che lanci l'$\textit{eccezione}_G$ NotFoundException se il cibo non è stato trovato & S \\ 
+  \hline
+  \rowcolor{gray!10}
+  \textbf{TU-287} & FoodService - Verificare che chiami la funzione foodRepository.findOne con un id dato & S \\ 
+  \hline
+  \rowcolor{gray!10}
+  \textbf{TU-288} & MenuModule - Verificare che il modulo sia definito & S \\ 
+  \hline
+  \rowcolor{gray!10}
+  \textbf{TU-289} & create - Verificare che chiami la funzione menuService.create e ritorni i risultato corretto & S \\ 
+  \hline
+  \rowcolor{gray!10}
+  \textbf{TU-290} & create - Verificare che chiami la funzione menuRepository.create e la funzione menuRepository.save & S \\ 
+  \hline
+  \rowcolor{gray!10}
+  \textbf{TU-291} & RestaurantModule - Verificare che il servizio RestaurantService sia definito & S \\ 
+  \hline
+  \rowcolor{gray!10}
+  \textbf{TU-292} & RestaurantModule - Verificare che il controller RestaurantController sia definito & S \\ 
+  \hline
+  \rowcolor{gray!10}
+  \textbf{TU-293} & StaffModule - Verificare che il servizio StaffService sia definito & S \\ 
+  \hline
+  \rowcolor{gray!10}
+  \textbf{TU-294} & StaffModule - Verificare che il controller StaffController sia definito & S \\ 
+  \hline
+  \rowcolor{gray!10}
+  \textbf{TU-295} & StaffModule - Verificare che StaffRepository sia definito & S \\ 
+  \hline
+  
+
+
+  
+  \caption{Test di unità BackEnd} 
+    \label{tab:test_unita}
+\end{longtable}
+
+\paragraph{Tracciamento $\textit{test}_G$ di unità BackEnd}
+\begin{longtable}{|>{\centering\arraybackslash}p{2cm}|p{7cm}|}
   \hline
   \rowcolor{gray!30}
   \textbf{Codice} & \textbf{Fonte} \\
   \hline
-  \endhead
-
+  \endfirsthead
+  
   \rowcolor{gray!10}
-  \textbf{TU-01} & \texttt{restaurant\_search.test.jsx} \\
+    \begin{tabular}[c]{@{}c@{}}
+        \textbf{TU-75} \\
+        \textbf{TU-76} \\
+        \textbf{TU-77} \\
+        \textbf{TU-78} \\
+        \textbf{TU-79} \\
+    \end{tabular}
+  & \texttt{autetication.controller.spec.ts} \\
+  \hline
+    \rowcolor{gray!10}
+    \begin{tabular}[c]{@{}c@{}}
+        \textbf{TU-80} \\
+        \textbf{TU-81} \\
+        \textbf{TU-82} \\
+        \textbf{TU-83} \\
+        \textbf{TU-84} \\
+        \textbf{TU-85} \\
+    \end{tabular}
+  & \texttt{autetication.service.spec.ts} \\
+  \hline
+  \rowcolor{gray!10}
+    \begin{tabular}[c]{@{}c@{}}
+        \textbf{TU-86} \\
+        \textbf{TU-87} \\
+    \end{tabular}
+  & \texttt{daysopen.controller.spec.ts} \\
+  \hline
+  \rowcolor{gray!10}
+    \begin{tabular}[c]{@{}c@{}}
+        \textbf{TU-88} \\
+        \textbf{TU-89} \\
+        \textbf{TU-90} \\
+    \end{tabular}
+  & \texttt{daysopen.service.spec.ts} \\
+  \hline
+   \rowcolor{gray!10}
+    \begin{tabular}[c]{@{}c@{}}
+        \textbf{TU-91} \\
+        \textbf{TU-92} \\
+    \end{tabular}
+  & \texttt{food.controller.spec.ts} \\
+  \hline
+  \rowcolor{gray!10}
+    \begin{tabular}[c]{@{}c@{}}
+        \textbf{TU-93} \\
+        \textbf{TU-94} \\
+    \end{tabular}
+  & \texttt{food.service.spec.ts} \\
+  \hline
+  \rowcolor{gray!10}
+    \begin{tabular}[c]{@{}c@{}}
+        \textbf{TU-95} \\
+        \textbf{TU-96} \\
+    \end{tabular}
+  & \texttt{menu.controller.spec.ts} \\
+  \hline
+  \rowcolor{gray!10}
+    \begin{tabular}[c]{@{}c@{}}
+        \textbf{TU-97} \\
+        \textbf{TU-98} \\
+    \end{tabular}
+  & \texttt{menu.service.spec.ts} \\
+  \hline
+  \rowcolor{gray!10}
+    \begin{tabular}[c]{@{}c@{}}
+        \textbf{TU-99} \\
+        \textbf{TU-100} \\
+        \textbf{TU-101} \\
+        \textbf{TU-102} \\
+    \end{tabular}
+  & \texttt{notification.controller.spec.ts} \\
+  \hline
+  \rowcolor{gray!10}
+    \begin{tabular}[c]{@{}c@{}}
+        \textbf{TU-103} \\
+        \textbf{TU-104} \\
+        \textbf{TU-105} \\
+        \textbf{TU-106} \\
+        \textbf{TU-107} \\
+        \textbf{TU-108} \\
+    \end{tabular}
+  & \texttt{notification.service.spec.ts} \\
+  \hline
+  \rowcolor{gray!10}
+    \begin{tabular}[c]{@{}c@{}}
+        \textbf{TU-109} \\
+        \textbf{TU-110} \\
+        \textbf{TU-111} \\
+        \textbf{TU-112} \\
+        \textbf{TU-113} \\
+        \textbf{TU-114} \\
+        \textbf{TU-115} \\
+        \textbf{TU-116} \\
+        \textbf{TU-117} \\
+        \textbf{TU-118} \\
+        \textbf{TU-119} \\
+        \textbf{TU-120} \\
+        \textbf{TU-121} \\
+        \textbf{TU-122} \\
+        \textbf{TU-123} \\
+        \textbf{TU-124} \\
+        \textbf{TU-125} \\
+        \textbf{TU-126} \\
+        \textbf{TU-127} \\
+        \textbf{TU-128} \\
+        \textbf{TU-129} \\
+        \textbf{TU-130} \\
+    \end{tabular}
+  & \texttt{orders.controller.spec.ts} \\
+  \hline
+  \rowcolor{gray!10}
+    \begin{tabular}[c]{@{}c@{}}
+        \textbf{TU-131} \\
+        \textbf{TU-132} \\
+        \textbf{TU-133} \\
+        \textbf{TU-134} \\
+        \textbf{TU-135} \\
+        \textbf{TU-136} \\
+        \textbf{TU-137} \\
+        \textbf{TU-138} \\
+        \textbf{TU-139} \\
+        \textbf{TU-140} \\
+        \textbf{TU-141} \\
+        \textbf{TU-142} \\
+        \textbf{TU-143} \\
+        \textbf{TU-144} \\
+        \textbf{TU-145} \\
+    \end{tabular}
+  & \texttt{orders.service.spec.ts} \\
+  \hline
+  \rowcolor{gray!10}
+    \begin{tabular}[c]{@{}c@{}}
+        \textbf{TU-146} \\
+        \textbf{TU-147} \\
+        \textbf{TU-148} \\
+        \textbf{TU-149} \\
+        \textbf{TU-150} \\
+        \textbf{TU-151} \\
+        \textbf{TU-152} \\
+        \textbf{TU-153} \\
+        \textbf{TU-154} \\
+        \textbf{TU-155} \\
+        \textbf{TU-156} \\
+        \textbf{TU-153} \\
+        \textbf{TU-158} \\
+        \textbf{TU-159} \\
+        \textbf{TU-160} \\
+        \textbf{TU-161} \\
+        \textbf{TU-162} \\
+        \textbf{TU-163} \\
+        \textbf{TU-164} \\
+        \textbf{TU-165} \\
+        \textbf{TU-166} \\
+        \textbf{TU-167} \\
+        \textbf{TU-168} \\
+        \textbf{TU-169} \\
+        \textbf{TU-170} \\
+    \end{tabular}
+  & \texttt{reservation.controller.spec.ts} \\
+  \hline
+  \rowcolor{gray!10}
+    \begin{tabular}[c]{@{}c@{}}
+        \textbf{TU-171} \\
+        \textbf{TU-172} \\
+        \textbf{TU-173} \\
+        \textbf{TU-174} \\
+        \textbf{TU-175} \\
+        \textbf{TU-176} \\
+        \textbf{TU-177} \\
+        \textbf{TU-178} \\
+        \textbf{TU-179} \\
+        \textbf{TU-180} \\
+        \textbf{TU-181} \\
+        \textbf{TU-182} \\
+        \textbf{TU-183} \\
+        \textbf{TU-184} \\
+        \textbf{TU-185} \\
+        \textbf{TU-186} \\
+        \textbf{TU-187} \\
+        \textbf{TU-188} \\
+        \textbf{TU-189} \\
+        \textbf{TU-190} \\
+        \textbf{TU-191} \\
+        \textbf{TU-192} \\
+    \end{tabular}
+  & \texttt{reservation.service.spec.ts} \\
+  \hline
+  \rowcolor{gray!10}
+    \begin{tabular}[c]{@{}c@{}}
+        \textbf{TU-193} \\
+        \textbf{TU-194} \\
+        \textbf{TU-195} \\
+        \textbf{TU-196} \\
+        \textbf{TU-197} \\
+        \textbf{TU-198} \\
+        \textbf{TU-199} \\
+        \textbf{TU-200} \\
+        \textbf{TU-201} \\
+        \textbf{TU-202} \\
+        \textbf{TU-203} \\
+        \textbf{TU-204} \\
+    \end{tabular}
+  & \texttt{restaurant.controller.spec.ts} \\
+  \hline
+  \rowcolor{gray!10}
+    \begin{tabular}[c]{@{}c@{}}
+        \textbf{TU-205} \\
+        \textbf{TU-206} \\
+        \textbf{TU-207} \\
+        \textbf{TU-208} \\
+        \textbf{TU-209} \\
+        \textbf{TU-210} \\
+        \textbf{TU-211} \\
+        \textbf{TU-212} \\
+        \textbf{TU-213} \\
+        \textbf{TU-214} \\
+        \textbf{TU-215} \\
+        \textbf{TU-216} \\
+        \textbf{TU-217} \\
+        \textbf{TU-218} \\
+        \textbf{TU-219} \\
+    \end{tabular}
+  & \texttt{restaurant.service.spec.ts} \\
+  \hline
+  \rowcolor{gray!10}
+    \begin{tabular}[c]{@{}c@{}}
+        \textbf{TU-220} \\
+        \textbf{TU-221} \\
+        \textbf{TU-222} \\
+        \textbf{TU-223} \\
+        \textbf{TU-224} \\
+        \textbf{TU-225} \\
+    \end{tabular}
+  & \texttt{staff.controller.spec.ts} \\
+  \hline
+  \rowcolor{gray!10}
+    \begin{tabular}[c]{@{}c@{}}
+        \textbf{TU-226} \\
+        \textbf{TU-227} \\
+        \textbf{TU-228} \\
+        \textbf{TU-229} \\
+        \textbf{TU-230} \\
+        \textbf{TU-231} \\
+        \textbf{TU-232} \\
+        \textbf{TU-233} \\
+        \textbf{TU-234} \\
+        \textbf{TU-235} \\
+    \end{tabular}
+  & \texttt{staff.service.spec.ts} \\
+  \hline
+  \rowcolor{gray!10}
+    \begin{tabular}[c]{@{}c@{}}
+        \textbf{TU-236} \\
+        \textbf{TU-237} \\
+        \textbf{TU-238} \\
+        \textbf{TU-239} \\
+        \textbf{TU-240} \\
+        \textbf{TU-241} \\
+        \textbf{TU-242} \\
+        \textbf{TU-243} \\
+        \textbf{TU-244} \\
+    \end{tabular}
+  & \texttt{user.controller.spec.ts} \\
+  \hline
+  \rowcolor{gray!10}
+    \begin{tabular}[c]{@{}c@{}}
+        \textbf{TU-245} \\
+        \textbf{TU-246} \\
+        \textbf{TU-247} \\
+        \textbf{TU-248} \\
+        \textbf{TU-249} \\
+        \textbf{TU-250} \\
+        \textbf{TU-251} \\
+        \textbf{TU-252} \\
+        \textbf{TU-253} \\
+    \end{tabular}
+  & \texttt{user.service.spec.ts} \\
+  \hline
+  \rowcolor{gray!10}
+    \begin{tabular}[c]{@{}c@{}}
+        \textbf{TU-254} \\
+        \textbf{TU-255} \\
+    \end{tabular}
+  & \texttt{app.controller.spec.ts} \\
+  \hline
+  \rowcolor{gray!10}
+    \begin{tabular}[c]{@{}c@{}}
+        \textbf{TU-281} \\
+        \textbf{TU-282} \\
+        \textbf{TU-283} \\
+    \end{tabular}
+  & \texttt{daysopen.module.spec.ts} \\
+  \hline
+  \rowcolor{gray!10}
+    \begin{tabular}[c]{@{}c@{}}
+        \textbf{TU-284} \\
+        \textbf{TU-285} \\
+        \textbf{TU-286} \\
+        \textbf{TU-287} \\
+    \end{tabular}
+  & \texttt{food.module.spec.ts} \\
+  \hline
+  \rowcolor{gray!10}
+    \begin{tabular}[c]{@{}c@{}}
+        \textbf{TU-288} \\
+        \textbf{TU-289} \\
+        \textbf{TU-290} \\
+    \end{tabular}
+  & \texttt{menu.module.spec.ts} \\
+  \hline
+  \rowcolor{gray!10}
+    \begin{tabular}[c]{@{}c@{}}
+        \textbf{TU-291} \\
+        \textbf{TU-292} \\
+    \end{tabular}
+  & \texttt{restaurant.module.spec.ts} \\
+  \hline
+  \rowcolor{gray!10}
+    \begin{tabular}[c]{@{}c@{}}
+        \textbf{TU-293} \\
+        \textbf{TU-294} \\
+        \textbf{TU-295} \\
+    \end{tabular}
+  & \texttt{staff.module.spec.ts} \\
   \hline
 
-  \caption{Tracciamento dei test di unità} 
+  \caption{Tracciamento dei test di unità BackEnd} 
   \label{tab:test_unita}
 \end{longtable}
+
+\newpage
+\subsubsection{Test di unità - WebSocket Server}
+
+\begin{longtable}{|>{\centering\arraybackslash}p{2cm}|p{15cm}|p{1cm}|}
+  \hline
+  \rowcolor{gray!30}
+  \textbf{Codice} & \textbf{Descrizione} & \textbf{Stato} \\
+  \hline
+  \rowcolor{gray!10}
+  \textbf{TU-256} & GatewayModule - Verificare che il modulo sia definito  & S \\
+  \hline
+  \rowcolor{gray!10}
+  \textbf{TU-257} & GatewayModule - Verificare che il modulo abbia il MyGateway provider  & S \\
+  \hline
+  \rowcolor{gray!10}
+  \textbf{TU-258} & handleConnection - Verificare che disconnetta il socket se il campo dati id\_prenotazione è mancante  & S \\
+  \hline
+  \rowcolor{gray!10}
+  \textbf{TU-259} & handleConnection - Verificare che disconnetta il socket se il token è mancante  & S \\
+  \hline
+  \rowcolor{gray!10}
+  \textbf{TU-260} & handleConnection - Verificare che disconnetta il socket se il token è non valido  & S \\
+  \hline
+  \rowcolor{gray!10}
+  \textbf{TU-261} & handleConnection - Verificare che il socket faccia un join alla stanza se id\_prenotazione è fornito e il token è valido    & S \\
+  \hline
+  \rowcolor{gray!10}
+  \textbf{TU-262} & handleConnection - Verificare che venga mostrato il messaggio "onMessage" alla stanza specificata   & S \\
+  \hline
+  \rowcolor{gray!10}
+  \textbf{TU-263} & handleConnection - Verificare che venga mostrato il messaggio "onIngredient" alla stanza specificata   & S \\
+  \hline
+  \rowcolor{gray!10}
+  \textbf{TU-264} & handleConnection - Verificare che venga mostrato il messaggio "onConfirm" alla stanza specificata   & S \\
+  \hline
+  \rowcolor{gray!10}
+  \textbf{TU-265} & NotificationController - Verificare che il controller sia definito   & S \\
+  \hline
+  \rowcolor{gray!10}
+  \textbf{TU-266} & NotificationController - Verificare che chiami la funzione emitAll con il corpo della notifica   & S \\
+  \hline
+  \rowcolor{gray!10}
+  \textbf{TU-267} & NotificationModule - Verificare che il modulo sia definito   & S \\
+  \hline
+  \rowcolor{gray!10}
+  \textbf{TU-268} & NotificationModule - Verificare che il modulo abbia il NotificationController & S \\
+  \hline
+  \rowcolor{gray!10}
+  \textbf{TU-269} & NotificationModule - Verificare che il modulo abbia il NotificationGateway & S \\
+  \hline
+  \rowcolor{gray!10}
+  \textbf{TU-270} & NotificationGateway - Verificare che mandi notifiche a tutti coloro che devono riceverle & S \\
+  \hline
+  \rowcolor{gray!10}
+  \textbf{TU-271} & handleConnection - Verificare che si disconnetta se non è fornito alcun token & S \\
+  \hline
+  \rowcolor{gray!10}
+  \textbf{TU-272} & handleConnection - Verificare che si disconnetta se il  token non è valido & S \\
+  \hline
+  \rowcolor{gray!10}
+  \textbf{TU-273} & handleConnection - Verificare che avvenga la join del socket ad un stanza  se il token è valido & S \\
+  \hline
+  \rowcolor{gray!10}
+  \textbf{TU-274} & handleConnection - Verificare che avvenga il log quando il socket si disconnette & S \\
+  \hline
+  \rowcolor{gray!10}
+  \textbf{TU-275} & AppController - Verificare che il controller sia definito & S \\
+  \hline
+  \rowcolor{gray!10}
+  \textbf{TU-276} & AppModule - Verificare che il modulo sia definito & S \\
+  \hline
+  \rowcolor{gray!10}
+  \textbf{TU-277} & AppModule - Verificare che il modulo abbia l'AppController & S \\
+  \hline
+  \rowcolor{gray!10}
+  \textbf{TU-278} & AppModule - Verificare che il modulo abbia l'AppService & S \\
+  \hline
+  \rowcolor{gray!10}
+  \textbf{TU-279} & AppModule - Verificare che il modulo abbia il GatewayModule & S \\
+  \hline
+  \rowcolor{gray!10}
+  \textbf{TU-280} & AppModule - Verificare che il modulo abbia il NotificationModule & S \\
+  \hline
+
+    \caption{Test di unità WebSocket Server} 
+    \label{tab:test_unita}
+\end{longtable}
+
+
+
+\paragraph{Tracciamento $\textit{test}_G$ di unità $\textit{WebSocket}_G$ Server}
+\begin{longtable}{|>{\centering\arraybackslash}p{2cm}|p{7cm}|}
+  \hline
+  \rowcolor{gray!30}
+  \textbf{Codice} & \textbf{Fonte} \\
+  \hline
+  \endfirsthead
+  
+  \rowcolor{gray!10}
+    \begin{tabular}[c]{@{}c@{}}
+        \textbf{TU-256} \\
+        \textbf{TU-257} \\
+    \end{tabular}
+  & \texttt{gateway.module.spec.ts} \\
+  \hline
+  \rowcolor{gray!10}
+    \begin{tabular}[c]{@{}c@{}}
+        \textbf{TU-258} \\
+        \textbf{TU-259} \\
+        \textbf{TU-260} \\
+        \textbf{TU-261} \\
+        \textbf{TU-262} \\
+        \textbf{TU-263} \\
+        \textbf{TU-264} \\
+    \end{tabular}
+  & \texttt{gateway.spec.ts} \\
+  \hline
+  \rowcolor{gray!10}
+    \begin{tabular}[c]{@{}c@{}}
+        \textbf{TU-265} \\
+        \textbf{TU-266} \\
+    \end{tabular}
+  & \texttt{notification.controller.spec.ts} \\
+  \hline
+  \rowcolor{gray!10}
+    \begin{tabular}[c]{@{}c@{}}
+        \textbf{TU-267} \\
+        \textbf{TU-268} \\
+        \textbf{TU-269} \\
+    \end{tabular}
+  & \texttt{notification.module.spec.ts} \\
+  \hline
+  \rowcolor{gray!10}
+    \begin{tabular}[c]{@{}c@{}}
+        \textbf{TU-270} \\
+        \textbf{TU-271} \\
+        \textbf{TU-272} \\
+        \textbf{TU-273} \\
+        \textbf{TU-274} \\
+    \end{tabular}
+  & \texttt{notificationGateway.spec.ts} \\
+  \hline
+  \rowcolor{gray!10}
+    \begin{tabular}[c]{@{}c@{}}
+        \textbf{TU-275} \\
+    \end{tabular}
+  & \texttt{app.controller.spec.ts} \\
+  \hline
+  \rowcolor{gray!10}
+    \begin{tabular}[c]{@{}c@{}}
+        \textbf{TU-276} \\
+        \textbf{TU-277} \\
+        \textbf{TU-278} \\
+        \textbf{TU-279} \\
+        \textbf{TU-280} \\
+    \end{tabular}
+  & \texttt{app.module.spec.ts} \\
+  \hline
+
+
+\caption{Tracciamento dei test di unità  WebSocket} 
+  \label{tab:test_unita}
+\end{longtable}
+
+
 \subsection{Test di sistema}
-I $\textit{test}_G$ di $\textit{sistema}_G$ sono una fase del $\textit{processo}_G$ di $\textit{test}_G$ing il cui scopo è quello di verificare che il $\textit{sistema}_G$ $\textit{software}_G$ rispetti i requisiti specificati nel documento "$\textit{Analisi Dei Requisiti}_G$".
+I $\textit{test}_G$ di $\textit{sistema}_G$ sono una fase del $\textit{processo}_G$ di $\textit{test}_G$ing il cui scopo è quello di verificare che il $\textit{sistema}_G$ $\textit{software}_G$ rispetti i requisiti specificati nel documento \textit{Analisi Dei Requisiti}.
 Di seguito verranno elencati i vari $\textit{test}_G$, i quali avranno un codice identificativo, una descrizione, il $\textit{requisito}_G$ a cui fa riferimento e lo stato del $\textit{test}_G$.
 %\begin{table}[htbp]
     %\centering
@@ -71,7 +1576,8 @@ Di seguito verranno elencati i vari $\textit{test}_G$, i quali avranno un codice
   \textbf{TS-03} & Verificare che l'utente possa visualizzare i pasti con i loro ingredienti e che possa modificarli togliendo ingredienti & ROF 3 & NI \\ 
   \hline
   \rowcolor{gray!10}
-  \textbf{TS-04} & Verificare che l'utente base possa essere in grado di visualizzare il riepilogo di quanto ordinato e che possa confermare oppure cancellare l'ordine & ROF 4 & NI \\ 
+  \textbf{TS-04} & Verificare che l’utente base possa essere in grado di visualizzare il riepilogo di
+quanto ordinato e di possa confermarlo.& ROF 4 & NI \\ 
   \hline
   \rowcolor{gray!10}
   \textbf{TS-05} & Il $\textit{sistema}_G$ deve poter inviare una notifica di conferma dell’ordinazione collaborativa all’amministratore del ristorante & ROF 5 & NI \\ 
@@ -83,7 +1589,7 @@ Di seguito verranno elencati i vari $\textit{test}_G$, i quali avranno un codice
   \textbf{TS-07} & Il $\textit{sistema}_G$ deve poter inviare una notifica all’amministratore per comunicare la richiesta di $\textit{prenotazione}_G$, che può accettare e rifiutare. & ROF 7 & NI \\
   \hline
   \rowcolor{gray!10}
-  \textbf{TS-08} & Verificare che l'utente possa essere in grado di cancellare la $\textit{prenotazione}_G$ & ROF 8 & NI \\ 
+  \textbf{TS-08} & Verificare che l'utente possa essere in grado di cancellare la $\textit{prenotazione}_G$ & RDF 8 & NI \\ 
   \hline
   \rowcolor{gray!10}
   \textbf{TS-09} & Verificare che il $\textit{sistema}_G$ possa negare la $\textit{prenotazione}_G$ se il ristorante non possiede abbastanza posti o tavoli & ROF 9 & NI \\ 
@@ -113,7 +1619,7 @@ Di seguito verranno elencati i vari $\textit{test}_G$, i quali avranno un codice
   \textbf{TS-17} & Verificare che il $\textit{sistema}_G$ possa fornire un'interfaccia per consentire all'amministratore di verificare la disponibilità di posti in base alle specifiche della $\textit{prenotazione}_G$ selezionata & RDF 17 & NI \\ 
   \hline
   \rowcolor{gray!10}
-  \textbf{TS-18} & Verificare che il $\textit{sistema}_G$ possa ridurre il numero di posti disponibili in base alle specifiche della $\textit{prenotazione}_G$ accettata & ROF 18 & NI \\ 
+  \textbf{TS-18} & Verificare che il $\textit{sistema}_G$ possa ridurre il numero di posti disponibili in base alle specifiche della $\textit{prenotazione}_G$ accettata & RDF 18 & NI \\ 
   \hline
   \rowcolor{gray!10}
   \textbf{TS-19} & Verificare che l'amministratore possa rifiutare la richiesta di $\textit{prenotazione}_G$ selezionata & ROF 19 & NI \\ 
@@ -164,7 +1670,7 @@ Di seguito verranno elencati i vari $\textit{test}_G$, i quali avranno un codice
   \textbf{TS-34} & Verificare che il $\textit{sistema}_G$ possa consentire all'amministratore di visualizzare tutti gli ordini confermati per il ristorante selezionato & ROF 34 & NI \\ 
   \hline
   \rowcolor{gray!10}
-  \textbf{TS-35} & Verificare che il $\textit{sistema}_G$ possa permettere di annullare l'$\textit{ordinazione}_G$ collaborativa nel tempo utile per farlo & ROF 35 & NI \\
+  \textbf{TS-35} & Verificare che il $\textit{sistema}_G$ possa permettere di annullare l'$\textit{ordinazione}_G$ collaborativa nel tempo utile per farlo & RDF 35 & NI \\
   \hline
   \rowcolor{gray!10}
   \textbf{TS-36} & Verificare che il $\textit{sistema}_G$ invii una notifica a tutti gli utenti associati alla $\textit{prenotazione}_G$ la cui $\textit{ordinazione}_G$ collaborativa è stata annullata & RDF 36 & NI \\ 
@@ -191,7 +1697,8 @@ Di seguito verranno elencati i vari $\textit{test}_G$, i quali avranno un codice
   \textbf{TS-43} & Verificare che la modifica delle informazioni del ristorante da parte dell'amministratore non causi problemi di sincronizzazione nella visualizzazione, ricerca del ristorante e nell'$\textit{ordinazione}_G$ da parte dell'utente base & RDF 43 & NI \\ 
   \hline
   \rowcolor{gray!10}
-  \textbf{TS-44} & Verificare che l'utente autenticato possa visualizzare una lista con le prenotazioni passate e future & RDF 44 & NI \\ 
+  \textbf{TS-44} & Verificare che l’utente autenticato possa visualizzare una lista con le
+prenotazioni passate& RDF 44 & NI \\ 
   \hline
   \rowcolor{gray!10}
   \textbf{TS-45} & Verificare che l'utente autenticato possa rilasciare una recensione (con anche una votazione di gradimento tramite stelle) sui ristoranti nei quali ha effettuato almeno una $\textit{prenotazione}_G$ & RDF 45 & NI \\ 
@@ -270,13 +1777,13 @@ Di seguito verranno elencati i vari $\textit{test}_G$, i quali avranno un codice
   \textbf{TS-69} & Verificare che il $\textit{sistema}_G$ consenta all'utente autenticato di selezionare l'opzione di logout & ROF 69 & NI \\
   \hline
   \rowcolor{gray!10}
-  \textbf{TS-70} & Verificare che, dopo che l'utente ha selezionato l'opzione di logout, il $\textit{sistema}_G$ richieda una conferma esplicita dall'utente prima di procedere con la disconnessione & ROF 70 & NI \\ 
+  \textbf{TS-70} & Verificare che, dopo che l'utente ha selezionato l'opzione di logout, il $\textit{sistema}_G$ richieda una conferma esplicita dall'utente prima di procedere con la disconnessione & RDF 70 & NI \\ 
   \hline
   \rowcolor{gray!10}
   \textbf{TS-71} & Verificare che, dopo aver terminato la sessione dell'utente, il $\textit{sistema}_G$ reindirizzi l'utente alla pagina di accesso o a una pagina di destinazione predefinita & ROF 71 & NI \\ 
   \hline
   \rowcolor{gray!10}
-  \textbf{TS-72} & Verificare che l'utente autenticato possa visualizzare le informazioni del suo profilo & ROF 72 & NI \\ 
+  \textbf{TS-72} & Verificare che l'utente autenticato possa visualizzare le informazioni del suo profilo & RDF 72 & NI \\ 
   \hline
   \rowcolor{gray!10}
   \textbf{TS-73} & Verificare che l'amministratore possa visualizzare tutte le chat aperte in precedenza da altri utenti& RDF 73 & NI \\ 
@@ -294,8 +1801,109 @@ delle prenotazioni di ogni giornata. & RDF 76 & NI \\
   \rowcolor{gray!10}
   \textbf{TS-77} & Verificare che il $\textit{sistema}_G$ invii una notifica all’amministratore in base agli aggiornamenti sul conto di una $\textit{prenotazione}_G$ del suo ristorante. & ROF 77 & NI \\
   \hline
+  
   \caption{Test di sistema} 
   \label{tab:test_sistema}
   \end{longtable}
+\setlength{\extrarowheight}{8pt}
+\subsection{Test di accettazione}
+I $\textit{test}_G$ di accettazione servono per garantire che il prodotto soddisfi i requisiti utente come specificati nel $\textit{capitolato}_G$. Essi vengono eseguiti in presenza del committente e dimostrano la conformità del
+prodotto alle aspettative attraverso l’esecuzione dei casi di prova previsti nel $\textit{capitolato}_G$.
+\newpage
+%\begin{table}[htbp]
+    %\centering
+    \begin{longtable}{|>{\centering\arraybackslash}p{1.5cm}|p{14cm}|p{1cm}|}
+  \hline
+  \rowcolor{gray!50}
+  \textbf{Codice} & \textbf{Descrizione} & \textbf{Stato} \\
+  \hline
+  \textbf{TA-01} & Verificare che l'utente si possa registrare come utente base o amministratore &  S\\
+  \hline
+  \rowcolor{gray!10}
+  \textbf{TA-02} & Inserimento nome, cognome, mail e password & S\\
+  \hline
+  \textbf{TA-03} & Inserimento nome ristorante, città e recapiti in caso di registrazione dell'amministratore & S\\
+  \hline
+  \rowcolor{gray!10}
+  \textbf{TA-04} & Inserimento orari di apertura in caso di registrazione dell'amministratore & S\\
+  \hline
+   \textbf{TA-05} & Inserimento coperti in caso di registrazione dell'amministratore & S\\
+   \hline
+   \rowcolor{gray!10}
+    \textbf{TA-06} & Inserimento tipologia di cucina in caso di registrazione dell'amministratore & S\\
+    \hline
     
+    \textbf{TA-07} & Richiesta login per l'utente base in caso di prenotazione& S\\
+    \hline
+    \rowcolor{gray!10}
+    \textbf{TA-08} & Ricerca dei ristoranti per nome e città & S\\
+    \hline
+    \textbf{TA-09} & Ricerca dei ristoranti per tipologia di cucina & S\\
+    \hline
+    \rowcolor{gray!10}
+    \textbf{TA-10} & Possibilità di creare una $\textit{prenotazione}_G$ per l'utente base & S\\
+    \hline
+    \textbf{TA-11} & Notificare l'amministratore della nuova $\textit{prenotazione}_G$ & S\\
+    \hline
+    \rowcolor{gray!10}
+    \textbf{TA-12} & Notificare l'utente base della conferma o del rifiuto della $\textit{prenotazione}_G$ & S\\
+    \hline
+    \textbf{TA-13} & Visualizzazione delle prenotazioni per l'utente base & S\\
+    \hline
+    \textbf{TA-14} &Richiesta login utente base per l'$\textit{ordinazione}_G$ & S\\
+    \hline
+    \rowcolor{gray!10}
+    \textbf{TA-15} & Visualizzazione della lista dei piatti e degli ingredienti per l'$\textit{ordinazione}_G$ & S\\
+    \hline
+    \textbf{TA-16} & Modifica della quantità del piatto & S\\
+    \hline
+    \rowcolor{gray!10}
+    \textbf{TA-17} & Rimozione degli ingredienti del piatto & S\\
+    \hline
+    \textbf{TA-18} & Riepilogo dell'ordine & S\\
+    \hline
+    \rowcolor{gray!10}
+    \textbf{TA-19} & Notifica all'amministratore per la conferma delle ordinazioni & S\\
+    \hline
+    \textbf{TA-20} & Richiesta del login all'utente base in fase di pagamento & S\\
+    \hline
+    \rowcolor{gray!10}
+    \textbf{TA-21} & Scelta della modalità di divisone del conto tra equa e proporzionale & S\\
+    \hline
+    \textbf{TA-22} & Il primo utente seleziona la modalità di pagamento & S\\
+    \hline
+    \rowcolor{gray!10}
+    \textbf{TA-23} & Pagamento in parti uguali & S\\
+    \hline
+    \textbf{TA-24} & Pagamento in parti proporzionali & S\\
+    \hline
+    \rowcolor{gray!10}
+    \textbf{TA-25} & Notifiche dell'aggiornamento dello stato di pagamento verso l'amministratore & S\\
+    \hline
+    \textbf{TA-26} & Richiesta login per l'utente amministratore nella fase di consultazione delle prenotazioni del ristorante & S\\
+    \hline
+    \rowcolor{gray!10}
+    \textbf{TA-27} & Vista delle prenotazioni effettuate nella fase di consultazione delle prenotazioni del ristorante & S\\
+    \hline
+    \textbf{TA-28} & Visualizzazione dello stato nella fase di consultazione delle prenotazioni del ristorante & S\\
+    \hline
+    \rowcolor{gray!10}
+    \textbf{TA-29} & Visualizzazione della lista degli ingredienti per ogni $\textit{prenotazione}_G$ nella fase di consultazione delle prenotazioni del ristorante & S\\
+    \hline
+    \textbf{TA-30} & Possibilità di comunicare con lo staff del ristorante & NI \\
+    \hline
+     \rowcolor{gray!10}
+    \textbf{TA-31} & Possibilità di rilasciare recensioni e $\textit{feedback}_G$ al ristorante & NI \\
+    \hline
+    \textbf{TA-32} & Inserimento allergie & NI \\
+    \hline
+     \rowcolor{gray!10}
+    \textbf{TA-33} & Notifiche $\textit{push}_G$ & NI \\
+    \hline
+    \textbf{TA-34} & Coverage dei $\textit{test}_G$ minimo di 80\% & S\\
+    \hline
+    \rowcolor{gray!10}
+    \textbf{TA-35} & Sito accessibile da mobile & S \\
+    \hline
+  \end{longtable}
 %\end{table}

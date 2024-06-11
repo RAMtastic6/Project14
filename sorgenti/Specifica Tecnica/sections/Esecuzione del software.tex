@@ -1,0 +1,128 @@
+\section{Esecuzione del software}
+\subsection{Download del progetto}
+Clonare il $\textit{repository}_G$ del progetto usando il comando: 
+\begin{lstlisting}[language=bash]
+git clone https://github.com/RAMtastic6/EasyMeal.git 
+cd EasyMeal
+\end{lstlisting}
+
+\subsection{Avvio dell'applicazione} 
+\subsubsection{Docker (consigliato)}
+Questo progetto utilizza $\textit{Docker}_G$ Compose per gestire l'avvio dei container $\textit{Docker}_G$. 
+Per avviare i container e utilizzare l'applicazione si seguando le seguenti istruzioni.
+
+\begin{itemize}
+\item \textbf{Avvio dei container} \\
+Per avviare i container utilizzando $\textit{Docker}_G$ Compose, esegui il seguente comando nella directory del progetto:
+\begin{lstlisting}[language=bash]
+docker-compose up --build --watch
+\end{lstlisting}
+
+Oppure per far partire i servizi senza che la console di comando attendi la chiusura si usi il comando:
+\begin{lstlisting}[language=bash]
+docker-compose up -d
+\end{lstlisting}
+
+Una volta avviati i container, si potrà accedere all'applicazione utilizzando il browser o gli strumenti di sviluppo appropriati. \\ Per esempio per poter accedere al progetto NextJS ci si colleghi al link: 
+\begin{quote}
+\begin{verbatim}
+http://localhost:3000/create_reservation 
+\end{verbatim}
+\end{quote}
+Si tenga presente che NextJS utilizza la porta 3000, NestJS 6969, Postgres utilizza 7070 e Socket 8000.
+\\
+\item \textbf{Modifica dei file Dockerfile e compose.yaml} \\
+Per applicare le modifiche e far partire il progetto si usi il comando:
+\begin{lstlisting}[language=bash]
+docker-compose up --build
+\end{lstlisting}
+
+\end{itemize}
+
+\newpage
+\subsubsection{NPM}
+Senza l'utilizzo di $\textit{Docker}_G$ si devono installare manualmente le seguenti $\textit{tecnologie}_G$:
+\begin{itemize}
+    \item Node.js
+    \item $\textit{npm}_G$ (Node Package Manager)
+    \item postgresSQL
+\end{itemize}
+Si ricorda di importare il dump del database nel proprio computer, per farlo si può usare pgAdmin.\\ \\ Ora si eseguano le seguenti istruzioni:
+\begin{enumerate}
+\item Installare le dipendenze per il $\textit{backend}_G$ $\textit{Nest.js}_G$:
+\begin{lstlisting}[language=bash]
+cd nest-js
+npm install
+\end{lstlisting}
+
+\item Avviare il server $\textit{backend}_G$ $\textit{Nest.js}_G$:
+\begin{lstlisting}[language=bash]
+npm run start:dev
+\end{lstlisting}
+
+\item Installare le dipendenze per il $\textit{frontend}_G$ $\textit{Next.js}_G$: Aprire una nuova shell lasciando la precedente in esecuzione
+\begin{lstlisting}[language=bash]
+cd next-js
+npm install
+\end{lstlisting}
+
+\item Avviare il server $\textit{frontend}_G$ $\textit{Next.js}_G$:
+\begin{lstlisting}[language=bash]
+npm run dev
+\end{lstlisting}
+
+\item Installare le dipendenze per il progetto socket $\textit{Nest.js}_G$:
+\begin{lstlisting}[language=bash]
+cd websocket-server
+npm install
+\end{lstlisting}
+
+\item Avviare il server socket $\textit{Nest.js}_G$:
+\begin{lstlisting}[language=bash]
+npm run start:dev
+\end{lstlisting}
+
+\item Accedere all'applicazione:
+Una volta avviati sia il server $\textit{backend}_G$ $\textit{Nest.js}_G$ che il server $\textit{frontend}_G$ $\textit{Next.js}_G$, è possibile accedere all'applicazione utilizzando il browser. \\ Si apra il browser e si vada all'indirizzo 
+\begin{quote}
+\begin{verbatim}
+    $\textit{http}_G$://localhost:3000/create_reservation
+\end{verbatim}
+\end{quote}
+per accedere alla pagina di creazione delle prenotazioni.
+
+\end{enumerate}
+
+\subsection{Esecuzione dei test}
+In questa sezione si elencano i comandi per eseguire i $\textit{test}_G$ tramite $\textit{jest}_G$ per tutti i servizi.
+Per poter eseguire i $\textit{test}_G$ in locale per i tre servizi si dovrà prima installare $\textit{Node.js}_G$ versione 21.x . \href{https://nodejs.org/en/download/package-manager/current}{$\textit{Node.js}_G$ installazione}(consultato: 2024-05-27) \\
+I comandi per eseguire i $\textit{test}_G$ dei vari servizi sono gli stessi, si deve solo cambiare la cartella dove vengono eseguiti i comandi:
+\begin{itemize}
+\item Per i $\textit{test}_G$ lato $\textit{backend}_G$:
+\begin{lstlisting}[language=bash]
+cd nest-js
+\end{lstlisting}
+\item Per i $\textit{test}_G$ lato $\textit{frontend}_G$:
+\begin{lstlisting}[language=bash]
+cd next-js
+\end{lstlisting}
+\item Per i $\textit{test}_G$ del $\textit{websocket}_G$:
+\begin{lstlisting}[language=bash]
+cd websocket-server
+\end{lstlisting}
+\end{itemize}
+Quindi, di seguito, vengono riportati i comandi per eseguire i $\textit{test}_G$:
+\begin{enumerate}
+\item Eseguire il comando, se non fatto in precedenza:
+\begin{lstlisting}[language=bash]
+npm install
+\end{lstlisting}
+\item Eseguire il seguente script per l'esecuzione di tutti i $\textit{test}_G$ generando un report finale:
+\begin{lstlisting}[language=bash]
+npm run $\textit{test}_G$:cov
+\end{lstlisting}
+\item Aprire il seguente file per visualizzare il report:
+\begin{lstlisting}[language=bash]
+./coverage/coverage.txt
+\end{lstlisting}
+\end{enumerate}
