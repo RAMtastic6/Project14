@@ -28,7 +28,7 @@
   "B": [
     {
       "termine": "Backend",
-      "definizione": "La parte di un'applicazione software che gestisce la logica di business, l'accesso ai dati e le operazioni del server. Il backend include server, database, e API che permettono la comunicazione tra il frontend e il database. È responsabile dell'elaborazione delle richieste degli utenti, della gestione della sicurezza, dell'autenticazione, e dell'integrazione con altri servizi esterni."
+      "definizione": "Il backend è la parte di un'applicazione software che gestisce la logica di business, l'accesso ai dati e le operazioni del server. Il backend include server, database, e API che permettono la comunicazione tra il frontend e il database. È responsabile dell'elaborazione delle richieste degli utenti, della gestione della sicurezza, dell'autenticazione, e dell'integrazione con altri servizi esterni."
     },
     {
       "termine": "Best practices",
@@ -72,27 +72,27 @@
       "termine": "Consuntivo",
       "definizione": "Il consuntivo è un rapporto che confronta le previsioni o le stime con i dati effettivi o reali, al fine di valutare le variazioni e le differenze tra ciò che era previsto e ciò che è stato effettivamente raggiunto. Nell'ambito dello sviluppo del software o di altri progetti, il consuntivo può essere utilizzato per analizzare il bilancio finanziario, il tempo impiegato, le risorse utilizzate e altre metriche di progetto. Fornisce una valutazione critica delle prestazioni e dell'efficacia del progetto, consentendo di prendere decisioni informate e di apportare eventuali correzioni di rotta necessarie per mantenere il progetto sul giusto percorso."
     },
+	  {
+      "termine": "Controller layer",
+      "definizione": "Il controller layer è la parte di un'architettura software che funge da intermediario tra il livello di presentazione e il livello di logica di business. Il controller è responsabile della gestione delle richieste in ingresso, dell'elaborazione dei dati e del coordinamento delle risposte da inviare al client."
+    },
     {
       "termine": "Controllo di Configurazione",
       "definizione": "Il controllo di configurazione è un processo utilizzato nel campo dello sviluppo del software per gestire le modifiche alla configurazione e alla struttura del software stesso. Coinvolge l'identificazione, la registrazione, la revisione e l'approvazione delle modifiche apportate al codice sorgente, alla documentazione, ai file di configurazione e ad altri elementi del progetto. Il controllo di configurazione aiuta a mantenere la coerenza e l'integrità del sistema software durante l'evoluzione del progetto, garantendo che le modifiche vengano gestite in modo ordinato e tracciabile. Questo processo è essenziale per il mantenimento della qualità del software e per garantire che tutte le versioni e le varianti del sistema siano correttamente documentate e controllate."
     },
-	{
-      "termine": "Controller layer",
-      "definizione": "Parte di un'architettura software che funge da intermediario tra il livello di presentazione e il livello di logica di business. Il controller è responsabile della gestione delle richieste in ingresso, dell'elaborazione dei dati e del coordinamento delle risposte da inviare al client."
+    {
+      "termine": "CRUD",
+      "definizione": "CRUD (Create, Read, Update, Delete) è un acronimo utilizzato per descrivere le quattro operazioni fondamentali che possono essere eseguite su dati persistenti in un sistema di gestione dei dati. Create (Creazione): Creare nuovi dati nel sistema. Read (Lettura): Recuperare i dati esistenti dal sistema. Update (Aggiornamento): Modificare i dati esistenti nel sistema. Delete (Cancellazione): Eliminare i dati esistenti dal sistema."
     },
 	{
 	  "termine": "CSS",
 	  "definizione": "CSS, (Cascading Style Sheets - fogli di stile a cascata), è un linguaggio di stile utilizzato per definire l'aspetto e la formattazione di documenti HTML (HyperText Markup Language) e XML (eXtensible Markup Language); consente di controllare il layout, i colori, i tipi di carattere, le dimensioni e altri aspetti visivi di un documento web. Con CSS è possibile separare la struttura e il contenuto di una pagina web (definiti tramite HTML) dalla loro presentazione visiva, garantendo una maggiore flessibilità e facilità di manutenzione."
-	},
-	{
-	  "termine": "CRUD",
-	  "definizione": "CRUD (Create, Read, Update, Delete) è un acronimo utilizzato per descrivere le quattro operazioni fondamentali che possono essere eseguite su dati persistenti in un sistema di gestione dei dati. Create (Creazione): Creare nuovi dati nel sistema. Read (Lettura): Recuperare i dati esistenti dal sistema. Update (Aggiornamento): Modificare i dati esistenti nel sistema. Delete (Cancellazione): Eliminare i dati esistenti dal sistema."
 	}
   ],
   "D": [
 	{
 	  "termine": "Data Access Layer",
-	  "definizione": "Questo strato dell'architettura software è responsabile della gestione dell'accesso ai dati all'interno del sistema. È incaricato di comunicare con le fonti di dati sottostanti, come database, file di testo o servizi web, per recuperare, aggiornare o eliminare informazioni. Il livello di accesso ai dati astrae i dettagli di implementazione della persistenza dei dati dal resto dell'applicazione, consentendo alle altre parti del sistema di interagire con i dati."
+	  "definizione": "Il Data Access Layer è lo strato dell'architettura software che è responsabile della gestione dell'accesso ai dati all'interno del sistema. È incaricato di comunicare con le fonti di dati sottostanti, come database, file di testo o servizi web, per recuperare, aggiornare o eliminare informazioni. Il livello di accesso ai dati estrae i dettagli di implementazione della persistenza dei dati dal resto dell'applicazione, consentendo alle altre parti del sistema di interagire con i dati."
 	},
 	{
 	  "termine": "Deployment",
@@ -120,7 +120,7 @@
 	},
 	{
 		"termine": "Docker Compose",
-		"definizione": "Uno strumento che permette di definire e gestire applicazioni Docker multi-contenitore. Utilizzando un file .yaml, Docker Compose consente di descrivere i servizi, le reti e i volumi necessari per un'applicazione. Con un singolo comando, è possibile creare, avviare e gestire tutti i contenitori specificati nel file, facilitando lo sviluppo, il test e il deployment di applicazioni complesse che coinvolgono più componenti interdipendenti."
+		"definizione": "Docker Compose è uno strumento che permette di definire e gestire applicazioni Docker multi-contenitore. Utilizzando un file .yaml, Docker Compose consente di descrivere i servizi, le reti e i volumi necessari per un'applicazione. Con un singolo comando, è possibile creare, avviare e gestire tutti i contenitori specificati nel file, facilitando lo sviluppo, il test e il deployment di applicazioni complesse che coinvolgono più componenti interdipendenti."
 	},
     {
       "termine": "Documento Esterno",
@@ -146,13 +146,13 @@
     },
 	{
       "termine": "Endpoint",
-      "definizione": "Un URL specifico esposto da un'API (Application Programming Interface) che rappresenta un punto di ingresso per la comunicazione tra un client e un server. Gli endpoint sono utilizzati per eseguire operazioni come il recupero, l'invio, l'aggiornamento o la cancellazione di dati. Ogni endpoint è associato a un'operazione HTTP e consente ai client di interagire con le risorse del server in modo strutturato e sicuro."
+      "definizione": "L'endpoint è un URL specifico esposto da un'API (Application Programming Interface) che rappresenta un punto di ingresso per la comunicazione tra un client e un server. Gli endpoint sono utilizzati per eseguire operazioni come il recupero, l'invio, l'aggiornamento o la cancellazione di dati. Ogni endpoint è associato a un'operazione HTTP e consente ai client di interagire con le risorse del server in modo strutturato e sicuro."
     }
   ],
   "F": [
     {
       "termine": "Facade",
-      "definizione": "Design pattern strutturale che fornisce un'interfaccia unificata per un insieme di interfacce in un sottosistema più grande. Essenzialmente, la Facade nasconde la complessità del sottosistema e semplifica l'accesso ad esso fornendo un'interfaccia semplice e unificata."
+      "definizione": "Il facade è un design pattern strutturale che fornisce un'interfaccia unificata per un insieme di interfacce in un sottosistema più grande. Essenzialmente, la Facade nasconde la complessità del sottosistema e semplifica l'accesso ad esso fornendo un'interfaccia semplice e unificata."
     },
     {
       "termine": "Feature",
@@ -172,7 +172,7 @@
     },
 	{
       "termine": "Frontend",
-      "definizione": "La parte di un'applicazione software che interagisce direttamente con l'utente finale. Il frontend include l'interfaccia utente (UI) e tutte le componenti che rendono l'esperienza utente interattiva e visivamente piacevole. È sviluppato utilizzando tecnologie come HTML, CSS e JavaScript, e comunica con il backend per recuperare e visualizzare i dati."
+      "definizione": "Il frontend è la parte di un'applicazione software che interagisce direttamente con l'utente finale. Il frontend include l'interfaccia utente (UI) e tutte le componenti che rendono l'esperienza utente interattiva e visivamente piacevole. È sviluppato utilizzando tecnologie come HTML, CSS e JavaScript, e comunica con il backend per recuperare e visualizzare i dati."
     },
     {
       "termine": "Funzionalità",
@@ -182,7 +182,7 @@
   "G": [
     {
       "termine": "Gateway",
-      "definizione": "Un punto di accesso che funge da intermediario tra diverse reti o sistemi, permettendo la comunicazione e il trasferimento di dati tra di essi. Nel contesto delle applicazioni software, un gateway può gestire richieste da client e inoltrarle ai servizi appropriati, effettuare traduzioni di protocolli, gestire autenticazione e autorizzazione, e applicare politiche di sicurezza."
+      "definizione": "Il gateway è un punto di accesso che funge da intermediario tra diverse reti o sistemi, permettendo la comunicazione e il trasferimento di dati tra di essi. Nel contesto delle applicazioni software, un gateway può gestire richieste da client e inoltrarle ai servizi appropriati, effettuare traduzioni di protocolli, gestire autenticazione e autorizzazione, e applicare politiche di sicurezza."
     },
     {
       "termine": "Git",
@@ -269,7 +269,7 @@
     },
 	{
       "termine": "Manutenzione",
-      "definizione": "L'insieme delle attività svolte per mantenere un software funzionante, sicuro e aggiornato dopo il suo rilascio. La manutenzione può includere la correzione di bug, l'aggiornamento delle dipendenze, l'aggiunta di nuove funzionalità, l'ottimizzazione delle prestazioni, e l'adeguamento del software a nuovi requisiti o tecnologie."
+      "definizione": "La manutenzione è l'insieme delle attività svolte per mantenere un software funzionante, sicuro e aggiornato dopo il suo rilascio. La manutenzione può includere la correzione di bug, l'aggiornamento delle dipendenze, l'aggiunta di nuove funzionalità, l'ottimizzazione delle prestazioni, e l'adeguamento del software a nuovi requisiti o tecnologie."
     },
     {
       "termine": "Milestone",
@@ -281,7 +281,7 @@
     },
 	{
       "termine": "Multi-tier",
-      "definizione": "Un'architettura software suddivisa in più livelli o tier, ognuno dei quali gestisce una specifica responsabilità all'interno dell'applicazione. I livelli comuni includono: Presentazione (Presentation Tier)che è il livello più alto, che gestisce l'interfaccia utente e l'interazione con l'utente; Logica di Business (Business Logic Tier) che contiene la logica dell'applicazione, processando i dati e implementando le regole di business; Accesso ai Dati (Data Access Tier) che interagisce con i database per memorizzare e recuperare dati."
+      "definizione": "Il multi-tier è un tipo di architettura software che si suddivide in più livelli (o tier), ognuno dei quali gestisce una specifica responsabilità all'interno dell'applicazione. I livelli comuni includono: Presentazione (Presentation Tier) che è il livello più alto, che gestisce l'interfaccia utente e l'interazione con l'utente; Logica di Business (Business Logic Tier) che contiene la logica dell'applicazione, processando i dati e implementando le regole di business; Accesso ai Dati (Data Access Tier) che interagisce con i database per memorizzare e recuperare dati."
     },
 	{
 		"termine": "MVP",
@@ -307,7 +307,7 @@
     },
 	{
 	  "termine": "NPM",
-      "definizione": "Il gestore di pacchetti predefinito per Node.js, utilizzato per installare, condividere e gestire le dipendenze del progetto JavaScript. NPM consente agli sviluppatori di scaricare e installare librerie e strumenti di terze parti, oltre a pubblicare e condividere i propri pacchetti. Con NPM, è possibile gestire le versioni delle dipendenze e configurare script per automatizzare attività di sviluppo comuni, rendendo più efficiente la gestione del ciclo di vita del progetto."
+      "definizione": "NPM è il gestore di pacchetti predefinito per Node.js, utilizzato per installare, condividere e gestire le dipendenze del progetto JavaScript. NPM consente agli sviluppatori di scaricare e installare librerie e strumenti di terze parti, oltre a pubblicare e condividere i propri pacchetti. Con NPM, è possibile gestire le versioni delle dipendenze e configurare script per automatizzare attività di sviluppo comuni, rendendo più efficiente la gestione del ciclo di vita del progetto."
 	}
   ],
   "O": [
@@ -418,14 +418,18 @@
     }
   ],
   "R": [
-	{
-	  "termine": "React",
-	  "definizione": "React è una libreria JavaScript open-source, sviluppata da Facebook, che è ampiamente utilizzata per la creazione di interfacce utente (UI) dinamiche e interattive per applicazioni web. È progettata per semplificare lo sviluppo di UI complesse, consentendo agli sviluppatori di creare componenti riutilizzabili che rappresentano parti specifiche dell'interfaccia utente e gestire lo stato dell'applicazione in modo efficiente."
-	},
-	{
-	  "termine": "React Architecture",
-	  "definizione": "Un approccio organizzato e strutturato per lo sviluppo di applicazioni web utilizzando React, un framework JavaScript per la creazione di interfacce utente. L'architettura React si basa sui principi di modularità, separazione delle responsabilità e riusabilità del codice. Include la definizione di componenti riutilizzabili, la gestione dello stato, la navigazione tra le pagine e l'integrazione con servizi esterni."
-	},
+	  {
+      "termine": "RDBMS",
+      "definizione": "L'RDBMS è un sistema software che gestisce database relazionali. In un RDBMS, i dati sono organizzati in tabelle composte da righe e colonne, e le relazioni tra i dati sono rappresentate mediante chiavi esterne. Gli RDBMS utilizzano il linguaggio SQL per eseguire operazioni di creazione, lettura, aggiornamento e cancellazione sui dati. "
+    },
+    {
+      "termine": "React",
+      "definizione": "React è una libreria JavaScript open-source, sviluppata da Facebook, che è ampiamente utilizzata per la creazione di interfacce utente (UI) dinamiche e interattive per applicazioni web. È progettata per semplificare lo sviluppo di UI complesse, consentendo agli sviluppatori di creare componenti riutilizzabili che rappresentano parti specifiche dell'interfaccia utente e gestire lo stato dell'applicazione in modo efficiente."
+    },
+    {
+      "termine": "React Architecture",
+      "definizione": "Il React Architecture è un approccio organizzato e strutturato per lo sviluppo di applicazioni web utilizzando React, un framework JavaScript per la creazione di interfacce utente. L'architettura React si basa sui principi di modularità, separazione delle responsabilità e riusabilità del codice. Include la definizione di componenti riutilizzabili, la gestione dello stato, la navigazione tra le pagine e l'integrazione con servizi esterni."
+    },
     {
       "termine": "Redattore",
       "definizione": "Un redattore è un individuo responsabile della stesura di documenti tecnici o di altro genere all'interno di un progetto. Il redattore assicura che i documenti siano chiari, accurati e coerenti. "
@@ -445,10 +449,6 @@
     {
       "termine": "Requisiti obbligatori funzionali",
       "definizione": "I requisiti obbligatori funzionali sono quei requisiti indispensabili per il corretto funzionamento del sistema o del prodotto, senza i quali il sistema non può essere considerato soddisfacente. "
-    },
-	{
-      "termine": "RDBMS",
-      "definizione": "Un sistema software che gestisce database relazionali. In un RDBMS, i dati sono organizzati in tabelle composte da righe e colonne, e le relazioni tra i dati sono rappresentate mediante chiavi esterne. Gli RDBMS utilizzano il linguaggio SQL per eseguire operazioni di creazione, lettura, aggiornamento e cancellazione sui dati. "
     },
     {
       "termine": "Riferimenti",
@@ -514,7 +514,7 @@
 	},
 	{
 	  "termine": "Service layer",
-	  "definizione": "Questo strato rappresenta la logica di business dell'applicazione e si trova tra il controller e il livello di accesso ai dati. Il suo compito principale è implementare la logica aziendale dell'applicazione, fornendo servizi e operazioni che il controller richiama per eseguire azioni complesse."
+	  "definizione": "Il service Layer è lo strato che rappresenta la logica di business dell'applicazione e si trova tra il controller e il livello di accesso ai dati. Il suo compito principale è implementare la logica aziendale dell'applicazione, fornendo servizi e operazioni che il controller richiama per eseguire azioni complesse."
 	},
     {
       "termine": "Sistema",
@@ -546,7 +546,7 @@
 	},
 	{
 	  "termine": "SSR",
-	  "definizione": "SSR(Server Side Rendering) è una tecnica di rendering delle pagine web in cui il contenuto della pagina viene generato e inviato al client dal server, anziché essere costruito nel browser utilizzando JavaScript. Con SSR, il server elabora le richieste dell'utente, recupera i dati necessari e rende la pagina HTML completa prima di inviarla al browser."
+	  "definizione": "SSR (Server Side Rendering) è una tecnica di rendering delle pagine web in cui il contenuto della pagina viene generato e inviato al client dal server, anziché essere costruito nel browser utilizzando JavaScript. Con SSR, il server elabora le richieste dell'utente, recupera i dati necessari e rende la pagina HTML completa prima di inviarla al browser."
 	},
     {
       "termine": "Strumento",
@@ -582,13 +582,13 @@
       "termine": "Trigger",
       "definizione": "Il \"trigger\" nell'analisi dei requisiti si riferisce a un evento o una condizione che innesca l'avvio di un determinato caso d'uso o processo all'interno del sistema software. È un elemento chiave per comprendere quando e come un particolare comportamento o funzionalità deve essere attivato nell'applicazione. I trigger possono essere attivati da azioni degli utenti, come clic su pulsanti o input di dati, o da eventi interni al sistema, come arrivo di notifiche o cambiamenti di stato. Identificare correttamente i trigger è fondamentale per definire in modo completo e accurato il comportamento del sistema. "
     },
+    {
+      "termine": "TypeORM",
+      "definizione": "TypeOrm è un ORM (Object-Relational Mapping) per TypeScript e JavaScript che semplifica l'interazione con i database relazionali. TypeORM permette agli sviluppatori di definire modelli di dati come classi TypeScript, e gestisce automaticamente la mappatura tra questi modelli e le tabelle del database."
+    },
 	{
 	  "termine": "Typescript",
 	  "definizione": "TypeScript è un linguaggio di programmazione sviluppato da Microsoft che estende e aggiunge tipizzazione statica al JavaScript standard."
-	},
-	{
-	  "termine": "TypeORM",
-	  "definizione": "Un ORM (Object-Relational Mapping) per TypeScript e JavaScript che semplifica l'interazione con i database relazionali. TypeORM permette agli sviluppatori di definire modelli di dati come classi TypeScript, e gestisce automaticamente la mappatura tra questi modelli e le tabelle del database."
 	}
   ],
   "U": [
