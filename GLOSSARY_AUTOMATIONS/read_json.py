@@ -9,7 +9,7 @@ def get_json_array_from_path(path: str):
     return json_array
 
             
-ALPHABET = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "M", "N", "R", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"]
+ALPHABET = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "R", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"]
 
 # funzione utile all'automazione dei riferimenti
 def get_termini_from_json(JSON_ARRAY) -> list[str]:
