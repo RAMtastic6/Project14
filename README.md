@@ -7,7 +7,7 @@ Nel presente repository sono presenti i documenti prodotti dal gruppo RAMtastic6
 - [Lettera di Presentazione PB](documenti/3-PB/Lettera_di_Presentazione_PB.pdf) <br>
 - Documenti Esterni:
   - [Analisi dei Requisiti](documenti/3-PB/Analisi_dei_Requisiti_v2.2.0.pdf) (V2.2.0) <br>
-  - [Glossario](documenti/3-PB/Glossario_v1.1.0.pdf) (V1.1.0) <br>
+  - [Glossario](documenti/3-PB/Glossario_v1.2.0.pdf) (V1.2.0) <br>
   - [Piano di Progetto](documenti/3-PB/Piano_di_Progetto_v1.0.0.pdf) (V1.0.0) <br>
   - [Piano di Qualifica](documenti/3-PB/Piano_di_Qualifica_v1.2.0.pdf) (V1.2.0) <br>
   - [Specifica Tecnica](documenti/3-PB/Specifica_Tecnica_v1.0.0.pdf) (V1.0.0) <br>
