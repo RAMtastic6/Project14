@@ -1,0 +1,71 @@
+\section{Introduzione}
+\subsection{Scopo del documento}
+Il presente documento ha lo scopo di descrivere in modo dettagliato le scelte progettuali effettuate dal gruppo RAMtastic6 per la realizzazione del $\textit{sistema}_G$ $\textit{Easy Meal}_G$ richiesto dall'azienda $\textit{Imola Informatica}_G$. Viene compresa l'$\textit{architettura}_G$ logica e l'$\textit{architettura}_G$ di $\textit{deployment}_G$ oltre che la lista delle $\textit{tecnologie}_G$ utilizzate e i $\textit{design}_G$ pattern adottati. \\
+Inoltre, viene fornita una sezione relativa al tracciamento dei requisiti soddisfatti in linea con il documento di Analisi dei Requisiti. \\
+Eventuali termini tecnici sono definiti all'interno del documento "Glossario Tecnico".
+
+\subsection{Scopo del prodotto}
+Il prodotto finale, realizzato tramite un'$\textit{Applicazione Web Responsive}_G$, si propone di realizzare un $\textit{software}_G$ innovativo volto a semplificate il $\textit{processo}_G$ di $\textit{prenotazione}_G$ e $\textit{ordinazione}_G$ nei ristoranti, contribuendo a migliorare l'esperienza per clienti e ristoratori. In particolare, $\textit{Easy Meal}_G$ dovrà consentire agli utenti di personalizzare gli ordini in base alle proprie preferenze, allergie ed esigenze alimentari; interagire direttamente con lo staff del ristorante attraverso una chat integrata; consentire di dividere il conto tra i partecipanti al tavolo.
+\subsection{Riferimenti}
+\subsubsection{Riferimenti normativi}
+\begin{enumerate}
+    \item Presentazione del $\textit{capitolato}_G$ d'appalto C3 - Progetto $\textit{Easy Meal}_G$: \\ \url{https://www.math.unipd.it/~tullio/IS-1/2023/Progetto/C3.pdf}\\
+    (Consultato: 2024-05-13)
+    \item Regolamento del progetto didattico: \\ \url{https://www.math.unipd.it/~tullio/IS-1/2023/Dispense/PD2.pdf}\\
+    (Consultato: 2024-05-13)
+    \item $\textit{Norme di Progetto}_G$ v2.0.0.
+\end{enumerate}
+\subsubsection{Riferimenti informativi}
+\begin{enumerate}
+    \item Glossario v2.0.0;
+    \item Analisi dei Requisiti v3.0.0.
+    \item Lezione \emph{"Progettazione e programmazione: diagrammi delle classi ($\textit{UML}_G$)"} del corso di Ingegneria del $\textit{Software}_G$:\\
+    \url{https://www.math.unipd.it/~rcardin/swea/2023/Diagrammi%20delle%20Classi.pdf}\\
+    (Consultato: 2024-05-13)
+    \item Lezione \emph{"Progettazione: i pattern architetturali"} del corso di Ingegneria del $\textit{Software}_G$:\\
+    \url{https://www.math.unipd.it/~rcardin/swea/2022/Software%20Architecture%20Patterns.pdf}\\
+    (Consultato: 2024-05-13)
+    \item Lezione \emph{"Progettazione: il pattern Dependency Injection"} del corso di Ingegneria del $\textit{Software}_G$:\\
+    \url{https://www.math.unipd.it/~rcardin/swea/2022/Design%20Pattern%20Architetturali%20-%20Dependency%20Injection.pdf}\\
+    (Consultato: 2024-05-13)
+    \item Lezione \emph{"Progettazione software (T6)"} del corso di Ingegneria del $\textit{Software}_G$:\\
+    \url{https://www.math.unipd.it/~tullio/IS-1/2023/Dispense/T6.pdf}\\
+    (Consultato: 2024-05-13)
+    \item Lezione \emph{"Progettazione: il pattern Model-View-Controller e derivati"} del corso di Ingegneria del $\textit{Software}_G$:\\
+    \url{https://www.math.unipd.it/~rcardin/sweb/2022/L02.pdf}
+    \item Lezione \emph{"Progettazione: i pattern creazionali (GoF)"} del corso di Ingegneria del $\textit{Software}_G$:\\
+    \url{https://www.math.unipd.it/~rcardin/swea/2022/Design%20Pattern%20Creazionali.pdf}\\
+    (Consultato: 2024-05-13)
+    \item Lezione \emph{"Progettazione: i pattern strutturali (GoF)"} del corso di Ingegneria del $\textit{Software}_G$:\\
+    \url{https://www.math.unipd.it/~rcardin/swea/2022/Design%20Pattern%20Strutturali.pdf}\\
+    (Consultato: 2024-05-13)
+    \item Lezione \emph{"Progettazione: i pattern di comportamento (GoF)"} del corso di Ingegneria del $\textit{Software}_G$:\\
+    \url{https://www.math.unipd.it/~rcardin/swea/2021/Design%20Pattern%20Comportamentali_4x4.pdf}\\
+    (Consultato: 2024-05-13)
+    
+\item $\textit{Nest.js}_G$ — Architectural Pattern, Controllers, Providers, and Modules: \\
+  \href{https://medium.com/geekculture/nest-js-architectural-pattern-controllers-providers-and-modules-406d9b192a3a}{https://medium.com/geekculture/nest-js-architectural-pattern-controllers-providers-and-modules-406d9b192a3a} \\
+  (Consultato: 2024-05-29)
+
+\item Topic-based Publish/Subscribe $\textit{design}_G$ pattern implementation in OCaml — (Using socket programming) \\
+\href{https://medium.com/@aryangodara\_19887/topic-based-publish-subscribe-design-pattern-implementation-in-ocaml-using-socket-programming-ba536f0a3ef3}{https://medium.com/@aryangodara\_19887/topic-based-publish-subscribe-design-pattern-implementation-in-ocaml-using-socket-programming-ba536f0a3ef3} \\
+(Consultato: 2024-05-29)
+
+\item $\textit{Repository}_G$ pattern explained with Laravel and NestJS examples \\
+\href{https://draganatanasov.com/2023/01/15/repository-pattern-explained-with-laravel-and-nestjs-examples/}{https://draganatanasov.com/2023/01/15/repository-pattern-explained-with-laravel-and-nestjs-examples/} \\
+(Consultato: 2024-05-29)
+
+\item Boosting Your NestJS Skills: Exploring the Module Pattern $\textit{Design}_G$ \\
+\url{https://www.bymoji.com/blog/Boosting\_Your\_NestJS\_Skills\_Exploring\_the\_Module\_Pattern\_Design} \\
+(Consultato: 2024-05-29)
+
+\item $\textit{Backend}_G$ for $\textit{Frontend}_G$ (BFF) Pattern in System Designing \\
+\href{https://blog.bitsrc.io/backend-for-frontend-bff-pattern-in-system-designing-501a71df6bf7}{https://blog.bitsrc.io/backend-for-frontend-bff-pattern-in-system-designing-501a71df6bf7} \\
+(Consultato 2024-05-29)
+
+\item $\textit{React}_G$ $\textit{Design}_G$ Patterns \\
+\href{https://refine.dev/blog/react-design-patterns}{https://refine.dev/blog/react-design-patterns} \\
+(Consultato 2024-05-29)
+
+
+\end{enumerate}

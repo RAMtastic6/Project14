@@ -1,0 +1,95 @@
+\section{Tecnologie}
+In questa sezione viene presentata una panoramica degli strumenti e delle $\textit{tecnologie}_G$ utilizzate per l'implementazione del $\textit{sistema}_G$ denominato $\textit{Easy Meal}_G$. 
+\subsection{Tecnologie implementative}
+\subsubsection{Next.js}
+Next.js è un $\textit{framework}_G$ di sviluppo per applicazioni basato su $\textit{React}_G$. La sua scelta è stata dettata dalla sua efficienza e dalla sua facilità d'uso. L'utilizzo di tale $\textit{framework}_G$ permette di creare applicazioni veloci e performanti oltre che effettuare il rendering lato server. Offre una supporto integrato per TypeScript, funzionalità avanzate di realizzazione di $\textit{API}_G$, gestione del routing e Server Action.
+\begin{itemize}
+    \item \textbf{Versione scelta}: 14.0.4
+    \item \textbf{Documentazione}: \url{https://nextjs.org/}\\
+    (Consultato: 2024-05-13)
+    \item \textbf{Linguaggio}: TypeScript, $\textit{JSX}_G$, $\textit{JSON}_G$.
+\end{itemize}
+
+\subsubsection{React}
+React è una libreria JavaScript utilizzata per la creazione di interfacce utente dinamiche e reattive.
+\begin{itemize}
+    \item \textbf{Versione scelta:} 18.0.0
+    \item \textbf{Documentazione}: \url{https://reactjs.org/}\\
+    (Consultato: 2024-05-13)
+    \item \textbf{Linguaggio}: TypeScript, $\textit{JSX}_G$, $\textit{JSON}_G$.
+\end{itemize}
+
+\subsubsection{Tailwind CSS}
+Tailwind $\textit{CSS}_G$ è un $\textit{framework}_G$ $\textit{CSS}_G$ utilizzato per lo sviluppo di interfacce web lato utente offrendo classi predefinite per applicare lo stile agli elementi.
+\begin{itemize}
+    \item \textbf{Versione scelta:} 3.4.1
+    \item \textbf{Documentazione}: \url{https://tailwindcss.com/}\\
+    (Consultato: 2024-05-13)
+    \item \textbf{Linguaggio}: CSS
+\end{itemize}
+
+\subsubsection{Node.js}
+Node.js è un $\textit{runtime system}_G$ $\textit{open-source}_G$ orientato agli eventi che esegue codice JavaScript $\textit{server-side}_G$.
+
+\begin{itemize}
+    \item \textbf{Versione scelta:} 21.0.0
+    \item \textbf{Documentazione}: \url{https://nodejs.org/}\\
+    (Consultato: 2024-05-13)
+    \item \textbf{Linguaggio}: TypeScript, JSON
+\end{itemize}
+
+\subsubsection{Nest.js}
+Nest.js è un $\textit{framework}_G$ $\textit{typescript}_G$ basato su $\textit{Node.js}_G$ e progettato per sviluppare applicazioni $\textit{server-side}_G$ efficienti, scalabili e manutenibili. 
+
+\begin{itemize}
+    \item \textbf{Versione scelta:} 10.0.0
+    \item \textbf{Documentazione}: \url{https://nestjs.com/}\\
+    (Consultato: 2024-05-13)
+    \item \textbf{Linguaggio}: TypeScript, JSON
+\end{itemize}
+
+\subsubsection{Socket.io}
+Socket.io è una libreria JavaScript che permette la comunicazione in tempo reale bidirezionale tra client e server tramite $\textit{websocket}_G$, con supporto per la trasmissione di eventi. È progettata per facilitare lo sviluppo di applicazioni web interattive e collaborative, come chat in tempo reale, giochi multiplayer e applicazioni di monitoraggio in tempo reale. \\
+In particolare, la scelta di utilizzare Socket.io è stata dettata da vari fattori. Innanzitutto, essendo giunta più in là nello sviluppo la necessità di utilizzare una libreria a parte per la realizzazione di alcuni requisiti obbligatori, ci si è orientati verso una libreria che fosse nativamente supportata dai $\textit{framework}_G$ utilizzati per $\textit{Frontend}_G$ e $\textit{Backend}_G$. Altri aspetti che hanno portato il gruppo a scegliere la sua adozione sono stati l'ampia documentazione e la gestione efficace di connessioni, disconnessioni e riconoscimento degli eventi fornita dalla libreria. 
+\begin{itemize}
+\item \textbf{Versione scelta:} 4.0.0
+\item \textbf{Documentazione}: \url{https://socket.io/docs/v4/}\\
+(Consultato: 2024-05-13)
+\item \textbf{Linguaggi}: JavaScript, TypeScript
+\end{itemize}
+
+\subsection{Tecnologie per la persistenza dei dati}
+\subsubsection{PostgreSQL}
+PostgreSQL è un $\textit{sistema}_G$ di gestione di database relazionali $\textit{open-source}_G$, noto per la sua affidabilità e robustezza.
+\begin{itemize}
+\item \textbf{Versione scelta:} 15.2
+\item \textbf{Documentazione}: \url{https://www.postgresql.org/}\\
+(Consultato: 2024-05-13)
+\item \textbf{Linguaggi}: SQL
+\end{itemize}
+
+\newpage
+\subsection{Tecnologie per il testing}
+\subsubsection{Jest}
+Jest è un $\textit{framework}_G$ di $\textit{test}_G$ del $\textit{software}_G$ $\textit{open-source}_G$ per JavaScript, sviluppato da Facebook. È progettato per essere semplice da utilizzare e offre un'esperienza di sviluppo fluida e piacevole per i $\textit{test}_G$ unitari, di integrazione e di $\textit{sistema}_G$.
+\begin{itemize}
+\item \textbf{Versione scelta:} 29.7.0
+\item \textbf{Documentazione}: \url{https://jestjs.io/docs/getting-started}\\
+(Consultato: 2024-05-13)
+\item \textbf{Linguaggi}: TypeScript, JavaScript
+\end{itemize}
+\subsection{Tecnologie per il deployment}
+\subsubsection{Docker}
+Docker è un $\textit{software}_G$ utilizzato per effettuare il $\textit{deployment}_G$ di un prodotto $\textit{software}_G$. La sua caratteristica è di permettere la scalabilità e l'Isolamento delle applicazioni utilizzando la virtualizzazione a livello di $\textit{sistema}_G$ operativo. Offre una discreta efficienza, portabilità e facilità d'uso.
+\begin{itemize}
+    \item \textbf{Versione scelta}: latest
+    \item \textbf{Documentazione}: \url{https://www.docker.com/}\\
+    (consultato: 2024-05-13)
+\end{itemize}
+\subsubsection{Docker Compose}
+$\textit{Docker}_G$ Compose è uno $\textit{strumento}_G$ per la definizione e l'esecuzione di applicazioni aventi più' container. Permette di gestire i container $\textit{Docker}_G$ semplificando il $\textit{processo}_G$ di $\textit{deployment}_G$.
+\begin{itemize}
+    \item \textbf{Versione scelta}: latest
+    \item \textbf{Documentazione}: \url{https://docs.docker.com/compose/}\\
+    (Consultato: 2024-05-13)
+\end{itemize}
