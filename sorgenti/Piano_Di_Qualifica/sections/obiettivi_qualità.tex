@@ -68,7 +68,6 @@ Di seguito vengono riporti gli obiettivi di qualità per tali metriche:
     \hline
     \end{tabular}
     \caption{Metriche per i processi di fornitura}
-    \label{tab:metriche_fornitura}
 \end{table}
 
 
@@ -164,10 +163,55 @@ Di seguito vengono riporti gli obiettivi di qualità per tali metriche:
     \textbf{MPC14-IG} & Indice Gulpease & 30-100 & 50-100 \\
     \hline
     \end{tabular}
-    \caption{Metriche per i processi di supporto}
-    \label{tab:metriche_fornitura}
+    \caption{Metriche per i processi di documentazione}
 \end{table}
-\newpage
+\subsubsubsection{Verifica}
+Per il $\textit{processo}_G$ di verifica andremo a definire le seguenti metriche:
+\begin{itemize}
+    \item \textbf{\emph{Percentuale dei $\textit{test}_G$ superati (PCTS)}}:\\
+    misura la percentuale di $\textit{test}_G$, definiti nella sezione \emph{Testing}, superati. Si calcola nel seguente modo:
+    \[
+    PCTS = \frac{\text{\emph{num. $\textit{test}_G$ superati}}}{\text{\emph{{num. $\textit{test}_G$ totali}}}}\times100
+    \]
+    \item \textbf{\emph{Statement coverage (SC)}}: \\
+    misura la percentuale degli statement del codice coperti dai $\textit{test}_G$, ovvero eseguiti almeno una volta. Si calcola nel seguente modo:
+      \[
+    SC = \frac{\text{\emph{Statement eseguiti}}}{\text{\emph{{Statement totali}}}}\times100
+    \]
+    \item \textbf{\emph{Branch coverage (BC)}}: \\
+    misura la percentuale dei rami decisionali, ovvero i percorsi di esecuzione, del codice coperti dai $\textit{test}_G$, cioè eseguiti almeno una volta. Si calcola nel seguente modo:
+     \[
+    BC = \frac{\text{\emph{Rami decisionali testati}}}{\text{\emph{{Rami decisionali totali}}}}\times100
+    \]
+    \item \textbf{\emph{Condition coverage (CC)}}:\\
+    misura la percentuale di condizioni logiche del codice che sono state eseguite durante i $\textit{test}_G$, ovvero eseguite almeno una volta. Si calcola nel seguente modo:
+    \[
+    CC = \frac{\text{\emph{Condizioni logiche testate}}}{\text{\emph{{Condizioni logiche totali}}}}\times100
+    \]
+\end{itemize}
+Di seguito vengono riporti gli obiettivi di qualità per tali metriche:
+\begin{table}[htbp]
+    \centering
+    \begin{tabular}{|>{\centering\arraybackslash}p{4cm}|p{4cm}|p{4cm}|p{4cm}|}
+    \hline
+    \rowcolor{gray!30}
+    \textbf{Metrica} & \textbf{Nome} & \textbf{Valore Accettabile} & \textbf{Valore Preferibile} \\
+    \hline
+    \rowcolor{gray!10}
+    \textbf{MPC15-PCTS} & Percentuale dei $\textit{test}_G$ superati & $\geq$ 80\% & 100\% \\
+    \hline
+    \rowcolor{gray!10}
+    \textbf{MPC16-SC} & Statement coverage & $\geq$ 80\% & 100\% \\
+    \hline
+     \rowcolor{gray!10}
+    \textbf{MPC17-BC} & $\textit{Branch}_G$ coverage & $\geq$ 80\% & 100\% \\
+    \hline
+     \rowcolor{gray!10}
+    \textbf{MPC18-CC} & Condition coverage & $\geq$ 80\% & 100\% \\
+    \hline
+    \end{tabular}
+    \caption{Metriche per i processi di verifica}
+\end{table}
 \subsubsection{Processi organizzativi}
 Per i $\textit{processi organizzativi}_G$ andremo ad utilizzare le seguenti metriche:
 \begin{itemize}
@@ -194,10 +238,10 @@ Di seguito vengono riporti gli obiettivi di qualità per tali metriche:
     \textbf{Metrica} & \textbf{Nome} & \textbf{Valore Accettabile} & \textbf{Valore Preferibile} \\
     \hline
     \rowcolor{gray!10}
-    \textbf{MPC15-NCR} & Non Calculated Risk & $\leq$ 4 & 0 \\
+    \textbf{MPC19-NCR} & Non Calculated Risk & $\leq$ 4 & 0 \\
     \hline
     \rowcolor{gray!10}
-    \textbf{MPC16-ET} & Efficienza temporale & $\leq$ 3 & $\leq 1$ \\
+    \textbf{MPC20-ET} & Efficienza temporale & $\leq$ 3 & $\leq 1$ \\
     \hline
     \end{tabular}
     \caption{Metriche per i processi organizzativi}

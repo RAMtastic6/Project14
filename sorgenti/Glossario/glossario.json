@@ -8,16 +8,28 @@
       "termine": "Analisi Dei Rischi",
       "definizione": "L'analisi dei rischi è il processo di identificazione, valutazione e gestione dei potenziali problemi e delle minacce che potrebbero influenzare il successo di un progetto o di un'attività. Questo processo coinvolge la valutazione dei rischi potenziali, la determinazione della loro probabilità di accadere e dell'impatto che potrebbero avere sul progetto, nonché lo sviluppo di strategie per mitigare o gestire tali rischi. L'obiettivo dell'analisi dei rischi è identificare precocemente le potenziali problematiche e adottare misure preventive o correttive per ridurre al minimo gli impatti negativi sul progetto."
     },
+		{
+      "termine": "API",
+      "definizione": "Le API REST (Representational State Transfer) nell'ambito delle applicazioni web sono un insieme di principi architetturali che definiscono come le risorse Web devono essere definite e accessibili. Le API REST consentono alle applicazioni client di comunicare con un server Web in modo standardizzato utilizzando richieste HTTP per accedere e manipolare le risorse, come ad esempio dati o servizi."
+		},
     {
       "termine": "Applicazione Web Responsive",
       "definizione": "Un'applicazione web progettata per adattarsi automaticamente e fornire un'esperienza utente ottimale su una varietà di dispositivi e dimensioni dello schermo, inclusi computer desktop, laptop, tablet e smartphone, utilizzando tecniche di progettazione e sviluppo che consentono all'interfaccia utente di adattarsi dinamicamente alle dimensioni del dispositivo dell'utente."
     },
+		{
+      "termine": "Architettura",
+      "definizione": "Nell'ambito del design di un'applicazione, l'architettura si riferisce alla struttura complessiva dell'applicazione stessa, inclusi i suoi componenti principali, le relazioni tra di essi e il modo in cui sono organizzati per soddisfare gli obiettivi dell'applicazione. Questa struttura definisce come i diversi moduli dell'applicazione interagiscono tra loro per gestire dati, input utente, elaborazione e output. Un'architettura ben progettata mira a garantire la scalabilità, la manutenibilità e l'efficienza dell'applicazione nel tempo."
+		},
     {
       "termine": "Attore",
       "definizione": "Un attore è entità che interagisce con il sistema svolgendo delle attività, intesa sia come persona che come sistema terzo/esterno. Ciascuna entità è caratterizzata dall’insieme delle azioni che può compiere."
     }
   ],
   "B": [
+    {
+      "termine": "Backend",
+      "definizione": "Il backend è la parte di un'applicazione software che gestisce la logica di business, l'accesso ai dati e le operazioni del server. Il backend include server, database, e API che permettono la comunicazione tra il frontend e il database. È responsabile dell'elaborazione delle richieste degli utenti, della gestione della sicurezza, dell'autenticazione, e dell'integrazione con altri servizi esterni."
+    },
     {
       "termine": "Best practices",
       "definizione": "Le best practices nel contesto della produzione software sono l'applicazione di metodi e procedure che nel corso del tempo e attraverso l'esperienza pratica hanno dimostrato di essere le migliori in termini di efficienza ed efficacia nel raggiungimento degli obiettivi prefissati."
@@ -36,7 +48,7 @@
       "termine": "Capitolato",
       "definizione": "Un capitolato è un documento tecnico allegato a un contratto di appalto, che definisce le specifiche tecniche delle opere da eseguire nel contesto del contratto stesso. Solitamente parte integrante del contratto, il capitolato stabilisce i diritti, i doveri e le particolarità relative all'esecuzione dei lavori tra le parti coinvolte. Serve da riferimento per delineare gli accordi tra i soggetti privati coinvolti nel progetto."
     },
-	{
+	  {
       "termine": "Caption",
       "definizione": "La caption di una tabella o di un'immagine in una documentazione è una breve descrizione o etichetta che fornisce informazioni sul contenuto della tabella o dell'immagine stessa. Ha lo scopo di identificare e spiegare il contenuto visivo o i dati presentati nella tabella, mentre nel caso delle immagini può includere una breve descrizione o un titolo per aiutare il lettore a comprendere il contesto della stessa."
     },
@@ -60,12 +72,32 @@
       "termine": "Consuntivo",
       "definizione": "Il consuntivo è un rapporto che confronta le previsioni o le stime con i dati effettivi o reali, al fine di valutare le variazioni e le differenze tra ciò che era previsto e ciò che è stato effettivamente raggiunto. Nell'ambito dello sviluppo del software o di altri progetti, il consuntivo può essere utilizzato per analizzare il bilancio finanziario, il tempo impiegato, le risorse utilizzate e altre metriche di progetto. Fornisce una valutazione critica delle prestazioni e dell'efficacia del progetto, consentendo di prendere decisioni informate e di apportare eventuali correzioni di rotta necessarie per mantenere il progetto sul giusto percorso."
     },
+	  {
+      "termine": "Controller layer",
+      "definizione": "Il controller layer è la parte di un'architettura software che funge da intermediario tra il livello di presentazione e il livello di logica di business. Il controller è responsabile della gestione delle richieste in ingresso, dell'elaborazione dei dati e del coordinamento delle risposte da inviare al client."
+    },
     {
       "termine": "Controllo di Configurazione",
       "definizione": "Il controllo di configurazione è un processo utilizzato nel campo dello sviluppo del software per gestire le modifiche alla configurazione e alla struttura del software stesso. Coinvolge l'identificazione, la registrazione, la revisione e l'approvazione delle modifiche apportate al codice sorgente, alla documentazione, ai file di configurazione e ad altri elementi del progetto. Il controllo di configurazione aiuta a mantenere la coerenza e l'integrità del sistema software durante l'evoluzione del progetto, garantendo che le modifiche vengano gestite in modo ordinato e tracciabile. Questo processo è essenziale per il mantenimento della qualità del software e per garantire che tutte le versioni e le varianti del sistema siano correttamente documentate e controllate."
-    }
+    },
+    {
+      "termine": "CRUD",
+      "definizione": "CRUD (Create, Read, Update, Delete) è un acronimo utilizzato per descrivere le quattro operazioni fondamentali che possono essere eseguite su dati persistenti in un sistema di gestione dei dati. Create (Creazione): Creare nuovi dati nel sistema. Read (Lettura): Recuperare i dati esistenti dal sistema. Update (Aggiornamento): Modificare i dati esistenti nel sistema. Delete (Cancellazione): Eliminare i dati esistenti dal sistema."
+    },
+	{
+	  "termine": "CSS",
+	  "definizione": "CSS, (Cascading Style Sheets - fogli di stile a cascata), è un linguaggio di stile utilizzato per definire l'aspetto e la formattazione di documenti HTML (HyperText Markup Language) e XML (eXtensible Markup Language); consente di controllare il layout, i colori, i tipi di carattere, le dimensioni e altri aspetti visivi di un documento web. Con CSS è possibile separare la struttura e il contenuto di una pagina web (definiti tramite HTML) dalla loro presentazione visiva, garantendo una maggiore flessibilità e facilità di manutenzione."
+	}
   ],
   "D": [
+	{
+	  "termine": "Data Access Layer",
+	  "definizione": "Il Data Access Layer è lo strato dell'architettura software che è responsabile della gestione dell'accesso ai dati all'interno del sistema. È incaricato di comunicare con le fonti di dati sottostanti, come database, file di testo o servizi web, per recuperare, aggiornare o eliminare informazioni. Il livello di accesso ai dati estrae i dettagli di implementazione della persistenza dei dati dal resto dell'applicazione, consentendo alle altre parti del sistema di interagire con i dati."
+	},
+	{
+	  "termine": "Deployment",
+	  "definizione": "La fase di deployment di un'applicazione è il processo di distribuzione e messa in produzione dell'applicazione stessa in un ambiente operativo o una piattaforma di hosting in modo che sia accessibile agli utenti finali. Questa fase segue il completamento dello sviluppo e dei test dell'applicazione; in questa fase, l'applicazione viene installata e configurata in un ambiente di produzione, che può essere un server web, una piattaforma cloud o qualsiasi altro sistema in grado di ospitare e gestire l'applicazione."
+	},
     {
       "termine": "Design",
       "definizione": "Il design nel contesto dello sviluppo del software è la fase in cui vengono definiti l'architettura, la struttura e le specifiche dettagliate del sistema software da creare. Questo processo include la progettazione dell'interfaccia utente, la scelta delle tecnologie e dei linguaggi di programmazione, nonché la pianificazione dell'implementazione del sistema. È una fase cruciale che assicura un'organizzazione efficiente e logica delle funzionalità del software, garantendo la sua scalabilità, manutenibilità e facilità d'uso."
@@ -82,6 +114,14 @@
       "termine": "Discord",
       "definizione": "Discord è una piattaforma di comunicazione vocale e testuale progettata per la collaborazione remota, la formazione online e la comunicazione tra gruppi di persone. Offre funzionalità come chat di testo e vocali, canali organizzati per argomento, server personalizzabili, integrazioni con altre applicazioni e molto altro. Discord è ampiamente apprezzato per la sua facilità d'uso, la scalabilità e la ricchezza di funzionalità, rendendolo una scelta popolare per la comunicazione online."
     },
+	{
+		"termine": "Docker",
+		"definizione": "Docker è una piattaforma di containerizzazione open-source che consente agli sviluppatori di creare, distribuire e gestire applicazioni in container leggeri e portabili. I container Docker sono un tipo di virtualizzazione a livello di sistema operativo che isolano le applicazioni e le relative dipendenze, consentendo loro di essere eseguite in ambienti consistenti e riproducibili su qualsiasi piattaforma che supporti Docker."
+	},
+	{
+		"termine": "Docker Compose",
+		"definizione": "Docker Compose è uno strumento che permette di definire e gestire applicazioni Docker multi-contenitore. Utilizzando un file .yaml, Docker Compose consente di descrivere i servizi, le reti e i volumi necessari per un'applicazione. Con un singolo comando, è possibile creare, avviare e gestire tutti i contenitori specificati nel file, facilitando lo sviluppo, il test e il deployment di applicazioni complesse che coinvolgono più componenti interdipendenti."
+	},
     {
       "termine": "Documento Esterno",
       "definizione": "Un documento esterno è un'opera o un insieme di documenti che sono destinati a essere condivisi con terzi al di fuori del gruppo di sviluppo o dell'organizzazione. Questi documenti possono includere proposte di progetto, rapporti di avanzamento, documenti di requisiti, manuali utente, documenti di consegna o qualsiasi altra documentazione destinata ad aziende proponenti, clienti, i professori o altri stakeholder esterni al processo di sviluppo. La creazione e la gestione accurata dei documenti esterni sono cruciali per garantire una comunicazione chiara, trasparente ed efficace con gli interessati esterni al progetto."
@@ -103,9 +143,17 @@
     {
       "termine": "Editor",
       "definizione": "Un editor è un'applicazione software utilizzata per creare, modificare e gestire file di testo o codice sorgente. Fornisce funzionalità come formattazione del testo, ricerca e sostituzione, e strumenti per la gestione dei progetti."
+    },
+	{
+      "termine": "Endpoint",
+      "definizione": "L'endpoint è un URL specifico esposto da un'API (Application Programming Interface) che rappresenta un punto di ingresso per la comunicazione tra un client e un server. Gli endpoint sono utilizzati per eseguire operazioni come il recupero, l'invio, l'aggiornamento o la cancellazione di dati. Ogni endpoint è associato a un'operazione HTTP e consente ai client di interagire con le risorse del server in modo strutturato e sicuro."
     }
   ],
   "F": [
+    {
+      "termine": "Facade",
+      "definizione": "Il facade è un design pattern strutturale che fornisce un'interfaccia unificata per un insieme di interfacce in un sottosistema più grande. Essenzialmente, la Facade nasconde la complessità del sottosistema e semplifica l'accesso ad esso fornendo un'interfaccia semplice e unificata."
+    },
     {
       "termine": "Feature",
       "definizione": "Una feature è una caratteristica o funzionalità specifica di un prodotto software. Le feature definiscono il comportamento o le capacità del software e possono includere qualsiasi cosa, dalle semplici azioni dell'utente alle complesse operazioni di sistema. Le feature sono progettate per soddisfare determinati requisiti o fornire determinati vantaggi agli utenti finali. Possono essere descritte attraverso specifiche funzionali, requisiti o casi d'uso e sono spesso evidenziate durante lo sviluppo del software per garantire che il prodotto finale soddisfi le aspettative degli utenti."
@@ -122,12 +170,20 @@
       "termine": "Framework",
       "definizione": "Un framework è un'infrastruttura software che fornisce un'organizzazione predefinita per lo sviluppo di applicazioni. Essenzialmente, è una struttura di supporto su cui è possibile costruire e organizzare il codice. I framework forniscono una serie di librerie, modelli di progettazione, componenti e strumenti che semplificano lo sviluppo di software, consentendo agli sviluppatori di concentrarsi sulla logica dell'applicazione anziché dover reinventare ogni singolo aspetto. Spesso sono progettati per affrontare problemi comuni nello sviluppo di software, come la gestione delle richieste web, la manipolazione dei dati, la sicurezza e altro ancora. I framework possono essere generici o specifici per determinati tipi di applicazioni o linguaggi di programmazione."
     },
+	{
+      "termine": "Frontend",
+      "definizione": "Il frontend è la parte di un'applicazione software che interagisce direttamente con l'utente finale. Il frontend include l'interfaccia utente (UI) e tutte le componenti che rendono l'esperienza utente interattiva e visivamente piacevole. È sviluppato utilizzando tecnologie come HTML, CSS e JavaScript, e comunica con il backend per recuperare e visualizzare i dati."
+    },
     {
       "termine": "Funzionalità",
       "definizione": "Le funzionalità si riferiscono alle capacità o agli attributi specifici di un software, di un'applicazione o di un sistema che consentono agli utenti di eseguire determinate azioni o di ottenere determinati risultati. Le funzionalità sono le varie operazioni, servizi o caratteristiche che un prodotto software offre agli utenti per soddisfare determinati scopi o necessità. Possono includere azioni interattive, processi automatizzati, visualizzazioni dei dati, strumenti di gestione e altro ancora. Le funzionalità sono progettate per rispondere ai requisiti e alle esigenze degli utenti, migliorare l'usabilità del software e offrire un'esperienza soddisfacente agli utenti finali."
     }
   ],
   "G": [
+    {
+      "termine": "Gateway",
+      "definizione": "Il gateway è un punto di accesso che funge da intermediario tra diverse reti o sistemi, permettendo la comunicazione e il trasferimento di dati tra di essi. Nel contesto delle applicazioni software, un gateway può gestire richieste da client e inoltrarle ai servizi appropriati, effettuare traduzioni di protocolli, gestire autenticazione e autorizzazione, e applicare politiche di sicurezza."
+    },
     {
       "termine": "Git",
       "definizione": "Git è un sistema di controllo di versione distribuito utilizzato principalmente nello sviluppo software. Consente agli sviluppatori di tenere traccia delle modifiche apportate al codice sorgente nel corso del tempo, coordinare il lavoro con altri membri del team e gestire le diverse versioni di un progetto in modo efficiente. Git consente di creare repository (archivi di file sorgente e cronologia delle modifiche) sia localmente che su server remoti, facilitando la collaborazione tra sviluppatori distribuiti geograficamente. È ampiamente utilizzato nell'industria del software per gestire progetti di qualsiasi dimensione e complessità."
@@ -141,7 +197,12 @@
       "definizione": "GitHub è una piattaforma di hosting di codice sorgente basata su Git, che fornisce strumenti per la gestione dei repository, la collaborazione tra sviluppatori e il controllo delle versioni dei progetti software. Su GitHub, gli sviluppatori possono caricare i propri progetti, tenere traccia delle modifiche tramite commit, creare e gestire branch, collaborare con altri utenti tramite problemi e richieste di pull, e distribuire le proprie applicazioni. È ampiamente utilizzato sia da sviluppatori individuali che da team di sviluppo per lo sviluppo di software open source e progetti privati."
     }
   ],
-  "H": [],
+  "H": [
+    {
+      "termine": "HTTP",
+      "definizione": "HTTP (HyperText Transfer Protocol) è un protocollo di comunicazione utilizzato per trasferire informazioni su reti. HTTP definisce come i messaggi sono formattati e trasmessi, e quali azioni i server e i browser devono compiere in risposta a vari comandi."
+    }
+  ],
   "I": [
     {
       "termine": "Imola Informatica",
@@ -161,22 +222,54 @@
     }
   ],
   "J": [
+		{
+      "termine": "Javascript",
+      "definizione": "Un linguaggio di programmazione ad alto livello, interpretato e orientato agli oggetti, comunemente utilizzato per sviluppare applicazioni web interattive e dinamiche. Creato originariamente per essere eseguito nei browser web per migliorare l'esperienza utente sul web, JavaScript è diventato uno dei linguaggi di programmazione più diffusi e versatili al mondo."
+		},
+		{
+			"termine": "Jest",
+      "definizione": "Jest è un framework di testing open-source per JavaScript utilizzato per testare applicazioni e componenti React, Node.js e JavaScript in generale. Esso è dotato di una serie di funzionalità avanzate per facilitare lo sviluppo dei test (come la reportistica sulla code-coverage di un progetto) e migliorare la qualità del software."
+		},
     {
       "termine": "Jira",
       "definizione": "Jira è una piattaforma di gestione del lavoro e dei progetti utilizzata per tracciare le attività, assegnare compiti, pianificare progetti e collaborare tra membri del team."
-    }
+    },
+		{
+      "termine": "JSON",
+      "definizione": "JSON (JavaScript Object Notation) è un formato di dati leggero e basato su testo utilizzato per rappresentare dati strutturati. E' comunemente utilizzato per lo scambio di dati tra un server e un client web e come formato di memorizzazione dei dati (da servizi come MongoDB)."
+		},
+		{
+      "termine": "JSX",
+      "definizione": "JSX è un'estensione di sintassi per JavaScript che consente di scrivere markup HTML all'interno del codice JavaScript ed è comunemente utilizzato con React."
+		},
+	{
+		"termine": "JWT",
+		"definizione": "JWT (JSON Web Token) è uno standard aperto utilizzato per creare token di accesso che permettono la trasmissione sicura di informazioni tra parti in formato JSON."
+	}
   ],
   "K": [],
   "L": [
     {
       "termine": "LaTeX",
       "definizione": "LaTeX viene spesso utilizzato per redigere documenti tecnici, come specifiche dei requisiti, documenti di progetto, manuali utente e rapporti di testing. La sua struttura modulare, la gestione avanzata della formattazione e la facilità nel gestire equazioni matematiche e tabelle lo rendono una scelta popolare tra gli sviluppatori e i professionisti del settore. LaTeX consente inoltre di mantenere una formattazione uniforme e di automatizzare alcune operazioni, rendendo più efficiente il processo di documentazione del progetto."
+    },
+	{
+      "termine": "Layer di Persistenza",
+      "definizione": "Il layer di persistenza, è una parte dell'architettura software responsabile della gestione della persistenza dei dati. Questo strato si occupa di interagire con il sistema di memorizzazione permanente dei dati, come ad esempio un database relazionale, per memorizzare, recuperare, aggiornare ed eliminare i dati."
+    },
+	{
+      "termine": "Logica di Business",
+      "definizione": "La logica di business si riferisce al componente dell'applicazione che si occupa dell'implementazione delle regole di business specifiche del dominio applicativo. È spesso isolata in uno strato dedicato, noto come Service layer, che si trova tra il livello di presentazione (come l'interfaccia utente) e il livello di persistenza dei dati (come il database)."
     }
   ],
   "M": [
     {
       "termine": "Manuale Utente",
       "definizione": "Il Manuale Utente è un documento che fornisce istruzioni dettagliate su come utilizzare un determinato prodotto software o sistema. È destinato agli utenti finali e fornisce indicazioni chiare e concise su come eseguire le diverse operazioni, navigare nell'interfaccia utente e sfruttare le funzionalità offerte dal software. Il manuale utente può includere tutorial, guide passo-passo, spiegazioni delle funzionalità e istruzioni per la risoluzione dei problemi comuni. L'obiettivo principale del manuale utente è quello di consentire agli utenti di utilizzare il software in modo efficace ed efficiente, migliorando così l'esperienza complessiva dell'utente."
+    },
+	{
+      "termine": "Manutenzione",
+      "definizione": "La manutenzione è l'insieme delle attività svolte per mantenere un software funzionante, sicuro e aggiornato dopo il suo rilascio. La manutenzione può includere la correzione di bug, l'aggiornamento delle dipendenze, l'aggiunta di nuove funzionalità, l'ottimizzazione delle prestazioni, e l'adeguamento del software a nuovi requisiti o tecnologie."
     },
     {
       "termine": "Milestone",
@@ -185,15 +278,43 @@
     {
       "termine": "Modello a V",
       "definizione": "Il Modello a V è una rappresentazione grafica del ciclo di vita di un progetto di sviluppo software. Esso mostra in maniera dettagliata le relazioni fra le fasi di analisi e pregettazione, la  produzione e il testing e ciò permette di minimizzare i rischi di progetto e di migliorare e garantire la qualità del prodotto."
-    }
+    },
+	{
+      "termine": "Multi-tier",
+      "definizione": "Il multi-tier è un tipo di architettura software che si suddivide in più livelli (o tier), ognuno dei quali gestisce una specifica responsabilità all'interno dell'applicazione. I livelli comuni includono: Presentazione (Presentation Tier) che è il livello più alto, che gestisce l'interfaccia utente e l'interazione con l'utente; Logica di Business (Business Logic Tier) che contiene la logica dell'applicazione, processando i dati e implementando le regole di business; Accesso ai Dati (Data Access Tier) che interagisce con i database per memorizzare e recuperare dati."
+    },
+	{
+		"termine": "MVP",
+		"definizione" : "(Minimum Viable Product - Prodotto Minimo Completamente Funzionante), è una strategia di sviluppo software che si concentra sullo sviluppo di un prodotto con il minimo set di funzionalità necessarie per soddisfare le esigenze di base degli utenti. L'obiettivo principale di un MVP è quello di testare l'ipotesi di base del prodotto, raccogliere feedback dagli utenti e validare le caratteristiche e le funzionalità più importanti del prodotto." 
+	}
   ],
   "N": [
+		{
+			"termine": "Nest.js",
+			"definizione" : "Nest.js è un framework per lo sviluppo di applicazioni server-side basato su Node.js. Le caratteristiche offerte sono: dependency injection (controller), l'uso di decorators per definire i controller e come essi gestiscono le varie route e la modularità. Esso rende possibile anche connessioni basate su altri protocolli, come Websocket, gRPC e altri ancora." 
+		},
+		{
+			"termine": "Next.js",
+			"definizione" : "Next.js è un framework di sviluppo web per React, che consente di creare facilmente applicazioni web con funzionalità avanzate come il server-side rendering (SSR), il rendering statico e la generazione di pagine dinamiche."
+		},
+		{
+			"termine": "Node.js",
+			"definizione" : "Node.js è un runtime JavaScript open-source basato sul motore JavaScript V8 di Google Chrome; è progettato per eseguire codice JavaScript lato server, consentendo agli sviluppatori di creare applicazioni web e servizi di rete scalabili e performanti."
+		},
     {
       "termine": "Norme di Progetto",
       "definizione": "Nel documento Norme di Progetto sono riportate tutte le linee guida tecniche e procedurali stabilite per regolare l'esecuzione e il controllo di un progetto. Questo documento definisce standard e procedure relative all'organizzazione del lavoro, alla metodologia di sviluppo, alla gestione dei documenti, delle configurazioni e dei rischi, nonché alla pianificazione e al monitoraggio delle attività del progetto."
-    }
+    },
+	{
+	  "termine": "NPM",
+      "definizione": "NPM è il gestore di pacchetti predefinito per Node.js, utilizzato per installare, condividere e gestire le dipendenze del progetto JavaScript. NPM consente agli sviluppatori di scaricare e installare librerie e strumenti di terze parti, oltre a pubblicare e condividere i propri pacchetti. Con NPM, è possibile gestire le versioni delle dipendenze e configurare script per automatizzare attività di sviluppo comuni, rendendo più efficiente la gestione del ciclo di vita del progetto."
+	}
   ],
   "O": [
+		{
+      "termine": "Open-source",
+      "definizione": "Un modello di sviluppo e distribuzione del software in cui il codice sorgente del programma è reso liberamente accessibile, modificabile e redistribuibile da chiunque. Questo implica che il codice sorgente di un software open-source è disponibile per essere esaminato, modificato e migliorato da sviluppatori di tutto il mondo, senza restrizioni di utilizzo."
+		},
     {
       "termine": "Overleaf",
       "definizione": "Overleaf è una piattaforma online per la scrittura collaborativa di documenti LaTeX. Consente agli utenti di creare e modificare documenti LaTeX direttamente nel browser, senza la necessità di installare software aggiuntivo sul proprio computer. Overleaf offre strumenti per la gestione dei progetti, il controllo delle versioni, la compilazione automatica dei documenti e la condivisione dei lavori con altri collaboratori. È particolarmente popolare nell'ambito accademico e scientifico per la sua facilità d'uso e la possibilità di collaborare in tempo reale. "
@@ -236,6 +357,10 @@
       "termine": "Precondizioni",
       "definizione": "Le precondizioni sono degli stato o condizioni del sistema che devono essere soddisfatte affinché un caso d'uso o una funzione possa essere eseguita con successo. Indicano lo stato iniziale o le circostanze necessarie perché il caso d'uso o la funzione presa in esame possa essere avviata e completata correttamente. "
     },
+		{
+      "termine": "PostgresSQL",
+			"definizione" : "PostgreSQL è un potente sistema di gestione di database relazionali (RDBMS) open source, basato sul linguaggio SQL."
+		},
     {
       "termine": "Prenotazione",
       "definizione": "La prenotazione è la fase del processo in cui l'utente desidera prenotare un tavolo presso un ristorante utilizzando l'applicazione. Durante questa fase, l'utente inserisce i dettagli della prenotazione, come la data, l'orario, il numero di persone e eventuali altre richieste. Una volta completata la prenotazione, il sistema invia una conferma all'utente e al ristorante, cercando di fare in modo che il tavolo sia riservato per il momento richiesto. "
@@ -293,6 +418,18 @@
     }
   ],
   "R": [
+	  {
+      "termine": "RDBMS",
+      "definizione": "L'RDBMS è un sistema software che gestisce database relazionali. In un RDBMS, i dati sono organizzati in tabelle composte da righe e colonne, e le relazioni tra i dati sono rappresentate mediante chiavi esterne. Gli RDBMS utilizzano il linguaggio SQL per eseguire operazioni di creazione, lettura, aggiornamento e cancellazione sui dati. "
+    },
+    {
+      "termine": "React",
+      "definizione": "React è una libreria JavaScript open-source, sviluppata da Facebook, che è ampiamente utilizzata per la creazione di interfacce utente (UI) dinamiche e interattive per applicazioni web. È progettata per semplificare lo sviluppo di UI complesse, consentendo agli sviluppatori di creare componenti riutilizzabili che rappresentano parti specifiche dell'interfaccia utente e gestire lo stato dell'applicazione in modo efficiente."
+    },
+    {
+      "termine": "React Architecture",
+      "definizione": "Il React Architecture è un approccio organizzato e strutturato per lo sviluppo di applicazioni web utilizzando React, un framework JavaScript per la creazione di interfacce utente. L'architettura React si basa sui principi di modularità, separazione delle responsabilità e riusabilità del codice. Include la definizione di componenti riutilizzabili, la gestione dello stato, la navigazione tra le pagine e l'integrazione con servizi esterni."
+    },
     {
       "termine": "Redattore",
       "definizione": "Un redattore è un individuo responsabile della stesura di documenti tecnici o di altro genere all'interno di un progetto. Il redattore assicura che i documenti siano chiari, accurati e coerenti. "
@@ -352,7 +489,11 @@
     {
       "termine": "RTB",
       "definizione": "La Requirements Technology Baseline (RTB) è una linea di base tecnologica di un progetto software che rappresenta lo stato degli strumenti, delle tecniche e dei processi utilizzati per la gestione dei requisiti funzionali e non del sistema. Include gli strumenti software utilizzati per la raccolta, l'analisi, la tracciabilità e la gestione dei requisiti, nonché le procedure e le pratiche per l'identificazione, la documentazione e la validazione dei requisiti. La RTB fornisce una base stabile e affidabile per il processo di sviluppo del software, garantendo che gli strumenti e le tecnologie utilizzate siano adatti e siano stati compresi per lo scopo e soddisfino le esigenze del progetto."
-    }
+    },
+		{
+      "termine": "Runtime system",
+      "definizione": "Un runtime system (o sistema di runtime) è un insieme di software e librerie che forniscono un ambiente di esecuzione per programmi software. Il runtime system è responsabile di gestire l'esecuzione dei programmi, fornendo servizi come l'allocazione della memoria, la gestione delle eccezioni, l'esecuzione del codice e la gestione delle risorse di sistema."
+		}
   ],
   "S": [
     {
@@ -363,10 +504,26 @@
       "termine": "Scrum",
       "definizione": "Scrum è un framework Agile utilizzato per lo sviluppo di prodotti complessi. Si basa su un approccio iterativo e incrementale, in cui il lavoro viene diviso in intervalli di tempo definiti chiamati sprint. Durante uno sprint, il team si impegna a completare un insieme di attività prioritarie stabilite durante la pianificazione dello sprint. Gli sprint sono seguiti da sessioni di revisione per valutare il lavoro svolto e identificare eventuali miglioramenti. "
     },
+	{
+	  "termine": "Server action",
+	  "definizione": "Funzionalità introdotta dal framework Next.js nella versione 14; consente di definire funzioni server-side che possono essere invocate dai componenti React nel lato client."
+	},
+	{
+	  "termine": "Server-side",
+	  "definizione": "Nell'ambito dello sviluppo software si riferisce a processi, logica e risorse che operano sul lato del server in un'applicazione client-server; in altre parole, \"server-side\" si riferisce a tutto ciò che avviene sul server, inclusi calcoli, elaborazioni dei dati, accesso al database e altro ancora."
+	},
+	{
+	  "termine": "Service layer",
+	  "definizione": "Il service Layer è lo strato che rappresenta la logica di business dell'applicazione e si trova tra il controller e il livello di accesso ai dati. Il suo compito principale è implementare la logica aziendale dell'applicazione, fornendo servizi e operazioni che il controller richiama per eseguire azioni complesse."
+	},
     {
       "termine": "Sistema",
       "definizione": "Il Sistema nel documento di Analisi dei Requisiti si riferisce all'insieme di componenti software, hardware e di sistema che collaborano per fornire le funzionalità richieste dal prodotto. Il sistema può comprendere diverse parti, come applicazioni software, database e server."
     },
+		{
+      "termine": "Socket.IO",
+      "definizione": "Socket.IO è una libreria JavaScript che permette di implementare una comunicazione in tempo reale, bidirezionale e event-driven tra client e server attraverso il web. Utilizza WebSocket, quando disponibile, per una comunicazione diretta e offre una serie di alternative, come il polling basato su HTTP, per garantire la compatibilità con una vasta gamma di browser e dispositivi. Socket.IO semplifica lo sviluppo di applicazioni web interattive che richiedono aggiornamenti in tempo reale, come chat in tempo reale, giochi multiplayer, monitoraggio dei dati in tempo reale e altro ancora."
+		},
     {
       "termine": "Software",
       "definizione": "Il termine \"Software\" si riferisce all'insieme di programmi, procedure e documentazione associata utilizzati su un sistema informatico per eseguire determinate operazioni o risolvere specifici problemi. Questo include sia il codice sorgente dei programmi che il software precompilato eseguibile. Il software può essere progettato per scopi diversi, come gestione dati, elaborazione informatica, comunicazione, intrattenimento e molti altri. In un contesto di sviluppo software, il termine \"software\" si riferisce al prodotto finale ottenuto dal processo di sviluppo, che può essere installato e utilizzato dagli utenti per scopi specifici. "
@@ -383,12 +540,24 @@
       "termine": "Sprint",
       "definizione": "Lo Sprint è una fase di sviluppo iterativa e incrementale nel framework Agile, come ad esempio Scrum. Durante uno Sprint, il team di sviluppo lavora su una serie di attività concordate all'inizio dello Sprint, con l'obiettivo di consegnare un incremento di funzionalità completamente funzionante e potenzialmente consegnabile al termine del periodo prestabilito, generalmente di durata fissa, solitamente da una a quattro settimane. Gli Sprint offrono una struttura chiara per la pianificazione, l'esecuzione e il monitoraggio del lavoro del team, consentendo un rapido adattamento ai cambiamenti dei requisiti o delle priorità. "
     },
+	{
+	  "termine": "SQL",
+	  "definizione": "SQL (Structured Query Language) è un linguaggio di programmazione dichiarativo utilizzato per gestire e manipolare database relazionali. È progettato per consentire agli utenti di interrogare, aggiornare, inserire e cancellare dati da un database in modo efficiente e standardizzato."
+	},
+	{
+	  "termine": "SSR",
+	  "definizione": "SSR (Server Side Rendering) è una tecnica di rendering delle pagine web in cui il contenuto della pagina viene generato e inviato al client dal server, anziché essere costruito nel browser utilizzando JavaScript. Con SSR, il server elabora le richieste dell'utente, recupera i dati necessari e rende la pagina HTML completa prima di inviarla al browser."
+	},
     {
       "termine": "Strumento",
       "definizione": "Uno strumento nell'ambito dello sviluppo del software è un'applicazione, un programma o una risorsa che supporta specifiche attività o processi nel ciclo di vita del software. Gli strumenti possono includere ambienti di sviluppo integrati (IDE), sistemi di gestione di progetto come Jira, framework di test come Selenium, sistemi di controllo versione come Git, e molti altri. L'uso degli strumenti giusti può migliorare l'efficienza e la qualità del processo di sviluppo del software. "
     }
   ],
   "T": [
+		{
+      "termine": "Tailwind CSS",
+      "definizione": "Tailwind CSS è un framework CSS utilizzato per lo sviluppo di interfacce utente responsive e personalizzabili. In Tailwind CSS, vengono fornite una vasta gamma di classi CSS atomiche, ognuna delle quali rappresenta uno stile CSS specifico. Queste classi possono essere utilizzate direttamente all'interno del markup HTML per applicare stili specifici, come margini, padding, colori, dimensioni dei caratteri, allineamenti, sfondi e molto altro."
+		},
     {
       "termine": "Tecnologie",
       "definizione": "La \"tecnologia\" nel contesto dello sviluppo del software si riferisce agli strumenti, ai linguaggi di programmazione, ai framework e ad altre risorse utilizzate per progettare, sviluppare e implementare soluzioni software. Questo termine può anche comprendere hardware, piattaforme di hosting, servizi cloud e altri componenti tecnologici utilizzati nel processo di sviluppo e distribuzione del software. La scelta delle tecnologie giuste può influenzare significativamente le prestazioni, la scalabilità, la manutenibilità e altre caratteristiche del prodotto software. "
@@ -412,7 +581,15 @@
     {
       "termine": "Trigger",
       "definizione": "Il \"trigger\" nell'analisi dei requisiti si riferisce a un evento o una condizione che innesca l'avvio di un determinato caso d'uso o processo all'interno del sistema software. È un elemento chiave per comprendere quando e come un particolare comportamento o funzionalità deve essere attivato nell'applicazione. I trigger possono essere attivati da azioni degli utenti, come clic su pulsanti o input di dati, o da eventi interni al sistema, come arrivo di notifiche o cambiamenti di stato. Identificare correttamente i trigger è fondamentale per definire in modo completo e accurato il comportamento del sistema. "
-    }
+    },
+    {
+      "termine": "TypeORM",
+      "definizione": "TypeOrm è un ORM (Object-Relational Mapping) per TypeScript e JavaScript che semplifica l'interazione con i database relazionali. TypeORM permette agli sviluppatori di definire modelli di dati come classi TypeScript, e gestisce automaticamente la mappatura tra questi modelli e le tabelle del database."
+    },
+	{
+	  "termine": "Typescript",
+	  "definizione": "TypeScript è un linguaggio di programmazione sviluppato da Microsoft che estende e aggiunge tipizzazione statica al JavaScript standard."
+	}
   ],
   "U": [
     {
@@ -446,7 +623,11 @@
     {
       "termine": "Way Of Working",
       "definizione": "Il Way Of Working è un insieme di processi operativi, regole e specifiche che definiscono il modo di lavorare del team e come vengono gestiti i processi all'interno del progetto. Un Way of Working efficace fornisce una struttura chiara e coesa per il team, promuove la coerenza, la trasparenza e l'efficienza nelle operazioni quotidiane, contribuendo così al successo complessivo del progetto."
-    }
+    },
+		{
+      "termine": "WebSocket",
+      "definizione": "Il protocollo WebSocket è un protocollo di comunicazione bidirezionale, full-duplex, che fornisce una connessione persistente tra un client e un server su Internet. Esso consente una comunicazione interattiva e in tempo reale tra un browser web o un'applicazione client e un server, senza la necessità di costanti richieste HTTP."
+		}
   ],
   "X": [],
   "Y": [],

@@ -3,7 +3,7 @@ import os
 # il path che corrisponde alla cartella del glossario
 
 intestazione = r"""\documentclass[12pt, oneside]{article} 
-\usepackage{amsmath, amsthm, amssymb, calrsfs, wasysym, verbatim, bbm, color, graphicx, geometry, fancyhdr, url, multirow, hyperref}
+\usepackage{amsmath, amsthm, amssymb, calrsfs, wasysym, verbatim, bbm, color, graphicx, geometry, fancyhdr, url, multirow, hyperref, longtable}
 \usepackage[italian]{babel}
 
 \geometry{tmargin=.75in, bmargin=.75in, lmargin=.75in, rmargin = .75in}
@@ -36,9 +36,9 @@ intestazione = r"""\documentclass[12pt, oneside]{article}
 % Informazioni sul documento
 \section*{Informazioni sul documento}
 \begin{tabular}{ll}
-Versione: & 1.0.0 \\
-Redattori:  & Zambon M. Brotto D. Zaupa R.\\
-Verificatori: & Brotto D. Zaupa R.\\ 
+Versione: & 2.0.0 \\
+Redattori:  & Zambon M. Brotto D. Zaupa R. Basso L.\\
+Verificatori: & Brotto D. Zaupa R. Zambon M. Basso L.\\ 
 Destinatari: & T. Vardanega, R. Cardin, Imola Informatica \\
 Uso: & Esterno
 \end{tabular}
@@ -46,31 +46,38 @@ Uso: & Esterno
 
 % Registro dei cambiamenti
 \section*{Registro dei Cambiamenti - Changelog}
-\begin{tabular}{|c|c|c|p{3cm}|p{6cm}|}
+\begin{longtable}{|c|c|c|p{3cm}|p{6cm}|}
 \hline
 \textbf{Versione} & \textbf{Data} & \textbf{Autore} & \textbf{Verificatore} & \textbf{Dettaglio} \\
 \hline
-v.1.0.0 & 2024-04-06 & Zaupa R. & Zaupa R. & Approvazione e validazione del documento\\
+v 2.0.0 & 2024-06-11 & Basso L. & Basso L. & Approvato e validato il documento\\
 \hline
-v.0.3.0 & 2024-04-05 & Zambon M. & Zaupa R. & Cambiati i termini: "Caso d'Uso" in "Caso d'uso", "Diagramma dei Casi d'Uso" in "Diagramma dei casi d'uso", "Requisiti funzionali desiderabili" in "Requisiti desiderabili funzionali", "Requisiti funzionali obbligatori" in "Requisiti obbligatori funzionali"\\
+v 1.2.0 & 2024-06-10 & Brotto D. & Zambon M. & Aggiunti termini Backend, Frontend, WebSocket, Docker Compose, NPM, Endpoint, SSR (Server Side Rendering), manutenzione, gateway, RDBMS, JWT, HTTP, Multi-tier, Controller layer, Service Layer, Data Access Layer, TypeORM, React Architecture, CRUD, Facade, Layer di persistenza, Logica di business\\
 \hline
-v.0.2.0 & 2024-04-03 & Zambon M. & Zaupa R. & Cambiati i termini: "Latex" in "LaTeX", "Precondizione" in "Precondizioni", "Postcondizione" in "Postcondizioni", "Processo primario" in "Processi primari", "Processo di supporto" in "Processi di supporto", "Processo organizzativo" in "Processi organizzativi", "Riferimento" in "Riferimenti", "Rischio" in "Rischi", "Sottocaso d'uso" in "Sottocasi d'uso", "Tecnologia" in "Tecnologie", "Verbale esterno" in "Verbali esterni", "Verbale interno" in "Verbali interni"\\
+v 1.1.0 & 2024-05-12 & Basso L. & Zambon M. & Inserimenti di nuovi termini e modifica della struttura del glossario; rimossi i numeri all'interno di sezioni e sotto-sezioni.\\
 \hline
-v.0.1.1 & 2024-04-02 & Zambon M. & Zaupa R. & Aggiunti i termini: Best practices, Complessita' ciclomatica, Inspection, Modello a V, Pull request, Walkthrough e Way of Working, con le rispettive descrizioni\\
+v 1.0.0 & 2024-04-06 & Zaupa R. & Zaupa R. & Approvazione e validazione del documento\\
 \hline
-v.0.1.0 & 2024-03-22 & Brotto D. & Zaupa R. & Corrette le definizioni di PB,RTB e Fornitura. Aggiunto il termine Caption\\
+v 0.3.0 & 2024-04-05 & Zambon M. & Zaupa R. & Cambiati i termini: "Caso d'Uso" in "Caso d'uso", "Diagramma dei Casi d'Uso" in "Diagramma dei casi d'uso", "Requisiti funzionali desiderabili" in "Requisiti desiderabili funzionali", "Requisiti funzionali obbligatori" in "Requisiti obbligatori funzionali"\\
 \hline
-v.0.0.2 & 2024-03-20 & Brotto D. & Zaupa R. & Stilate le definizioni di tutti i termini, aggiunti alcuni termini ambigui come Prenotazione e Ordinazione e rimosso Acquisizione \\
+v 0.2.0 & 2024-04-03 & Zambon M. & Zaupa R. & Cambiati i termini: "Latex" in "LaTeX", "Precondizione" in "Precondizioni", "Postcondizione" in "Postcondizioni", "Processo primario" in "Processi primari", "Processo di supporto" in "Processi di supporto", "Processo organizzativo" in "Processi organizzativi", "Riferimento" in "Riferimenti", "Rischio" in "Rischi", "Sottocaso d'uso" in "Sottocasi d'uso", "Tecnologia" in "Tecnologie", "Verbale esterno" in "Verbali esterni", "Verbale interno" in "Verbali interni"\\
 \hline
-v.0.0.1 & 2024-01-19 & Zambon M. & Brotto D. & Creata struttura del glossario e aggiunti i termini \\
+v 0.1.1 & 2024-04-02 & Zambon M. & Zaupa R. & Aggiunti i termini: Best practices, Complessita' ciclomatica, Inspection, Modello a V, Pull request, Walkthrough e Way of Working, con le rispettive descrizioni\\
 \hline
-\end{tabular}
+v 0.1.0 & 2024-03-22 & Brotto D. & Zaupa R. & Corrette le definizioni di PB,RTB e Fornitura. Aggiunto il termine Caption\\
+\hline
+v 0.0.2 & 2024-03-20 & Brotto D. & Zaupa R. & Stilate le definizioni di tutti i termini, aggiunti alcuni termini ambigui come Prenotazione e Ordinazione e rimosso Acquisizione \\
+\hline
+v 0.0.1 & 2024-01-19 & Zambon M. & Brotto D. & Creata struttura del glossario e aggiunti i termini \\
+\hline
+\end{longtable}
 \newpage
 
 % Sommario
 \tableofcontents
 \newpage
-\section{Introduzione}
+\section*{Introduzione}
+\addcontentsline{toc}{section}{Introduzione}
 Il glossario ha lo scopo di raccogliere i termini tecnici usati nel corso del progetto, al fine di facilitare la comprensione della documentazione, sia per i membri del gruppo che per i lettori esterni.
 \newpage
 \input{Contents/A}
@@ -132,10 +139,10 @@ Il glossario ha lo scopo di raccogliere i termini tecnici usati nel corso del pr
 # ritorna la stringa della sezione del glossario
 def compose_section(letter: str, json_array) -> str:
     section = ""
-    section += "\\section{" + letter + "} \n"
+    section += "\\section*{" + letter + "} \n" +"\\addcontentsline{toc}{section}{"+letter+"}" + "\n"
     
     for d in json_array[letter]:
-        section += "\\subsection{" + d["termine"] + "} \n"
+        section += "\\subsection*{" + d["termine"] + "} \n "+"\\addcontentsline{toc}{subsection}{"+d["termine"]+"}" + "\n"
         section += d["definizione"] + "\n"
     return section
 

@@ -1,0 +1,35 @@
+\section{Istruzioni all'installazione}
+
+\subsection{Download del progetto}
+Per scaricare il progetto, clonare il $\textit{repository}_G$ presente su $\textit{Github}_G$.
+
+\begin{lstlisting}[language=bash, caption=Download repository]
+git clone https://github.com/RAMtastic6/EasyMeal.git
+cd EasyMeal
+\end{lstlisting}
+
+\subsection{Avvio dell'applicazione}
+L'applicazione si compone di quattro moduli separati che devono essere avviati; per fare ciò si utilizza $\textit{Docker}_G$.
+
+\subsubsection{Docker}
+Questo progetto utilizza $\textit{Docker}_G$ Compose per gestire l'avvio dei container $\textit{Docker}_G$; seguire le istruzioni di seguito per avviare i container e utilizzare l'applicazione.
+
+\paragraph{Avvio dei container} Per avviare i container utilizzando $\textit{Docker}_G$ Compose, eseguire il seguente comando nella directory del progetto:
+
+\begin{lstlisting}[language=bash, caption=Inizializzare i container]
+docker-compose up
+\end{lstlisting}
+Una volta avviati i container, sarà possibile accedere all'applicazione utilizzando il browser o gli strumenti di sviluppo appropriati; per poter accedere al progetto $\textit{Next.js}_G$ collegarsi al link: \url{http://localhost:3000/}.
+
+\paragraph{Modifica dei file Dockerfile e compose.yaml} Per applicare le modifiche e far partire il progetto utilizzare il seguente comando:
+
+\begin{lstlisting}[language=bash, caption=Riconstruire e inizializzare i container]
+docker-compose up --build
+\end{lstlisting}
+
+\paragraph{Ripetizione del processo} se si desidera cancellare completamente l'ambiente di esecuzione utilizzare il seguente comando:
+
+\begin{lstlisting}[language=bash, caption=Rimozione dei container e dei volumi]
+docker-compose down -v 
+\end{lstlisting}
+Per ulteriori informazioni su $\textit{Docker}_G$ Compose, consultare la documentazione ufficiale: \url{https://docs.docker.com/compose/} (Consultato: 2024-06-11)

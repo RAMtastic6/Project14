@@ -1,0 +1,246 @@
+\documentclass[12pt, oneside]{article} 
+\usepackage{amsmath, amsthm, amssymb, calrsfs, wasysym, verbatim, bbm, xcolor, graphicx, fancyhdr, multirow, titlesec, tabularx, spreadtab, pgf-pie, array, longtable, caption, float, subcaption, listings, eso-pic}
+\usepackage[a4paper, margin=1cm]{geometry} % modifica le dimensioni della pagina e i margini
+\usepackage[italian]{babel}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\hypersetup{breaklinks=true}
+% Styling for the Code Snippets
+\lstdefinelanguage{JavaScript}{
+  morekeywords=[1]{break, continue, delete, else, for, function, if, in,
+    new, return, this, typeof, var, void, while, with},
+  % Literals, primitive types, and reference types.
+  morekeywords=[2]{false, null, true, boolean, number, undefined,
+    Array, Boolean, Date, Math, Number, String, Object},
+  % Built-ins.
+  morekeywords=[3]{eval, parseInt, parseFloat, escape, unescape},
+  sensitive,
+  morecomment=[s]{/*}{*/},
+  morecomment=[l]//,
+  morecomment=[s]{/**}{*/}, % JavaDoc style comments
+  morestring=[b]',
+  morestring=[b]"
+}[keywords, comments, strings]
+
+\lstalias[]{ES6}[ECMAScript2015]{JavaScript}
+
+\lstdefinelanguage[ECMAScript2015]{JavaScript}[]{JavaScript}{
+  morekeywords=[1]{await, async, case, catch, class, const, default, do,
+    enum, export, extends, finally, from, implements, import, instanceof,
+    let, static, super, switch, throw, try},
+  morestring=[b]` % Interpolation strings.
+}
+
+\definecolor{mediumgray}{rgb}{0.3, 0.4, 0.4}
+\definecolor{mediumblue}{rgb}{0.0, 0.0, 0.8}
+\definecolor{forestgreen}{rgb}{0.13, 0.55, 0.13}
+\definecolor{darkviolet}{rgb}{0.58, 0.0, 0.83}
+\definecolor{royalblue}{rgb}{0.25, 0.41, 0.88}
+\definecolor{crimson}{rgb}{0.86, 0.8, 0.24}
+
+\lstdefinestyle{JSES6Base}{
+  backgroundcolor=\color{white},
+  basicstyle=\ttfamily,
+  breakatwhitespace=false,
+  breaklines=true,
+  captionpos=b,
+  columns=fullflexible,
+  commentstyle=\color{mediumgray}\upshape,
+  emph={},
+  emphstyle=\color{crimson},
+  extendedchars=true,  % requires inputenc
+  fontadjust=true,
+  frame=single,
+  identifierstyle=\color{black},
+  keepspaces=true,
+  keywordstyle=\color{mediumblue},
+  keywordstyle={[2]\color{darkviolet}},
+  keywordstyle={[3]\color{royalblue}},
+  numbers=left,
+  numbersep=5pt,
+  numberstyle=\tiny\color{black},
+  rulecolor=\color{black},
+  showlines=true,
+  showspaces=false,
+  showstringspaces=false,
+  showtabs=false,
+  stringstyle=\color{forestgreen},
+  tabsize=2,
+  title=\lstname,
+  upquote=true,
+}
+
+\definecolor{comment}{rgb}{0.0, 0.5, 0.0}
+\definecolor{keyword}{rgb}{0.0, 0.0, 0.75}
+\definecolor{string}{rgb}{0.5, 0.0, 0.0}
+
+\lstdefinestyle{typescript}{
+    language=JavaScript,
+    basicstyle=\ttfamily\footnotesize,
+    keywordstyle=\color{keyword}\bfseries,
+    stringstyle=\color{string},
+    commentstyle=\color{comment}\itshape,
+    morekeywords={type, interface, public, private, protected, implements, export, from, as, constructor, readonly},
+    literate={=>}{{\(\Rightarrow\)}}{1}
+}
+
+\lstdefinestyle{JavaScript}{
+  language=JavaScript,
+  style=JSES6Base
+}
+\lstdefinestyle{ES6}{
+  language=ES6,
+  style=JSES6Base
+}
+\usepackage{xcolor}
+
+\lstdefinestyle{bashstyle}{
+  backgroundcolor=\color{lightgray},
+  basicstyle=\ttfamily,
+  keywordstyle=\color{blue},
+  commentstyle=\color{gray},
+  stringstyle=\color{red},
+  showstringspaces=false,
+  breaklines=true,
+  frame=single
+}
+
+\lstset{
+    basicstyle=\ttfamily,
+    keywordstyle=\color{blue},
+    commentstyle=\color{green},
+    stringstyle=\color{red},
+    showstringspaces=false,
+    language=bash, % Imposta il linguaggio di default su bash
+    frame=single, % Aggiunge un bordo attorno al codice
+    framerule=0.5pt, % Spessore del bordo
+    breaklines=true, % Permette la divisione delle linee lunghe
+    backgroundcolor=\color{lightgray!20}, % Sfondo grigio chiaro
+    aboveskip=10pt, % Spazio aggiunto sopra il blocco di codice
+    belowskip=10pt  % Spazio aggiunto sotto il blocco di codice
+}
+
+\include{utils/subsubsubsection}
+
+\geometry{tmargin=.75in, bmargin=.75in, lmargin=.75in, rmargin = .75in}
+
+\author{RAMtastic6}
+
+%Intestazione
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[R]{Gruppo 14 RAMtastic6\\ramtastic6@gmail.com}
+\fancyfoot[C]{\thepage}
+
+% Linea intestazione
+\renewcommand{\headrulewidth}{1pt} 
+
+% Intestazione documento
+\begin{document}
+% Salta la prima pagina per l'intestazione
+\thispagestyle{empty}
+\title{Specifica Tecnica}
+\date{29 maggio 2024}
+\maketitle
+\begin{figure}[h]
+  \centering
+  \includegraphics[scale=0.3]{logo.png}
+\end{figure}
+\begin{center}
+    email: ramtastic6@gmail.com
+\end{center}
+
+% Informazioni sul documento
+\section*{Informazioni sul documento} 
+\begin{tabular}{ll}
+Versione: & 1.0.0 \\
+Redattori: &  Zaupa R. Visentin S. Brotto D. Basso L. Tonietto F. Zambon M. \\
+Verificatori: & Brotto D. Visentin S. Zambon M. Zaupa R. Tonietto F. \\
+Destinatari: & Vardanega T., Cardin R., Imola Informatica \\
+Uso: & Esterno
+\end{tabular}
+\newpage
+
+% Registro dei cambiamenti
+\section*{Registro dei Cambiamenti - Changelog}
+\begin{longtable}{|c|c|c|c|p{7cm}|}
+\hline
+\textbf{Versione} & \textbf{Data} & \textbf{Autore} & \textbf{Verificatore} & 
+\textbf{Dettaglio} \\
+\hline
+v 1.0.0 & 2024-05-29 & Brotto D. & Brotto D. & Approvazione e validazione del documento \\
+\hline
+v 0.5.0 & 2024-05-28 & Visentin S. & Tonietto F. & Modificata $\textit{architettura}_G$ $\textit{websocket}_G$ e aggiunta sezione database  \\
+\hline
+v 0.4.6 & 2024-05-28 & Brotto D. & Tonietto F. & Specificato modulo staff; aggiunti diagrammi $\textit{UML}_G$ (con descrizioni) di craete\_reservation, user, admin e notifications  \\
+\hline
+v 0.4.5 & 2024-05-28 & Zambon M. & Tonietto F. & Aggiunto e descritto l'$\textit{UML}_G$ del sign-up-admin  \\
+\hline
+v 0.4.4 & 2024-05-27 & Zaupa R. & Tonietto F. & Descritto il modulo Notification del $\textit{backend}_G$ e sistemato lo stato dei requisiti funzionali \\
+\hline
+v 0.4.3 & 2024-05-26 & Zambon M. & Zaupa R. & Descritto il $\textit{Backend}_G$ for $\textit{Frontend}_G$ pattern, il Compound Components pattern e il Controlled inputs pattern (sezione 4.2.2) \\
+\hline
+v 0.4.2 & 2024-05-26 & Visentin S. & Zaupa R. & Modificato il diagramma delle classi del $\textit{backend}_G$ \\
+\hline
+v 0.4.1 & 2024-05-26 & Zambon M. & Zaupa R. & Aggiunti gli endpoints per User (sezione 4.1.1) \\
+\hline
+v 0.4.0 & 2024-05-25 & Visentin S. & Zambon M. & Aggiunti gli endpoints per Restaurant, Reservation, Orders e Food (sezione 4.1.1) \\
+\hline
+v 0.3.3 & 2024-05-25 & Tonietto F. & Zambon M. & Aggiunta la descrizione del Publisher-Subscriber pattern relativa al Websocket (4.2.3.1) \\
+\hline
+v 0.3.2 & 2024-05-25 & Basso L. & Zambon M. & Aggiornata la sezione requisiti; inserite le sezioni riguardati i moduli back-end Authentication, Menu, DaysOpen; inserito diagramma $\textit{UML}_G$ del server socket (sezione 4.1.3); inseriti $\textit{UML}_G$ pagina order e order checkout (sezione 4.1.2.5) con relativa descrizione. \\
+\hline
+v 0.3.1 & 2024-05-25 & Visentin S. & Zambon M. & Stesura del Module pattern (sezione 4.2.1.5) \\
+\hline
+v 0.3.0 & 2024-05-24 & Tonietto F. & Zambon M. & Aggiunto l'$\textit{UML}_G$ del Login ($\textit{frontend}_G$). \\
+\hline
+v 0.2.2 & 2024-05-24 & Visentin S. & Zambon M. & Continuata la stesura della sezione 3.3, aggiuniti $\textit{Repository}_G$ pattern e Controller-Service pattern \\
+\hline
+v 0.2.1 & 2024-05-24 & Visentin S. & Zambon M. & Aggiunta sezione 3.3 (Esecuzione dei $\textit{test}_G$), dependy injection e decorator pattern\\
+\hline
+v 0.2.0 & 2024-05-23 & Tonietto F. & Visentin S. & Aggiunte le motivazioni relative alla scelta di Socket.io come libreria per l'implementazione del Websocket (2.1.6). Aggiunto l'uso di un pacchetto per scrivere frammenti di codice. \\
+\hline
+v 0.1.4 & 2024-05-22 & Zaupa R. & Visentin S. & Soddisfatti ROF12 ROF13 ROF14 ROF19 ROF30 ROF31 ROF34\\
+\hline
+v 0.1.3 & 2024-05-22 & Brotto D. & Visentin S. & Soddisfatto ROF57 \\
+\hline
+v 0.1.2 & 2024-05-13 & Basso L. & Visentin S. & Aggiunta alla sezione 4 il diagramma del $\textit{sistema}_G$ di notifica. \\
+\hline
+v 0.1.1 & 2024-05-13 & Brotto D. & Visentin S. & Aggiunta sezione 3 \\
+\hline
+v 0.1.0 & 2024-05-13 & Visentin S. & Brotto D. & Aggiungo schema ER del database \\
+\hline
+v 0.0.3 & 2024-05-13 & Zaupa R. & Brotto D. & Prima stesura della sezione "Stato dei requisiti funzionali" e della sottosezione "$\textit{Architettura}_G$ di $\textit{deployment}_G$"\\
+\hline
+v 0.0.2 & 2024-05-07 & Zaupa R. & Brotto D. & Prima stesura della sezione "$\textit{Tecnologie}_G$"\\
+\hline
+v 0.0.1 & 2024-05-04 & Zaupa R. & Brotto D. & Prima versione, stesura della sezione "Introduzione" \\
+\hline
+\end{longtable}
+\newpage
+
+% Sommario
+\tableofcontents
+\newpage
+
+% Introduzione
+\input{sections/introduzione}
+\newpage
+
+% Tecnologie
+\input{sections/tecnologie}
+\newpage
+
+% Esecuzione software
+\input{sections/Esecuzione del software}
+\newpage
+
+% Architettura
+\input{sections/architettura}
+\newpage
+
+% Requisiti soddisfatti
+\input{sections/stato_requisiti_funzionali}
+\newpage
+
+\end{document}
